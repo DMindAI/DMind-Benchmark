@@ -1,40 +1,40 @@
-# DMind Benchmark
+# 🔍 DMind Benchmark
 A comprehensive framework for evaluating large language models (LLMs) on blockchain, cryptocurrency, and Web3 knowledge across multiple domains.
 
-## Overview
+## 📊 Overview
 
 This project provides tools to benchmark AI models on their understanding of blockchain concepts through both objective (multiple-choice) and subjective (open-ended) questions. The framework covers various domains including:
 
-- Blockchain Fundamentals
-- DeFi (Decentralized Finance)
-- Smart Contracts
-- DAOs (Decentralized Autonomous Organizations)
-- NFTs
-- Security
-- Tokenomics
-- MEME coins
-- Blockchain Infrastructure
+- 🧱 Blockchain Fundamentals
+- 💰 DeFi (Decentralized Finance)
+- 📝 Smart Contracts
+- 🏛️ DAOs (Decentralized Autonomous Organizations)
+- 🖼️ NFTs
+- 🔒 Security
+- 💹 Tokenomics
+- 🎭 MEME coins
+- 🌐 Blockchain Infrastructure
 
-## Features
+## ✨ Features
 
-- Test models on multiple-choice questions with single or multiple correct answers
-- Evaluate models on open-ended questions requiring detailed explanations
-- Support for various question types including:
-  - Calculation questions
-  - Code audit questions
-  - Fill-in-blank questions
-  - Market reasoning questions
-  - Matching questions
-  - Ordering questions
-  - Risk analysis questions
-  - Scenario analysis questions
-  - Short answer questions
-  - Strategy analysis questions
-  - Vulnerability classification questions
-- Automated scoring and evaluation
-- Calculate total scores and comparative analysis across models
+- 🧪 Test models on multiple-choice questions with single or multiple correct answers
+- 📋 Evaluate models on open-ended questions requiring detailed explanations
+- 🔄 Support for various question types including:
+  - 📊 Calculation questions
+  - 🔍 Code audit questions
+  - 📝 Fill-in-blank questions
+  - 📈 Market reasoning questions
+  - 🔗 Matching questions
+  - 📋 Ordering questions
+  - ⚠️ Risk analysis questions
+  - 🔮 Scenario analysis questions
+  - ✏️ Short answer questions
+  - 🧩 Strategy analysis questions
+  - 🛡️ Vulnerability classification questions
+- 🤖 Automated scoring and evaluation
+- 📊 Calculate total scores and comparative analysis across models
 
-## Installation
+## 🛠️ Installation
 
 1. Install the required packages:
 
@@ -49,7 +49,7 @@ This project provides tools to benchmark AI models on their understanding of blo
    # Add other configuration settings as needed
    ```
 
-## Usage
+## 📋 Usage
 
 The project includes a Makefile with commands to run different tests:
 
@@ -72,7 +72,7 @@ You can test multiple models and compare their performance:
 2. Run tests for each model
 3. Use the calculation tools to compare results
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 ├── api/
@@ -98,14 +98,14 @@ You can test multiple models and compare their performance:
 └── Makefile                      # Commands for running tests
 ```
 
-## Evaluation Methodology
+## 📏 Evaluation Methodology
 
 The evaluation framework uses various techniques to assess model performance:
 
 - For objective questions: Exact matching against correct answers
 - For subjective questions: Combination of keyword analysis, structured evaluation, and third-party AI evaluation when configured
 
-## Customization
+## ⚙️ Customization
 
 - Add new questions by extending the CSV/JSON files in test_data/
 - Implement new question types by extending the BaseQuestion class
