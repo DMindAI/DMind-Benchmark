@@ -1,0 +1,213 @@
+No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
+1,Basic,什么是NFT？,一种可以无限复制的数字资产,一种不可替代的数字资产，每个都具有唯一性,一种只能在特定区块链上使用的加密货币,一种只能由艺术家创建的数字收藏品,B,Single Choice
+2,Basic,以下哪个标准定义了以太坊上的NFT？,ERC-20,ERC-721,ERC-777,ERC-1155,B,Single Choice
+3,Basic,ERC-721与ERC-20的主要区别是什么？,ERC-721代表非同质化的代币，而ERC-20代表可同质化的代币,ERC-721只能用于游戏，而ERC-20用于金融,ERC-721消耗的gas更少,ERC-721只能在特定市场交易,A,Single Choice
+4,Basic,"什么是NFT的""铸造""（Minting）过程？",将NFT从一个区块链转移到另一个区块链,将物理艺术品转换为数字形式,创建新的NFT并将其记录在区块链上,将多个NFT合并为一个,C,Single Choice
+5,Basic,以下哪个不是NFT常见的元数据存储方式？,IPFS,Arweave,中心化服务器,链上存储,D,Single Choice
+6,Basic,"什么是NFT的""版税""（Royalty）？",购买NFT必须支付的税费,创作者在NFT二次销售时获得的一定比例收益,平台收取的交易费用,NFT持有者必须定期支付的费用,B,Single Choice
+7,Basic,ERC-1155与ERC-721的主要区别是什么？,ERC-1155支持同时铸造多个NFT，更节省gas,ERC-1155只能用于游戏NFT,ERC-1155允许在同一合约中创建同质化和非同质化的代币,ERC-1155不支持元数据,C,Single Choice
+8,Basic,"什么是""懒铸造""（Lazy Minting）？",以非常慢的速度铸造NFT,延迟铸造过程，直到NFT被购买时才在链上铸造,使用最少的计算资源铸造NFT,在非高峰时段铸造NFT以节省gas费,B,Single Choice
+9,Basic,以下哪个不是主流NFT市场平台？,OpenSea,Rarible,LooksRare,UniSwap,D,Single Choice
+10,Basic,"什么是NFT的""空投""（Airdrop）？",将NFT从一个钱包发送到另一个钱包,免费向特定地址分发NFT,将NFT从一个区块链转移到另一个区块链,在社交媒体上宣传NFT,B,Single Choice
+11,Basic,以下哪个不是NFT的常见用例？,数字艺术品,游戏内物品,活动门票,稳定币,D,Single Choice
+12,Basic,"什么是""地板价""（Floor Price）？",NFT项目中最便宜的NFT的价格,NFT的最初铸造价格,NFT的平均交易价格,NFT的最高历史价格,A,Single Choice
+13,Basic,"什么是NFT的""稀有度""（Rarity）？",NFT的创建时间,NFT的价格高低,NFT在集合中的独特性和稀缺性,NFT的物理尺寸,C,Single Choice
+14,Basic,以下哪个不是评估NFT稀有度的常见方法？,特征计数,特征稀有度,统计稀有度,市值排名,D,Single Choice
+15,Basic,"什么是""元宇宙""（Metaverse）？",一种特殊类型的NFT,一个虚拟现实空间，用户可以在其中互动和体验数字内容,一种新型区块链,一种加密货币交易所,B,Single Choice
+16,Basic,以下哪个不是主流元宇宙平台？,Decentraland,The Sandbox,Ethereum,Roblox,C,Single Choice
+17,Basic,"什么是""可组合性""（Composability）在NFT中的含义？",NFT可以被物理打印出来,NFT可以与其他NFT或智能合约交互和集成,NFT可以被分解为多个部分,NFT可以在不同区块链之间转移,B,Single Choice
+18,Basic,"什么是""链上""（On-chain）NFT？",NFT的元数据和内容直接存储在区块链上,只能在特定区块链上交易的NFT,由区块链公司创建的NFT,使用区块链符号作为设计元素的NFT,A,Single Choice
+19,Basic,"什么是""链下""（Off-chain）NFT？",不使用区块链技术的数字艺术品,NFT的元数据和内容存储在区块链外部，链上只存储引用,尚未铸造的NFT设计,已从区块链中删除的NFT,B,Single Choice
+20,Basic,以下哪个不是NFT交易中常见的问题？,高gas费,假冒NFT,市场操纵,区块确认速度过快,D,Single Choice
+21,Basic,"什么是""烧毁""（Burning）NFT？",将NFT打印出来后销毁,将NFT发送到无法访问的地址，永久从流通中移除,降低NFT的价值,将NFT转换为加密货币,B,Single Choice
+22,Basic,"什么是""动态NFT""（Dynamic NFT）？",可以在不同区块链之间移动的NFT,基于外部条件或触发器可以改变其属性或外观的NFT,价格波动大的NFT,包含动画的NFT,B,Single Choice
+23,Basic,以下哪个不是动态NFT的常见用例？,随时间成长的游戏角色,基于现实世界数据变化的数字艺术品,反映物理资产状态的数字孪生,相关社区的入场券,D,Single Choice
+24,Basic,"什么是""碎片化""（Fractionalization）NFT？",将一个NFT分割成多个部分，每个部分由不同代币表示,创建具有多个组件的NFT,将NFT分解为原始像素,在多个市场同时列出NFT,A,Single Choice
+25,Basic,碎片化NFT的主要目的是什么？,提高NFT的稀有度,降低参与门槛，实现部分所有权,减少铸造成本,增加NFT的复杂性,B,Single Choice
+26,Basic,"什么是""授权""（Approval）在NFT交易中的作用？",平台批准NFT可以上市销售,用户允许特定地址或合约代表自己转移NFT,创作者验证NFT的真实性,社区投票决定NFT的价值,B,Single Choice
+27,Basic,以下哪个不是NFT安全存储的最佳实践？,使用硬件钱包,定期备份私钥,将私钥存储在云服务中,使用多重签名钱包,C,Single Choice
+28,Basic,"什么是""白名单""（Whitelist）在NFT发行中的作用？",记录被禁止参与的地址列表,允许特定地址在公开发售前购买或铸造NFT,标记已验证的创作者账户,列出支持特定NFT标准的平台,B,Single Choice
+29,Basic,"什么是""荷兰式拍卖""（Dutch Auction）？",只有荷兰用户可以参与的拍卖,价格从高到低递减，直到有人购买的拍卖机制,多个NFT同时拍卖的机制,使用荷兰盾支付的拍卖,B,Single Choice
+30,Basic,"什么是""英式拍卖""（English Auction）？",只有英国用户可以参与的拍卖,使用英镑支付的拍卖,价格从低到高，出价最高者获胜的拍卖机制,限时24小时的拍卖,C,Single Choice
+31,Basic,"什么是""铸造通证""（Mint Pass）？",允许持有者在未来铸造特定NFT的权利代币,NFT创作者的身份证明,铸造NFT的教程,用于支付铸造费用的代币,A,Single Choice
+32,Basic,"什么是""元数据""（Metadata）在NFT中的作用？",仅用于描述NFT的创建日期,包含NFT的属性、特征和内容链接等信息,用于计算NFT的稀有度,仅用于存储创作者信息,B,Single Choice
+33,Basic,以下哪个不是常见的NFT元数据标准？,ERC-721 Metadata JSON Schema,OpenSea Metadata Standard,ERC-1155 Metadata URI JSON Schema,ERC-20 Metadata Format,D,Single Choice
+34,Basic,"什么是""预览图""（Thumbnail）在NFT中的作用？",仅用于社交媒体分享,NFT在市场和钱包中显示的低分辨率图像,创作者的签名,NFT的草图版本,B,Single Choice
+35,Basic,"什么是""铸造费""（Minting Fee）？",创作者向平台支付的上架费用,用户铸造NFT时支付的gas费用和平台费用,NFT交易时的税费,存储NFT元数据的费用,B,Single Choice
+36,Basic,"什么是""空投猎人""（Airdrop Hunter）？",专门寻找和参与NFT空投活动的用户,检测虚假空投的安全工具,自动分发NFT的软件,空投活动的组织者,A,Single Choice
+37,Basic,"什么是""限量发行""（Limited Edition）NFT？",只在特定地区可用的NFT,铸造数量有明确上限的NFT系列,只能在特定时间段内购买的NFT,价格非常高的NFT,B,Single Choice
+38,Basic,"什么是""开放版""（Open Edition）NFT？",任何人都可以免费获取的NFT,没有数量限制或在特定时间内无限铸造的NFT系列,源代码公开的NFT项目,可以被修改的NFT,B,Single Choice
+39,Basic,"什么是""铸造窗口""（Mint Window）？",NFT创作工具的界面,可以铸造特定NFT的有限时间段,NFT市场的新用户界面,查看NFT统计数据的仪表板,B,Single Choice
+40,Basic,"什么是""预售""（Presale）在NFT发行中的含义？",二级市场上的NFT交易,公开发售前向特定群体提供的优先购买机会,NFT发行前的营销活动,以折扣价出售的NFT,B,Single Choice
+41,Basic,"什么是""路线图""（Roadmap）在NFT项目中的作用？",显示NFT在元宇宙中的位置,项目团队计划的未来发展和功能实施时间表,NFT的转售历史记录,创建NFT的技术流程,B,Single Choice
+42,Basic,"什么是""实用型NFT""（Utility NFT）？",仅用于实用工具行业的NFT,除了收藏价值外，还提供额外功能或权益的NFT,价格低于1ETH的NFT,可以在现实世界中使用的物理物品的NFT,B,Single Choice
+43,Basic,以下哪个不是实用型NFT的常见用例？,会员资格,活动门票,游戏内物品,彰显NFT艺术价值,D,Single Choice
+44,Basic,"什么是""PFP项目""（Profile Picture Project）？",专门用于社交媒体个人资料图片的NFT系列,摄影师创作的NFT系列,个人金融规划相关的NFT,用于专业摄影的NFT工具,A,Single Choice
+45,Basic,以下哪个不是知名的PFP项目？,Fidenza by Tyler Hobbs,Bored Ape Yacht Club,Doodles,Milady Maker,A,Single Choice
+46,Basic,"什么是""创世NFT""（Genesis NFT）？",项目中第一个铸造的NFT,2009年创建的NFT,圣经主题的NFT系列,最昂贵的NFT,A,Single Choice
+47,Basic,"什么是""空投资格""（Airdrop Eligibility）？",用户获得空投NFT所需满足的条件,NFT被空投的概率,空投活动的时间表,空投NFT的最大数量,A,Single Choice
+48,Basic,"什么是""铸造即挖矿""（Mint-to-Earn）？",通过挖矿获得NFT的过程,用户铸造NFT同时获得代币奖励的机制,使用算力铸造NFT的方法,NFT创作者的收益模式,B,Single Choice
+49,Basic,"什么是""质押NFT""（Staking NFT）？",使用NFT作为贷款抵押品,锁定NFT以获得奖励或额外权益,验证NFT真实性的过程,在二级市场出售NFT,B,Single Choice
+50,Basic,"什么是""NFT租赁""（NFT Renting）？",临时使用NFT而不转移所有权的机制,长期持有NFT的策略,NFT的分期付款购买方式,出租NFT创作技能的服务,A,Single Choice
+51,Basic,"什么是""蓝筹NFT""（Blue Chip NFT）？",蓝色主题的NFT系列,被认为具有长期价值和稳定性的知名NFT项目,由大型企业发行的NFT,价格超过1百万美元的NFT,B,Single Choice
+52,Basic,"什么是""NFT桥接""（NFT Bridging）？",将NFT从一个区块链转移到另一个区块链的过程,连接两个不同NFT的技术,NFT市场之间的合作,将物理资产与NFT连接的过程,A,Single Choice
+53,Basic,"什么是""铸造机器人""（Mint Bot）？",自动创建NFT艺术的AI工具,自动参与NFT铸造的程序，通常用于抢先铸造热门项目,NFT市场的客服机器人,检测虚假NFT的安全工具,B,Single Choice
+54,Basic,"什么是""gas战争""（Gas War）？",不同区块链之间的竞争,用户为了铸造热门NFT而相互抬高gas价格的现象,降低gas费用的技术竞赛,NFT平台之间的价格战,B,Single Choice
+55,Basic,"什么是""批量铸造""（Batch Minting）？",多人一起铸造NFT的社交活动,在一次交易中创建多个NFT以节省gas费用,使用批处理服务器铸造NFT,定期铸造NFT的时间表,B,Single Choice
+56,Basic,"什么是""铸造即抽奖""（Mint-and-Reveal）？",用户铸造NFT后才能看到其属性和外观的机制,铸造NFT同时参与抽奖活动,通过抽奖决定谁能铸造NFT的机制,揭示NFT创作者身份的活动,A,Single Choice
+57,Basic,"什么是""永久版税""（Perpetual Royalty）？",创作者终身获得的固定收入,创作者在NFT每次转售时永久获得的一定比例收益,永不过期的NFT许可证,平台收取的永久服务费,B,Single Choice
+58,Basic,什么是EIP-2981？,以太坊上的NFT交易标准,NFT版税信息标准,NFT元数据存储标准,NFT跨链传输协议,B,Single Choice
+59,Basic,"什么是""链上版税""（On-chain Royalty）？",只对链上交易收取的版税,直接编码在智能合约中并自动执行的版税机制,由区块链验证者收取的费用,用区块链代币支付的版税,B,Single Choice
+60,Basic,"什么是""链下版税""（Off-chain Royalty）？",对链下交易收取的版税,不是通过智能合约强制执行，而是依赖市场平台实施的版税,使用法定货币支付的版税,非区块链艺术品的版税,B,Single Choice
+61,Basic,"什么是""NFT铸造事件""（NFT Mint Event）？",NFT项目的线下聚会,特定时间开放铸造NFT的在线活动,NFT历史上的重要时刻,NFT相关的教育研讨会,B,Single Choice
+62,Basic,"什么是""社区驱动的NFT项目""（Community-driven NFT Project）？",只向特定社区成员出售的NFT,由社区投票决定发展方向和功能的NFT项目,社区成员共同创作的NFT,社区福利相关的NFT,B,Single Choice
+63,Basic,"什么是""NFT众筹""（NFT Crowdfunding）？",为NFT项目筹集资金,通过出售NFT为项目或事业筹集资金,多人合资购买昂贵的NFT,NFT创作者之间的资金池,B,Single Choice
+64,Basic,"什么是""NFT抽奖""（NFT Raffle）？",使用NFT作为奖品的抽奖活动,随机分配NFT特质的系统,NFT市场的折扣活动,通过购买彩票获得NFT的机会,A,Single Choice
+65,Basic,"什么是""NFT空投验证""（NFT Airdrop Verification）？",确认用户身份以参与空投的过程,验证已空投NFT的真实性,检查空投是否成功完成,空投前的技术测试,A,Single Choice
+66,Basic,"什么是""NFT流动性""（NFT Liquidity）？",NFT包含的液体资产,NFT能够被快速买卖的难易程度,NFT市场的交易量,NFT的价格波动性,B,Single Choice
+67,Basic,"什么是""NFT流动性池""（NFT Liquidity Pool）？",存储NFT相关资金的池子,提供NFT即时买卖的资金池机制,NFT创作者的共享资源,用于NFT交易的专用钱包,B,Single Choice
+68,Basic,"什么是""NFT分析工具""（NFT Analytics Tool）？",创建NFT的软件,提供NFT市场数据、趋势和指标的平台,NFT真伪鉴定工具,NFT税务计算器,B,Single Choice
+69,Basic,"什么是""NFT稀有度工具""（NFT Rarity Tool）？",使NFT变得稀有的软件,计算和比较NFT系列中各个NFT稀有度的工具,限制NFT铸造数量的机制,寻找稀有NFT的搜索引擎,B,Single Choice
+70,Basic,"什么是""NFT交易聚合器""（NFT Marketplace Aggregator）？",收集NFT交易数据的工具,整合多个NFT市场的列表和价格的平台,NFT交易所的联盟,批量购买NFT的工具,B,Single Choice
+71,Basic,在体育NFT中，最常见的应用场景是？,虚拟体育场馆,虚拟球星卡,球队收藏品,体育赛事门票,B,Single Choice
+72,Basic,以下哪些是ERC-721标准的核心功能？,代币铸造,代币分割,代币转移,制定所有权,A/C,Multiple Choice
+73,Basic,以下哪些是NFT元数据可能包含的信息？,价格,描述,图像链接,属性/特征,B/C/D,Multiple Choice
+74,Basic,以下哪些是常见的NFT存储解决方案？,IPFS,Arweave,Filecoin,中心化服务器,B/C/D,Multiple Choice
+75,Basic,以下哪些是NFT可能面临的存储问题？,链接失效,中心化服务器关闭,元数据丢失,内容审查,A/B/D,Multiple Choice
+76,Basic,以下哪些是常见的NFT市场平台？,OpenSea,NFTgo,Magiceden,Blur,A/C/D,Multiple Choice
+77,Basic,以下哪些是NFT在元宇宙中的应用？,虚拟土地,虚拟时装,虚拟食物,虚拟任务,A/B,Multiple Choice
+78,Basic,以下哪些因素会影响NFT的价值？,上交易所预期,稀有度,创作者声誉,NFT交易量,B/C,Multiple Choice
+79,Basic,以下哪些是NFT的环境问题？,能源消耗,NFT价值价值低,电子废物,区块链网络拥堵,A/C,Multiple Choice
+80,Basic,以下哪些是NFT的法律考虑因素？,知识产权,版权问题,税务影响,监管合规,A/C/D,Multiple Choice
+81,Basic,以下哪些是NFT的收入来源？,初始销售,二次销售版税,许可授权,相关商品销售,A/B/C/D,Multiple Choice
+82,Basic,以下哪些是NFT的社交功能？,社区成员身份,社交媒体个人资料,活动准入,社区投票权,A/B/C/D,Multiple Choice
+83,Basic,以下哪些是NFT的技术限制？,可扩展性问题,高交易费用,互操作性挑战,用户体验复杂,A/B/C,Multiple Choice
+84,Basic,以下哪些是NFT的安全风险？,智能合约漏洞,钓鱼攻击,假冒NFT,私钥丢失,A/B,Multiple Choice
+85,Basic,以下哪些是NFT的营销策略？,KOL合作,公开Mint,限量发行,路线图公布,A/D,Multiple Choice
+86,Basic,以下哪些是NFT的创新应用？,数字身份,游戏内资产,音乐发行,虚拟游戏,A/B,Multiple Choice
+87,Basic,以下哪些是NFT的交易类型？,合约交易,拍卖,流动性池交易,批量交易,B/D,Multiple Choice
+88,Basic,以下哪些是NFT项目评估的关键因素？,团队是否匿名,艺术大众普及度,市场热度,社区活跃度,A/C/D,Multiple Choice
+89,Basic,以下哪些是NFT的定价策略？,基于成本定价,基于市场定价,基于信仰定价,随机定价,A/B,Multiple Choice
+90,Basic,以下哪些是NFT的收藏策略？,基于喜好收藏,创作者收藏,投资收藏,实用性收藏,A/B/C/D,Multiple Choice
+91,Basic,以下哪些是NFT的版税设置考虑因素？,市场标准,项目长期规划,二级市场活跃度,社区信仰,A/B/C,Multiple Choice
+92,Basic,以下哪些是NFT的链上数据？,所有权记录,交易历史,代币ID,铸造时间,A/B/C/D,Multiple Choice
+93,Basic,以下哪些是NFT的跨链解决方案？,跨链桥,NFT做市,多链NFT标准,交易规则制定,A/C,Multiple Choice
+94,Basic,以下哪些是NFT的社区建设策略？,专属Logo,社区活动,社区福利,治理参与,A/B/C/D,Multiple Choice
+95,Basic,以下哪些是NFT的流动性解决方案？,NFT+MEME,NFT碎片化,NFT借贷,NFT做市,A/B/C,Multiple Choice
+96,Basic,以下哪些是NFT的创作工具？,数字艺术软件,NFT铸造平台,生成式AI工具,元数据编辑器,A/C,Multiple Choice
+97,Basic,以下哪些是NFT的展示方式？,数字展览,虚拟画廊,线下展览,AR/VR体验,A/B/D,Multiple Choice
+98,Basic,以下哪些是NFT的认证方法？,创作者验证,平台认证,链上签名,元数据验证,A/B/C/D,Multiple Choice
+99,Basic,以下哪些是NFT的未来发展趋势？,跨链互操作性,实用性增强,与物理资产结合,更加稀有,A/B/C,Multiple Choice
+100,Basic,以下哪些是NFT的教育资源？,线上视频,社区指南,市场指标,大学课程,A/B,Multiple Choice
+101,Intermediate,ERC-721和ERC-1155标准的主要区别是什么？,ERC-721每个代币都是唯一的，而ERC-1155允许同一ID下有多个同质化代币,ERC-721只能用于艺术品，而ERC-1155只能用于游戏物品,ERC-721消耗的gas更少,ERC-721不支持元数据,A,Single Choice
+102,Intermediate,以下哪个不是ERC-1155相比ERC-721的优势？,批量转账功能,更高的安全性,更低的gas成本,同时支持同质化和非同质化代币,B,Single Choice
+103,Intermediate,什么是ERC-2981标准？,NFT交易标准,NFT元数据标准,NFT版税标准,NFT借贷标准,C,Single Choice
+104,Intermediate,ERC-2981标准的主要目的是什么？,提高NFT交易速度,为NFT创作者提供统一的版税机制,减少NFT铸造成本,增强NFT的安全性,B,Single Choice
+105,Intermediate,以下哪个不是NFT元数据存储的常见问题？,中心化存储可能导致单点故障,链上存储成本高,IPFS链接可能失效,元数据无法更新,D,Single Choice
+106,Intermediate,"什么是""永久存储""（Permanent Storage）在NFT中的意义？",存储NFT的物理副本,确保NFT元数据和内容永久可访问,将NFT锁定在特定钱包中,防止NFT被转售,B,Single Choice
+107,Intermediate,Arweave与IPFS在NFT存储方面的主要区别是什么？,Arweave提供一次性付费的永久存储，而IPFS需要持续的激励机制,Arweave只能存储图像，而IPFS可以存储任何文件,Arweave是中心化的，而IPFS是去中心化的,Arweave免费，而IPFS需要付费,A,Single Choice
+108,Intermediate,"什么是""懒铸造""（Lazy Minting）的主要优势？",提高NFT的稀有度,降低创作者的初始成本，将铸造成本转移给买家,增加NFT的流动性,提高NFT的安全性,B,Single Choice
+109,Intermediate,"以下哪个平台首创了""懒铸造""概念？",OpenSea,Rarible,LooksRare,Foundation,B,Single Choice
+110,Intermediate,"什么是""ERC-721A""标准？",ERC-721的官方升级版,由Azuki开发的ERC-721扩展，优化了批量铸造的gas成本,专为音乐NFT设计的标准,支持跨链NFT的标准,B,Single Choice
+111,Intermediate,ERC-721A相比标准ERC-721的主要优势是什么？,更好的安全性,更低的批量铸造gas成本,更高的交易速度,更好的跨链兼容性,B,Single Choice
+112,Intermediate,"什么是""Manifold""在NFT创作中的作用？",一种新的NFT标准,一个允许创作者完全控制其智能合约的创作工具,一种NFT分析工具,一个NFT交易平台,B,Single Choice
+113,Intermediate,"什么是""动态NFT""（Dynamic NFT）的核心技术机制？",使用区块链外部数据源触发NFT变化,定期自动更新NFT图像,允许用户手动修改NFT,使用AI生成不断变化的NFT,A,Single Choice
+114,Intermediate,以下哪个不是动态NFT的常见实现方式？,使用预言机（Oracle）,链上随机数生成,时间触发器,中心化服务器控制,D,Single Choice
+115,Intermediate,"什么是""NFT碎片化""（Fractionalization）的主要技术实现方式？",物理切割NFT图像,创建代表原始NFT部分所有权的ERC-20代币,将一个NFT分解为多个独立的NFT,使用多重签名钱包共同持有NFT,B,Single Choice
+116,Intermediate,以下哪个项目不是专注于NFT碎片化的平台？,Fractional,Unicly,Niftex,Rarible,D,Single Choice
+117,Intermediate,"什么是""NFT抵押贷款""？",使用NFT作为贷款抵押品,为购买NFT提供的贷款,NFT创作者获得的预付款,使用NFT支付贷款利息,A,Single Choice
+118,Intermediate,以下哪个不是NFT抵押贷款平台？,NFTfi,Arcade,BendDAO,Uniswap,D,Single Choice
+119,Intermediate,"什么是""NFT版税执行""问题？",创作者无法收取足够版税的问题,某些市场不执行链上版税支付的问题,版税比例过高导致的交易减少问题,版税计算错误的技术问题,B,Single Choice
+120,Intermediate,2023年，哪个主要NFT市场宣布版税政策变更，引发了关于创作者权益的争议？,OpenSea,Blur,Foundation,SuperRare,B,Single Choice
+121,Intermediate,"什么是""创作者收益""（Creator Earnings）？",NFT创作者从初始销售中获得的收入,"OpenSea对""版税""的替代术语，指创作者从二次销售中获得的收益",NFT创作者的总收入,创作者从NFT相关商品中获得的收入,B,Single Choice
+122,Intermediate,"什么是""Operator Filter Registry""？",NFT交易所的评级系统,一个允许创作者阻止其NFT在不支付版税的市场上交易的工具,NFT创作者的认证系统,筛选垃圾NFT项目的工具,B,Single Choice
+123,Intermediate,"什么是""NFT市场聚合器""（NFT Marketplace Aggregator）？",收集NFT市场数据的分析工具,整合多个NFT市场的列表和价格的平台,NFT交易所的联盟,批量购买NFT的工具,B,Single Choice
+124,Intermediate,以下哪个是知名的NFT市场聚合器？,Gem,Blur,Genie,以上都是,D,Single Choice
+125,Intermediate,"什么是""NFT洗交易""（Wash Trading）？",清洗NFT元数据的过程,同一实体或合谋者之间来回交易NFT以人为抬高价格或交易量,将NFT从一个区块链转移到另一个区块链,使用加密货币购买NFT的过程,B,Single Choice
+126,Intermediate,以下哪个不是识别NFT洗交易的常见方法？,分析钱包地址之间的交易模式,检测异常的价格波动,监控交易频率,评估NFT的艺术价值,D,Single Choice
+127,Intermediate,"什么是""NFT版税追踪""工具？",帮助创作者追踪未支付版税的工具,监控NFT版税收入的分析工具,自动计算NFT版税的软件,确保版税支付给正确创作者的验证系统,B,Single Choice
+128,Intermediate,"什么是""链上版税""（On-chain Royalties）和""链下版税""（Off-chain Royalties）的主要区别？",链上版税金额更高,链上版税通过智能合约强制执行，链下版税依赖市场平台执行,链上版税只适用于以太坊，链下版税适用于所有区块链,链上版税支付给创作者，链下版税支付给平台,B,Single Choice
+129,Intermediate,"什么是""NFT元数据冻结""（Metadata Freezing）？",防止NFT被交易的机制,永久锁定NFT元数据使其不能被更改的过程,暂时隐藏NFT元数据的功能,将NFT元数据存储在冷钱包中的过程,B,Single Choice
+130,Intermediate,为什么NFT元数据冻结对收藏者很重要？,它增加了NFT的稀有度,它防止创作者或平台在铸造后改变NFT的属性或外观,它减少了存储成本,它使NFT更容易转售,B,Single Choice
+131,Intermediate,"什么是""NFT铸造机器人""（Minting Bot）？",自动创建NFT艺术的AI,自动参与NFT铸造的程序，通常用于抢先铸造热门项目,NFT市场的客服机器人,检测虚假NFT的安全工具,B,Single Choice
+132,Intermediate,以下哪个不是防范铸造机器人的常见方法？,CAPTCHA验证,白名单预售,荷兰式拍卖,增加NFT的价格,D,Single Choice
+133,Intermediate,"什么是""NFT稀有度狙击""（Rarity Sniping）？",创建极其稀有的NFT的技术,在NFT稀有度工具更新前识别并购买被低估的稀有NFT的策略,降低NFT稀有度的黑客攻击,提高NFT稀有度的营销策略,B,Single Choice
+134,Intermediate,"什么是""NFT元数据标准化""的重要性？",使NFT在不同平台上显示一致,降低NFT创建成本,提高NFT的稀有度,增加NFT的流动性,A,Single Choice
+135,Intermediate,"什么是""NFT铸造即抽奖""（Mint-and-Reveal）机制的潜在问题？",增加了用户参与的复杂性,可能导致用户铸造后对结果失望,创作者可能在揭示前根据已铸造情况调整稀有度分布,以上都是,D,Single Choice
+136,Intermediate,"什么是""确定性铸造""（Deterministic Minting）？",用户可以预先知道将获得哪个具体NFT的铸造机制,由AI决定NFT特征的铸造过程,只能铸造预定数量NFT的机制,基于用户历史确定铸造资格的系统,A,Single Choice
+137,Intermediate,"什么是""NFT空投钓鱼""（Airdrop Phishing）？",向随机钱包空投NFT的营销策略,使用虚假空投诱饵诱导用户连接钱包或提供私钥的诈骗,空投后立即出售NFT的策略,通过空投收集用户数据的合法营销手段,B,Single Choice
+138,Intermediate,以下哪个不是安全接收NFT空投的最佳实践？,使用专门的空投钱包,验证空投来源,在与未知智能合约交互前研究其代码,立即将空投的NFT转移到主钱包,D,Single Choice
+139,Intermediate,"什么是""NFT盲盒""（Blind Box）？",匿名创建的NFT,购买时内容未知的NFT包,隐藏元数据的NFT,没有视觉元素的NFT,B,Single Choice
+140,Intermediate,"什么是""链上随机性""（On-chain Randomness）在NFT铸造中的挑战？",随机数生成速度慢,区块链环境中真正的随机性难以实现，可能被矿工或验证者预测或操纵,随机性会导致稀有度分布不均,随机性增加了gas成本,B,Single Choice
+141,Intermediate,"什么是""可验证随机函数""（VRF）在NFT中的应用？",验证NFT真实性的函数,提供可密码学验证的随机性来决定NFT特征的系统,计算NFT稀有度的算法,验证NFT交易的函数,B,Single Choice
+142,Intermediate,以下哪个是提供可验证随机性服务的知名项目？,Chainlink VRF,Uniswap,OpenSea,Metamask,A,Single Choice
+143,Intermediate,以下哪些是ERC-1155相比ERC-721的优势？,转账功能,更低的gas成本,同时支持同质化和非同质化代币,单一合约管理多种代币类型,B/C/D,Multiple Choice
+144,Intermediate,NFT元数据可能存储在哪些位置？,钱包,IPFS,Arweave,中心云服务器上,B/C,Multiple Choice
+145,Intermediate,从艺术家角度看，NFT带来的价值包含哪些？,二次销售版税收入,艺术品无限扩印权利,直接与全球收藏者互动,艺术品交易的透明度提高,A/C/D,Multiple Choice
+146,Intermediate,"以下哪些是""懒铸造""（Lazy Minting）的优势？",降低创作者的初始成本,减少区块链上的无用数据,允许创作者测试市场需求,减少失败铸造的gas浪费,A/B/C/D,Multiple Choice
+147,Intermediate,以下哪些是ERC-721A的改进？,优化了批量铸造的gas成本,改进了代币枚举功能,减少了交易gas费用,简化了合约结构,A/B/D,Multiple Choice
+148,Intermediate,动态NFT可以基于哪些因素变化？,外部数据源输入,时间,新闻事件,用户交互,A/B/D,Multiple Choice
+149,Intermediate,NFT碎片化可能带来哪些好处？,降低参与门槛,增加流动性,实现部分所有权,创建新二级市场,A/B/C,Multiple Choice
+150,Intermediate,NFT抵押贷款平台通常提供哪些功能？,点对点贷款,流动性池,贷款期限设置,清算机制,A/B/C/D,Multiple Choice
+151,Intermediate,以下哪些是NFT版税执行的挑战？,跨平台执行困难,二级市场可能绕过版税,链上用智能合约执行,跨链执行困难,A/B/D,Multiple Choice
+152,Intermediate,NFT市场聚合器通常提供哪些功能？,跨平台搜索,价格比较,批量购买,交易历史分析,A/B/C/D,Multiple Choice
+153,Intermediate,以下哪些是识别NFT洗交易的指标？,同一地址之间的循环交易,异常的价格波动,不合理的交易频率,资金流向分析,A/C,Multiple Choice
+154,Intermediate,以下哪些是NFT元数据冻结的方法？,使用不可变存储解决方案,在合约中锁定元数据URI,使用硬件系统,时间锁定机制,A/B/D,Multiple Choice
+155,Intermediate,以下哪些是防范NFT铸造机器人的策略？,CAPTCHA验证,白名单预售,荷兰式拍卖,交易限流,A/C,Multiple Choice
+156,Intermediate,NFT稀有度计算可能考虑哪些因素？,特征稀有度,特征美学,统计分布,特征数量,A/C/D,Multiple Choice
+157,Intermediate,"以下哪些是""铸造即抽奖""（Mint-and-Reveal）机制的特点？",初始元数据隐藏,延迟揭示,使用随机性,批量处理,A/B/C/D,Multiple Choice
+158,Intermediate,关于NFT的监管问题，下列哪些说法是正确的？,如果NFT被当作证券发行，可能需要遵守证券法等金融监管要求,NFT交易可能被用于洗钱，因此一些平台开始实施KYC/AML等合规措施, 目前各国已普遍明确将NFT归类并制定了统一法规,通过智能合约交易NFT可以自动确保符合所有法律法规,A/B,Multiple Choice
+159,Intermediate,链上随机性在NFT中面临哪些挑战？,矿工可能预测或操纵,区块时间戳可被操纵,真随机性难以实现,需要gas,A/B/C,Multiple Choice
+160,Intermediate,可验证随机函数（VRF）在NFT中有哪些应用？,创造NFT特征,公平分配稀有度,随机选择白名单,游戏化元素,B/C,Multiple Choice
+161,Advanced,什么是ERC-6551标准？,一种新的NFT交易协议,为NFT提供智能合约功能的代币绑定账户标准,一种NFT版税分配标准,一种跨链NFT标准,B,Single Choice
+162,Advanced,ERC-6551的主要创新是什么？,降低NFT交易成本,使每个NFT都能拥有自己的智能合约账户，持有资产和执行交易,提高NFT的安全性,简化NFT的创建过程,B,Single Choice
+163,Advanced,以下哪个不是ERC-6551的潜在应用场景？,游戏角色拥有自己的物品背包,NFT能够持有和管理其他资产,为NFT创建链上身份和声誉,降低NFT铸造成本,D,Single Choice
+164,Advanced,"什么是""账户抽象""（Account Abstraction）与NFT的关系？",使NFT更加抽象和概念化,允许NFT作为智能合约账户，无需用户直接支付gas,简化NFT的元数据结构,使NFT的视觉表现更加抽象,B,Single Choice
+165,Advanced,"什么是""Lens Protocol""？",一种NFT摄影标准,一个基于NFT的去中心化社交图谱协议,一种NFT镜像技术,一个NFT市场聚合器,B,Single Choice
+166,Advanced,Lens Protocol的核心创新是什么？,使用NFT代表社交媒体个人资料、关注关系和内容,提供高清NFT图像,降低NFT交易成本,增强NFT的隐私保护,A,Single Choice
+167,Advanced,以下哪个不是Lens Protocol的主要组件？,Profiles（个人资料）,Publications（发布内容）,Follows（关注关系）,Transactions（交易记录）,D,Single Choice
+168,Advanced,"什么是""模块化NFT架构""（Modular NFT Architecture）？",可以物理组装的NFT,将NFT功能分解为可互换和可升级组件的设计方法,一种NFT展示系统,一种NFT分类方法,B,Single Choice
+169,Advanced,模块化NFT架构的主要优势是什么？,降低NFT创建成本,允许在不替换整个NFT的情况下更新或扩展特定功能,提高NFT的稀有度,简化NFT的交易过程,B,Single Choice
+170,Advanced,"什么是""NFT抵押借贷协议""的清算机制？",当NFT价值下降时出售NFT的过程,当借款人违约时，将NFT抵押品转移给贷款人或拍卖的机制,计算NFT价值的算法,取消NFT贷款的程序,B,Single Choice
+171,Advanced,以下哪个是NFT借贷协议面临的主要挑战？,NFT价值评估的困难性,缺乏标准化的清算流程,NFT流动性低于同质化代币,以上都是,D,Single Choice
+172,Advanced,"什么是""Blend""协议？",一种NFT混合创作工具,一个允许用户使用NFT作为抵押品进行借贷的协议,一种NFT颜色混合标准,一个NFT交易聚合平台,B,Single Choice
+173,Advanced,Blend协议的创新点是什么？,支持多种NFT集合作为抵押品,提供固定利率和期限的贷款,引入流动性池模式而非点对点模式,以上都是,D,Single Choice
+174,Advanced,"什么是""NFT衍生品""（NFT Derivatives）？",从原始NFT创建的副本,基于现有NFT价值或特性创建的金融工具,NFT的物理复制品,NFT的二次创作,B,Single Choice
+175,Advanced,以下哪个不是NFT衍生品的例子？,NFT期货合约,NFT指数基金,NFT期权,NFT空投,D,Single Choice
+176,Advanced,"什么是""NFT指数""（NFT Index）？",衡量单个NFT价值的指标,代表一篮子NFT资产价值的金融工具,NFT市场的搜索引擎,NFT稀有度的计算方法,B,Single Choice
+177,Advanced,"什么是""链上NFT期权""（On-chain NFT Options）？",在区块链上记录的购买或出售特定NFT的权利合约,更改NFT特性的选项,NFT的不同显示选项,NFT的交易选项,A,Single Choice
+178,Advanced,"什么是""NFT租赁协议""（NFT Rental Protocol）的主要技术挑战？",确保租赁期满后NFT自动归还,防止租用者在租赁期间转移NFT,确定合理的租金价格,以上都是,D,Single Choice
+179,Advanced,以下哪个不是NFT租赁的常见实现方式？,包装NFT（Wrapped NFT）,使用权委托,时间锁定合约,物理交付,D,Single Choice
+180,Advanced,"什么是""NFT抵押品评估""（NFT Collateral Valuation）的主要方法？",基于历史销售数据,基于稀有度评分,基于流动性指标,以上都是,D,Single Choice
+181,Advanced,"什么是""零知识NFT""（Zero-Knowledge NFT）？",不包含任何元数据的NFT,使用零知识证明技术保护隐私或验证属性的NFT,匿名创建的NFT,没有视觉表现的NFT,B,Single Choice
+182,Advanced,零知识NFT的主要应用场景是什么？,隐私保护的身份验证,不公开特定属性的收藏品,保密交易历史的NFT,以上都是,D,Single Choice
+183,Advanced,"什么是""NFT互操作性""（NFT Interoperability）？",NFT在不同应用和生态系统之间无缝工作的能力,不同NFT之间的交互能力,NFT与物理资产的连接,NFT的跨平台显示能力,A,Single Choice
+184,Advanced,以下哪个不是提高NFT互操作性的方法？,跨链桥接,统一元数据标准,共享身份系统,增加NFT稀有度,D,Single Choice
+185,Advanced,"什么是""NFT数据可组合性""（NFT Data Composability）？",将多个NFT组合成一个的能力,NFT数据能够被其他应用程序和智能合约无缝读取和使用的特性,NFT的分层数据结构,NFT元数据的压缩技术,B,Single Choice
+186,Advanced,"什么是""NFT身份验证""（NFT Identity Verification）？",验证NFT创作者身份的过程,使用NFT作为身份凭证的系统,确认NFT真实性的方法,将用户身份与NFT关联的过程,B,Single Choice
+187,Advanced,以下哪个不是NFT身份系统的潜在优势？,用户对个人数据的控制,可验证的声誉系统,跨平台身份,中心化管理,D,Single Choice
+188,Advanced,"什么是""灵魂绑定代币""（Soulbound Tokens/SBT）？",与特定游戏角色绑定的NFT,不可转让的代币，永久绑定到特定钱包地址,具有宗教主题的NFT,死后可继承的NFT,B,Single Choice
+189,Advanced,灵魂绑定代币的主要用途是什么？,游戏内物品,数字身份和声誉的证明,投资工具,社交媒体个人资料,B,Single Choice
+190,Advanced,"什么是""NFT治理""（NFT Governance）？",监管NFT市场的法律框架,使用NFT进行去中心化决策的系统,NFT项目的管理结构,控制NFT创建的规则,B,Single Choice
+191,Advanced,以下哪个不是NFT治理的常见模式？,持有者投票,稀有度加权投票,代表制治理,中心化决策,D,Single Choice
+192,Advanced,"什么是""NFT物理资产绑定""（NFT-Physical Asset Binding）？",将NFT打印成物理艺术品,将NFT与现实世界的物品关联，作为所有权或真实性证明,使用物理设备存储NFT,在物理位置展示NFT的技术,B,Single Choice
+193,Advanced,以下哪个不是NFT物理资产绑定的常见技术？,NFC标签,QR码,序列号验证,区块链分片,D,Single Choice
+194,Advanced,"什么是""NFT元宇宙互操作性""（NFT Metaverse Interoperability）？",在不同元宇宙平台之间转移和使用NFT的能力,NFT在元宇宙中的显示质量,元宇宙中NFT的创建过程,NFT与元宇宙用户的交互方式,A,Single Choice
+195,Advanced,以下哪个项目专注于提供跨元宇宙NFT标准？,Decentraland,The Sandbox,Metametaverse,Roblox,C,Single Choice
+196,Advanced,"什么是""NFT叙事层""（NFT Narrative Layer）？",NFT的视觉故事元素,增强NFT收藏价值的背景故事和世界观,NFT描述的文本部分,NFT营销策略,B,Single Choice
+197,Advanced,"什么是""链上SVG NFT""？",使用可缩放矢量图形完全存储在区块链上的NFT,一种NFT文件格式,一种NFT压缩技术,一种NFT显示标准,A,Single Choice
+198,Advanced,链上SVG NFT的主要优势是什么？,更高的分辨率,完全链上存储，消除了对外部存储的依赖,更低的创建成本,更好的兼容性,B,Single Choice
+199,Advanced,"什么是""NFT版税分配协议""？",确定NFT初始销售价格的系统,自动将版税分配给多个贡献者的智能合约系统,NFT交易税的计算方法,版税支付时间表,B,Single Choice
+200,Advanced,"什么是""NFT抗女巫攻击""（Sybil-resistant NFT）机制？",防止单个用户创建多个身份获取不公平优势的系统,防止NFT被复制的技术,抵抗黑客攻击的NFT安全措施,防止NFT价格操纵的机制,A,Single Choice
+201,Advanced,以下哪些是ERC-6551的核心功能？,为NFT创建智能合约账户,允许NFT持有资产,使NFT能够执行交易,建立NFT的链上身份,A/B/C/D,Multiple Choice
+202,Advanced,以下哪些属于NFT领域的新兴趋势？,音乐NFT让粉丝直接投资音乐作品，并有机会分享歌曲版税收益,Soulbound Token(灵魂绑定代币)作为特殊NFT用于证明个人资历且不可转让,NFT与DeFi结合，例如将NFT碎片化并用于流动性挖矿或作为借贷抵押物,NFT技术已经完全解决了数字资产的版权归属和假冒问题,A/B/C,Multiple Choice
+203,Advanced,以下哪些是模块化NFT架构的优势？,功能可升级性,组件重用,简化复杂功能开发,降发行成本,A/B/C,Multiple Choice
+204,Advanced,NFT借贷协议面临哪些挑战？,NFT价值评估困难,流动性低,清算机制复杂,价格有波动，风险稳定,A/B/C,Multiple Choice
+205,Advanced,以下哪些是NFT衍生品的类型？,NFT期货,NFT期权,NFT指数,NFT合成资产,A/B/C/D,Multiple Choice
+206,Advanced,NFT租赁协议需要解决哪些技术问题？,使用权与所有权分离,租赁期满自动归还,NFT被篡改,NFT的版税发放,A/B,Multiple Choice
+207,Advanced,零知识NFT可以应用于哪些场景？,隐私保护的身份验证,选择性披露的收藏品,匿名所有权证明,保密交易历史,A/B/C/D,Multiple Choice
+208,Advanced,提高NFT互操作性的方法包括哪些？,统一元数据标准,跨链桥接技术,共享身份系统,不开放API接口,A/B/C,Multiple Choice
+209,Advanced,灵魂绑定代币（SBT）可以用于哪些场景？,教育证书,专业资格认证,组织成员身份,个人成就记录,A/B/C/D,Multiple Choice
+210,Advanced,NFT物理资产绑定可以使用哪些技术？,NFC标签,QR码,序列号验证,DNA修改,A/B/C,Multiple Choice
+211,Advanced,如何设计一个抗女巫攻击的NFT空投方案？,使用Proof of Humanity验证,实施基于声誉的资格筛选,要求链上活动历史证明,结合多因素验证机制,A/C/D,Multiple Choice
+212,Advanced,以下哪些是NFT叙事层的构成要素？,背景故事,角色发展,世界观设定,社区活跃度,A/B/C,Multiple Choice

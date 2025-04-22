@@ -1,0 +1,233 @@
+No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
+1,Basic,什么是DAO？,去中心化自治组织,去中心化金融平台,分布式计算网络,去中心化社交平台,A,Single Choice
+2,Basic,DAO的核心特征是什么？,传统股权结构,基于智能合约的自治治理,中心化决策委员会,实体总部,B,Single Choice
+3,Basic,第一个被广泛认可的DAO是哪一个？,Compound,Uniswap,The DAO,Aragon,C,Single Choice
+4,Basic,The DAO项目失败的主要原因是什么？,市场兴趣不足,智能合约漏洞被黑客利用,监管政策禁止,团队内讧,B,Single Choice
+5,Basic,DAO通常使用什么机制做出集体决策？,CEO独断,随机抽签,代币持有者投票,外部审计,C,Single Choice
+6,Basic,"什么是""治理代币""？",政府发行的数字货币,赋予DAO投票权的代币,仅用于支付交易费的代币,稳定币,B,Single Choice
+7,Basic,以下哪项不是DAO的常见应用领域？,投资基金,协议治理,社会俱乐部,中心化银行,D,Single Choice
+8,Basic,"什么是""提案""在DAO中的作用？",会议记录,成员提交的需投票的行动计划,营销方案,财务报表,B,Single Choice
+9,Basic,DAO治理通常在哪里进行？,线下会议,仅通过邮件,在线论坛和治理门户,实体办公室,C,Single Choice
+10,Basic,"什么是""链上治理""？",政府监管流程,区块链外的讨论过程,使用区块链记录并执行决策的过程,矿工控制决策,A,Single Choice
+11,Basic,"什么是""链下治理""？",完全匿名决策,在区块链外讨论但可能链上执行,仅由银行控制,完全纸质化,B,Single Choice
+12,Basic,"什么是""多签钱包""？",需要多个私钥授权的钱包,支持多币种的钱包,仅用于存储NFT的钱包,单人控制的钱包,A,Single Choice
+13,Basic,DAO通常使用多签钱包的主要原因是什么？,提高交易速度,降低手续费,增强资金安全和去中心化决策,简化操作,C,Single Choice
+14,Basic,"什么是""投票权重""？",政府分配的配额,基于代币持有量或其他因素的影响力,投票机重量,选民年龄,B,Single Choice
+15,Basic,"什么是""代币投票""系统？",实体代币投票,投票权与代币数量正相关,仅特定地址投票,选举代币设计,B,Single Choice
+16,Basic,"什么是""一人一票""系统？",钱包地址限投一票,仅创始人投票,每个验证身份者有平等投票权,每日限投,C,Single Choice
+17,Basic,"什么是""委托投票""？",政府指定投票,代币持有者委托投票权给他人,强制投票系统,仅特定软件投票,B,Single Choice
+18,Basic,"什么是""投票门槛""？",最低代币持有量,最低赞成票百分比,投票站位置,投票年龄限制,B,Single Choice
+19,Basic,"什么是""法定人数""在DAO投票中的含义？",提案创建者声誉,最低参与率,最大成员数,最大提案数,B,Single Choice
+20,Basic,"什么是""提案创建门槛""？",最低代币条件,文档长度限制,审核时间,资金上限,A,Single Choice
+21,Basic,"什么是""治理论坛""？",政府官网,成员讨论提案的在线平台,区块链智能合约,实体会议室,B,Single Choice
+22,Basic,"什么是""投票期""？",投票时间窗口,投票权有效期,选举间隔,计票时间,A,Single Choice
+23,Basic,"什么是""时间锁""在DAO治理中的作用？",限制投票时间,延迟执行的安全机制,DAO存在时间计时器,讨论时间记录,B,Single Choice
+24,Basic,"什么是""治理最小化""？",减少成员数量,简化界面设计,逐步减少主动治理需求,降低代币价值,C,Single Choice
+25,Basic,"什么是""元治理""？",虚拟世界治理,关于治理规则的治理,人工智能控制,多DAO协同,A,Single Choice
+26,Basic,"什么是""二次投票""（Quadratic Voting）？",每人两票,投票成本与票数平方成正比,两轮投票,仅两个选项,B,Single Choice
+27,Basic,二次投票的主要优势是什么？,简化计票,减少投票总数,允许表达强度偏好并抑制财富集中,完全匿名,C,Single Choice
+28,Basic,"什么是""凸性投票""（Conviction Voting）？",基于犯罪记录投票,投票权随时间累积,仅允许强烈支持者投票,视频会议投票,B,Single Choice
+29,Basic,凸性投票的主要优势是什么？,完全匿名,无需代币,连续表达偏好并奖励长期承诺,零成本,C,Single Choice
+30,Basic,"什么是""霍尔登投票""（Holographic Voting）？",全息技术投票,结合预测市场与投票,虚拟现实投票,年龄加权投票,B,Single Choice
+31,Basic,"什么是""DAO宪法""？",国家法律,定义DAO原则的文档,技术白皮书,营销计划,B,Single Choice
+32,Basic,"什么是""子DAO""？",儿童DAO,由主DAO创建的子组织,失败项目,测试版本,B,Single Choice
+33,Basic,"什么是""DAO孵化器""？",创建和发展DAO的组织,DAO办公室,特殊钱包,DAO备份,A,Single Choice
+34,Basic,"什么是""DAO工具""？",智能合约修复设备,支持DAO创建和管理的软件,仅创始人硬件,营销材料,B,Single Choice
+35,Basic,以下哪个不是常见的DAO工具平台？,Aragon,DAOhaus,Colony,Bitcoin,D,Single Choice
+36,Basic,"什么是""DAO财库""？",实体保险库,由智能合约管理的资金池,密码数据库,历史记录系统,B,Single Choice
+37,Basic,"什么是""代币分配""在DAO中的重要性？",创始人薪酬,交易费用,营销策略,决定治理权力分布,D,Single Choice
+38,Basic,"什么是""空投""在DAO启动中的作用？",无人机送代币,创始人退出方式,DAO广告,向用户分发治理代币,D,Single Choice
+39,Basic,"什么是""代币解锁""或""归属计划""？",代币加密,代币改版,代币销毁,随时间释放代币,D,Single Choice
+40,Basic,"什么是""提案类型""？",文档格式,加密级别,颜色编码,资金分配等类别,D,Single Choice
+41,Basic,"什么是""社交共识""在DAO中的作用？",社交媒体策略,营销策略,强制社交活动,非正式讨论形成的共同协议,D,Single Choice
+42,Basic,"什么是""硬分叉""在DAO治理中的含义？",硬件钱包要求,金属投票工具,困难决策过程,因治理分歧分裂为两个版本,D,Single Choice
+43,Basic,"什么是""治理攻击""？",政府监管,利用漏洞控制DAO,DDoS攻击,破坏办公室,B,Single Choice
+44,Basic,"什么是""治理参与率""？",政府参与比例,代币或成员参与比例,成员活跃度,社交媒体互动率,B,Single Choice
+45,Basic,低治理参与率可能导致什么问题？,网络拥堵,代币价格上涨,决策不具代表性并增加攻击风险,交易加速,C,Single Choice
+46,Basic,"什么是""代币经济学""在DAO中的重要性？",交易费用,代币供应、分配和激励设计,代币名称设计,交易所上市,B,Single Choice
+47,Basic,"什么是""治理最小可行产品""（Governance MVP）？",最小投票数,初始简化治理系统,最便宜工具,政府标准,B,Single Choice
+48,Basic,"什么是""治理提案""的典型生命周期？",创建-存档-删除,起草-讨论-提交-投票-执行,编码-测试-部署,公告-投票-遗忘,B,Single Choice
+49,Basic,"什么是""温度检查""在DAO治理中的作用？",监控服务器温度,非约束性初步投票,情绪调查,气候控制,B,Single Choice
+50,Basic,"什么是""信号提案""？",改善网络信号,非约束性表达社区意见,仅由信号员创建,摩尔斯电码提案,B,Single Choice
+51,Basic,"什么是""治理协调员""或""管家""角色？",清洁工,组织治理活动的成员,法律代表,网站维护人员,B,Single Choice
+52,Basic,"什么是""治理仪表板""？",车载设备,显示治理活动的用户界面,财务报表,创始人控制面板,B,Single Choice
+53,Basic,"什么是""链上行动""？",区块链操作,实体活动,矿工操作,链接DAO,A,Single Choice
+54,Basic,"什么是""提案执行""？",惩罚创建者,实施通过的决策,删除失败提案,提案展示,B,Single Choice
+55,Basic,"什么是""自动执行""？",自动创建提案,自动投票,通过智能合约自动执行提案,做一个姿势,A,Single Choice
+56,Basic,"什么是""治理风险""？",政府关闭,治理相关潜在问题,健康风险,仅代币价格风险,B,Single Choice
+57,Basic,"什么是""俘获风险""在DAO中的含义？",成员被绑架,单实体控制决策,资金被盗,合约复制,B,Single Choice
+58,Basic,"什么是""治理疲劳""？",身体疲劳,网站加载慢,过多提案导致参与下降,代币价格下跌,C,Single Choice
+59,Basic,"什么是""治理激励""？",税收减免,强制投票惩罚,参与奖励机制,仅创始人奖金,C,Single Choice
+60,Basic,"什么是""治理挖矿""？",采矿设备治理,矿场投票,参与治理获代币奖励,数据挖掘,C,Single Choice
+61,Basic,"什么是""代表民主""在DAO中的应用？",政府代表参与,身份验证系统,代币持有者选举代表,仅民主国家运行,C,Single Choice
+62,Basic,"什么是""流动民主""？",变化规则系统,流动性治理,直接民主与委托结合,水上投票,C,Single Choice
+63,Basic,"什么是""治理代币化""？",投票数字化,政府接管,用代币行使治理权,文档模板,C,Single Choice
+64,Basic,"什么是""链下投票，链上执行""模式？",户外投票,禁止在线投票,链下投票链上执行,仅矿工执行,C,Single Choice
+65,Basic,"什么是""治理代币的实用性""？",物理用途,易用性,额外权益如费用分享,交易速度,C,Single Choice
+66,Basic,"什么是""提案否决权""？",取消自己投票,特定实体阻止执行,删除提案,反对票权利,B,Single Choice
+67,Basic,"什么是""紧急关闭""机制？",紧急关办公室,安全威胁时暂停功能,快速结束投票,销毁代币,B,Single Choice
+68,Basic,"什么是""治理迁移""？",成员搬迁,转移治理系统,更名,换标志,B,Single Choice
+69,Basic,"什么是""治理审计""？",税务检查,评估治理有效性和安全性的正式审查,计票,仅财务审查,B,Single Choice
+70,Basic,"什么是""治理文档""？",标志文件,描述治理规则的文档,政府许可证,创始人秘密文件,B,Single Choice
+71,Basic,以下哪些是DAO的核心特征？,去中心化决策,基于区块链的透明度,代码执行的规则,社区所有权,A/B/D,Multiple Choice
+72,Basic,DAO可能面临哪些挑战？,低参与度,法律不确定性,技术复杂性,协调效率,A/B/C,Multiple Choice
+73,Basic,以下哪些是常见的DAO类型？,协议DAO,投资DAO,社会DAO,服务DAO,A/C/D,Multiple Choice
+74,Basic,多签钱包在DAO中可以用于哪些目的？,管理财库,执行提案,更新合约,管理参数,A/B/C/D,Multiple Choice
+75,Basic,以下哪些是常见的DAO投票机制？,代币加权投票,一人一票,二次投票,凸性投票,A/B/C/D,Multiple Choice
+76,Basic,DAO治理提案可能包括哪些类型？,资金分配,参数更改,技术升级,战略决策,A/B/C/D,Multiple Choice
+77,Basic,以下哪些是DAO治理工具平台？,Aragon,DAOhaus,Colony,Snapshot,B/C,Multiple Choice
+78,Basic,治理代币可能具有哪些功能？,投票权,费用分享,访问功能,质押奖励,A/B/C/D,Multiple Choice
+79,Basic,DAO财库可能包含哪些类型的资产？,原生代币,其他加密货币,NFT,流动性代币,A/B/C/D,Multiple Choice
+80,Basic,以下哪些是DAO治理参与的障碍？,技术复杂性,时间成本,代币门槛,信息不对称,C/D,Multiple Choice
+81,Basic,以下哪些是提高DAO治理参与度的策略？,治理激励,简化界面,教育文档,委托投票,A/D,Multiple Choice
+82,Basic,以下哪些是DAO治理风险？,治理攻击,治理疲劳,富人统治,执行失败,A/B/C/D,Multiple Choice
+83,Basic,DAO的代币分配可能包括哪些类别？,社区分配,团队和顾问,投资者,生态系统,A/B/C/D,Multiple Choice
+84,Basic,以下哪些是DAO治理的最佳实践？,透明决策,明确指南,多层次治理,定期审查,A/B/C/D,Multiple Choice
+85,Basic,以下哪些是DAO可能使用的链下协调工具？,Discord,Discourse论坛,Telegram,GitHub,A/C/D,Multiple Choice
+86,Basic,以下哪些因素可能影响DAO治理决策的质量？,信息可及性,专业知识多样性,讨论质量,利益一致性,A/B/C/D,Multiple Choice
+87,Basic,以下哪些是DAO治理的安全考虑因素？,智能合约安全,多签控制,时间锁,紧急关闭,A/B/C/D,Multiple Choice
+88,Basic,以下哪些是DAO的法律考虑因素？,实体结构,监管合规,成员责任,跨境问题,A/B/C,Multiple Choice
+89,Basic,以下哪些是DAO治理的透明度机制？,链上投票记录,公开讨论,财务透明,会议记录,A/B/C/D,Multiple Choice
+90,Basic,以下哪些是DAO的收入来源？,协议费用,代币销售,服务收费,投资回报,A/C/D,Multiple Choice
+91,Basic,以下哪些是DAO的支出类别？,开发资助,运营成本,营销活动,流动性激励,A/B/D,Multiple Choice
+92,Basic,以下哪些是DAO的扩展挑战？,决策效率,成员协调,治理复杂性,技术限制,A/B/C,Multiple Choice
+93,Basic,以下哪些是DAO的社区建设策略？,贡献者激励,社区活动,教育计划,透明沟通,A/B/D,Multiple Choice
+94,Basic,以下哪些是评估DAO健康状况的指标？,治理参与率,财库增长,贡献者多样性,提案质量,A/C/D,Multiple Choice
+95,Basic,以下哪些是DAO的退出机制？,代币赎回,提案退出权,分叉选项,解散投票,A/B/D,Multiple Choice
+96,Basic,以下哪些是DAO的入职流程可能包含的元素？,社区介绍,治理指南,贡献机会,代币获取,A/B/C/D,Multiple Choice
+97,Basic,以下哪些是DAO的知识管理策略？,文档库,教育内容,决策记录,专业知识地图,A/B/C,Multiple Choice
+98,Basic,以下哪些是DAO的冲突解决机制？,社区调解,投票决定,仲裁系统,分叉选项,A/B/C/D,Multiple Choice
+99,Basic,以下哪些是DAO的长期可持续性因素？,财务健康,治理适应性,社区活力,价值创造,A/C/D,Multiple Choice
+100,Basic,以下哪些是DAO与传统组织的区别？,所有权分布,决策机制,透明度水平,进入/退出自由,A/B/C/D,Multiple Choice
+101,Intermediate,"什么是""二次投票""（Quadratic Voting）的数学原理？",投票成本与票数成正比,投票成本与票数平方成正比,投票成本与票数立方成正比,投票成本与票数对数成正比,B,Single Choice
+102,Intermediate,"二次投票如何解决""金钱统治""问题？",禁止大额持有者,使边际成本递增,征收额外费用,限制投票数,B,Single Choice
+103,Intermediate,二次投票的主要局限性是什么？,计算复杂度高,存储空间需求大,易受女巫攻击,无法在以太坊实现,C,Single Choice
+104,Intermediate,凸性投票的核心机制是什么？,线性增长,指数增长,对数增长,凸函数累积后平稳,D,Single Choice
+105,Intermediate,凸性投票特别适合解决什么类型的治理问题？,紧急决策,二元选择,连续资源分配,参数调整,C,Single Choice
+106,Intermediate,霍尔登投票的创新点是什么？,全息技术,结合预测市场与投票,3D展示结果,匿名投票,B,Single Choice
+107,Intermediate,"霍尔登投票中的""预测者""角色有什么作用？",预测代币价格,预测社区利益提案,预测投票结果,预测市场趋势,B,Single Choice
+108,Intermediate,Tao投票是什么？,道家哲学系统,争议投票机制,匿名投票系统,时间投票系统,B,Single Choice
+109,Intermediate,Tao投票的主要优势是什么？,简化流程,提供争议解决机制,减少投票数,消除女巫攻击,B,Single Choice
+110,Intermediate,委托投票的主要优势是什么？,减少区块链交易,提高参与率和专家利用,简化界面,降低成本,B,Single Choice
+111,Intermediate,委托投票面临的主要挑战是什么？,技术复杂度,权力集中和委托人责任,存储需求,区块链不兼容,B,Single Choice
+112,Intermediate,链下投票，链上执行模式的主要优势是什么？,更安全,节省gas费用,更匿名,更快,B,Single Choice
+113,Intermediate,链下投票如何确保结果有效性？,中心化验证,加密签名和验证,实名投票,限制参与者,B,Single Choice
+114,Intermediate,时间锁的主要作用是什么？,限制投票时间,延迟执行以供成员响应,确定DAO存在时间,计算讨论时间,B,Single Choice
+115,Intermediate,时间锁的典型延迟时间范围通常是多少？,几分钟,几小时,1-7天,30天以上,C,Single Choice
+116,Intermediate,治理代币经济学的关键考虑因素是什么？,代币名称和标志,供应、分配、通胀机制与激励对齐,交易所策略,技术实现,B,Single Choice
+117,Intermediate,代币供应通胀对DAO治理的潜在影响是什么？,提高参与率,稀释投票权并影响长期激励,无影响,提高提案质量,B,Single Choice
+118,Intermediate,治理攻击向量指的是什么？,政府监管,可被利用的漏洞和方法,病毒攻击,物理攻击,B,Single Choice
+119,Intermediate,闪电贷治理攻击是什么？,闪电网络攻击,利用闪电贷进行治理攻击,闪光灯干扰,快速创建提案,B,Single Choice
+120,Intermediate,治理最小化的核心理念是什么？,减少成员数量,减少提案数量,减少主动治理需求转向自动化,简化界面,C,Single Choice
+121,Intermediate,治理最小化的主要好处是什么？,降低运营成本,减少攻击面和协调成本,提高代币价值,简化营销,B,Single Choice
+122,Intermediate,元治理指的是什么？,虚拟世界治理,关于治理系统的治理,AI控制,多DAO协同,B,Single Choice
+123,Intermediate,元治理特别关注哪些问题？,代币价格,治理参数、流程设计,营销策略,技术实现,B,Single Choice
+124,Intermediate,治理分叉是什么？,叉子投票,因治理分歧分裂为两个版本,工具分支开发,餐厅会议,B,Single Choice
+125,Intermediate,治理分叉通常由什么触发？,代码错误,项目方向分歧,服务器故障,市场波动,B,Single Choice
+126,Intermediate,多签阈值指的是什么？,多签钱包容量,执行交易所需签名数量或比例,创建成本,最大签名者数量,B,Single Choice
+127,Intermediate,设置多签阈值需平衡哪些因素？,成本与速度,安全与操作效率,匿名与透明,兼容性与复杂度,B,Single Choice
+128,Intermediate,治理参与率下降现象是什么？,政府减少监管,随时间推移参与度下降趋势,成员减少,应用性能下降,B,Single Choice
+129,Intermediate,治理参与率下降的主要原因是什么？,代币价格下跌,治理疲劳、专业知识要求和机会成本,技术故障,营销不足,B,Single Choice
+130,Intermediate,治理激励是什么？,税收减免,参与奖励机制,强制投票惩罚,创始人奖金,B,Single Choice
+131,Intermediate,以下哪种不是常见的治理激励机制？,投票奖励,提案创建奖励,强制参与惩罚,声誉系统,C,Single Choice
+132,Intermediate,治理捕获是什么？,记录会议,单实体控制决策,保存文档,政府接管,B,Single Choice
+133,Intermediate,防止治理捕获的策略包括什么？,关闭DAO,分散投票权、机制设计和激励参与,增加代币价格,限制提案数量,B,Single Choice
+134,Intermediate,提案流程设计的关键考虑因素是什么？,提案视觉外观,平衡参与可及性、决策质量与效率,提案长度,技术平台,B,Single Choice
+135,Intermediate,多层次提案流程的典型阶段是什么？,讨论-温度检查-正式提案-投票-执行,创建-删除-存档,编码-测试-部署,宣布-投票-遗忘,A,Single Choice
+136,Intermediate,提案审核机制是什么？,政府审查,社区或指定审核者评估提案质量和影响,自动检查格式,仅格式审查,A,Single Choice
+137,Intermediate,提案审核的主要目的是什么？,提高提案质量,审查创建者,延长决策过程,增加提案数量,A,Single Choice
+138,Intermediate,DAO法律包装是什么？,法律实体结构,DAO品牌标识,服务条款,营销材料,A,Single Choice
+139,Intermediate,常见的DAO法律包装形式包括哪些？,基金会、LLC、合作社或非营利组织,仅非营利组织,仅公共企业,仅政府机构,A,Single Choice
+140,Intermediate,DAO-to-DAO治理是什么？,DAO协作与共同决策,两个DAO竞争,DAO合并,通信协议,A,Single Choice
+141,Intermediate,DAO-to-DAO治理面临的主要挑战是什么？,跨DAO协调、利益对齐和决策复杂性,仅技术兼容性,仅地理距离,仅语言障碍,A,Single Choice
+142,Intermediate,子DAO结构的主要优势是什么？,提高专业化、自主性和治理可扩展性,降低总成本,简化代码,提高代币价格,A,Single Choice
+143,Intermediate,子DAO与主DAO如何关联？,资金、治理权限、目标一致性或共享成员,无关联,相同名称,相同代码库,A,Single Choice
+144,Intermediate,DAO宪法的主要作用是什么？,建立基本原则、治理框架和解决争议,满足政府要求,营销文档,代币分配,A,Single Choice
+145,Intermediate,DAO宪法通常包含哪些核心元素？,使命、价值观、治理结构、决策流程和修正机制,仅创始人信息,技术规格,营销策略,A,Single Choice
+146,Intermediate,治理论坛的关键功能是什么？,结构化讨论空间促进提案发展、审议和社区参与,仅分享新闻,仅发布公告,仅社交网络,A,Single Choice
+147,Intermediate,有效治理论坛的特征是什么？,清晰分类、适当审核、活跃参与和建设性文化,仅高流量,仅精美设计,仅快速加载,A,Single Choice
+148,Intermediate,治理工作组是什么？,政府监管机构,专注于改进和管理治理流程的社区团队,DAO全职员工,外部顾问,B,Single Choice
+149,Intermediate,治理工作组的典型职责包括什么？,仅管理社交媒体,提案协调、文档维护、参与促进和治理改进研究,仅代码开发,仅资金管理,B,Single Choice
+150,Intermediate,治理仪表板的主要目的是什么？,展示DAO标志,提供治理活动的可视化概览以简化参与和提高透明度,仅代币价格,仅营销工具,B,Single Choice
+151,Intermediate,有效的治理仪表板通常显示哪些信息？,仅创始人详情,活跃提案、投票统计、参与指标和历史决策,仅技术规格,仅市场数据,B,Single Choice
+152,Intermediate,治理数据分析是什么？,分析政府政策,收集和分析治理活动数据以评估健康状况和改进机会,仅代币价格,仅社交媒体提及,B,Single Choice
+153,Intermediate,关键治理指标可能包括什么？,仅网站流量,参与率、提案通过/拒绝比率、投票集中度和治理趋势,治理难度,颜色指标,B,Single Choice
+154,Intermediate,治理沟通策略是什么？,政府公告,向社区传达治理活动、决策和参与机会的计划方法,DAO广告活动,仅内部备忘录,B,Single Choice
+155,Intermediate,有效的治理沟通渠道可能包括什么？,仅电视广告,治理简报、社区电话会议、通知系统和社交媒体更新,仅印刷广告,仅私人会议,B,Single Choice
+156,Intermediate,治理教育是什么？,学校课程,帮助社区成员了解和有效参与DAO治理的资源和计划,政府培训,仅技术培训,B,Single Choice
+157,Intermediate,治理教育计划可能包括哪些元素？,仅营销材料,治理指南、教程、案例研究和新成员入职,仅编程课程,仅金融课程,B,Single Choice
+158,Intermediate,治理实验是什么？,随机更改规则,测试新治理机制、流程或工具以改进决策的结构化尝试,未经计划的变更,仅技术实验,B,Single Choice
+159,Intermediate,成功的治理实验通常如何进行？,没有计划或评估,有明确假设、受控范围、指标跟踪和结果评估,仅创始人决定,无需社区参与,B,Single Choice
+160,Intermediate,治理审计是什么？,财务审计,对DAO治理系统、流程和决策的系统评估,代码审计,营销审计,B,Single Choice
+161,Intermediate,二次投票的特点包括哪些？,投票成本与票数平方成正比,允许表达偏好强度,减轻财富集中影响,需要身份验证防止女巫攻击,A/B/C,Multiple Choice
+162,Intermediate,凸性投票的特征包括哪些？,投票权随时间累积,适合连续资源分配,允许动态调整偏好,减少治理疲劳,B/C/D,Multiple Choice
+163,Intermediate,霍尔登投票的组成部分包括哪些？,预测市场,投票机制,预测者激励,通过阈值调整,B/C/D,Multiple Choice
+164,Intermediate,委托投票系统可能面临哪些挑战？,委托人责任问题,权力集中风险,委托关系透明度,撤销委托机制设计,A/B/C/D,Multiple Choice
+165,Intermediate,链下投票系统通常使用哪些技术确保安全性？,加密签名,零知识证明,IPFS存储,分布式验证,B/D,Multiple Choice
+166,Intermediate,时间锁的好处包括哪些？,允许成员在不认同决策时退出,提供发现和响应恶意提案的时间,增加治理透明度,防止闪电攻击,A/C/D,Multiple Choice
+167,Intermediate,治理代币经济学设计需要考虑哪些因素？,初始分配,通胀/通缩机制,锁定和归属计划,治理激励对齐,B/C/D,Multiple Choice
+168,Intermediate,常见的治理攻击向量包括哪些？,闪电贷攻击,贿赂攻击,女巫攻击,治理捕获,A/B/C,Multiple Choice
+169,Intermediate,治理最小化的策略包括哪些？,自动化常规决策,设置不需频繁更改的稳健参数,使用算法治理机制,减少需要投票的决策点,B/C,Multiple Choice
+170,Intermediate,元治理涉及哪些决策领域？,投票机制设计,提案流程规则,治理参数调整,治理工具选择,A/B/D,Multiple Choice
+171,Intermediate,多签钱包在DAO中的应用包括哪些？,财库管理,合约升级,紧急操作,跨链资产管理,B/D,Multiple Choice
+172,Intermediate,提高治理参与率的策略包括哪些？,治理激励,简化用户体验,教育和入职,委托机制,A/D,Multiple Choice
+173,Intermediate,防止治理捕获的机制包括哪些？,投票权分散,投票机制设计（如二次投票）,时间锁和多签要求,透明度和监控,A/B/D,Multiple Choice
+174,Intermediate,有效的提案流程设计包括哪些元素？,多阶段审议,社区讨论期,明确的提案标准,反馈循环,B/C,Multiple Choice
+175,Intermediate,DAO法律包装的考虑因素包括哪些？,成员责任保护,税务影响,跨境合规,合同执行能力,A/C/D,Multiple Choice
+176,Intermediate,DAO-to-DAO治理的应用场景包括哪些？,联合资助决策,协议整合,资源共享,跨DAO提案,A/C/D,Multiple Choice
+177,Intermediate,子DAO结构的优势包括哪些？,专业化和自主性,风险隔离,治理可扩展性,针对特定任务的优化,B/C/D,Multiple Choice
+178,Intermediate,DAO宪法通常包含哪些内容？,核心价值观和原则,治理结构和权力,决策流程和规则,修正和解释机制,A/B/C/D,Multiple Choice
+179,Intermediate,有效的治理论坛具有哪些特征？,结构化分类,适当审核,搜索和归档功能,集成投票和反馈工具,A/B/C/D,Multiple Choice
+180,Intermediate,治理工作组的职责可能包括哪些？,提案协调和支持,治理文档维护,治理研究和改进,社区教育和入职,A/B/C/D,Multiple Choice
+181,Advanced,"在DAO治理中，""治理最小化""的终极目标是什么？",减少参与者数量,创建完全自动化的系统最终不需要人类干预,降低运营成本,简化用户界面,B,Single Choice
+182,Advanced,"以下哪种DAO治理模型最能抵抗""富人统治""问题？",基本代币投票（1代币=1票）,二次投票（Quadratic Voting）,基于声誉的投票,委托投票,C,Single Choice
+183,Advanced,在设计抗审查的DAO治理系统时，以下哪种技术组合最有效？,链上投票与多签执行,链下投票与链上执行,零知识证明、IPFS存储和去中心化身份,中心化服务器与加密通信,C,Single Choice
+184,Advanced,治理攫取指的是什么？,从DAO中提取资金的过程,利用治理权获取超出公平份额的价值损害其他利益相关者,将治理权转移给另一个DAO,强制执行被拒绝的提案,B,Single Choice
+185,Advanced,治理堆栈指的是什么？,一堆治理提案,治理系统的分层架构从协议层到应用层,存储治理历史的数据结构,一组治理工具,B,Single Choice
+186,Advanced,可组合治理指的是什么？,使用乐高投票,能够组合和重用不同治理模块和机制的系统,仅由作曲家管理的DAO,使用音乐创建治理规则,B,Single Choice
+187,Advanced,治理市场指的是什么？,购买治理代币的交易所,将治理决策外包给专家的平台,允许交易和定价治理权的系统如投票委托市场或预测市场,政府监管的加密货币市场,C,Single Choice
+188,Advanced,元治理捕获指的是什么？,控制多个DAO的治理规则,通过控制底层协议或治理工具影响多个DAO,捕获治理元数据,政府接管DAO治理,B,Single Choice
+189,Advanced,流动民主的核心创新是什么？,在水上投票,动态调整投票权重,结合直接民主和代表民主允许可传递的委托和实时撤回,使用流动资产投票,C,Single Choice
+190,Advanced,二次资助在DAO资源分配中的主要优势是什么？,简化计算过程,优先考虑广泛支持的项目而不仅仅是富有支持者支持的项目,减少所需总资金,完全消除女巫攻击,B,Single Choice
+191,Advanced,"信任最小化和""效率""之间存在什么关系？",总是正相关,通常是一种权衡关系更高的信任最小化往往降低效率,没有关系,总是负相关,B,Single Choice
+192,Advanced,治理攻击表面指的是什么？,DAO网站漏洞,治理系统中可能被利用的所有潜在漏洞和攻击向量,物理办公室安全弱点,仅智能合约漏洞,B,Single Choice
+193,Advanced,治理套利指的是什么？,在不同交易所交易治理代币,利用不同DAO之间的治理差异获利,在提案投票中寻找定价错误,在不同区块链创建相同DAO,B,Single Choice
+194,Advanced,治理层概念指的是什么？,DAO组织层次,将治理分解为不同抽象层次每层有不同的决策范围和时间框架,治理文档分类系统,治理界面设计元素,B,Single Choice
+195,Advanced,治理分形指的是什么？,使用分形图像投票,在不同规模和层次上重复相似治理模式的递归结构,分割治理代币,复杂投票算法,B,Single Choice
+196,Advanced,治理游戏化指的是什么？,将治理变成视频游戏,将游戏元素和机制应用于DAO治理以提高参与度和质量,使用游戏理论分析治理,在游戏中实施DAO,B,Single Choice
+197,Advanced,治理弹性指的是什么？,治理系统在压力下恢复的能力,治理系统在面对攻击、参与波动和外部冲击时保持功能的能力,灵活的治理规则,治理代币价格稳定性,B,Single Choice
+198,Advanced,治理形式主义指的是什么？,过于复杂的治理规则,使用形式化方法和规范精确定义和验证治理系统,强制遵守传统治理形式,治理文档标准格式,B,Single Choice
+199,Advanced,治理可组合性危机指的是什么？,治理工具兼容性问题,当多个协议相互依赖但有不同治理系统时出现的协调问题,无法创建新治理组件,治理界面设计失败,B,Single Choice
+200,Advanced,治理蓄水池概念指的是什么？,存储治理代币的钱包,积累未使用治理权的系统,随时间积累的社会资本和信任使DAO在危机时期保持凝聚力,治理数据备份系统,C,Single Choice
+201,Advanced,治理通胀指的是什么？,治理代币供应增加,提案数量增加导致的决策质量下降和参与度稀释,治理成本上升,治理文档长度增加,B,Single Choice
+202,Advanced,治理奇点指的是什么？,单一实体控制所有治理决策,治理系统变得如此复杂以至于无法理解,理论上的点治理系统变得足够智能以自我改进和自我管理,所有DAO合并为一个,C,Single Choice
+203,Advanced,治理债务指的是什么？,DAO欠外部实体的资金,积累的治理问题、延迟决策和次优结构随着时间推移增加复杂性和成本,未支付给治理参与者的奖励,创建DAO的初始成本,B,Single Choice
+204,Advanced,治理分叉权的重要性是什么？,允许复制治理代码,是退出机制为少数派提供最终保障限制多数派权力,允许创建多个提案版本,简化治理界面,B,Single Choice
+205,Advanced,治理虚无主义指的是什么？,认为所有治理都无效的哲学,对复杂治理系统有效性的怀疑立场倾向于极简主义和自动化,拒绝参与任何治理,创建故意失败的治理系统,B,Single Choice
+206,Advanced,治理叠加指的是什么？,治理界面的视觉元素,在现有协议或系统之上添加的治理层无需修改底层代码,多个DAO之间的治理冲突,治理文档的图形表示,B,Single Choice
+207,Advanced,治理捕获抵抗力指的是什么？,防止黑客攻击的安全措施,系统抵抗单个实体或团体获得不成比例控制权的能力,防止政府干预的法律保护,防止治理代币价格操纵,B,Single Choice
+208,Advanced,治理可证明性指的是什么？,证明治理决策正确性的能力,验证投票结果的方法,证明参与治理的证书,形式化验证治理系统属性和行为的能力,D,Single Choice
+209,Advanced,"什么是""治理可组合性三难困境""（Governance Composability Trilemma）？",在治理中平衡三个相互竞争的目标的挑战,需要三个签名者的治理系统,三种不同治理模型之间的选择,声称无法同时实现自主性、可组合性和协调性的理论,D,Single Choice
+210,Advanced,"什么是""治理局部性""（Governance Locality）原则？",仅在特定地理位置进行治理,在本地设备上存储治理数据,将治理限制在特定区块链,决策应由最接近受影响的人做出，而不是集中化,D,Single Choice
+211,Advanced,"什么是""治理可扩展性""（Governance Scalability）的主要挑战？",处理大量投票的技术限制,增加治理代币供应,扩展治理界面以适应不同屏幕尺寸,随着参与者和决策增加，协调成本增加和决策质量下降,D,Single Choice
+212,Advanced,"什么是""治理形式化验证""（Governance Formal Verification）？",检查治理文档格式,官方认可治理结构,验证治理参与者身份,使用数学方法证明治理系统满足特定属性和安全保证,D,Single Choice
+213,Advanced,"什么是""治理抽象""（Governance Abstraction）？",使治理规则模糊不清,减少治理细节,简化治理界面,将治理功能分离为可重用、可互换的模块和接口,D,Single Choice
+214,Advanced,"什么是""治理互操作性""（Governance Interoperability）？",在不同设备上访问治理系统的能力,翻译治理文档的能力,在不同区块链上复制治理决策,不同DAO治理系统之间通信、协调和集成的能力,D,Single Choice
+215,Advanced,"什么是""治理可升级性""（Governance Upgradeability）的关键考虑因素？",仅软件兼容性,仅成本考虑,仅用户界面改进,平衡适应性与稳定性、安全升级路径和权力分配,D,Single Choice
+216,Advanced,"什么是""治理形态学""（Governance Morphology）？",治理文档的物理形式,治理代币的形状,治理界面的视觉设计,研究不同治理结构、它们如何演变以及它们的比较特性,D,Single Choice
+217,Advanced,"什么是""治理同态""（Governance Homomorphism）？",所有DAO使用相同的治理,治理规则的简化,治理系统的视觉表示,在保留关键属性和关系的同时，将一个治理系统映射到另一个的能力,D,Single Choice
+218,Advanced,"什么是""治理反脆弱性""（Governance Antifragility）？",防止治理崩溃的措施,治理系统从压力、攻击和失败中获益并变得更强大的特性,坚固的治理结构,防止治理代币价格波动,B,Single Choice
+219,Advanced,"什么是""治理熵""（Governance Entropy）？",治理系统的能量效率,治理系统随时间推移趋向无序和效率降低的趋势,治理决策的随机性,治理参与的热情,B,Single Choice
+220,Advanced,"什么是""治理设计空间""（Governance Design Space）？",举行治理会议的物理位置,所有可能治理配置的多维空间，包括机制、参数和架构选择,治理界面的布局,存储治理文档的服务器,B,Single Choice
+221,Advanced,以下哪些是设计抗审查DAO治理系统的关键技术？,零知识证明,去中心化存储（如IPFS）,去中心化身份系统,门限签名方案,A/C/D,Multiple Choice
+222,Advanced,治理攫取（Governance Extraction）可能通过哪些方式发生？,操纵协议费用分配,自我交易（自我处理）,信息不对称利用,战略性提案时机选择,C/D,Multiple Choice
+223,Advanced,治理堆栈（Governance Stack）的层次可能包括哪些？,协议层治理,应用层治理,元治理（关于治理的治理）,社会层治理,B/D,Multiple Choice
+224,Advanced,可组合治理（Composable Governance）的优势包括哪些？,允许治理创新和实验,促进专业化和模块化,提高治理效率,增强适应性,A/D,Multiple Choice
+225,Advanced,治理市场（Governance Markets）可能包括哪些形式？,投票委托市场,治理预测市场,治理代币借贷市场,治理服务市场,A/D,Multiple Choice
+226,Advanced,元治理捕获（Meta-governance Capture）可能通过哪些方式实现？,控制底层协议治理,主导治理工具开发,影响治理标准制定,控制多个关键DAO,A/C/D,Multiple Choice
+227,Advanced,流动民主（Liquid Democracy）面临哪些挑战？,委托链的复杂性,委托人责任和监督,潜在的权力集中,技术实现复杂性,A/B/D,Multiple Choice
+228,Advanced,二次资助（Quadratic Funding）的局限性包括哪些？,女巫攻击脆弱性,身份验证需求,计算复杂性,可能的协调游戏,B/C/D,Multiple Choice
+229,Advanced,治理攻击表面（Governance Attack Surface）可能包括哪些方面？,投票机制漏洞,时间锁和多签设计缺陷,预言机操纵,社会工程攻击,B/C,Multiple Choice
+230,Advanced,治理层（Governance Layers）的设计可能基于哪些区分因素？,决策时间范围（短期vs长期）,决策影响范围（技术vs战略）,所需专业知识类型,风险和不可逆性级别,B/C,Multiple Choice
+231,Advanced,治理游戏化（Governance Gamification）可能包括哪些元素？,成就和徽章系统,声誉和排行榜,任务和挑战,技能进阶和专业化路径,B/C/D,Multiple Choice
+232,Advanced,治理弹性（Governance Resilience）的特征包括哪些？,冗余决策路径,适应性机制,故障安全默认设置,分布式权力结构,A/B/C,Multiple Choice

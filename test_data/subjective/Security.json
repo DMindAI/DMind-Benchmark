@@ -1,0 +1,184 @@
+[{
+    "question_type": "vulnerability_classification",
+    "instructions": "分析合约代码中的漏洞并制定攻击策略",
+    "contract_name": "VulnerableLendingPool",
+    "contract_code": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n/**\n * @title VulnerableLendingPool\n * @dev 一个存在经济漏洞的借贷合约示例（仅用于教学测试，勿用于生产）。\n * 用户可存入抵押品并借出资产。价格通过 Uniswap AMM 池查询，存在被闪电贷操纵的风险。\n */\n...", 
+    "scoring_criteria": [
+      {
+        "criterion": "漏洞类型判断",
+        "points": 3,
+        "key_points": [
+          "价格获取机制上的设计瑕疵",
+          "经济层面的安全隐患",
+          "预言机操纵漏洞",
+          "价格操纵风险"
+        ],
+        "min_points_required": 1
+      },
+      {
+        "criterion": "攻击类型识别",
+        "points": 2,
+        "key_points": ["闪电贷攻击", "价格操纵攻击"],
+        "min_points_required": 1
+      },
+      {
+        "criterion": "攻击策略完整性",
+        "points": 5,
+        "key_points": [
+          "准备阶段选择目标交易对",
+          "触发闪电贷借入大量资产",
+          "操纵Uniswap池中价格",
+          "利用异常价格执行借贷操作",
+          "恢复市场并偿还闪电贷"
+        ],
+        "min_points_required": 3
+      }
+    ],
+    "total_possible": 10
+  },
+  {
+    "question_type": "vulnerability_classification",
+    "instructions": "该合约实现了一个简化的抵押借贷平台，用户可以存入抵押品（例如ETH）并借出等值的稳定币。请阅读以下Solidity合约代码，识别其中存在的安全漏洞，并分析攻击者可能利用这些漏洞的手法和影响。",
+    "contract_name": "LendingPool",
+    "contract_code": "pragma solidity ^0.8.10;\ninterface IPriceOracle {\n  function getPrice() external view returns (uint);\n}\ninterface IStablecoin {\n  function mint(address to, uint amount) external;\n}\ninterface IERC20 {\n  function transferFrom(address from, address to, uint amount) external returns (bool);\n}\ncontract LendingPool {\n  IPriceOracle public oracle;\n  IStablecoin public stable;\n  IERC20 public collateralToken;\n  mapping(address => uint) public collateralBalance;\n  mapping(address => uint) public debt;\n  uint public constant COLLATERAL_FACTOR = 150;  // 债务抵押率要求150%\n  constructor(address _oracle, address _stable, address _collateralToken) {  \n      oracle = IPriceOracle(_oracle);  \n      stable = IStablecoin(_stable);  \n      collateralToken = IERC20(_collateralToken);  \n  }  \n\n  function depositCollateral(uint amount) external {  \n      // 用户存入抵押品  \n      require(collateralToken.transferFrom(msg.sender, address(this), amount), \"Transfer failed\");  \n      collateralBalance[msg.sender] += amount;  \n  }  \n\n  function borrow(uint amount) external {  \n      // 根据预言机价格计算抵押品价值  \n      uint price = oracle.getPrice();   \n      uint maxBorrow = (collateralBalance[msg.sender] * price * 100) / COLLATERAL_FACTOR;  \n      require(debt[msg.sender] + amount <= maxBorrow, \"Insufficient collateral\");  \n      debt[msg.sender] += amount;  \n      // 铸造稳定币给借款人  \n      stable.mint(msg.sender, amount);  \n  }  \n\n  function liquidate(address user) external {  \n      // 当用户抵押品价值不足其债务时，任何人可以清算并获得其全部抵押品  \n      uint price = oracle.getPrice();  \n      if (debt[user] > (collateralBalance[user] * price * 100) / COLLATERAL_FACTOR) {  \n          uint seized = collateralBalance[user];  \n          collateralBalance[user] = 0;  \n          debt[user] = 0;  \n          // 将抵押品转给清算人作为奖励  \n          collateralToken.transferFrom(address(this), msg.sender, seized);  \n      }  \n  }  \n}",
+    "scoring_criteria": [
+      {
+        "criterion": "漏洞类型判断",
+        "points": 5,
+        "key_points": [
+          "识别出价格预言机可被操纵这一主要漏洞：合约通过oracle.getPrice()获取抵押品价格，但价格预言机数据来源不可信，攻击者可以在单笔交易内恶意修改价格。",
+          "指出闪电贷结合预言机操纵的攻击手法：攻击者可使用闪电贷瞬时借出大量资金操纵交易对价格，从而在一次交易中拉高或压低抵押品价格。",
+          "分析利用结果：价格被操纵后，合约将错误地高估抵押品价值，允许攻击者在抵押不足的情况下借出大量稳定币，造成协议损失。"
+        ],
+        "min_points_required": 2
+      },
+      {
+        "criterion": "攻击类型识别",
+        "points": 3,
+        "key_points": [
+          "描述完整的攻击流程：例如，攻击者首先借入大量代币操纵预言机报告的价格，然后调用borrow提取超额的稳定币，最后偿还闪电贷并留下利润。",
+          "强调攻击发生在单一区块内，无需长期操纵市场，从而难以被察觉和防御。"
+        ],
+        "min_points_required": 1
+      },
+      {
+        "criterion": "攻击策略完整性",
+        "points": 2,
+        "key_points": [
+          "发现清算函数中的实现错误：使用transferFrom(address(this), msg.sender, seized)尝试转移抵押品，但合约并未批准自己，导致转账失败。",
+          "分析其影响：清算逻辑失效，攻击者在借出稳定币后，即使抵押品不足也可能无法被清算，从而逃避偿还债务。"
+        ],
+        "min_points_required": 1
+      }
+    ],
+    "total_possible": 10
+  },
+  {
+    "question_type": "vulnerability_classification",
+    "instructions": "该合约模拟一个简单的跨链桥接器，用户在另一条链锁定资产后可在本链上提取等值代币。请阅读以下合约代码，找出其中的安全漏洞，并说明攻击者可能如何加以利用。",
+    "contract_name": "CrossChainBridge",
+    "contract_code": "pragma solidity ^0.8.10;\ncontract CrossChainBridge {\n  address public validator;\n  mapping(bytes32 => bool) public processed;  // 标记某笔跨链请求是否已处理\n  constructor(address _validator) {  \n      validator = _validator;  \n  }  \n\n  function claim(address to, uint amount, bytes32 depositId, bytes memory signature) external {  \n      // 验证签名是否由可信验证者发出  \n      bytes32 message = keccak256(abi.encodePacked(amount, depositId));  \n      require(_recoverSigner(message, signature) == validator, \"Invalid signature\");  \n      require(!processed[depositId], \"Already claimed\");  \n      processed[depositId] = true;  \n      _releaseTokens(to, amount);  \n  }  \n\n  function _recoverSigner(bytes32 message, bytes memory sig) internal pure returns(address) {  \n      // 前缀消息以符合以太坊签名格式  \n      bytes32 ethMessage = keccak256(abi.encodePacked(\"\\x19Ethereum Signed Message:\\n32\", message));  \n      require(sig.length == 65, \"invalid signature length\");  \n      bytes32 r;  \n      bytes32 s;  \n      uint8 v;  \n      assembly {  \n          r := mload(add(sig, 32))  \n          s := mload(add(sig, 64))  \n          v := byte(0, mload(add(sig, 96)))  \n      }  \n      return ecrecover(ethMessage, v, r, s);  \n  }  \n\n  function _releaseTokens(address to, uint amount) internal {  \n      // 简化的发行/释放逻辑（例如铸造或发送跨链对应的代币）  \n      // ... (省略具体实现)  \n  }  \n}",
+    "scoring_criteria": [
+      {
+        "criterion": "漏洞类型判断",
+        "points": 5,
+        "key_points": [
+          "识别签名验证中的漏洞：签名消息未包含接收者地址to，导致验证者签名未将目标地址绑定。",
+          "指出影响：任何人一旦获得合法验证者签名（仅包含金额和ID），就能用自己的地址调用claim领取资产，引发盗领风险（受托人签名可被抢用）。"
+        ],
+        "min_points_required": 2
+      },
+      {
+        "criterion": "攻击类型识别",
+        "points": 3,
+        "key_points": [
+          "解释攻击场景：假设验证者针对某跨链存款生成了签名，原本应由用户A提取。但攻击者B截获该签名后，可调用claim并将to设置为B自己的地址，从而将代币提走。",
+          "强调这是前抢攻击（front-running）：攻击者监听到链上待处理交易或消息后抢先调用合约完成提取。"
+        ],
+        "min_points_required": 1
+      },
+      {
+        "criterion": "攻击策略完整性",
+        "points": 2,
+        "key_points": [
+          "进一步分析安全隐患：消息哈希缺少链ID或合约地址等域隔离，意味着相同签名可能在不同网络或合约重复使用（如果验证者不慎在多链复用密钥）。",
+          "指出改进：应当将接收地址和链域信息纳入签名，确保签名不可被重复或挪用。"
+        ],
+        "min_points_required": 1
+      }
+    ],
+    "total_possible": 10
+  },
+  {
+    "question_type": "vulnerability_classification",
+    "instructions": "该合约实现了一个基于零知识证明的混币隐私池。用户存入固定数额代币，并可通过提供零知识证明匿名提取。请阅读合约代码，找出其中在隐私或安全机制上的漏洞，并分析这些漏洞可能带来的后果。",
+    "contract_name": "ZKPrivacyPool",
+    "contract_code": "pragma solidity ^0.8.10;\ninterface IVerifier {\n  function verifyProof(bytes memory proof, uint256[] memory pubInputs) external returns(bool);\n}\ncontract ZKPrivacyPool {\n  IVerifier public verifier;\n  uint public constant DEPOSIT_AMOUNT = 1 ether;\n  mapping(bytes32 => bool) public nullifiers;\n  bytes32 public currentRoot;\n  mapping(bytes32 => bool) public commitments;\n  constructor(address _verifier) {  \n      verifier = IVerifier(_verifier);  \n      currentRoot = bytes32(0);  \n  }  \n\n  function deposit(bytes32 commitment) external payable {  \n      require(msg.value == DEPOSIT_AMOUNT, \"Must deposit 1 ETH\");  \n      commitments[commitment] = true;  \n      // 更新当前的（模拟）默克尔根  \n      currentRoot = keccak256(abi.encodePacked(currentRoot, commitment));  \n  }  \n\n  function withdraw(address payable recipient, bytes memory proof, bytes32 root, bytes32 nullifierHash) external {  \n      require(!nullifiers[nullifierHash], \"Nullifier already used\");  \n      require(verifier.verifyProof(proof, [uint256(root), uint256(nullifierHash)]), \"Invalid proof\");  \n      nullifiers[nullifierHash] = true;  \n      (bool success, ) = recipient.call{value: DEPOSIT_AMOUNT}(\"\");  \n      require(success, \"Payment failed\");  \n  }  \n}",
+    "scoring_criteria": [
+      {
+        "criterion": "漏洞类型判断",
+        "points": 5,
+        "key_points": [
+          "发现主要漏洞：合约未验证提币所用的root是否为真实存款产生的默克尔根。攻击者可自行伪造一个包含虚假存款的root并生成对应证明，合约会错误信任该证明。",
+          "指出后果：攻击者无需实际存款即可提取资金，可能直接从合约中窃取他人存入的以太坊。此行为会破坏资金安全，使混币池被耗尽。"
+        ],
+        "min_points_required": 2
+      },
+      {
+        "criterion": "攻击类型识别",
+        "points": 3,
+        "key_points": [
+          "说明攻击方式：攻击者构造一个伪造的默克尔树根（例如只包含攻击者控制的承诺值），并利用零知识证明生成工具对该根和某个nullifierHash生成有效证明，然后调用withdraw提取1 ETH。反复进行可多次提走资金。",
+          "强调问题严重性：这是对零知识机制的误用，合约没有检查证明对应的是其自身维护的数据，从而信任了攻击者自造的证明。"
+        ],
+        "min_points_required": 1
+      },
+      {
+        "criterion": "攻击策略完整性",
+        "points": 2,
+        "key_points": [
+          "分析隐私影响：由于存款和提取金额固定且无关联账户记录，正常情况下提供了一定匿名性。但如果同时只有极少用户使用该池（匿名集过小），旁观者仍可通过时间和频次推测出存提对应关系，导致隐私削弱。",
+          "指出用户操作不当的风险：例如，如果用户在提取后将资金立即发送回原地址或与其身份关联的钱包，仍可能暴露关联，从而部分抵消混币隐私效果。"
+        ],
+        "min_points_required": 1
+      }
+    ],
+    "total_possible": 10
+  },
+  {
+    "question_type": "vulnerability_classification",
+    "instructions": "该合约为用户提供在去中心化交易所(DEX)上交换代币的辅助功能。用户将ETH发送到合约，由合约调用去中心化交易所将其兑换为指定代币。请阅读合约代码，分析其在MEV（三明治攻击）方面可能存在的设计缺陷，并说明攻击者可以如何利用这些缺陷。",
+    "contract_name": "SwapHelper",
+    "contract_code": "pragma solidity ^0.8.10;\ninterface IUniswapRouter {\n  function WETH() external pure returns(address);\n  function swapExactETHForTokens(uint amountOutMin, address[] calldata path, address to, uint deadline) external payable returns (uint[] memory amounts);\n}\ncontract SwapHelper {\n  IUniswapRouter public router;\n  address public token;\n  event SwapExecuted(address user, uint ethIn, uint tokenOut);\n  constructor(address _router, address _token) {  \n      router = IUniswapRouter(_router);  \n      token = _token;  \n  }  \n\n  function swapEthToToken() external payable {  \n      require(msg.value > 0, \"No ETH sent\");  \n      address[] memory path = new address[](2);  \n      path[0] = router.WETH();  \n      path[1] = token;  \n      // 不设置滑点保护直接执行交换  \n      uint[] memory amounts = router.swapExactETHForTokens{value: msg.value}(0, path, msg.sender, block.timestamp);  \n      emit SwapExecuted(msg.sender, msg.value, amounts[1]);  \n  }  \n}",
+    "scoring_criteria": [
+      {
+        "criterion": "漏洞类型判断",
+        "points": 5,
+        "key_points": [
+          "指出缺少滑点保护这一设计缺陷：合约调用交换函数时amountOutMin被设为0，没有限制最小可接受输出量。",
+          "分析结果：用户交易对价格的微小变化都会被接受，使得三明治攻击者可以轻易在用户交易前后插入交易来操纵价格。"
+        ],
+        "min_points_required": 2
+      },
+      {
+        "criterion": "攻击类型识别",
+        "points": 3,
+        "key_points": [
+          "解释三明治攻击过程：攻击者监测到用户调用swapEthToToken交易，在同一区块内先行下单买入大量目标代币拉高价格，然后让用户的交换在高价下执行（用户获得的代币数量减少），接着攻击者卖出代币恢复价格，从中套利。",
+          "强调用户因为缺乏最小滑点限制，在上述过程中将蒙受重大损失，而攻击者无风险获利。"
+        ],
+        "min_points_required": 1
+      },
+      {
+        "criterion": "攻击策略完整性",
+        "points": 2,
+        "key_points": [
+          "综合说明这种问题的本质：这并非Solidity实现上的漏洞，而是设计上的疏忽，没有考虑链上可见性和MEV风险。",
+          "指出改进建议：例如允许用户指定最小接受代币数量（滑点限制）或使用闪电兑换等手段减少被前后夹攻击的可能性。"
+        ],
+        "min_points_required": 1
+      }
+    ],
+    "total_possible": 10
+  }
+]

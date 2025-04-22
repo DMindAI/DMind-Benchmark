@@ -1,0 +1,201 @@
+No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
+1,basic,Solidity中，以下哪种变量类型用于存储以太币金额？,uint,int,wei,ether,A,单选
+2,basic,"在Solidity中，函数可见性修饰符""external""的特点是什么？",只能被合约内部调用,只能被合约外部调用,可以被合约内部和外部调用,只能被继承合约调用,B,单选
+3,basic,Vyper语言与Solidity相比的主要设计理念是什么？,更高的性能,更丰富的功能,更简单和更高的安全性,更复杂的语法,C,单选
+4,basic,以下哪种不是Solidity中的数据位置？,storage,memory,calldata,database,D,单选
+5,basic,"智能合约中的""回退函数""(fallback function)主要用途是什么？",处理合约收到的以太币,处理合约错误,回滚交易,返回合约状态,A,单选
+6,basic,Solidity的最新稳定版本是哪个？,0.7.0,0.8.0,0.8.20,0.8.24,D,单选
+7,basic,在Solidity中，以下哪个关键字用于处理异常？,try/catch,if/else,require,return,C,单选
+8,basic,Vyper语言不支持以下哪个特性？,循环,继承,条件语句,函数,B,单选
+9,basic,"智能合约中的""Gas""是指什么？",合约执行的燃料,合约存储的数据,合约的安全机制,合约的版本号,A,单选
+10,basic,以下哪种不是Solidity中的基本数据类型？,uint,bool,address,char,D,单选
+11,basic,"在Solidity中，""msg.sender""表示什么？",合约创建者,当前调用者地址,合约地址,交易发起者,B,单选
+12,basic,Vyper中，以下哪个关键字用于定义常量？,constant,constant,immutable,final,B,单选
+13,basic,"智能合约的""ABI""是指什么？",应用程序二进制接口,高级区块链接口,自动区块索引,地址绑定接口,A,单选
+14,basic,在Solidity中，以下哪个不是合约创建方式？,new关键字,工厂合约,克隆合约,import关键字,D,单选
+15,basic,"Solidity中的""mapping""类型主要用于什么？",存储键值对,映射函数调用,连接外部API,转换数据类型,A,单选
+16,basic,以下哪个不是智能合约的特性？,自动执行,不可篡改,可撤销,去中心化,C,单选
+17,basic,"在Solidity中，""view""修饰符的作用是什么？",允许函数修改状态,声明函数不修改状态,使函数可见性为public,允许函数接收以太币,B,单选
+18,basic,Vyper中，以下哪个特性是为了提高安全性而设计的？,无限循环,递归调用,有界循环,动态继承,C,单选
+19,basic,"智能合约中的""事件""(event)主要用途是什么？",触发其他合约函数,记录链上日志,处理异常,控制Gas消耗,B,单选
+20,basic,在Solidity中，以下哪个不是访问控制修饰符？,public,private,internal,global,D,单选
+21,basic,Vyper的最新稳定版本是哪个？,0.3.0,0.3.7,0.4.0,1.0.0,B,单选
+22,basic,"在Solidity中，""payable""修饰符的作用是什么？",允许函数接收以太币,使函数可以支付Gas费,允许合约转账,使函数可以修改状态,A,单选
+23,basic,以下哪个不是智能合约的部署平台？,以太坊,币安智能链,比特币,波卡,C,单选
+24,basic,"在Solidity中，""struct""用于什么？",定义函数结构,创建自定义数据类型,声明合约结构,组织代码块,B,单选
+25,basic,Vyper中，以下哪个语句用于检查条件并在不满足时回滚交易？,if/else,assert,try/except,while,B,单选
+26,basic,"智能合约中的""构造函数""(constructor)特点是什么？",可以多次调用,只在合约部署时执行一次,必须是public,不能接收参数,B,单选
+27,basic,在Solidity中，以下哪个不是数组操作？,push,pop,length,sort,D,单选
+28,basic,"Solidity中的""库合约""(library)有什么特点？",可以有状态变量,可以继承其他合约,不能有状态变量,可以接收以太币,C,单选
+29,basic,以下哪个不是智能合约的安全考虑因素？,重入攻击,整数溢出,用户界面,访问控制,C,单选
+30,basic,"在Solidity中，""modifier""主要用于什么？",修改变量值,改变函数行为,声明函数可见性,定义数据类型,B,单选
+31,basic,Vyper中，以下哪个不是内置函数？,sha256,keccak256,ecrecover,hashmap,D,单选
+32,basic,"智能合约中的""Gas优化""主要目的是什么？",提高合约执行速度,减少交易费用,增加合约安全性,简化合约代码,B,单选
+33,basic,在Solidity中，以下哪个不是错误处理机制？,require,assert,revert,catch,D,单选
+34,basic,"Solidity中的""继承""支持哪种特性？",单继承,多重继承,私有继承,动态继承,B,单选
+35,basic,以下哪个不是智能合约的测试方法？,单元测试,集成测试,模糊测试,物理测试,D,单选
+36,basic,"在Solidity中，""enum""用于什么？",定义事件,创建用户定义类型,声明函数类型,指定Gas限制,B,单选
+37,basic,Vyper中，以下哪个特性是为了防止重入攻击？,nonreentrant装饰器,静态类型,有界循环,无继承,A,单选
+38,basic,"智能合约中的""回滚""(revert)操作会导致什么？",只回滚当前函数,回滚整个交易并返回剩余Gas,删除合约,暂停合约执行,B,单选
+39,basic,在Solidity中，以下哪个不是合约间调用方式？,直接调用,委托调用(delegatecall),低级调用(call),远程调用(remotecall),D,单选
+40,basic,"Solidity中的""接口""(interface)有什么特点？",可以包含实现,可以有构造函数,只能声明函数,可以有状态变量,C,单选
+41,basic,以下哪个不是智能合约的部署环境？,主网,测试网,本地开发环境,物理服务器,D,单选
+42,basic,"在Solidity中，""using A for B""语法的作用是什么？",将A的函数附加到B类型,使用A替换B,将B转换为A,使A继承B,A,单选
+43,basic,Vyper中，以下哪个不是内置的数据类型？,uint256,address,bytes32,float,D,单选
+44,basic,"智能合约中的""自毁""(selfdestruct)函数作用是什么？",暂停合约,删除合约并返回资金,重置合约状态,锁定合约资金,B,单选
+45,basic,在Solidity中，以下哪个不是合约创建方式？,new关键字,克隆代理,工厂模式,import语句,D,单选
+46,basic,"Solidity中的""抽象合约""有什么特点？",不能被部署,不能有状态变量,不能有函数实现,不能被继承,A,单选
+47,basic,以下哪个不是智能合约的编译工具？,solc,vyper,truffle,metamask,D,单选
+48,basic,"在Solidity中，""pure""修饰符的作用是什么？",允许函数修改状态,声明函数不读取也不修改状态,使函数可见性为public,允许函数接收以太币,B,单选
+49,basic,Vyper中，以下哪个不是控制结构？,if,for,while,switch,D,单选
+50,basic,"智能合约中的""事件索引""(indexed event parameter)主要用途是什么？",提高事件处理速度,允许按参数值过滤事件,减少Gas消耗,增加事件安全性,B,单选
+51,basic,在Solidity中，以下哪个不是内置的全局变量？,msg.sender,block.timestamp,tx.origin,contract.balance,D,单选
+52,basic,"Solidity中的""函数重载""是指什么？",同名函数有不同参数,函数可以调用自身,函数可以修改状态,函数可以接收以太币,A,单选
+53,basic,以下哪个不是智能合约的交互方式？,通过钱包,通过DApp,通过其他合约,通过电子邮件,D,单选
+54,basic,"在Solidity中，""assembly""块的作用是什么？",编写低级EVM操作码,组装合约组件,创建合约接口,定义合约结构,A,单选
+55,basic,Vyper中，以下哪个是用于处理时间的内置变量？,now,timestamp,block.timestamp,current_time,C,单选
+56,basic,"智能合约中的""代理模式""(Proxy Pattern)主要用途是什么？",隐藏合约地址,实现合约可升级性,减少Gas消耗,增加合约安全性,B,单选
+57,basic,在Solidity中，以下哪个不是存储数组的方法？,固定大小数组,动态数组,映射,链表,D,单选
+58,basic,"Solidity中的""继承""关键字是什么？",extends,inherts,implements,is,D,单选
+59,basic,以下哪个不是智能合约的部署工具？,Remix,Hardhat,Truffle,Metamask,D,单选
+60,basic,"在Solidity中，""receive""函数的特点是什么？",可以有参数,不能有参数且必须是external payable,必须返回值,可以多次定义,B,单选
+61,basic,Vyper中，以下哪个不是内置的加密函数？,sha256,keccak256,ripemd160,md5,D,单选
+62,basic,"智能合约中的""时间锁""(Timelock)机制主要用途是什么？",延迟合约执行,限制合约调用频率,设置合约过期时间,同步合约时间,A,单选
+63,basic,在Solidity中，以下哪个不是错误处理方式？,"require(condition, ""message"")",assert(condition),"revert(""message"")",try/catch,D,单选
+64,basic,"Solidity中的""函数选择器""(Function Selector)是什么？",函数名称,函数签名的前4字节,函数参数列表,函数返回类型,B,单选
+65,basic,以下哪个不是智能合约的审计工具？,Mythril,Slither,Echidna,Ganache,D,单选
+66,basic,"在Solidity中，""immutable""变量的特点是什么？",可以在任何时候修改,只能在构造函数中赋值,不能被初始化,必须是public,B,单选
+67,basic,Vyper中，以下哪个不是有效的函数可见性？,public,private,external,protected,D,单选
+68,basic,"智能合约中的""ERC""代表什么？",以太坊请求注释,以太坊记录集合,以太坊资源控制,以太坊区块链规则,A,单选
+69,basic,在Solidity中，以下哪个不是有效的数据位置？,storage,memory,calldata,stack,D,单选
+70,basic,"Solidity中的""继承""顺序遵循什么规则？",从左到右,从右到左,按字母顺序,按合约大小,B,单选
+71,basic,以下哪些是Solidity中的基本数据类型？,uint,bool,float,address,"A, B, D",多选
+72,basic,以下哪些是Vyper的设计特点？,有界循环,无递归,多重继承,无类继承,"A, B, D",多选
+73,basic,以下哪些是智能合约的特性？,自动执行,不可篡改,可撤销,去中心化,"A, B, D",多选
+74,basic,以下哪些是Solidity中的函数可见性修饰符？,public,private,external,global,"A, B, C",多选
+75,basic,以下哪些是智能合约的安全漏洞？,重入攻击,整数溢出,用户界面,访问控制,"A, B, D",多选
+76,basic,以下哪些是Solidity中的状态可变性修饰符？,view,pure,constant,payable,"A, B, D",多选
+77,basic,以下哪些是Vyper中的内置函数？,sha256,keccak256,ecrecover,hashmap,"A, B, C",多选
+78,basic,以下哪些是智能合约的部署环境？,主网,测试网,本地开发环境,物理服务器,"A, B, C",多选
+79,basic,以下哪些是Solidity中的错误处理机制？,require,assert,revert,try/catch,"A, B, C",多选
+80,basic,以下哪些是智能合约的编译工具？,solc,vyper,Truffle,Metamask,"A, B",多选
+81,basic,以下哪些是Solidity中的全局变量？,msg.sender,block.timestamp,tx.origin,contract.balance,"A, B, C",多选
+82,basic,以下哪些是Vyper中的控制结构？,if,for,while,switch,"A, B",多选
+83,basic,以下哪些是智能合约的交互方式？,通过钱包,通过DApp,通过其他合约,通过电子邮件,"A, B, C",多选
+84,basic,以下哪些是Solidity中的数据位置？,storage,memory,calldata,database,"A, B, C",多选
+85,basic,以下哪些是智能合约的审计工具？,Mythril,Slither,Echidna,Ganache,"A, B, C",多选
+86,basic,以下哪些是Solidity中的合约类型？,普通合约,抽象合约,接口,类,"A, B, C",多选
+87,basic,以下哪些是Vyper中的数据类型？,uint256,address,bytes32,float,"A, B, C",多选
+88,basic,以下哪些是智能合约的部署工具？,Remix,Hardhat,Truffle,Metamask,"A, B, C",多选
+89,basic,以下哪些是Solidity中的特殊函数？,constructor,fallback,receive,main,"A, B",多选
+90,basic,以下哪些是智能合约开发的趋势？,可升级合约,跨链互操作性,Gas优化,中心化控制,"A, B, D",多选
+91,basic,以下哪些是Solidity中的引用类型？,数组,结构体,映射,整数,"A, B, C",多选
+92,basic,以下哪些是Vyper中的内置常量？,ZERO_ADDRESS,MAX_UINT256,PI,INFINITY,"A, B",多选
+93,basic,以下哪些是智能合约的测试方法？,单元测试,集成测试,模糊测试,物理测试,"A, B, C",多选
+94,basic,以下哪些是Solidity中的合约间调用方式？,直接调用,委托调用(delegatecall),低级调用,remotecall,"A, B, C",多选
+95,basic,以下哪些是智能合约的Gas优化技术？,使用短路评估,减少存储操作,使用库合约,增加注释,"A, B, C",多选
+96,basic,以下哪些是Solidity中的事件特性？,可以有索引参数,存储在区块链上,可以被合约内部读取,可以被修改,"A, B",多选
+97,basic,以下哪些是Vyper中的装饰器？,@public,@private,@nonreentrant,@override,"A, B, C",多选
+98,basic,以下哪些是智能合约的设计模式？,工厂模式,代理模式,检查-效果-交互模式,模型-视图-控制器模式,"A, B, C",多选
+99,basic,以下哪些是Solidity中的内置加密函数？,keccak256,sha256,ripemd160,md5,"A, B, C",多选
+100,basic,以下哪些是智能合约的开发框架？,Hardhat,Truffle,Foundry,React,"A, B, C",多选
+101,intermediate,在Solidity 0.8.x版本中，以下哪种整数操作会导致合约执行失败？,整数溢出,整数除零,整数取模,整数乘法,A,单选
+102,intermediate,"Solidity引入的""user-defined运算符重载""主要用于什么场景？",简化数学库的实现,增强合约安全性,减少Gas消耗,提高合约可读性,A,单选
+103,intermediate,以下哪种模式最适合实现可升级智能合约？,工厂模式,代理模式,单例模式,观察者模式,B,单选
+104,intermediate,在Vyper中，以下哪个特性是为了防止重入攻击而设计的？,@nonreentrant装饰器,静态类型系统,无递归调用,有界循环,A,单选
+105,intermediate,以下哪种方法最适合在智能合约中生成随机数？,block.timestamp,"keccak256(abi.encodePacked(block.difficulty, block.timestamp))",链下随机数生成器+链上验证,Math.random(),C,单选
+106,intermediate,在EIP-1559交易模型中，以下哪部分费用会被销毁？,基础费用(Base Fee),小费(Tip),Gas上限(Gas Limit),最大费用(Max Fee),A,单选
+107,intermediate,以下哪种合约间调用方式会改变msg.sender的值？,直接调用,call,delegatecall,staticcall,A,单选
+108,intermediate,在Solidity中，以下哪种方法最适合处理大数运算？,使用uint256,使用库合约,使用浮点数,使用字符串表示,B,单选
+109,intermediate,"以下哪种智能合约开发框架引入了""模糊测试""(Fuzzing)作为标准功能？",Truffle,Hardhat,Foundry,Brownie,C,单选
+110,intermediate,以下哪种模式最适合实现合约访问控制？,继承OpenZeppelin的AccessControl,使用简单的owner变量,使用tx.origin检查,使用block.timestamp限制,A,单选
+111,intermediate,在Solidity中，以下哪种数据结构最适合实现映射到多个值？,嵌套映射,结构体数组,多维数组,链表,A,单选
+112,intermediate,以下哪种方法最适合在智能合约中实现暂停功能？,使用selfdestruct,实现Pausable接口,使用require(block.timestamp > pauseTime),使用try/catch捕获所有调用,B,单选
+113,intermediate,在Vyper中，以下哪种方法最适合处理合约升级？,使用代理合约,使用工厂合约,使用继承,使用@external装饰器,A,单选
+114,intermediate,以下哪种方法最适合在智能合约中存储大量数据？,使用映射,使用数组,使用事件日志,使用链下存储+链上哈希,D,单选
+115,intermediate,以下哪种智能合约优化技术可以显著减少Gas消耗？,使用assembly进行低级操作,增加注释,使用更多的require语句,使用更多的事件,A,单选
+116,intermediate,在Solidity中，以下哪种方法最适合实现批量转账？,使用循环调用transfer,使用多重签名,使用批处理函数,使用委托调用,C,单选
+117,intermediate,以下哪种模式最适合实现合约工厂？,单例模式,工厂模式,代理模式,观察者模式,B,单选
+118,intermediate,在Vyper中，以下哪种方法最适合处理大型结构化数据？,使用struct,使用多个映射,使用嵌套映射,使用数组,C,单选
+119,intermediate,以下哪种方法最适合在智能合约中实现时间锁定功能？,使用block.timestamp,使用区块号,使用外部预言机,使用Gas限制,A,单选
+120,intermediate,以下哪种智能合约安全工具可以检测重入漏洞？,Mythril,Slither,Echidna,以上都可以,D,单选
+121,intermediate,在Solidity中，以下哪种方法最适合实现合约间的安全通信？,使用事件,使用接口,使用库,使用继承,B,单选
+122,intermediate,以下哪种模式最适合实现合约权限管理？,角色基础访问控制,所有者模式,时间锁模式,多重签名,A,单选
+123,intermediate,在Vyper中，以下哪种方法最适合处理合约状态迁移？,使用状态枚举,使用映射跟踪状态,使用事件记录状态变化,使用外部合约,A,单选
+124,intermediate,以下哪种方法最适合在智能合约中实现复杂的业务逻辑？,使用单一大型合约,使用多个小型合约,使用库合约,使用代理合约,B,单选
+125,intermediate,以下哪种智能合约开发趋势获得了更多关注？,跨链互操作性,中心化控制,单体架构,硬编码参数,A,单选
+126,intermediate,在Solidity中，以下哪种方法最适合实现合约版本控制？,使用版本变量,使用不同的合约名称,使用代理模式,使用事件记录版本,C,单选
+127,intermediate,以下哪种模式最适合实现合约状态验证？,使用修饰器,使用require语句,使用assert语句,使用try/catch,A,单选
+128,intermediate,在Vyper中，以下哪种方法最适合处理合约升级数据迁移？,使用事件记录旧数据,使用新合约读取旧合约,使用外部存储,使用代理合约保留存储布局,D,单选
+129,intermediate,以下哪种方法最适合在智能合约中实现复杂的访问控制？,使用简单的owner变量,使用角色基础访问控制,使用tx.origin,使用block.timestamp,B,单选
+130,intermediate,以下哪种智能合约优化技术被广泛采用？,使用短路评估,使用内联汇编,使用存储打包,以上都是,D,单选
+131,intermediate,在Solidity中，以下哪种方法最适合实现合约间的消息传递？,使用事件,使用回调函数,使用共享存储,使用全局变量,B,单选
+132,intermediate,以下哪种模式最适合实现合约批量操作？,使用循环,使用映射,使用多次交易,使用批处理函数,D,单选
+133,intermediate,在Vyper中，以下哪种方法最适合处理合约错误？,使用assert,try/except,使用raise,使用return,A,单选
+134,intermediate,以下哪种方法最适合在智能合约中实现复杂的计算？,链上计算,链下计算+链上验证,使用库合约,使用递归,B,单选
+135,intermediate,以下哪种智能合约安全实践被更多采用？,形式化验证,代码混淆,闭源开发,最小化测试,A,单选
+136,intermediate,在Solidity中，以下哪种方法最适合实现合约状态恢复？,使用try/catch,使用检查点模式,使用事件重放,使用全局变量,B,单选
+137,intermediate,以下哪种模式最适合实现合约多重签名？,使用映射跟踪签名,使用数组存储签名,使用事件记录签名,使用外部合约,A,单选
+138,intermediate,在Vyper中，以下哪种方法最适合处理合约状态锁定？,使用状态变量,使用修饰器,使用事件,使用外部调用,B,单选
+139,intermediate,以下哪种方法最适合在智能合约中实现复杂的权限管理？,使用简单的owner变量,使用角色基础访问控制,使用tx.origin,使用block.timestamp,B,单选
+140,intermediate,以下哪种智能合约开发框架引入了更高效的测试工具？,Truffle,Hardhat,Foundry,Brownie,C,单选
+141,intermediate,在Solidity中，以下哪种方法最适合实现合约状态迁移？,使用枚举,使用映射,使用事件,使用外部合约,A,单选
+142,intermediate,以下哪种模式最适合实现合约升级？,使用代理模式,使用工厂模式,使用单例模式,使用观察者模式,A,单选
+143,intermediate,以下哪些是智能合约中防止重入攻击的方法？,检查-效果-交互模式,使用ReentrancyGuard,使用tx.origin,使用函数互斥锁,"A, B, D",多选
+144,intermediate,以下哪些是Solidity 0.8.x版本的新特性？,内置的整数溢出检查,自定义错误,try/catch语句,用户定义的运算符,"A, B, D",多选
+145,intermediate,以下哪些是智能合约中实现可升级性的方法？,代理模式,数据分离模式,钻石模式,单例模式,"A, B, C",多选
+146,intermediate,以下哪些是Vyper的安全特性？,有界循环,无递归,无类继承,动态类型,"A, B, C",多选
+147,intermediate,以下哪些是智能合约中的Gas优化技术？,使用常量和不可变变量,使用短路评估,使用存储打包,增加注释,"A, B, C",多选
+148,intermediate,以下哪些是Solidity中的设计模式？,工厂模式,代理模式,检查-效果-交互模式,模型-视图-控制器模式,"A, B, C",多选
+149,intermediate,以下哪些是智能合约中的访问控制机制？,角色基础访问控制,所有者模式,多重签名,区块时间戳,"A, B, C",多选
+150,intermediate,以下哪些是Vyper中的内置安全函数？,assert_modifiable,safe_mul,ecrecover,create_forwarder_to,"A, C",多选
+151,intermediate,以下哪些是智能合约中的状态管理技术？,使用枚举定义状态,使用映射跟踪状态,使用事件记录状态变化,使用区块号,"A, B, C",多选
+152,intermediate,以下哪些是Solidity中的错误处理机制？,require,assert,revert,try/catch,"A, B, C",多选
+153,intermediate,以下哪些是智能合约中的时间管理方法？,使用block.timestamp,使用区块号,使用Date对象,使用时区,"A, B",多选
+154,intermediate,以下哪些是Vyper中的控制结构？,if,for,while,switch,"A, B",多选
+155,intermediate,以下哪些是智能合约中的数据存储优化技术？,使用映射而非数组,使用紧凑存储,使用事件存储历史数据,使用嵌套循环,"A, B, C",多选
+156,intermediate,以下哪些是Solidity中的库使用方式？,使用using for,直接调用库函数,继承库,导入库变量,"A, B",多选
+157,intermediate,以下哪些是智能合约中的安全审计工具？,Mythril,Slither,Echidna,Ganache ,"A, B, C",多选
+158,intermediate,以下哪些是智能合约开发的趋势？,跨链互操作性,形式化验证,Gas优化,中心化控制,"A, B, C",多选
+159,intermediate,以下哪些是Solidity中的特殊函数？,constructor,fallback,receive,main,"A, B, C",多选
+160,intermediate,以下哪些是智能合约中的测试方法？,单元测试,集成测试,模糊测试,物理测试,"A, B, C",多选
+161,advanced,在Solidity中，以下哪种操作码消耗的Gas最多？,SLOAD,CALL,SSTORE（0到非0）,CREATE,C,单选
+162,advanced,以下哪种智能合约形式化验证工具能够证明合约满足特定的数学属性？,Mythril,Certora Prover,Slither,Echidna,B,单选
+163,advanced,以下哪种技术可以在不修改合约代码的情况下修复已部署合约中的漏洞？,代理模式,紧急暂停,状态通道,形式化验证,B,单选
+164,advanced,以下哪种智能合约优化技术可以显著减少跨合约调用的Gas消耗？,使用multicall模式,使用委托调用,使用内联汇编,使用事件日志,A,单选
+165,advanced,在Solidity中，以下哪种存储模式最适合实现高效的大规模数据结构？,紧凑存储模式,分层存储模式,默克尔树存储,链式存储模式,C,单选
+166,advanced,以下哪种技术可以在智能合约中实现零知识证明验证？,zk-SNARK验证器,椭圆曲线签名,哈希链,布隆过滤器,A,单选
+167,advanced,以下哪种跨链智能合约标准获得了更广泛的采用？,IBC协议,CCIP标准,LayerZero消息传递,以上都有,D,单选
+168,advanced,在Vyper中，以下哪种技术最适合实现复杂的访问控制系统？,使用映射存储权限,使用装饰器,使用接口合约,使用事件日志,A,单选
+169,advanced,以下哪种设计模式最适合实现智能合约的可组合性？,模块化设计,单体设计,层次设计,中心化设计,A,单选
+170,advanced,以下哪种智能合约安全技术可以防止MEV攻击？,时间锁,提交-揭示模式,多重签名,形式化验证,B,单选
+171,advanced,在EVM中，以下哪种操作可能导致不确定的Gas消耗？,外部合约调用,状态变量读取,事件发射,纯计算,A,单选
+172,advanced,以下哪种技术可以在智能合约中实现高效的大规模排序？,链上冒泡排序,链上快速排序,链下排序+链上验证,使用映射代替排序,C,单选
+173,advanced,以下哪种智能合约设计模式被用于实现高效的状态通道？,签名验证模式,哈希时间锁定合约,多重签名钱包,代理合约,B,单选
+174,advanced,在Solidity中，以下哪种技术可以最有效地减少合约部署成本？,使用库合约,使用最小代理模式,使用工厂合约,使用接口,B,单选
+175,advanced,以下哪种技术可以在智能合约中实现高效的大规模数据验证？,默克尔证明,全量数据验证,循环验证,哈希比较,A,单选
+176,advanced,以下哪种智能合约架构模式被用于实现高效的跨链资产桥？,锁定-铸造模式,燃烧-铸造模式,原子交换模式,以上都有,D,单选
+177,advanced,在EVM中，以下哪种存储模式最适合实现高效的稀疏数组？,使用映射模拟,使用动态数组,使用链表,使用固定大小数组,A,单选
+178,advanced,以下哪种技术可以在智能合约中实现高效的批量操作？,使用循环,使用多次交易,使用calldata打包,使用事件,C,单选
+179,advanced,以下哪种智能合约优化技术被用于减少存储操作的Gas消耗？,使用事件代替存储,使用内存缓存,使用紧凑存储编码,以上都有,D,单选
+180,advanced,在Solidity中，以下哪种技术可以最有效地实现复杂的状态机？,使用枚举和映射,使用函数指针,使用委托调用,使用接口,A,单选
+181,advanced,以下哪种技术可以在智能合约中实现高效的权限管理？,使用位图表示权限,使用角色枚举,使用字符串比较,使用哈希表,A,单选
+182,advanced,以下哪种智能合约设计模式被用于实现高效的流动性聚合？,路由器模式,代理模式,工厂模式,观察者模式,A,单选
+183,advanced,在EVM中，以下哪种技术可以最有效地减少合约执行的Gas消耗？,使用内联汇编,使用库合约,使用接口,使用事件,A,单选
+184,advanced,以下哪种技术可以在智能合约中实现高效的大规模数据存储？,使用IPFS+链上哈希,使用链上存储,使用事件日志,使用外部合约,A,单选
+185,advanced,以下哪种智能合约安全技术被用于防止闪电贷攻击？,使用价格预言机,使用时间锁,使用多重签名,使用形式化验证,A,单选
+186,advanced,在Solidity中，以下哪种技术可以最有效地实现复杂的数学计算？,使用库合约,使用内联汇编,使用链下计算+链上验证,使用浮点数模拟,C,单选
+187,advanced,以下哪种技术可以在智能合约中实现高效的大规模数据查询？,使用索引事件,使用映射,使用数组,使用链表,A,单选
+188,advanced,以下哪种智能合约架构模式被用于实现高效的去中心化身份验证？,声明-验证模式,代理模式,工厂模式,观察者模式,A,单选
+189,advanced,以下哪些是智能合约中实现高效Gas优化的技术？,使用短路评估,使用存储打包,使用内联汇编,增加注释,"A, B, C",多选
+190,advanced,以下哪些是智能合约安全审计的关注点？,重入攻击,预言机操纵,跨链漏洞,用户界面,"A, B, C",多选
+191,advanced,以下哪些是智能合约中实现高效跨链通信的技术？,消息传递协议,哈希时间锁定合约,轻客户端验证,中心化桥接,"A, B, C",多选
+192,advanced,以下哪些是Solidity中的高级内存管理技术？,内联汇编内存操作,自定义内存分配器,垃圾回收,虚拟内存,"A, B",多选
+193,advanced,以下哪些是智能合约中实现高效状态管理的技术？,使用状态通道,使用检查点,使用事件日志,使用中心化数据库,"A, B, C",多选
+194,advanced,以下哪些是智能合约开发的前沿技术？,零知识证明集成,形式化验证,跨链互操作性,中心化控制,"A, B, C",多选
+195,advanced,以下哪些是智能合约中实现高效数据压缩的技术？,位打包,RLP编码,ZIP压缩,视频编码,"A, B",多选
+196,advanced,以下哪些是Solidity中的高级设计模式？,钻石模式,代理模式,工厂模式,模型-视图-控制器模式,"A, B, C",多选
+197,advanced,以下哪些是智能合约中实现高效访问控制的技术？,角色基础访问控制,位图权限,时间锁控制,物理访问控制,"A, B, C",多选
+198,advanced,以下哪些是智能合约优化的研究方向？,静态分析优化,动态执行优化,存储布局优化,用户界面优化,"A, B, C",多选
+199,advanced,以下哪些是智能合约中实现高效批处理的技术？,多调用聚合,批量数据处理,并行执行,分布式计算,"A, B",多选
+200,advanced,以下哪些是Solidity中的高级安全模式？,检查-效果-交互模式,拉取支付模式,限速器模式,客户端-服务器模式,"A, B, C",多选

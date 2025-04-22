@@ -1,0 +1,201 @@
+No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
+1,Basic,DeFi的核心理念是什么？,中心化金融服务,去中心化金融服务,传统银行业务,政府监管金融,B,单选
+2,Basic,以下哪个不是DeFi的主要特点？,去中心化,无需许可,监管完善,透明性,C,单选
+3,Basic,AMM代表什么？,自动做市商,高级市场管理,自动货币市场,资产管理模型,A,单选
+4,Basic,以下哪个是最早的DeFi借贷协议之一？,Uniswap,Compound,Chainlink,Yearn Finance,B,单选
+5,Basic,以下哪个DeFi协议在TVL(总锁仓价值)排名最高？,Uniswap,Aave,MakerDAO,Lido,D,单选
+6,Basic,流动性挖矿主要指什么？,挖掘加密货币,提供流动性获得奖励,交易所开采,矿池操作,B,单选
+7,Basic,以下哪个不是DeFi中常见的风险？,智能合约漏洞,预言机失效,项目方跑路,无常损失,C,单选
+8,Basic,无常损失(Impermanent Loss)主要发生在什么情况下？,借贷时,提供流动性时,质押代币时,交易失败时,B,单选
+9,Basic,以下哪个是DeFi中的合成资产协议？,Uniswap,Aave,Synthetix,Curve,C,单选
+10,Basic,闪电贷(Flash Loan)的主要特点是什么？,无需抵押,必须在同一交易中还款,长期借贷,低利率,B,单选
+11,Basic,以下哪个不是DeFi中的收益来源？,交易费,借贷利息,流动性奖励,中心化分红,D,单选
+12,Basic,以下哪个是DeFi中最流行的稳定币？,USDT,USDC,DAI,BUSD,B,单选
+13,Basic,DEX代表什么？,去中心化交易所,数字资产交换,直接交易系统,分布式执行,A,单选
+14,Basic,以下哪个不是AMM的常见模型？,恒定乘积,恒定和,恒定中位数,加权曲线,C,单选
+15,Basic,"DeFi中的""收益农耕""(Yield Farming)指什么？",种植农作物,在不同协议间转移资金以最大化收益,长期持有代币,挖掘新代币,B,单选
+16,Basic,以下哪个不是DeFi中的借贷协议？,Aave,Compound,MakerDAO,Chainlink,D,单选
+17,Basic,"DeFi中的""质押""(Staking)主要目的是什么？",锁定代币以获得奖励,交易代币,借出代币,销毁代币,A,单选
+18,Basic,以下哪个是DeFi中的预言机服务？,Uniswap,Chainlink,Compound,SushiSwap,B,单选
+19,Basic,以下哪个是以太坊上最大的DEX？,Uniswap,SushiSwap,PancakeSwap,dYdX,A,单选
+20,Basic,"DeFi中的""流动性池""(Liquidity Pool)是什么？",用户存入的资金池,交易所的储备金,开发者基金,挖矿奖励,A,单选
+21,Basic,以下哪个不是DeFi中的稳定币机制？,法币抵押,加密资产抵押,算法稳定,中央银行发行,D,单选
+22,Basic,"DeFi中的""治理代币""主要用途是什么？",支付交易费,参与协议决策,作为稳定币,跨链交易,B,单选
+23,Basic,以下哪个DeFi协议专注于优化稳定币交易？,Uniswap,Aave,Curve,Balancer,C,单选
+24,Basic,"DeFi中的""清算""(Liquidation)指什么？",出售抵押品以偿还贷款,关闭协议,提取所有资金,转换代币,A,单选
+25,Basic,以下哪个不是DeFi中的衍生品协议？,dYdX,Synthetix,Opyn,Compound,D,单选
+26,Basic,"DeFi中的""流动性挖矿""(Liquidity Mining)主要奖励什么行为？",交易频率,提供流动性,持有代币,开发应用,B,单选
+27,Basic,以下哪个是DeFi中的资产管理协议？,Yearn Finance,Uniswap,Compound,Chainlink,A,单选
+28,Basic,以下哪个是DeFi中最流行的跨链桥？,Wormhole,Multichain,Hop Protocol,Stargate,A,单选
+29,Basic,"DeFi中的""无常损失""(Impermanent Loss)与什么最相关？",借贷利率,资产价格变化,网络拥堵,治理决策,B,单选
+30,Basic,以下哪个不是DeFi中的收益聚合器？,Yearn Finance,Harvest Finance,Pickle Finance,Uniswap,D,单选
+31,Basic,"DeFi中的""抵押率""(Collateralization Ratio)指什么？",借款金额与抵押品价值的比率,协议收益率,交易费率,流动性比例,A,单选
+32,Basic,以下哪个是DeFi中的保险协议？,Nexus Mutual,Aave,Compound,Uniswap,A,单选
+33,Basic,以下哪个DeFi趋势获得了更多关注？,实时支付,实物资产代币化,中心化控制,封闭生态系统,B,单选
+34,Basic,"DeFi中的""流动性提供者""(Liquidity Provider)主要做什么？",向协议提供资金,开发智能合约,审计协议,管理协议,A,单选
+35,Basic,以下哪个不是DeFi中的借贷模式？,超额抵押,闪电贷,信用贷款,无抵押贷款,C,单选
+36,Basic,"DeFi中的""预言机""(Oracle)主要作用是什么？",提供链外数据,执行智能合约,管理协议,发行代币,A,单选
+37,Basic,以下哪个是DeFi中的去中心化期权协议？,Opyn,Aave,Compound,Curve,A,单选
+38,Basic,以下哪个是DeFi中最流行的Layer 2解决方案？,Optimism,Arbitrum,zkSync,StarkNet,B,单选
+39,Basic,"DeFi中的""流动性挖矿""(Liquidity Mining)通常奖励什么？",协议代币,法币,实物资产,服务积分,A,单选
+40,Basic,以下哪个不是DeFi中的风险管理工具？,保险协议,风险评分,中心化托管,多重签名钱包,C,单选
+41,Basic,"DeFi中的""总锁仓价值""(TVL)指什么？",协议中锁定的资产总价值,协议的市值,协议的交易量,协议的用户数,A,单选
+42,Basic,以下哪个是DeFi中的去中心化身份协议？,Civic,Uniswap,Aave,Compound,A,单选
+43,Basic,以下哪个DeFi协议专注于固定收益产品？,Element Finance,Uniswap,Aave,Curve,A,单选
+44,Basic,"DeFi中的""流动性挖矿""(Liquidity Mining)最早由哪个协议推广？",Uniswap,Compound,Aave,SushiSwap,B,单选
+45,Basic,以下哪个不是DeFi中的去中心化交易所模型？,订单簿模型,自动做市商模型,中心化撮合模型,混合模型,C,单选
+46,Basic,"DeFi中的""收益率""(Yield)主要来源于什么？",交易费、借贷利息和代币奖励,中心化分红,政府补贴,慈善捐款,A,单选
+47,Basic,以下哪个是DeFi中的去中心化预测市场？,Augur,Uniswap,Aave,Compound,A,单选
+48,Basic,以下哪个是DeFi中最流行的收益聚合器？,Yearn Finance,Harvest Finance,Pickle Finance,Convex Finance,D,单选
+49,Basic,"DeFi中的""闪电贷攻击""(Flash Loan Attack)主要利用什么？",无需抵押的大额贷款,网络拥堵,用户密码,中心化漏洞,A,单选
+50,Basic,以下哪个不是DeFi中的稳定币？,DAI,USDC,USDT,BTC,D,单选
+51,Basic,"DeFi中的""流动性提供者代币""(LP Token)代表什么？",提供流动性凭证,治理权,稳定币,保险凭证,A,单选
+52,Basic,以下哪个是DeFi中的去中心化保险协议？,Nexus Mutual,Uniswap,Aave,Compound,A,单选
+53,Basic,以下哪个DeFi协议专注于去中心化身份验证？,Civic,Uniswap,Aave,Compound,A,单选
+54,Basic,"DeFi中的""收益率曲线""(Yield Curve)指什么？",不同期限投资的收益率关系,协议增长曲线,用户数量变化,代币价格走势,A,单选
+55,Basic,以下哪个不是DeFi中的资产类型？,稳定币,治理代币,LP代币,实物股票,D,单选
+56,Basic,"DeFi中的""流动性挖矿""(Liquidity Mining)与什么最相关？",提供流动性获得代币奖励,挖掘加密货币,开发智能合约,审计协议,A,单选
+57,Basic,以下哪个是DeFi中的去中心化借贷协议？,Aave,Uniswap,Chainlink,Curve,A,单选
+58,Basic,以下哪个DeFi协议专注于去中心化衍生品？,dYdX,Uniswap,Aave,Compound,A,单选
+59,Basic,"DeFi中的""流动性挖矿""(Liquidity Mining)最初的目的是什么？",吸引用户提供流动性,增加代币价格,减少交易费,提高安全性,A,单选
+60,Basic,以下哪个不是DeFi中的交易类型？,现货交易,杠杆交易,期货交易,实物交割,D,单选
+61,Basic,"DeFi中的""收益率农业""(Yield Farming)主要风险是什么？",智能合约风险、无常损失和市场风险,政府监管,电力中断,互联网连接,A,单选
+62,Basic,以下哪个是DeFi中的去中心化资产管理协议？,Yearn Finance,Uniswap,Chainlink,Curve,A,单选
+63,Basic,以下哪个是DeFi中最流行的去中心化期权协议？,Opyn,Uniswap,Aave,Compound,A,单选
+64,Basic,"DeFi中的""流动性挖矿""(Liquidity Mining)通常需要什么操作？",提供流动性并质押LP代币,购买协议代币,开发智能合约,审计协议,A,单选
+65,Basic,以下哪个不是DeFi中的收益来源？,交易费,借贷利息,流动性奖励,中心化分红,D,单选
+66,Basic,"DeFi中的""收益率""(Yield)通常如何表示？",年化百分比(APY),固定金额,代币数量,用户数,A,单选
+67,Basic,以下哪个是DeFi中的去中心化合成资产协议？,Synthetix,Uniswap,Aave,Compound,A,单选
+68,Basic,以下哪个DeFi协议专注于去中心化保险？,Nexus Mutual,Uniswap,Aave,Compound,A,单选
+69,Basic,"DeFi中的""流动性挖矿""(Liquidity Mining)通常需要哪些资产？",交易对中的两种代币,只需要一种代币,法币,实物资产,A,单选
+70,Basic,以下哪个不是DeFi中的风险？,智能合约风险,无常损失,预言机风险,中心化保障,D,单选
+71,Basic,以下哪些是DeFi的主要特点？,去中心化,无需许可,中心化控制,透明性,"A, B, D",多选
+72,Basic,以下哪些是DeFi中的主要协议类型？,借贷协议,去中心化交易所,中心化交易所,资产管理协议,"A, B, D",多选
+73,Basic,以下哪些是DeFi中的稳定币类型？,法币抵押,加密资产抵押,算法稳定,中央银行发行,"A, B, C",多选
+74,Basic,以下哪些是DeFi中的收益来源？,交易费,借贷利息,流动性奖励,中心化分红,"A, B, C",多选
+75,Basic,以下哪些是DeFi中的风险？,智能合约风险,无常损失,预言机风险,中心化保障;政府支持,"A, B, C",多选
+76,Basic,以下哪些是DeFi中的借贷协议？,Aave,Compound,MakerDAO,Uniswap,"A, B, C",多选
+77,Basic,以下哪些是DeFi中的去中心化交易所？,Uniswap,SushiSwap,Curve,Aave,"A, B, C",多选
+78,Basic,以下哪些是DeFi中的资产管理协议？,Yearn Finance,Harvest Finance,Uniswap,Aave,"A, B",多选
+79,Basic,以下哪些是DeFi中的衍生品协议？,dYdX,Synthetix,Opyn,Aave,"A, B, C",多选
+80,Basic,以下哪些是DeFi中的保险协议？,Nexus Mutual,Cover Protocol,Uniswap,Aave,"A, B",多选
+81,Basic,以下哪些是DeFi中的预言机服务？,Chainlink,Band Protocol,API3,Uniswap,"A, B, C",多选
+82,Basic,以下哪些是DeFi中的收益聚合器？,Yearn Finance,Harvest Finance,Pickle Finance,Uniswap,"A, B, C",多选
+83,Basic,以下哪些是DeFi中的去中心化身份协议？,Civic,Selfkey,Uniswap,Aave,"A, B",多选
+84,Basic,以下哪些是DeFi中的去中心化预测市场？,Augur,Gnosis,Uniswap,Aave,"A, B",多选
+85,Basic,以下哪些是DeFi中的Layer 2解决方案？,Optimism,Arbitrum,zkSync,Uniswap,"A, B, C",多选
+86,Basic,以下哪些是DeFi中的跨链桥？,Wormhole,Multichain,Hop Protocol,Uniswap,"A, B, C",多选
+87,Basic,以下哪些是DeFi中的固定收益协议？,Element Finance,Notional Finance,Uniswap,Aave,"A, B",多选
+88,Basic,以下哪些是DeFi中的去中心化期权协议？,Opyn,Hegic,Uniswap,Aave,"A, B",多选
+89,Basic,以下哪些是DeFi中的去中心化合成资产协议？,Synthetix,Mirror Protocol,Uniswap,Aave,"A, B",多选
+90,Basic,以下哪些是当下DeFi的主要趋势？,实物资产代币化,跨链互操作性,实时支付,中心化控制,"A, B, C",多选
+91,Basic,以下哪些是DeFi中的AMM模型？,恒定乘积,恒定和,加权曲线,恒定中位数,"A, B, C",多选
+92,Basic,以下哪些是DeFi中的借贷模式？,超额抵押,闪电贷,无抵押贷款,信用贷款,"A, B, C",多选
+93,Basic,以下哪些是DeFi中的资产类型？,稳定币,治理代币,LP代币,实物股票,"A, B, C",多选
+94,Basic,以下哪些是DeFi中的交易类型？,现货交易,杠杆交易,期货交易,实物交割,"A, B, C",多选
+95,Basic,以下哪些是DeFi中的收益率表示方法？,APY(年化收益率),APR(年化利率),固定金额,代币数量,"A, B",多选
+96,Basic,以下哪些是DeFi中的流动性挖矿策略？,单币质押,LP代币质押,借贷协议质押,实物资产质押,"A, B, C",多选
+97,Basic,以下哪些是DeFi中的风险管理工具？,保险协议,风险评分,多重签名钱包,中心化托管,"A, B, C",多选
+98,Basic,以下哪些是DeFi中的去中心化治理方式？,代币投票,提案系统,委托投票,中心化决策,"A, B, C",多选
+99,Basic,关于 DeFi 闪电贷机制的风险防控措施哪些有效？,多重资产验证,时间锁定交易,预防重复执行,实时监控与自动中断,"B, D",多选
+100,Basic,以下哪些是DeFi中的主要指标？,总锁仓价值(TVL),交易量,用户数,产品外观,"A, B, C",多选
+101,Intermediate,"在AMM中，""恒定乘积公式""(x*y=k)的主要缺点是什么？",计算复杂度高,大额交易的滑点较大,不支持多种代币,无法处理稳定币,B,单选
+102,Intermediate,以下哪种DeFi协议创新减轻了无常损失问题？,集中流动性AMM,订单簿DEX,借贷协议,合成资产协议,A,单选
+103,Intermediate,以下哪种机制最适合防止DeFi中的闪电贷攻击？,使用时间加权平均价格(TWAP),增加交易费,限制交易规模,中心化审核,A,单选
+104,Intermediate,"在DeFi借贷协议中，""健康因子""(Health Factor)低于1会导致什么结果？",获得额外奖励,触发清算,降低借款利率,增加借款额度,B,单选
+105,Intermediate,以下哪种DeFi流动性策略获得了更高的资本效率？,单币质押,集中流动性提供,全范围流动性提供,被动持有,B,单选
+106,Intermediate,以下哪种机制用于平衡DeFi借贷协议中的供需关系？,利率模型,治理投票,预言机,流动性挖矿,A,单选
+107,Intermediate,"在DeFi中，""收益率曲线""(Yield Curve)倒挂通常表示什么？",短期收益率高于长期收益率,长期收益率高于短期收益率,收益率为负,收益率为零,A,单选
+108,Intermediate,以下哪种DeFi协议创新解决了跨链流动性分散问题？,跨链AMM,多链借贷,流动性聚合器,以上都是,D,单选
+109,Intermediate,以下哪种机制最适合解决DeFi中的预言机操纵问题？,时间加权平均价格(TWAP),多源数据聚合,链上治理,中心化验证,B,单选
+110,Intermediate,"在DeFi中，""流动性挖矿""(Liquidity Mining)的主要缺点是什么？",临时性流动性,高Gas费,低收益率,复杂的用户界面,A,单选
+111,Intermediate,以下哪种DeFi协议创新提高了稳定币的资本效率？,超额抵押模型,算法稳定币,部分抵押模型,中心化稳定币,C,单选
+112,Intermediate,以下哪种机制最适合解决DeFi中的MEV(最大可提取价值)问题？,批量拍卖,增加交易费,限制交易规模,中心化排序,A,单选
+113,Intermediate,"在DeFi中，""收益率农业""(Yield Farming)策略的核心是什么？",在不同协议间转移资金以最大化收益,长期持有单一资产,频繁交易,借入资金,A,单选
+114,Intermediate,以下哪种DeFi协议创新减少了Gas费用？,Layer 2解决方案,中心化交易所,增加区块大小,减少交易频率,A,单选
+115,Intermediate,以下哪种机制最适合提高DeFi协议的资本效率？,杠杆,超额抵押,流动性限制,中心化控制,A,单选
+116,Intermediate,"在DeFi中，""流动性碎片化""(Liquidity Fragmentation)的主要问题是什么？",降低资本效率,增加安全性,提高收益率,减少用户数量,A,单选
+117,Intermediate,以下哪种DeFi协议创新解决了跨链资产转移的安全问题？,多签名桥,轻客户端验证,零知识证明桥,以上都是,D,单选
+118,Intermediate,以下哪种机制最适合解决DeFi中的流动性集中风险？,流动性分散激励,中心化控制,增加交易费,限制交易规模,A,单选
+119,Intermediate,"在DeFi中，""收益率策略""(Yield Strategies)的主要风险是什么？",智能合约风险,低收益率,高Gas费,用户界面复杂,A,单选
+120,Intermediate,以下哪种DeFi协议创新提高了去中心化衍生品的效率？,永续合约,期权协议,合成资产,以上都是,D,单选
+121,Intermediate,以下哪种机制最适合解决DeFi中的流动性提供者激励问题？,交易费分享,代币奖励,协议收入分享,以上都是,D,单选
+122,Intermediate,"在DeFi中，""收益率曲线策略""(Yield Curve Strategies)主要利用什么？",不同期限收益率的差异,不同资产的价格波动,不同协议的安全性,不同链的Gas费,A,单选
+123,Intermediate,以下哪种DeFi协议创新解决了稳定币脱锚问题？,多资产抵押,算法稳定机制,去中心化准备金,以上都是,D,单选
+124,Intermediate,以下哪种机制最适合解决DeFi中的治理攻击问题？,时间锁,多签名,投票权重限制,以上都是,D,单选
+125,Intermediate,"在DeFi中，""流动性挖矿""(Liquidity Mining)的可持续性主要依赖于什么？",协议收入,代币增发,外部投资,用户增长,A,单选
+126,Intermediate,以下哪种DeFi协议创新提高了去中心化借贷的效率？,隔离市场,风险分级,利率优化,以上都是,D,单选
+127,Intermediate,以下哪种机制最适合解决DeFi中的价格操纵问题？,时间加权平均价格(TWAP),多源数据聚合,流动性深度要求,以上都是,D,单选
+128,Intermediate,"在DeFi中，""收益率聚合器""(Yield Aggregator)的主要优势是什么？",自动优化策略,降低Gas费,提高安全性,简化用户界面,A,单选
+129,Intermediate,以下哪种DeFi协议创新解决了去中心化期权的流动性问题？,自动做市商,流动性挖矿,期权池,以上都是,D,单选
+130,Intermediate,以下哪种机制最适合解决DeFi中的抵押品效率问题？,抵押品多样化,风险分级,动态抵押率,以上都是,D,单选
+131,Intermediate,"在DeFi中，""流动性提供者""(Liquidity Provider)面临的主要风险是什么？",无常损失,低收益率,高Gas费,用户界面复杂,A,单选
+132,Intermediate,以下哪种DeFi协议创新提高了去中心化保险的效率？,风险池,参数化保险,去中心化理赔,以上都是,D,单选
+133,Intermediate,以下哪种机制最适合解决DeFi中的流动性退出问题？,流动性锁定,退出费,分级退出,以上都是,D,单选
+134,Intermediate,"在DeFi中，""收益率策略""(Yield Strategies)的主要目标是什么？",最大化风险调整后收益,最小化Gas费,最大化交易量,最小化无常损失,A,单选
+135,Intermediate,以下哪种DeFi协议创新解决了去中心化身份的隐私问题？,零知识证明,多重签名,时间锁,中心化验证,A,单选
+136,Intermediate,以下哪种机制最适合解决DeFi中的流动性深度问题？,集中流动性,流动性挖矿,多资产池,以上都是,D,单选
+137,Intermediate,"在DeFi中，""收益率曲线""(Yield Curve)的形状通常反映什么？",市场对未来利率的预期,当前的交易量,协议的安全性,用户数量,A,单选
+138,Intermediate,以下哪种DeFi协议创新提高了去中心化资产管理的效率？,自动再平衡,风险分级,多策略组合,以上都是,D,单选
+139,Intermediate,以下哪种机制最适合解决DeFi中的治理参与问题？,委托投票,投票激励,治理最小化,以上都是,D,单选
+140,Intermediate,"在DeFi中，""流动性挖矿""(Liquidity Mining)的长期可行性主要依赖于什么？",协议产生实际价值,代币价格上涨,用户数量增长,外部投资,A,单选
+141,Intermediate,以下哪种DeFi协议创新解决了去中心化预测市场的流动性问题？,自动做市商,流动性挖矿,结果验证激励,以上都是,D,单选
+142,Intermediate,以下哪种机制最适合解决DeFi中的用户体验问题？,抽象账户,元交易,社交恢复,以上都是,D,单选
+143,Intermediate,关于算法稳定币设计中的系统性风险问题,动态储备金管理,多资产锚定机制,实时市场反馈算法,外部审计与透明报告,"A, B, D",多选
+144,Intermediate,以下哪些是DeFi中借贷协议的主要风险？,清算风险,利率风险,预言机风险,政府监管,"A, B, C",多选
+145,Intermediate,以下哪些是DeFi中流动性挖矿的主要策略？,单币质押,LP代币质押,借贷协议质押,实物资产质押,"A, B, C",多选
+146,Intermediate,关于 DeFi 中合成资产机制的风险对冲策略,资产超额抵押,价格预言机多源验证,动态风险调整,固定费率对冲,"A, B, C",多选
+147,Intermediate,以下哪些是DeFi中的风险管理工具？,保险协议,风险评分,多重签名钱包,中心化托管,"A, B, C",多选
+148,Intermediate,以下哪些是DeFi中的去中心化治理方式？,代币投票,提案系统,委托投票,中心化决策,"A, B, C",多选
+149,Intermediate,以下哪些是DeFi中的预言机解决方案？,中心化预言机,去中心化预言机网络,链上预言机,物理预言机,"A, B, C",多选
+150,Intermediate,以下哪些是DeFi中的流动性提供者激励机制？,交易费分享,代币奖励,协议收入分享,抽奖奖励,"A, B, C",多选
+151,Intermediate,以下哪些是DeFi中的收益率优化策略？,杠杆收益率农业,收益率曲线套利,流动性挖矿轮换,中心化存款,"A, B, C",多选
+152,Intermediate,以下哪些是DeFi中的跨链解决方案？,托管桥,去中心化桥,轻客户端验证,中心化交易所,"A, B, C",多选
+153,Intermediate,以下哪些是DeFi中的稳定币机制？,法币抵押,加密资产抵押,算法稳定,银行发行,"A, B, C",多选
+154,Intermediate,以下哪些是DeFi中的MEV(最大可提取价值)缓解策略？,批量拍卖,时间锁,中心化排序,物理隔离,"A, B",多选
+155,Intermediate,以下哪些是DeFi中的资产管理策略？,自动再平衡,风险分级,多策略组合,中心化管理,"A, B, C",多选
+156,Intermediate,以下哪些是DeFi中的去中心化身份解决方案？,零知识证明,去中心化身份标识符,中心化验证,物理身份证,"A, B",多选
+157,Intermediate,以下哪些是DeFi中的流动性风险？,流动性枯竭,流动性碎片化,流动性集中,中心化控制,"A, B, C",多选
+158,Intermediate,关于 DeFi Layer2 扩容解决方案的关键设计挑战,安全性保障,高并发处理,用户隐私保护,跨链兼容性,"A, B, D",多选
+159,Intermediate,以下哪些是DeFi中的治理风险？,治理攻击,治理参与不足,治理捕获,中心化控制,"A, B, C",多选
+160,Intermediate,以下哪些是2024年Q1 DeFi的主要趋势？,实物资产代币化,跨链互操作性,实时支付,中心化控制,"A, B, C",多选
+161,Advanced,以下哪种DeFi协议创新最有效地解决了资本效率与风险管理的平衡问题？,分级风险协议,动态抵押率,隔离市场,风险定价模型,A,单选
+162,Advanced,"在DeFi中，""集中流动性""(Concentrated Liquidity)模型相比传统AMM的主要优势是什么？",资本效率提高100-4000倍,完全消除无常损失,降低Gas费用,简化用户体验,A,单选
+163,Advanced,以下哪种DeFi机制最适合解决跨链流动性碎片化问题？,原子交换,流动性层(Liquidity Layer),中心化桥接,统一代币标准,B,单选
+164,Advanced,以下哪种DeFi风险管理创新最有效地应对了闪电贷攻击？,多时段价格预言机,交易规模限制,链上风险评分,去中心化保险,A,单选
+165,Advanced,"在DeFi中，""收益率曲线控制""(Yield Curve Control)策略的核心机制是什么？",通过市场操作维持目标收益率,限制最高收益率,保证最低收益率,随机分配收益率,A,单选
+166,Advanced,以下哪种DeFi机制最适合解决去中心化衍生品市场的流动性深度问题？,虚拟AMM(vAMM),订单簿聚合,流动性挖矿,中心化做市商,A,单选
+167,Advanced,以下哪种DeFi创新最有效地解决了跨链资产转移的信任问题？,零知识有效性证明,多签名验证,去中心化预言机,链上治理,A,单选
+168,Advanced,"在DeFi中，""流动性路由优化""(Liquidity Routing Optimization)的核心算法通常基于什么？",加权图搜索算法,随机森林,神经网络,遗传算法,A,单选
+169,Advanced,以下哪种DeFi机制最适合解决去中心化借贷市场的利率波动问题？,利率互换,固定利率池,利率上限,以上都是,D,单选
+170,Advanced,以下哪种DeFi创新最有效地解决了稳定币的资本效率问题？,部分抵押算法稳定币,超额抵押稳定币,法币抵押稳定币,中心化稳定币,A,单选
+171,Advanced,"在DeFi中，""流动性分层""(Liquidity Stratification)的主要优势是什么？",根据风险偏好优化资本配置,降低Gas费用,简化用户体验,提高交易速度,A,单选
+172,Advanced,以下哪种DeFi机制最适合解决去中心化期权市场的定价效率问题？,隐含波动率预言机,固定定价模型,中心化做市商,随机定价,A,单选
+173,Advanced,以下哪种DeFi创新最有效地解决了治理参与率低的问题？,委托投票与投票激励结合,强制投票,中心化决策,随机选择决策者,A,单选
+174,Advanced,"在DeFi中，""动态风险定价""(Dynamic Risk Pricing)模型通常基于什么因素？",市场波动性、抵押率和协议利用率,用户声誉,历史交易量,代币价格,A,单选
+175,Advanced,以下哪种DeFi机制最适合解决去中心化保险的逆选择问题？,风险池分层,固定保费,中心化审核,强制参与,A,单选
+176,Advanced,以下哪种DeFi创新最有效地解决了MEV(最大可提取价值)问题？,公平排序服务(Fair Sequencing Services),增加交易费,限制交易规模,中心化排序,A,单选
+177,Advanced,"在DeFi中，""收益率曲线套利""(Yield Curve Arbitrage)策略的核心是什么？",利用不同期限资产的收益率差异,利用不同资产的价格差异,利用不同协议的安全性差异,利用不同链的Gas费差异,A,单选
+178,Advanced,以下哪种DeFi机制最适合解决去中心化合成资产的流动性问题？,虚拟流动性,流动性挖矿,中心化做市商,强制流动性提供,A,单选
+179,Advanced,以下哪种DeFi创新最有效地解决了跨链互操作性的标准化问题？,跨链消息传递协议,统一代币标准,中心化桥接,多链钱包,A,单选
+180,Advanced,"在DeFi中，""流动性风险建模""(Liquidity Risk Modeling)通常使用什么方法？",蒙特卡洛模拟,线性回归,决策树,简单平均,A,单选
+181,Advanced,以下哪种DeFi机制最适合解决去中心化预测市场的结果验证问题？,去中心化预言机网络,多重签名,中心化验证,随机选择验证者,A,单选
+182,Advanced,以下哪种DeFi创新最有效地解决了实物资产代币化的法律合规问题？,合规代币化框架,去中心化身份验证,中心化托管,匿名交易,A,单选
+183,Advanced,"在DeFi中，""流动性深度优化""(Liquidity Depth Optimization)的核心是什么？",根据价格影响最小化资本配置,增加总流动性,减少交易费,简化用户体验,A,单选
+184,Advanced,以下哪种DeFi机制最适合解决去中心化资产管理的风险分散问题？,多策略组合,单一资产集中,中心化管理,随机资产配置,A,单选
+185,Advanced,以下哪种DeFi创新最有效地解决了链上隐私与合规性的平衡问题？,零知识合规证明,完全匿名交易,中心化审核,公开交易数据,A,单选
+186,Advanced,"在DeFi中，""收益率策略自动化""(Yield Strategy Automation)的核心技术是什么？",智能合约自动执行,人工干预,中心化控制,随机策略选择,A,单选
+187,Advanced,以下哪种DeFi机制最适合解决去中心化借贷市场的长尾资产流动性问题？,隔离市场,风险参数调整,流动性挖矿,以上都是,D,单选
+188,Advanced,以下哪种DeFi创新最有效地解决了用户体验与去中心化的平衡问题？,账户抽象,中心化前端,简化协议,教育计划,A,单选
+189,Advanced,以下哪些是 DeFi 中“集中流动性”(Concentrated Liquidity)模型的优势？,提升流动性资金的利用率,精细化定价机制以降低滑点,动态调整流动性激励以适应市场波动,支持多资产池互换以提高效率,"A, C, D",多选
+190,Advanced,以下哪些是 DeFi 中跨链互操作性的主要挑战？,跨链资产安全传输协议缺陷,不同链间数据一致性难题,跨链治理模型分歧,低延迟跨链通信技术不足,"B, D",多选
+191,Advanced,以下哪些是 DeFi 中风险管理的高级技术？,实时风险评估算法,基于区块链的信用衍生品,自适应风险缓释机制,多维度资产相关性分析,"A, C, D",多选
+192,Advanced,以下哪些是 DeFi 中收益率优化的高级策略？,量化流动性挖矿策略,算法驱动的自动再平衡系统,融合期权与杠杆的组合策略,基于智能合约的无风险套利机制,"B, C",多选
+193,Advanced,以下哪些是 DeFi 中 MEV（最大可提取价值）的主要类型？,前置交易套利,后置交易重排序,链上熵干扰攻击,伪造交易流注入,"A, B, D",多选
+194,Advanced,以下哪些是 DeFi 中去中心化治理的高级机制？,分布式共识投票机制,代币化声誉系统,区块链上多阶段决策流程,零知识投票验证,"A, D",多选
+195,Advanced,以下哪些是 DeFi 中实物资产代币化的主要挑战？,跨国法律法规整合,资产流动性和市场深度不足,区块链资产估值的不确定性,实时资产状态监控难度,"A, C, D",多选
+196,Advanced,以下哪些是 DeFi 中流动性管理的高级技术？,多路径交易执行优化,基于区块链数据的流动性预测模型,智能合约自动流动性调节,动态资产配置与跨池套利,"A, C",多选
+197,Advanced,以下哪些是 DeFi 中去中心化衍生品的主要类型？,基于合成资产的指数合约,永续掉期与波动率期权,结构化衍生品与分层清算机制,实时链上风险对冲合约,"B, C, D",多选
+198,Advanced,以下哪些是 DeFi 中预言机的高级解决方案？,分布式预言机共识机制,融合链下数据验证与链上记录,机器学习驱动的价格预测模型,自校验数据聚合协议,"A, C, D",多选
+199,Advanced,以下哪些是 2024 年 Q1 DeFi 的前沿创新？,多链资产互操作性增强模块,零知识隐私交易引擎,分层二层解决方案与可扩展性技术,去中心化流动性市场深度挖掘,"B, C",多选
+200,Advanced,以下哪些是 DeFi 中资本效率优化的高级技术？,高维度资产风险分散模型,智能资产再融资与动态抵押率,复合杠杆与分布式清算策略,多层次流动性管理与隐形激励,"A, B, D",多选
