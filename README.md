@@ -1,3 +1,4 @@
+# DMind Benchmark
 A comprehensive framework for evaluating large language models (LLMs) on blockchain, cryptocurrency, and Web3 knowledge across multiple domains.
 
 ## Overview
