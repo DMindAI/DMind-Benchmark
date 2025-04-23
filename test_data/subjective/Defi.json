@@ -1,4 +1,4 @@
-[{
+{
     "question_type": "calculation",
     "scenario": "清算场景",
     "instructions": "计算请求的清算时以太坊价格",
@@ -159,4 +159,3 @@
     ],
     "references": [[3]]
   }
-]
