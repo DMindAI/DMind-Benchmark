@@ -22,7 +22,7 @@ configs:
     - "test_data/objective/Security_Benchmark_modified.csv"
   - split: Smart_contract
     path:
-    - "test_data/objective/SmartContract_benchmark.csv"
+    - "test_data/objective/SmartContracts_benchmark.csv"
   - split: Tokenomist
     path:
     - "test_data/objective/Tokenomist.csv"
