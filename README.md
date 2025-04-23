@@ -1,5 +1,14 @@
 ---
 configs:
+- config_name: objective
+  data_files:
+  - split: normal
+    path:
+    - "test_data/objective/Blockchain_Fundamentals_benchmark.csv"
+  - split: infrastructrue
+    path:
+    - "test_data/objective/infra_benchmark.csv"
+  
 - config_name: subjective
   data_files:
   - split: DAO
