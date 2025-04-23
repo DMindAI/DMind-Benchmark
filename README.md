@@ -1,27 +1,10 @@
 ---
 configs:
-- config_name: normal_objective
-  data_files:
-  - split: normal
-    path:
-    - "test_data/objective/Blockchain_Fundamentals_benchmark.csv"
-    - "test_data/objective/DAO2.csv"
-    - "test_data/objective/Defi_benchmark.csv"
-    - "test_data/objective/MEME_Benchmark_modified.csv"
-    - "test_data/objective/NFT_Benchmark_modified.csv"
-    - "test_data/objective/Security_Benchmark_modified.csv"
-    - "test_data/objective/SmartContracts_benchmark.csv"
-    - "test_data/objective/Tokenomist.csv"
-- config_name: infrastructure_objective
-  data_files:
-  - split: infrastructrue
-    path:
-    - "test_data/objective/infra_benchmark.csv"
 - config_name: subjective
   data_files:
   - split: DAO
     path:
-    - "test_data/subjective/DAO.json"
+    - "test_data/subjective/DAO.jsonl"
   
 ---
 
