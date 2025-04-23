@@ -17,6 +17,11 @@ configs:
   - split: infrastructrue
     path:
     - "test_data/objective/infra_benchmark.csv"
+- config_name: subjective
+  data_files:
+  - split: DAO
+    path:
+    - "test_data/subjective/DAO.json"
   
 ---
 
