@@ -13,7 +13,7 @@ configs:
     - "test_data/subjective/Defi.jsonl"
   - split: Infrastructure
     path:
-    - "test_data/subjective/infra.jsonl"
+    - "test_data/subjective/Infra.jsonl"
   - split: MEME
     path:
     - "test_data/subjective/MEME.jsonl"
