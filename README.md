@@ -17,6 +17,18 @@ configs:
   - split: MEME
     path:
     - "test_data/subjective/MEME.jsonl"
+  - split: Security
+    path:
+    - "test_data/subjective/Security.jsonl"
+  - split: NFT
+    path:
+    - "test_data/subjective/NFT.jsonl"
+  - split: Smart_contract
+    path:
+    - "test_data/subjective/smart_contract.jsonl"
+  - split: Token
+    path:
+    - "test_data/subjective/Token.jsonl"
   
 ---
 
