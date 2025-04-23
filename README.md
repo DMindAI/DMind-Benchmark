@@ -17,6 +17,7 @@ configs:
   - split: infrastructrue
     path:
     - "test_data/objective/infra_benchmark.csv"
+  
 ---
 
 # 🔍 DMind Benchmark
