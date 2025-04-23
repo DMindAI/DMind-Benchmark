@@ -4,7 +4,19 @@ configs:
   data_files:
   - split: DAO
     path:
-    - "test_data/subjective/DAO.json"
+    - "test_data/subjective/DAO.jsonl"
+  - split: Fundamentals
+    path:
+    - "test_data/subjective/Blockchain_Foundamantals_benchmark.jsonl"
+  - split: Defi
+    path:
+    - "test_data/subjective/Defi.jsonl"
+  - split: Infrastructure
+    path:
+    - "test_data/subjective/infra.jsonl"
+  - split: MEME
+    path:
+    - "test_data/subjective/MEME.jsonl"
   
 ---
 
