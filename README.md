@@ -27,7 +27,7 @@ configs:
     path:
     - "test_data/objective/SmartContracts_benchmark.csv"
 
-- config_name: objective_infrastructure
+- config_name: objective_infra
   data_files:
   - split: Infrastructrue
     path:
@@ -59,7 +59,7 @@ configs:
   - split: Smart_contract
     path:
     - "test_data/subjective/smart_contract.jsonl"
-- config_name: subjective_infrastructure
+- config_name: subjective_infra
   data_files:
   - split: Infrastructure
     path:
