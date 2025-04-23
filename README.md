@@ -1,7 +1,10 @@
 ---
 configs:
-- config_name: objective
+- config_name: objective_normal
   data_files:
+  - split: Tokenomist
+    path:
+    - "test_data/objective/Tokenomist.csv"
   - split: Fundamentals
     path:
     - "test_data/objective/Blockchain_Fundamentals_benchmark.csv"
@@ -23,42 +26,45 @@ configs:
   - split: Smart_contract
     path:
     - "test_data/objective/SmartContracts_benchmark.csv"
-  - split: Tokenomist
-    path:
-    - "test_data/objective/Tokenomist.csv"
+
+- config_name: objective_infrastructure
+  data_files:
   - split: Infrastructrue
     path:
     - "test_data/objective/infra_benchmark.csv"
   
-- config_name: subjective
+- config_name: subjective_normal
   data_files:
-  - split: DAO
-    path:
-    - "test_data/subjective/DAO.jsonl"
-  - split: Fundamentals
-    path:
-    - "test_data/subjective/Blockchain_Fundamentals_benchmark.jsonl"
-  - split: Defi
-    path:
-    - "test_data/subjective/Defi.jsonl"
-  - split: Infrastructure
-    path:
-    - "test_data/subjective/Infra.jsonl"
-  - split: MEME
-    path:
-    - "test_data/subjective/MEME.jsonl"
-  - split: Security
-    path:
-    - "test_data/subjective/Security.jsonl"
-  - split: NFT
-    path:
-    - "test_data/subjective/NFT.jsonl"
-  - split: Smart_contract
-    path:
-    - "test_data/subjective/smart_contract.jsonl"
   - split: Tokenomist
     path:
     - "test_data/subjective/Token.jsonl"
+  - split: Fundamentals
+    path:
+    - "test_data/subjective/Blockchain_Fundamentals_benchmark.jsonl"
+  - split: DAO
+    path:
+    - "test_data/subjective/DAO.jsonl"
+  - split: Defi
+    path:
+    - "test_data/subjective/Defi.jsonl"
+  - split: MEME
+    path:
+    - "test_data/subjective/MEME.jsonl"
+  - split: NFT
+    path:
+    - "test_data/subjective/NFT.jsonl"
+  - split: Security
+    path:
+    - "test_data/subjective/Security.jsonl"
+  - split: Smart_contract
+    path:
+    - "test_data/subjective/smart_contract.jsonl"
+- config_name: subjective_infrastructure
+  data_files:
+  - split: Infrastructure
+    path:
+    - "test_data/subjective/Infra.jsonl"
+
   
 ---
 
