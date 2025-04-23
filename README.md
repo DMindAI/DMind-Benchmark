@@ -7,7 +7,7 @@ configs:
     - "test_data/objective/Blockchain_Fundamentals_benchmark.csv"
   - split: DAO
     path:
-    - "test_data/objective/DAO.csv"
+    - "test_data/objective/DAO2.csv"
   - split: Defi
     path:
     - "test_data/objective/Defi_benchmark.csv"
