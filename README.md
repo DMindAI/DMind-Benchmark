@@ -12,6 +12,9 @@ configs:
     - "test_data/objective/Security_Benchmark_modified.csv"
     - "test_data/objective/SmartContracts_benchmark.csv"
     - "test_data/objective/Tokenomist.csv"
+  - split: subjective
+    path:
+    - "test_data/subjective/DAO.json"
 ---
 
 # 🔍 DMind Benchmark
