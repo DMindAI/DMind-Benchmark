@@ -2,9 +2,30 @@
 configs:
 - config_name: objective
   data_files:
-  - split: normal
+  - split: Fundamentals
     path:
     - "test_data/objective/Blockchain_Fundamentals_benchmark.csv"
+  - split: DAO
+    path:
+    - "test_data/objective/DAO.csv"
+  - split: Defi
+    path:
+    - "test_data/objective/Defi_benchmark.csv"
+  - split: MEME
+    path:
+    - "test_data/objective/MEME_Benchmark_modified.csv"
+  - split: NFT
+    path:
+    - "test_data/objective/NFT_Benchmark_modified.csv"
+  - split: Security
+    path:
+    - "test_data/objective/Security_Benchmark_modified.csv"
+  - split: Smart_contract
+    path:
+    - "test_data/objective/SmartContract_benchmark.csv"
+  - split: Tokenomist
+    path:
+    - "test_data/objective/Tokenomist.csv"
   - split: infrastructrue
     path:
     - "test_data/objective/infra_benchmark.csv"
@@ -35,7 +56,7 @@ configs:
   - split: Smart_contract
     path:
     - "test_data/subjective/smart_contract.jsonl"
-  - split: Token
+  - split: Tokenomist
     path:
     - "test_data/subjective/Token.jsonl"
   
