@@ -4,7 +4,7 @@ configs:
   data_files:
   - split: DAO
     path:
-    - "test_data/subjective/DAO.jsonl"
+    - "test_data/subjective/DAO.json"
   
 ---
 
