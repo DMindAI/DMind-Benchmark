@@ -1,3 +1,12 @@
+---
+configs:
+- config_name: default
+  data_files:
+  - split: train
+    path:
+    - "test_data/objective/DAO2.csv"
+---
+
 # 🔍 DMind Benchmark
 A comprehensive framework for evaluating large language models (LLMs) on blockchain, cryptocurrency, and Web3 knowledge across multiple domains.
 
