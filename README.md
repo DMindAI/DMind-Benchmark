@@ -26,7 +26,7 @@ configs:
   - split: Tokenomist
     path:
     - "test_data/objective/Tokenomist.csv"
-  - split: infrastructrue
+  - split: Infrastructrue
     path:
     - "test_data/objective/infra_benchmark.csv"
   
