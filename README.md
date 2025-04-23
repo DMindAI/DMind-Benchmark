@@ -1,6 +1,6 @@
 ---
 configs:
-- config_name: objective_normal
+- config_name: normal_objective
   data_files:
   - split: Tokenomist
     path:
@@ -27,13 +27,13 @@ configs:
     path:
     - "test_data/objective/SmartContracts_benchmark.csv"
 
-- config_name: objective_infra
+- config_name: infra_objective
   data_files:
   - split: Infrastructrue
     path:
     - "test_data/objective/infra_benchmark.csv"
   
-- config_name: subjective_normal
+- config_name: normal_subjective
   data_files:
   - split: Tokenomist
     path:
@@ -59,7 +59,7 @@ configs:
   - split: Smart_contract
     path:
     - "test_data/subjective/smart_contract.jsonl"
-- config_name: subjective_infra
+- config_name: infra_subjective
   data_files:
   - split: Infrastructure
     path:
