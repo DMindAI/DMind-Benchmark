@@ -7,7 +7,7 @@ configs:
     - "test_data/subjective/DAO.jsonl"
   - split: Fundamentals
     path:
-    - "test_data/subjective/Blockchain_Foundamantals_benchmark.jsonl"
+    - "test_data/subjective/Blockchain_Fundamantals_benchmark.jsonl"
   - split: Defi
     path:
     - "test_data/subjective/Defi.jsonl"
