@@ -1,6 +1,6 @@
 ---
 configs:
-- config_name: objective
+- config_name: normal_objective
   data_files:
   - split: normal
     path:
@@ -12,14 +12,11 @@ configs:
     - "test_data/objective/Security_Benchmark_modified.csv"
     - "test_data/objective/SmartContracts_benchmark.csv"
     - "test_data/objective/Tokenomist.csv"
+- config_name: infrastructure_objective
+  data_files:
   - split: infrastructrue
     path:
     - "test_data/objective/infra_benchmark.csv"
-- config_name: subjective
-  data_files:
-  - split: subjective
-    path:
-    - "test_data/subjective/Defi.json"
 ---
 
 # 🔍 DMind Benchmark
