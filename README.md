@@ -9,7 +9,7 @@ configs:
   data_files:
   - split: subjective
     path:
-    - "test_data/subjective/DAO.json"
+    - "test_data/subjective/Defi.json"
 ---
 
 # 🔍 DMind Benchmark
