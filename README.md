@@ -12,7 +12,7 @@ configs:
     - "test_data/objective/Security_Benchmark_modified.csv"
     - "test_data/objective/SmartContracts_benchmark.csv"
     - "test_data/objective/Tokenomist.csv"
-    - "test_data/objective/infra_benchmark.csv"
+    # - "test_data/objective/infra_benchmark.csv"
 ---
 
 # 🔍 DMind Benchmark
