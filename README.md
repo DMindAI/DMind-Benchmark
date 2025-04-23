@@ -1,6 +1,6 @@
 ---
 configs:
-- config_name: default
+- config_name: objective
   data_files:
   - split: objective
     path:
