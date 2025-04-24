@@ -70,6 +70,8 @@ configs:
 # 🔍 DMind Benchmark
 A comprehensive framework for evaluating large language models (LLMs) on blockchain, cryptocurrency, and Web3 knowledge across multiple domains.
 
+| [Paper](https://arxiv.org/abs/2504.16116) | [Dataset](https://huggingface.co/datasets/DMindAI/DMind_Benchmark/tree/main/test_data) |
+
 ## 📊 Overview
 
 This project provides tools to benchmark AI models on their understanding of blockchain concepts through both objective (multiple-choice) and subjective (open-ended) questions. The framework covers various domains including:
