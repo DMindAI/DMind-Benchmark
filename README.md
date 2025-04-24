@@ -27,7 +27,6 @@ configs:
     path:
     - "test_data/objective/SmartContracts_benchmark.csv"
 
-
 - config_name: objective_infrastructure
   data_files:
   - split: Infrastructrue
@@ -66,7 +65,6 @@ configs:
     path:
     - "test_data/subjective/Infra.jsonl"
 
-  
 ---
 
 # 🔍 DMind Benchmark
