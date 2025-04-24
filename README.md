@@ -72,6 +72,11 @@ A comprehensive framework for evaluating large language models (LLMs) on blockch
 
 | [Paper](https://arxiv.org/abs/2504.16116) | [Dataset](https://huggingface.co/datasets/DMindAI/DMind_Benchmark/tree/main/test_data) |
 
+## Latest LLM Leaderboard In Web3
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6417e25e058f65de43201023/ZcZjE8VriMxzzeBCMBPDa.png)
+
+
 ## 📊 Overview
 
 This project provides tools to benchmark AI models on their understanding of blockchain concepts through both objective (multiple-choice) and subjective (open-ended) questions. The framework covers various domains including:
