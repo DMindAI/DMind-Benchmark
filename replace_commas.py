@@ -33,13 +33,7 @@ for csv_file in csv_files:
                 # 不处理"Correct option"列
                 if i != correct_option_index:
                     # 将文本中的英文逗号替换为中文逗号
-                    content = row[i]
-                    
-                    # 先使用正则表达式替换数字中的逗号（例如1,000 -> 1，000）
-                    content = re.sub(r'(\d),(\d)', r'\1，\2', content)
-                    
-                    # 然后替换剩余的所有英文逗号
-                    content = content.replace(',', '，')
+                    content = row[i].replace(",", "，")
                     
                     new_row[i] = content
             
