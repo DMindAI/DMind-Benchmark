@@ -102,7 +102,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 101,Intermediate,"What is the main disadvantage of the "constant product formula" (x*y=k) in AMMs?",High computational complexity,Large slippage for large trades,Does not support multiple tokens,Cannot handle stablecoins,B,No
 102,Intermediate,Which DeFi protocol innovation has reduced the impermanent loss problem?,Concentrated liquidity AMMs,Order book DEXs,Lending protocols,Synthetic asset protocols,A,No
 103,Intermediate,Which mechanism is most suitable for preventing flash loan attacks in DeFi?,Using Time-Weighted Average Price (TWAP),Increasing transaction fees,Limiting transaction size,Centralized review,A,No
-104,Intermediate,In DeFi lending protocols," what happens when the "Health Factor" falls below 1?",Additional rewards,Liquidation is triggered,Lower borrowing rates,Increased borrowing capacity,B,No
+104,Intermediate,In DeFi lending protocols，" what happens when the "Health Factor" falls below 1?",Additional rewards,Liquidation is triggered,Lower borrowing rates,Increased borrowing capacity,B,No
 105,Intermediate,Which DeFi liquidity strategy has achieved higher capital efficiency?,Single-asset staking,Concentrated liquidity provision,Full-range liquidity provision,Passive holding,B,No
 106,Intermediate,Which mechanism is used to balance supply and demand in DeFi lending protocols?,Interest rate models,Governance voting,Oracles,Liquidity mining,A,No
 107,Intermediate,"In DeFi， what does an inverted "Yield Curve" typically indicate?",Short-term yields higher than long-term yields,Long-term yields higher than short-term yields,Negative yields,Zero yields,A,No
