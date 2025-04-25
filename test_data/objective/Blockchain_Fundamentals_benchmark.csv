@@ -13,7 +13,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 12,Basic,What is the total supply cap of Bitcoin?,10 million,21 million,50 million,No cap,B,No
 13,Basic,What is 'Gas' primarily used for in blockchain?,Providing energy to miners,Calculating transaction fees,Measuring block size,Evaluating network congestion,B,No
 14,Basic,Which of the following is NOT a blockchain privacy protection technology?,Ring signature,Zero-knowledge proof,Coin mixing technology,Public key encryption,D,No
-15,Basic,In the Bitcoin network, approximately after how many blocks does mining reward halve?,10，000 blocks,100，000 blocks,210，000 blocks,"1,000,000 blocks",C,No
+15,Basic,In the Bitcoin network， approximately after how many blocks does mining reward halve?,10，000 blocks,100，000 blocks,210，000 blocks,"1,000,000 blocks",C,No
 16,Basic,Which of the following is NOT a blockchain layer structure?,Layer 0,Layer 1,Layer 2,Layer 4,D,No
 17,Basic,Which blockchain architecture design has received more attention currently?,Monolithic architecture,Modular architecture,Layered architecture,Microservice architecture,B,No
 18,Basic,What does 'genesis block' refer to in blockchain?,The newest block,The block containing most transactions,The first block in the chain,The block manually created by founders,C,No
