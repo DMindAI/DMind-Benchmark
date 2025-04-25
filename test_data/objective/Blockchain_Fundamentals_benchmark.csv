@@ -108,7 +108,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 107,Intermediate,Which of the following is NOT a characteristic of zero-knowledge proofs?,Completeness,Soundness,Zero-knowledge,Reversibility,D,No
 108,Intermediate,Which blockchain data availability solution has received more attention?,Celestia,Filecoin,Arweave,Storj,A,No
 109,Intermediate,Which of the following attacks is NOT directed at blockchain consensus mechanisms?,Long-range attack,Selfish mining,SQL injection,Finney attack,C,No
-110,Intermediate,What does 'Deterministic Finality' refer to in blockchain?,Once confirmed, transactions cannot be rolled back,The blockchain has a definite end date,Transaction processing has a definite time limit,Smart contract execution results are deterministic,A,No
+110,Intermediate,What does 'Deterministic Finality' refer to in blockchain?,Once confirmed， transactions cannot be rolled back,The blockchain has a definite end date,Transaction processing has a definite time limit,Smart contract execution results are deterministic,A,No
 111,Intermediate,Which of the following technologies was NOT designed to improve blockchain privacy?,Ring signatures,Confidential transactions,Sharding,Zero-knowledge proofs,C,No
 112,Intermediate,What is an 'Eclipse Attack' in blockchain networks?,The attacker controls all connections of the target node,An attack launched during a specific time period,An attack utilizing network fluctuations during eclipses,An attack on the blockchain's timestamp mechanism,A,No
 113,Intermediate,What is the primary use of the 'Ordinals protocol' in the Bitcoin network?,Improving transaction speed,Creating NFTs and BRC-20 tokens on Bitcoin,Enhancing privacy protection,Enabling cross-chain transactions,B,No
