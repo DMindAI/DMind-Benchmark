@@ -1,233 +1,233 @@
 No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
-1,Basic,"什么是智能合约中的""重入攻击""（Reentrancy Attack）？",攻击者重复进入网站的漏洞,在合约完成执行前，恶意合约重复调用原合约的漏洞,重复提交相同交易的攻击,重复使用相同密码的安全问题,B,Single Choice
-2,Basic,"2016年发生的""The DAO攻击""主要利用了什么漏洞？",整数溢出,重入攻击,随机数生成问题,私钥泄露,B,Single Choice
-3,Basic,"什么是""闪电贷攻击""（Flash Loan Attack）？",利用闪电网络的漏洞,利用无需抵押的大额贷款在单个区块内完成的攻击,通过快速交易窃取资金,使用闪光灯干扰区块链节点,B,Single Choice
-4,Basic,"什么是""整数溢出""（Integer Overflow）漏洞？",当整数超过其最大值时循环回到最小值的问题,当太多用户同时访问合约时的拥堵,区块链上存储过多整数导致的问题,整数变量初始化不当,A,Single Choice
-5,Basic,"什么是""整数下溢""（Integer Underflow）漏洞？",当整数低于其最小值时循环到最大值的问题,当用户数量不足时的合约失败,区块链上整数存储不足导致的问题,整数变量未正确声明,A,Single Choice
-6,Basic,"什么是""前置运行""（Front-running）攻击？",在区块链网络前端的攻击,通过支付更高的gas费用，使自己的交易在目标交易之前执行,在项目启动前进行的攻击,在用户界面上进行的攻击,B,Single Choice
-7,Basic,"什么是""MEV""（Maximal Extractable Value，最大可提取价值）？",区块链项目的最大市值,通过重新排序、插入或审查交易可提取的最大价值,矿工可获得的最大奖励,代币的最高价格,B,Single Choice
-8,Basic,"什么是""三明治攻击""（Sandwich Attack）？",一种食物中毒攻击,在目标交易前后分别下单，利用价格影响获利的攻击,同时攻击三个不同的区块链,针对三层架构的攻击,B,Single Choice
-9,Basic,"什么是""访问控制""（Access Control）漏洞？",限制用户访问网站的机制,智能合约中未正确限制关键功能访问权限的问题,控制区块链节点访问的机制,限制矿工参与共识的机制,B,Single Choice
-10,Basic,"什么是""默认可见性""（Default Visibility）漏洞？",智能合约函数未明确指定可见性级别的问题,区块链交易默认对所有人可见的特性,网站默认显示用户信息的问题,钱包地址默认公开的特性,A,Single Choice
-11,Basic,"什么是""tx.origin""身份验证漏洞？",使用交易发起者而非直接调用者地址进行身份验证的安全问题,交易ID被用于身份验证的问题,交易时间戳被用于身份验证的问题,交易费用被用于身份验证的问题,A,Single Choice
-12,Basic,"什么是""随机数生成""（Random Number Generation）漏洞？",随机数生成器硬件故障,在区块链环境中使用可预测或可操纵的随机数源,随机数太大导致的计算问题,随机数太小导致的安全问题,B,Single Choice
-13,Basic,"什么是""短地址攻击""（Short Address Attack）？",使用短区块链地址绕过验证,利用EVM填充机制，通过发送缺少字节的地址导致参数错位,攻击短期存在的地址,使用简短密码的安全问题,B,Single Choice
-14,Basic,"什么是""拒绝服务""（Denial of Service，DoS）攻击？",拒绝提供客户服务,通过消耗所有资源或触发异常使合约无法正常运行,拒绝签署交易,拒绝支付交易费用,B,Single Choice
-15,Basic,"什么是""强制发送以太币""（Force Feeding Ether）攻击？",强制用户接受以太币支付,强制交易所接受以太币存款,通过自毁合约等方式向目标合约强制发送以太币，破坏其逻辑,强制矿工包含特定交易,C,Single Choice
-16,Basic,"什么是""时间戳依赖""（Timestamp Dependence）漏洞？",智能合约过度依赖系统时钟的问题,交易时间过长导致的问题,区块时间戳可被矿工在一定范围内操纵，导致依赖它的合约存在风险,区块确认时间不稳定的问题,C,Single Choice
-17,Basic,"什么是""区块信息依赖""（Block Info Dependence）漏洞？",区块大小限制导致的问题,区块链信息泄露问题,智能合约过度依赖可被矿工操纵的区块信息（如gas限制）,区块同步延迟问题,C,Single Choice
-18,Basic,"什么是""未检查的外部调用""（Unchecked External Call）漏洞？",未经授权的API调用,未经验证的外部数据输入,未正确处理外部合约调用的返回值或异常,未经审核的外部库使用,C,Single Choice
-19,Basic,"什么是""未检查的数学运算""（Unchecked Math）漏洞？",数学公式错误,使用不精确的浮点数,未处理整数溢出/下溢等数学异常的代码,数学库使用不当,C,Single Choice
-20,Basic,"什么是""错误的构造函数""（Constructor Mistyping）漏洞？",构造函数参数错误,构造函数逻辑错误,在Solidity 0.4.22之前，将构造函数名拼写错误导致其变成普通函数,构造函数缺失,C,Single Choice
-21,Basic,"什么是""幽灵函数""（Phantom Function）漏洞？",函数从未被调用,隐藏在代码中的秘密函数,利用fallback函数和函数选择器机制调用合约中不存在的函数,函数名使用特殊字符,C,Single Choice
-22,Basic,"什么是""委托调用""（Delegatecall）漏洞？",委托他人调用合约,调用未经授权的代理,使用delegatecall在调用合约的上下文中执行目标合约代码，可能导致存储冲突,调用已弃用的函数,C,Single Choice
-23,Basic,"什么是""签名重放""（Signature Replay）攻击？",重复播放数字签名,伪造数字签名,在不同上下文中重复使用有效签名的攻击,破解签名算法,C,Single Choice
-24,Basic,"什么是""中间人""（Man-in-the-Middle）攻击？",在物理位置上处于中间的攻击者,在区块链中间层的攻击,攻击者拦截并可能修改两方之间通信的攻击,攻击网络中间件,C,Single Choice
-25,Basic,"什么是""女巫攻击""（Sybil Attack）？",由女性发起的攻击,针对女性用户的攻击,攻击者创建多个虚假身份以获得不成比例的影响力,使用古代女巫咒语的攻击,C,Single Choice
-26,Basic,"什么是""51%攻击""？",控制51%市场份额的垄断行为,攻击51%的网络节点,控制超过50%网络算力，能够进行双重支付和交易审查,控制51%的代币供应,C,Single Choice
-27,Basic,"什么是""双重支付""（Double Spending）攻击？",向商家支付两次,使用两种不同货币支付,同一笔加密货币被花费两次的攻击,支付两倍的交易费用,C,Single Choice
-28,Basic,"什么是""长程攻击""（Long Range Attack）？",从远距离发起的物理攻击,长时间运行的攻击脚本,在权益证明系统中，从创世区块开始创建替代链的攻击,针对长期持有者的攻击,C,Single Choice
-29,Basic,"什么是""无利害关系攻击""（Nothing-at-Stake）？",无风险投资策略,没有经济激励的攻击,在权益证明系统中，验证者可以无成本地在多个链上同时下注,无需抵押的攻击,C,Single Choice
-30,Basic,"什么是""零知识证明""（Zero-Knowledge Proof）？",不需要知识就能通过的考试,证明某人对某事一无所知,证明者向验证者证明某个陈述为真，而不泄露除了该陈述为真以外的任何信息,在零知识条件下进行的测试,C,Single Choice
-31,Basic,"什么是""zk-SNARKs""？",一种小型智能合约,一种区块链共识算法,零知识简洁非交互式知识论证，允许在不泄露输入值的情况下证明计算正确性,一种加密货币钱包,C,Single Choice
-32,Basic,"什么是""zk-STARKs""？",一种恒星间通信协议,一种区块链扩容解决方案,零知识可扩展透明知识论证，不依赖可信设置的零知识证明系统,一种智能合约编程语言,C,Single Choice
-33,Basic,zk-STARKs相比zk-SNARKs的主要优势是什么？,更快的验证速度,更小的证明大小,不需要可信设置且抗量子计算攻击,更容易实现,C,Single Choice
-34,Basic,"什么是""环签名""（Ring Signature）？",使用戒指进行的签名,环形结构的数字签名,允许签名者匿名隐藏在一组可能签名者中的加密技术,循环使用的签名,C,Single Choice
-35,Basic,"什么是""隐形地址""（Stealth Address）？",无法被追踪的物理地址,使用隐形墨水书写的地址,一次性使用的公钥地址，增强交易隐私性,临时钱包地址,C,Single Choice
-36,Basic,"什么是""混币""（Coin Mixing）服务？",不同加密货币的交易所,将硬币物理混合的服务,通过混合多个用户的资金来断开交易历史链接的隐私服务,创建代币混合物的服务,C,Single Choice
-37,Basic,"什么是""Tornado Cash""？",一种加密货币交易所,一种去中心化金融应用,基于零知识证明的以太坊混币协议,一种区块链游戏,C,Single Choice
-38,Basic,"什么是""机密交易""（Confidential Transactions）？",秘密进行的场外交易,仅对参与方可见的交易,隐藏交易金额但保持可验证性的技术,使用机密信息进行的交易,C,Single Choice
-39,Basic,"什么是""同态加密""（Homomorphic Encryption）？",所有数据使用相同密钥的加密,在家中进行的加密,允许对加密数据进行计算而无需解密的加密技术,人类可读的加密,C,Single Choice
-40,Basic,"什么是""安全多方计算""（Secure Multi-party Computation）？",多台计算机同时进行的安全计算,允许多方共同计算函数，同时保持各自输入私密的技术,使用多个密码的计算,在多个区块链上进行的计算,B,Single Choice
-41,Basic,"什么是""差分隐私""（Differential Privacy）？",不同级别的隐私设置,在数据集中添加统计噪声以保护个体隐私的技术,隐私设置之间的差异,私人和公共数据的区别,B,Single Choice
-42,Basic,"什么是""密钥泄露""（Key Leakage）漏洞？",门锁被撬开,私钥通过各种途径被泄露或窃取的安全问题,API密钥过期,密钥生成算法缺陷,B,Single Choice
-43,Basic,"什么是""助记词""（Mnemonic Phrase）？",帮助记忆的短语,用于生成和恢复加密钱包私钥的一系列单词,区块链项目的口号,智能合约的注释,B,Single Choice
-44,Basic,"什么是""冷钱包""（Cold Wallet）？",存放在冰箱中的钱包,离线存储加密货币的钱包，不连接互联网,不常使用的钱包,存储小额加密货币的钱包,B,Single Choice
-45,Basic,"什么是""热钱包""（Hot Wallet）？",新推出的钱包产品,连接互联网的在线加密货币钱包,存储大额加密货币的钱包,温度较高的物理钱包,B,Single Choice
-46,Basic,"什么是""硬件钱包""（Hardware Wallet）？",由硬金属制成的钱包,专用物理设备，用于安全存储加密货币私钥,存储硬件设备的钱包,计算机硬盘上的钱包,B,Single Choice
-47,Basic,"什么是""纸钱包""（Paper Wallet）？",纸币的存储方式,将加密货币私钥和地址打印在纸上的冷存储方法,用于记录交易的纸质账本,由纸制成的硬件钱包,B,Single Choice
-48,Basic,"什么是""多重签名""（Multisignature）钱包？",需要多次签名的钱包,需要多个私钥授权才能执行交易的钱包,支持多种签名算法的钱包,由多人共同设计的钱包,B,Single Choice
-49,Basic,"什么是""钓鱼攻击""（Phishing Attack）？",在钓鱼时进行的攻击,通过伪装成可信实体诱骗用户泄露敏感信息的攻击,使用鱼形图标的恶意软件,针对鱼类市场的攻击,B,Single Choice
-50,Basic,"什么是""社会工程学攻击""（Social Engineering Attack）？",针对社会基础设施的攻击,利用人类心理而非技术漏洞的欺骗手段,社会学研究中的实验方法,社交媒体平台上的攻击,B,Single Choice
-51,Basic,"什么是""供应链攻击""（Supply Chain Attack）？",针对物流公司的攻击,通过破坏开发工具、依赖库或部署流程来植入恶意代码,扰乱商品供应的攻击,针对零售商的攻击,B,Single Choice
-52,Basic,"什么是""DNS劫持""（DNS Hijacking）？",盗窃DNS服务器,重定向DNS请求到恶意服务器的攻击,注册与知名品牌相似的域名,关闭DNS服务,B,Single Choice
-53,Basic,"什么是""域名仿冒""（Typosquatting）？",注册带有拼写错误的域名以欺骗用户,在域名中使用特殊字符,频繁更换域名,使用非常长的域名,A,Single Choice
-54,Basic,"什么是""恶意软件""（Malware）？",质量不佳的软件,设计用于未经授权访问或损害系统的软件,过时的软件,未经测试的软件,B,Single Choice
-55,Basic,"什么是""勒索软件""（Ransomware）？",要求高价的软件,加密受害者数据并要求支付赎金才能解密的恶意软件,租赁软件服务,用于讨价还价的软件,B,Single Choice
-56,Basic,"什么是""后门""（Backdoor）？",软件的紧急出口,绕过正常认证的秘密入口点,程序的备用界面,软件的辅助功能,B,Single Choice
-57,Basic,"什么是""蜜罐""（Honeypot）？",存放蜂蜜的容器,故意设置的安全陷阱，用于检测或转移攻击者注意力,甜蜜的奖励计划,用户友好的界面,B,Single Choice
-58,Basic,"什么是""白帽黑客""（White Hat Hacker）？",戴白帽子的黑客,道德黑客，经授权测试系统安全性以帮助修复漏洞,政府雇佣的黑客,只在白天工作的黑客,B,Single Choice
-59,Basic,"什么是""黑帽黑客""（Black Hat Hacker）？",戴黑帽子的黑客,恶意黑客，未经授权入侵系统谋取私利,在黑暗中工作的黑客,使用黑色主题的程序员,B,Single Choice
-60,Basic,"什么是""灰帽黑客""（Grey Hat Hacker）？",戴灰帽子的黑客,行为介于白帽和黑帽之间的黑客，可能未经授权但无恶意,退休的黑客,技能一般的黑客,B,Single Choice
-61,Basic,"什么是""漏洞赏金计划""（Bug Bounty Program）？",消灭软件中昆虫的奖励,组织向发现并报告安全漏洞的研究人员提供奖励的项目,捕捉真实昆虫的比赛,软件测试比赛,B,Single Choice
-62,Basic,"什么是""安全审计""（Security Audit）？",财务记录的检查,系统性评估系统或应用程序安全控制的过程,安全人员的绩效评估,安全设备的盘点,B,Single Choice
-63,Basic,"什么是""渗透测试""（Penetration Testing）？",测试物体渗透水的能力,模拟真实攻击以评估系统安全性的授权测试,测试网络渗透率,测试用户对安全培训的渗透程度,B,Single Choice
-64,Basic,"什么是""形式化验证""（Formal Verification）？",正式的软件测试过程,使用数学方法证明程序满足规范的技术,验证软件正式版本的过程,由官方机构进行的验证,B,Single Choice
-65,Basic,"什么是""静态分析""（Static Analysis）？",分析静态图像,在不执行代码的情况下分析源代码以发现潜在问题,静态网站的分析,不变的数据分析,B,Single Choice
-66,Basic,"什么是""动态分析""（Dynamic Analysis）？",分析运动物体,在运行时分析程序以发现潜在问题,动态网站的分析,变化数据的分析,B,Single Choice
-67,Basic,"什么是""模糊测试""（Fuzzing）？",在模糊环境中测试,向程序输入随机或异常数据以发现漏洞的技术,不精确的测试方法,测试图像模糊度,B,Single Choice
-68,Basic,"什么是""符号执行""（Symbolic Execution）？",使用符号进行的执行仪式,使用符号值而非具体值分析程序的技术,执行符号化的代码,使用特殊符号编写的程序,B,Single Choice
-69,Basic,"什么是""最小权限原则""（Principle of Least Privilege）？",只给予特权阶层权限,用户或程序只应被授予完成任务所需的最小权限,最小化系统中的权限数量,优先考虑低权限用户,B,Single Choice
-70,Basic,"什么是""纵深防御""（Defense in Depth）？",深入敌方领土的防御,使用多层安全控制来保护系统的策略,防御地下设施,深入分析防御策略,B,Single Choice
-71,Basic,以下哪些是智能合约常见的安全漏洞？,重入攻击,整数溢出/下溢,访问控制问题,随机数生成问题,A/B/C,Multiple Choice
-72,Basic,以下哪些攻击与区块链交易排序有关？,前置运行（Front-running）,三明治攻击（Sandwich Attack）,时间戳操纵,MEV提取,B/C/D,Multiple Choice
-73,Basic,以下哪些是保护私钥安全的方法？,使用硬件钱包,冷存储,多重签名,加密备份,A/B/D,Multiple Choice
-74,Basic,以下哪些是零知识证明系统？,zk-SNARKs,zk-STARKs,Bulletproofs,PLONK,B/C/D,Multiple Choice
-75,Basic,以下哪些技术可以增强区块链交易的隐私性？,环签名,隐形地址,混币服务,机密交易,B/C,Multiple Choice
-76,Basic,以下哪些是区块链共识机制可能面临的攻击？,51%攻击,长程攻击,无利害关系攻击,女巫攻击,A/B/C,Multiple Choice
-77,Basic,以下哪些是加密钱包的类型？,热钱包,冷钱包,硬件钱包,纸钱包,A/B/C,Multiple Choice
-78,Basic,以下哪些是社会工程学攻击的形式？,钓鱼攻击,假冒身份,诱饵攻击,权威攻击,A/B/C,Multiple Choice
-79,Basic,以下哪些是智能合约安全审计的方法？,形式化验证,静态分析,动态分析,模糊测试,A/B,Multiple Choice
-80,Basic,以下哪些是区块链安全的最佳实践？,代码审计,形式化验证,漏洞赏金计划,安全多方计算,A/B/C/D,Multiple Choice
-81,Basic,以下哪些是DeFi项目常见的安全风险？,预言机操纵,闪电贷攻击,经济模型漏洞,治理攻击,B/C/D,Multiple Choice
-82,Basic,以下哪些是智能合约中的访问控制机制？,修饰符（Modifiers）,角色分配,多重签名,时间锁,A/B,Multiple Choice
-83,Basic,以下哪些是区块链隐私保护的挑战？,交易透明性,链上数据永久性,监管合规,计算效率,B/C,Multiple Choice
-84,Basic,以下哪些是智能合约中的时间相关漏洞？,时间戳依赖,区块时间操纵,时间锁绕过,执行时间差异,A/C/D,Multiple Choice
-85,Basic,以下哪些是区块链域名系统面临的安全威胁？,域名仿冒,DNS劫持,域名抢注,域名到期劫持,B/C/D,Multiple Choice
-86,Basic,以下哪些是区块链项目的供应链安全风险？,依赖库漏洞,构建工具篡改,部署脚本攻击,软件包仓库投毒,B/C/D,Multiple Choice
-87,Basic,以下哪些是智能合约中的随机性问题？,区块哈希可预测性,时间戳操纵,矿工可操纵性,熵源不足,C/D,Multiple Choice
-88,Basic,以下哪些是区块链安全事件的常见后果？,资金损失,声誉损害,市场波动,监管审查,A/B/C/D,Multiple Choice
-89,Basic,以下哪些是保护智能合约的设计模式？,检查-效果-交互模式,紧急停止机制,速率限制,拉取支付模式,A/B/D,Multiple Choice
-90,Basic,以下哪些是区块链安全工具？,静态分析器,形式化验证工具,漏洞扫描器,监控系统,A/B/C,Multiple Choice
-91,Basic,以下哪些是区块链隐私增强技术？,零知识证明,混合网络,同态加密,安全多方计算,B/C/D,Multiple Choice
-92,Basic,以下哪些是区块链身份安全的考虑因素？,私钥管理,身份验证机制,权限管理,身份恢复,A/C/D,Multiple Choice
-93,Basic,以下哪些是区块链跨链安全风险？,桥接协议漏洞,共识差异,资产锁定机制,跨链消息验证,A/C,Multiple Choice
-94,Basic,以下哪些是区块链存储安全考虑因素？,数据加密,访问控制,数据完整性,备份策略,A/B/C/D,Multiple Choice
-95,Basic,以下哪些是区块链网络层安全威胁？,分区攻击,日蚀攻击,DDoS攻击,BGP劫持,A/C,Multiple Choice
-96,Basic,以下哪些是区块链安全审计的关键领域？,代码质量,密码学实现,经济模型,权限控制,A/B/D,Multiple Choice
-97,Basic,以下哪些是区块链治理安全风险？,投票操纵,治理参数攻击,提案注入,治理代币集中,A/B/C/D,Multiple Choice
-98,Basic,以下哪些是区块链安全的监管考虑因素？,合规要求,数据保护法规,反洗钱规定,跨境法律差异,A/B/C/D,Multiple Choice
-99,Basic,以下哪些是区块链用户安全的正确实践？,使用硬件钱包,启用多因素认证,定期更新软件,验证交易详情,A/B/C/D,Multiple Choice
-100,Basic,以下哪些是评估区块链项目安全性的指标？,代码审计历史,安全事件响应能力,漏洞披露政策,安全团队实力,A/B/C/D,Multiple Choice
-101,Intermediate,"在智能合约中，""检查-效果-交互""（Checks-Effects-Interactions）模式主要用于防止什么攻击？",整数溢出,重入攻击,闪电贷攻击,时间戳操纵,B,Single Choice
-102,Intermediate,"""检查-效果-交互""模式的正确实施顺序是什么？",先进行外部调用，然后更新状态变量，最后进行条件检查,先进行条件检查，然后更新状态变量，最后进行外部调用,先更新状态变量，然后进行条件检查，最后进行外部调用,先进行条件检查，然后进行外部调用，最后更新状态变量,B,Single Choice
-103,Intermediate,在Solidity中，以下哪种函数修饰符（modifier）最适合实现重入保护？,view,pure,nonReentrant,payable,C,Single Choice
-104,Intermediate,"什么是""拉取支付""（Pull Payment）模式？",合约主动向用户发送资金,让用户自己提取资金而不是合约主动发送,使用信用卡支付,延迟支付机制,B,Single Choice
-105,Intermediate,"""拉取支付""模式主要解决了什么安全问题？",私钥泄露,重入攻击和DoS攻击风险,随机数生成,交易顺序依赖,B,Single Choice
-106,Intermediate,"在智能合约中，""紧急停止""（Emergency Stop）模式的主要目的是什么？",在发现漏洞时立即停止合约功能,防止用户提款,加速交易处理,降低gas成本,A,Single Choice
-107,Intermediate,"实现""紧急停止""模式通常需要什么关键组件？",只有一个停止开关,停止开关、访问控制和受限操作,自动超时机制,用户投票系统,B,Single Choice
-108,Intermediate,"什么是智能合约中的""速率限制""（Rate Limiting）模式？",限制合约执行速度,限制在特定时间段内可以提取的资金量,限制用户交易频率,限制合约大小,B,Single Choice
-109,Intermediate,速率限制模式主要防御什么类型的攻击？,重入攻击,资金快速耗尽攻击,整数溢出,随机数操纵,B,Single Choice
-110,Intermediate,"什么是智能合约中的""状态机""（State Machine）模式？",一种物理计算设备,将合约行为组织为明确定义的状态和转换的设计模式,用于存储大量状态变量的模式,一种共识算法,B,Single Choice
-111,Intermediate,状态机模式在安全方面的主要优势是什么？,降低gas成本,通过强制执行有效的状态转换来防止非法操作,提高执行速度,减少代码量,B,Single Choice
-112,Intermediate,"什么是智能合约中的""代理模式""（Proxy Pattern）？",使用代理服务器访问区块链,将合约逻辑和数据分离，允许逻辑升级而保持数据不变,代表用户执行交易,隐藏用户身份的方法,B,Single Choice
-113,Intermediate,代理模式的主要安全风险是什么？,高gas成本,存储冲突、函数选择器冲突和初始化问题,交易速度慢,不兼容某些区块链,B,Single Choice
-114,Intermediate,"什么是""透明代理模式""（Transparent Proxy Pattern）？",完全透明的合约代码,一种代理模式，通过不同处理代理所有者和其他用户的调用来避免函数选择器冲突,允许任何人查看代理内部状态的模式,一种不使用代理的模式,B,Single Choice
-115,Intermediate,"什么是""通用可升级代理标准""（UUPS - Universal Upgradeable Proxy Standard）？",一种全球代理服务器标准,将升级逻辑放在实现合约而非代理合约中的代理模式,用于标准化代理服务器的协议,一种用于升级硬件的标准,B,Single Choice
-116,Intermediate,UUPS相比透明代理的主要优势是什么？,更简单的实现,更低的gas成本和可以移除升级能力,更高的安全性,更好的兼容性,B,Single Choice
-117,Intermediate,"什么是""钻石模式""（Diamond Pattern）或EIP-2535？",允许多个实现合约（facets）共享同一存储的代理模式,一种珠宝交易标准,一种加密算法,一种共识机制,A,Single Choice
-118,Intermediate,EIP-2535的主要优势是什么？,克服合约大小限制和更细粒度的升级,更简单的代码,更低的部署成本,更快的执行速度,A,Single Choice
-119,Intermediate,"什么是智能合约中的""工厂模式""（Factory Pattern）？",用于创建和部署其他合约实例的合约,制造物理产品的智能合约,一种生产挖矿设备的模式,批量处理交易的方法,A,Single Choice
-120,Intermediate,工厂模式在安全方面的主要优势是什么？,标准化合约创建过程，减少错误和确保一致性,降低交易费用,提高交易速度,简化用户界面,A,Single Choice
-121,Intermediate,"什么是""预言机""（Oracle）在区块链安全中的作用？",将外部数据安全地引入区块链,预测未来事件,验证用户身份,加速交易确认,A,Single Choice
-122,Intermediate,预言机面临的主要安全挑战是什么？,单点故障风险和数据操纵,高运行成本,兼容性问题,用户采用率低,A,Single Choice
-123,Intermediate,"什么是""去中心化预言机网络""？",多个独立预言机节点组成的网络，通过共识提供数据,由中央银行运营的预言机,仅在去中心化交易所使用的预言机,一种预测市场,A,Single Choice
-124,Intermediate,"什么是""闪电贷攻击""（Flash Loan Attack）的主要机制？",借入无需抵押的大额贷款，在单个交易中操纵市场或利用漏洞，然后归还贷款,使用闪电网络攻击比特币,快速创建和关闭贷款账户,使用闪光灯干扰区块链节点,A,Single Choice
-125,Intermediate,防御闪电贷攻击的有效策略是什么？,使用去中心化预言机、时间锁和价格偏差检查,禁止所有贷款,只允许小额交易,增加交易确认时间,A,Single Choice
-126,Intermediate,"什么是""价格预言机操纵""攻击？",操纵预言机提供的价格数据，利用DeFi协议中的价格差异,改变商品实际价格,预测价格变动,控制法定货币汇率,A,Single Choice
-127,Intermediate,"什么是""三明治攻击""（Sandwich Attack）的具体执行方式？",在目标交易前放置一个交易抬高价格，在目标交易后放置另一个交易获利,同时攻击三个不同的区块链,创建三层加密结构,攻击三个相关的智能合约,A,Single Choice
-128,Intermediate,"什么是""时间锁""（Timelock）在智能合约安全中的作用？",在敏感操作执行前强制延迟，给用户时间发现并响应潜在问题,限制合约执行时间,设置合约到期时间,同步多个区块链的时间,A,Single Choice
-129,Intermediate,"什么是""多重签名""（Multisignature）钱包的安全优势？",需要多个私钥授权，防止单点故障和恶意行为,更快的交易速度,更低的交易费用,更大的存储容量,A,Single Choice
-130,Intermediate,"在多重签名实现中，""m-of-n""配置表示什么？",需要n个签名者中的m个授权才能执行交易,需要m个矿工确认n个区块,每月（m）可以执行n次交易,最多m个用户可以控制n个钱包,A,Single Choice
-131,Intermediate,"什么是""阈值签名""（Threshold Signature）？",多方共同生成单个签名的密码学技术，而不是多个独立签名,一种非常安全的签名,签名大小的最小阈值,一种需要最小计算能力的签名,A,Single Choice
-132,Intermediate,阈值签名相比传统多重签名的主要优势是什么？,降低链上存储和交易成本，提高隐私性,更容易实现,更快的签名生成,更广泛的钱包支持,A,Single Choice
-133,Intermediate,"什么是""链上随机性""（On-chain Randomness）的主要挑战？",区块链环境本质上是确定性的，矿工可能操纵看似随机的值,生成真正随机数的计算成本,随机数范围有限,用户不信任随机结果,A,Single Choice
-134,Intermediate,"什么是""可验证随机函数""（Verifiable Random Function, VRF）？",密码学函数，生成随机输出和证明，证明可验证输出的正确生成,一种可以被任何人验证的随机数生成器,验证其他随机函数的工具,一种随机验证用户身份的函数,A,Single Choice
-135,Intermediate,"什么是""承诺方案""（Commitment Scheme）在区块链安全中的应用？",允许用户先提交数据的隐藏版本（承诺），之后再揭示，用于防止前置运行等攻击,用户承诺长期使用某服务,智能合约的长期维护承诺,开发者对项目的资金承诺,A,Single Choice
-136,Intermediate,"什么是""零知识证明""（Zero-Knowledge Proof）的三个关键属性？",完备性、可靠性和零知识性,速度、成本和可扩展性,透明度、隐私性和效率,去中心化、不可变性和匿名性,A,Single Choice
-137,Intermediate,zk-SNARKs和zk-STARKs的主要区别是什么？,zk-STARKs不需要可信设置，抗量子计算，但证明大小更大,只是名称不同，技术相同,zk-SNARKs更新，完全取代了zk-STARKs,zk-STARKs只用于存储，zk-SNARKs只用于计算,A,Single Choice
-138,Intermediate,"什么是""可信设置""（Trusted Setup）在零知识证明中的含义？",一组受信任的硬件设备,系统初始化阶段，生成公共参数，如果参与者不诚实可能危及系统安全,一组预先验证的智能合约,由政府认证的设置过程,B,Single Choice
-139,Intermediate,"什么是""混合网络""（Mixnet）？",混合不同类型的网络协议,通过多个节点路由消息，每个节点打乱顺序并移除识别信息，提供匿名通信,结合中心化和去中心化特性的网络,连接多个区块链的网络,B,Single Choice
-140,Intermediate,"什么是""环签名""（Ring Signature）的核心安全特性？",签名呈环形形状,验证者知道签名来自一组可能的签名者，但无法确定具体是谁,多个用户必须一起签名,签名可以被循环使用,B,Single Choice
-141,Intermediate,"什么是""隐形地址""（Stealth Address）的工作原理？",使用特殊墨水书写的地址,发送者为每次交易生成一次性地址，只有接收者可以使用私钥识别和花费,地址在区块链浏览器中不可见,使用VPN创建的钱包地址,B,Single Choice
-142,Intermediate,"什么是""机密交易""（Confidential Transaction）的核心技术？",使用端到端加密,使用同态加密或承诺方案隐藏交易金额，同时保持可验证性,通过私人渠道进行的交易,只对特定用户可见的交易,B,Single Choice
-143,Intermediate,"什么是""Bulletproofs""？",防弹的智能合约,一种非交互式零知识证明，用于证明数值在特定范围内，无需可信设置,一种抵御攻击的协议,高速交易验证系统,B,Single Choice
-144,Intermediate,Bulletproofs的主要应用是什么？,智能合约形式化验证,机密交易中的范围证明，证明交易金额为正而不泄露具体金额,防止51%攻击,加速区块确认,B,Single Choice
-145,Intermediate,"什么是""安全多方计算""（Secure Multi-party Computation, MPC）的核心原理？",多台计算机并行处理提高安全性,多方共同计算函数，得到结果但不泄露各自输入,在多个区块链上分散计算,使用多个加密算法增强安全性,B,Single Choice
-146,Intermediate,MPC在区块链中的主要应用是什么？,仅用于挖矿,私钥管理、隐私保护交易和去中心化预言机,仅用于身份验证,仅用于智能合约执行,B,Single Choice
-147,Intermediate,"什么是""同态加密""（Homomorphic Encryption）？",所有数据使用相同密钥的加密,允许对加密数据进行计算，得到加密结果，解密后等同于对原始数据计算的结果,在家中进行的加密,形状保持不变的加密,B,Single Choice
-148,Intermediate,同态加密在区块链隐私保护中的主要应用是什么？,仅用于存储加密数据,允许对加密数据进行计算和验证，而不泄露原始数据,仅用于用户认证,仅用于加密通信,B,Single Choice
-149,Intermediate,"什么是""差分隐私""（Differential Privacy）？",不同级别的隐私设置,在数据集中添加精确校准的噪声，使个体数据无法识别但整体统计特性保持,两个系统之间的隐私差异,差别对待不同用户的隐私,B,Single Choice
-150,Intermediate,差分隐私在区块链中的潜在应用是什么？,仅用于保护矿工身份,保护链上数据分析、智能合约输入和投票系统中的用户隐私,仅用于隐藏交易金额,仅用于开发者匿名,B,Single Choice
-151,Intermediate,"什么是""可信执行环境""（Trusted Execution Environment, TEE）？",受信任的开发团队,硬件级隔离的执行环境，保护代码和数据的机密性和完整性,经过安全审计的代码,在可信服务器上执行的环境,B,Single Choice
-152,Intermediate,TEE在区块链隐私保护中的应用是什么？,仅用于安全挖矿,保护敏感计算、私钥管理和隐私保护智能合约,仅用于验证节点身份,仅用于安全存储,B,Single Choice
-153,Intermediate,"什么是""英特尔SGX""（Intel Software Guard Extensions）？",英特尔的图形处理技术,"一种TEE实现，创建称为""飞地""（enclaves）的受保护内存区域",英特尔的软件许可系统,一种编程语言扩展,B,Single Choice
-154,Intermediate,"什么是""ARM TrustZone""？",ARM处理器的游戏模式,ARM架构的TEE实现，提供安全和非安全操作世界的隔离,ARM的信任评分系统,ARM处理器的地理位置限制,B,Single Choice
-155,Intermediate,"什么是""私有集合""（Private Set Intersection）？",私人收藏品集合,密码学协议，允许多方找出共同数据元素而不泄露其他元素,私有区块链的集合,一组私有密钥,B,Single Choice
-156,Intermediate,私有集合在区块链中的应用场景是什么？,仅用于私有区块链,隐私保护的身份验证、匹配系统和数据共享,仅用于存储私有数据,仅用于创建私有通道,B,Single Choice
-157,Intermediate,"什么是""形式化验证""（Formal Verification）？",官方认证过程,使用数学方法证明程序行为符合规范的技术,标准化的测试过程,由专业审计师进行的代码审查,B,Single Choice
-158,Intermediate,形式化验证在智能合约安全中的重要性是什么？,仅满足监管要求,数学证明合约行为符合预期，发现传统测试可能遗漏的漏洞,仅提高代码可读性,仅用于文档目的,B,Single Choice
-159,Intermediate,"什么是""静态分析""（Static Analysis）工具在智能合约安全中的作用？",分析静态网页,在不执行代码的情况下分析源代码，识别潜在漏洞和问题,只分析不变的代码部分,分析合约部署后的静态数据,B,Single Choice
-160,Intermediate,"什么是""符号执行""（Symbolic Execution）？",使用特殊符号执行程序,使用符号值而非具体值分析程序，探索所有可能的执行路径,执行包含数学符号的代码,一种编程语言,B,Single Choice
-161,Intermediate,"以下哪些是""检查-效果-交互""模式的关键组成部分？",首先验证所有前置条件,然后更新合约状态,最后进行外部调用,确保状态更新在外部调用之前完成,A/B/C/D,Multiple Choice
-162,Intermediate,"以下哪些是""拉取支付""模式的优势？",防止重入攻击,减少DoS攻击风险,将gas成本转移给接收方,避免因外部调用失败导致的整个交易回滚,A/D,Multiple Choice
-163,Intermediate,"以下哪些是实现""紧急停止""模式的关键组件？",触发机制,访问控制,功能限制逻辑,恢复机制,A/B,Multiple Choice
-164,Intermediate,以下哪些是代理模式面临的安全挑战？,存储冲突,函数选择器冲突,初始化问题,升级权限管理,A/B,Multiple Choice
-165,Intermediate,以下哪些是预言机安全的最佳实践？,使用去中心化预言机网络,实施数据验证和异常检测,使用多个独立数据源,实施时间延迟机制,A/C,Multiple Choice
-166,Intermediate,以下哪些是防御闪电贷攻击的策略？,使用去中心化预言机,实施价格偏差检查,添加时间锁,限制单个区块内的交易规模,B/C/D,Multiple Choice
-167,Intermediate,以下哪些是多重签名钱包的安全考虑因素？,签名者数量和阈值设置,密钥管理和备份,签名者身份验证,紧急恢复机制,A/B/C/D,Multiple Choice
-168,Intermediate,以下哪些是安全的链上随机性来源？,可验证随机函数(VRF),多方计算生成的随机数,链外随机性带链上验证,多个熵源的组合,A/B,Multiple Choice
-169,Intermediate,以下哪些是零知识证明系统的应用场景？,隐私保护交易,匿名身份验证,机密智能合约,可验证计算,A/B/C/D,Multiple Choice
-170,Intermediate,以下哪些是同态加密的特性？,支持对加密数据进行加法运算,支持对加密数据进行乘法运算,保持数据机密性,允许验证计算结果的正确性,B/D,Multiple Choice
-171,Intermediate,以下哪些是可信执行环境(TEE)的安全特性？,代码完整性,数据机密性,隔离执行,远程认证,A/C/D,Multiple Choice
-172,Intermediate,以下哪些是形式化验证的方法？,模型检查,定理证明,抽象解释,类型检查,B/C/D,Multiple Choice
-173,Intermediate,以下哪些是智能合约静态分析工具检查的常见问题？,重入漏洞,整数溢出/下溢,未检查的外部调用,访问控制问题,B/D,Multiple Choice
-174,Intermediate,以下哪些是符号执行的挑战？,路径爆炸问题,复杂约束求解,外部环境建模,循环和递归处理,A/C,Multiple Choice
-175,Intermediate,以下哪些是区块链隐私保护的层次？,网络层隐私,交易层隐私,合约层隐私,身份层隐私,A/B/D,Multiple Choice
-176,Intermediate,以下哪些是混币服务的隐私增强技术？,零知识证明,断链技术,时间延迟,多重混合,A/B/D,Multiple Choice
-177,Intermediate,以下哪些是安全多方计算的应用场景？,隐私保护数据分析,密钥管理,盲拍卖,隐私保护投票,A/B,Multiple Choice
-178,Intermediate,以下哪些是差分隐私的关键参数？,隐私预算(ε),失败概率(δ),敏感度,噪声分布,B/D,Multiple Choice
-179,Intermediate,以下哪些是区块链隐私与监管合规之间的平衡考虑？,选择性披露,合规性证明,监管沙盒,隐私保护的KYC/AML,A/B/C/D,Multiple Choice
-180,Intermediate,以下哪些是评估智能合约安全工具有效性的指标？,漏洞检测率,误报率,分析速度,可扩展性,A/B/C,Multiple Choice
-181,Advanced,"什么是""MEV-Boost""，它如何影响以太坊的安全性？",一种提高MEV提取效率的工具,分离区块构建和区块提议的中间件，旨在减轻MEV对网络的负面影响,一种增强矿工收益的软件,一种提高交易速度的协议,B,Single Choice
-182,Advanced,在以太坊合并后的PBS（提议者-构建者分离）架构中，哪个角色负责排序交易？,验证者,提议者,构建者,中继器,C,Single Choice
-183,Advanced,"什么是""Flashbots""项目的主要目标？",创建更快的闪电贷服务,减轻MEV对网络的负面影响，使其更加透明和公平,开发更快的区块链,提供闪存存储解决方案,B,Single Choice
-184,Advanced,"什么是""时间加权自动做市商""（TWAMM）？",一种基于时间的交易策略,一种DEX机制，允许大订单在较长时间内执行，减少价格影响和MEV风险,一种衡量市场流动性的指标,一种时间锁定的代币发行机制,B,Single Choice
-185,Advanced,"什么是""意图为中心的架构""（Intent-centric Architecture）？",基于用户意图设计的用户界面,用户表达交易意图而非具体执行路径的系统，由专门解析器找到最佳执行方式,一种智能合约设计模式,一种区块链治理模型,B,Single Choice
-186,Advanced,"什么是""订单流拍卖""（Order Flow Auction）？",拍卖NFT的流程,将用户交易意图发送给多个求解器竞标执行权的系统,拍卖区块空间的机制,一种ICO模型,B,Single Choice
-187,Advanced,"什么是""账户抽象""（Account Abstraction）？",简化账户创建过程,允许智能合约作为账户，支持自定义签名验证和交易逻辑的技术,隐藏账户详细信息的方法,一种账户聚合技术,B,Single Choice
-188,Advanced,账户抽象如何增强区块链安全性？,通过增加交易复杂性,通过限制交易频率,通过减少账户数量,支持社交恢复、多因素认证和自定义安全策略,D,Single Choice
-189,Advanced,"什么是""ZK-EVM""？",一种特殊的以太坊虚拟机实现,一种验证矿工工作的算法,一种专为零知识应用设计的编程语言,使用零知识证明验证EVM执行的系统，用于Layer 2扩容和隐私保护,D,Single Choice
-190,Advanced,ZK-EVM的主要技术挑战是什么？,用户采用率低,高硬件要求,缺乏开发工具,将复杂的EVM操作转换为零知识电路的效率和完整性,D,Single Choice
-191,Advanced,"什么是""递归零知识证明""（Recursive Zero-Knowledge Proofs）？",重复使用相同证明的技术,一种特殊的环签名,使用递归算法生成的证明,一种证明可以验证另一个证明的有效性，允许累积验证和扩展证明能力,D,Single Choice
-192,Advanced,递归零知识证明的主要优势是什么？,更简单的实现,更好的兼容性,更低的计算要求,实现可扩展的验证和聚合多个证明，降低验证成本,D,Single Choice
-193,Advanced,"什么是""PLONK""？",一种区块链游戏,一种代币标准,一种共识算法,一种通用且高效的零知识证明系统，支持可更新的通用参考字符串,D,Single Choice
-194,Advanced,PLONK相比早期零知识证明系统的主要优势是什么？,只是名称更容易记忆,仅适用于特定应用,完全不需要可信设置,通用性、可更新的设置和更高效的证明生成,D,Single Choice
-195,Advanced,"什么是""Halo""和""Halo 2""？",流行的视频游戏系列,一种共识算法,一种加密货币钱包,不需要可信设置的零知识证明系统，使用递归证明组合技术,D,Single Choice
-196,Advanced,"什么是""Nova""零知识证明系统？",一种新型加密货币,一种智能合约框架,一种区块链浏览器,一种递归SNARK系统，显著提高递归证明效率,D,Single Choice
-197,Advanced,"什么是""Groth16""？",一种编程语言,一种密钥管理系统,一种共识算法,一种高效但需要特定电路可信设置的零知识证明系统,D,Single Choice
-198,Advanced,"什么是""Supersonic""？",一种高速传输协议,一种高速区块链,一种音频处理技术,一种透明（无需可信设置）、后量子安全的零知识证明系统,D,Single Choice
-199,Advanced,"什么是""Marlin""？",一种海洋生物,一种区块链编程语言,一种共识算法,一种通用的零知识证明预处理架构，提高证明效率,D,Single Choice
-200,Advanced,"什么是""Fractal""零知识证明系统？",一种基于分形的加密算法,一种分片区块链架构,一种图形处理技术,一种使用递归证明的可扩展零知识证明系统,D,Single Choice
-201,Advanced,"什么是""Verkle树""？",一种虚构的数据结构,一种区块链索引方法,一种特殊的二叉树,一种使用向量承诺的Merkle树变体，显著减少证明大小,D,Single Choice
-202,Advanced,Verkle树相比传统Merkle树的主要优势是什么？,更容易实现,更好的安全性,更快的处理速度,大幅减少证明大小，提高可扩展性,D,Single Choice
-203,Advanced,"什么是""向量承诺""（Vector Commitment）？",一种团队协作承诺,一种多重签名技术,一种投资策略,一种密码学原语，允许承诺一个向量并高效证明特定位置的值,D,Single Choice
-204,Advanced,"什么是""KZG承诺""（KZG Commitment）？",一种知识产权协议,一种区块链治理模型,一种密钥生成算法,一种多项式承诺方案，允许证明多项式在特定点的值,D,Single Choice
-205,Advanced,"什么是""IVC""（Incrementally Verifiable Computation）？",一种增值税计算方法,一种智能合约优化技术,一种身份验证协议,一种计算模型，允许逐步验证长时间运行的计算，通常使用递归证明,D,Single Choice
-206,Advanced,"什么是""全同态加密""（Fully Homomorphic Encryption, FHE）？",一种对所有数据使用相同密钥的加密,一种区块链共识机制,一种同质化数据的技术,一种加密技术，允许在加密数据上执行任意计算，而不需要解密,D,Single Choice
-207,Advanced,全同态加密在区块链中的潜在应用是什么？,仅用于加密存储,仅用于身份验证,仅用于安全通信,隐私保护智能合约、机密交易和保护链上数据,D,Single Choice
-208,Advanced,"什么是""格密码学""（Lattice-based Cryptography）？",一种使用网格结构的加密,一种基于晶格结构的加密,一种用于加密网络通信的技术,基于格中的难题（如最短向量问题）的密码学，被认为是抗量子的,D,Single Choice
-209,Advanced,格密码学在区块链安全中的重要性是什么？,仅提供更快的加密,仅用于特定应用,仅降低计算成本,提供抗量子计算的加密原语，保护区块链免受未来量子计算威胁,D,Single Choice
-210,Advanced,"什么是""后量子密码学""（Post-Quantum Cryptography）？",使用量子计算机的密码学,能够抵抗量子计算机攻击的密码学系统,量子计算后的加密技术,一种理论上的密码学概念,B,Single Choice
-211,Advanced,"什么是""阈值签名方案""（Threshold Signature Scheme）？",一种需要最小计算能力的签名,一种密码学方案，需要至少t个参与者（在n个中）合作生成签名,一种设定签名大小下限的方案,一种限制签名数量的系统,B,Single Choice
-212,Advanced,"什么是""盲签名""（Blind Signature）？",由盲人创建的签名,一种密码学方案，允许签名者对消息进行签名而不知道消息内容,一种不可见的签名,一种匿名签名方法,B,Single Choice
-213,Advanced,盲签名在区块链隐私保护中的应用是什么？,仅用于匿名投票,隐私保护交易、匿名凭证和防审查系统,仅用于文档签名,仅用于身份验证,B,Single Choice
-214,Advanced,"什么是""适应性选择密文攻击""（Adaptive Chosen-Ciphertext Attack, CCA2）？",一种选择最佳密码的方法,攻击者可以获得任意选择的密文的解密，并根据先前结果调整后续查询,一种自动调整加密强度的技术,一种针对密码文本的统计分析,B,Single Choice
-215,Advanced,"什么是""前向保密性""（Forward Secrecy）？",保护未来通信的技术,即使长期密钥泄露，过去会话密钥仍然安全的属性,一种预测安全威胁的方法,一种加密未来数据的技术,B,Single Choice
-216,Advanced,"什么是""后向保密性""（Backward Secrecy）？",保护过去通信的技术,即使当前密钥泄露，未来会话密钥仍然安全的属性,一种回顾性安全分析,一种解密历史数据的技术,B,Single Choice
-217,Advanced,"什么是""安全多方计算""（Secure Multi-party Computation, MPC）中的""诚实多数""（Honest Majority）假设？",假设大多数用户是诚实的,密码学协议安全性的假设，要求超过一半的参与者遵循协议,一种投票机制,一种共识算法,B,Single Choice
-218,Advanced,"什么是MPC中的""恶意安全""（Malicious Security）？",一种专门设计用于恶意环境的安全,即使面对积极试图破坏协议的对手，协议仍能保持安全的属性,一种检测恶意行为的系统,一种防御恶意软件的技术,B,Single Choice
-219,Advanced,"什么是""不经意传输""（Oblivious Transfer, OT）？",无意中传输的数据,一种密码学原语，发送者有多个消息，接收者只能获得其中一个，而发送者不知道哪个被接收,一种隐蔽的数据传输,一种低带宽传输协议,B,Single Choice
-220,Advanced,"什么是""秘密共享""（Secret Sharing）？",在社交媒体上分享秘密,将秘密分割成多个份额，需要一定数量的份额才能重建的技术,一种加密通信方法,一种密码管理技术,B,Single Choice
-221,Advanced,以下哪些是MEV-Boost的关键组件？,区块构建者,区块提议者,中继器,PBS架构,B/D,Multiple Choice
-222,Advanced,以下哪些是意图为中心架构的特点？,用户表达交易目标而非执行路径,专门的求解器竞争执行权,可能减少MEV提取,提高用户体验,A/B,Multiple Choice
-223,Advanced,以下哪些是账户抽象的潜在好处？,支持社交恢复,允许自定义签名验证,批量交易处理,支付gas费用的灵活性,A/B/C,Multiple Choice
-224,Advanced,以下哪些是ZK-EVM的应用场景？,Layer 2扩容解决方案,隐私保护交易,跨链桥验证,高效状态验证,A/C/D,Multiple Choice
-225,Advanced,以下哪些是递归零知识证明的优势？,聚合多个证明,降低验证成本,支持持续计算验证,提高可扩展性,C/D,Multiple Choice
-226,Advanced,以下哪些是现代零知识证明系统？,PLONK,Groth16,Halo 2,Nova,A/C/D,Multiple Choice
-227,Advanced,以下哪些是Verkle树的特性？,使用向量承诺,减少证明大小,提高状态访问效率,支持更高效的状态验证,A/B,Multiple Choice
-228,Advanced,以下哪些是全同态加密的特性？,支持加密数据上的任意计算,保持数据机密性,计算结果解密后与明文计算结果一致,通常计算开销较大,A/D,Multiple Choice
-229,Advanced,以下哪些是后量子密码学的方向？,格密码学,基于哈希的密码学,基于码的密码学,多变量多项式密码学,B/C/D,Multiple Choice
-230,Advanced,以下哪些是阈值签名方案的应用？,分布式密钥管理,多重签名钱包,去中心化预言机,共识机制,A/B/D,Multiple Choice
-231,Advanced,以下哪些是安全多方计算的安全模型？,半诚实模型,恶意模型,隐蔽对手模型,通用可组合性模型,A/B/D,Multiple Choice
-232,Advanced,以下哪些是不经意传输的应用？,隐私保护数据查询,安全多方计算的构建块,隐私保护机器学习,零知识证明系统,A/C,Multiple Choice
+1,Basic,"What is a ""Reentrancy Attack"" in smart contracts?",A vulnerability where attackers repeatedly enter a website,A vulnerability where a malicious contract repeatedly calls the original contract before its execution is completed,An attack involving repeated submission of the same transaction,A security issue involving repeated use of the same password,B,Single Choice
+2,Basic,"Which vulnerability was primarily exploited in the 2016 ""The DAO attack""?",Integer overflow,Reentrancy attack,Random number generation issue,Private key leakage,B,Single Choice
+3,Basic,"What is a ""Flash Loan Attack""?",A vulnerability exploiting the Lightning Network,An attack executed within a single block using large uncollateralized loans,Stealing funds through rapid transactions,Disrupting blockchain nodes using flashlights,B,Single Choice
+4,Basic,"What is an ""Integer Overflow"" vulnerability?",A problem where an integer wraps around to its minimum value when exceeding its maximum value,Congestion when too many users access a contract simultaneously,A problem caused by storing too many integers on the blockchain,Improper initialization of integer variables,A,Single Choice
+5,Basic,"What is an ""Integer Underflow"" vulnerability?",A problem where an integer wraps around to its maximum value when falling below its minimum value,Contract failure due to insufficient number of users,A problem caused by insufficient integer storage on the blockchain,Incorrectly declared integer variables,A,Single Choice
+6,Basic,"What is a ""Front-running"" attack?",An attack on the front-end of a blockchain network,An attack where transactions are executed before target transactions by paying higher gas fees,An attack conducted before a project launch,An attack conducted on the user interface,B,Single Choice
+7,Basic,"What is ""MEV"" (Maximal Extractable Value)?",The maximum market value of a blockchain project,The maximum value that can be extracted by reordering, inserting, or censoring transactions,The maximum reward miners can receive,The highest price of a token,B,Single Choice
+8,Basic,"What is a ""Sandwich Attack""?",A food poisoning attack,An attack where orders are placed before and after a target transaction to profit from price impacts,An attack targeting three different blockchains simultaneously,An attack targeting a three-tier architecture,B,Single Choice
+9,Basic,"What is an ""Access Control"" vulnerability?",A mechanism to restrict user access to a website,A problem in smart contracts where access to critical functions is not properly restricted,A mechanism to control blockchain node access,A mechanism to limit miner participation in consensus,B,Single Choice
+10,Basic,"What is a ""Default Visibility"" vulnerability?",A problem where smart contract functions do not explicitly specify visibility levels,The characteristic of blockchain transactions being visible to everyone by default,A problem where websites display user information by default,The characteristic of wallet addresses being public by default,A,Single Choice
+11,Basic,"What is the ""tx.origin"" authentication vulnerability?",A security issue where transaction initiator address is used for authentication instead of the direct caller address,A problem where transaction IDs are used for authentication,A problem where transaction timestamps are used for authentication,A problem where transaction fees are used for authentication,A,Single Choice
+12,Basic,"What is a ""Random Number Generation"" vulnerability?",Hardware failure in random number generators,Using predictable or manipulable random number sources in a blockchain environment,Computational problems caused by random numbers being too large,Security issues caused by random numbers being too small,B,Single Choice
+13,Basic,"What is a ""Short Address Attack""?",Bypassing verification using short blockchain addresses,Exploiting the EVM padding mechanism by sending addresses missing bytes, causing parameter misalignment,Attacking addresses that exist for a short time,Security issues involving the use of short passwords,B,Single Choice
+14,Basic,"What is a ""Denial of Service"" (DoS) attack?",Refusing to provide customer service,Making a contract inoperable by consuming all resources or triggering exceptions,Refusing to sign transactions,Refusing to pay transaction fees,B,Single Choice
+15,Basic,"What is a ""Force Feeding Ether"" attack?",Forcing users to accept Ether payments,Forcing exchanges to accept Ether deposits,Forcing Ether into a target contract through methods like self-destructing contracts, breaking its logic,Forcing miners to include specific transactions,C,Single Choice
+16,Basic,"What is a ""Timestamp Dependence"" vulnerability?",A problem where smart contracts rely too heavily on system clocks,Problems caused by transactions taking too long,A risk in contracts that depend on block timestamps, which can be manipulated by miners within a certain range,Problems with inconsistent block confirmation times,C,Single Choice
+17,Basic,"What is a ""Block Info Dependence"" vulnerability?",Problems caused by block size limitations,Blockchain information leakage issues,Smart contracts overly relying on block information (like gas limits) that can be manipulated by miners,Block synchronization delay problems,C,Single Choice
+18,Basic,"What is an ""Unchecked External Call"" vulnerability?",Unauthorized API calls,Unverified external data inputs,Not properly handling return values or exceptions from external contract calls,Using unaudited external libraries,C,Single Choice
+19,Basic,"What is an ""Unchecked Math"" vulnerability?",Mathematical formula errors,Using imprecise floating-point numbers,Code that doesn't handle mathematical exceptions like integer overflow/underflow,Improper use of math libraries,C,Single Choice
+20,Basic,"What is a ""Constructor Mistyping"" vulnerability?",Constructor parameter errors,Constructor logic errors,A vulnerability in Solidity before 0.4.22 where misspelling the constructor name turns it into a regular function,Missing constructor,C,Single Choice
+21,Basic,"What is a ""Phantom Function"" vulnerability?",A function that is never called,A secret function hidden in the code,A vulnerability exploiting fallback functions and function selectors to call non-existent functions in a contract,A function name using special characters,C,Single Choice
+22,Basic,"What is a ""Delegatecall"" vulnerability?",Delegating others to call a contract,Calling an unauthorized proxy,Using delegatecall to execute code of a target contract in the context of the calling contract, potentially leading to storage conflicts,Calling deprecated functions,C,Single Choice
+23,Basic,"What is a ""Signature Replay"" attack?",Repeatedly playing back a digital signature,Forging a digital signature,An attack where a valid signature is reused in a different context,Breaking the signature algorithm,C,Single Choice
+24,Basic,"What is a ""Man-in-the-Middle"" attack?",An attacker physically positioned in the middle,An attack in the middle layer of blockchain,An attack where the attacker intercepts and potentially modifies communication between two parties,Attacking network middleware,C,Single Choice
+25,Basic,"What is a ""Sybil Attack""?",An attack launched by women,An attack targeting female users,An attack where an attacker creates multiple fake identities to gain disproportionate influence,An attack using ancient witch spells,C,Single Choice
+26,Basic,"What is a ""51% Attack""?",Monopolistic behavior controlling 51% of market share,Attacking 51% of network nodes,Controlling over 50% of network hash power, enabling double-spending and transaction censorship,Controlling 51% of token supply,C,Single Choice
+27,Basic,"What is a ""Double Spending"" attack?",Paying a merchant twice,Paying with two different currencies,An attack where the same cryptocurrency is spent twice,Paying double the transaction fee,C,Single Choice
+28,Basic,"What is a ""Long Range Attack""?",A physical attack launched from a distance,A long-running attack script,In proof-of-stake systems, an attack that creates an alternative chain starting from the genesis block,An attack targeting long-term holders,C,Single Choice
+29,Basic,"What is a ""Nothing-at-Stake"" attack?",A no-risk investment strategy,An attack with no economic incentives,In proof-of-stake systems, validators can costlessly stake on multiple chains simultaneously,An attack requiring no stake,C,Single Choice
+30,Basic,"What is a ""Zero-Knowledge Proof""?",An exam you can pass without knowledge,Proving someone knows nothing about something,A method by which a prover can prove to a verifier that a statement is true without revealing any information beyond the validity of the statement,A test conducted under zero-knowledge conditions,C,Single Choice
+31,Basic,"What are ""zk-SNARKs""?",A type of small smart contract,A blockchain consensus algorithm,Zero-Knowledge Succinct Non-interactive Arguments of Knowledge, allowing proof of computational correctness without revealing inputs,A type of cryptocurrency wallet,C,Single Choice
+32,Basic,"What are ""zk-STARKs""?",An interstellar communication protocol,A blockchain scaling solution,Zero-Knowledge Scalable Transparent Arguments of Knowledge, a zero-knowledge proof system that doesn't rely on trusted setup,A smart contract programming language,C,Single Choice
+33,Basic,What is the main advantage of zk-STARKs compared to zk-SNARKs?,Faster verification speed,Smaller proof size,No need for trusted setup and resistance to quantum computing attacks,Easier implementation,C,Single Choice
+34,Basic,"What is a ""Ring Signature""?",A signature made with a ring,A digital signature with a circular structure,A cryptographic technique allowing a signer to remain anonymous within a group of possible signers,A signature that is used in cycles,C,Single Choice
+35,Basic,"What is a ""Stealth Address""?",A physical address that cannot be tracked,An address written in invisible ink,A one-time public key address that enhances transaction privacy,A temporary wallet address,C,Single Choice
+36,Basic,"What is a ""Coin Mixing"" service?",An exchange for different cryptocurrencies,A service that physically mixes coins,A privacy service that breaks the link in transaction history by mixing funds from multiple users,A service creating token mixtures,C,Single Choice
+37,Basic,"What is ""Tornado Cash""?",A cryptocurrency exchange,A decentralized finance application,An Ethereum mixing protocol based on zero-knowledge proofs,A blockchain game,C,Single Choice
+38,Basic,"What are ""Confidential Transactions""?",Secretly conducted OTC transactions,Transactions visible only to participants,A technique for hiding transaction amounts while maintaining verifiability,Transactions using confidential information,C,Single Choice
+39,Basic,"What is ""Homomorphic Encryption""?",Encryption where all data uses the same key,Encryption done at home,An encryption technique allowing computation on encrypted data without decryption,Human-readable encryption,C,Single Choice
+40,Basic,"What is ""Secure Multi-party Computation""?",Secure computation performed by multiple computers simultaneously,A technique allowing multiple parties to jointly compute a function while keeping their inputs private,Computation using multiple passwords,Computation performed on multiple blockchains,B,Single Choice
+41,Basic,"What is ""Differential Privacy""?",Different levels of privacy settings,A technique that adds statistical noise to datasets to protect individual privacy,Differences between privacy settings,The distinction between private and public data,B,Single Choice
+42,Basic,"What is a ""Key Leakage"" vulnerability?",A lock being picked,A security issue where private keys are leaked or stolen through various means,API key expiration,Flaws in key generation algorithms,B,Single Choice
+43,Basic,"What is a ""Mnemonic Phrase""?",A phrase that helps memory,A series of words used to generate and recover cryptocurrency wallet private keys,A slogan for a blockchain project,Comments in a smart contract,B,Single Choice
+44,Basic,"What is a ""Cold Wallet""?",A wallet stored in a refrigerator,An offline cryptocurrency storage wallet not connected to the internet,A wallet that is not frequently used,A wallet storing small amounts of cryptocurrency,B,Single Choice
+45,Basic,"What is a ""Hot Wallet""?",A newly launched wallet product,An online cryptocurrency wallet connected to the internet,A wallet storing large amounts of cryptocurrency,A physical wallet with high temperature,B,Single Choice
+46,Basic,"What is a ""Hardware Wallet""?",A wallet made of hard metal,A dedicated physical device for securely storing cryptocurrency private keys,A wallet for storing hardware devices,A wallet on a computer's hard drive,B,Single Choice
+47,Basic,"What is a ""Paper Wallet""?",A way to store paper currency,A cold storage method where cryptocurrency private keys and addresses are printed on paper,A paper ledger for recording transactions,A hardware wallet made of paper,B,Single Choice
+48,Basic,"What is a ""Multisignature"" wallet?",A wallet requiring multiple signatures,A wallet requiring authorization from multiple private keys to execute transactions,A wallet supporting multiple signature algorithms,A wallet designed by multiple people,B,Single Choice
+49,Basic,"What is a ""Phishing Attack""?",An attack conducted while fishing,An attack where attackers impersonate trusted entities to trick users into revealing sensitive information,Malware with a fish-shaped icon,An attack targeting the fish market,B,Single Choice
+50,Basic,"What is a ""Social Engineering Attack""?",An attack on social infrastructure,Deceptive methods that exploit human psychology rather than technical vulnerabilities,An experimental method in sociological research,An attack on social media platforms,B,Single Choice
+51,Basic,"What is a ""Supply Chain Attack""?",An attack targeting logistics companies,An attack that introduces malicious code by compromising development tools, dependencies, or deployment processes,An attack disrupting the supply of goods,An attack targeting retailers,B,Single Choice
+52,Basic,"What is ""DNS Hijacking""?",Stealing DNS servers,An attack that redirects DNS requests to malicious servers,Registering domains similar to well-known brands,Shutting down DNS services,B,Single Choice
+53,Basic,"What is ""Typosquatting""?",Registering domains with spelling errors to deceive users,Using special characters in domain names,Frequently changing domain names,Using extremely long domain names,A,Single Choice
+54,Basic,"What is ""Malware""?",Poor quality software,Software designed for unauthorized access to or damage of systems,Outdated software,Untested software,B,Single Choice
+55,Basic,"What is ""Ransomware""?",Software that demands high prices,Malicious software that encrypts victim's data and demands payment for decryption,Software rental services,Software used for bargaining,B,Single Choice
+56,Basic,"What is a ""Backdoor""?",An emergency exit in software,A secret entry point that bypasses normal authentication,An alternative interface for a program,An auxiliary function in software,B,Single Choice
+57,Basic,"What is a ""Honeypot""?",A container for storing honey,A security trap deliberately set to detect or distract attackers,A sweet reward program,A user-friendly interface,B,Single Choice
+58,Basic,"What is a ""White Hat Hacker""?",A hacker wearing a white hat,An ethical hacker who tests system security with permission to help fix vulnerabilities,A hacker employed by the government,A hacker who only works during the day,B,Single Choice
+59,Basic,"What is a ""Black Hat Hacker""?",A hacker wearing a black hat,A malicious hacker who breaks into systems without authorization for personal gain,A hacker who works in the dark,A programmer using a black theme,B,Single Choice
+60,Basic,"What is a ""Grey Hat Hacker""?",A hacker wearing a grey hat,A hacker whose behavior falls between white and black hat hackers, possibly acting without authorization but without malicious intent,A retired hacker,A hacker with average skills,B,Single Choice
+61,Basic,"What is a ""Bug Bounty Program""?",A reward for eliminating insects in software,A program where organizations reward researchers who discover and report security vulnerabilities,A competition to catch real insects,A software testing competition,B,Single Choice
+62,Basic,"What is a ""Security Audit""?",An examination of financial records,A systematic evaluation of the security controls of a system or application,A performance evaluation of security personnel,An inventory of security equipment,B,Single Choice
+63,Basic,"What is ""Penetration Testing""?",Testing the ability of objects to penetrate water,Authorized testing that simulates real attacks to evaluate system security,Testing network penetration rates,Testing user penetration of security training,B,Single Choice
+64,Basic,"What is ""Formal Verification""?",A formal software testing process,A technique using mathematical methods to prove that a program meets its specification,A process to verify the official version of software,Verification conducted by an official institution,B,Single Choice
+65,Basic,"What is ""Static Analysis""?",Analysis of static images,Analysis of source code to discover potential issues without executing the code,Analysis of static websites,Analysis of unchanging data,B,Single Choice
+66,Basic,"What is ""Dynamic Analysis""?",Analysis of moving objects,Analysis of a program during runtime to discover potential issues,Analysis of dynamic websites,Analysis of changing data,B,Single Choice
+67,Basic,"What is ""Fuzzing""?",Testing in fuzzy environments,A technique that inputs random or abnormal data into a program to discover vulnerabilities,An imprecise testing method,Testing image fuzziness,B,Single Choice
+68,Basic,"What is ""Symbolic Execution""?",An execution ritual using symbols,A technique that analyzes programs using symbolic values rather than concrete values,Execution of symbolized code,A program written with special symbols,B,Single Choice
+69,Basic,"What is the ""Principle of Least Privilege""?",Only giving privileges to the privileged class,A principle that users or programs should only be granted the minimum privileges needed to complete their tasks,Minimizing the number of privileges in a system,Prioritizing low-privilege users,B,Single Choice
+70,Basic,"What is ""Defense in Depth""?",Defense deep into enemy territory,A strategy of using multiple layers of security controls to protect a system,Defense of underground facilities,Deep analysis of defense strategies,B,Single Choice
+71,Basic,Which of these are common security vulnerabilities in smart contracts?,Reentrancy attacks,Integer overflow/underflow,Access control issues,Random number generation issues,A/B/C,Multiple Choice
+72,Basic,Which of these attacks are related to blockchain transaction ordering?,Front-running,Sandwich attacks,Timestamp manipulation,MEV extraction,B/C/D,Multiple Choice
+73,Basic,Which of these are methods for protecting private keys?,Using hardware wallets,Cold storage,Multisignature,Encrypted backups,A/B/D,Multiple Choice
+74,Basic,Which of these are zero-knowledge proof systems?,zk-SNARKs,zk-STARKs,Bulletproofs,PLONK,B/C/D,Multiple Choice
+75,Basic,Which technologies can enhance privacy in blockchain transactions?,Ring signatures,Stealth addresses,Coin mixing services,Confidential transactions,B/C,Multiple Choice
+76,Basic,Which attacks might affect blockchain consensus mechanisms?,51% attacks,Long range attacks,Nothing-at-stake attacks,Sybil attacks,A/B/C,Multiple Choice
+77,Basic,Which are types of cryptocurrency wallets?,Hot wallets,Cold wallets,Hardware wallets,Paper wallets,A/B/C,Multiple Choice
+78,Basic,Which are forms of social engineering attacks?,Phishing attacks,Impersonation,Baiting,Authority attacks,A/B/C,Multiple Choice
+79,Basic,Which are methods for smart contract security auditing?,Formal verification,Static analysis,Dynamic analysis,Fuzzing testing,A/B,Multiple Choice
+80,Basic,Which are best practices for blockchain security?,Code audits,Formal verification,Bug bounty programs,Secure multi-party computation,A/B/C/D,Multiple Choice
+81,Basic,Which of these are common security risks in DeFi projects?,Oracle manipulation,Flash loan attacks,Economic model vulnerabilities,Governance attacks,B/C/D,Multiple Choice
+82,Basic,Which of these are access control mechanisms in smart contracts?,Modifiers,Role assignments,Multisignature,Time locks,A/B,Multiple Choice
+83,Basic,Which of these are challenges for blockchain privacy protection?,Transaction transparency,Permanence of on-chain data,Regulatory compliance,Computational efficiency,B/C,Multiple Choice
+84,Basic,Which of these are time-related vulnerabilities in smart contracts?,Timestamp dependence,Block time manipulation,Time lock bypass,Execution time differences,A/C/D,Multiple Choice
+85,Basic,Which of these are security threats faced by blockchain domain name systems?,Typosquatting,DNS hijacking,Domain name squatting,Domain expiry hijacking,B/C/D,Multiple Choice
+86,Basic,Which of these are supply chain security risks for blockchain projects?,Dependency library vulnerabilities,Build tool tampering,Deployment script attacks,Package repository poisoning,B/C/D,Multiple Choice
+87,Basic,Which of these are randomness issues in smart contracts?,Predictability of block hashes,Timestamp manipulation,Miner manipulability,Insufficient entropy sources,C/D,Multiple Choice
+88,Basic,Which of these are common consequences of blockchain security incidents?,Financial losses,Reputational damage,Market volatility,Regulatory scrutiny,A/B/C/D,Multiple Choice
+89,Basic,Which of these are design patterns to protect smart contracts?,Checks-Effects-Interactions pattern,Emergency stop mechanisms,Rate limiting,Pull payment pattern,A/B/D,Multiple Choice
+90,Basic,Which of these are blockchain security tools?,Static analyzers,Formal verification tools,Vulnerability scanners,Monitoring systems,A/B/C,Multiple Choice
+91,Basic,Which of these are blockchain privacy-enhancing technologies?,Zero-knowledge proofs,Mix networks,Homomorphic encryption,Secure multi-party computation,B/C/D,Multiple Choice
+92,Basic,Which of these are considerations for blockchain identity security?,Private key management,Authentication mechanisms,Permission management,Identity recovery,A/C/D,Multiple Choice
+93,Basic,Which of these are security risks for blockchain cross-chain operations?,Bridge protocol vulnerabilities,Consensus differences,Asset locking mechanisms,Cross-chain message verification,A/C,Multiple Choice
+94,Basic,Which of these are considerations for blockchain storage security?,Data encryption,Access control,Data integrity,Backup strategies,A/B/C/D,Multiple Choice
+95,Basic,Which of these are security threats at the blockchain network layer?,Partition attacks,Eclipse attacks,DDoS attacks,BGP hijacking,A/C,Multiple Choice
+96,Basic,Which of these are key areas in blockchain security audits?,Code quality,Cryptographic implementation,Economic models,Access control,A/B/D,Multiple Choice
+97,Basic,Which of these are blockchain governance security risks?,Vote manipulation,Governance parameter attacks,Proposal injection,Governance token centralization,A/B/C/D,Multiple Choice
+98,Basic,Which of these are regulatory considerations for blockchain security?,Compliance requirements,Data protection regulations,Anti-money laundering rules,Cross-border legal differences,A/B/C/D,Multiple Choice
+99,Basic,Which of these are correct practices for blockchain user security?,Using hardware wallets,Enabling multi-factor authentication,Regularly updating software,Verifying transaction details,A/B/C/D,Multiple Choice
+100,Basic,Which of these are metrics for evaluating blockchain project security?,Audit history,Security incident response capability,Vulnerability disclosure policy,Security team strength,A/B/C/D,Multiple Choice
+101,Intermediate,"In smart contracts, what attack is the ""Checks-Effects-Interactions"" pattern primarily designed to prevent?",Integer overflow,Reentrancy attacks,Flash loan attacks,Timestamp manipulation,B,Single Choice
+102,Intermediate,What is the correct implementation sequence for the "Checks-Effects-Interactions" pattern?,First make external calls, then update state variables, and finally check conditions,First check conditions, then update state variables, and finally make external calls,First update state variables, then check conditions, and finally make external calls,First check conditions, then make external calls, and finally update state variables,B,Single Choice
+103,Intermediate,Which function modifier in Solidity is most suitable for implementing reentrancy protection?,view,pure,nonReentrant,payable,C,Single Choice
+104,Intermediate,"What is the ""Pull Payment"" pattern?",The contract proactively sends funds to users,Users withdraw funds themselves instead of the contract sending them proactively,Payment using credit cards,A delayed payment mechanism,B,Single Choice
+105,Intermediate,What security issues does the "Pull Payment" pattern primarily address?,Private key leakage,Reentrancy attack and DoS attack risks,Random number generation,Transaction order dependence,B,Single Choice
+106,Intermediate,"What is the main purpose of the ""Emergency Stop"" pattern in smart contracts?",To immediately stop contract functions when vulnerabilities are discovered,To prevent user withdrawals,To accelerate transaction processing,To reduce gas costs,A,Single Choice
+107,Intermediate,What key components are typically needed to implement the "Emergency Stop" pattern?,Only a single stop switch,A stop switch, access control, and restricted operations,An automatic timeout mechanism,A user voting system,B,Single Choice
+108,Intermediate,"What is the ""Rate Limiting"" pattern in smart contracts?",Limiting contract execution speed,Limiting the amount of funds that can be withdrawn in a specific time period,Limiting user transaction frequency,Limiting contract size,B,Single Choice
+109,Intermediate,What type of attack does the Rate Limiting pattern primarily defend against?,Reentrancy attacks,Attacks that rapidly drain funds,Integer overflow,Random number manipulation,B,Single Choice
+110,Intermediate,"What is the ""State Machine"" pattern in smart contracts?",A physical computing device,A design pattern that organizes contract behavior into well-defined states and transitions,A pattern for storing large numbers of state variables,A consensus algorithm,B,Single Choice
+111,Intermediate,What is the main security advantage of the State Machine pattern?,Reduced gas costs,Prevention of illegal operations by enforcing valid state transitions,Increased execution speed,Reduced code size,B,Single Choice
+112,Intermediate,"What is the ""Proxy Pattern"" in smart contracts?",Using a proxy server to access the blockchain,A pattern that separates contract logic from data, allowing logic upgrades while preserving data,Executing transactions on behalf of users,A method to hide user identity,B,Single Choice
+113,Intermediate,What are the main security risks of the Proxy Pattern?,High gas costs,Storage collisions, function selector clashes, and initialization issues,Slow transaction speed,Incompatibility with certain blockchains,B,Single Choice
+114,Intermediate,"What is the ""Transparent Proxy Pattern""?",Completely transparent contract code,A proxy pattern that avoids function selector clashes by treating calls from the proxy owner differently than other users,A pattern allowing anyone to view the internal state of the proxy,A pattern that doesn't use proxies,B,Single Choice
+115,Intermediate,"What is the ""Universal Upgradeable Proxy Standard"" (UUPS)?",A global proxy server standard,A proxy pattern that places upgrade logic in the implementation contract rather than the proxy contract,A protocol for standardizing proxy servers,A standard for upgrading hardware,B,Single Choice
+116,Intermediate,What is the main advantage of UUPS compared to Transparent Proxy?,Simpler implementation,Lower gas costs and the ability to remove upgrade capability,Higher security,Better compatibility,B,Single Choice
+117,Intermediate,"What is the ""Diamond Pattern"" or EIP-2535?",A proxy pattern that allows multiple implementation contracts (facets) to share the same storage,A standard for jewelry trading,An encryption algorithm,A consensus mechanism,A,Single Choice
+118,Intermediate,What are the main advantages of EIP-2535?,Overcoming contract size limitations and more granular upgrades,Simpler code,Lower deployment costs,Faster execution,A,Single Choice
+119,Intermediate,"What is the ""Factory Pattern"" in smart contracts?",A contract used to create and deploy other contract instances,A smart contract for manufacturing physical products,A pattern for producing mining equipment,A method for batch processing transactions,A,Single Choice
+120,Intermediate,What is the main security benefit of the Factory Pattern?,Standardizing contract creation process, reducing errors and ensuring consistency,Reducing transaction fees,Increasing transaction speed,Simplifying user interface,A,Single Choice
+121,Intermediate,"What is the role of ""Oracles"" in blockchain security?",Safely bringing external data onto the blockchain,Predicting future events,Verifying user identity,Accelerating transaction confirmation,A,Single Choice
+122,Intermediate,What are the main security challenges faced by oracles?,Single point of failure risk and data manipulation,High operational costs,Compatibility issues,Low user adoption,A,Single Choice
+123,Intermediate,"What is a ""Decentralized Oracle Network""?",A network composed of multiple independent oracle nodes that provide data through consensus,An oracle operated by central banks,An oracle used only in decentralized exchanges,A prediction market,A,Single Choice
+124,Intermediate,"What is the main mechanism of a ""Flash Loan Attack""?",Borrowing large uncollateralized loans, manipulating markets or exploiting vulnerabilities within a single transaction, then repaying the loan,Attacking Bitcoin using the Lightning Network,Rapidly creating and closing loan accounts,Disrupting blockchain nodes using flashlights,A,Single Choice
+125,Intermediate,What are effective strategies to defend against flash loan attacks?,Using decentralized oracles, time locks, and price deviation checks,Prohibiting all loans,Only allowing small transactions,Increasing transaction confirmation time,A,Single Choice
+126,Intermediate,"What is a ""Price Oracle Manipulation"" attack?",Manipulating price data provided by oracles to exploit price differences in DeFi protocols,Changing actual commodity prices,Predicting price movements,Controlling fiat currency exchange rates,A,Single Choice
+127,Intermediate,"How is a ""Sandwich Attack"" specifically executed?",Placing a transaction before the target transaction to raise prices, and another transaction after the target to profit,Simultaneously attacking three different blockchains,Creating a three-layer encryption structure,Attacking three related smart contracts,A,Single Choice
+128,Intermediate,"What is the role of ""Timelocks"" in smart contract security?",Enforcing delays before sensitive operations execute, giving users time to discover and respond to potential issues,Limiting contract execution time,Setting contract expiration times,Synchronizing time across multiple blockchains,A,Single Choice
+129,Intermediate,"What is the security advantage of ""Multisignature"" wallets?",Requiring multiple private keys for authorization, preventing single points of failure and malicious actions,Faster transaction speed,Lower transaction fees,Larger storage capacity,A,Single Choice
+130,Intermediate,"In multisignature implementations, what does an ""m-of-n"" configuration mean?",Requiring m out of n signers to authorize a transaction,Requiring m miners to confirm n blocks,Allowing m transactions per month (n),Allowing a maximum of m users to control n wallets,A,Single Choice
+131,Intermediate,"What is a ""Threshold Signature""?",A cryptographic technique where multiple parties jointly generate a single signature, rather than multiple independent signatures,A highly secure signature,The minimum threshold for signature size,A signature requiring minimal computational power,A,Single Choice
+132,Intermediate,What is the main advantage of threshold signatures compared to traditional multisignature?,Reduced on-chain storage and transaction costs, and improved privacy,Easier implementation,Faster signature generation,Wider wallet support,A,Single Choice
+133,Intermediate,"What is the main challenge of ""On-chain Randomness""?",Blockchain environments are inherently deterministic, and miners can potentially manipulate values that appear random,The computational cost of generating truly random numbers,Limited range of random numbers,Users not trusting random results,A,Single Choice
+134,Intermediate,"What is a ""Verifiable Random Function"" (VRF)?",A cryptographic function that generates random outputs with a proof that can be verified to confirm correct generation,A random number generator that can be verified by anyone,A tool to verify other random functions,A function that randomly verifies user identity,A,Single Choice
+135,Intermediate,"What is the application of ""Commitment Schemes"" in blockchain security?",Allowing users to first submit a hidden version of data (commitment) and reveal it later, used to prevent front-running and other attacks,Users committing to long-term service usage,Long-term maintenance commitment for smart contracts,Developers' financial commitment to a project,A,Single Choice
+136,Intermediate,"What are the three key properties of a ""Zero-Knowledge Proof""?",Completeness, soundness, and zero-knowledge,Speed, cost, and scalability,Transparency, privacy, and efficiency,Decentralization, immutability, and anonymity,A,Single Choice
+137,Intermediate,What is the main difference between zk-SNARKs and zk-STARKs?,zk-STARKs don't require trusted setup, are quantum-resistant, but have larger proof sizes,They're just different names for the same technology,zk-SNARKs are newer and completely replace zk-STARKs,zk-STARKs are for storage only, zk-SNARKs are for computation only,A,Single Choice
+138,Intermediate,"What does ""Trusted Setup"" mean in the context of zero-knowledge proofs?",A set of trusted hardware devices,A system initialization phase where public parameters are generated, which could compromise system security if participants are dishonest,A set of pre-verified smart contracts,A setup process certified by the government,B,Single Choice
+139,Intermediate,"What is a ""Mixnet""?",A mix of different network protocols,A network that routes messages through multiple nodes, each shuffling order and removing identifying information, providing anonymous communication,A network combining centralized and decentralized characteristics,A network connecting multiple blockchains,B,Single Choice
+140,Intermediate,"What is the core security feature of ""Ring Signatures""?",Signatures have a ring shape,The verifier knows the signature came from a group of possible signers but cannot determine exactly who,Multiple users must sign together,Signatures can be used cyclically,B,Single Choice
+141,Intermediate,"How do ""Stealth Addresses"" work?",Addresses written in invisible ink,Senders generate one-time addresses for each transaction, which only the recipient can identify and spend using their private key,Addresses not visible in blockchain explorers,Wallet addresses created using a VPN,B,Single Choice
+142,Intermediate,"What is the core technology behind ""Confidential Transactions""?",End-to-end encryption,Using homomorphic encryption or commitment schemes to hide transaction amounts while maintaining verifiability,Transactions conducted through private channels,Transactions visible only to specific users,B,Single Choice
+143,Intermediate,"What are ""Bulletproofs""?",Bulletproof smart contracts,A non-interactive zero-knowledge proof system for proving that values lie in a specific range, without requiring a trusted setup,A protocol resistant to attacks,A high-speed transaction verification system,B,Single Choice
+144,Intermediate,What is the main application of Bulletproofs?,Formal verification of smart contracts,Range proofs in confidential transactions, proving that transaction amounts are positive without revealing the specific amounts,Preventing 51% attacks,Accelerating block confirmations,B,Single Choice
+145,Intermediate,"What is the core principle of ""Secure Multi-party Computation"" (MPC)?",Multiple computers processing in parallel to improve security,Multiple parties jointly computing a function while keeping their inputs private from each other,Distributing computation across multiple blockchains,Using multiple encryption algorithms to enhance security,B,Single Choice
+146,Intermediate,What are the main applications of MPC in blockchain?,Used only for mining,Private key management, privacy-preserving transactions, and decentralized oracles,Used only for identity verification,Used only for smart contract execution,B,Single Choice
+147,Intermediate,"What is ""Homomorphic Encryption""?",Encryption where all data uses the same key,Encryption that allows computation on encrypted data, yielding encrypted results that, when decrypted, match the result of operations on the plaintext,Encryption done at home,Encryption that preserves shape,B,Single Choice
+148,Intermediate,What is the main application of homomorphic encryption in blockchain privacy protection?,Used only for storing encrypted data,Allowing computation and verification on encrypted data without revealing the original data,Used only for user authentication,Used only for encrypted communication,B,Single Choice
+149,Intermediate,"What is ""Differential Privacy""?",Different levels of privacy settings,Adding precisely calibrated noise to datasets so individual data cannot be identified while overall statistical properties are preserved,Privacy differences between two systems,Different privacy treatment for different users,B,Single Choice
+150,Intermediate,What are the potential applications of differential privacy in blockchain?,Used only to protect miner identity,Protecting user privacy in on-chain data analytics, smart contract inputs, and voting systems,Used only to hide transaction amounts,Used only for developer anonymity,B,Single Choice
+151,Intermediate,"What is a ""Trusted Execution Environment"" (TEE)?",A trusted development team,A hardware-isolated execution environment that protects the confidentiality and integrity of code and data,Code that has undergone security audit,An environment executed on trusted servers,B,Single Choice
+152,Intermediate,What are the applications of TEE in blockchain privacy protection?,Used only for secure mining,Protecting sensitive computations, private key management, and privacy-preserving smart contracts,Used only for node identity verification,Used only for secure storage,B,Single Choice
+153,Intermediate,"What is ""Intel SGX"" (Software Guard Extensions)?",Intel's graphics processing technology,"A TEE implementation that creates protected memory regions called ""enclaves""",Intel's software licensing system,A programming language extension,B,Single Choice
+154,Intermediate,"What is ""ARM TrustZone""?",A gaming mode for ARM processors,A TEE implementation for ARM architecture that provides separation between secure and non-secure worlds of operation,A trust rating system for ARM,Geographic location restrictions for ARM processors,B,Single Choice
+155,Intermediate,"What is ""Private Set Intersection""?",A collection of private collectibles,A cryptographic protocol that allows multiple parties to find common data elements without revealing other elements,A collection of private blockchains,A set of private keys,B,Single Choice
+156,Intermediate,What are the application scenarios for private set intersection in blockchain?,Used only for private blockchains,Privacy-preserving authentication, matching systems, and data sharing,Used only for storing private data,Used only for creating private channels,B,Single Choice
+157,Intermediate,"What is ""Formal Verification""?",An official certification process,A technique using mathematical methods to prove that program behavior conforms to specifications,A standardized testing process,A code review conducted by professional auditors,B,Single Choice
+158,Intermediate,Why is formal verification important in smart contract security?,Only to meet regulatory requirements,Mathematically proving that contract behavior matches expectations, finding vulnerabilities that traditional testing might miss,Only to improve code readability,Only for documentation purposes,B,Single Choice
+159,Intermediate,"What is the role of ""Static Analysis"" tools in smart contract security?",Analyzing static web pages,Analyzing source code to identify potential vulnerabilities and issues without executing the code,Only analyzing unchanging parts of the code,Analyzing static data after contract deployment,B,Single Choice
+160,Intermediate,"What is ""Symbolic Execution""?",Executing programs using special symbols,Analyzing programs with symbolic rather than concrete values to explore all possible execution paths,Executing code that contains mathematical symbols,A programming language,B,Single Choice
+161,Intermediate,Which of these are key components of the "Checks-Effects-Interactions" pattern?,First verify all preconditions,Then update contract state,Finally make external calls,Ensure state updates occur before external calls,A/B/C/D,Multiple Choice
+162,Intermediate,What are the benefits of the "Pull Payment" pattern?,Preventing reentrancy attacks,Reducing DoS attack risks,Shifting gas costs to recipients,Avoiding transaction rollbacks due to failed external calls,A/D,Multiple Choice
+163,Intermediate,Which are key components for implementing the "Emergency Stop" pattern?,Trigger mechanism,Access control,Functionality restriction logic,Recovery mechanism,A/B,Multiple Choice
+164,Intermediate,What security challenges does the Proxy Pattern face?,Storage collisions,Function selector clashes,Initialization issues,Upgrade permission management,A/B,Multiple Choice
+165,Intermediate,What are best practices for oracle security?,Using decentralized oracle networks,Implementing data validation and anomaly detection,Using multiple independent data sources,Implementing time delay mechanisms,A/C,Multiple Choice
+166,Intermediate,What strategies can defend against flash loan attacks?,Using decentralized oracles,Implementing price deviation checks,Adding time locks,Limiting transaction sizes within a single block,B/C/D,Multiple Choice
+167,Intermediate,What security considerations apply to multisignature wallets?,Number of signers and threshold settings,Key management and backup,Signer authentication,Emergency recovery mechanisms,A/B/C/D,Multiple Choice
+168,Intermediate,Which are secure sources of on-chain randomness?,Verifiable Random Functions (VRF),Random numbers generated through multi-party computation,Off-chain randomness with on-chain verification,Combinations of multiple entropy sources,A/B,Multiple Choice
+169,Intermediate,What are application scenarios for zero-knowledge proof systems?,Privacy-preserving transactions,Anonymous authentication,Confidential smart contracts,Verifiable computation,A/B/C/D,Multiple Choice
+170,Intermediate,Which are characteristics of homomorphic encryption?,Supporting addition operations on encrypted data,Supporting multiplication operations on encrypted data,Maintaining data confidentiality,Allowing verification of correct computation results,B/D,Multiple Choice
+171,Intermediate,What security features does a Trusted Execution Environment (TEE) provide?,Code integrity,Data confidentiality,Isolated execution,Remote attestation,A/C/D,Multiple Choice
+172,Intermediate,Which are methods of formal verification?,Model checking,Theorem proving,Abstract interpretation,Type checking,B/C/D,Multiple Choice
+173,Intermediate,What common issues do smart contract static analysis tools check for?,Reentrancy vulnerabilities,Integer overflow/underflow,Unchecked external calls,Access control issues,B/D,Multiple Choice
+174,Intermediate,What are challenges in symbolic execution?,Path explosion problem,Complex constraint solving,External environment modeling,Handling loops and recursion,A/C,Multiple Choice
+175,Intermediate,What are the layers of blockchain privacy protection?,Network layer privacy,Transaction layer privacy,Contract layer privacy,Identity layer privacy,A/B/D,Multiple Choice
+176,Intermediate,What privacy-enhancing techniques are used in coin mixing services?,Zero-knowledge proofs,Unlinking techniques,Time delays,Multiple mixing rounds,A/B/D,Multiple Choice
+177,Intermediate,What are application scenarios for secure multi-party computation?,Privacy-preserving data analysis,Key management,Blind auctions,Privacy-preserving voting,A/B,Multiple Choice
+178,Intermediate,What are key parameters in differential privacy?,Privacy budget (ε),Failure probability (δ),Sensitivity,Noise distribution,B/D,Multiple Choice
+179,Intermediate,What are considerations for balancing blockchain privacy with regulatory compliance?,Selective disclosure,Compliance proofs,Regulatory sandboxes,Privacy-preserving KYC/AML,A/B/C/D,Multiple Choice
+180,Intermediate,What metrics can evaluate the effectiveness of smart contract security tools?,Vulnerability detection rate,False positive rate,Analysis speed,Scalability,A/B/C,Multiple Choice
+181,Advanced,"What is ""MEV-Boost"" and how does it affect Ethereum security?",A tool to improve MEV extraction efficiency,A middleware separating block building from block proposing, designed to reduce the negative impacts of MEV on the network,A software to enhance miner rewards,A protocol to increase transaction speed,B,Single Choice
+182,Advanced,In Ethereum's post-merge PBS (Proposer-Builder Separation) architecture, which role is responsible for ordering transactions?,Validators,Proposers,Builders,Relayers,C,Single Choice
+183,Advanced,"What is the main goal of the ""Flashbots"" project?",Creating faster flash loan services,Mitigating negative MEV impacts on the network, making it more transparent and fair,Developing a faster blockchain,Providing flash storage solutions,B,Single Choice
+184,Advanced,"What is a ""Time-Weighted Automated Market Maker"" (TWAMM)?",A time-based trading strategy,A DEX mechanism allowing large orders to execute over longer periods, reducing price impact and MEV risks,A metric for measuring market liquidity,A time-locked token issuance mechanism,B,Single Choice
+185,Advanced,"What is ""Intent-centric Architecture""?",A user interface designed around user intentions,A system where users express transaction intents rather than specific execution paths, with specialized solvers finding optimal execution,A smart contract design pattern,A blockchain governance model,B,Single Choice
+186,Advanced,"What is an ""Order Flow Auction""?",A process for auctioning NFTs,A system where user transaction intents are sent to multiple solvers who bid for execution rights,A mechanism for auctioning block space,An ICO model,B,Single Choice
+187,Advanced,"What is ""Account Abstraction""?",Simplifying account creation process,A technology allowing smart contracts to serve as accounts with custom signature verification and transaction logic,A method to hide account details,An account aggregation technique,B,Single Choice
+188,Advanced,How does account abstraction enhance blockchain security?,By increasing transaction complexity,By limiting transaction frequency,By reducing the number of accounts,By supporting social recovery, multi-factor authentication, and custom security policies,D,Single Choice
+189,Advanced,"What is a ""ZK-EVM""?",A special implementation of Ethereum Virtual Machine,An algorithm to verify miner work,A programming language designed for zero-knowledge applications,A system using zero-knowledge proofs to verify EVM execution, used for Layer 2 scaling and privacy protection,D,Single Choice
+190,Advanced,What is the main technical challenge of ZK-EVMs?,Low user adoption,High hardware requirements,Lack of development tools,Efficiently and completely translating complex EVM operations into zero-knowledge circuits,D,Single Choice
+191,Advanced,"What are ""Recursive Zero-Knowledge Proofs""?",A technique of using the same proof repeatedly,A special type of ring signature,Proofs generated using recursive algorithms,Proofs that can verify the validity of other proofs, enabling accumulated verification and extended proving capabilities,D,Single Choice
+192,Advanced,What is the main advantage of recursive zero-knowledge proofs?,Simpler implementation,Better compatibility,Lower computational requirements,Enabling scalable verification and aggregating multiple proofs, reducing verification costs,D,Single Choice
+193,Advanced,"What is ""PLONK""?",A blockchain game,A token standard,A consensus algorithm,A general and efficient zero-knowledge proof system supporting updateable universal reference strings,D,Single Choice
+194,Advanced,What is the main advantage of PLONK compared to earlier zero-knowledge proof systems?,Just an easier to remember name,Only suitable for specific applications,Completely eliminates the need for trusted setup,Universality, updateable setup, and more efficient proof generation,D,Single Choice
+195,Advanced,"What are ""Halo"" and ""Halo 2""?",Popular video game series,A consensus algorithm,A cryptocurrency wallet,Zero-knowledge proof systems requiring no trusted setup, using recursive proof composition techniques,D,Single Choice
+196,Advanced,"What is the ""Nova"" zero-knowledge proof system?",A new cryptocurrency,A smart contract framework,A blockchain explorer,A recursive SNARK system that significantly improves recursive proof efficiency,D,Single Choice
+197,Advanced,"What is ""Groth16""?",A programming language,A key management system,A consensus algorithm,A highly efficient zero-knowledge proof system requiring circuit-specific trusted setup,D,Single Choice
+198,Advanced,"What is ""Supersonic""?",A high-speed transmission protocol,A high-speed blockchain,An audio processing technology,A transparent (no trusted setup), post-quantum secure zero-knowledge proof system,D,Single Choice
+199,Advanced,"What is ""Marlin""?",A marine creature,A blockchain programming language,A consensus algorithm,A universal zero-knowledge proof preprocessing architecture that improves proving efficiency,D,Single Choice
+200,Advanced,"What is the ""Fractal"" zero-knowledge proof system?",A cryptographic algorithm based on fractals,A sharded blockchain architecture,A graphics processing technology,A scalable zero-knowledge proof system using recursive proofs,D,Single Choice
+201,Advanced,"What are ""Verkle Trees""?",A fictional data structure,A blockchain indexing method,A special kind of binary tree,A Merkle tree variant using vector commitments that significantly reduces proof size,D,Single Choice
+202,Advanced,What is the main advantage of Verkle Trees compared to traditional Merkle Trees?,Easier implementation,Better security,Faster processing,Dramatically reduced proof size, improving scalability,D,Single Choice
+203,Advanced,"What is a ""Vector Commitment""?",A team collaboration commitment,A multisignature technique,An investment strategy,A cryptographic primitive allowing commitment to a vector with efficient proofs for specific positions,D,Single Choice
+204,Advanced,"What is a ""KZG Commitment""?",An intellectual property protocol,A blockchain governance model,A key generation algorithm,A polynomial commitment scheme allowing proofs of polynomial values at specific points,D,Single Choice
+205,Advanced,"What is ""IVC"" (Incrementally Verifiable Computation)?",A method for calculating value-added tax,A smart contract optimization technique,An identity verification protocol,A computational model allowing step-by-step verification of long-running computations, typically using recursive proofs,D,Single Choice
+206,Advanced,"What is ""Fully Homomorphic Encryption"" (FHE)?",Encryption using the same key for all data,A blockchain consensus mechanism,A technique for homogenizing data,An encryption technique allowing arbitrary computations on encrypted data without decryption,D,Single Choice
+207,Advanced,What are the potential applications of fully homomorphic encryption in blockchain?,Used only for encrypted storage,Used only for identity verification,Used only for secure communication,Privacy-preserving smart contracts, confidential transactions, and protected on-chain data,D,Single Choice
+208,Advanced,"What is ""Lattice-based Cryptography""?",Encryption using grid structures,Encryption based on lattice structures,A technique for encrypting network communications,Cryptography based on hard problems in lattices (like shortest vector problem), considered quantum-resistant,D,Single Choice
+209,Advanced,Why is lattice-based cryptography important for blockchain security?,Only provides faster encryption,Only for specific applications,Only reduces computational cost,Provides quantum-resistant cryptographic primitives, protecting blockchains against future quantum computing threats,D,Single Choice
+210,Advanced,"What is ""Post-Quantum Cryptography""?",Cryptography using quantum computers,Cryptographic systems that can resist attacks from quantum computers,Encryption technology after quantum computing,A theoretical cryptographic concept,B,Single Choice
+211,Advanced,"What is a ""Threshold Signature Scheme""?",A signature requiring minimal computational power,A cryptographic scheme requiring at least t participants (out of n) to cooperate in generating a signature,A scheme setting a minimum size for signatures,A system limiting the number of signatures,B,Single Choice
+212,Advanced,"What is a ""Blind Signature""?",A signature created by a blind person,A cryptographic scheme allowing a signer to sign a message without seeing its content,An invisible signature,An anonymous signature method,B,Single Choice
+213,Advanced,What are the applications of blind signatures in blockchain privacy protection?,Used only for anonymous voting,Privacy-preserving transactions, anonymous credentials, and censorship-resistant systems,Used only for document signing,Used only for identity verification,B,Single Choice
+214,Advanced,"What is an ""Adaptive Chosen-Ciphertext Attack"" (CCA2)?",A method for choosing the best ciphers,An attack where the adversary can get decryptions of arbitrarily chosen ciphertexts and adapt subsequent queries based on previous results,A technique for automatically adjusting encryption strength,A statistical analysis of cipher text,B,Single Choice
+215,Advanced,"What is ""Forward Secrecy""?",A technique to protect future communications,A property where past session keys remain secure even if the long-term key is compromised,A method for predicting security threats,A technique for encrypting future data,B,Single Choice
+216,Advanced,"What is ""Backward Secrecy""?",A technique to protect past communications,A property where future session keys remain secure even if the current key is compromised,A retrospective security analysis,A technique for decrypting historical data,B,Single Choice
+217,Advanced,"What is the ""Honest Majority"" assumption in Secure Multi-party Computation (MPC)?",Assuming most users are honest,A cryptographic protocol security assumption requiring more than half of the participants to follow the protocol,A voting mechanism,A consensus algorithm,B,Single Choice
+218,Advanced,"What is ""Malicious Security"" in MPC?",Security specifically designed for malicious environments,A property where the protocol remains secure even against active adversaries trying to corrupt the protocol,A system for detecting malicious behavior,A technology to defend against malware,B,Single Choice
+219,Advanced,"What is ""Oblivious Transfer"" (OT)?",Data transmitted inadvertently,A cryptographic primitive where a sender has multiple messages, and a receiver can obtain one without the sender knowing which one was received,A covert data transmission,A low-bandwidth transmission protocol,B,Single Choice
+220,Advanced,"What is ""Secret Sharing""?",Sharing secrets on social media,A technique that divides a secret into multiple shares, requiring a certain number to reconstruct it,A method for encrypted communication,A password management technique,B,Single Choice
+221,Advanced,Which of these are key components of MEV-Boost?,Block builders,Block proposers,Relayers,PBS architecture,B/D,Multiple Choice
+222,Advanced,Which of these are characteristics of intent-centric architecture?,Users express transaction goals rather than execution paths,Specialized solvers compete for execution rights,Potentially reduces MEV extraction,Improves user experience,A/B,Multiple Choice
+223,Advanced,Which of these are potential benefits of account abstraction?,Supporting social recovery,Allowing custom signature verification,Batch transaction processing,Payment flexibility for gas fees,A/B/C,Multiple Choice
+224,Advanced,Which of these are application scenarios for ZK-EVMs?,Layer 2 scaling solutions,Privacy-preserving transactions,Cross-chain bridge verification,Efficient state verification,A/C/D,Multiple Choice
+225,Advanced,Which of these are advantages of recursive zero-knowledge proofs?,Aggregating multiple proofs,Reducing verification costs,Supporting continuous computation verification,Improving scalability,C/D,Multiple Choice
+226,Advanced,Which of these are modern zero-knowledge proof systems?,PLONK,Groth16,Halo 2,Nova,A/C/D,Multiple Choice
+227,Advanced,Which of these are characteristics of Verkle Trees?,Using vector commitments,Reducing proof size,Improving state access efficiency,Supporting more efficient state verification,A/B,Multiple Choice
+228,Advanced,Which of these are characteristics of fully homomorphic encryption?,Supporting arbitrary computations on encrypted data,Maintaining data confidentiality,Decrypted results match plaintext computation results,Typically has high computational overhead,A/D,Multiple Choice
+229,Advanced,Which of these are directions in post-quantum cryptography?,Lattice-based cryptography,Hash-based cryptography,Code-based cryptography,Multivariate polynomial cryptography,B/C/D,Multiple Choice
+230,Advanced,Which of these are applications of threshold signature schemes?,Distributed key management,Multisignature wallets,Decentralized oracles,Consensus mechanisms,A/B/D,Multiple Choice
+231,Advanced,Which of these are security models in secure multi-party computation?,Semi-honest model,Malicious model,Covert adversary model,Universal composability model,A/B/D,Multiple Choice
+232,Advanced,Which of these are applications of oblivious transfer?,Privacy-preserving data queries,Building blocks for secure multi-party computation,Privacy-preserving machine learning,Zero-knowledge proof systems,A/C,Multiple Choice 
