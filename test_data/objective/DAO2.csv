@@ -44,7 +44,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 43,Basic,"What is a "governance attack"?",Government regulation,Exploiting vulnerabilities to control a DAO,DDoS attack,Office sabotage,B,Single Choice
 44,Basic,"What is "governance participation rate"?",Government participation ratio,Token or member participation ratio,Member activity level,Social media engagement rate,B,Single Choice
 45,Basic,What problems can low governance participation lead to?,Network congestion,Token price increase,Unrepresentative decisions and increased attack risk,Transaction acceleration,C,Single Choice
-46,Basic,"What is the importance of "tokenomics" in DAOs?",Transaction fees,Token supply, distribution, and incentive design,Token name design,Exchange listing,B,Single Choice
+46,Basic,"What is the importance of "tokenomics" in DAOs?",Transaction fees,Token supply， distribution， and incentive design,Token name design,Exchange listing,B,Single Choice
 47,Basic,"What is a "Governance Minimum Viable Product" (Governance MVP)?",Minimum vote count,Initial simplified governance system,Cheapest tool,Government standard,B,Single Choice
 48,Basic,"What is the typical lifecycle of a "governance proposal"?",Create-Archive-Delete,Draft-Discuss-Submit-Vote-Execute,Code-Test-Deploy,Announce-Vote-Forget,B,Single Choice
 49,Basic,"What is the role of a "temperature check" in DAO governance?",Monitoring server temperature,Non-binding preliminary vote,Emotional survey,Climate control,B,Single Choice
