@@ -44,8 +44,8 @@ for csv_file in csv_files:
         # 处理每个字段，除了Correct option列
         for j in range(len(fields)):
             if j != correct_option_index:
-                # 将", X"替换为"， X"（其中X是任何字母）
-                fields[j] = re.sub(r', ([a-zA-Z])', r'， \1', fields[j])
+                # 新规则：将所有", "替换为"， "，不管后面跟什么字符
+                fields[j] = re.sub(r', ', r'， ', fields[j])
         
         # 重新组合成一行
         new_lines.append(','.join(fields))

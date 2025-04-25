@@ -4,71 +4,71 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 3,Basic,Which one was the first widely recognized DAO?,Compound,Uniswap,The DAO,Aragon,C,Single Choice
 4,Basic,What was the main reason for The DAO project's failure?,Lack of market interest,Smart contract vulnerability exploited by hackers,Regulatory policy prohibition,Team infighting,B,Single Choice
 5,Basic,What mechanism do DAOs typically use to make collective decisions?,CEO's sole decision,Random drawing,Token holder voting,External audit,C,Single Choice
-6,Basic,"What is a governance token""?""",Government-issued digital currency,Token that grants voting rights in a DAO,Token used only for paying transaction fees,Stablecoin,B,Single Choice
+6,Basic,"What is a governance token"?",Government-issued digital currency,Token that grants voting rights in a DAO,Token used only for paying transaction fees,Stablecoin,B,Single Choice
 7,Basic,Which of the following is NOT a common application area for DAOs?,Investment funds,Protocol governance,Social clubs,Centralized banks,D,Single Choice
-8,Basic,"What is the role of a proposal"" in a DAO?""",Meeting minutes,Action plan submitted by members that requires voting,Marketing plan,Financial statement,B,Single Choice
+8,Basic,"What is the role of a proposal "in a DAO?",Meeting minutes,Action plan submitted by members that requires voting,Marketing plan,Financial statement,B,Single Choice
 9,Basic,Where does DAO governance typically take place?,Offline meetings,Only via email,Online forums and governance portals,Physical offices,C,Single Choice
-10,Basic,"What is on-chain governance""?""",Government regulatory process,Off-chain discussion process,Process of recording and executing decisions using blockchain,Miners controlling decisions,C,Single Choice
-11,Basic,"What is off-chain governance""?""",Completely anonymous decision-making,Discussions outside the blockchain but possibly executed on-chain,Only controlled by banks,Completely paper-based,B,Single Choice
-12,Basic,"What is a multi-signature wallet""?""",Wallet requiring multiple private keys for authorization,Wallet supporting multiple cryptocurrencies,Wallet used only for storing NFTs,Wallet controlled by a single person,A,Single Choice
+10,Basic,"What is on-chain governance"?",Government regulatory process,Off-chain discussion process,Process of recording and executing decisions using blockchain,Miners controlling decisions,C,Single Choice
+11,Basic,"What is off-chain governance"?",Completely anonymous decision-making,Discussions outside the blockchain but possibly executed on-chain,Only controlled by banks,Completely paper-based,B,Single Choice
+12,Basic,"What is a multi-signature wallet"?",Wallet requiring multiple private keys for authorization,Wallet supporting multiple cryptocurrencies,Wallet used only for storing NFTs,Wallet controlled by a single person,A,Single Choice
 13,Basic,What is the main reason DAOs typically use multi-signature wallets?,Improving transaction speed,Reducing transaction fees,Enhancing fund security and decentralized decision-making,Simplifying operations,C,Single Choice
-14,Basic,"What is voting weight""?""",Government-allocated quota,Influence based on token holdings or other factors,Weight of voting machines,Voter age,B,Single Choice
-15,Basic,"What is a token voting"" system?""",Voting with physical tokens,Voting rights proportional to token quantity,Only specific addresses can vote,Token design for elections,B,Single Choice
-16,Basic,"What is a one person""，"" one vote"" system?""",Wallet addresses limited to one vote,Only founders can vote,Equal voting rights for each verified identity,Daily voting limits,C,Single Choice
-17,Basic,"What is delegated voting""?""",Government-appointed voting,Token holders delegating voting rights to others,Mandatory voting system,Voting only with specific software,B,Single Choice
-18,Basic,"What is a voting threshold""?""",Minimum token holdings,Minimum percentage of approval votes,Location of voting stations,Voting age limit,B,Single Choice
-19,Basic,"What does quorum"" mean in DAO voting?""",Proposal creator's reputation,Minimum participation rate,Maximum member count,Maximum proposal count,B,Single Choice
-20,Basic,"What is a proposal creation threshold""?""",Minimum token requirement,Document length limit,Review time,Funding cap,A,Single Choice
-21,Basic,"What is a governance forum""?""",Government website,Online platform where members discuss proposals,Blockchain smart contract,Physical meeting room,B,Single Choice
-22,Basic,"What is a voting period""?""",Voting time window,Voting rights validity period,Election interval,Vote counting time,A,Single Choice
-23,Basic,"What is the role of a timelock"" in DAO governance?""",Limiting voting time,Security mechanism that delays execution,DAO existence time counter,Discussion time recorder,B,Single Choice
-24,Basic,"What is governance minimization""?""",Reducing member count,Simplifying interface design,Gradually reducing active governance needs,Lowering token value,C,Single Choice
-25,Basic,"What is meta-governance""?""",Virtual world governance,Governance about governance rules,AI control,Multiple DAO coordination,B,Single Choice
-26,Basic,"What is Quadratic Voting""?""",Two votes per person,Voting cost proportional to the square of votes,Two rounds of voting,Only two options,B,Single Choice
+14,Basic,"What is voting weight"?",Government-allocated quota,Influence based on token holdings or other factors,Weight of voting machines,Voter age,B,Single Choice
+15,Basic,"What is a token voting "system?",Voting with physical tokens,Voting rights proportional to token quantity,Only specific addresses can vote,Token design for elections,B,Single Choice
+16,Basic,"What is a one person"， "one vote "system?",Wallet addresses limited to one vote,Only founders can vote,Equal voting rights for each verified identity,Daily voting limits,C,Single Choice
+17,Basic,"What is delegated voting"?",Government-appointed voting,Token holders delegating voting rights to others,Mandatory voting system,Voting only with specific software,B,Single Choice
+18,Basic,"What is a voting threshold"?",Minimum token holdings,Minimum percentage of approval votes,Location of voting stations,Voting age limit,B,Single Choice
+19,Basic,"What does quorum "mean in DAO voting?",Proposal creator's reputation,Minimum participation rate,Maximum member count,Maximum proposal count,B,Single Choice
+20,Basic,"What is a proposal creation threshold"?",Minimum token requirement,Document length limit,Review time,Funding cap,A,Single Choice
+21,Basic,"What is a governance forum"?",Government website,Online platform where members discuss proposals,Blockchain smart contract,Physical meeting room,B,Single Choice
+22,Basic,"What is a voting period"?",Voting time window,Voting rights validity period,Election interval,Vote counting time,A,Single Choice
+23,Basic,"What is the role of a timelock "in DAO governance?",Limiting voting time,Security mechanism that delays execution,DAO existence time counter,Discussion time recorder,B,Single Choice
+24,Basic,"What is governance minimization"?",Reducing member count,Simplifying interface design,Gradually reducing active governance needs,Lowering token value,C,Single Choice
+25,Basic,"What is meta-governance"?",Virtual world governance,Governance about governance rules,AI control,Multiple DAO coordination,B,Single Choice
+26,Basic,"What is Quadratic Voting"?",Two votes per person,Voting cost proportional to the square of votes,Two rounds of voting,Only two options,B,Single Choice
 27,Basic,What is the main advantage of Quadratic Voting?,Simplifying vote counting,Reducing total votes,Allowing expression of preference intensity while suppressing wealth concentration,Complete anonymity,C,Single Choice
-28,Basic,"What is Conviction Voting""?""",Voting based on criminal records,Voting power accumulating over time,Only allowing strong supporters to vote,Video conference voting,B,Single Choice
+28,Basic,"What is Conviction Voting"?",Voting based on criminal records,Voting power accumulating over time,Only allowing strong supporters to vote,Video conference voting,B,Single Choice
 29,Basic,What is the main advantage of Conviction Voting?,Complete anonymity,No tokens required,Continuous expression of preferences and rewarding long-term commitment,Zero cost,C,Single Choice
-30,Basic,"What is Holographic Voting""?""",Voting with holographic technology,Combining prediction markets with voting,Virtual reality voting,Age-weighted voting,B,Single Choice
-31,Basic,"What is a DAO constitution""?""",National law,Document defining DAO principles,Technical whitepaper,Marketing plan,B,Single Choice
-32,Basic,"What is a sub-DAO""?""",DAO for children,Subsidiary organization created by a main DAO,Failed project,Test version,B,Single Choice
-33,Basic,"What is a DAO incubator""?""",Organization that creates and develops DAOs,DAO office,Special wallet,DAO backup,A,Single Choice
-34,Basic,"What are DAO tools""?""",Smart contract repair devices,Software supporting DAO creation and management,Hardware only for founders,Marketing materials,B,Single Choice
+30,Basic,"What is Holographic Voting"?",Voting with holographic technology,Combining prediction markets with voting,Virtual reality voting,Age-weighted voting,B,Single Choice
+31,Basic,"What is a DAO constitution"?",National law,Document defining DAO principles,Technical whitepaper,Marketing plan,B,Single Choice
+32,Basic,"What is a sub-DAO"?",DAO for children,Subsidiary organization created by a main DAO,Failed project,Test version,B,Single Choice
+33,Basic,"What is a DAO incubator"?",Organization that creates and develops DAOs,DAO office,Special wallet,DAO backup,A,Single Choice
+34,Basic,"What are DAO tools"?",Smart contract repair devices,Software supporting DAO creation and management,Hardware only for founders,Marketing materials,B,Single Choice
 35,Basic,Which of the following is NOT a common DAO tool platform?,Aragon,DAOhaus,Colony,Bitcoin,D,Single Choice
-36,Basic,"What is a DAO treasury""?""",Physical vault,Fund pool managed by smart contracts,Password database,Historical record system,B,Single Choice
-37,Basic,"What is the importance of token distribution"" in a DAO?""",Founder compensation,Transaction fees,Marketing strategy,Determining governance power distribution,D,Single Choice
-38,Basic,"What is the role of an airdrop"" in DAO launches?""",Drone delivery of tokens,Founder exit method,DAO advertisement,Distributing governance tokens to users,D,Single Choice
-39,Basic,"What is token unlocking"" or ""vesting schedule""?""",Token encryption,Token version update,Token burning,Releasing tokens over time,D,Single Choice
-40,Basic,"What are proposal types""?""",Document formats,Encryption levels,Color coding,Categories such as funding allocation,D,Single Choice
-41,Basic,"What is the role of social consensus"" in DAOs?""",Social media strategy,Marketing strategy,Mandatory social activities,Common agreements formed through informal discussions,D,Single Choice
-42,Basic,"What does hard fork"" mean in DAO governance?""",Hardware wallet requirements,Metal voting tools,Difficult decision process,Splitting into two versions due to governance disagreements,D,Single Choice
-43,Basic,"What is a governance attack""?""",Government regulation,Exploiting vulnerabilities to control a DAO,DDoS attack,Office sabotage,B,Single Choice
-44,Basic,"What is governance participation rate""?""",Government participation ratio,Token or member participation ratio,Member activity level,Social media engagement rate,B,Single Choice
+36,Basic,"What is a DAO treasury"?",Physical vault,Fund pool managed by smart contracts,Password database,Historical record system,B,Single Choice
+37,Basic,"What is the importance of token distribution "in a DAO?",Founder compensation,Transaction fees,Marketing strategy,Determining governance power distribution,D,Single Choice
+38,Basic,"What is the role of an airdrop "in DAO launches?",Drone delivery of tokens,Founder exit method,DAO advertisement,Distributing governance tokens to users,D,Single Choice
+39,Basic,"What is token unlocking "or "vesting schedule"?",Token encryption,Token version update,Token burning,Releasing tokens over time,D,Single Choice
+40,Basic,"What are proposal types"?",Document formats,Encryption levels,Color coding,Categories such as funding allocation,D,Single Choice
+41,Basic,"What is the role of social consensus "in DAOs?",Social media strategy,Marketing strategy,Mandatory social activities,Common agreements formed through informal discussions,D,Single Choice
+42,Basic,"What does hard fork "mean in DAO governance?",Hardware wallet requirements,Metal voting tools,Difficult decision process,Splitting into two versions due to governance disagreements,D,Single Choice
+43,Basic,"What is a governance attack"?",Government regulation,Exploiting vulnerabilities to control a DAO,DDoS attack,Office sabotage,B,Single Choice
+44,Basic,"What is governance participation rate"?",Government participation ratio,Token or member participation ratio,Member activity level,Social media engagement rate,B,Single Choice
 45,Basic,What problems can low governance participation lead to?,Network congestion,Token price increase,Unrepresentative decisions and increased attack risk,Transaction acceleration,C,Single Choice
-46,Basic,"What is the importance of tokenomics"" in DAOs?""",Transaction fees,Token supply， distribution， and incentive design,Token name design,Exchange listing,B,Single Choice
-47,Basic,"What is a Governance Minimum Viable Product"" (Governance MVP)?""",Minimum vote count,Initial simplified governance system,Cheapest tool,Government standard,B,Single Choice
-48,Basic,"What is the typical lifecycle of a governance proposal""?""",Create-Archive-Delete,Draft-Discuss-Submit-Vote-Execute,Code-Test-Deploy,Announce-Vote-Forget,B,Single Choice
-49,Basic,"What is the role of a temperature check"" in DAO governance?""",Monitoring server temperature,Non-binding preliminary vote,Emotional survey,Climate control,B,Single Choice
-50,Basic,"What is a signal proposal""?""",Improving network signal,Non-binding expression of community opinion,Created only by signal officers,Morse code proposal,B,Single Choice
-51,Basic,"What is the role of a governance coordinator"" or ""steward""?""",Janitor,Member who organizes governance activities,Legal representative,Website maintenance person,B,Single Choice
-52,Basic,"What is a governance dashboard""?""",Vehicle equipment,User interface displaying governance activities,Financial statement,Founder control panel,B,Single Choice
-53,Basic,"What are on-chain actions""?""",Blockchain operations,Physical activities,Miner operations,DAO connections,A,Single Choice
-54,Basic,"What is proposal execution""?""",Punishing creators,Implementing approved decisions,Deleting failed proposals,Proposal display,B,Single Choice
-55,Basic,"What is automatic execution""?""",Automatic proposal creation,Automatic voting,Automatic execution of proposals through smart contracts,Striking a pose,C,Single Choice
-56,Basic,"What is governance risk""?""",Government shutdown,Potential issues related to governance,Health risks,Token price risk only,B,Single Choice
-57,Basic,"What does capture risk"" mean in DAOs?""",Members being kidnapped,Single entity controlling decisions,Funds being stolen,Contract duplication,B,Single Choice
-58,Basic,"What is governance fatigue""?""",Physical tiredness,Slow website loading,Reduced participation due to too many proposals,Token price drops,C,Single Choice
-59,Basic,"What is governance incentivization""?""",Tax breaks,Mandatory voting penalties,Participation reward mechanisms,Founder bonuses only,C,Single Choice
-60,Basic,"What is governance mining""?""",Mining equipment governance,Mine voting,Earning token rewards for governance participation,Data mining,C,Single Choice
-61,Basic,"What is representative democracy"" in DAOs?""",Government representative participation,Identity verification system,Token holders electing representatives,Running only in democratic countries,C,Single Choice
-62,Basic,"What is liquid democracy""?""",Changing rules system,Liquidity governance,Combination of direct democracy and delegation,Voting on water,C,Single Choice
-63,Basic,"What is governance tokenization""?""",Digitization of voting,Government takeover,Exercising governance rights using tokens,Document templates,C,Single Choice
-64,Basic,"What is the vote off-chain""， "" execute on-chain"" model?""",Outdoor voting,Prohibiting online voting,Voting off-chain and executing on-chain,Miner-only execution,C,Single Choice
-65,Basic,"What is the utility of governance tokens""?""",Physical uses,Ease of use,Additional rights such as fee sharing,Transaction speed,C,Single Choice
-66,Basic,"What is a proposal veto""?""",Canceling your own vote,Specific entity blocking execution,Deleting proposals,Right to vote against,B,Single Choice
-67,Basic,"What is an emergency shutdown"" mechanism?""",Emergency office closure,Pausing functionality during security threats,Quickly ending voting,Destroying tokens,B,Single Choice
-68,Basic,"What is governance migration""?""",Member relocation,Transferring governance systems,Renaming,Changing logos,B,Single Choice
-69,Basic,"What is a governance audit""?""",Tax inspection,Formal review evaluating governance effectiveness and security,Vote counting,Financial review only,B,Single Choice
-70,Basic,"What are governance documents""?""",Logo files,Documents describing governance rules,Government licenses,Founder secret files,B,Single Choice
+46,Basic,"What is the importance of tokenomics "in DAOs?",Transaction fees,Token supply， distribution， and incentive design,Token name design,Exchange listing,B,Single Choice
+47,Basic,"What is a Governance Minimum Viable Product "(Governance MVP)?",Minimum vote count,Initial simplified governance system,Cheapest tool,Government standard,B,Single Choice
+48,Basic,"What is the typical lifecycle of a governance proposal"?",Create-Archive-Delete,Draft-Discuss-Submit-Vote-Execute,Code-Test-Deploy,Announce-Vote-Forget,B,Single Choice
+49,Basic,"What is the role of a temperature check "in DAO governance?",Monitoring server temperature,Non-binding preliminary vote,Emotional survey,Climate control,B,Single Choice
+50,Basic,"What is a signal proposal"?",Improving network signal,Non-binding expression of community opinion,Created only by signal officers,Morse code proposal,B,Single Choice
+51,Basic,"What is the role of a governance coordinator "or "steward"?",Janitor,Member who organizes governance activities,Legal representative,Website maintenance person,B,Single Choice
+52,Basic,"What is a governance dashboard"?",Vehicle equipment,User interface displaying governance activities,Financial statement,Founder control panel,B,Single Choice
+53,Basic,"What are on-chain actions"?",Blockchain operations,Physical activities,Miner operations,DAO connections,A,Single Choice
+54,Basic,"What is proposal execution"?",Punishing creators,Implementing approved decisions,Deleting failed proposals,Proposal display,B,Single Choice
+55,Basic,"What is automatic execution"?",Automatic proposal creation,Automatic voting,Automatic execution of proposals through smart contracts,Striking a pose,C,Single Choice
+56,Basic,"What is governance risk"?",Government shutdown,Potential issues related to governance,Health risks,Token price risk only,B,Single Choice
+57,Basic,"What does capture risk "mean in DAOs?",Members being kidnapped,Single entity controlling decisions,Funds being stolen,Contract duplication,B,Single Choice
+58,Basic,"What is governance fatigue"?",Physical tiredness,Slow website loading,Reduced participation due to too many proposals,Token price drops,C,Single Choice
+59,Basic,"What is governance incentivization"?",Tax breaks,Mandatory voting penalties,Participation reward mechanisms,Founder bonuses only,C,Single Choice
+60,Basic,"What is governance mining"?",Mining equipment governance,Mine voting,Earning token rewards for governance participation,Data mining,C,Single Choice
+61,Basic,"What is representative democracy "in DAOs?",Government representative participation,Identity verification system,Token holders electing representatives,Running only in democratic countries,C,Single Choice
+62,Basic,"What is liquid democracy"?",Changing rules system,Liquidity governance,Combination of direct democracy and delegation,Voting on water,C,Single Choice
+63,Basic,"What is governance tokenization"?",Digitization of voting,Government takeover,Exercising governance rights using tokens,Document templates,C,Single Choice
+64,Basic,"What is the vote off-chain"，  "execute on-chain "model?",Outdoor voting,Prohibiting online voting,Voting off-chain and executing on-chain,Miner-only execution,C,Single Choice
+65,Basic,"What is the utility of governance tokens"?",Physical uses,Ease of use,Additional rights such as fee sharing,Transaction speed,C,Single Choice
+66,Basic,"What is a proposal veto"?",Canceling your own vote,Specific entity blocking execution,Deleting proposals,Right to vote against,B,Single Choice
+67,Basic,"What is an emergency shutdown "mechanism?",Emergency office closure,Pausing functionality during security threats,Quickly ending voting,Destroying tokens,B,Single Choice
+68,Basic,"What is governance migration"?",Member relocation,Transferring governance systems,Renaming,Changing logos,B,Single Choice
+69,Basic,"What is a governance audit"?",Tax inspection,Formal review evaluating governance effectiveness and security,Vote counting,Financial review only,B,Single Choice
+70,Basic,"What are governance documents"?",Logo files,Documents describing governance rules,Government licenses,Founder secret files,B,Single Choice
 71,Basic,Which of the following are core features of DAOs?,Decentralized decision-making,Blockchain-based transparency,Code-executed rules,Community ownership,A/B/D,Multiple Choice
 72,Basic,What challenges might DAOs face?,Low participation,Legal uncertainty,Technical complexity,Coordination efficiency,A/B/C,Multiple Choice
 73,Basic,Which of the following are common types of DAOs?,Protocol DAOs,Investment DAOs,Social DAOs,Service DAOs,A/C/D,Multiple Choice
@@ -99,18 +99,18 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 98,Basic,What conflict resolution mechanisms might DAOs have?,Community mediation,Voting decisions,Arbitration systems,Fork options,A/B/C/D,Multiple Choice
 99,Basic,What factors contribute to long-term DAO sustainability?,Financial health,Governance adaptability,Community vitality,Value creation,A/C/D,Multiple Choice
 100,Basic,What differences exist between DAOs and traditional organizations?,Ownership distribution,Decision-making mechanisms,Transparency level,Entry/exit freedom,A/B/C/D,Multiple Choice
-101,Intermediate,"What is the mathematical principle of Quadratic Voting""?""",Voting cost proportional to the number of votes,Voting cost proportional to the square of votes,Voting cost proportional to the cube of votes,Voting cost proportional to the logarithm of votes,B,Single Choice
-102,Intermediate,"How does Quadratic Voting solve the money rules"" problem?""",Prohibiting large holders,Making marginal costs increase progressively,Imposing additional fees,Limiting the number of votes,B,Single Choice
+101,Intermediate,"What is the mathematical principle of Quadratic Voting"?",Voting cost proportional to the number of votes,Voting cost proportional to the square of votes,Voting cost proportional to the cube of votes,Voting cost proportional to the logarithm of votes,B,Single Choice
+102,Intermediate,"How does Quadratic Voting solve the money rules "problem?",Prohibiting large holders,Making marginal costs increase progressively,Imposing additional fees,Limiting the number of votes,B,Single Choice
 103,Intermediate,What is the main limitation of Quadratic Voting?,High computational complexity,Large storage requirements,Vulnerability to Sybil attacks,Cannot be implemented on Ethereum,C,Single Choice
 104,Intermediate,What is the core mechanism of Conviction Voting?,Linear growth,Exponential growth,Logarithmic growth,Convex function accumulation then plateau,D,Single Choice
 105,Intermediate,What type of governance problems is Conviction Voting particularly suited for?,Emergency decisions,Binary choices,Continuous resource allocation,Parameter adjustments,C,Single Choice
 106,Intermediate,What is the innovation of Holographic Voting?,Holographic technology,Combining prediction markets with voting,3D display of results,Anonymous voting,B,Single Choice
-107,Intermediate,"What is the role of predictors"" in Holographic Voting?""",Predicting token prices,Predicting proposals in community interest,Predicting voting outcomes,Predicting market trends,B,Single Choice
+107,Intermediate,"What is the role of predictors "in Holographic Voting?",Predicting token prices,Predicting proposals in community interest,Predicting voting outcomes,Predicting market trends,B,Single Choice
 108,Intermediate,What is Tao Voting?,Taoist philosophical system,Dispute voting mechanism,Anonymous voting system,Time-based voting system,B,Single Choice
 109,Intermediate,What is the main advantage of Tao Voting?,Simplifying processes,Providing dispute resolution mechanisms,Reducing vote counts,Eliminating Sybil attacks,B,Single Choice
 110,Intermediate,What is the main advantage of delegated voting?,Reducing blockchain transactions,Improving participation rates and expert utilization,Simplifying interfaces,Lowering costs,B,Single Choice
 111,Intermediate,What is the main challenge facing delegated voting?,Technical complexity,Power concentration and delegate responsibility,Storage requirements,Blockchain incompatibility,B,Single Choice
-112,Intermediate,"What is the main advantage of the vote off-chain"""," execute on-chain model?""",More secure,Saving gas fees,More anonymous,Faster,B,Single Choice
+112,Intermediate,"What is the main advantage of the vote off-chain， execute on-chain model?",More secure,Saving gas fees,More anonymous,Faster,B,Single Choice
 113,Intermediate,How does off-chain voting ensure result validity?,Centralized verification,Cryptographic signatures and verification,Real-name voting,Limiting participants,B,Single Choice
 114,Intermediate,What is the main purpose of timelocks?,Limiting voting time,Delaying execution for member response,Determining DAO existence time,Calculating discussion time,B,Single Choice
 115,Intermediate,What is the typical timelock delay range?,A few minutes,A few hours,1-7 days,30+ days,C,Single Choice
@@ -179,8 +179,8 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 178,Intermediate,What does a DAO constitution typically contain?,Core values and principles,Governance structure and powers,Decision-making processes and rules,Amendment and interpretation mechanisms,A/B/C/D,Multiple Choice
 179,Intermediate,What features make for effective governance forums?,Structured categorization,Appropriate moderation,Search and archiving functions,Integrated voting and feedback tools,A/B/C/D,Multiple Choice
 180,Intermediate,What responsibilities might governance working groups have?,Proposal coordination and support,Governance documentation maintenance,Governance research and improvement,Community education and onboarding,A/B/C/D,Multiple Choice
-181,Advanced,"What is the ultimate goal of governance minimization"" in DAO governance?""",Reducing the number of participants,Creating fully automated systems that eventually don't require human intervention,Lowering operational costs,Simplifying user interfaces,B,Single Choice
-182,Advanced,"Which DAO governance model is most resistant to the plutocracy"" (rule by the wealthy) problem?""",Basic token voting (1 token = 1 vote),Quadratic Voting,Reputation-based voting,Delegated voting,C,Single Choice
+181,Advanced,"What is the ultimate goal of governance minimization "in DAO governance?",Reducing the number of participants,Creating fully automated systems that eventually don't require human intervention,Lowering operational costs,Simplifying user interfaces,B,Single Choice
+182,Advanced,"Which DAO governance model is most resistant to the plutocracy "(rule by the wealthy) problem?",Basic token voting (1 token = 1 vote),Quadratic Voting,Reputation-based voting,Delegated voting,C,Single Choice
 183,Advanced,When designing censorship-resistant DAO governance systems， which combination of technologies is most effective?,On-chain voting with multi-signature execution,Off-chain voting with on-chain execution,Zero-knowledge proofs， IPFS storage， and decentralized identity,Centralized servers with encrypted communications,C,Single Choice
 184,Advanced,What does governance extraction refer to?,The process of taking funds from a DAO,Using governance power to extract value beyond one's fair share at the expense of other stakeholders,Transferring governance rights to another DAO,Forcing execution of rejected proposals,B,Single Choice
 185,Advanced,What does the governance stack refer to?,A pile of governance proposals,The layered architecture of governance systems from protocol layer to application layer,A data structure storing governance history,A set of governance tools,B,Single Choice
@@ -189,7 +189,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 188,Advanced,What does meta-governance capture refer to?,Controlling the governance rules of multiple DAOs,Influencing multiple DAOs by controlling the underlying protocol or governance tools,Capturing meta-governance data,Government takeover of DAO governance,B,Single Choice
 189,Advanced,What is the core innovation of liquid democracy?,Voting on water,Dynamic adjustment of voting weights,Combining direct democracy and representative democracy with transferable delegation and real-time revocation,Using liquid assets for voting,C,Single Choice
 190,Advanced,What is the main advantage of quadratic funding in DAO resource allocation?,Simplifying the calculation process,Prioritizing widely supported projects rather than just those backed by wealthy supporters,Reducing the total funding required,Completely eliminating Sybil attacks,B,Single Choice
-191,Advanced,"What relationship exists between trust minimization"" and ""efficiency""?""",Always positively correlated,Often a trade-off where higher trust minimization tends to reduce efficiency,No relationship,Always negatively correlated,B,Single Choice
+191,Advanced,"What relationship exists between trust minimization "and "efficiency"?",Always positively correlated,Often a trade-off where higher trust minimization tends to reduce efficiency,No relationship,Always negatively correlated,B,Single Choice
 192,Advanced,What does governance attack surface refer to?,Vulnerabilities in a DAO's website,All potential vulnerabilities and attack vectors in a governance system that could be exploited,Physical office security weaknesses,Smart contract vulnerabilities only,B,Single Choice
 193,Advanced,What does governance arbitrage refer to?,Trading governance tokens on different exchanges,Profiting from governance differences between different DAOs,Finding pricing errors in proposal voting,Creating the same DAO on different blockchains,B,Single Choice
 194,Advanced,What does the governance layers concept refer to?,DAO organizational hierarchy,Breaking governance into different abstraction layers each with different decision scopes and timeframes,Governance document classification system,Governance interface design elements,B,Single Choice
@@ -207,18 +207,18 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 206,Advanced,What does governance overlay refer to?,Visual elements of governance interfaces,Governance layer added on top of existing protocols or systems without modifying underlying code,Governance conflicts between multiple DAOs,Graphical representation of governance documents,B,Single Choice
 207,Advanced,What does governance capture resistance refer to?,Security measures to prevent hacking,The ability of a system to resist a single entity or group gaining disproportionate control,Legal protections against government intervention,Prevention of governance token price manipulation,B,Single Choice
 208,Advanced,What does governance provability refer to?,Ability to prove governance decisions are correct,Methods to verify voting results,Certificates proving participation in governance,Ability to formally verify properties and behaviors of governance systems,D,Single Choice
-209,Advanced,"What is the Governance Composability Trilemma""?""",The challenge of balancing three competing objectives in governance,A governance system requiring three signers,A choice between three different governance models,A theory claiming autonomy， composability， and coordination cannot be simultaneously achieved,D,Single Choice
-210,Advanced,"What is the Governance Locality"" principle?""",Only conducting governance in specific geographic locations,Storing governance data on local devices,Limiting governance to specific blockchains,Decisions should be made by those closest to being affected， not centralized,D,Single Choice
-211,Advanced,"What is the main challenge of Governance Scalability""?""",Technical limitations for processing large numbers of votes,Increasing governance token supply,Scaling governance interfaces for different screen sizes,Increasing coordination costs and decreasing decision quality as participants and decisions increase,D,Single Choice
-212,Advanced,"What is Governance Formal Verification""?""",Checking governance document formats,Official recognition of governance structures,Verifying identity of governance participants,Using mathematical methods to prove governance systems satisfy specific properties and security guarantees,D,Single Choice
-213,Advanced,"What is Governance Abstraction""?""",Making governance rules vague,Reducing governance details,Simplifying governance interfaces,Separating governance functions into reusable， interchangeable modules and interfaces,D,Single Choice
-214,Advanced,"What is Governance Interoperability""?""",Ability to access governance systems on different devices,Ability to translate governance documents,Ability to replicate governance decisions across different blockchains,Ability for different DAO governance systems to communicate， coordinate， and integrate with each other,D,Single Choice
-215,Advanced,"What are key considerations for Governance Upgradeability""?""",Software compatibility only,Cost considerations only,User interface improvements only,Balancing adaptability with stability， secure upgrade paths， and power distribution,D,Single Choice
-216,Advanced,"What is Governance Morphology""?""",Physical form of governance documents,Shape of governance tokens,Visual design of governance interfaces,Study of different governance structures， how they evolve， and their comparative characteristics,D,Single Choice
-217,Advanced,"What is Governance Homomorphism""?""",All DAOs using the same governance,Simplification of governance rules,Visual representation of governance systems,Ability to map one governance system to another while preserving key properties and relationships,D,Single Choice
-218,Advanced,"What is Governance Antifragility""?""",Measures to prevent governance collapse,Property of governance systems to benefit from and grow stronger through stress， attacks， and failures,Robust governance structures,Prevention of governance token price volatility,B,Single Choice
-219,Advanced,"What is Governance Entropy""?""",Energy efficiency of governance systems,Tendency of governance systems to trend toward disorder and reduced efficiency over time,Randomness in governance decisions,Enthusiasm for governance participation,B,Single Choice
-220,Advanced,"What is the Governance Design Space""?""",Physical location for holding governance meetings,Multi-dimensional space of all possible governance configurations including mechanisms， parameters， and architectural choices,Layout of governance interfaces,Server for storing governance documents,B,Single Choice
+209,Advanced,"What is the Governance Composability Trilemma"?",The challenge of balancing three competing objectives in governance,A governance system requiring three signers,A choice between three different governance models,A theory claiming autonomy， composability， and coordination cannot be simultaneously achieved,D,Single Choice
+210,Advanced,"What is the Governance Locality "principle?",Only conducting governance in specific geographic locations,Storing governance data on local devices,Limiting governance to specific blockchains,Decisions should be made by those closest to being affected， not centralized,D,Single Choice
+211,Advanced,"What is the main challenge of Governance Scalability"?",Technical limitations for processing large numbers of votes,Increasing governance token supply,Scaling governance interfaces for different screen sizes,Increasing coordination costs and decreasing decision quality as participants and decisions increase,D,Single Choice
+212,Advanced,"What is Governance Formal Verification"?",Checking governance document formats,Official recognition of governance structures,Verifying identity of governance participants,Using mathematical methods to prove governance systems satisfy specific properties and security guarantees,D,Single Choice
+213,Advanced,"What is Governance Abstraction"?",Making governance rules vague,Reducing governance details,Simplifying governance interfaces,Separating governance functions into reusable， interchangeable modules and interfaces,D,Single Choice
+214,Advanced,"What is Governance Interoperability"?",Ability to access governance systems on different devices,Ability to translate governance documents,Ability to replicate governance decisions across different blockchains,Ability for different DAO governance systems to communicate， coordinate， and integrate with each other,D,Single Choice
+215,Advanced,"What are key considerations for Governance Upgradeability"?",Software compatibility only,Cost considerations only,User interface improvements only,Balancing adaptability with stability， secure upgrade paths， and power distribution,D,Single Choice
+216,Advanced,"What is Governance Morphology"?",Physical form of governance documents,Shape of governance tokens,Visual design of governance interfaces,Study of different governance structures， how they evolve， and their comparative characteristics,D,Single Choice
+217,Advanced,"What is Governance Homomorphism"?",All DAOs using the same governance,Simplification of governance rules,Visual representation of governance systems,Ability to map one governance system to another while preserving key properties and relationships,D,Single Choice
+218,Advanced,"What is Governance Antifragility"?",Measures to prevent governance collapse,Property of governance systems to benefit from and grow stronger through stress， attacks， and failures,Robust governance structures,Prevention of governance token price volatility,B,Single Choice
+219,Advanced,"What is Governance Entropy"?",Energy efficiency of governance systems,Tendency of governance systems to trend toward disorder and reduced efficiency over time,Randomness in governance decisions,Enthusiasm for governance participation,B,Single Choice
+220,Advanced,"What is the Governance Design Space"?",Physical location for holding governance meetings,Multi-dimensional space of all possible governance configurations including mechanisms， parameters， and architectural choices,Layout of governance interfaces,Server for storing governance documents,B,Single Choice
 221,Advanced,What are key technologies for designing censorship-resistant DAO governance systems?,Zero-knowledge proofs,Decentralized storage (like IPFS),Decentralized identity systems,Threshold signature schemes,A/C/D,Multiple Choice
 222,Advanced,Through what means can governance extraction occur?,Manipulation of protocol fee allocation,Self-dealing,Information asymmetry exploitation,Strategic proposal timing,C/D,Multiple Choice
 223,Advanced,What layers might the governance stack include?,Protocol layer governance,Application layer governance,Meta-governance (governance about governance),Social layer governance,B/D,Multiple Choice
