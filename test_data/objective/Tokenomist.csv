@@ -165,7 +165,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 164,Advanced,How do flash loans function in DeFi?,Require collateral,Must be repaid within one transaction,Provide long-term financing,Issued by banks,D,Not
 165,Advanced,Which economic principle underlies arbitrage in token markets?,Price convergence,Market inefficiency,Supply-demand equilibrium,Regulatory intervention,A,Not
 166,Advanced,Which risk is most associated with decentralized liquidity pools?,Smart contract vulnerability,Impermanent loss,Regulatory risk,Interest rate risk,B,Not
-167,Advanced,"In DeFi, what does slippage refer to?",Difference between expected and executed price,Delayed transaction confirmation,Excessive gas consumption,Liquidity shortage,C,Not
+167,Advanced,In DeFi， what does slippage refer to?,Difference between expected and executed price,Delayed transaction confirmation,Excessive gas consumption,Liquidity shortage,C,Not
 168,Advanced,What role do oracles serve in token economics?,Provide off-chain data,Enhance token utility,Secure liquidity pools,Manage contract upgrades,D,Not
 169,Advanced,How is yield farming optimized in competitive DeFi markets?,By aggregating rewards across protocols,By increasing collateralization,By reducing trading fees,By centralizing liquidity,A,Not
 170,Advanced,What is the significance of decentralized governance in DeFi?,Enables community-driven decisions,Centralizes control,Requires manual intervention,Leads to high fees,B,Not

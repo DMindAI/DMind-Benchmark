@@ -7,68 +7,68 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 6,basic,What is the latest stable version of Solidity?,0.7.0,0.8.0,0.8.20,0.8.24,D,Single Choice
 7,basic,Which of the following keywords in Solidity is used for handling exceptions?,try/catch,if/else,require,return,C,Single Choice
 8,basic,Which feature is not supported by the Vyper language?,Loops,Inheritance,Conditional statements,Functions,B,Single Choice
-9,basic,What does ""Gas"" refer to in smart contracts?,The fuel for contract execution,The data stored in the contract,A security mechanism of the contract,The version number of the contract,A,Single Choice
+9,basic,"What does """"Gas"""" refer to in smart contracts?",The fuel for contract execution,The data stored in the contract,A security mechanism of the contract,The version number of the contract,A,Single Choice
 10,basic,Which of the following is not a basic data type in Solidity?,uint,bool,address,char,D,Single Choice
-11,basic,"In Solidity, what does ""msg.sender"" represent?",The contract creator,The current caller's address,The contract address,The transaction initiator,B,Single Choice
+11,basic,"In Solidity， what does ""msg.sender"" represent?",The contract creator,The current caller's address,The contract address,The transaction initiator,B,Single Choice
 12,basic,In Vyper, which keyword is used to define constants?,constant,constant,immutable,final,B,Single Choice
 13,basic,"What does ""ABI"" stand for in smart contracts?",Application Binary Interface,Advanced Blockchain Interface,Automatic Block Indexing,Address Binding Interface,A,Single Choice
 14,basic,Which is not a method for creating contracts in Solidity?,new keyword,Factory contract,Cloning a contract,import keyword,D,Single Choice
 15,basic,"What is the main purpose of ""mapping"" type in Solidity?",Storing key-value pairs,Mapping function calls,Connecting to external APIs,Converting data types,A,Single Choice
 16,basic,Which is not a characteristic of smart contracts?,Automatic execution,Immutability,Revocability,Decentralization,C,Single Choice
-17,basic,"In Solidity, what is the purpose of the ""view"" modifier?",Allows a function to modify state,Declares that a function does not modify state,Makes a function's visibility public,Allows a function to receive Ether,B,Single Choice
+17,basic,"In Solidity， what is the purpose of the ""view"" modifier?",Allows a function to modify state,Declares that a function does not modify state,Makes a function's visibility public,Allows a function to receive Ether,B,Single Choice
 18,basic,In Vyper, which feature is designed to improve security?,Unlimited loops,Recursive calls,Bounded loops,Dynamic inheritance,C,Single Choice
 19,basic,"What is the main purpose of ""events"" in smart contracts?",Triggering other contract functions,Recording logs on the blockchain,Handling exceptions,Controlling Gas consumption,B,Single Choice
 20,basic,Which of the following is not an access control modifier in Solidity?,public,private,internal,global,D,Single Choice
 21,basic,What is the latest stable version of Vyper?,0.3.0,0.3.7,0.4.0,1.0.0,B,Single Choice
-22,basic,"In Solidity, what is the purpose of the ""payable"" modifier?",Allows a function to receive Ether,Allows a function to pay for Gas,Allows a contract to transfer funds,Allows a function to modify state,A,Single Choice
+22,basic,"In Solidity， what is the purpose of the ""payable"" modifier?",Allows a function to receive Ether,Allows a function to pay for Gas,Allows a contract to transfer funds,Allows a function to modify state,A,Single Choice
 23,basic,Which of the following is not a smart contract deployment platform?,Ethereum,Binance Smart Chain,Bitcoin,Polkadot,C,Single Choice
-24,basic,"In Solidity, what is ""struct"" used for?",Defining function structure,Creating custom data types,Declaring contract structure,Organizing code blocks,B,Single Choice
+24,basic,"In Solidity， what is ""struct"" used for?",Defining function structure,Creating custom data types,Declaring contract structure,Organizing code blocks,B,Single Choice
 25,basic,In Vyper, which statement is used to check conditions and revert transactions if not satisfied?,if/else,assert,try/except,while,B,Single Choice
-26,basic,What is the characteristic of a ""constructor"" in smart contracts?,Can be called multiple times,Only executed once when the contract is deployed,Must be public,Cannot accept parameters,B,Single Choice
+26,basic,"What is the characteristic of a """"constructor"""" in smart contracts?",Can be called multiple times,Only executed once when the contract is deployed,Must be public,Cannot accept parameters,B,Single Choice
 27,basic,Which of the following is not an array operation in Solidity?,push,pop,length,sort,D,Single Choice
 28,basic,"What is a characteristic of ""library contracts"" in Solidity?",Can have state variables,Can inherit from other contracts,Cannot have state variables,Can receive Ether,C,Single Choice
 29,basic,Which of the following is not a security consideration for smart contracts?,Reentrancy attacks,Integer overflow,User interface,Access control,C,Single Choice
-30,basic,"In Solidity, what are ""modifiers"" primarily used for?",Modifying variable values,Changing function behavior,Declaring function visibility,Defining data types,B,Single Choice
+30,basic,"In Solidity， what are ""modifiers"" primarily used for?",Modifying variable values,Changing function behavior,Declaring function visibility,Defining data types,B,Single Choice
 31,basic,Which of the following is not a built-in function in Vyper?,sha256,keccak256,ecrecover,hashmap,D,Single Choice
-32,basic,What is the main purpose of ""Gas optimization"" in smart contracts?,Improving contract execution speed,Reducing transaction fees,Increasing contract security,Simplifying contract code,B,Single Choice
+32,basic,"What is the main purpose of """"Gas optimization"""" in smart contracts?",Improving contract execution speed,Reducing transaction fees,Increasing contract security,Simplifying contract code,B,Single Choice
 33,basic,Which of the following is not an error handling mechanism in Solidity?,require,assert,revert,catch,D,Single Choice
 34,basic,What inheritance feature does Solidity support?,Single inheritance,Multiple inheritance,Private inheritance,Dynamic inheritance,B,Single Choice
 35,basic,Which of the following is not a method for testing smart contracts?,Unit testing,Integration testing,Fuzzing testing,Physical testing,D,Single Choice
-36,basic,"In Solidity, what is ""enum"" used for?",Defining events,Creating user-defined types,Declaring function types,Specifying Gas limits,B,Single Choice
+36,basic,"In Solidity， what is ""enum"" used for?",Defining events,Creating user-defined types,Declaring function types,Specifying Gas limits,B,Single Choice
 37,basic,In Vyper, which feature is designed to prevent reentrancy attacks?,nonreentrant decorator,Static typing,Bounded loops,No inheritance,A,Single Choice
-38,basic,What does a ""revert"" operation cause in smart contracts?,Only reverting the current function,Reverting the entire transaction and returning remaining Gas,Deleting the contract,Pausing contract execution,B,Single Choice
+38,basic,"What does a """"revert"""" operation cause in smart contracts?",Only reverting the current function,Reverting the entire transaction and returning remaining Gas,Deleting the contract,Pausing contract execution,B,Single Choice
 39,basic,Which of the following is not a method for calling between contracts in Solidity?,Direct call,Delegatecall,Low-level call,Remotecall,D,Single Choice
 40,basic,"What is a characteristic of ""interfaces"" in Solidity?",Can include implementations,Can have constructors,Can only declare functions,Can have state variables,C,Single Choice
 41,basic,Which of the following is not a deployment environment for smart contracts?,Mainnet,Testnet,Local development environment,Physical server,D,Single Choice
-42,basic,"In Solidity, what is the purpose of the ""using A for B"" syntax?",Attaching functions from A to type B,Replacing B with A,Converting B to A,Making A inherit from B,A,Single Choice
+42,basic,"In Solidity， what is the purpose of the ""using A for B"" syntax?",Attaching functions from A to type B,Replacing B with A,Converting B to A,Making A inherit from B,A,Single Choice
 43,basic,Which of the following is not a built-in data type in Vyper?,uint256,address,bytes32,float,D,Single Choice
-44,basic,What is the purpose of the ""selfdestruct"" function in smart contracts?,Pausing the contract,Deleting the contract and returning funds,Resetting contract state,Locking contract funds,B,Single Choice
+44,basic,"What is the purpose of the """"selfdestruct"""" function in smart contracts?",Pausing the contract,Deleting the contract and returning funds,Resetting contract state,Locking contract funds,B,Single Choice
 45,basic,Which of the following is not a method for creating contracts in Solidity?,new keyword,Clone proxy,Factory pattern,import statement,D,Single Choice
-46,basic,What is a characteristic of ""abstract contracts"" in Solidity?,Cannot be deployed,Cannot have state variables,Cannot have function implementations,Cannot be inherited,A,Single Choice
+46,basic,"What is a characteristic of """"abstract contracts"""" in Solidity?",Cannot be deployed,Cannot have state variables,Cannot have function implementations,Cannot be inherited,A,Single Choice
 47,basic,Which of the following is not a compilation tool for smart contracts?,solc,vyper,truffle,metamask,D,Single Choice
-48,basic,"In Solidity, what is the purpose of the ""pure"" modifier?",Allows a function to modify state,Declares that a function neither reads nor modifies state,Makes a function's visibility public,Allows a function to receive Ether,B,Single Choice
+48,basic,"In Solidity， what is the purpose of the ""pure"" modifier?",Allows a function to modify state,Declares that a function neither reads nor modifies state,Makes a function's visibility public,Allows a function to receive Ether,B,Single Choice
 49,basic,Which of the following is not a control structure in Vyper?,if,for,while,switch,D,Single Choice
-50,basic,What is the main purpose of ""indexed event parameters"" in smart contracts?,Improving event processing speed,Allowing filtering of events by parameter values,Reducing Gas consumption,Increasing event security,B,Single Choice
+50,basic,"What is the main purpose of """"indexed event parameters"""" in smart contracts?",Improving event processing speed,Allowing filtering of events by parameter values,Reducing Gas consumption,Increasing event security,B,Single Choice
 51,basic,Which of the following is not a built-in global variable in Solidity?,msg.sender,block.timestamp,tx.origin,contract.balance,D,Single Choice
-52,basic,"In Solidity, what does ""function overloading"" refer to?",Functions with the same name but different parameters,Functions that can call themselves,Functions that can modify state,Functions that can receive Ether,A,Single Choice
+52,basic,"In Solidity， what does ""function overloading"" refer to?",Functions with the same name but different parameters,Functions that can call themselves,Functions that can modify state,Functions that can receive Ether,A,Single Choice
 53,basic,Which of the following is not a way to interact with smart contracts?,Through wallets,Through DApps,Through other contracts,Through email,D,Single Choice
-54,basic,"In Solidity, what is the purpose of ""assembly"" blocks?",Writing low-level EVM opcodes,Assembling contract components,Creating contract interfaces,Defining contract structure,A,Single Choice
+54,basic,"In Solidity， what is the purpose of ""assembly"" blocks?",Writing low-level EVM opcodes,Assembling contract components,Creating contract interfaces,Defining contract structure,A,Single Choice
 55,basic,In Vyper, which of the following is a built-in variable for handling time?,now,timestamp,block.timestamp,current_time,C,Single Choice
-56,basic,What is the main purpose of the ""Proxy Pattern"" in smart contracts?,Hiding contract addresses,Implementing contract upgradeability,Reducing Gas consumption,Increasing contract security,B,Single Choice
+56,basic,"What is the main purpose of the """"Proxy Pattern"""" in smart contracts?",Hiding contract addresses,Implementing contract upgradeability,Reducing Gas consumption,Increasing contract security,B,Single Choice
 57,basic,Which of the following is not a method for storing arrays in Solidity?,Fixed-size arrays,Dynamic arrays,Mappings,Linked lists,D,Single Choice
-58,basic,"In Solidity, what is the keyword for inheritance?",extends,inherits,implements,is,D,Single Choice
+58,basic,In Solidity， what is the keyword for inheritance?,extends,inherits,implements,is,D,Single Choice
 59,basic,Which of the following is not a deployment tool for smart contracts?,Remix,Hardhat,Truffle,Metamask,D,Single Choice
-60,basic,"In Solidity, what is a characteristic of the ""receive"" function?",Can have parameters,Cannot have parameters and must be external payable,Must return values,Can be defined multiple times,B,Single Choice
+60,basic,"In Solidity， what is a characteristic of the ""receive"" function?",Can have parameters,Cannot have parameters and must be external payable,Must return values,Can be defined multiple times,B,Single Choice
 61,basic,Which of the following is not a built-in cryptographic function in Vyper?,sha256,keccak256,ripemd160,md5,D,Single Choice
-62,basic,What is the main purpose of the ""Timelock"" mechanism in smart contracts?,Delaying contract execution,Limiting contract call frequency,Setting contract expiration time,Synchronizing contract time,A,Single Choice
-63,basic,Which of the following is not an error handling approach in Solidity?,"require(condition, ""message"")",assert(condition),"revert(""message"")",try/catch,D,Single Choice
-64,basic,"In Solidity, what is a ""Function Selector""?",The function name,The first 4 bytes of the function signature,The function parameter list,The function return type,B,Single Choice
+62,basic,"What is the main purpose of the """"Timelock"""" mechanism in smart contracts?",Delaying contract execution,Limiting contract call frequency,Setting contract expiration time,Synchronizing contract time,A,Single Choice
+63,basic,Which of the following is not an error handling approach in Solidity?,"require(condition， ""message"")",assert(condition),"revert(""message"")",try/catch,D,Single Choice
+64,basic,"In Solidity， what is a ""Function Selector""?",The function name,The first 4 bytes of the function signature,The function parameter list,The function return type,B,Single Choice
 65,basic,Which of the following is not an auditing tool for smart contracts?,Mythril,Slither,Echidna,Ganache,D,Single Choice
-66,basic,"In Solidity, what is a characteristic of ""immutable"" variables?",Can be modified at any time,Can only be assigned in the constructor,Cannot be initialized,Must be public,B,Single Choice
+66,basic,"In Solidity， what is a characteristic of ""immutable"" variables?",Can be modified at any time,Can only be assigned in the constructor,Cannot be initialized,Must be public,B,Single Choice
 67,basic,Which of the following is not a valid function visibility in Vyper?,public,private,external,protected,D,Single Choice
-68,basic,What does ""ERC"" stand for in smart contracts?,Ethereum Request for Comments,Ethereum Record Collection,Ethereum Resource Control,Ethereum Blockchain Rules,A,Single Choice
+68,basic,"What does """"ERC"""" stand for in smart contracts?",Ethereum Request for Comments,Ethereum Record Collection,Ethereum Resource Control,Ethereum Blockchain Rules,A,Single Choice
 69,basic,Which of the following is not a valid data location in Solidity?,storage,memory,calldata,stack,D,Single Choice
-70,basic,"In Solidity, what rule does inheritance order follow?",Left to right,Right to left,Alphabetical order,By contract size,B,Single Choice
+70,basic,In Solidity， what rule does inheritance order follow?,Left to right,Right to left,Alphabetical order,By contract size,B,Single Choice
 71,basic,Which of these are basic data types in Solidity?,uint,bool,float,address,"A, B, D",Multiple Choice
 72,basic,Which of these are design features of Vyper?,Bounded loops,No recursion,Multiple inheritance,No class inheritance,"A, B, D",Multiple Choice
 73,basic,Which of these are characteristics of smart contracts?,Automatic execution,Immutability,Revocability,Decentralization,"A, B, D",Multiple Choice
@@ -103,11 +103,11 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 102,intermediate,"What is ""user-defined operator overloading"" in Solidity primarily used for?",Simplifying mathematical library implementation,Enhancing contract security,Reducing Gas consumption,Improving contract readability,A,Single Choice
 103,intermediate,Which pattern is most suitable for implementing upgradeable smart contracts?,Factory pattern,Proxy pattern,Singleton pattern,Observer pattern,B,Single Choice
 104,intermediate,In Vyper, which feature is designed to prevent reentrancy attacks?,@nonreentrant decorator,Static type system,No recursive calls,Bounded loops,A,Single Choice
-105,intermediate,Which method is most suitable for generating random numbers in smart contracts?,block.timestamp,"keccak256(abi.encodePacked(block.difficulty, block.timestamp))",Off-chain random number generator + on-chain verification,Math.random(),C,Single Choice
+105,intermediate,Which method is most suitable for generating random numbers in smart contracts?,block.timestamp,keccak256(abi.encodePacked(block.difficulty， block.timestamp)),Off-chain random number generator + on-chain verification,Math.random(),C,Single Choice
 106,intermediate,In the EIP-1559 transaction model, which part of the fee is burned?,Base Fee,Tip,Gas Limit,Max Fee,A,Single Choice
 107,intermediate,Which inter-contract call method changes the value of msg.sender?,Direct call,call,delegatecall,staticcall,A,Single Choice
 108,intermediate,Which method is most suitable for handling large number operations in Solidity?,Using uint256,Using library contracts,Using floating point numbers,Using string representation,B,Single Choice
-109,intermediate,Which smart contract development framework introduced ""Fuzzing"" as a standard feature?,Truffle,Hardhat,Foundry,Brownie,C,Single Choice
+109,intermediate,"Which smart contract development framework introduced """"Fuzzing"""" as a standard feature?",Truffle,Hardhat,Foundry,Brownie,C,Single Choice
 110,intermediate,Which pattern is most suitable for implementing access control in contracts?,Inheriting from OpenZeppelin's AccessControl,Using a simple owner variable,Using tx.origin checks,Using block.timestamp restrictions,A,Single Choice
 111,intermediate,Which data structure in Solidity is most suitable for implementing a mapping to multiple values?,Nested mappings,Array of structs,Multidimensional arrays,Linked lists,A,Single Choice
 112,intermediate,Which method is most suitable for implementing pause functionality in smart contracts?,Using selfdestruct,Implementing the Pausable interface,Using require(block.timestamp > pauseTime),Using try/catch to capture all calls,B,Single Choice
