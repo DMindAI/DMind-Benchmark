@@ -2,10 +2,10 @@ import os
 import re
 
 # 定义文件目录
-objective_dir = "test_data/objective"
+objective_dir = "test_data/subjective"
 
 # 获取目录下所有的CSV文件
-csv_files = [f for f in os.listdir(objective_dir) if f.endswith('.csv')]
+csv_files = [f for f in os.listdir(objective_dir) if f.endswith('.jsonl')]
 
 # 处理每个CSV文件
 for csv_file in csv_files:
@@ -15,40 +15,20 @@ for csv_file in csv_files:
     # 以字符串形式读取整个文件内容
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
-        
-    # 使用正则表达式替换英文逗号+空格+字母为中文逗号+空格+字母
-    # 注意：避免替换Correct option列中的内容
+
     lines = content.split('\n')
     header = lines[0].split(',')
     
-    # 找到"Correct option"列的索引
-    correct_option_index = -1
-    for i, col in enumerate(header):
-        if col.strip() == 'Correct option':
-            correct_option_index = i
-            break
-    
-    if correct_option_index == -1:
-        print("警告：找不到'Correct option'列，将处理所有列")
     
     # 处理每一行数据
-    new_lines = [lines[0]]  # 保留原始标题行
-    for i in range(1, len(lines)):
-        if not lines[i].strip():
-            new_lines.append(lines[i])
-            continue
-            
-        # 将行拆分为字段
-        fields = lines[i].split(',')
-        
-        # 处理每个字段，除了Correct option列
-        for j in range(len(fields)):
-            if j != correct_option_index:
+    new_lines = []  # 保留原始标题行
+    for i in range(0, len(lines)):
+    
                 # 新规则：将所有", "替换为"， "，不管后面跟什么字符
-                fields[j] = re.sub(r', ', r'， ', fields[j])
+        lines[i] = re.sub(r', ([a-zA-Z])', r'， \1', lines[i])
         
         # 重新组合成一行
-        new_lines.append(','.join(fields))
+        new_lines.append(lines[i])
     
     # 重新组合成文件内容
     new_content = '\n'.join(new_lines)

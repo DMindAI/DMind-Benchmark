@@ -3,7 +3,7 @@ import csv
 import re
 
 # 定义文件目录
-objective_dir = "test_data/objective"
+objective_dir = "test_data/subjective"
 
 # 获取目录下所有的CSV文件
 csv_files = [f for f in os.listdir(objective_dir) if f.endswith('.csv')]
