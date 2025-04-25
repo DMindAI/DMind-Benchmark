@@ -13,61 +13,61 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 12,Basic,Which of the following is the most popular stablecoin in DeFi?,USDT,USDC,DAI,BUSD,B,No
 13,Basic,What does DEX stand for?,Decentralized Exchange,Digital Asset Exchange,Direct Exchange System,Distributed Execution,A,No
 14,Basic,Which of the following is NOT a common AMM model?,Constant product,Constant sum,Constant median,Weighted curves,C,No
-15,Basic,"What does ""Yield Farming"" refer to in DeFi?",Growing crops,Moving funds between different protocols to maximize returns,Holding tokens long-term,Mining new tokens,B,No
+15,Basic,"What does "Yield Farming" refer to in DeFi?",Growing crops,Moving funds between different protocols to maximize returns,Holding tokens long-term,Mining new tokens,B,No
 16,Basic,Which of the following is NOT a lending protocol in DeFi?,Aave,Compound,MakerDAO,Chainlink,D,No
-17,Basic,"What is the main purpose of ""staking"" in DeFi?",Locking tokens to earn rewards,Trading tokens,Lending tokens,Burning tokens,A,No
+17,Basic,"What is the main purpose of "staking" in DeFi?",Locking tokens to earn rewards,Trading tokens,Lending tokens,Burning tokens,A,No
 18,Basic,Which of the following is an oracle service in DeFi?,Uniswap,Chainlink,Compound,SushiSwap,B,No
 19,Basic,Which of the following is the largest DEX on Ethereum?,Uniswap,SushiSwap,PancakeSwap,dYdX,A,No
-20,Basic,"What is a ""Liquidity Pool"" in DeFi?",A pool of funds deposited by users,Exchange reserves,Developer funds,Mining rewards,A,No
+20,Basic,"What is a "Liquidity Pool" in DeFi?",A pool of funds deposited by users,Exchange reserves,Developer funds,Mining rewards,A,No
 21,Basic,Which of the following is NOT a stablecoin mechanism in DeFi?,Fiat-collateralized,Crypto-collateralized,Algorithmic,Central bank issued,D,No
-22,Basic,"What is the main use of ""governance tokens"" in DeFi?",Paying transaction fees,Participating in protocol decisions,Acting as stablecoins,Cross-chain transactions,B,No
+22,Basic,"What is the main use of "governance tokens" in DeFi?",Paying transaction fees,Participating in protocol decisions,Acting as stablecoins,Cross-chain transactions,B,No
 23,Basic,Which DeFi protocol focuses on optimizing stablecoin trading?,Uniswap,Aave,Curve,Balancer,C,No
-24,Basic,"What does ""liquidation"" refer to in DeFi?",Selling collateral to repay a loan,Closing a protocol,Withdrawing all funds,Converting tokens,A,No
+24,Basic,"What does "liquidation" refer to in DeFi?",Selling collateral to repay a loan,Closing a protocol,Withdrawing all funds,Converting tokens,A,No
 25,Basic,Which of the following is NOT a derivatives protocol in DeFi?,dYdX,Synthetix,Opyn,Compound,D,No
-26,Basic,"What behavior does ""Liquidity Mining"" primarily reward in DeFi?",Trading frequency,Providing liquidity,Holding tokens,Developing applications,B,No
+26,Basic,"What behavior does "Liquidity Mining" primarily reward in DeFi?",Trading frequency,Providing liquidity,Holding tokens,Developing applications,B,No
 27,Basic,Which of the following is an asset management protocol in DeFi?,Yearn Finance,Uniswap,Compound,Chainlink,A,No
 28,Basic,Which of the following is the most popular cross-chain bridge in DeFi?,Wormhole,Multichain,Hop Protocol,Stargate,A,No
-29,Basic,"What is ""Impermanent Loss"" in DeFi most related to?",Lending rates,Asset price changes,Network congestion,Governance decisions,B,No
+29,Basic,"What is "Impermanent Loss" in DeFi most related to?",Lending rates,Asset price changes,Network congestion,Governance decisions,B,No
 30,Basic,Which of the following is NOT a yield aggregator in DeFi?,Yearn Finance,Harvest Finance,Pickle Finance,Uniswap,D,No
-31,Basic,"What does ""Collateralization Ratio"" refer to in DeFi?",The ratio of loan amount to collateral value,Protocol yield rate,Transaction fee rate,Liquidity ratio,A,No
+31,Basic,"What does "Collateralization Ratio" refer to in DeFi?",The ratio of loan amount to collateral value,Protocol yield rate,Transaction fee rate,Liquidity ratio,A,No
 32,Basic,Which of the following is an insurance protocol in DeFi?,Nexus Mutual,Aave,Compound,Uniswap,A,No
 33,Basic,Which DeFi trend has gained more attention?,Real-time payments,Tokenization of physical assets,Centralized control,Closed ecosystems,B,No
-34,Basic,"What do ""Liquidity Providers"" primarily do in DeFi?",Provide funds to protocols,Develop smart contracts,Audit protocols,Manage protocols,A,No
+34,Basic,"What do "Liquidity Providers" primarily do in DeFi?",Provide funds to protocols,Develop smart contracts,Audit protocols,Manage protocols,A,No
 35,Basic,Which of the following is NOT a lending model in DeFi?,Overcollateralized,Flash loans,Credit loans,Uncollateralized loans,C,No
-36,Basic,"What is the main function of ""Oracles"" in DeFi?",Providing off-chain data,Executing smart contracts,Managing protocols,Issuing tokens,A,No
+36,Basic,"What is the main function of "Oracles" in DeFi?",Providing off-chain data,Executing smart contracts,Managing protocols,Issuing tokens,A,No
 37,Basic,Which of the following is a decentralized options protocol in DeFi?,Opyn,Aave,Compound,Curve,A,No
 38,Basic,Which of the following is the most popular Layer 2 solution in DeFi?,Optimism,Arbitrum,zkSync,StarkNet,B,No
-39,Basic,"What does ""Liquidity Mining"" typically reward in DeFi?",Protocol tokens,Fiat currency,Physical assets,Service points,A,No
+39,Basic,"What does "Liquidity Mining" typically reward in DeFi?",Protocol tokens,Fiat currency,Physical assets,Service points,A,No
 40,Basic,Which of the following is NOT a risk management tool in DeFi?,Insurance protocols,Risk scoring,Centralized custody,Multi-signature wallets,C,No
-41,Basic,"What does ""Total Value Locked"" (TVL) refer to in DeFi?",Total value of assets locked in a protocol,Protocol market cap,Protocol trading volume,Protocol user count,A,No
+41,Basic,"What does "Total Value Locked" (TVL) refer to in DeFi?",Total value of assets locked in a protocol,Protocol market cap,Protocol trading volume,Protocol user count,A,No
 42,Basic,Which of the following is a decentralized identity protocol in DeFi?,Civic,Uniswap,Aave,Compound,A,No
 43,Basic,Which DeFi protocol focuses on fixed income products?,Element Finance,Uniswap,Aave,Curve,A,No
-44,Basic,"Which protocol first popularized ""Liquidity Mining"" in DeFi?",Uniswap,Compound,Aave,SushiSwap,B,No
+44,Basic,"Which protocol first popularized "Liquidity Mining" in DeFi?",Uniswap,Compound,Aave,SushiSwap,B,No
 45,Basic,Which of the following is NOT a decentralized exchange model in DeFi?,Order book model,Automated Market Maker model,Centralized matching model,Hybrid model,C,No
-46,Basic,"What are the main sources of ""Yield"" in DeFi?",Trading fees， lending interest， and token rewards,Centralized dividends,Government subsidies,Charitable donations,A,No
+46,Basic,"What are the main sources of "Yield" in DeFi?",Trading fees， lending interest， and token rewards,Centralized dividends,Government subsidies,Charitable donations,A,No
 47,Basic,Which of the following is a decentralized prediction market in DeFi?,Augur,Uniswap,Aave,Compound,A,No
 48,Basic,Which of the following is the most popular yield aggregator in DeFi?,Yearn Finance,Harvest Finance,Pickle Finance,Convex Finance,D,No
-49,Basic,"What do ""Flash Loan Attacks"" primarily exploit in DeFi?",Large uncollateralized loans,Network congestion,User passwords,Centralized vulnerabilities,A,No
+49,Basic,"What do "Flash Loan Attacks" primarily exploit in DeFi?",Large uncollateralized loans,Network congestion,User passwords,Centralized vulnerabilities,A,No
 50,Basic,Which of the following is NOT a stablecoin in DeFi?,DAI,USDC,USDT,BTC,D,No
-51,Basic,"What do ""LP Tokens"" (Liquidity Provider Tokens) represent in DeFi?",Proof of providing liquidity,Governance rights,Stablecoins,Insurance certificates,A,No
+51,Basic,"What do "LP Tokens" (Liquidity Provider Tokens) represent in DeFi?",Proof of providing liquidity,Governance rights,Stablecoins,Insurance certificates,A,No
 52,Basic,Which of the following is a decentralized insurance protocol in DeFi?,Nexus Mutual,Uniswap,Aave,Compound,A,No
 53,Basic,Which DeFi protocol focuses on decentralized identity verification?,Civic,Uniswap,Aave,Compound,A,No
-54,Basic,"What does ""Yield Curve"" refer to in DeFi?",Relationship between yields for investments of different maturities,Protocol growth curve,User count changes,Token price trends,A,No
+54,Basic,"What does "Yield Curve" refer to in DeFi?",Relationship between yields for investments of different maturities,Protocol growth curve,User count changes,Token price trends,A,No
 55,Basic,Which of the following is NOT an asset type in DeFi?,Stablecoins,Governance tokens,LP tokens,Physical stocks,D,No
-56,Basic,"What is ""Liquidity Mining"" most closely related to in DeFi?",Providing liquidity to earn token rewards,Mining cryptocurrency,Developing smart contracts,Auditing protocols,A,No
+56,Basic,"What is "Liquidity Mining" most closely related to in DeFi?",Providing liquidity to earn token rewards,Mining cryptocurrency,Developing smart contracts,Auditing protocols,A,No
 57,Basic,Which of the following is a decentralized lending protocol in DeFi?,Aave,Uniswap,Chainlink,Curve,A,No
 58,Basic,Which DeFi protocol focuses on decentralized derivatives?,dYdX,Uniswap,Aave,Compound,A,No
-59,Basic,"What was the initial purpose of ""Liquidity Mining"" in DeFi?",Attracting users to provide liquidity,Increasing token prices,Reducing transaction fees,Improving security,A,No
+59,Basic,"What was the initial purpose of "Liquidity Mining" in DeFi?",Attracting users to provide liquidity,Increasing token prices,Reducing transaction fees,Improving security,A,No
 60,Basic,Which of the following is NOT a transaction type in DeFi?,Spot trading,Leveraged trading,Futures trading,Physical delivery,D,No
-61,Basic,"What are the main risks of ""Yield Farming"" in DeFi?",Smart contract risks， impermanent loss， and market risks,Government regulation,Power outages,Internet connectivity,A,No
+61,Basic,"What are the main risks of "Yield Farming" in DeFi?",Smart contract risks， impermanent loss， and market risks,Government regulation,Power outages,Internet connectivity,A,No
 62,Basic,Which of the following is a decentralized asset management protocol in DeFi?,Yearn Finance,Uniswap,Chainlink,Curve,A,No
 63,Basic,Which of the following is the most popular decentralized options protocol in DeFi?,Opyn,Uniswap,Aave,Compound,A,No
-64,Basic,"What operation does ""Liquidity Mining"" typically require in DeFi?",Providing liquidity and staking LP tokens,Purchasing protocol tokens,Developing smart contracts,Auditing protocols,A,No
+64,Basic,"What operation does "Liquidity Mining" typically require in DeFi?",Providing liquidity and staking LP tokens,Purchasing protocol tokens,Developing smart contracts,Auditing protocols,A,No
 65,Basic,Which of the following is NOT a source of revenue in DeFi?,Trading fees,Lending interest,Liquidity rewards,Centralized dividends,D,No
-66,Basic,"How is ""Yield"" typically expressed in DeFi?",Annual percentage yield (APY),Fixed amount,Token quantity,User count,A,No
+66,Basic,"How is "Yield" typically expressed in DeFi?",Annual percentage yield (APY),Fixed amount,Token quantity,User count,A,No
 67,Basic,Which of the following is a decentralized synthetic asset protocol in DeFi?,Synthetix,Uniswap,Aave,Compound,A,No
 68,Basic,Which DeFi protocol focuses on decentralized insurance?,Nexus Mutual,Uniswap,Aave,Compound,A,No
-69,Basic,"What assets does ""Liquidity Mining"" typically require in DeFi?",Two tokens in a trading pair,Only one token,Fiat currency,Physical assets,A,No
+69,Basic,"What assets does "Liquidity Mining" typically require in DeFi?",Two tokens in a trading pair,Only one token,Fiat currency,Physical assets,A,No
 70,Basic,Which of the following is NOT a risk in DeFi?,Smart contract risk,Impermanent loss,Oracle risk,Centralized guarantees,D,No
 71,Basic,Which of the following are main characteristics of DeFi?,Decentralization,Permissionless,Centralized control,Transparency,"A, B, D",Yes
 72,Basic,Which of the following are main protocol types in DeFi?,Lending protocols,Decentralized exchanges,Centralized exchanges,Asset management protocols,"A, B, D",Yes
@@ -99,46 +99,46 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 98,Basic,Which of the following are decentralized governance methods in DeFi?,Token voting,Proposal systems,Delegated voting,Centralized decision-making,"A, B, C",Yes
 99,Basic,Which of the following are effective risk control measures for DeFi flash loan mechanisms?,Multi-asset verification,Time-locked transactions,Prevention of replay attacks,Real-time monitoring and automatic interruption,"B, D",Yes
 100,Basic,Which of the following are main metrics in DeFi?,Total Value Locked (TVL),Trading volume,User count,Product appearance,"A, B, C",Yes
-101,Intermediate,"What is the main disadvantage of the ""constant product formula"" (x*y=k) in AMMs?",High computational complexity,Large slippage for large trades,Does not support multiple tokens,Cannot handle stablecoins,B,No
+101,Intermediate,"What is the main disadvantage of the "constant product formula" (x*y=k) in AMMs?",High computational complexity,Large slippage for large trades,Does not support multiple tokens,Cannot handle stablecoins,B,No
 102,Intermediate,Which DeFi protocol innovation has reduced the impermanent loss problem?,Concentrated liquidity AMMs,Order book DEXs,Lending protocols,Synthetic asset protocols,A,No
 103,Intermediate,Which mechanism is most suitable for preventing flash loan attacks in DeFi?,Using Time-Weighted Average Price (TWAP),Increasing transaction fees,Limiting transaction size,Centralized review,A,No
-104,Intermediate,In DeFi lending protocols," what happens when the ""Health Factor"" falls below 1?",Additional rewards,Liquidation is triggered,Lower borrowing rates,Increased borrowing capacity,B,No
+104,Intermediate,In DeFi lending protocols," what happens when the "Health Factor" falls below 1?",Additional rewards,Liquidation is triggered,Lower borrowing rates,Increased borrowing capacity,B,No
 105,Intermediate,Which DeFi liquidity strategy has achieved higher capital efficiency?,Single-asset staking,Concentrated liquidity provision,Full-range liquidity provision,Passive holding,B,No
 106,Intermediate,Which mechanism is used to balance supply and demand in DeFi lending protocols?,Interest rate models,Governance voting,Oracles,Liquidity mining,A,No
-107,Intermediate,"In DeFi， what does an inverted ""Yield Curve"" typically indicate?",Short-term yields higher than long-term yields,Long-term yields higher than short-term yields,Negative yields,Zero yields,A,No
+107,Intermediate,"In DeFi， what does an inverted "Yield Curve" typically indicate?",Short-term yields higher than long-term yields,Long-term yields higher than short-term yields,Negative yields,Zero yields,A,No
 108,Intermediate,Which DeFi protocol innovation solves the cross-chain liquidity fragmentation problem?,Cross-chain AMMs,Multi-chain lending,Liquidity aggregators,All of the above,D,No
 109,Intermediate,Which mechanism is most suitable for solving oracle manipulation problems in DeFi?,Time-Weighted Average Price (TWAP),Multi-source data aggregation,On-chain governance,Centralized verification,B,No
-110,Intermediate,"What is the main disadvantage of ""Liquidity Mining"" in DeFi?",Temporary liquidity,High gas fees,Low yields,Complex user interfaces,A,No
+110,Intermediate,"What is the main disadvantage of "Liquidity Mining" in DeFi?",Temporary liquidity,High gas fees,Low yields,Complex user interfaces,A,No
 111,Intermediate,Which DeFi protocol innovation has improved stablecoin capital efficiency?,Overcollateralized models,Algorithmic stablecoins,Partially collateralized models,Centralized stablecoins,C,No
 112,Intermediate,Which mechanism is most suitable for solving MEV (Maximal Extractable Value) problems in DeFi?,Batch auctions,Increasing transaction fees,Limiting transaction size,Centralized ordering,A,No
-113,Intermediate,"What is the core of ""Yield Farming"" strategies in DeFi?",Moving funds between different protocols to maximize returns,Holding a single asset long-term,Frequent trading,Borrowing funds,A,No
+113,Intermediate,"What is the core of "Yield Farming" strategies in DeFi?",Moving funds between different protocols to maximize returns,Holding a single asset long-term,Frequent trading,Borrowing funds,A,No
 114,Intermediate,Which DeFi protocol innovation has reduced gas fees?,Layer 2 solutions,Centralized exchanges,Increasing block size,Reducing transaction frequency,A,No
 115,Intermediate,Which mechanism is most suitable for improving capital efficiency in DeFi protocols?,Leverage,Overcollateralization,Liquidity restrictions,Centralized control,A,No
-116,Intermediate,"What is the main problem of ""Liquidity Fragmentation"" in DeFi?",Reduced capital efficiency,Increased security,Higher yields,Reduced user count,A,No
+116,Intermediate,"What is the main problem of "Liquidity Fragmentation" in DeFi?",Reduced capital efficiency,Increased security,Higher yields,Reduced user count,A,No
 117,Intermediate,Which DeFi protocol innovation has solved the security problem of cross-chain asset transfers?,Multi-signature bridges,Light client verification,Zero-knowledge proof bridges,All of the above,D,No
 118,Intermediate,Which mechanism is most suitable for solving liquidity concentration risk in DeFi?,Liquidity dispersion incentives,Centralized control,Increasing transaction fees,Limiting transaction size,A,No
-119,Intermediate,"What is the main risk of ""Yield Strategies"" in DeFi?",Smart contract risk,Low yields,High gas fees,Complex user interfaces,A,No
+119,Intermediate,"What is the main risk of "Yield Strategies" in DeFi?",Smart contract risk,Low yields,High gas fees,Complex user interfaces,A,No
 120,Intermediate,Which DeFi protocol innovation has improved the efficiency of decentralized derivatives?,Perpetual contracts,Options protocols,Synthetic assets,All of the above,D,No
 121,Intermediate,Which mechanism is most suitable for solving liquidity provider incentive problems in DeFi?,Trading fee sharing,Token rewards,Protocol revenue sharing,All of the above,D,No
-122,Intermediate,"What do ""Yield Curve Strategies"" in DeFi primarily utilize?",Differences in yields across different time periods,Price volatility of different assets,Security differences across protocols,Gas fee differences across chains,A,No
+122,Intermediate,"What do "Yield Curve Strategies" in DeFi primarily utilize?",Differences in yields across different time periods,Price volatility of different assets,Security differences across protocols,Gas fee differences across chains,A,No
 123,Intermediate,Which DeFi protocol innovation has solved the stablecoin de-pegging problem?,Multi-asset collateralization,Algorithmic stabilization mechanisms,Decentralized reserves,All of the above,D,No
 124,Intermediate,Which mechanism is most suitable for solving governance attack problems in DeFi?,Timelocks,Multi-signatures,Voting weight limits,All of the above,D,No
-125,Intermediate,"What does the sustainability of ""Liquidity Mining"" in DeFi primarily depend on?",Protocol revenue,Token inflation,External investment,User growth,A,No
+125,Intermediate,"What does the sustainability of "Liquidity Mining" in DeFi primarily depend on?",Protocol revenue,Token inflation,External investment,User growth,A,No
 126,Intermediate,Which DeFi protocol innovation has improved the efficiency of decentralized lending?,Isolated markets,Risk tranching,Interest rate optimization,All of the above,D,No
 127,Intermediate,Which mechanism is most suitable for solving price manipulation problems in DeFi?,Time-Weighted Average Price (TWAP),Multi-source data aggregation,Liquidity depth requirements,All of the above,D,No
-128,Intermediate,"What is the main advantage of ""Yield Aggregators"" in DeFi?",Automated strategy optimization,Reduced gas fees,Enhanced security,Simplified user interfaces,A,No
+128,Intermediate,"What is the main advantage of "Yield Aggregators" in DeFi?",Automated strategy optimization,Reduced gas fees,Enhanced security,Simplified user interfaces,A,No
 129,Intermediate,Which DeFi protocol innovation has solved the liquidity problem of decentralized options?,Automated Market Makers,Liquidity mining,Options pools,All of the above,D,No
 130,Intermediate,Which mechanism is most suitable for solving collateral efficiency problems in DeFi?,Collateral diversification,Risk tranching,Dynamic collateralization ratios,All of the above,D,No
-131,Intermediate,"What is the main risk faced by ""Liquidity Providers"" in DeFi?",Impermanent loss,Low yields,High gas fees,Complex user interfaces,A,No
+131,Intermediate,"What is the main risk faced by "Liquidity Providers" in DeFi?",Impermanent loss,Low yields,High gas fees,Complex user interfaces,A,No
 132,Intermediate,Which DeFi protocol innovation has improved the efficiency of decentralized insurance?,Risk pools,Parametric insurance,Decentralized claims,All of the above,D,No
 133,Intermediate,Which mechanism is most suitable for solving liquidity exit problems in DeFi?,Liquidity locking,Exit fees,Graduated exits,All of the above,D,No
-134,Intermediate,"What is the main goal of ""Yield Strategies"" in DeFi?",Maximizing risk-adjusted returns,Minimizing gas fees,Maximizing transaction volume,Minimizing impermanent loss,A,No
+134,Intermediate,"What is the main goal of "Yield Strategies" in DeFi?",Maximizing risk-adjusted returns,Minimizing gas fees,Maximizing transaction volume,Minimizing impermanent loss,A,No
 135,Intermediate,Which DeFi protocol innovation has solved the privacy problem of decentralized identity?,Zero-knowledge proofs,Multi-signatures,Timelocks,Centralized verification,A,No
 136,Intermediate,Which mechanism is most suitable for solving liquidity depth problems in DeFi?,Concentrated liquidity,Liquidity mining,Multi-asset pools,All of the above,D,No
-137,Intermediate,"What does the shape of the ""Yield Curve"" in DeFi typically reflect?",Market expectations of future interest rates,Current trading volume,Protocol security,User count,A,No
+137,Intermediate,"What does the shape of the "Yield Curve" in DeFi typically reflect?",Market expectations of future interest rates,Current trading volume,Protocol security,User count,A,No
 138,Intermediate,Which DeFi protocol innovation has improved the efficiency of decentralized asset management?,Automatic rebalancing,Risk tranching,Multi-strategy portfolios,All of the above,D,No
 139,Intermediate,Which mechanism is most suitable for solving governance participation problems in DeFi?,Delegated voting,Voting incentives,Governance minimization,All of the above,D,No
-140,Intermediate,"What does the long-term viability of ""Liquidity Mining"" in DeFi primarily depend on?",Protocol generating real value,Token price appreciation,User growth,External investment,A,No
+140,Intermediate,"What does the long-term viability of "Liquidity Mining" in DeFi primarily depend on?",Protocol generating real value,Token price appreciation,User growth,External investment,A,No
 141,Intermediate,Which DeFi protocol innovation has solved the liquidity problem of decentralized prediction markets?,Automated Market Makers,Liquidity mining,Outcome validation incentives,All of the above,D,No
 142,Intermediate,Which mechanism is most suitable for solving user experience problems in DeFi?,Account abstraction,Meta-transactions,Social recovery,All of the above,D,No
 143,Intermediate,What are the systemic risk issues in algorithmic stablecoin design?,Dynamic reserve management,Multi-asset anchoring mechanisms,Real-time market feedback algorithms,External audits and transparency reporting,"A, B, D",Yes
@@ -160,34 +160,34 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 159,Intermediate,What are the governance risks in DeFi?,Governance attacks,Insufficient governance participation,Governance capture,Centralized control,"A, B, C",Yes
 160,Intermediate,What were the main DeFi trends in Q1 2024?,Tokenization of physical assets,Cross-chain interoperability,Real-time payments,Centralized control,"A, B, C",Yes
 161,Advanced,Which DeFi protocol innovation most effectively balances capital efficiency and risk management?,Tranched risk protocols,Dynamic collateralization ratios,Isolated markets,Risk pricing models,A,No
-162,Advanced,"What is the main advantage of the ""Concentrated Liquidity"" model compared to traditional AMMs in DeFi?",Capital efficiency improved 100-4000 times,Complete elimination of impermanent loss,Reduced gas fees,Simplified user experience,A,No
+162,Advanced,"What is the main advantage of the "Concentrated Liquidity" model compared to traditional AMMs in DeFi?",Capital efficiency improved 100-4000 times,Complete elimination of impermanent loss,Reduced gas fees,Simplified user experience,A,No
 163,Advanced,Which DeFi mechanism is most suitable for solving cross-chain liquidity fragmentation?,Atomic swaps,Liquidity Layer,Centralized bridges,Unified token standards,B,No
 164,Advanced,Which DeFi risk management innovation most effectively addresses flash loan attacks?,Multi-period price oracles,Transaction size limits,On-chain risk scoring,Decentralized insurance,A,No
-165,Advanced,"What is the core mechanism of ""Yield Curve Control"" strategies in DeFi?",Maintaining target yields through market operations,Limiting maximum yields,Guaranteeing minimum yields,Randomly allocating yields,A,No
+165,Advanced,"What is the core mechanism of "Yield Curve Control" strategies in DeFi?",Maintaining target yields through market operations,Limiting maximum yields,Guaranteeing minimum yields,Randomly allocating yields,A,No
 166,Advanced,Which DeFi mechanism is most suitable for solving liquidity depth problems in decentralized derivatives markets?,Virtual AMMs (vAMM),Order book aggregation,Liquidity mining,Centralized market makers,A,No
 167,Advanced,Which DeFi innovation most effectively solves the trust problem of cross-chain asset transfers?,Zero-knowledge validity proofs,Multi-signature verification,Decentralized oracles,On-chain governance,A,No
-168,Advanced,"What are ""Liquidity Routing Optimization"" core algorithms in DeFi typically based on?",Weighted graph search algorithms,Random forests,Neural networks,Genetic algorithms,A,No
+168,Advanced,"What are "Liquidity Routing Optimization" core algorithms in DeFi typically based on?",Weighted graph search algorithms,Random forests,Neural networks,Genetic algorithms,A,No
 169,Advanced,Which DeFi mechanism is most suitable for solving interest rate volatility problems in decentralized lending markets?,Interest rate swaps,Fixed-rate pools,Interest rate caps,All of the above,D,No
 170,Advanced,Which DeFi innovation most effectively solves the capital efficiency problem of stablecoins?,Partially collateralized algorithmic stablecoins,Overcollateralized stablecoins,Fiat-collateralized stablecoins,Centralized stablecoins,A,No
-171,Advanced,"What is the main advantage of ""Liquidity Stratification"" in DeFi?",Optimizing capital allocation according to risk preferences,Reducing gas fees,Simplifying user experience,Increasing transaction speed,A,No
+171,Advanced,"What is the main advantage of "Liquidity Stratification" in DeFi?",Optimizing capital allocation according to risk preferences,Reducing gas fees,Simplifying user experience,Increasing transaction speed,A,No
 172,Advanced,Which DeFi mechanism is most suitable for solving pricing efficiency problems in decentralized options markets?,Implied volatility oracles,Fixed pricing models,Centralized market makers,Random pricing,A,No
 173,Advanced,Which DeFi innovation most effectively solves the problem of low governance participation rates?,Combination of delegated voting and voting incentives,Mandatory voting,Centralized decision-making,Random decision-maker selection,A,No
-174,Advanced,"What factors are ""Dynamic Risk Pricing"" models in DeFi typically based on?",Market volatility， collateralization ratio， and protocol utilization,User reputation,Historical transaction volume,Token price,A,No
+174,Advanced,"What factors are "Dynamic Risk Pricing" models in DeFi typically based on?",Market volatility， collateralization ratio， and protocol utilization,User reputation,Historical transaction volume,Token price,A,No
 175,Advanced,Which DeFi mechanism is most suitable for solving adverse selection problems in decentralized insurance?,Risk pool stratification,Fixed premiums,Centralized review,Mandatory participation,A,No
 176,Advanced,Which DeFi innovation most effectively solves MEV (Maximal Extractable Value) problems?,Fair Sequencing Services,Increasing transaction fees,Limiting transaction size,Centralized ordering,A,No
-177,Advanced,"What is the core of ""Yield Curve Arbitrage"" strategies in DeFi?",Exploiting yield differences between assets of different maturities,Exploiting price differences between different assets,Exploiting security differences between different protocols,Exploiting gas fee differences between different chains,A,No
+177,Advanced,"What is the core of "Yield Curve Arbitrage" strategies in DeFi?",Exploiting yield differences between assets of different maturities,Exploiting price differences between different assets,Exploiting security differences between different protocols,Exploiting gas fee differences between different chains,A,No
 178,Advanced,Which DeFi mechanism is most suitable for solving liquidity problems in decentralized synthetic assets?,Virtual liquidity,Liquidity mining,Centralized market making,Forced liquidity provision,A,No
 179,Advanced,Which DeFi innovation most effectively solves the standardization problem of cross-chain interoperability?,Cross-chain messaging protocols,Unified token standards,Centralized bridges,Multi-chain wallets,A,No
-180,Advanced,"What methods do ""Liquidity Risk Modeling"" in DeFi typically use?",Monte Carlo simulations,Linear regression,Decision trees,Simple averaging,A,No
+180,Advanced,"What methods do "Liquidity Risk Modeling" in DeFi typically use?",Monte Carlo simulations,Linear regression,Decision trees,Simple averaging,A,No
 181,Advanced,Which DeFi mechanism is most suitable for solving outcome validation problems in decentralized prediction markets?,Decentralized oracle networks,Multi-signatures,Centralized verification,Random validator selection,A,No
 182,Advanced,Which DeFi innovation most effectively solves the legal compliance problem of tokenizing physical assets?,Compliant tokenization frameworks,Decentralized identity verification,Centralized custody,Anonymous transactions,A,No
-183,Advanced,"What is the core of ""Liquidity Depth Optimization"" in DeFi?",Capital allocation to minimize price impact,Increasing total liquidity,Reducing transaction fees,Simplifying user experience,A,No
+183,Advanced,"What is the core of "Liquidity Depth Optimization" in DeFi?",Capital allocation to minimize price impact,Increasing total liquidity,Reducing transaction fees,Simplifying user experience,A,No
 184,Advanced,Which DeFi mechanism is most suitable for solving risk diversification problems in decentralized asset management?,Multi-strategy portfolios,Single-asset concentration,Centralized management,Random asset allocation,A,No
 185,Advanced,Which DeFi innovation most effectively balances on-chain privacy and compliance?,Zero-knowledge compliance proofs,Completely anonymous transactions,Centralized review,Public transaction data,A,No
-186,Advanced,"What is the core technology of ""Yield Strategy Automation"" in DeFi?",Smart contract automatic execution,Manual intervention,Centralized control,Random strategy selection,A,No
+186,Advanced,"What is the core technology of "Yield Strategy Automation" in DeFi?",Smart contract automatic execution,Manual intervention,Centralized control,Random strategy selection,A,No
 187,Advanced,Which DeFi mechanism is most suitable for solving long-tail asset liquidity problems in decentralized lending markets?,Isolated markets,Risk parameter adjustments,Liquidity mining,All of the above,D,No
 188,Advanced,Which DeFi innovation most effectively balances user experience and decentralization?,Account abstraction,Centralized frontends,Simplified protocols,Educational programs,A,No
-189,Advanced,"What are the advantages of the ""Concentrated Liquidity"" (Concentrated Liquidity) model in DeFi?",Improved liquidity capital utilization,Fine-grained pricing mechanisms to reduce slippage,Dynamic adjustment of liquidity incentives to adapt to market volatility,Support for multi-asset pool swaps to improve efficiency,"A, C, D",Yes
+189,Advanced,"What are the advantages of the "Concentrated Liquidity" (Concentrated Liquidity) model in DeFi?",Improved liquidity capital utilization,Fine-grained pricing mechanisms to reduce slippage,Dynamic adjustment of liquidity incentives to adapt to market volatility,Support for multi-asset pool swaps to improve efficiency,"A, C, D",Yes
 190,Advanced,What are the main challenges of cross-chain interoperability in DeFi?,Cross-chain asset secure transfer protocol flaws,Data consistency challenges between different chains,Cross-chain governance model divergence,Insufficient low-latency cross-chain communication technology,"B, D",Yes
 191,Advanced,What are advanced risk management techniques in DeFi?,Real-time risk assessment algorithms,Blockchain-based credit derivatives,Adaptive risk mitigation mechanisms,Multi-dimensional asset correlation analysis,"A, C, D",Yes
 192,Advanced,What are advanced yield optimization strategies in DeFi?,Quantitative liquidity mining strategies,Algorithm-driven automatic rebalancing systems,Combined strategies of options and leverage,Smart contract-based risk-free arbitrage mechanisms,"B, C",Yes
