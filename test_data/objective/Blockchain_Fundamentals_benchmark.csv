@@ -3,199 +3,199 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 2,Basic,Which of the following is NOT a core feature of blockchain?,Decentralization,Immutability,Central supervision,Transparency,C,No
 3,Basic,Which consensus mechanism has received more attention in terms of energy efficiency?,Proof of Work (PoW),Proof of Stake (PoS),Proof of Capacity (PoC),Proof of Importance (PoI),B,No
 4,Basic,Which hash algorithm is used by Bitcoin?,MD5,SHA-1,SHA-256,SHA-512,C,No
-5,Basic,What does the 'double-spending problem' refer to in blockchain?,The same cryptocurrency being spent twice,Transaction fees being charged twice,Miners receiving double rewards,Two blocks being mined simultaneously,A,No
+5,Basic,What does the ‘double-spending problem‘ refer to in blockchain?,The same cryptocurrency being spent twice,Transaction fees being charged twice,Miners receiving double rewards,Two blocks being mined simultaneously,A,No
 6,Basic,Which of the following is NOT an author of the Bitcoin whitepaper?,Satoshi Nakamoto,Vitalik Buterin,Nick Szabo,Hal Finney,B,No
-7,Basic,What does 'fork' refer to in blockchain?,Blockchain splitting into two or more chains,Transactions being rejected,Nodes disconnecting,Mining difficulty increasing,A,No
+7,Basic,What does ‘fork‘ refer to in blockchain?,Blockchain splitting into two or more chains,Transactions being rejected,Nodes disconnecting,Mining difficulty increasing,A,No
 8,Basic,How many Bitcoin ETFs were approved by the US in early 2024?,5,8,11,15,C,No
 9,Basic,Which of the following technologies was NOT designed to solve blockchain scalability issues?,Sharding,Sidechains,Lightning Network,Zero-Knowledge Proofs,D,No
-10,Basic,What does a '51% attack' refer to in blockchain?,51% of user accounts being hacked,An entity controlling over 51% computing power can manipulate the blockchain,51% of nodes suffering DDoS attacks,51% of blockchain code being modified,B,No
+10,Basic,What does a ‘51% attack‘ refer to in blockchain?,51% of user accounts being hacked,An entity controlling over 51% computing power can manipulate the blockchain,51% of nodes suffering DDoS attacks,51% of blockchain code being modified,B,No
 11,Basic,Which of the following is NOT an application area of blockchain?,Supply chain management,Digital identity,Central banking system,Voting system,C,No
 12,Basic,What is the total supply cap of Bitcoin?,10 million,21 million,50 million,No cap,B,No
-13,Basic,What is 'Gas' primarily used for in blockchain?,Providing energy to miners,Calculating transaction fees,Measuring block size,Evaluating network congestion,B,No
+13,Basic,What is ‘Gas‘ primarily used for in blockchain?,Providing energy to miners,Calculating transaction fees,Measuring block size,Evaluating network congestion,B,No
 14,Basic,Which of the following is NOT a blockchain privacy protection technology?,Ring signature,Zero-knowledge proof,Coin mixing technology,Public key encryption,D,No
-15,Basic,In the Bitcoin network, approximately after how many blocks does mining reward halve?,"10,000 blocks","100,000 blocks","210,000 blocks","1,000,000 blocks",C,No
+15,Basic,In the Bitcoin network, approximately after how many blocks does mining reward halve?,“10,000 blocks“,“100,000 blocks“,“210,000 blocks“,“1,000,000 blocks“,C,No
 16,Basic,Which of the following is NOT a blockchain layer structure?,Layer 0,Layer 1,Layer 2,Layer 4,D,No
 17,Basic,Which blockchain architecture design has received more attention currently?,Monolithic architecture,Modular architecture,Layered architecture,Microservice architecture,B,No
-18,Basic,What does 'genesis block' refer to in blockchain?,The newest block,The block containing most transactions,The first block in the chain,The block manually created by founders,C,No
+18,Basic,What does ‘genesis block‘ refer to in blockchain?,The newest block,The block containing most transactions,The first block in the chain,The block manually created by founders,C,No
 19,Basic,Which of the following is NOT a blockchain consensus mechanism?,Proof of Work (PoW),Proof of Stake (PoS),Delegated Proof of Stake (DPoS),Proof of Authority (PoA),D,No
-20,Basic,What does 'node' refer to in blockchain?,A participating computer in the blockchain network,Connection points between blocks,The recipient in a transaction,A function in a smart contract,A,No
+20,Basic,What does ‘node‘ refer to in blockchain?,A participating computer in the blockchain network,Connection points between blocks,The recipient in a transaction,A function in a smart contract,A,No
 21,Basic,Which of the following is NOT a characteristic of Bitcoin?,Decentralization,Limited supply,Programmability,Peer-to-peer transactions,C,No
-22,Basic,What does 'cold storage' refer to in blockchain?,Storing cryptocurrency on devices not connected to the internet,Storing blockchain data in low-temperature environments,Wallet addresses not used for a long time,Frozen assets,A,No
+22,Basic,What does ‘cold storage‘ refer to in blockchain?,Storing cryptocurrency on devices not connected to the internet,Storing blockchain data in low-temperature environments,Wallet addresses not used for a long time,Frozen assets,A,No
 23,Basic,Which of the following is NOT a blockchain data structure?,Hash table,Binary tree,Merkle tree,Linked list,B,No
-24,Basic,What is the main responsibility of 'miners' in blockchain?,Creating new cryptocurrencies,Verifying transactions and adding them to the blockchain,Developing blockchain applications,Regulating the blockchain network,B,No
+24,Basic,What is the main responsibility of ‘miners‘ in blockchain?,Creating new cryptocurrencies,Verifying transactions and adding them to the blockchain,Developing blockchain applications,Regulating the blockchain network,B,No
 25,Basic,Which of the following is NOT a challenge faced by blockchain?,Scalability,Energy consumption,Centralized control,User privacy,C,No
-26,Basic,What is the primary use of 'public key' in blockchain?,Signing transactions,Receiving funds,Decrypting messages,Verifying identity,B,No
+26,Basic,What is the primary use of ‘public key‘ in blockchain?,Signing transactions,Receiving funds,Decrypting messages,Verifying identity,B,No
 27,Basic,Which of the following is NOT a type of blockchain?,Public blockchain,Private blockchain,Consortium blockchain,Central blockchain,D,No
-28,Basic,What does 'asymmetric encryption' refer to in blockchain?,Using keys of different lengths,Using a system with public and private keys,Asymmetric processes of encryption and decryption,Different nodes using different encryption algorithms,B,No
+28,Basic,What does ‘asymmetric encryption‘ refer to in blockchain?,Using keys of different lengths,Using a system with public and private keys,Asymmetric processes of encryption and decryption,Different nodes using different encryption algorithms,B,No
 29,Basic,Which of the following is NOT a security feature of blockchain?,Distributed ledger,Cryptographic hash,Central verification,Consensus mechanism,C,No
-30,Basic,What does a blockchain 'wallet' primarily store?,The cryptocurrency itself,Transaction history,Private and public keys,Smart contract code,C,No
+30,Basic,What does a blockchain ‘wallet‘ primarily store?,The cryptocurrency itself,Transaction history,Private and public keys,Smart contract code,C,No
 31,Basic,Which of the following is NOT a main component of blockchain?,Blocks,Transactions,Servers,Consensus mechanism,C,No
-32,Basic,What is the main purpose of 'hash functions' in blockchain?,Encrypting user data,Generating fixed-length data fingerprints,Verifying user identity,Calculating transaction fees,B,No
+32,Basic,What is the main purpose of ‘hash functions‘ in blockchain?,Encrypting user data,Generating fixed-length data fingerprints,Verifying user identity,Calculating transaction fees,B,No
 33,Basic,Which of the following is NOT a characteristic of blockchain?,Traceability,Reversibility,Distributed storage,Consensus mechanism,B,No
-34,Basic,What does 'distributed ledger' refer to in blockchain?,A ledger stored on multiple centralized servers,Copies of the ledger maintained by multiple participants,A ledger distributed by geographic location,Multiple ledgers for different transaction types,B,No
+34,Basic,What does ‘distributed ledger‘ refer to in blockchain?,A ledger stored on multiple centralized servers,Copies of the ledger maintained by multiple participants,A ledger distributed by geographic location,Multiple ledgers for different transaction types,B,No
 35,Basic,Which of the following is NOT an application of blockchain?,Cryptocurrency,Smart contracts,Central Bank Digital Currency (CBDC),Traditional banking systems,D,No
-36,Basic,What does 'mining difficulty' refer to in blockchain?,The computational complexity required to find a new block,The threshold for joining a mining pool,The cost of purchasing mining equipment,The difficulty of learning mining techniques,A,No
+36,Basic,What does ‘mining difficulty‘ refer to in blockchain?,The computational complexity required to find a new block,The threshold for joining a mining pool,The cost of purchasing mining equipment,The difficulty of learning mining techniques,A,No
 37,Basic,Which of the following is NOT a blockchain consensus algorithm?,Proof of Work (PoW),Proof of Stake (PoS),Byzantine Fault Tolerance (BFT),Random Access Memory (RAM),D,No
-38,Basic,What information does a blockchain 'block header' contain?,Detailed information of all transactions,Block metadata such as timestamp and hash of the previous block,Personal information of miners,List of network participants,B,No
+38,Basic,What information does a blockchain ‘block header‘ contain?,Detailed information of all transactions,Block metadata such as timestamp and hash of the previous block,Personal information of miners,List of network participants,B,No
 39,Basic,Which of the following is NOT a blockchain scaling solution?,Sharding,Sidechains,State channels,Centralized processing,D,No
-40,Basic,What is the main purpose of a 'Merkle tree' in blockchain?,Organizing network nodes,Efficiently verifying transactions,Managing user permissions,Calculating mining rewards,B,No
+40,Basic,What is the main purpose of a ‘Merkle tree‘ in blockchain?,Organizing network nodes,Efficiently verifying transactions,Managing user permissions,Calculating mining rewards,B,No
 41,Basic,Which of the following is NOT a blockchain privacy protection mechanism?,Ring signatures,Confidential transactions,Zero-knowledge proofs,Public broadcasting,D,No
-42,Basic,What are the two main types of 'forks' in blockchain?,Hard fork and soft fork,Left fork and right fork,Up fork and down fork,Main fork and sub fork,A,No
+42,Basic,What are the two main types of ‘forks‘ in blockchain?,Hard fork and soft fork,Left fork and right fork,Up fork and down fork,Main fork and sub fork,A,No
 43,Basic,Which of the following is NOT a blockchain interoperability solution?,Cross-chain technology,Atomic swaps,Centralized exchanges,Blockchain bridges,C,No
-44,Basic,What does 'confirmation' refer to in blockchain?,A transaction being included in a block and added to the blockchain,A user verifying transaction details,A transaction being selected by miners,The recipient confirming receipt of funds,A,No
+44,Basic,What does ‘confirmation‘ refer to in blockchain?,A transaction being included in a block and added to the blockchain,A user verifying transaction details,A transaction being selected by miners,The recipient confirming receipt of funds,A,No
 45,Basic,Which of the following is NOT a blockchain scalability metric?,Transactions per second (TPS),Block size,Confirmation time,Number of miners,D,No
-46,Basic,What principle is 'Proof of Stake (PoS)' primarily based on?,Computing power,Amount of tokens held,Network connection speed,Storage capacity,B,No
+46,Basic,What principle is ‘Proof of Stake (PoS)‘ primarily based on?,Computing power,Amount of tokens held,Network connection speed,Storage capacity,B,No
 47,Basic,Which of the following is NOT a Layer 2 solution for blockchain?,State channels,Sidechains,Rollups,Sharding,D,No
-48,Basic,What problem does the 'Lightning Network' primarily solve in blockchain?,Transaction speed and scalability,Mining energy consumption,Privacy protection,Cross-chain transactions,A,No
+48,Basic,What problem does the ‘Lightning Network‘ primarily solve in blockchain?,Transaction speed and scalability,Mining energy consumption,Privacy protection,Cross-chain transactions,A,No
 49,Basic,Which of the following is NOT a blockchain data storage method?,On-chain storage,Off-chain storage,IPFS storage,Centralized server storage,D,No
-50,Basic,What is a 'Decentralized Autonomous Organization (DAO)' in blockchain?,An organization managed by smart contracts,A blockchain development team,A miners' alliance,A blockchain regulatory body,A,No
+50,Basic,What is a ‘Decentralized Autonomous Organization (DAO)‘ in blockchain?,An organization managed by smart contracts,A blockchain development team,A miners‘ alliance,A blockchain regulatory body,A,No
 51,Basic,Which of the following is NOT a blockchain consensus participant?,Miners,Validators,Regulators,Full nodes,C,No
-52,Basic,What is the main difference between 'light nodes' and 'full nodes' in blockchain?,Light nodes only store block headers while full nodes store the complete blockchain,Light nodes run faster while full nodes are more stable,Light nodes can only send transactions while full nodes can verify transactions,Light nodes are mobile devices while full nodes are servers,A,No
+52,Basic,What is the main difference between ‘light nodes‘ and ‘full nodes‘ in blockchain?,Light nodes only store block headers while full nodes store the complete blockchain,Light nodes run faster while full nodes are more stable,Light nodes can only send transactions while full nodes can verify transactions,Light nodes are mobile devices while full nodes are servers,A,No
 53,Basic,Which of the following is NOT a blockchain governance model?,On-chain governance,Off-chain governance,Token voting,Central decision-making,D,No
-54,Basic,What does 'Proof of Work (PoW)' primarily rely on in blockchain?,Amount of tokens held,Computing power,Network connection quality,Storage capacity,B,No
+54,Basic,What does ‘Proof of Work (PoW)‘ primarily rely on in blockchain?,Amount of tokens held,Computing power,Network connection quality,Storage capacity,B,No
 55,Basic,Which of the following is NOT a privacy coin in blockchain?,Monero,Zcash,Dash,Bitcoin,D,No
-56,Basic,Who first proposed the concept of 'smart contracts' in blockchain?,Satoshi Nakamoto,Vitalik Buterin,Nick Szabo,Charles Hoskinson,C,No
+56,Basic,Who first proposed the concept of ‘smart contracts‘ in blockchain?,Satoshi Nakamoto,Vitalik Buterin,Nick Szabo,Charles Hoskinson,C,No
 57,Basic,Which of the following is NOT a blockchain data type?,Transaction data,State data,Block data,Centralized data,D,No
-58,Basic,What is the main purpose of 'difficulty adjustment' in blockchain?,Enhancing network security,Maintaining stable block generation time,Reducing energy consumption,Improving transaction throughput,B,No
+58,Basic,What is the main purpose of ‘difficulty adjustment‘ in blockchain?,Enhancing network security,Maintaining stable block generation time,Reducing energy consumption,Improving transaction throughput,B,No
 59,Basic,Which of the following is NOT a security threat to blockchain?,51% attack,Double-spending attack,Sybil attack,Distributed storage,D,No
-60,Basic,What is a 'Sybil attack' in blockchain?,Creating multiple fake identities to control the network,Attacking female user accounts,Exploiting system vulnerabilities to steal funds,Disrupting network connections,A,No
+60,Basic,What is a ‘Sybil attack‘ in blockchain?,Creating multiple fake identities to control the network,Attacking female user accounts,Exploiting system vulnerabilities to steal funds,Disrupting network connections,A,No
 61,Basic,Which of the following is NOT a blockchain incentive mechanism?,Block rewards,Transaction fees,Staking rewards,Central subsidies,D,No
-62,Basic,What is the main purpose of 'zero-knowledge proofs' in blockchain?,Improving transaction speed,Protecting user privacy,Reducing storage requirements,Enhancing network connectivity,B,No
+62,Basic,What is the main purpose of ‘zero-knowledge proofs‘ in blockchain?,Improving transaction speed,Protecting user privacy,Reducing storage requirements,Enhancing network connectivity,B,No
 63,Basic,Which of the following is NOT a cross-chain technology in blockchain?,Hash Time Locked Contracts (HTLC),Relay chains,Sidechains,Centralized exchanges,D,No
-64,Basic,What does the 'Byzantine Generals Problem' primarily describe in blockchain?,Military strategy,Consensus challenges in distributed systems,Types of network attacks,Cryptographic algorithm vulnerabilities,B,No
+64,Basic,What does the ‘Byzantine Generals Problem‘ primarily describe in blockchain?,Military strategy,Consensus challenges in distributed systems,Types of network attacks,Cryptographic algorithm vulnerabilities,B,No
 65,Basic,Which of the following is NOT a blockchain data structure?,Blocks,Transactions,Tables,Hash pointers,C,No
-66,Basic,What problem does 'sharding' technology primarily solve in blockchain?,Data storage,Scalability,Privacy protection,Cross-chain transactions,B,No
+66,Basic,What problem does ‘sharding‘ technology primarily solve in blockchain?,Data storage,Scalability,Privacy protection,Cross-chain transactions,B,No
 67,Basic,Which of the following is NOT a design goal of blockchain consensus mechanisms?,Security,Decentralization,Scalability,Centralized control,D,No
-68,Basic,What is the main purpose of 'state channels' in blockchain?,Improving transaction throughput,Enhancing privacy protection,Enabling cross-chain transactions,Storing large amounts of data,A,No
+68,Basic,What is the main purpose of ‘state channels‘ in blockchain?,Improving transaction throughput,Enhancing privacy protection,Enabling cross-chain transactions,Storing large amounts of data,A,No
 69,Basic,Which of the following is NOT a blockchain identity verification method?,Public key encryption,Digital signatures,Central identity verification,Multi-signatures,C,No
-70,Basic,What problem do 'Rollups' primarily solve in blockchain?,Scalability,Privacy protection,Cross-chain transactions,Data storage,A,No
-71,Basic,Which of the following are core features of blockchain?,Decentralization,Immutability,Central control,Transparency,"A, B, D",Yes
-72,Basic,Which of the following are common blockchain consensus mechanisms?,Proof of Work (PoW),Proof of Stake (PoS),Central Authorization (CA),Delegated Proof of Stake (DPoS); (Additional option: Random Allocation (RA)),"A, B, D",Yes
-73,Basic,Which of the following are application areas of blockchain?,Supply chain management,Digital identity,Central banking system,Decentralized finance,"A, B, D",Yes
-74,Basic,Which of the following are Layer 2 scaling solutions for blockchain?,Sharding,State channels,New consensus mechanisms,Rollups,"B, D",Yes
-75,Basic,Which of the following are major challenges faced by blockchain?,Scalability,Energy consumption,User-friendliness,Regulatory compliance,"A, B, D",Yes
-76,Basic,Which of the following are security threats to blockchain?,51% attack,Distributed storage,Sybil attack,Double-spending attack,"A, C, D",Yes
-77,Basic,Which of the following are blockchain data structures?,Relational tables,Merkle trees,Hash chains,Two-dimensional arrays,"B, C",Yes
-78,Basic,Which of the following are types of blockchain?,Public blockchain,Private blockchain,Central blockchain,Consortium blockchain,"A, B, D",Yes
-79,Basic,Which of the following are blockchain privacy protection technologies?,Zero-knowledge proofs,Ring signatures,Public broadcasting,Coin mixing technology,"A, B, D",Yes
-80,Basic,Which of the following are blockchain interoperability solutions?,Cross-chain technology,Centralized exchanges,Blockchain bridges,Unified standards,"A, C",Yes
-81,Basic,Which of the following are blockchain scalability metrics?,Transactions per second (TPS),Number of miners,Block size,Confirmation time,"A, C, D",Yes
-82,Basic,Which of the following are blockchain governance models?,On-chain governance,Central decision-making,Token voting,Forced execution,"A, C",Yes
-83,Basic,Which of the following are blockchain data storage methods?,On-chain storage,Centralized server storage,Off-chain storage,Centralized database,"A, C",Yes
-84,Basic,Which of the following are blockchain incentive mechanisms?,Block rewards,Transaction fees,Central subsidies,Staking rewards,"A, B, D",Yes
-85,Basic,Which of the following are blockchain consensus participants?,Miners,Validators,Regulators,Full nodes,"A, B, D",Yes
-86,Basic,Which of the following are blockchain identity verification methods?,Public key encryption,Digital signatures,Central identity verification,Multi-signatures,"A, B, D",Yes
-87,Basic,Which of the following are blockchain fork types?,Hard fork,Left fork,Soft fork,Up fork,"A, C",Yes
-88,Basic,Which of the following are blockchain infrastructure development trends?,Bitcoin L2 scaling solutions,Re-staking technology,Centralized control,Modular blockchain,"A, B, D",Yes
-89,Basic,Which of the following are blockchain node types?,Full nodes,Central nodes,Light nodes,Master nodes,"A, C",Yes
-90,Basic,Which of the following are cryptographic foundations of blockchain?,Hash functions,Asymmetric encryption,Central authentication,Digital signatures,"A, B, D",Yes
-91,Basic,Which of the following are blockchain scaling solutions?,Sharding,Sidechains,Centralized processing,State channels,"A, B, D",Yes
-92,Basic,Which of the following are privacy coins in blockchain?,Bitcoin,Monero,Ethereum,Zcash,"B, D",Yes
-93,Basic,Which of the following are blockchain data types?,Transaction data,State data,Centralized data,Block data,"A, B, D",Yes
-94,Basic,Which of the following are design goals of blockchain consensus mechanisms?,Security,Decentralization,Scalability,Centralized control,"A, B, C",Yes
-95,Basic,Which of the following are cross-chain technologies in blockchain?,Hash Time Locked Contracts (HTLC),Centralized exchanges,Relay chains,Centralized databases,"A, C",Yes
-96,Basic,Which of the following are main components of blockchain?,Blocks,Transactions,Servers,Consensus mechanisms,"A, B, D",Yes
-97,Basic,Which of the following are characteristics of blockchain?,Traceability,Reversibility,Distributed storage,Consensus mechanism,"A, C, D",Yes
-98,Basic,Which of the following are applications of blockchain?,Cryptocurrencies,Smart contracts,Decentralized applications (DApps),Traditional banking systems,"A, B, C",Yes
-99,Basic,Which of the following information is contained in a blockchain "block header"?,Timestamp,Hash of the previous block,Personal information of miners,Difficulty target,"A, B, D",Yes
-100,Basic,Which of the following blockchain infrastructure areas received venture capital attention in 2024?,Bitcoin Layer 2,Re-staking technology,Centralized exchanges,Developer tools,"A, B, D",Yes
-101,Intermediate,What problem does EigenLayer's re-staking technology primarily solve?,Blockchain energy consumption,Cross-chain interoperability,Security and capital efficiency,Transaction privacy protection,C,No
+70,Basic,What problem do ‘Rollups‘ primarily solve in blockchain?,Scalability,Privacy protection,Cross-chain transactions,Data storage,A,No
+71,Basic,Which of the following are core features of blockchain?,Decentralization,Immutability,Central control,Transparency,“A, B, D“,Yes
+72,Basic,Which of the following are common blockchain consensus mechanisms?,Proof of Work (PoW),Proof of Stake (PoS),Central Authorization (CA),Delegated Proof of Stake (DPoS); (Additional option: Random Allocation (RA)),“A, B, D“,Yes
+73,Basic,Which of the following are application areas of blockchain?,Supply chain management,Digital identity,Central banking system,Decentralized finance,“A, B, D“,Yes
+74,Basic,Which of the following are Layer 2 scaling solutions for blockchain?,Sharding,State channels,New consensus mechanisms,Rollups,“B, D“,Yes
+75,Basic,Which of the following are major challenges faced by blockchain?,Scalability,Energy consumption,User-friendliness,Regulatory compliance,“A, B, D“,Yes
+76,Basic,Which of the following are security threats to blockchain?,51% attack,Distributed storage,Sybil attack,Double-spending attack,“A, C, D“,Yes
+77,Basic,Which of the following are blockchain data structures?,Relational tables,Merkle trees,Hash chains,Two-dimensional arrays,“B, C“,Yes
+78,Basic,Which of the following are types of blockchain?,Public blockchain,Private blockchain,Central blockchain,Consortium blockchain,“A, B, D“,Yes
+79,Basic,Which of the following are blockchain privacy protection technologies?,Zero-knowledge proofs,Ring signatures,Public broadcasting,Coin mixing technology,“A, B, D“,Yes
+80,Basic,Which of the following are blockchain interoperability solutions?,Cross-chain technology,Centralized exchanges,Blockchain bridges,Unified standards,“A, C“,Yes
+81,Basic,Which of the following are blockchain scalability metrics?,Transactions per second (TPS),Number of miners,Block size,Confirmation time,“A, C, D“,Yes
+82,Basic,Which of the following are blockchain governance models?,On-chain governance,Central decision-making,Token voting,Forced execution,“A, C“,Yes
+83,Basic,Which of the following are blockchain data storage methods?,On-chain storage,Centralized server storage,Off-chain storage,Centralized database,“A, C“,Yes
+84,Basic,Which of the following are blockchain incentive mechanisms?,Block rewards,Transaction fees,Central subsidies,Staking rewards,“A, B, D“,Yes
+85,Basic,Which of the following are blockchain consensus participants?,Miners,Validators,Regulators,Full nodes,“A, B, D“,Yes
+86,Basic,Which of the following are blockchain identity verification methods?,Public key encryption,Digital signatures,Central identity verification,Multi-signatures,“A, B, D“,Yes
+87,Basic,Which of the following are blockchain fork types?,Hard fork,Left fork,Soft fork,Up fork,“A, C“,Yes
+88,Basic,Which of the following are blockchain infrastructure development trends?,Bitcoin L2 scaling solutions,Re-staking technology,Centralized control,Modular blockchain,“A, B, D“,Yes
+89,Basic,Which of the following are blockchain node types?,Full nodes,Central nodes,Light nodes,Master nodes,“A, C“,Yes
+90,Basic,Which of the following are cryptographic foundations of blockchain?,Hash functions,Asymmetric encryption,Central authentication,Digital signatures,“A, B, D“,Yes
+91,Basic,Which of the following are blockchain scaling solutions?,Sharding,Sidechains,Centralized processing,State channels,“A, B, D“,Yes
+92,Basic,Which of the following are privacy coins in blockchain?,Bitcoin,Monero,Ethereum,Zcash,“B, D“,Yes
+93,Basic,Which of the following are blockchain data types?,Transaction data,State data,Centralized data,Block data,“A, B, D“,Yes
+94,Basic,Which of the following are design goals of blockchain consensus mechanisms?,Security,Decentralization,Scalability,Centralized control,“A, B, C“,Yes
+95,Basic,Which of the following are cross-chain technologies in blockchain?,Hash Time Locked Contracts (HTLC),Centralized exchanges,Relay chains,Centralized databases,“A, C“,Yes
+96,Basic,Which of the following are main components of blockchain?,Blocks,Transactions,Servers,Consensus mechanisms,“A, B, D“,Yes
+97,Basic,Which of the following are characteristics of blockchain?,Traceability,Reversibility,Distributed storage,Consensus mechanism,“A, C, D“,Yes
+98,Basic,Which of the following are applications of blockchain?,Cryptocurrencies,Smart contracts,Decentralized applications (DApps),Traditional banking systems,“A, B, C“,Yes
+99,Basic,Which of the following information is contained in a blockchain “block header“?,Timestamp,Hash of the previous block,Personal information of miners,Difficulty target,“A, B, D“,Yes
+100,Basic,Which of the following blockchain infrastructure areas received venture capital attention in 2024?,Bitcoin Layer 2,Re-staking technology,Centralized exchanges,Developer tools,“A, B, D“,Yes
+101,Intermediate,What problem does EigenLayer‘s re-staking technology primarily solve?,Blockchain energy consumption,Cross-chain interoperability,Security and capital efficiency,Transaction privacy protection,C,No
 102,Intermediate,Which sharding technology received more attention in 2024?,State sharding,Transaction sharding,Network sharding,Data availability sharding,D,No
 103,Intermediate,What does the BOLT (Basis of Lightning Technology) specification primarily define in the Bitcoin Lightning Network?,Bitcoin mining algorithms,Communication protocols between Lightning Network nodes,Bitcoin Core client,Blockchain browser standards,B,No
 104,Intermediate,What technology did Bitcoin ETFs approved in early 2024 use to provide transparency of underlying assets?,Zero-knowledge proofs,Chainlink Proof of Reserve,Centralized audits,Federated oracles,B,No
 105,Intermediate,Which consensus mechanism does NOT use a voting mechanism to reach consensus?,Proof of Stake (PoS),Delegated Proof of Stake (DPoS),Proof of Work (PoW),Practical Byzantine Fault Tolerance (PBFT),C,No
-106,Intermediate,How is 'cross-shard communication' primarily implemented in blockchain sharding technology?,Relay chains,Receipt proofs,Centralized servers,Network-wide broadcasting,B,No
+106,Intermediate,How is ‘cross-shard communication‘ primarily implemented in blockchain sharding technology?,Relay chains,Receipt proofs,Centralized servers,Network-wide broadcasting,B,No
 107,Intermediate,Which of the following is NOT a characteristic of zero-knowledge proofs?,Completeness,Soundness,Zero-knowledge,Reversibility,D,No
 108,Intermediate,Which blockchain data availability solution has received more attention?,Celestia,Filecoin,Arweave,Storj,A,No
 109,Intermediate,Which of the following attacks is NOT directed at blockchain consensus mechanisms?,Long-range attack,Selfish mining,SQL injection,Finney attack,C,No
-110,Intermediate,What does 'Deterministic Finality' refer to in blockchain?,Once confirmed, transactions cannot be rolled back,The blockchain has a definite end date,Transaction processing has a definite time limit,Smart contract execution results are deterministic,A,No
+110,Intermediate,What does ‘Deterministic Finality‘ refer to in blockchain?,Once confirmed, transactions cannot be rolled back,The blockchain has a definite end date,Transaction processing has a definite time limit,Smart contract execution results are deterministic,A,No
 111,Intermediate,Which of the following technologies was NOT designed to improve blockchain privacy?,Ring signatures,Confidential transactions,Sharding,Zero-knowledge proofs,C,No
-112,Intermediate,What is an 'Eclipse Attack' in blockchain networks?,The attacker controls all connections of the target node,An attack launched during a specific time period,An attack utilizing network fluctuations during eclipses,An attack on the blockchain's timestamp mechanism,A,No
-113,Intermediate,What is the primary use of the 'Ordinals protocol' in the Bitcoin network?,Improving transaction speed,Creating NFTs and BRC-20 tokens on Bitcoin,Enhancing privacy protection,Enabling cross-chain transactions,B,No
+112,Intermediate,What is an ‘Eclipse Attack‘ in blockchain networks?,The attacker controls all connections of the target node,An attack launched during a specific time period,An attack utilizing network fluctuations during eclipses,An attack on the blockchain‘s timestamp mechanism,A,No
+113,Intermediate,What is the primary use of the ‘Ordinals protocol‘ in the Bitcoin network?,Improving transaction speed,Creating NFTs and BRC-20 tokens on Bitcoin,Enhancing privacy protection,Enabling cross-chain transactions,B,No
 114,Intermediate,Which of the following technologies is NOT a Layer 2 scaling solution for blockchain?,Optimistic Rollups,ZK Rollups,State channels,Sharding,D,No
-115,Intermediate,What does the 'state explosion' problem primarily refer to in blockchain?,Unlimited growth of blockchain state data causing storage pressure,Sudden surge in transaction volume,Rapid increase in node count,Consensus mechanism breakdown,A,No
-116,Intermediate,Which of the following technologies was NOT proposed to solve the blockchain 'trilemma' (blockchain cannot simultaneously achieve decentralization, security, and scalability)?,Sharding,Layer 2 solutions,Sidechains,Proof of Work,D,No
-117,Intermediate,What is the main difference between 'Permissionless' and 'Permissioned' in blockchain?,Transaction speed,Permission requirements for network participation,Consensus mechanisms used,Programming languages supported,B,No
+115,Intermediate,What does the ‘state explosion‘ problem primarily refer to in blockchain?,Unlimited growth of blockchain state data causing storage pressure,Sudden surge in transaction volume,Rapid increase in node count,Consensus mechanism breakdown,A,No
+116,Intermediate,Which of the following technologies was NOT proposed to solve the blockchain ‘trilemma‘ (blockchain cannot simultaneously achieve decentralization, security, and scalability)?,Sharding,Layer 2 solutions,Sidechains,Proof of Work,D,No
+117,Intermediate,What is the main difference between ‘Permissionless‘ and ‘Permissioned‘ in blockchain?,Transaction speed,Permission requirements for network participation,Consensus mechanisms used,Programming languages supported,B,No
 118,Intermediate,Which Bitcoin Layer 2 solution has received more venture capital attention?,Lightning Network,Liquid Network,RSK,Stacks,D,No
-119,Intermediate,Which of the following is NOT a source of 'Deterministic Randomness' in blockchain?,Block hash,VRF (Verifiable Random Function),True random number generator,Multi-party computation,C,No
-120,Intermediate,What technology do 'Light Clients' primarily rely on to verify transactions in blockchain?,Complete block downloads,Simplified Payment Verification (SPV),Centralized servers,Full node proxies,B,No
+119,Intermediate,Which of the following is NOT a source of ‘Deterministic Randomness‘ in blockchain?,Block hash,VRF (Verifiable Random Function),True random number generator,Multi-party computation,C,No
+120,Intermediate,What technology do ‘Light Clients‘ primarily rely on to verify transactions in blockchain?,Complete block downloads,Simplified Payment Verification (SPV),Centralized servers,Full node proxies,B,No
 121,Intermediate,Which of the following technologies was NOT designed to improve blockchain throughput?,Sharding,DAG (Directed Acyclic Graph),Ring signatures,Parallel transaction processing,C,No
-122,Intermediate,What is the main advantage of 'Stateless Clients' in blockchain?,Not needing to store complete state data,Not requiring network connections,Not needing to verify transactions,Not requiring key management,A,No
+122,Intermediate,What is the main advantage of ‘Stateless Clients‘ in blockchain?,Not needing to store complete state data,Not requiring network connections,Not needing to verify transactions,Not requiring key management,A,No
 123,Intermediate,Which blockchain interoperability solution has received more attention?,Hash Time Locked Contracts (HTLC),Relay chains,IBC (Inter-Blockchain Communication Protocol),Atomic swaps,C,No
-124,Intermediate,Which of the following is NOT a characteristic of 'State Channels' in blockchain?,Off-chain transactions,Instant finality,Network-wide broadcasting,Multiple interactions,C,No
-125,Intermediate,What is the primary use of 'Merkle Mountain Range' in blockchain?,Efficiently verifying transactions,Improving mining efficiency,Enhancing network connections,Enabling cross-chain communications,A,No
+124,Intermediate,Which of the following is NOT a characteristic of ‘State Channels‘ in blockchain?,Off-chain transactions,Instant finality,Network-wide broadcasting,Multiple interactions,C,No
+125,Intermediate,What is the primary use of ‘Merkle Mountain Range‘ in blockchain?,Efficiently verifying transactions,Improving mining efficiency,Enhancing network connections,Enabling cross-chain communications,A,No
 126,Intermediate,Which of the following technologies was NOT designed to solve blockchain data storage problems?,State pruning,IPFS,Off-chain storage,Zero-knowledge proofs,D,No
-127,Intermediate,What is the main function of a 'Timestamp Server' in blockchain?,Synchronizing network time,Proving data existed at a specific point in time,Adjusting block generation speed,Managing transaction queues,B,No
+127,Intermediate,What is the main function of a ‘Timestamp Server‘ in blockchain?,Synchronizing network time,Proving data existed at a specific point in time,Adjusting block generation speed,Managing transaction queues,B,No
 128,Intermediate,Which blockchain privacy technology has received more attention in terms of regulatory compliance?,Ring signatures,Confidential transactions,Zero-knowledge proofs,Coin mixing,C,No
-129,Intermediate,Which of the following is NOT a variant of the 'Byzantine Fault Tolerance' (BFT) algorithm in blockchain?,PBFT (Practical Byzantine Fault Tolerance),Tendermint,HotStuff,Nakamoto consensus,D,No
-130,Intermediate,What is the main purpose of 'Validator Rotation' in blockchain?,Improving transaction processing speed,Enhancing network security,Reducing energy consumption,Simplifying protocol design,B,No
-131,Intermediate,Which of the following technologies was NOT designed to solve the 'frontend centralization' problem in blockchain?,Decentralized frontend hosting,IPFS hosting,ENS (Ethereum Name Service),Sharding,D,No
-132,Intermediate,What does the 'Oracle Problem' primarily refer to in blockchain?,How to securely bring off-chain data onto the blockchain,How to predict the future development of blockchain,How to solve smart contract vulnerabilities,How to improve transaction throughput,A,No
+129,Intermediate,Which of the following is NOT a variant of the ‘Byzantine Fault Tolerance‘ (BFT) algorithm in blockchain?,PBFT (Practical Byzantine Fault Tolerance),Tendermint,HotStuff,Nakamoto consensus,D,No
+130,Intermediate,What is the main purpose of ‘Validator Rotation‘ in blockchain?,Improving transaction processing speed,Enhancing network security,Reducing energy consumption,Simplifying protocol design,B,No
+131,Intermediate,Which of the following technologies was NOT designed to solve the ‘frontend centralization‘ problem in blockchain?,Decentralized frontend hosting,IPFS hosting,ENS (Ethereum Name Service),Sharding,D,No
+132,Intermediate,What does the ‘Oracle Problem‘ primarily refer to in blockchain?,How to securely bring off-chain data onto the blockchain,How to predict the future development of blockchain,How to solve smart contract vulnerabilities,How to improve transaction throughput,A,No
 133,Intermediate,Which blockchain identity solution has received more attention?,Centralized identity providers,Self-Sovereign Identity,Federated identity,Biometric identification,B,No
-134,Intermediate,Which of the following is NOT an advantage of 'Off-chain Computation' in blockchain?,Improving computational efficiency,Reducing on-chain storage requirements,Enhancing privacy protection,Increasing decentralization,D,No
-135,Intermediate,What is the main difference between 'Lightweight Clients' and 'Full Nodes' in blockchain?,Lightweight clients only validate block headers while full nodes validate all transactions,Lightweight clients cannot send transactions while full nodes can,Lightweight clients do not store data while full nodes do,Lightweight clients are only for queries while full nodes are for mining,A,No
+134,Intermediate,Which of the following is NOT an advantage of ‘Off-chain Computation‘ in blockchain?,Improving computational efficiency,Reducing on-chain storage requirements,Enhancing privacy protection,Increasing decentralization,D,No
+135,Intermediate,What is the main difference between ‘Lightweight Clients‘ and ‘Full Nodes‘ in blockchain?,Lightweight clients only validate block headers while full nodes validate all transactions,Lightweight clients cannot send transactions while full nodes can,Lightweight clients do not store data while full nodes do,Lightweight clients are only for queries while full nodes are for mining,A,No
 136,Intermediate,Which of the following technologies was NOT designed to improve blockchain consensus efficiency?,Delegated Proof of Stake (DPoS),Practical Byzantine Fault Tolerance (PBFT),Hybrid consensus,Zero-knowledge proofs,D,No
-137,Intermediate,Which technology primarily applies 'Trustless Setup' in blockchain?,Proof of Work,Proof of Stake,Zero-knowledge proofs,Sharding,C,No
+137,Intermediate,Which technology primarily applies ‘Trustless Setup‘ in blockchain?,Proof of Work,Proof of Stake,Zero-knowledge proofs,Sharding,C,No
 138,Intermediate,Which blockchain governance model has received more attention?,Off-chain governance,On-chain governance,Hybrid governance,Representative governance,C,No
-139,Intermediate,Which of the following is NOT a function of the 'State Transition Function' in blockchain?,Validating transaction validity,Updating blockchain state,Generating new blocks,Executing smart contracts,C,No
-140,Intermediate,What problem does the 'Longest Chain Rule' primarily solve in blockchain?,Transaction ordering,Fork selection,Block size limitations,Transaction fee calculation,B,No
-141,Intermediate,Which of the following technologies was NOT designed to solve the 'initial distribution' problem in blockchain?,Airdrop,Initial Coin Offering (ICO),Mining,Sharding,D,No
-142,Intermediate,What is the main purpose of the 'Difficulty Adjustment Algorithm' in blockchain?,Controlling the rate of new coin issuance,Maintaining stable block generation time,Preventing 51% attacks,Reducing energy consumption,B,No
-143,Intermediate,Which of the following are characteristics of 'Layer 2' solutions in blockchain?,Built on top of the base layer,Improving transaction throughput,Replacing base layer consensus mechanisms,Reducing transaction costs,"A, B, D",Yes
-144,Intermediate,Which of the following are current development directions for blockchain infrastructure?,Focus on security and privacy, including GDPR compliance,Tokenization of physical assets,Becoming more decentralized,Making blockchain functions more complex,"A, B",Yes
-145,Intermediate,Which of the following are application scenarios for 'Zero-Knowledge Proofs' in blockchain?,Privacy transactions,Identity verification,Scalability solutions (ZK Rollups),Mining optimization,"A, B, C",Yes
-146,Intermediate,Which of the following are challenges of blockchain 'sharding' technology?,Cross-shard communication,Data availability,Single points of failure,Reduced security,"A, B, D",Yes
-147,Intermediate,Which of the following are types of blockchain 'oracles'?,Centralized oracles,Decentralized oracles,Hybrid oracles,Automatic oracles,"A, B",Yes
-148,Intermediate,Which of the following are limitations of blockchain 'state channels'?,Requiring participants to be online,Suitable for frequent interactions between specific participants,Not suitable for one-time transactions,Requiring on-chain transactions,"A, B, C",Yes
-149,Intermediate,Which of the following are variants of 'Proof of Stake' (PoS) in blockchain?,Delegated Proof of Stake (DPoS),Liquid Proof of Stake (LPoS),Proof of Work (PoW),Pure Proof of Stake (Pure PoS),"A, B, D",Yes
-150,Intermediate,Which of the following are characteristics of 'Byzantine Fault Tolerance' (BFT) consensus algorithms in blockchain?,High transaction throughput,Instant finality,High energy consumption,Requiring a known set of validators,"A, B, D",Yes
-151,Intermediate,Which of the following are characteristics of 'Light Clients' in blockchain?,Only downloading block headers,Using Simplified Payment Verification (SPV),Verifying all transactions,Storing complete state,"A, B",Yes
-152,Intermediate,Which of the following are solutions to the 'data availability' problem in blockchain?,Data availability sampling,Erasure coding,Centralized storage,Celestia,"A, B, D",Yes
-153,Intermediate,Which of the following are implementation methods for 'Deterministic Finality' in blockchain?,Byzantine Fault Tolerance (BFT) consensus,Checkpoint mechanisms,Proof of Work (PoW),Longest chain rule,"A, B",Yes
-154,Intermediate,Which of the following are challenges of 'cross-chain technology' in blockchain?,Atomic guarantees,Reduced security,Centralization risks,Lack of standardization,"A, B, C",Yes
-155,Intermediate,Which of the following are characteristics of 'Self-Sovereign Identity' in blockchain?,User control of personal data,Decentralization,Verifiable credentials,Centralized management,"A, B, C",Yes
-156,Intermediate,Which of the following are advantages of 'Stateless Clients' in blockchain?,Reduced storage requirements,Fast synchronization,Enhanced privacy,Improved transaction throughput,"A, B",Yes
-157,Intermediate,Which of the following are benefits of 'Validator Rotation' in blockchain?,Preventing long-term control,Distributing power,Increasing participation opportunities,Improving transaction speed,"A, B, C",Yes
-158,Intermediate,Which of the following are applications of 'Merkle Trees' in blockchain?,Transaction verification,Block header construction,Simplified Payment Verification (SPV),Mining optimization,"A, B, C",Yes
-159,Intermediate,Which of the following are advantages of 'Off-chain Computation' in blockchain?,Improving computational efficiency,Reducing costs,Enhancing privacy,Increasing decentralization,"A, B, C",Yes
-160,Intermediate,Which of the following are development trends in the Bitcoin network?,Layer 2 scaling solutions,Ordinals protocol,Centralized control,Abandoning Proof of Work,"A, B",Yes
-161,Advanced,What innovative mechanism did EigenLayer's re-staking protocol introduce to solve validator incentive problems?,Two-layer staking structure,Dynamic penalty mechanism,Reputation scoring system,Automatic compound rewards,A,No
+139,Intermediate,Which of the following is NOT a function of the ‘State Transition Function‘ in blockchain?,Validating transaction validity,Updating blockchain state,Generating new blocks,Executing smart contracts,C,No
+140,Intermediate,What problem does the ‘Longest Chain Rule‘ primarily solve in blockchain?,Transaction ordering,Fork selection,Block size limitations,Transaction fee calculation,B,No
+141,Intermediate,Which of the following technologies was NOT designed to solve the ‘initial distribution‘ problem in blockchain?,Airdrop,Initial Coin Offering (ICO),Mining,Sharding,D,No
+142,Intermediate,What is the main purpose of the ‘Difficulty Adjustment Algorithm‘ in blockchain?,Controlling the rate of new coin issuance,Maintaining stable block generation time,Preventing 51% attacks,Reducing energy consumption,B,No
+143,Intermediate,Which of the following are characteristics of ‘Layer 2‘ solutions in blockchain?,Built on top of the base layer,Improving transaction throughput,Replacing base layer consensus mechanisms,Reducing transaction costs,“A, B, D“,Yes
+144,Intermediate,Which of the following are current development directions for blockchain infrastructure?,Focus on security and privacy, including GDPR compliance,Tokenization of physical assets,Becoming more decentralized,Making blockchain functions more complex,“A, B“,Yes
+145,Intermediate,Which of the following are application scenarios for ‘Zero-Knowledge Proofs‘ in blockchain?,Privacy transactions,Identity verification,Scalability solutions (ZK Rollups),Mining optimization,“A, B, C“,Yes
+146,Intermediate,Which of the following are challenges of blockchain ‘sharding‘ technology?,Cross-shard communication,Data availability,Single points of failure,Reduced security,“A, B, D“,Yes
+147,Intermediate,Which of the following are types of blockchain ‘oracles‘?,Centralized oracles,Decentralized oracles,Hybrid oracles,Automatic oracles,“A, B“,Yes
+148,Intermediate,Which of the following are limitations of blockchain ‘state channels‘?,Requiring participants to be online,Suitable for frequent interactions between specific participants,Not suitable for one-time transactions,Requiring on-chain transactions,“A, B, C“,Yes
+149,Intermediate,Which of the following are variants of ‘Proof of Stake‘ (PoS) in blockchain?,Delegated Proof of Stake (DPoS),Liquid Proof of Stake (LPoS),Proof of Work (PoW),Pure Proof of Stake (Pure PoS),“A, B, D“,Yes
+150,Intermediate,Which of the following are characteristics of ‘Byzantine Fault Tolerance‘ (BFT) consensus algorithms in blockchain?,High transaction throughput,Instant finality,High energy consumption,Requiring a known set of validators,“A, B, D“,Yes
+151,Intermediate,Which of the following are characteristics of ‘Light Clients‘ in blockchain?,Only downloading block headers,Using Simplified Payment Verification (SPV),Verifying all transactions,Storing complete state,“A, B“,Yes
+152,Intermediate,Which of the following are solutions to the ‘data availability‘ problem in blockchain?,Data availability sampling,Erasure coding,Centralized storage,Celestia,“A, B, D“,Yes
+153,Intermediate,Which of the following are implementation methods for ‘Deterministic Finality‘ in blockchain?,Byzantine Fault Tolerance (BFT) consensus,Checkpoint mechanisms,Proof of Work (PoW),Longest chain rule,“A, B“,Yes
+154,Intermediate,Which of the following are challenges of ‘cross-chain technology‘ in blockchain?,Atomic guarantees,Reduced security,Centralization risks,Lack of standardization,“A, B, C“,Yes
+155,Intermediate,Which of the following are characteristics of ‘Self-Sovereign Identity‘ in blockchain?,User control of personal data,Decentralization,Verifiable credentials,Centralized management,“A, B, C“,Yes
+156,Intermediate,Which of the following are advantages of ‘Stateless Clients‘ in blockchain?,Reduced storage requirements,Fast synchronization,Enhanced privacy,Improved transaction throughput,“A, B“,Yes
+157,Intermediate,Which of the following are benefits of ‘Validator Rotation‘ in blockchain?,Preventing long-term control,Distributing power,Increasing participation opportunities,Improving transaction speed,“A, B, C“,Yes
+158,Intermediate,Which of the following are applications of ‘Merkle Trees‘ in blockchain?,Transaction verification,Block header construction,Simplified Payment Verification (SPV),Mining optimization,“A, B, C“,Yes
+159,Intermediate,Which of the following are advantages of ‘Off-chain Computation‘ in blockchain?,Improving computational efficiency,Reducing costs,Enhancing privacy,Increasing decentralization,“A, B, C“,Yes
+160,Intermediate,Which of the following are development trends in the Bitcoin network?,Layer 2 scaling solutions,Ordinals protocol,Centralized control,Abandoning Proof of Work,“A, B“,Yes
+161,Advanced,What innovative mechanism did EigenLayer‘s re-staking protocol introduce to solve validator incentive problems?,Two-layer staking structure,Dynamic penalty mechanism,Reputation scoring system,Automatic compound rewards,A,No
 162,Advanced,In modular blockchain architecture, which component is responsible for ensuring data availability without processing execution?,Execution layer,Consensus layer,Data availability layer,Settlement layer,C,No
 163,Advanced,What technology did Celestia introduce as a data availability layer innovation in early 2024?,Zero-knowledge proofs,Data availability sampling,Sharded execution,State channels,B,No
 164,Advanced,Which attack exploits propagation delays in blockchain networks to gain unfair advantages?,Timestamp manipulation,Front-running attack,Replay attack,Eclipse attack,B,No
-165,Advanced,What is the main risk of 'Trusted Setup' in zero-knowledge proof systems?,Excessively high computational complexity,If setup parameters are leaked, system security can be compromised,Verification process becomes non-transparent,Requires centralized servers,B,No
-166,Advanced,What does the 'client diversity' problem in the Bitcoin network primarily focus on?,Diversity of user interfaces,Distribution of different node software implementations,Diversity of mining hardware,Diversity of transaction types,B,No
-167,Advanced,Which consensus mechanism is most vulnerable to the 'Nothing at Stake' problem?,Proof of Work (PoW),Pure Proof of Stake (Pure PoS),Delegated Proof of Stake (DPoS),Practical Byzantine Fault Tolerance (PBFT),B,No
-168,Advanced,What problem does the 'Adaptive Difficulty' mechanism primarily solve in blockchain networks?,Network re-synchronization after partitioning,Block time instability caused by computing power fluctuations,Changes in validator numbers,Transaction fee market,B,No
+165,Advanced,What is the main risk of ‘Trusted Setup‘ in zero-knowledge proof systems?,Excessively high computational complexity,If setup parameters are leaked, system security can be compromised,Verification process becomes non-transparent,Requires centralized servers,B,No
+166,Advanced,What does the ‘client diversity‘ problem in the Bitcoin network primarily focus on?,Diversity of user interfaces,Distribution of different node software implementations,Diversity of mining hardware,Diversity of transaction types,B,No
+167,Advanced,Which consensus mechanism is most vulnerable to the ‘Nothing at Stake‘ problem?,Proof of Work (PoW),Pure Proof of Stake (Pure PoS),Delegated Proof of Stake (DPoS),Practical Byzantine Fault Tolerance (PBFT),B,No
+168,Advanced,What problem does the ‘Adaptive Difficulty‘ mechanism primarily solve in blockchain networks?,Network re-synchronization after partitioning,Block time instability caused by computing power fluctuations,Changes in validator numbers,Transaction fee market,B,No
 169,Advanced,Which blockchain interoperability solution implemented more efficient cross-chain verification using zero-knowledge proofs?,Cosmos IBC,Polkadot XCMP,zkBridge,Chainlink CCIP,C,No
-170,Advanced,What does 'Capture Resistance' primarily refer to in blockchain governance?,Preventing 51% attacks,Preventing specific interest groups from controlling decision processes,Preventing transaction rollbacks,Preventing data leaks,B,No
-171,Advanced,Which technology is most suitable for solving the 'state explosion' problem in blockchain?,Sharding,State rent,Off-chain computation,Larger blocks,B,No
-172,Advanced,What did the 'Taproot' upgrade in the Bitcoin network primarily improve?,Transaction throughput,Privacy and smart contract capabilities,Mining algorithm,Network security,B,No
-173,Advanced,What is the main innovation of 'Deterministic Wallets' in blockchain?,Generating multiple key pairs from a single seed,Improving transaction speed,Enhancing privacy protection,Reducing transaction fees,A,No
-174,Advanced,Which attack exploits the blockchain network's memory pool (Mempool) mechanism?,Replay attack,Sybil attack,Transaction replacement attack,51% attack,C,No
-175,Advanced,What is the fundamental difference between 'state channels' and 'sidechains' in blockchain?,State channels are temporary while sidechains are permanent,State channels only support payments while sidechains support smart contracts,State channels don't require trust assumptions while sidechains do,State channels use their own consensus mechanisms while sidechains rely on the main chain consensus,D,No
-176,Advanced,Which blockchain scaling approach improves throughput through 'optimistic' assumptions?,ZK Rollups,Optimistic Rollups,Validium,Plasma,B,No
-177,Advanced,Which type of consensus mechanism is 'Long-Range Attack' primarily targeted at?,Proof of Work (PoW),Proof of Stake (PoS),Practical Byzantine Fault Tolerance (PBFT),Delegated Proof of Stake (DPoS),B,No
-178,Advanced,Which technology is most suitable for solving the 'data availability' problem in blockchain?,Erasure coding,Sharding,State channels,Zero-knowledge proofs,A,No
+170,Advanced,What does ‘Capture Resistance‘ primarily refer to in blockchain governance?,Preventing 51% attacks,Preventing specific interest groups from controlling decision processes,Preventing transaction rollbacks,Preventing data leaks,B,No
+171,Advanced,Which technology is most suitable for solving the ‘state explosion‘ problem in blockchain?,Sharding,State rent,Off-chain computation,Larger blocks,B,No
+172,Advanced,What did the ‘Taproot‘ upgrade in the Bitcoin network primarily improve?,Transaction throughput,Privacy and smart contract capabilities,Mining algorithm,Network security,B,No
+173,Advanced,What is the main innovation of ‘Deterministic Wallets‘ in blockchain?,Generating multiple key pairs from a single seed,Improving transaction speed,Enhancing privacy protection,Reducing transaction fees,A,No
+174,Advanced,Which attack exploits the blockchain network‘s memory pool (Mempool) mechanism?,Replay attack,Sybil attack,Transaction replacement attack,51% attack,C,No
+175,Advanced,What is the fundamental difference between ‘state channels‘ and ‘sidechains‘ in blockchain?,State channels are temporary while sidechains are permanent,State channels only support payments while sidechains support smart contracts,State channels don‘t require trust assumptions while sidechains do,State channels use their own consensus mechanisms while sidechains rely on the main chain consensus,D,No
+176,Advanced,Which blockchain scaling approach improves throughput through ‘optimistic‘ assumptions?,ZK Rollups,Optimistic Rollups,Validium,Plasma,B,No
+177,Advanced,Which type of consensus mechanism is ‘Long-Range Attack‘ primarily targeted at?,Proof of Work (PoW),Proof of Stake (PoS),Practical Byzantine Fault Tolerance (PBFT),Delegated Proof of Stake (DPoS),B,No
+178,Advanced,Which technology is most suitable for solving the ‘data availability‘ problem in blockchain?,Erasure coding,Sharding,State channels,Zero-knowledge proofs,A,No
 179,Advanced,Which blockchain architecture design improves scalability by separating execution from consensus?,Monolithic architecture,Modular architecture,Layered architecture,Microservice architecture,B,No
-180,Advanced,What problem does the 'Validator Rotation' mechanism primarily solve in blockchain?,Long-term control risk,Transaction ordering,Network congestion,Storage bloat,A,No
-181,Advanced,Which technology is most suitable for implementing 'Verifiable Delay Functions' (VDFs) in blockchain?,Hash functions,Asymmetric encryption,Sequential computation,Zero-knowledge proofs,C,No
-182,Advanced,What is the main challenge of 'Stateless Validation' in blockchain?,Proof size,Computational complexity,Network latency,Storage requirements,A,No
-183,Advanced,Which blockchain technology enhances privacy protection by introducing 'Trusted Execution Environments' (TEEs)?,Secret Network,Monero,Zcash,Dash,A,No
-184,Advanced,What is the main purpose of 'Fork Choice Rules' in blockchain?,Determining which fork is the canonical chain,Creating new forks,Merging forks,Preventing forks,A,No
-185,Advanced,Which technology is most suitable for solving the 'frontend centralization' problem in blockchain?,Decentralized storage (IPFS),Decentralized Name System (ENS),Sharding,State channels,A,No
-186,Advanced,What is the main difference between 'Eventual Consistency' and 'Instant Finality' in blockchain?,Transaction confirmation time,Security guarantees,Network size,Energy consumption,B,No
-187,Advanced,Which blockchain technology enhances security through 'Threshold Signatures'?,Multi-signatures,Distributed Key Generation,Ring signatures,Blind signatures,B,No
-188,Advanced,What is the main challenge of 'Permissionless Finality' in blockchain?,Achieving deterministic finality in open networks,Reducing energy consumption,Improving transaction throughput,Simplifying protocol design,A,No
-189,Advanced,Which of the following are components of modular blockchain architecture?,Execution layer,Data availability layer,Centralized control layer,Settlement layer,"A, B, D",Yes
-190,Advanced,Which of the following are types of 'Zero-Knowledge Proof' systems in blockchain?,zk-SNARK,zk-STARK,zk-LARK,zk-MARK,"A, B",Yes
-191,Advanced,Which of the following are solutions to the 'data availability' problem in blockchain?,Data availability sampling,Erasure coding,Centralized storage,Data availability committees,"A, B, D",Yes
-192,Advanced,Which of the following are defense mechanisms against 'Long-Range Attacks' in blockchain?,Checkpoints,Weak subjectivity,Proof of Work,Centralized validation,"A, B",Yes
-193,Advanced,Which of the following are challenges faced by 'Stateless Clients' in blockchain?,Proof size,Computational complexity of generating proofs,Network bandwidth requirements,Centralization risks,"A, B, C",Yes
-194,Advanced,Which of the following are application scenarios for 'Verifiable Random Functions' (VRFs) in blockchain?,Validator selection,Shard assignment,Block generation,Transaction ordering,"A, B, C",Yes
-195,Advanced,Which of the following are defense mechanisms against 'Front-running Attacks' in blockchain?,Commit-reveal schemes,Private transaction pools,Centralized ordering,Random delays,"A, B",Yes
-196,Advanced,Which of the following are security challenges in blockchain 'cross-chain communication'?,Replay attacks,Double-spending attacks,Bridge contract vulnerabilities,Network latency,"A, B, C",Yes
-197,Advanced,Which of the following are solutions to the 'state explosion' problem in blockchain?,State rent,State expiry,Centralized storage,State tree pruning,"A, B, D",Yes
-198,Advanced,Which of the following are characteristics of blockchain re-staking technology today?,Improving capital efficiency,Enhancing network security,Reducing decentralization,Increasing centralization risks,"A, B",Yes
-199,Advanced,Which of the following are sources of 'Deterministic Randomness' in blockchain?,Block hash,Verifiable Random Function (VRF),True random number generator,Multi-party computation,"A, B, D",Yes
-200,Advanced,Which of the following are implementation methods for 'Trustless Bridges' in blockchain?,Light client verification,Zero-knowledge proofs,Centralized validators,Federated multi-signatures,"A, B",Yes 
+180,Advanced,What problem does the ‘Validator Rotation‘ mechanism primarily solve in blockchain?,Long-term control risk,Transaction ordering,Network congestion,Storage bloat,A,No
+181,Advanced,Which technology is most suitable for implementing ‘Verifiable Delay Functions‘ (VDFs) in blockchain?,Hash functions,Asymmetric encryption,Sequential computation,Zero-knowledge proofs,C,No
+182,Advanced,What is the main challenge of ‘Stateless Validation‘ in blockchain?,Proof size,Computational complexity,Network latency,Storage requirements,A,No
+183,Advanced,Which blockchain technology enhances privacy protection by introducing ‘Trusted Execution Environments‘ (TEEs)?,Secret Network,Monero,Zcash,Dash,A,No
+184,Advanced,What is the main purpose of ‘Fork Choice Rules‘ in blockchain?,Determining which fork is the canonical chain,Creating new forks,Merging forks,Preventing forks,A,No
+185,Advanced,Which technology is most suitable for solving the ‘frontend centralization‘ problem in blockchain?,Decentralized storage (IPFS),Decentralized Name System (ENS),Sharding,State channels,A,No
+186,Advanced,What is the main difference between ‘Eventual Consistency‘ and ‘Instant Finality‘ in blockchain?,Transaction confirmation time,Security guarantees,Network size,Energy consumption,B,No
+187,Advanced,Which blockchain technology enhances security through ‘Threshold Signatures‘?,Multi-signatures,Distributed Key Generation,Ring signatures,Blind signatures,B,No
+188,Advanced,What is the main challenge of ‘Permissionless Finality‘ in blockchain?,Achieving deterministic finality in open networks,Reducing energy consumption,Improving transaction throughput,Simplifying protocol design,A,No
+189,Advanced,Which of the following are components of modular blockchain architecture?,Execution layer,Data availability layer,Centralized control layer,Settlement layer,“A, B, D“,Yes
+190,Advanced,Which of the following are types of ‘Zero-Knowledge Proof‘ systems in blockchain?,zk-SNARK,zk-STARK,zk-LARK,zk-MARK,“A, B“,Yes
+191,Advanced,Which of the following are solutions to the ‘data availability‘ problem in blockchain?,Data availability sampling,Erasure coding,Centralized storage,Data availability committees,“A, B, D“,Yes
+192,Advanced,Which of the following are defense mechanisms against ‘Long-Range Attacks‘ in blockchain?,Checkpoints,Weak subjectivity,Proof of Work,Centralized validation,“A, B“,Yes
+193,Advanced,Which of the following are challenges faced by ‘Stateless Clients‘ in blockchain?,Proof size,Computational complexity of generating proofs,Network bandwidth requirements,Centralization risks,“A, B, C“,Yes
+194,Advanced,Which of the following are application scenarios for ‘Verifiable Random Functions‘ (VRFs) in blockchain?,Validator selection,Shard assignment,Block generation,Transaction ordering,“A, B, C“,Yes
+195,Advanced,Which of the following are defense mechanisms against ‘Front-running Attacks‘ in blockchain?,Commit-reveal schemes,Private transaction pools,Centralized ordering,Random delays,“A, B“,Yes
+196,Advanced,Which of the following are security challenges in blockchain ‘cross-chain communication‘?,Replay attacks,Double-spending attacks,Bridge contract vulnerabilities,Network latency,“A, B, C“,Yes
+197,Advanced,Which of the following are solutions to the ‘state explosion‘ problem in blockchain?,State rent,State expiry,Centralized storage,State tree pruning,“A, B, D“,Yes
+198,Advanced,Which of the following are characteristics of blockchain re-staking technology today?,Improving capital efficiency,Enhancing network security,Reducing decentralization,Increasing centralization risks,“A, B“,Yes
+199,Advanced,Which of the following are sources of ‘Deterministic Randomness‘ in blockchain?,Block hash,Verifiable Random Function (VRF),True random number generator,Multi-party computation,“A, B, D“,Yes
+200,Advanced,Which of the following are implementation methods for ‘Trustless Bridges‘ in blockchain?,Light client verification,Zero-knowledge proofs,Centralized validators,Federated multi-signatures,“A, B“,Yes 
