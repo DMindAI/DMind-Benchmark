@@ -1,201 +1,201 @@
 No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
-1,basic,Solidity中，以下哪种变量类型用于存储以太币金额？,uint,int,wei,ether,A,单选
-2,basic,"在Solidity中，函数可见性修饰符""external""的特点是什么？",只能被合约内部调用,只能被合约外部调用,可以被合约内部和外部调用,只能被继承合约调用,B,单选
-3,basic,Vyper语言与Solidity相比的主要设计理念是什么？,更高的性能,更丰富的功能,更简单和更高的安全性,更复杂的语法,C,单选
-4,basic,以下哪种不是Solidity中的数据位置？,storage,memory,calldata,database,D,单选
-5,basic,"智能合约中的""回退函数""(fallback function)主要用途是什么？",处理合约收到的以太币,处理合约错误,回滚交易,返回合约状态,A,单选
-6,basic,Solidity的最新稳定版本是哪个？,0.7.0,0.8.0,0.8.20,0.8.24,D,单选
-7,basic,在Solidity中，以下哪个关键字用于处理异常？,try/catch,if/else,require,return,C,单选
-8,basic,Vyper语言不支持以下哪个特性？,循环,继承,条件语句,函数,B,单选
-9,basic,"智能合约中的""Gas""是指什么？",合约执行的燃料,合约存储的数据,合约的安全机制,合约的版本号,A,单选
-10,basic,以下哪种不是Solidity中的基本数据类型？,uint,bool,address,char,D,单选
-11,basic,"在Solidity中，""msg.sender""表示什么？",合约创建者,当前调用者地址,合约地址,交易发起者,B,单选
-12,basic,Vyper中，以下哪个关键字用于定义常量？,constant,constant,immutable,final,B,单选
-13,basic,"智能合约的""ABI""是指什么？",应用程序二进制接口,高级区块链接口,自动区块索引,地址绑定接口,A,单选
-14,basic,在Solidity中，以下哪个不是合约创建方式？,new关键字,工厂合约,克隆合约,import关键字,D,单选
-15,basic,"Solidity中的""mapping""类型主要用于什么？",存储键值对,映射函数调用,连接外部API,转换数据类型,A,单选
-16,basic,以下哪个不是智能合约的特性？,自动执行,不可篡改,可撤销,去中心化,C,单选
-17,basic,"在Solidity中，""view""修饰符的作用是什么？",允许函数修改状态,声明函数不修改状态,使函数可见性为public,允许函数接收以太币,B,单选
-18,basic,Vyper中，以下哪个特性是为了提高安全性而设计的？,无限循环,递归调用,有界循环,动态继承,C,单选
-19,basic,"智能合约中的""事件""(event)主要用途是什么？",触发其他合约函数,记录链上日志,处理异常,控制Gas消耗,B,单选
-20,basic,在Solidity中，以下哪个不是访问控制修饰符？,public,private,internal,global,D,单选
-21,basic,Vyper的最新稳定版本是哪个？,0.3.0,0.3.7,0.4.0,1.0.0,B,单选
-22,basic,"在Solidity中，""payable""修饰符的作用是什么？",允许函数接收以太币,使函数可以支付Gas费,允许合约转账,使函数可以修改状态,A,单选
-23,basic,以下哪个不是智能合约的部署平台？,以太坊,币安智能链,比特币,波卡,C,单选
-24,basic,"在Solidity中，""struct""用于什么？",定义函数结构,创建自定义数据类型,声明合约结构,组织代码块,B,单选
-25,basic,Vyper中，以下哪个语句用于检查条件并在不满足时回滚交易？,if/else,assert,try/except,while,B,单选
-26,basic,"智能合约中的""构造函数""(constructor)特点是什么？",可以多次调用,只在合约部署时执行一次,必须是public,不能接收参数,B,单选
-27,basic,在Solidity中，以下哪个不是数组操作？,push,pop,length,sort,D,单选
-28,basic,"Solidity中的""库合约""(library)有什么特点？",可以有状态变量,可以继承其他合约,不能有状态变量,可以接收以太币,C,单选
-29,basic,以下哪个不是智能合约的安全考虑因素？,重入攻击,整数溢出,用户界面,访问控制,C,单选
-30,basic,"在Solidity中，""modifier""主要用于什么？",修改变量值,改变函数行为,声明函数可见性,定义数据类型,B,单选
-31,basic,Vyper中，以下哪个不是内置函数？,sha256,keccak256,ecrecover,hashmap,D,单选
-32,basic,"智能合约中的""Gas优化""主要目的是什么？",提高合约执行速度,减少交易费用,增加合约安全性,简化合约代码,B,单选
-33,basic,在Solidity中，以下哪个不是错误处理机制？,require,assert,revert,catch,D,单选
-34,basic,"Solidity中的""继承""支持哪种特性？",单继承,多重继承,私有继承,动态继承,B,单选
-35,basic,以下哪个不是智能合约的测试方法？,单元测试,集成测试,模糊测试,物理测试,D,单选
-36,basic,"在Solidity中，""enum""用于什么？",定义事件,创建用户定义类型,声明函数类型,指定Gas限制,B,单选
-37,basic,Vyper中，以下哪个特性是为了防止重入攻击？,nonreentrant装饰器,静态类型,有界循环,无继承,A,单选
-38,basic,"智能合约中的""回滚""(revert)操作会导致什么？",只回滚当前函数,回滚整个交易并返回剩余Gas,删除合约,暂停合约执行,B,单选
-39,basic,在Solidity中，以下哪个不是合约间调用方式？,直接调用,委托调用(delegatecall),低级调用(call),远程调用(remotecall),D,单选
-40,basic,"Solidity中的""接口""(interface)有什么特点？",可以包含实现,可以有构造函数,只能声明函数,可以有状态变量,C,单选
-41,basic,以下哪个不是智能合约的部署环境？,主网,测试网,本地开发环境,物理服务器,D,单选
-42,basic,"在Solidity中，""using A for B""语法的作用是什么？",将A的函数附加到B类型,使用A替换B,将B转换为A,使A继承B,A,单选
-43,basic,Vyper中，以下哪个不是内置的数据类型？,uint256,address,bytes32,float,D,单选
-44,basic,"智能合约中的""自毁""(selfdestruct)函数作用是什么？",暂停合约,删除合约并返回资金,重置合约状态,锁定合约资金,B,单选
-45,basic,在Solidity中，以下哪个不是合约创建方式？,new关键字,克隆代理,工厂模式,import语句,D,单选
-46,basic,"Solidity中的""抽象合约""有什么特点？",不能被部署,不能有状态变量,不能有函数实现,不能被继承,A,单选
-47,basic,以下哪个不是智能合约的编译工具？,solc,vyper,truffle,metamask,D,单选
-48,basic,"在Solidity中，""pure""修饰符的作用是什么？",允许函数修改状态,声明函数不读取也不修改状态,使函数可见性为public,允许函数接收以太币,B,单选
-49,basic,Vyper中，以下哪个不是控制结构？,if,for,while,switch,D,单选
-50,basic,"智能合约中的""事件索引""(indexed event parameter)主要用途是什么？",提高事件处理速度,允许按参数值过滤事件,减少Gas消耗,增加事件安全性,B,单选
-51,basic,在Solidity中，以下哪个不是内置的全局变量？,msg.sender,block.timestamp,tx.origin,contract.balance,D,单选
-52,basic,"Solidity中的""函数重载""是指什么？",同名函数有不同参数,函数可以调用自身,函数可以修改状态,函数可以接收以太币,A,单选
-53,basic,以下哪个不是智能合约的交互方式？,通过钱包,通过DApp,通过其他合约,通过电子邮件,D,单选
-54,basic,"在Solidity中，""assembly""块的作用是什么？",编写低级EVM操作码,组装合约组件,创建合约接口,定义合约结构,A,单选
-55,basic,Vyper中，以下哪个是用于处理时间的内置变量？,now,timestamp,block.timestamp,current_time,C,单选
-56,basic,"智能合约中的""代理模式""(Proxy Pattern)主要用途是什么？",隐藏合约地址,实现合约可升级性,减少Gas消耗,增加合约安全性,B,单选
-57,basic,在Solidity中，以下哪个不是存储数组的方法？,固定大小数组,动态数组,映射,链表,D,单选
-58,basic,"Solidity中的""继承""关键字是什么？",extends,inherts,implements,is,D,单选
-59,basic,以下哪个不是智能合约的部署工具？,Remix,Hardhat,Truffle,Metamask,D,单选
-60,basic,"在Solidity中，""receive""函数的特点是什么？",可以有参数,不能有参数且必须是external payable,必须返回值,可以多次定义,B,单选
-61,basic,Vyper中，以下哪个不是内置的加密函数？,sha256,keccak256,ripemd160,md5,D,单选
-62,basic,"智能合约中的""时间锁""(Timelock)机制主要用途是什么？",延迟合约执行,限制合约调用频率,设置合约过期时间,同步合约时间,A,单选
-63,basic,在Solidity中，以下哪个不是错误处理方式？,"require(condition, ""message"")",assert(condition),"revert(""message"")",try/catch,D,单选
-64,basic,"Solidity中的""函数选择器""(Function Selector)是什么？",函数名称,函数签名的前4字节,函数参数列表,函数返回类型,B,单选
-65,basic,以下哪个不是智能合约的审计工具？,Mythril,Slither,Echidna,Ganache,D,单选
-66,basic,"在Solidity中，""immutable""变量的特点是什么？",可以在任何时候修改,只能在构造函数中赋值,不能被初始化,必须是public,B,单选
-67,basic,Vyper中，以下哪个不是有效的函数可见性？,public,private,external,protected,D,单选
-68,basic,"智能合约中的""ERC""代表什么？",以太坊请求注释,以太坊记录集合,以太坊资源控制,以太坊区块链规则,A,单选
-69,basic,在Solidity中，以下哪个不是有效的数据位置？,storage,memory,calldata,stack,D,单选
-70,basic,"Solidity中的""继承""顺序遵循什么规则？",从左到右,从右到左,按字母顺序,按合约大小,B,单选
-71,basic,以下哪些是Solidity中的基本数据类型？,uint,bool,float,address,"A, B, D",多选
-72,basic,以下哪些是Vyper的设计特点？,有界循环,无递归,多重继承,无类继承,"A, B, D",多选
-73,basic,以下哪些是智能合约的特性？,自动执行,不可篡改,可撤销,去中心化,"A, B, D",多选
-74,basic,以下哪些是Solidity中的函数可见性修饰符？,public,private,external,global,"A, B, C",多选
-75,basic,以下哪些是智能合约的安全漏洞？,重入攻击,整数溢出,用户界面,访问控制,"A, B, D",多选
-76,basic,以下哪些是Solidity中的状态可变性修饰符？,view,pure,constant,payable,"A, B, D",多选
-77,basic,以下哪些是Vyper中的内置函数？,sha256,keccak256,ecrecover,hashmap,"A, B, C",多选
-78,basic,以下哪些是智能合约的部署环境？,主网,测试网,本地开发环境,物理服务器,"A, B, C",多选
-79,basic,以下哪些是Solidity中的错误处理机制？,require,assert,revert,try/catch,"A, B, C",多选
-80,basic,以下哪些是智能合约的编译工具？,solc,vyper,Truffle,Metamask,"A, B",多选
-81,basic,以下哪些是Solidity中的全局变量？,msg.sender,block.timestamp,tx.origin,contract.balance,"A, B, C",多选
-82,basic,以下哪些是Vyper中的控制结构？,if,for,while,switch,"A, B",多选
-83,basic,以下哪些是智能合约的交互方式？,通过钱包,通过DApp,通过其他合约,通过电子邮件,"A, B, C",多选
-84,basic,以下哪些是Solidity中的数据位置？,storage,memory,calldata,database,"A, B, C",多选
-85,basic,以下哪些是智能合约的审计工具？,Mythril,Slither,Echidna,Ganache,"A, B, C",多选
-86,basic,以下哪些是Solidity中的合约类型？,普通合约,抽象合约,接口,类,"A, B, C",多选
-87,basic,以下哪些是Vyper中的数据类型？,uint256,address,bytes32,float,"A, B, C",多选
-88,basic,以下哪些是智能合约的部署工具？,Remix,Hardhat,Truffle,Metamask,"A, B, C",多选
-89,basic,以下哪些是Solidity中的特殊函数？,constructor,fallback,receive,main,"A, B",多选
-90,basic,以下哪些是智能合约开发的趋势？,可升级合约,跨链互操作性,Gas优化,中心化控制,"A, B, D",多选
-91,basic,以下哪些是Solidity中的引用类型？,数组,结构体,映射,整数,"A, B, C",多选
-92,basic,以下哪些是Vyper中的内置常量？,ZERO_ADDRESS,MAX_UINT256,PI,INFINITY,"A, B",多选
-93,basic,以下哪些是智能合约的测试方法？,单元测试,集成测试,模糊测试,物理测试,"A, B, C",多选
-94,basic,以下哪些是Solidity中的合约间调用方式？,直接调用,委托调用(delegatecall),低级调用,remotecall,"A, B, C",多选
-95,basic,以下哪些是智能合约的Gas优化技术？,使用短路评估,减少存储操作,使用库合约,增加注释,"A, B, C",多选
-96,basic,以下哪些是Solidity中的事件特性？,可以有索引参数,存储在区块链上,可以被合约内部读取,可以被修改,"A, B",多选
-97,basic,以下哪些是Vyper中的装饰器？,@public,@private,@nonreentrant,@override,"A, B, C",多选
-98,basic,以下哪些是智能合约的设计模式？,工厂模式,代理模式,检查-效果-交互模式,模型-视图-控制器模式,"A, B, C",多选
-99,basic,以下哪些是Solidity中的内置加密函数？,keccak256,sha256,ripemd160,md5,"A, B, C",多选
-100,basic,以下哪些是智能合约的开发框架？,Hardhat,Truffle,Foundry,React,"A, B, C",多选
-101,intermediate,在Solidity 0.8.x版本中，以下哪种整数操作会导致合约执行失败？,整数溢出,整数除零,整数取模,整数乘法,A,单选
-102,intermediate,"Solidity引入的""user-defined运算符重载""主要用于什么场景？",简化数学库的实现,增强合约安全性,减少Gas消耗,提高合约可读性,A,单选
-103,intermediate,以下哪种模式最适合实现可升级智能合约？,工厂模式,代理模式,单例模式,观察者模式,B,单选
-104,intermediate,在Vyper中，以下哪个特性是为了防止重入攻击而设计的？,@nonreentrant装饰器,静态类型系统,无递归调用,有界循环,A,单选
-105,intermediate,以下哪种方法最适合在智能合约中生成随机数？,block.timestamp,"keccak256(abi.encodePacked(block.difficulty, block.timestamp))",链下随机数生成器+链上验证,Math.random(),C,单选
-106,intermediate,在EIP-1559交易模型中，以下哪部分费用会被销毁？,基础费用(Base Fee),小费(Tip),Gas上限(Gas Limit),最大费用(Max Fee),A,单选
-107,intermediate,以下哪种合约间调用方式会改变msg.sender的值？,直接调用,call,delegatecall,staticcall,A,单选
-108,intermediate,在Solidity中，以下哪种方法最适合处理大数运算？,使用uint256,使用库合约,使用浮点数,使用字符串表示,B,单选
-109,intermediate,"以下哪种智能合约开发框架引入了""模糊测试""(Fuzzing)作为标准功能？",Truffle,Hardhat,Foundry,Brownie,C,单选
-110,intermediate,以下哪种模式最适合实现合约访问控制？,继承OpenZeppelin的AccessControl,使用简单的owner变量,使用tx.origin检查,使用block.timestamp限制,A,单选
-111,intermediate,在Solidity中，以下哪种数据结构最适合实现映射到多个值？,嵌套映射,结构体数组,多维数组,链表,A,单选
-112,intermediate,以下哪种方法最适合在智能合约中实现暂停功能？,使用selfdestruct,实现Pausable接口,使用require(block.timestamp > pauseTime),使用try/catch捕获所有调用,B,单选
-113,intermediate,在Vyper中，以下哪种方法最适合处理合约升级？,使用代理合约,使用工厂合约,使用继承,使用@external装饰器,A,单选
-114,intermediate,以下哪种方法最适合在智能合约中存储大量数据？,使用映射,使用数组,使用事件日志,使用链下存储+链上哈希,D,单选
-115,intermediate,以下哪种智能合约优化技术可以显著减少Gas消耗？,使用assembly进行低级操作,增加注释,使用更多的require语句,使用更多的事件,A,单选
-116,intermediate,在Solidity中，以下哪种方法最适合实现批量转账？,使用循环调用transfer,使用多重签名,使用批处理函数,使用委托调用,C,单选
-117,intermediate,以下哪种模式最适合实现合约工厂？,单例模式,工厂模式,代理模式,观察者模式,B,单选
-118,intermediate,在Vyper中，以下哪种方法最适合处理大型结构化数据？,使用struct,使用多个映射,使用嵌套映射,使用数组,C,单选
-119,intermediate,以下哪种方法最适合在智能合约中实现时间锁定功能？,使用block.timestamp,使用区块号,使用外部预言机,使用Gas限制,A,单选
-120,intermediate,以下哪种智能合约安全工具可以检测重入漏洞？,Mythril,Slither,Echidna,以上都可以,D,单选
-121,intermediate,在Solidity中，以下哪种方法最适合实现合约间的安全通信？,使用事件,使用接口,使用库,使用继承,B,单选
-122,intermediate,以下哪种模式最适合实现合约权限管理？,角色基础访问控制,所有者模式,时间锁模式,多重签名,A,单选
-123,intermediate,在Vyper中，以下哪种方法最适合处理合约状态迁移？,使用状态枚举,使用映射跟踪状态,使用事件记录状态变化,使用外部合约,A,单选
-124,intermediate,以下哪种方法最适合在智能合约中实现复杂的业务逻辑？,使用单一大型合约,使用多个小型合约,使用库合约,使用代理合约,B,单选
-125,intermediate,以下哪种智能合约开发趋势获得了更多关注？,跨链互操作性,中心化控制,单体架构,硬编码参数,A,单选
-126,intermediate,在Solidity中，以下哪种方法最适合实现合约版本控制？,使用版本变量,使用不同的合约名称,使用代理模式,使用事件记录版本,C,单选
-127,intermediate,以下哪种模式最适合实现合约状态验证？,使用修饰器,使用require语句,使用assert语句,使用try/catch,A,单选
-128,intermediate,在Vyper中，以下哪种方法最适合处理合约升级数据迁移？,使用事件记录旧数据,使用新合约读取旧合约,使用外部存储,使用代理合约保留存储布局,D,单选
-129,intermediate,以下哪种方法最适合在智能合约中实现复杂的访问控制？,使用简单的owner变量,使用角色基础访问控制,使用tx.origin,使用block.timestamp,B,单选
-130,intermediate,以下哪种智能合约优化技术被广泛采用？,使用短路评估,使用内联汇编,使用存储打包,以上都是,D,单选
-131,intermediate,在Solidity中，以下哪种方法最适合实现合约间的消息传递？,使用事件,使用回调函数,使用共享存储,使用全局变量,B,单选
-132,intermediate,以下哪种模式最适合实现合约批量操作？,使用循环,使用映射,使用多次交易,使用批处理函数,D,单选
-133,intermediate,在Vyper中，以下哪种方法最适合处理合约错误？,使用assert,try/except,使用raise,使用return,A,单选
-134,intermediate,以下哪种方法最适合在智能合约中实现复杂的计算？,链上计算,链下计算+链上验证,使用库合约,使用递归,B,单选
-135,intermediate,以下哪种智能合约安全实践被更多采用？,形式化验证,代码混淆,闭源开发,最小化测试,A,单选
-136,intermediate,在Solidity中，以下哪种方法最适合实现合约状态恢复？,使用try/catch,使用检查点模式,使用事件重放,使用全局变量,B,单选
-137,intermediate,以下哪种模式最适合实现合约多重签名？,使用映射跟踪签名,使用数组存储签名,使用事件记录签名,使用外部合约,A,单选
-138,intermediate,在Vyper中，以下哪种方法最适合处理合约状态锁定？,使用状态变量,使用修饰器,使用事件,使用外部调用,B,单选
-139,intermediate,以下哪种方法最适合在智能合约中实现复杂的权限管理？,使用简单的owner变量,使用角色基础访问控制,使用tx.origin,使用block.timestamp,B,单选
-140,intermediate,以下哪种智能合约开发框架引入了更高效的测试工具？,Truffle,Hardhat,Foundry,Brownie,C,单选
-141,intermediate,在Solidity中，以下哪种方法最适合实现合约状态迁移？,使用枚举,使用映射,使用事件,使用外部合约,A,单选
-142,intermediate,以下哪种模式最适合实现合约升级？,使用代理模式,使用工厂模式,使用单例模式,使用观察者模式,A,单选
-143,intermediate,以下哪些是智能合约中防止重入攻击的方法？,检查-效果-交互模式,使用ReentrancyGuard,使用tx.origin,使用函数互斥锁,"A, B, D",多选
-144,intermediate,以下哪些是Solidity 0.8.x版本的新特性？,内置的整数溢出检查,自定义错误,try/catch语句,用户定义的运算符,"A, B, D",多选
-145,intermediate,以下哪些是智能合约中实现可升级性的方法？,代理模式,数据分离模式,钻石模式,单例模式,"A, B, C",多选
-146,intermediate,以下哪些是Vyper的安全特性？,有界循环,无递归,无类继承,动态类型,"A, B, C",多选
-147,intermediate,以下哪些是智能合约中的Gas优化技术？,使用常量和不可变变量,使用短路评估,使用存储打包,增加注释,"A, B, C",多选
-148,intermediate,以下哪些是Solidity中的设计模式？,工厂模式,代理模式,检查-效果-交互模式,模型-视图-控制器模式,"A, B, C",多选
-149,intermediate,以下哪些是智能合约中的访问控制机制？,角色基础访问控制,所有者模式,多重签名,区块时间戳,"A, B, C",多选
-150,intermediate,以下哪些是Vyper中的内置安全函数？,assert_modifiable,safe_mul,ecrecover,create_forwarder_to,"A, C",多选
-151,intermediate,以下哪些是智能合约中的状态管理技术？,使用枚举定义状态,使用映射跟踪状态,使用事件记录状态变化,使用区块号,"A, B, C",多选
-152,intermediate,以下哪些是Solidity中的错误处理机制？,require,assert,revert,try/catch,"A, B, C",多选
-153,intermediate,以下哪些是智能合约中的时间管理方法？,使用block.timestamp,使用区块号,使用Date对象,使用时区,"A, B",多选
-154,intermediate,以下哪些是Vyper中的控制结构？,if,for,while,switch,"A, B",多选
-155,intermediate,以下哪些是智能合约中的数据存储优化技术？,使用映射而非数组,使用紧凑存储,使用事件存储历史数据,使用嵌套循环,"A, B, C",多选
-156,intermediate,以下哪些是Solidity中的库使用方式？,使用using for,直接调用库函数,继承库,导入库变量,"A, B",多选
-157,intermediate,以下哪些是智能合约中的安全审计工具？,Mythril,Slither,Echidna,Ganache ,"A, B, C",多选
-158,intermediate,以下哪些是智能合约开发的趋势？,跨链互操作性,形式化验证,Gas优化,中心化控制,"A, B, C",多选
-159,intermediate,以下哪些是Solidity中的特殊函数？,constructor,fallback,receive,main,"A, B, C",多选
-160,intermediate,以下哪些是智能合约中的测试方法？,单元测试,集成测试,模糊测试,物理测试,"A, B, C",多选
-161,advanced,在Solidity中，以下哪种操作码消耗的Gas最多？,SLOAD,CALL,SSTORE（0到非0）,CREATE,C,单选
-162,advanced,以下哪种智能合约形式化验证工具能够证明合约满足特定的数学属性？,Mythril,Certora Prover,Slither,Echidna,B,单选
-163,advanced,以下哪种技术可以在不修改合约代码的情况下修复已部署合约中的漏洞？,代理模式,紧急暂停,状态通道,形式化验证,B,单选
-164,advanced,以下哪种智能合约优化技术可以显著减少跨合约调用的Gas消耗？,使用multicall模式,使用委托调用,使用内联汇编,使用事件日志,A,单选
-165,advanced,在Solidity中，以下哪种存储模式最适合实现高效的大规模数据结构？,紧凑存储模式,分层存储模式,默克尔树存储,链式存储模式,C,单选
-166,advanced,以下哪种技术可以在智能合约中实现零知识证明验证？,zk-SNARK验证器,椭圆曲线签名,哈希链,布隆过滤器,A,单选
-167,advanced,以下哪种跨链智能合约标准获得了更广泛的采用？,IBC协议,CCIP标准,LayerZero消息传递,以上都有,D,单选
-168,advanced,在Vyper中，以下哪种技术最适合实现复杂的访问控制系统？,使用映射存储权限,使用装饰器,使用接口合约,使用事件日志,A,单选
-169,advanced,以下哪种设计模式最适合实现智能合约的可组合性？,模块化设计,单体设计,层次设计,中心化设计,A,单选
-170,advanced,以下哪种智能合约安全技术可以防止MEV攻击？,时间锁,提交-揭示模式,多重签名,形式化验证,B,单选
-171,advanced,在EVM中，以下哪种操作可能导致不确定的Gas消耗？,外部合约调用,状态变量读取,事件发射,纯计算,A,单选
-172,advanced,以下哪种技术可以在智能合约中实现高效的大规模排序？,链上冒泡排序,链上快速排序,链下排序+链上验证,使用映射代替排序,C,单选
-173,advanced,以下哪种智能合约设计模式被用于实现高效的状态通道？,签名验证模式,哈希时间锁定合约,多重签名钱包,代理合约,B,单选
-174,advanced,在Solidity中，以下哪种技术可以最有效地减少合约部署成本？,使用库合约,使用最小代理模式,使用工厂合约,使用接口,B,单选
-175,advanced,以下哪种技术可以在智能合约中实现高效的大规模数据验证？,默克尔证明,全量数据验证,循环验证,哈希比较,A,单选
-176,advanced,以下哪种智能合约架构模式被用于实现高效的跨链资产桥？,锁定-铸造模式,燃烧-铸造模式,原子交换模式,以上都有,D,单选
-177,advanced,在EVM中，以下哪种存储模式最适合实现高效的稀疏数组？,使用映射模拟,使用动态数组,使用链表,使用固定大小数组,A,单选
-178,advanced,以下哪种技术可以在智能合约中实现高效的批量操作？,使用循环,使用多次交易,使用calldata打包,使用事件,C,单选
-179,advanced,以下哪种智能合约优化技术被用于减少存储操作的Gas消耗？,使用事件代替存储,使用内存缓存,使用紧凑存储编码,以上都有,D,单选
-180,advanced,在Solidity中，以下哪种技术可以最有效地实现复杂的状态机？,使用枚举和映射,使用函数指针,使用委托调用,使用接口,A,单选
-181,advanced,以下哪种技术可以在智能合约中实现高效的权限管理？,使用位图表示权限,使用角色枚举,使用字符串比较,使用哈希表,A,单选
-182,advanced,以下哪种智能合约设计模式被用于实现高效的流动性聚合？,路由器模式,代理模式,工厂模式,观察者模式,A,单选
-183,advanced,在EVM中，以下哪种技术可以最有效地减少合约执行的Gas消耗？,使用内联汇编,使用库合约,使用接口,使用事件,A,单选
-184,advanced,以下哪种技术可以在智能合约中实现高效的大规模数据存储？,使用IPFS+链上哈希,使用链上存储,使用事件日志,使用外部合约,A,单选
-185,advanced,以下哪种智能合约安全技术被用于防止闪电贷攻击？,使用价格预言机,使用时间锁,使用多重签名,使用形式化验证,A,单选
-186,advanced,在Solidity中，以下哪种技术可以最有效地实现复杂的数学计算？,使用库合约,使用内联汇编,使用链下计算+链上验证,使用浮点数模拟,C,单选
-187,advanced,以下哪种技术可以在智能合约中实现高效的大规模数据查询？,使用索引事件,使用映射,使用数组,使用链表,A,单选
-188,advanced,以下哪种智能合约架构模式被用于实现高效的去中心化身份验证？,声明-验证模式,代理模式,工厂模式,观察者模式,A,单选
-189,advanced,以下哪些是智能合约中实现高效Gas优化的技术？,使用短路评估,使用存储打包,使用内联汇编,增加注释,"A, B, C",多选
-190,advanced,以下哪些是智能合约安全审计的关注点？,重入攻击,预言机操纵,跨链漏洞,用户界面,"A, B, C",多选
-191,advanced,以下哪些是智能合约中实现高效跨链通信的技术？,消息传递协议,哈希时间锁定合约,轻客户端验证,中心化桥接,"A, B, C",多选
-192,advanced,以下哪些是Solidity中的高级内存管理技术？,内联汇编内存操作,自定义内存分配器,垃圾回收,虚拟内存,"A, B",多选
-193,advanced,以下哪些是智能合约中实现高效状态管理的技术？,使用状态通道,使用检查点,使用事件日志,使用中心化数据库,"A, B, C",多选
-194,advanced,以下哪些是智能合约开发的前沿技术？,零知识证明集成,形式化验证,跨链互操作性,中心化控制,"A, B, C",多选
-195,advanced,以下哪些是智能合约中实现高效数据压缩的技术？,位打包,RLP编码,ZIP压缩,视频编码,"A, B",多选
-196,advanced,以下哪些是Solidity中的高级设计模式？,钻石模式,代理模式,工厂模式,模型-视图-控制器模式,"A, B, C",多选
-197,advanced,以下哪些是智能合约中实现高效访问控制的技术？,角色基础访问控制,位图权限,时间锁控制,物理访问控制,"A, B, C",多选
-198,advanced,以下哪些是智能合约优化的研究方向？,静态分析优化,动态执行优化,存储布局优化,用户界面优化,"A, B, C",多选
-199,advanced,以下哪些是智能合约中实现高效批处理的技术？,多调用聚合,批量数据处理,并行执行,分布式计算,"A, B",多选
-200,advanced,以下哪些是Solidity中的高级安全模式？,检查-效果-交互模式,拉取支付模式,限速器模式,客户端-服务器模式,"A, B, C",多选
+1,basic,Which variable type in Solidity is used to store Ether amounts?,uint,int,wei,ether,A,Single Choice
+2,basic,"What is the characteristic of the ""external"" function visibility modifier in Solidity?",Can only be called from within the contract,Can only be called from outside the contract,Can be called from both inside and outside the contract,Can only be called by inherited contracts,B,Single Choice
+3,basic,What is the main design philosophy of Vyper language compared to Solidity?,Higher performance,More extensive features,Simplicity and higher security,More complex syntax,C,Single Choice
+4,basic,Which of the following is not a data location in Solidity?,storage,memory,calldata,database,D,Single Choice
+5,basic,"What is the main purpose of the ""fallback function"" in smart contracts?",To handle Ether received by the contract,To handle contract errors,To revert transactions,To return contract status,A,Single Choice
+6,basic,What is the latest stable version of Solidity?,0.7.0,0.8.0,0.8.20,0.8.24,D,Single Choice
+7,basic,Which of the following keywords in Solidity is used for handling exceptions?,try/catch,if/else,require,return,C,Single Choice
+8,basic,Which feature is not supported by the Vyper language?,Loops,Inheritance,Conditional statements,Functions,B,Single Choice
+9,basic,What does ""Gas"" refer to in smart contracts?,The fuel for contract execution,The data stored in the contract,A security mechanism of the contract,The version number of the contract,A,Single Choice
+10,basic,Which of the following is not a basic data type in Solidity?,uint,bool,address,char,D,Single Choice
+11,basic,"In Solidity, what does ""msg.sender"" represent?",The contract creator,The current caller's address,The contract address,The transaction initiator,B,Single Choice
+12,basic,In Vyper, which keyword is used to define constants?,constant,constant,immutable,final,B,Single Choice
+13,basic,"What does ""ABI"" stand for in smart contracts?",Application Binary Interface,Advanced Blockchain Interface,Automatic Block Indexing,Address Binding Interface,A,Single Choice
+14,basic,Which is not a method for creating contracts in Solidity?,new keyword,Factory contract,Cloning a contract,import keyword,D,Single Choice
+15,basic,"What is the main purpose of ""mapping"" type in Solidity?",Storing key-value pairs,Mapping function calls,Connecting to external APIs,Converting data types,A,Single Choice
+16,basic,Which is not a characteristic of smart contracts?,Automatic execution,Immutability,Revocability,Decentralization,C,Single Choice
+17,basic,"In Solidity, what is the purpose of the ""view"" modifier?",Allows a function to modify state,Declares that a function does not modify state,Makes a function's visibility public,Allows a function to receive Ether,B,Single Choice
+18,basic,In Vyper, which feature is designed to improve security?,Unlimited loops,Recursive calls,Bounded loops,Dynamic inheritance,C,Single Choice
+19,basic,"What is the main purpose of ""events"" in smart contracts?",Triggering other contract functions,Recording logs on the blockchain,Handling exceptions,Controlling Gas consumption,B,Single Choice
+20,basic,Which of the following is not an access control modifier in Solidity?,public,private,internal,global,D,Single Choice
+21,basic,What is the latest stable version of Vyper?,0.3.0,0.3.7,0.4.0,1.0.0,B,Single Choice
+22,basic,"In Solidity, what is the purpose of the ""payable"" modifier?",Allows a function to receive Ether,Allows a function to pay for Gas,Allows a contract to transfer funds,Allows a function to modify state,A,Single Choice
+23,basic,Which of the following is not a smart contract deployment platform?,Ethereum,Binance Smart Chain,Bitcoin,Polkadot,C,Single Choice
+24,basic,"In Solidity, what is ""struct"" used for?",Defining function structure,Creating custom data types,Declaring contract structure,Organizing code blocks,B,Single Choice
+25,basic,In Vyper, which statement is used to check conditions and revert transactions if not satisfied?,if/else,assert,try/except,while,B,Single Choice
+26,basic,What is the characteristic of a ""constructor"" in smart contracts?,Can be called multiple times,Only executed once when the contract is deployed,Must be public,Cannot accept parameters,B,Single Choice
+27,basic,Which of the following is not an array operation in Solidity?,push,pop,length,sort,D,Single Choice
+28,basic,"What is a characteristic of ""library contracts"" in Solidity?",Can have state variables,Can inherit from other contracts,Cannot have state variables,Can receive Ether,C,Single Choice
+29,basic,Which of the following is not a security consideration for smart contracts?,Reentrancy attacks,Integer overflow,User interface,Access control,C,Single Choice
+30,basic,"In Solidity, what are ""modifiers"" primarily used for?",Modifying variable values,Changing function behavior,Declaring function visibility,Defining data types,B,Single Choice
+31,basic,Which of the following is not a built-in function in Vyper?,sha256,keccak256,ecrecover,hashmap,D,Single Choice
+32,basic,What is the main purpose of ""Gas optimization"" in smart contracts?,Improving contract execution speed,Reducing transaction fees,Increasing contract security,Simplifying contract code,B,Single Choice
+33,basic,Which of the following is not an error handling mechanism in Solidity?,require,assert,revert,catch,D,Single Choice
+34,basic,What inheritance feature does Solidity support?,Single inheritance,Multiple inheritance,Private inheritance,Dynamic inheritance,B,Single Choice
+35,basic,Which of the following is not a method for testing smart contracts?,Unit testing,Integration testing,Fuzzing testing,Physical testing,D,Single Choice
+36,basic,"In Solidity, what is ""enum"" used for?",Defining events,Creating user-defined types,Declaring function types,Specifying Gas limits,B,Single Choice
+37,basic,In Vyper, which feature is designed to prevent reentrancy attacks?,nonreentrant decorator,Static typing,Bounded loops,No inheritance,A,Single Choice
+38,basic,What does a ""revert"" operation cause in smart contracts?,Only reverting the current function,Reverting the entire transaction and returning remaining Gas,Deleting the contract,Pausing contract execution,B,Single Choice
+39,basic,Which of the following is not a method for calling between contracts in Solidity?,Direct call,Delegatecall,Low-level call,Remotecall,D,Single Choice
+40,basic,"What is a characteristic of ""interfaces"" in Solidity?",Can include implementations,Can have constructors,Can only declare functions,Can have state variables,C,Single Choice
+41,basic,Which of the following is not a deployment environment for smart contracts?,Mainnet,Testnet,Local development environment,Physical server,D,Single Choice
+42,basic,"In Solidity, what is the purpose of the ""using A for B"" syntax?",Attaching functions from A to type B,Replacing B with A,Converting B to A,Making A inherit from B,A,Single Choice
+43,basic,Which of the following is not a built-in data type in Vyper?,uint256,address,bytes32,float,D,Single Choice
+44,basic,What is the purpose of the ""selfdestruct"" function in smart contracts?,Pausing the contract,Deleting the contract and returning funds,Resetting contract state,Locking contract funds,B,Single Choice
+45,basic,Which of the following is not a method for creating contracts in Solidity?,new keyword,Clone proxy,Factory pattern,import statement,D,Single Choice
+46,basic,What is a characteristic of ""abstract contracts"" in Solidity?,Cannot be deployed,Cannot have state variables,Cannot have function implementations,Cannot be inherited,A,Single Choice
+47,basic,Which of the following is not a compilation tool for smart contracts?,solc,vyper,truffle,metamask,D,Single Choice
+48,basic,"In Solidity, what is the purpose of the ""pure"" modifier?",Allows a function to modify state,Declares that a function neither reads nor modifies state,Makes a function's visibility public,Allows a function to receive Ether,B,Single Choice
+49,basic,Which of the following is not a control structure in Vyper?,if,for,while,switch,D,Single Choice
+50,basic,What is the main purpose of ""indexed event parameters"" in smart contracts?,Improving event processing speed,Allowing filtering of events by parameter values,Reducing Gas consumption,Increasing event security,B,Single Choice
+51,basic,Which of the following is not a built-in global variable in Solidity?,msg.sender,block.timestamp,tx.origin,contract.balance,D,Single Choice
+52,basic,"In Solidity, what does ""function overloading"" refer to?",Functions with the same name but different parameters,Functions that can call themselves,Functions that can modify state,Functions that can receive Ether,A,Single Choice
+53,basic,Which of the following is not a way to interact with smart contracts?,Through wallets,Through DApps,Through other contracts,Through email,D,Single Choice
+54,basic,"In Solidity, what is the purpose of ""assembly"" blocks?",Writing low-level EVM opcodes,Assembling contract components,Creating contract interfaces,Defining contract structure,A,Single Choice
+55,basic,In Vyper, which of the following is a built-in variable for handling time?,now,timestamp,block.timestamp,current_time,C,Single Choice
+56,basic,What is the main purpose of the ""Proxy Pattern"" in smart contracts?,Hiding contract addresses,Implementing contract upgradeability,Reducing Gas consumption,Increasing contract security,B,Single Choice
+57,basic,Which of the following is not a method for storing arrays in Solidity?,Fixed-size arrays,Dynamic arrays,Mappings,Linked lists,D,Single Choice
+58,basic,"In Solidity, what is the keyword for inheritance?",extends,inherits,implements,is,D,Single Choice
+59,basic,Which of the following is not a deployment tool for smart contracts?,Remix,Hardhat,Truffle,Metamask,D,Single Choice
+60,basic,"In Solidity, what is a characteristic of the ""receive"" function?",Can have parameters,Cannot have parameters and must be external payable,Must return values,Can be defined multiple times,B,Single Choice
+61,basic,Which of the following is not a built-in cryptographic function in Vyper?,sha256,keccak256,ripemd160,md5,D,Single Choice
+62,basic,What is the main purpose of the ""Timelock"" mechanism in smart contracts?,Delaying contract execution,Limiting contract call frequency,Setting contract expiration time,Synchronizing contract time,A,Single Choice
+63,basic,Which of the following is not an error handling approach in Solidity?,"require(condition, ""message"")",assert(condition),"revert(""message"")",try/catch,D,Single Choice
+64,basic,"In Solidity, what is a ""Function Selector""?",The function name,The first 4 bytes of the function signature,The function parameter list,The function return type,B,Single Choice
+65,basic,Which of the following is not an auditing tool for smart contracts?,Mythril,Slither,Echidna,Ganache,D,Single Choice
+66,basic,"In Solidity, what is a characteristic of ""immutable"" variables?",Can be modified at any time,Can only be assigned in the constructor,Cannot be initialized,Must be public,B,Single Choice
+67,basic,Which of the following is not a valid function visibility in Vyper?,public,private,external,protected,D,Single Choice
+68,basic,What does ""ERC"" stand for in smart contracts?,Ethereum Request for Comments,Ethereum Record Collection,Ethereum Resource Control,Ethereum Blockchain Rules,A,Single Choice
+69,basic,Which of the following is not a valid data location in Solidity?,storage,memory,calldata,stack,D,Single Choice
+70,basic,"In Solidity, what rule does inheritance order follow?",Left to right,Right to left,Alphabetical order,By contract size,B,Single Choice
+71,basic,Which of these are basic data types in Solidity?,uint,bool,float,address,"A, B, D",Multiple Choice
+72,basic,Which of these are design features of Vyper?,Bounded loops,No recursion,Multiple inheritance,No class inheritance,"A, B, D",Multiple Choice
+73,basic,Which of these are characteristics of smart contracts?,Automatic execution,Immutability,Revocability,Decentralization,"A, B, D",Multiple Choice
+74,basic,Which of these are function visibility modifiers in Solidity?,public,private,external,global,"A, B, C",Multiple Choice
+75,basic,Which of these are security vulnerabilities in smart contracts?,Reentrancy attacks,Integer overflow,User interface,Access control,"A, B, D",Multiple Choice
+76,basic,Which of these are state mutability modifiers in Solidity?,view,pure,constant,payable,"A, B, D",Multiple Choice
+77,basic,Which of these are built-in functions in Vyper?,sha256,keccak256,ecrecover,hashmap,"A, B, C",Multiple Choice
+78,basic,Which of these are deployment environments for smart contracts?,Mainnet,Testnet,Local development environment,Physical server,"A, B, C",Multiple Choice
+79,basic,Which of these are error handling mechanisms in Solidity?,require,assert,revert,try/catch,"A, B, C",Multiple Choice
+80,basic,Which of these are compilation tools for smart contracts?,solc,vyper,Truffle,Metamask,"A, B",Multiple Choice
+81,basic,Which of these are global variables in Solidity?,msg.sender,block.timestamp,tx.origin,contract.balance,"A, B, C",Multiple Choice
+82,basic,Which of these are control structures in Vyper?,if,for,while,switch,"A, B",Multiple Choice
+83,basic,Which of these are ways to interact with smart contracts?,Through wallets,Through DApps,Through other contracts,Through email,"A, B, C",Multiple Choice
+84,basic,Which of these are data locations in Solidity?,storage,memory,calldata,database,"A, B, C",Multiple Choice
+85,basic,Which of these are auditing tools for smart contracts?,Mythril,Slither,Echidna,Ganache,"A, B, C",Multiple Choice
+86,basic,Which of these are contract types in Solidity?,Regular contracts,Abstract contracts,Interfaces,Classes,"A, B, C",Multiple Choice
+87,basic,Which of these are data types in Vyper?,uint256,address,bytes32,float,"A, B, C",Multiple Choice
+88,basic,Which of these are deployment tools for smart contracts?,Remix,Hardhat,Truffle,Metamask,"A, B, C",Multiple Choice
+89,basic,Which of these are special functions in Solidity?,constructor,fallback,receive,main,"A, B",Multiple Choice
+90,basic,Which of these are trends in smart contract development?,Upgradeable contracts,Cross-chain interoperability,Gas optimization,Centralized control,"A, B, D",Multiple Choice
+91,basic,Which of these are reference types in Solidity?,Arrays,Structs,Mappings,Integers,"A, B, C",Multiple Choice
+92,basic,Which of these are built-in constants in Vyper?,ZERO_ADDRESS,MAX_UINT256,PI,INFINITY,"A, B",Multiple Choice
+93,basic,Which of these are methods for testing smart contracts?,Unit testing,Integration testing,Fuzzing testing,Physical testing,"A, B, C",Multiple Choice
+94,basic,Which of these are methods for calling between contracts in Solidity?,Direct calls,Delegatecall,Low-level calls,remotecall,"A, B, C",Multiple Choice
+95,basic,Which of these are Gas optimization techniques for smart contracts?,Using short-circuit evaluation,Reducing storage operations,Using library contracts,Adding comments,"A, B, C",Multiple Choice
+96,basic,Which of these are event features in Solidity?,Can have indexed parameters,Stored on the blockchain,Can be read by contracts internally,Can be modified,"A, B",Multiple Choice
+97,basic,Which of these are decorators in Vyper?,@public,@private,@nonreentrant,@override,"A, B, C",Multiple Choice
+98,basic,Which of these are design patterns for smart contracts?,Factory pattern,Proxy pattern,Checks-Effects-Interactions pattern,Model-View-Controller pattern,"A, B, C",Multiple Choice
+99,basic,Which of these are built-in cryptographic functions in Solidity?,keccak256,sha256,ripemd160,md5,"A, B, C",Multiple Choice
+100,basic,Which of these are development frameworks for smart contracts?,Hardhat,Truffle,Foundry,React,"A, B, C",Multiple Choice
+101,intermediate,In Solidity 0.8.x, which integer operation will cause contract execution to fail?,Integer overflow,Integer division by zero,Integer modulo,Integer multiplication,A,Single Choice
+102,intermediate,"What is ""user-defined operator overloading"" in Solidity primarily used for?",Simplifying mathematical library implementation,Enhancing contract security,Reducing Gas consumption,Improving contract readability,A,Single Choice
+103,intermediate,Which pattern is most suitable for implementing upgradeable smart contracts?,Factory pattern,Proxy pattern,Singleton pattern,Observer pattern,B,Single Choice
+104,intermediate,In Vyper, which feature is designed to prevent reentrancy attacks?,@nonreentrant decorator,Static type system,No recursive calls,Bounded loops,A,Single Choice
+105,intermediate,Which method is most suitable for generating random numbers in smart contracts?,block.timestamp,"keccak256(abi.encodePacked(block.difficulty, block.timestamp))",Off-chain random number generator + on-chain verification,Math.random(),C,Single Choice
+106,intermediate,In the EIP-1559 transaction model, which part of the fee is burned?,Base Fee,Tip,Gas Limit,Max Fee,A,Single Choice
+107,intermediate,Which inter-contract call method changes the value of msg.sender?,Direct call,call,delegatecall,staticcall,A,Single Choice
+108,intermediate,Which method is most suitable for handling large number operations in Solidity?,Using uint256,Using library contracts,Using floating point numbers,Using string representation,B,Single Choice
+109,intermediate,Which smart contract development framework introduced ""Fuzzing"" as a standard feature?,Truffle,Hardhat,Foundry,Brownie,C,Single Choice
+110,intermediate,Which pattern is most suitable for implementing access control in contracts?,Inheriting from OpenZeppelin's AccessControl,Using a simple owner variable,Using tx.origin checks,Using block.timestamp restrictions,A,Single Choice
+111,intermediate,Which data structure in Solidity is most suitable for implementing a mapping to multiple values?,Nested mappings,Array of structs,Multidimensional arrays,Linked lists,A,Single Choice
+112,intermediate,Which method is most suitable for implementing pause functionality in smart contracts?,Using selfdestruct,Implementing the Pausable interface,Using require(block.timestamp > pauseTime),Using try/catch to capture all calls,B,Single Choice
+113,intermediate,In Vyper, which method is most suitable for handling contract upgrades?,Using proxy contracts,Using factory contracts,Using inheritance,Using @external decorator,A,Single Choice
+114,intermediate,Which method is most suitable for storing large amounts of data in smart contracts?,Using mappings,Using arrays,Using event logs,Using off-chain storage + on-chain hashes,D,Single Choice
+115,intermediate,Which smart contract optimization technique can significantly reduce Gas consumption?,Using assembly for low-level operations,Adding more comments,Using more require statements,Using more events,A,Single Choice
+116,intermediate,Which method in Solidity is most suitable for implementing batch transfers?,Using loops to call transfer,Using multisignatures,Using batch processing functions,Using delegatecall,C,Single Choice
+117,intermediate,Which pattern is most suitable for implementing contract factories?,Singleton pattern,Factory pattern,Proxy pattern,Observer pattern,B,Single Choice
+118,intermediate,In Vyper, which method is most suitable for handling large structured data?,Using struct,Using multiple mappings,Using nested mappings,Using arrays,C,Single Choice
+119,intermediate,Which method is most suitable for implementing time-locking functionality in smart contracts?,Using block.timestamp,Using block numbers,Using external oracles,Using Gas limits,A,Single Choice
+120,intermediate,Which smart contract security tool can detect reentrancy vulnerabilities?,Mythril,Slither,Echidna,All of the above,D,Single Choice
+121,intermediate,In Solidity, which method is most suitable for implementing secure communication between contracts?,Using events,Using interfaces,Using libraries,Using inheritance,B,Single Choice
+122,intermediate,Which pattern is most suitable for implementing permission management in contracts?,Role-based access control,Owner pattern,Timelock pattern,Multisignature,A,Single Choice
+123,intermediate,In Vyper, which method is most suitable for handling contract state transitions?,Using state enumerations,Using mappings to track states,Using events to record state changes,Using external contracts,A,Single Choice
+124,intermediate,Which method is most suitable for implementing complex business logic in smart contracts?,Using a single large contract,Using multiple smaller contracts,Using library contracts,Using proxy contracts,B,Single Choice
+125,intermediate,Which smart contract development trend has gained more attention?,Cross-chain interoperability,Centralized control,Monolithic architecture,Hardcoded parameters,A,Single Choice
+126,intermediate,In Solidity, which method is most suitable for implementing contract version control?,Using version variables,Using different contract names,Using the proxy pattern,Using events to record versions,C,Single Choice
+127,intermediate,Which pattern is most suitable for implementing contract state validation?,Using modifiers,Using require statements,Using assert statements,Using try/catch,A,Single Choice
+128,intermediate,In Vyper, which method is most suitable for handling contract upgrade data migration?,Using events to record old data,Using new contracts to read from old contracts,Using external storage,Using proxy contracts to preserve storage layout,D,Single Choice
+129,intermediate,Which method is most suitable for implementing complex access control in smart contracts?,Using a simple owner variable,Using role-based access control,Using tx.origin,Using block.timestamp,B,Single Choice
+130,intermediate,Which smart contract optimization technique is widely adopted?,Using short-circuit evaluation,Using inline assembly,Using storage packing,All of the above,D,Single Choice
+131,intermediate,In Solidity, which method is most suitable for implementing message passing between contracts?,Using events,Using callback functions,Using shared storage,Using global variables,B,Single Choice
+132,intermediate,Which pattern is most suitable for implementing batch operations in contracts?,Using loops,Using mappings,Using multiple transactions,Using batch processing functions,D,Single Choice
+133,intermediate,In Vyper, which method is most suitable for handling contract errors?,Using assert,try/except,Using raise,Using return,A,Single Choice
+134,intermediate,Which method is most suitable for implementing complex calculations in smart contracts?,On-chain calculation,Off-chain calculation + on-chain verification,Using library contracts,Using recursion,B,Single Choice
+135,intermediate,Which smart contract security practice is more widely adopted?,Formal verification,Code obfuscation,Closed-source development,Minimal testing,A,Single Choice
+136,intermediate,In Solidity, which method is most suitable for implementing contract state recovery?,Using try/catch,Using checkpoints pattern,Using event replay,Using global variables,B,Single Choice
+137,intermediate,Which pattern is most suitable for implementing multisignature in contracts?,Using mappings to track signatures,Using arrays to store signatures,Using events to record signatures,Using external contracts,A,Single Choice
+138,intermediate,In Vyper, which method is most suitable for handling contract state locking?,Using state variables,Using decorators,Using events,Using external calls,B,Single Choice
+139,intermediate,Which method is most suitable for implementing complex permission management in smart contracts?,Using a simple owner variable,Using role-based access control,Using tx.origin,Using block.timestamp,B,Single Choice
+140,intermediate,Which smart contract development framework introduced more efficient testing tools?,Truffle,Hardhat,Foundry,Brownie,C,Single Choice
+141,intermediate,In Solidity, which method is most suitable for implementing contract state transitions?,Using enumerations,Using mappings,Using events,Using external contracts,A,Single Choice
+142,intermediate,Which pattern is most suitable for implementing contract upgrades?,Proxy pattern,Factory pattern,Singleton pattern,Observer pattern,A,Single Choice
+143,intermediate,Which of these are methods for preventing reentrancy attacks in smart contracts?,Checks-Effects-Interactions pattern,Using ReentrancyGuard,Using tx.origin,Using mutual exclusion locks,"A, B, D",Multiple Choice
+144,intermediate,Which of these are new features in Solidity 0.8.x?,Built-in integer overflow checking,Custom errors,try/catch statements,User-defined operators,"A, B, D",Multiple Choice
+145,intermediate,Which of these are methods for implementing upgradeability in smart contracts?,Proxy pattern,Data separation pattern,Diamond pattern,Singleton pattern,"A, B, C",Multiple Choice
+146,intermediate,Which of these are security features of Vyper?,Bounded loops,No recursion,No class inheritance,Dynamic typing,"A, B, C",Multiple Choice
+147,intermediate,Which of these are Gas optimization techniques in smart contracts?,Using constants and immutables,Using short-circuit evaluation,Using storage packing,Adding comments,"A, B, C",Multiple Choice
+148,intermediate,Which of these are design patterns in Solidity?,Factory pattern,Proxy pattern,Checks-Effects-Interactions pattern,Model-View-Controller pattern,"A, B, C",Multiple Choice
+149,intermediate,Which of these are access control mechanisms in smart contracts?,Role-based access control,Owner pattern,Multisignature,Block timestamp,"A, B, C",Multiple Choice
+150,intermediate,Which of these are built-in security functions in Vyper?,assert_modifiable,safe_mul,ecrecover,create_forwarder_to,"A, C",Multiple Choice
+151,intermediate,Which of these are state management techniques in smart contracts?,Using enumerations to define states,Using mappings to track states,Using events to record state changes,Using block numbers,"A, B, C",Multiple Choice
+152,intermediate,Which of these are error handling mechanisms in Solidity?,require,assert,revert,try/catch,"A, B, C",Multiple Choice
+153,intermediate,Which of these are time management methods in smart contracts?,Using block.timestamp,Using block numbers,Using Date objects,Using timezones,"A, B",Multiple Choice
+154,intermediate,Which of these are control structures in Vyper?,if,for,while,switch,"A, B",Multiple Choice
+155,intermediate,Which of these are data storage optimization techniques in smart contracts?,Using mappings instead of arrays,Using compact storage,Using events to store historical data,Using nested loops,"A, B, C",Multiple Choice
+156,intermediate,Which of these are ways to use libraries in Solidity?,Using using for,Directly calling library functions,Inheriting libraries,Importing library variables,"A, B",Multiple Choice
+157,intermediate,Which of these are security auditing tools for smart contracts?,Mythril,Slither,Echidna,Ganache,"A, B, C",Multiple Choice
+158,intermediate,Which of these are trends in smart contract development?,Cross-chain interoperability,Formal verification,Gas optimization,Centralized control,"A, B, C",Multiple Choice
+159,intermediate,Which of these are special functions in Solidity?,constructor,fallback,receive,main,"A, B, C",Multiple Choice
+160,intermediate,Which of these are methods for testing smart contracts?,Unit testing,Integration testing,Fuzzing testing,Physical testing,"A, B, C",Multiple Choice
+161,advanced,In Solidity, which opcode consumes the most Gas?,SLOAD,CALL,SSTORE (from 0 to non-0),CREATE,C,Single Choice
+162,advanced,Which smart contract formal verification tool can prove that contracts satisfy specific mathematical properties?,Mythril,Certora Prover,Slither,Echidna,B,Single Choice
+163,advanced,Which technique can fix vulnerabilities in deployed contracts without modifying the contract code?,Proxy pattern,Emergency pause,State channels,Formal verification,B,Single Choice
+164,advanced,Which smart contract optimization technique can significantly reduce Gas consumption for cross-contract calls?,Using multicall pattern,Using delegatecall,Using inline assembly,Using event logs,A,Single Choice
+165,advanced,In Solidity, which storage pattern is most suitable for implementing efficient large-scale data structures?,Compact storage pattern,Layered storage pattern,Merkle tree storage,Chained storage pattern,C,Single Choice
+166,advanced,Which technique can implement zero-knowledge proof verification in smart contracts?,zk-SNARK verifier,Elliptic curve signature,Hash chain,Bloom filter,A,Single Choice
+167,advanced,Which cross-chain smart contract standard has gained wider adoption?,IBC protocol,CCIP standard,LayerZero messaging,All of the above,D,Single Choice
+168,advanced,In Vyper, which technique is most suitable for implementing complex access control systems?,Using mappings to store permissions,Using decorators,Using interface contracts,Using event logs,A,Single Choice
+169,advanced,Which design pattern is most suitable for implementing smart contract composability?,Modular design,Monolithic design,Hierarchical design,Centralized design,A,Single Choice
+170,advanced,Which smart contract security technique can prevent MEV attacks?,Timelocks,Commit-reveal pattern,Multisignature,Formal verification,B,Single Choice
+171,advanced,In the EVM, which operation may lead to unpredictable Gas consumption?,External contract calls,State variable reads,Event emissions,Pure computation,A,Single Choice
+172,advanced,Which technique is most suitable for implementing efficient large-scale sorting in smart contracts?,On-chain bubble sort,On-chain quicksort,Off-chain sorting + on-chain verification,Using mappings instead of sorting,C,Single Choice
+173,advanced,Which smart contract design pattern is used for implementing efficient state channels?,Signature verification pattern,Hash timelock contracts,Multisignature wallets,Proxy contracts,B,Single Choice
+174,advanced,In Solidity, which technique can most effectively reduce contract deployment costs?,Using library contracts,Using minimal proxy pattern,Using factory contracts,Using interfaces,B,Single Choice
+175,advanced,Which technique is most suitable for implementing efficient large-scale data verification in smart contracts?,Merkle proofs,Full data verification,Loop verification,Hash comparison,A,Single Choice
+176,advanced,Which smart contract architecture pattern is used for implementing efficient cross-chain asset bridges?,Lock-and-mint pattern,Burn-and-mint pattern,Atomic swap pattern,All of the above,D,Single Choice
+177,advanced,In the EVM, which storage pattern is most suitable for implementing efficient sparse arrays?,Using mappings as simulation,Using dynamic arrays,Using linked lists,Using fixed-size arrays,A,Single Choice
+178,advanced,Which technique is most suitable for implementing efficient batch operations in smart contracts?,Using loops,Using multiple transactions,Using calldata packing,Using events,C,Single Choice
+179,advanced,Which smart contract optimization technique is used to reduce Gas consumption for storage operations?,Using events instead of storage,Using memory caching,Using compact storage encoding,All of the above,D,Single Choice
+180,advanced,In Solidity, which technique can most effectively implement complex state machines?,Using enumerations and mappings,Using function pointers,Using delegatecall,Using interfaces,A,Single Choice
+181,advanced,Which technique is most suitable for implementing efficient permission management in smart contracts?,Using bitmaps to represent permissions,Using role enumerations,Using string comparisons,Using hash tables,A,Single Choice
+182,advanced,Which smart contract design pattern is used for implementing efficient liquidity aggregation?,Router pattern,Proxy pattern,Factory pattern,Observer pattern,A,Single Choice
+183,advanced,In the EVM, which technique can most effectively reduce Gas consumption for contract execution?,Using inline assembly,Using library contracts,Using interfaces,Using events,A,Single Choice
+184,advanced,Which technique is most suitable for implementing efficient large-scale data storage in smart contracts?,Using IPFS + on-chain hashes,Using on-chain storage,Using event logs,Using external contracts,A,Single Choice
+185,advanced,Which smart contract security technique is used to prevent flash loan attacks?,Using price oracles,Using timelocks,Using multisignature,Using formal verification,A,Single Choice
+186,advanced,In Solidity, which technique can most effectively implement complex mathematical calculations?,Using library contracts,Using inline assembly,Using off-chain calculation + on-chain verification,Using floating point simulation,C,Single Choice
+187,advanced,Which technique is most suitable for implementing efficient large-scale data queries in smart contracts?,Using indexed events,Using mappings,Using arrays,Using linked lists,A,Single Choice
+188,advanced,Which smart contract architecture pattern is used for implementing efficient decentralized identity verification?,Claim-verify pattern,Proxy pattern,Factory pattern,Observer pattern,A,Single Choice
+189,advanced,Which of these are techniques for implementing efficient Gas optimization in smart contracts?,Using short-circuit evaluation,Using storage packing,Using inline assembly,Adding comments,"A, B, C",Multiple Choice
+190,advanced,Which of these are focus areas for smart contract security audits?,Reentrancy attacks,Oracle manipulation,Cross-chain vulnerabilities,User interface,"A, B, C",Multiple Choice
+191,advanced,Which of these are techniques for implementing efficient cross-chain communication in smart contracts?,Messaging protocols,Hash timelock contracts,Light client verification,Centralized bridges,"A, B, C",Multiple Choice
+192,advanced,Which of these are advanced memory management techniques in Solidity?,Inline assembly memory operations,Custom memory allocators,Garbage collection,Virtual memory,"A, B",Multiple Choice
+193,advanced,Which of these are techniques for implementing efficient state management in smart contracts?,Using state channels,Using checkpoints,Using event logs,Using centralized databases,"A, B, C",Multiple Choice
+194,advanced,Which of these are cutting-edge technologies in smart contract development?,Zero-knowledge proof integration,Formal verification,Cross-chain interoperability,Centralized control,"A, B, C",Multiple Choice
+195,advanced,Which of these are techniques for implementing efficient data compression in smart contracts?,Bit packing,RLP encoding,ZIP compression,Video encoding,"A, B",Multiple Choice
+196,advanced,Which of these are advanced design patterns in Solidity?,Diamond pattern,Proxy pattern,Factory pattern,Model-View-Controller pattern,"A, B, C",Multiple Choice
+197,advanced,Which of these are techniques for implementing efficient access control in smart contracts?,Role-based access control,Bitmap permissions,Timelock control,Physical access control,"A, B, C",Multiple Choice
+198,advanced,Which of these are research directions for smart contract optimization?,Static analysis optimization,Dynamic execution optimization,Storage layout optimization,User interface optimization,"A, B, C",Multiple Choice
+199,advanced,Which of these are techniques for implementing efficient batch processing in smart contracts?,Multicall aggregation,Batch data processing,Parallel execution,Distributed computing,"A, B",Multiple Choice
+200,advanced,Which of these are advanced security patterns in Solidity?,Checks-Effects-Interactions pattern,Pull payment pattern,Rate limiter pattern,Client-server pattern,"A, B, C",Multiple Choice 
