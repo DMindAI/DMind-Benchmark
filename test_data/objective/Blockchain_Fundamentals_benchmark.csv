@@ -1,201 +1,201 @@
 No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
-1,基础,比特币网络中，区块的平均生成时间约为多少？,1分钟,10分钟,30分钟,1小时,B,No
-2,基础,以下哪项不是区块链的核心特性？,去中心化,不可篡改,中央监管,透明性,C,No
-3,基础,哪种共识机制在能源效率方面受到更多关注？,工作量证明(PoW),权益证明(PoS),容量证明(PoC),重要性证明(PoI),B,No
-4,基础,以下哪种哈希算法被比特币使用？,MD5,SHA-1,SHA-256,SHA-512,C,No
-5,基础,区块链中的'双花问题'指的是什么？,同一笔加密货币被花费两次,交易费用被重复收取,矿工获得双倍奖励,两个区块同时被挖出,A,No
-6,基础,以下哪项不是比特币白皮书的作者？,中本聪,维塔利克·布特林,尼克·萨博,哈尔·芬尼,B,No
-7,基础,区块链的'分叉'是指什么？,区块链分裂成两条或多条链,交易被拒绝,节点断开连接,挖矿难度增加,A,No
-8,基础,2024年初，美国批准的比特币ETF数量是多少？,5个,8个,11个,15个,C,No
-9,基础,以下哪种技术不是为了解决区块链可扩展性问题而设计的？,分片(Sharding),侧链(Sidechains),闪电网络(Lightning Network),零知识证明(Zero-Knowledge Proofs),D,No
-10,基础,区块链中的'51%攻击'是指什么？,51%的用户账户被黑客攻击,控制超过51%算力的实体可以操控区块链,51%的节点遭受DDoS攻击,区块链51%的代码被修改,B,No
-11,基础,以下哪个不是区块链的应用领域？,供应链管理,数字身份,中央银行系统,投票系统,C,No
-12,基础,比特币的总供应量上限是多少？,1000万,2100万,5000万,无上限,B,No
-13,基础,区块链中的'Gas'主要用于什么？,为矿工提供能源,计算交易费用,测量区块大小,评估网络拥堵程度,B,No
-14,基础,以下哪项不是区块链的隐私保护技术？,环签名,零知识证明,混币技术,公钥加密,D,No
-15,基础,比特币网络中，挖矿奖励大约每多少个区块减半一次？,"10,000个区块","100,000个区块","210,000个区块","1,000,000个区块",C,No
-16,基础,以下哪个不是区块链的层次结构？,Layer 0,Layer 1,Layer 2,Layer 4,D,No
-17,基础,当下哪种区块链架构设计受到更多关注？,单体式架构,模块化架构,分层式架构,微服务架构,B,No
-18,基础,区块链中的'创世区块'是指什么？,最新的区块,包含最多交易的区块,链中的第一个区块,由创始人手动创建的区块,C,No
-19,基础,以下哪项不是区块链的共识机制？,工作量证明(PoW),权益证明(PoS),委托权益证明(DPoS),工作量授权(PoA),D,No
-20,基础,区块链中的'节点'指的是什么？,区块链网络中的参与计算机,区块之间的连接点,交易中的接收方,智能合约中的函数,A,No
-21,基础,以下哪项不是比特币的特性？,去中心化,有限供应,可编程性,点对点交易,C,No
-22,基础,区块链中的'冷存储'是指什么？,将加密货币存储在不连接互联网的设备上,将区块链数据存储在低温环境中,长期不使用的钱包地址,被冻结的资产,A,No
-23,基础,以下哪个不是区块链的数据结构？,哈希表,二叉树,默克尔树,链表,B,No
-24,基础,区块链中的'矿工'主要负责什么工作？,创建新的加密货币,验证交易并将其添加到区块链中,开发区块链应用,监管区块链网络,B,No
-25,基础,以下哪项不是区块链面临的挑战？,可扩展性,能源消耗,中心化控制,用户隐私,C,No
-26,基础,区块链中的'公钥'主要用于什么？,签署交易,接收资金,解密消息,验证身份,B,No
-27,基础,以下哪项不是区块链的类型？,公有链,私有链,联盟链,中央链,D,No
-28,基础,区块链中的'非对称加密'是指什么？,使用不同长度的密钥,使用公钥和私钥的加密系统,加密和解密过程不对称,不同节点使用不同的加密算法,B,No
-29,基础,以下哪项不是区块链的安全特性？,分布式账本,密码学哈希,中央验证,共识机制,C,No
-30,基础,区块链中的'钱包'主要存储什么？,加密货币本身,交易历史记录,私钥和公钥,智能合约代码,C,No
-31,基础,以下哪个不是区块链的主要组成部分？,区块,交易,服务器,共识机制,C,No
-32,基础,区块链中的'哈希函数'主要用于什么？,加密用户数据,生成固定长度的数据指纹,验证用户身份,计算交易费用,B,No
-33,基础,以下哪项不是区块链的特点？,可追溯性,可撤销性,分布式存储,共识机制,B,No
-34,基础,区块链中的'分布式账本'是指什么？,多个中心化服务器存储的账本,由多个参与者共同维护的账本副本,按地理位置分布的账本,不同类型交易的多个账本,B,No
-35,基础,以下哪项不是区块链的应用？,加密货币,智能合约,中央银行数字货币(CBDC),传统银行系统,D,No
-36,基础,区块链中的'挖矿难度'是指什么？,找到新区块所需的计算复杂度,加入挖矿池的门槛,购买挖矿设备的成本,学习挖矿技术的难度,A,No
-37,基础,以下哪项不是区块链的共识算法？,工作量证明(PoW),权益证明(PoS),拜占庭容错(BFT),随机访问存储(RAM),D,No
-38,基础,区块链中的'区块头'包含什么信息？,所有交易的详细信息,区块的元数据，如时间戳和前一区块的哈希值,矿工的个人信息,网络参与者的列表,B,No
-39,基础,以下哪项不是区块链的扩展解决方案？,分片,侧链,状态通道,中心化处理,D,No
-40,基础,区块链中的'默克尔树'主要用于什么？,组织网络节点,高效验证交易,管理用户权限,计算挖矿奖励,B,No
-41,基础,以下哪项不是区块链的隐私保护机制？,环签名,机密交易,零知识证明,公开广播,D,No
-42,基础,区块链中的'分叉'可以分为哪两种主要类型？,硬分叉和软分叉,左分叉和右分叉,上分叉和下分叉,主分叉和副分叉,A,No
-43,基础,以下哪项不是区块链的互操作性解决方案？,跨链技术,原子交换,中心化交易所,区块链桥,C,No
-44,基础,区块链中的'确认'是指什么？,交易被包含在区块中并添加到区块链,用户验证交易细节,交易被矿工选中,接收方确认收到资金,A,No
-45,基础,以下哪项不是区块链的可扩展性指标？,交易吞吐量(TPS),区块大小,确认时间,矿工数量,D,No
-46,基础,区块链中的'权益证明(PoS)'主要基于什么原则？,计算能力,持有的代币数量,网络连接速度,存储容量,B,No
-47,基础,以下哪项不是区块链的Layer 2解决方案？,状态通道,侧链,Rollups,分片,D,No
-48,基础,区块链中的'闪电网络'主要解决什么问题？,交易速度和可扩展性,挖矿能耗,隐私保护,跨链交易,A,No
-49,基础,以下哪项不是区块链的数据存储方式？,链上存储,链下存储,IPFS存储,中央服务器存储,D,No
-50,基础,区块链中的'去中心化自治组织(DAO)'是指什么？,由智能合约管理的组织,区块链开发团队,矿工联盟,区块链监管机构,A,No
-51,基础,以下哪项不是区块链的共识参与者？,矿工,验证者,监管者,全节点,C,No
-52,基础,区块链中的'轻节点'与'全节点'的主要区别是什么？,轻节点只存储区块头，全节点存储完整区块链,轻节点运行速度更快，全节点更稳定,轻节点只能发送交易，全节点可以验证交易,轻节点是移动设备，全节点是服务器,A,No
-53,基础,以下哪项不是区块链的治理模式？,链上治理,链下治理,代币投票,中央决策,D,No
-54,基础,区块链中的'工作量证明(PoW)'主要依赖于什么？,持有的代币数量,计算能力,网络连接质量,存储容量,B,No
-55,基础,以下哪项不是区块链的隐私币？,Monero,Zcash,Dash,Bitcoin,D,No
-56,基础,区块链中的'智能合约'最早由谁提出？,中本聪,维塔利克·布特林,尼克·萨博,查尔斯·霍斯金森,C,No
-57,基础,以下哪项不是区块链的数据类型？,交易数据,状态数据,区块数据,中心化数据,D,No
-58,基础,区块链中的'难度调整'主要目的是什么？,增加网络安全性,维持稳定的出块时间,减少能源消耗,提高交易吞吐量,B,No
-59,基础,以下哪项不是区块链的安全威胁？,51%攻击,双花攻击,女巫攻击,分布式存储,D,No
-60,基础,区块链中的'女巫攻击'是指什么？,创建多个假身份控制网络,攻击女性用户账户,利用系统漏洞窃取资金,破坏网络连接,A,No
-61,基础,以下哪项不是区块链的激励机制？,区块奖励,交易费用,质押奖励,中央补贴,D,No
-62,基础,区块链中的'零知识证明'主要用于什么？,提高交易速度,保护用户隐私,减少存储需求,增强网络连接,B,No
-63,基础,以下哪项不是区块链的跨链技术？,哈希时间锁定合约(HTLC),中继链,侧链,中心化交易所,D,No
-64,基础,区块链中的'拜占庭将军问题'主要描述什么？,军事战略,分布式系统中的共识挑战,网络攻击类型,加密算法漏洞,B,No
-65,基础,以下哪项不是区块链的数据结构？,区块,交易,表格,哈希指针,C,No
-66,基础,区块链中的'分片'技术主要解决什么问题？,数据存储,可扩展性,隐私保护,跨链交易,B,No
-67,基础,以下哪项不是区块链的共识机制设计目标？,安全性,去中心化,可扩展性,中心化控制,D,No
-68,基础,区块链中的'状态通道'主要用于什么？,提高交易吞吐量,增强隐私保护,实现跨链交易,存储大量数据,A,No
-69,基础,以下哪项不是区块链的身份验证方式？,公钥加密,数字签名,中央身份验证,多重签名,C,No
-70,基础,区块链中的'Rollups'主要解决什么问题？,可扩展性,隐私保护,跨链交易,数据存储,A,No
-71,基础,以下哪些是区块链的核心特性？,去中心化,不可篡改,中央控制,透明性,"A, B, D",Yes
-72,基础,以下哪些是常见的区块链共识机制？,工作量证明(PoW),权益证明(PoS),中央授权(CA),委托权益证明(DPoS); (额外选项: 随机分配(RA)),"A, B, D",Yes
-73,基础,以下哪些是区块链的应用领域？,供应链管理,数字身份,中央银行系统,去中心化金融,"A, B, D",Yes
-74,基础,以下哪些是区块链的Layer 2扩展解决方案？,分片,状态通道,新共识机制,Rollups,"B, D",Yes
-75,基础,以下哪些是区块链面临的主要挑战？,可扩展性,能源消耗,用户友好性,监管合规,"A, B, D",Yes
-76,基础,以下哪些是区块链的安全威胁？,51%攻击,分布式存储,女巫攻击,双花攻击,"A, C, D",Yes
-77,基础,以下哪些是区块链的数据结构？,关系表,默克尔树,哈希链,二维数组,"B, C",Yes
-78,基础,以下哪些是区块链的类型？,公有链,私有链,中央链,联盟链,"A, B, D",Yes
-79,基础,以下哪些是区块链的隐私保护技术？,零知识证明,环签名,公开广播,混币技术,"A, B, D",Yes
-80,基础,以下哪些是区块链的互操作性解决方案？,跨链技术,中心化交易所,区块链桥,统一标准,"A, C",Yes
-81,基础,以下哪些是区块链的可扩展性指标？,交易吞吐量(TPS),矿工数量,区块大小,确认时间,"A, C, D",Yes
-82,基础,以下哪些是区块链的治理模式？,链上治理,中央决策,代币投票,强制执行,"A, C",Yes
-83,基础,以下哪些是区块链的数据存储方式？,链上存储,中央服务器存储,链下存储,集中式数据库,"A, C",Yes
-84,基础,以下哪些是区块链的激励机制？,区块奖励,交易费用,中央补贴,质押奖励,"A, B, D",Yes
-85,基础,以下哪些是区块链的共识参与者？,矿工,验证者,监管者,全节点,"A, B, D",Yes
-86,基础,以下哪些是区块链的身份验证方式？,公钥加密,数字签名,中央身份验证,多重签名,"A, B, D",Yes
-87,基础,以下哪些是区块链的分叉类型？,硬分叉,左分叉,软分叉,上分叉,"A, C",Yes
-88,基础,以下哪些是区块链基础设施的发展趋势？,比特币L2扩展方案,再质押技术,中心化控制,模块化区块链,"A, B, D",Yes
-89,基础,以下哪些是区块链的节点类型？,全节点,中央节点,轻节点,主节点,"A, C",Yes
-90,基础,以下哪些是区块链的密码学基础？,哈希函数,非对称加密,中央认证,数字签名,"A, B, D",Yes
-91,基础,以下哪些是区块链的扩展解决方案？,分片,侧链,中心化处理,状态通道,"A, B, D",Yes
-92,基础,以下哪些是区块链的隐私币？,Bitcoin,Monero,Ethereum,Zcash,"B, D",Yes
-93,基础,以下哪些是区块链的数据类型？,交易数据,状态数据,中心化数据,区块数据,"A, B, D",Yes
-94,基础,以下哪些是区块链的共识机制设计目标？,安全性,去中心化,可扩展性,中心化控制,"A, B, C",Yes
-95,基础,以下哪些是区块链的跨链技术？,哈希时间锁定合约(HTLC),中心化交易所,中继链,集中式数据库,"A, C",Yes
-96,基础,以下哪些是区块链的主要组成部分？,区块,交易,服务器,共识机制,"A, B, D",Yes
-97,基础,以下哪些是区块链的特点？,可追溯性,可撤销性,分布式存储,共识机制,"A, C, D",Yes
-98,基础,以下哪些是区块链的应用？,加密货币,智能合约,去中心化应用(DApp),传统银行系统,"A, B, C",Yes
-99,基础,"以下哪些是区块链""区块头""包含的信息？",时间戳,前一区块的哈希值,矿工的个人信息,难度目标,"A, B, D",Yes
-100,基础,以下哪些是2024年获得风险投资关注的区块链基础设施领域？,比特币Layer 2,再质押技术,中心化交易所,开发者工具,"A, B, D",Yes
-101,中级,EigenLayer的再质押技术主要解决了什么问题？,区块链能源消耗,跨链互操作性,安全性与资本效率,交易隐私保护,C,No
-102,中级,以下哪种分片技术在2024年获得了更多关注？,状态分片,交易分片,网络分片,数据可用性分片,D,No
-103,中级,比特币闪电网络的BOLT（闪电网络基础技术）规范主要定义了什么？,比特币挖矿算法,闪电网络节点间通信协议,比特币核心客户端,区块链浏览器标准,B,No
-104,中级,2024年初，美国批准的比特币ETF使用了什么技术来提供底层资产透明度？,零知识证明,Chainlink Proof of Reserve,中心化审计,联邦预言机,B,No
-105,中级,以下哪种共识机制不使用投票机制来达成共识？,权益证明(PoS),委托权益证明(DPoS),工作量证明(PoW),实用拜占庭容错(PBFT),C,No
-106,中级,在区块链分片技术中，'跨分片通信'主要通过什么机制实现？,中继链,收据证明,中心化服务器,全网广播,B,No
-107,中级,以下哪项不是零知识证明的特性？,完备性,可靠性,零知识性,可逆性,D,No
-108,中级,哪种区块链数据可用性解决方案获得了更多关注？,Celestia,Filecoin,Arweave,Storj,A,No
-109,中级,以下哪种攻击不是针对区块链共识机制的？,长程攻击,自私挖矿,SQL注入,芬尼攻击,C,No
-110,中级,在区块链中，'确定性终局性'(Deterministic Finality)是指什么？,交易一旦被确认就不可能被回滚,区块链有确定的结束日期,交易处理有确定的时间限制,智能合约执行结果是确定的,A,No
-111,中级,以下哪种技术不是为了提高区块链隐私性而设计的？,环签名,机密交易,分片,零知识证明,C,No
-112,中级,在区块链网络中，'日蚀攻击'(Eclipse Attack)是指什么？,攻击者控制目标节点的所有连接,在特定时间段内发动的攻击,利用日食期间网络波动进行攻击,攻击区块链的时间戳机制,A,No
-113,中级,比特币网络中的'Ordinals协议'主要用于什么？,提高交易速度,在比特币上创建NFT和BRC-20代币,增强隐私保护,实现跨链交易,B,No
-114,中级,以下哪种技术不是区块链的Layer 2扩展解决方案？,Optimistic Rollups,ZK Rollups,状态通道,分片,D,No
-115,中级,在区块链中，'状态爆炸'问题主要指什么？,区块链状态数据无限增长导致存储压力,交易数量突然激增,节点数量快速增加,共识机制崩溃,A,No
-116,中级,以下哪种技术不是为了解决区块链'三难困境'(区块链不能同时实现去中心化、安全性和可扩展性)而提出的？,分片,Layer 2解决方案,侧链,工作量证明,D,No
-117,中级,在区块链中，'无许可'(Permissionless)和'有许可'(Permissioned)的主要区别是什么？,交易速度,参与网络的权限要求,使用的共识机制,支持的编程语言,B,No
-118,中级,哪种比特币Layer 2解决方案获得了更多风险投资关注？,Lightning Network,Liquid Network,RSK,Stacks,D,No
-119,中级,以下哪项不是区块链中'确定性随机性'(Deterministic Randomness)的来源？,区块哈希,VRF(可验证随机函数),真随机数生成器,多方计算,C,No
-120,中级,在区块链中，'轻客户端'(Light Client)主要依赖什么技术来验证交易？,完整区块下载,简化支付验证(SPV),中心化服务器,全节点代理,B,No
-121,中级,以下哪种技术不是为了提高区块链吞吐量而设计的？,分片,DAG(有向无环图),环签名,并行交易处理,C,No
-122,中级,在区块链中，'无状态客户端'(Stateless Client)的主要优势是什么？,不需要存储完整的状态数据,不需要网络连接,不需要验证交易,不需要密钥管理,A,No
-123,中级,哪种区块链互操作性解决方案获得了更多关注？,哈希时间锁定合约(HTLC),中继链,IBC(区块链间通信协议),原子交换,C,No
-124,中级,以下哪项不是区块链中'状态通道'(State Channels)的特性？,链下交易,即时终局性,全网广播,多次交互,C,No
-125,中级,在区块链中，'默克尔山脉'(Merkle Mountain Range)主要用于什么？,高效验证交易,提高挖矿效率,增强网络连接,实现跨链通信,A,No
-126,中级,以下哪种技术不是为了解决区块链数据存储问题而设计的？,状态裁剪,IPFS,链下存储,零知识证明,D,No
-127,中级,在区块链中，'时间戳服务器'的主要功能是什么？,同步网络时间,证明数据在特定时间点存在,调整区块生成速度,管理交易队列,B,No
-128,中级,哪种区块链隐私技术在监管合规性方面获得了更多关注？,环签名,机密交易,零知识证明,混币技术,C,No
-129,中级,以下哪项不是区块链中'拜占庭容错'(Byzantine Fault Tolerance)算法的变种？,PBFT(实用拜占庭容错),Tendermint,HotStuff,Nakamoto共识,D,No
-130,中级,在区块链中，'验证者轮换'(Validator Rotation)主要目的是什么？,提高交易处理速度,增强网络安全性,减少能源消耗,简化协议设计,B,No
-131,中级,以下哪种技术不是为了解决区块链'前端中心化'问题而设计的？,去中心化前端托管,IPFS托管,ENS(以太坊域名服务),分片,D,No
-132,中级,在区块链中，'预言机问题'(Oracle Problem)主要指什么？,如何将链外数据安全地引入区块链,如何预测区块链的未来发展,如何解决智能合约的漏洞,如何提高交易吞吐量,A,No
-133,中级,哪种区块链身份解决方案获得了更多关注？,中心化身份提供商,自主身份(Self-Sovereign Identity),联邦身份,生物识别,B,No
-134,中级,以下哪项不是区块链中'链下计算'(Off-chain Computation)的优势？,提高计算效率,减少链上存储需求,增强隐私保护,提高去中心化程度,D,No
-135,中级,在区块链中，'轻量级客户端'(Lightweight Client)与'全节点'(Full Node)的主要区别是什么？,轻量级客户端只验证区块头，全节点验证所有交易,轻量级客户端不能发送交易，全节点可以,轻量级客户端不存储数据，全节点存储,轻量级客户端只用于查询，全节点用于挖矿,A,No
-136,中级,以下哪种技术不是为了提高区块链共识效率而设计的？,委托权益证明(DPoS),实用拜占庭容错(PBFT),混合共识,零知识证明,D,No
-137,中级,在区块链中，'无需信任设置'(Trustless Setup)主要应用于哪种技术？,工作量证明,权益证明,零知识证明,分片,C,No
-138,中级,哪种区块链治理模式获得了更多关注？,链下治理,链上治理,混合治理,代表制治理,C,No
-139,中级,以下哪项不是区块链中'状态转换函数'(State Transition Function)的作用？,验证交易有效性,更新区块链状态,生成新区块,执行智能合约,C,No
-140,中级,在区块链中，'最长链规则'(Longest Chain Rule)主要用于解决什么问题？,交易排序,分叉选择,区块大小限制,交易费用计算,B,No
-141,中级,以下哪种技术不是为了解决区块链'初始分发'问题而设计的？,空投(Airdrop),初始代币发行(ICO),挖矿,分片,D,No
-142,中级,在区块链中，'难度调整算法'(Difficulty Adjustment Algorithm)的主要目的是什么？,控制新币发行速度,维持稳定的出块时间,防止51%攻击,减少能源消耗,B,No
-143,中级,以下哪些是区块链中'Layer 2'解决方案的特点？,在基础层之上构建,提高交易吞吐量,替代基础层共识机制,降低交易成本,"A, B, D",Yes
-144,中级,以下哪些是区块链基础设施当下的发展方向？,关注安全性和隐私性，包括GDPR合规,实物资产代币化,更加去中心化,使区块链功能更复杂,"A, B",Yes
-145,中级,以下哪些是区块链中'零知识证明'的应用场景？,隐私交易,身份验证,可扩展性解决方案(ZK Rollups),挖矿优化,"A, B, C",Yes
-146,中级,以下哪些是区块链中'分片'技术的挑战？,跨分片通信,数据可用性,单点故障,安全性降低,"A, B, D",Yes
-147,中级,以下哪些是区块链中'预言机'(Oracle)的类型？,中心化预言机,去中心化预言机,混合预言机,自动预言机,"A, B",Yes
-148,中级,以下哪些是区块链中'状态通道'(State Channels)的限制？,需要参与方在线,适用于特定参与者之间的频繁交互,不适合一次性交易,需要链上交易,"A, B, C",Yes
-149,中级,以下哪些是区块链中'权益证明'(PoS)的变种？,委托权益证明(DPoS),流动性权益证明(LPoS),工作量证明(PoW),纯权益证明(Pure PoS),"A, B, D",Yes
-150,中级,以下哪些是区块链中'拜占庭容错'(BFT)共识算法的特点？,高交易吞吐量,即时终局性,高能源消耗,需要已知验证者集合,"A, B, D",Yes
-151,中级,以下哪些是区块链中'轻客户端'(Light Client)的特点？,只下载区块头,使用简化支付验证(SPV),验证所有交易,存储完整状态,"A, B",Yes
-152,中级,以下哪些是区块链中'数据可用性'问题的解决方案？,数据可用性抽样,纠删码,中心化存储,Celestia,"A, B, D",Yes
-153,中级,以下哪些是区块链中'确定性终局性'(Deterministic Finality)的实现方式？,拜占庭容错(BFT)共识,检查点机制,工作量证明(PoW),最长链规则,"A, B",Yes
-154,中级,以下哪些是区块链中'跨链技术'的挑战？,原子性保证,安全性降低,中心化风险,标准化缺失,"A, B, C",Yes
-155,中级,以下哪些是区块链中'自主身份'(Self-Sovereign Identity)的特点？,用户控制个人数据,去中心化,可验证凭证,中心化管理,"A, B, C",Yes
-156,中级,以下哪些是区块链中'无状态客户端'(Stateless Client)的优势？,减少存储需求,快速同步,增强隐私,提高交易吞吐量,"A, B",Yes
-157,中级,以下哪些是区块链中'验证者轮换'(Validator Rotation)的好处？,防止长期控制,分散权力,增加参与机会,提高交易速度,"A, B, C",Yes
-158,中级,以下哪些是区块链中'默克尔树'(Merkle Tree)的应用？,交易验证,区块头构建,简化支付验证(SPV),挖矿优化,"A, B, C",Yes
-159,中级,以下哪些是区块链中'链下计算'(Off-chain Computation)的优势？,提高计算效率,降低成本,增强隐私,增加去中心化,"A, B, C",Yes
-160,中级,以下哪些是比特币网络的发展趋势？,Layer 2扩展方案,Ordinals协议,中心化控制,放弃工作量证明,"A, B",Yes
-161,高级,EigenLayer的再质押协议引入了哪种创新机制来解决验证者激励问题？,双层质押结构,动态惩罚机制,信誉评分系统,自动复合奖励,A,No
-162,高级,在模块化区块链架构中，以下哪个组件负责确保数据可用性而不处理执行？,执行层,共识层,数据可用性层,结算层,C,No
-163,高级,2024年初，Celestia作为数据可用性层的创新在于引入了什么技术？,零知识证明,数据可用性抽样,分片执行,状态通道,B,No
-164,高级,以下哪种攻击利用了区块链网络的传播延迟来获取不公平优势？,时间戳操纵,前置运行攻击,重放攻击,日蚀攻击,B,No
-165,高级,在零知识证明系统中，'可信设置'(Trusted Setup)的主要风险是什么？,计算复杂度过高,如果设置参数泄露，系统安全性会被破坏,验证过程变得不透明,需要中心化服务器,B,No
-166,高级,比特币网络中的'客户端多样性'问题主要关注什么？,用户界面的多样化,不同实现的节点软件分布,挖矿硬件的多样性,交易类型的多样性,B,No
-167,高级,以下哪种共识机制最容易受到'Nothing at Stake'问题的影响？,工作量证明(PoW),纯权益证明(Pure PoS),委托权益证明(DPoS),实用拜占庭容错(PBFT),B,No
-168,高级,在区块链网络中，'自适应难度'(Adaptive Difficulty)机制主要解决什么问题？,网络分区后的重新同步,算力波动导致的出块时间不稳定,验证者数量变化,交易费用市场,B,No
-169,高级,哪种区块链互操作性方案通过使用零知识证明实现了更高效的跨链验证？,Cosmos IBC,Polkadot XCMP,zkBridge,Chainlink CCIP,C,No
-170,高级,在区块链治理中，'捕获抵抗'(Capture Resistance)主要指什么？,防止51%攻击,防止特定利益集团控制决策过程,防止交易回滚,防止数据泄露,B,No
-171,高级,以下哪种技术最适合解决区块链中的'状态爆炸'问题？,分片,状态租用,链下计算,更大的区块,B,No
-172,高级,比特币网络中的'Taproot'升级主要改进了什么？,交易吞吐量,隐私性和智能合约功能,挖矿算法,网络安全性,B,No
-173,高级,在区块链中，'确定性钱包'(Deterministic Wallet)的主要创新是什么？,从单一种子生成多个密钥对,提高交易速度,增强隐私保护,降低交易费用,A,No
-174,高级,以下哪种攻击利用了区块链网络的内存池(Mempool)机制？,重放攻击,女巫攻击,交易替换攻击,51%攻击,C,No
-175,高级,在区块链中，'状态通道'和'侧链'的根本区别是什么？,状态通道是临时的，侧链是永久的,状态通道只支持支付，侧链支持智能合约,状态通道不需要信任假设，侧链需要,状态通道使用自己的共识机制，侧链依赖主链共识,D,No
-176,高级,哪种区块链扩展方案通过'乐观'假设来提高吞吐量？,ZK Rollups,Optimistic Rollups,Validium,Plasma,B,No
-177,高级,在区块链中，'长程攻击'(Long-Range Attack)主要针对什么类型的共识机制？,工作量证明(PoW),权益证明(PoS),实用拜占庭容错(PBFT),委托权益证明(DPoS),B,No
-178,高级,以下哪种技术最适合解决区块链中的'数据可用性'问题？,纠删码,分片,状态通道,零知识证明,A,No
-179,高级,哪种区块链架构设计通过将执行与共识分离来提高可扩展性？,单体式架构,模块化架构,分层式架构,微服务架构,B,No
-180,高级,在区块链中，'验证者轮换'(Validator Rotation)机制主要解决什么问题？,长期控制风险,交易排序,网络拥堵,存储膨胀,A,No
-181,高级,以下哪种技术最适合实现区块链中的'可验证延迟函数'(Verifiable Delay Function)？,哈希函数,非对称加密,顺序计算,零知识证明,C,No
-182,高级,在区块链中，'无状态验证'(Stateless Validation)的主要挑战是什么？,证明大小,计算复杂度,网络延迟,存储需求,A,No
-183,高级,哪种区块链技术通过引入'可信执行环境'(TEE)来增强隐私保护？,Secret Network,Monero,Zcash,Dash,A,No
-184,高级,在区块链中，'分叉选择规则'(Fork Choice Rule)的主要目的是什么？,决定哪个分叉是规范链,创建新分叉,合并分叉,防止分叉,A,No
-185,高级,以下哪种技术最适合解决区块链中的'前端中心化'问题？,去中心化存储(IPFS),去中心化域名系统(ENS),分片,状态通道,A,No
-186,高级,在区块链中，'最终一致性'(Eventual Consistency)和'即时终局性'(Instant Finality)的主要区别是什么？,交易确认时间,安全性保证,网络规模,能源消耗,B,No
-187,高级,哪种区块链技术通过'阈值签名'(Threshold Signatures)来增强安全性？,多重签名,分布式密钥生成,环签名,盲签名,B,No
-188,高级,在区块链中，'无需许可的终局性'(Permissionless Finality)的主要挑战是什么？,在开放网络中实现确定性终局性,减少能源消耗,提高交易吞吐量,简化协议设计,A,No
-189,高级,以下哪些是区块链模块化架构的组成部分？,执行层,数据可用性层,中心化控制层,结算层,"A, B, D",Yes
-190,高级,以下哪些是区块链中'零知识证明'系统的类型？,zk-SNARK,zk-STARK,zk-LARK,zk-MARK,"A, B",Yes
-191,高级,以下哪些是区块链中'数据可用性'问题的解决方案？,数据可用性抽样,纠删码,中心化存储,数据可用性委员会,"A, B, D",Yes
-192,高级,以下哪些是区块链中'长程攻击'(Long-Range Attack)的防御机制？,检查点,弱主观性,工作量证明,中心化验证,"A, B",Yes
-193,高级,以下哪些是区块链中'无状态客户端'(Stateless Client)面临的挑战？,证明大小,生成证明的计算复杂度,网络带宽需求,中心化风险,"A, B, C",Yes
-194,高级,以下哪些是区块链中'可验证随机函数'(VRF)的应用场景？,验证者选择,分片分配,区块生成,交易排序,"A, B, C",Yes
-195,高级,以下哪些是区块链中'前置运行攻击'(Front-running Attack)的防御机制？,提交-揭示方案,隐私交易池,中心化排序,随机延迟,"A, B",Yes
-196,高级,以下哪些是区块链中'跨链通信'面临的安全挑战？,重放攻击,双花攻击,桥接合约漏洞,网络延迟,"A, B, C",Yes
-197,高级,以下哪些是区块链中'状态爆炸'问题的解决方案？,状态租用,状态过期,中心化存储,状态树修剪,"A, B, D",Yes
-198,高级,以下哪些是当下区块链再质押技术的特点？,提高资本效率,增强网络安全性,降低去中心化程度,增加中心化风险,"A, B",Yes
-199,高级,以下哪些是区块链中'确定性随机性'(Deterministic Randomness)的来源？,区块哈希,可验证随机函数(VRF),真随机数生成器,多方计算,"A, B, D",Yes
-200,高级,以下哪些是区块链中'无需信任的桥接'(Trustless Bridge)的实现方式？,轻客户端验证,零知识证明,中心化验证者,联邦多签,"A, B",Yes
+1,Basic,What is the average block generation time in the Bitcoin network?,1 minute,10 minutes,30 minutes,1 hour,B,No
+2,Basic,Which of the following is NOT a core feature of blockchain?,Decentralization,Immutability,Central supervision,Transparency,C,No
+3,Basic,Which consensus mechanism has received more attention in terms of energy efficiency?,Proof of Work (PoW),Proof of Stake (PoS),Proof of Capacity (PoC),Proof of Importance (PoI),B,No
+4,Basic,Which hash algorithm is used by Bitcoin?,MD5,SHA-1,SHA-256,SHA-512,C,No
+5,Basic,What does the 'double-spending problem' refer to in blockchain?,The same cryptocurrency being spent twice,Transaction fees being charged twice,Miners receiving double rewards,Two blocks being mined simultaneously,A,No
+6,Basic,Which of the following is NOT an author of the Bitcoin whitepaper?,Satoshi Nakamoto,Vitalik Buterin,Nick Szabo,Hal Finney,B,No
+7,Basic,What does 'fork' refer to in blockchain?,Blockchain splitting into two or more chains,Transactions being rejected,Nodes disconnecting,Mining difficulty increasing,A,No
+8,Basic,How many Bitcoin ETFs were approved by the US in early 2024?,5,8,11,15,C,No
+9,Basic,Which of the following technologies was NOT designed to solve blockchain scalability issues?,Sharding,Sidechains,Lightning Network,Zero-Knowledge Proofs,D,No
+10,Basic,What does a '51% attack' refer to in blockchain?,51% of user accounts being hacked,An entity controlling over 51% computing power can manipulate the blockchain,51% of nodes suffering DDoS attacks,51% of blockchain code being modified,B,No
+11,Basic,Which of the following is NOT an application area of blockchain?,Supply chain management,Digital identity,Central banking system,Voting system,C,No
+12,Basic,What is the total supply cap of Bitcoin?,10 million,21 million,50 million,No cap,B,No
+13,Basic,What is 'Gas' primarily used for in blockchain?,Providing energy to miners,Calculating transaction fees,Measuring block size,Evaluating network congestion,B,No
+14,Basic,Which of the following is NOT a blockchain privacy protection technology?,Ring signature,Zero-knowledge proof,Coin mixing technology,Public key encryption,D,No
+15,Basic,In the Bitcoin network, approximately after how many blocks does mining reward halve?,"10,000 blocks","100,000 blocks","210,000 blocks","1,000,000 blocks",C,No
+16,Basic,Which of the following is NOT a blockchain layer structure?,Layer 0,Layer 1,Layer 2,Layer 4,D,No
+17,Basic,Which blockchain architecture design has received more attention currently?,Monolithic architecture,Modular architecture,Layered architecture,Microservice architecture,B,No
+18,Basic,What does 'genesis block' refer to in blockchain?,The newest block,The block containing most transactions,The first block in the chain,The block manually created by founders,C,No
+19,Basic,Which of the following is NOT a blockchain consensus mechanism?,Proof of Work (PoW),Proof of Stake (PoS),Delegated Proof of Stake (DPoS),Proof of Authority (PoA),D,No
+20,Basic,What does 'node' refer to in blockchain?,A participating computer in the blockchain network,Connection points between blocks,The recipient in a transaction,A function in a smart contract,A,No
+21,Basic,Which of the following is NOT a characteristic of Bitcoin?,Decentralization,Limited supply,Programmability,Peer-to-peer transactions,C,No
+22,Basic,What does 'cold storage' refer to in blockchain?,Storing cryptocurrency on devices not connected to the internet,Storing blockchain data in low-temperature environments,Wallet addresses not used for a long time,Frozen assets,A,No
+23,Basic,Which of the following is NOT a blockchain data structure?,Hash table,Binary tree,Merkle tree,Linked list,B,No
+24,Basic,What is the main responsibility of 'miners' in blockchain?,Creating new cryptocurrencies,Verifying transactions and adding them to the blockchain,Developing blockchain applications,Regulating the blockchain network,B,No
+25,Basic,Which of the following is NOT a challenge faced by blockchain?,Scalability,Energy consumption,Centralized control,User privacy,C,No
+26,Basic,What is the primary use of 'public key' in blockchain?,Signing transactions,Receiving funds,Decrypting messages,Verifying identity,B,No
+27,Basic,Which of the following is NOT a type of blockchain?,Public blockchain,Private blockchain,Consortium blockchain,Central blockchain,D,No
+28,Basic,What does 'asymmetric encryption' refer to in blockchain?,Using keys of different lengths,Using a system with public and private keys,Asymmetric processes of encryption and decryption,Different nodes using different encryption algorithms,B,No
+29,Basic,Which of the following is NOT a security feature of blockchain?,Distributed ledger,Cryptographic hash,Central verification,Consensus mechanism,C,No
+30,Basic,What does a blockchain 'wallet' primarily store?,The cryptocurrency itself,Transaction history,Private and public keys,Smart contract code,C,No
+31,Basic,Which of the following is NOT a main component of blockchain?,Blocks,Transactions,Servers,Consensus mechanism,C,No
+32,Basic,What is the main purpose of 'hash functions' in blockchain?,Encrypting user data,Generating fixed-length data fingerprints,Verifying user identity,Calculating transaction fees,B,No
+33,Basic,Which of the following is NOT a characteristic of blockchain?,Traceability,Reversibility,Distributed storage,Consensus mechanism,B,No
+34,Basic,What does 'distributed ledger' refer to in blockchain?,A ledger stored on multiple centralized servers,Copies of the ledger maintained by multiple participants,A ledger distributed by geographic location,Multiple ledgers for different transaction types,B,No
+35,Basic,Which of the following is NOT an application of blockchain?,Cryptocurrency,Smart contracts,Central Bank Digital Currency (CBDC),Traditional banking systems,D,No
+36,Basic,What does 'mining difficulty' refer to in blockchain?,The computational complexity required to find a new block,The threshold for joining a mining pool,The cost of purchasing mining equipment,The difficulty of learning mining techniques,A,No
+37,Basic,Which of the following is NOT a blockchain consensus algorithm?,Proof of Work (PoW),Proof of Stake (PoS),Byzantine Fault Tolerance (BFT),Random Access Memory (RAM),D,No
+38,Basic,What information does a blockchain 'block header' contain?,Detailed information of all transactions,Block metadata such as timestamp and hash of the previous block,Personal information of miners,List of network participants,B,No
+39,Basic,Which of the following is NOT a blockchain scaling solution?,Sharding,Sidechains,State channels,Centralized processing,D,No
+40,Basic,What is the main purpose of a 'Merkle tree' in blockchain?,Organizing network nodes,Efficiently verifying transactions,Managing user permissions,Calculating mining rewards,B,No
+41,Basic,Which of the following is NOT a blockchain privacy protection mechanism?,Ring signatures,Confidential transactions,Zero-knowledge proofs,Public broadcasting,D,No
+42,Basic,What are the two main types of 'forks' in blockchain?,Hard fork and soft fork,Left fork and right fork,Up fork and down fork,Main fork and sub fork,A,No
+43,Basic,Which of the following is NOT a blockchain interoperability solution?,Cross-chain technology,Atomic swaps,Centralized exchanges,Blockchain bridges,C,No
+44,Basic,What does 'confirmation' refer to in blockchain?,A transaction being included in a block and added to the blockchain,A user verifying transaction details,A transaction being selected by miners,The recipient confirming receipt of funds,A,No
+45,Basic,Which of the following is NOT a blockchain scalability metric?,Transactions per second (TPS),Block size,Confirmation time,Number of miners,D,No
+46,Basic,What principle is 'Proof of Stake (PoS)' primarily based on?,Computing power,Amount of tokens held,Network connection speed,Storage capacity,B,No
+47,Basic,Which of the following is NOT a Layer 2 solution for blockchain?,State channels,Sidechains,Rollups,Sharding,D,No
+48,Basic,What problem does the 'Lightning Network' primarily solve in blockchain?,Transaction speed and scalability,Mining energy consumption,Privacy protection,Cross-chain transactions,A,No
+49,Basic,Which of the following is NOT a blockchain data storage method?,On-chain storage,Off-chain storage,IPFS storage,Centralized server storage,D,No
+50,Basic,What is a 'Decentralized Autonomous Organization (DAO)' in blockchain?,An organization managed by smart contracts,A blockchain development team,A miners' alliance,A blockchain regulatory body,A,No
+51,Basic,Which of the following is NOT a blockchain consensus participant?,Miners,Validators,Regulators,Full nodes,C,No
+52,Basic,What is the main difference between 'light nodes' and 'full nodes' in blockchain?,Light nodes only store block headers while full nodes store the complete blockchain,Light nodes run faster while full nodes are more stable,Light nodes can only send transactions while full nodes can verify transactions,Light nodes are mobile devices while full nodes are servers,A,No
+53,Basic,Which of the following is NOT a blockchain governance model?,On-chain governance,Off-chain governance,Token voting,Central decision-making,D,No
+54,Basic,What does 'Proof of Work (PoW)' primarily rely on in blockchain?,Amount of tokens held,Computing power,Network connection quality,Storage capacity,B,No
+55,Basic,Which of the following is NOT a privacy coin in blockchain?,Monero,Zcash,Dash,Bitcoin,D,No
+56,Basic,Who first proposed the concept of 'smart contracts' in blockchain?,Satoshi Nakamoto,Vitalik Buterin,Nick Szabo,Charles Hoskinson,C,No
+57,Basic,Which of the following is NOT a blockchain data type?,Transaction data,State data,Block data,Centralized data,D,No
+58,Basic,What is the main purpose of 'difficulty adjustment' in blockchain?,Enhancing network security,Maintaining stable block generation time,Reducing energy consumption,Improving transaction throughput,B,No
+59,Basic,Which of the following is NOT a security threat to blockchain?,51% attack,Double-spending attack,Sybil attack,Distributed storage,D,No
+60,Basic,What is a 'Sybil attack' in blockchain?,Creating multiple fake identities to control the network,Attacking female user accounts,Exploiting system vulnerabilities to steal funds,Disrupting network connections,A,No
+61,Basic,Which of the following is NOT a blockchain incentive mechanism?,Block rewards,Transaction fees,Staking rewards,Central subsidies,D,No
+62,Basic,What is the main purpose of 'zero-knowledge proofs' in blockchain?,Improving transaction speed,Protecting user privacy,Reducing storage requirements,Enhancing network connectivity,B,No
+63,Basic,Which of the following is NOT a cross-chain technology in blockchain?,Hash Time Locked Contracts (HTLC),Relay chains,Sidechains,Centralized exchanges,D,No
+64,Basic,What does the 'Byzantine Generals Problem' primarily describe in blockchain?,Military strategy,Consensus challenges in distributed systems,Types of network attacks,Cryptographic algorithm vulnerabilities,B,No
+65,Basic,Which of the following is NOT a blockchain data structure?,Blocks,Transactions,Tables,Hash pointers,C,No
+66,Basic,What problem does 'sharding' technology primarily solve in blockchain?,Data storage,Scalability,Privacy protection,Cross-chain transactions,B,No
+67,Basic,Which of the following is NOT a design goal of blockchain consensus mechanisms?,Security,Decentralization,Scalability,Centralized control,D,No
+68,Basic,What is the main purpose of 'state channels' in blockchain?,Improving transaction throughput,Enhancing privacy protection,Enabling cross-chain transactions,Storing large amounts of data,A,No
+69,Basic,Which of the following is NOT a blockchain identity verification method?,Public key encryption,Digital signatures,Central identity verification,Multi-signatures,C,No
+70,Basic,What problem do 'Rollups' primarily solve in blockchain?,Scalability,Privacy protection,Cross-chain transactions,Data storage,A,No
+71,Basic,Which of the following are core features of blockchain?,Decentralization,Immutability,Central control,Transparency,"A, B, D",Yes
+72,Basic,Which of the following are common blockchain consensus mechanisms?,Proof of Work (PoW),Proof of Stake (PoS),Central Authorization (CA),Delegated Proof of Stake (DPoS); (Additional option: Random Allocation (RA)),"A, B, D",Yes
+73,Basic,Which of the following are application areas of blockchain?,Supply chain management,Digital identity,Central banking system,Decentralized finance,"A, B, D",Yes
+74,Basic,Which of the following are Layer 2 scaling solutions for blockchain?,Sharding,State channels,New consensus mechanisms,Rollups,"B, D",Yes
+75,Basic,Which of the following are major challenges faced by blockchain?,Scalability,Energy consumption,User-friendliness,Regulatory compliance,"A, B, D",Yes
+76,Basic,Which of the following are security threats to blockchain?,51% attack,Distributed storage,Sybil attack,Double-spending attack,"A, C, D",Yes
+77,Basic,Which of the following are blockchain data structures?,Relational tables,Merkle trees,Hash chains,Two-dimensional arrays,"B, C",Yes
+78,Basic,Which of the following are types of blockchain?,Public blockchain,Private blockchain,Central blockchain,Consortium blockchain,"A, B, D",Yes
+79,Basic,Which of the following are blockchain privacy protection technologies?,Zero-knowledge proofs,Ring signatures,Public broadcasting,Coin mixing technology,"A, B, D",Yes
+80,Basic,Which of the following are blockchain interoperability solutions?,Cross-chain technology,Centralized exchanges,Blockchain bridges,Unified standards,"A, C",Yes
+81,Basic,Which of the following are blockchain scalability metrics?,Transactions per second (TPS),Number of miners,Block size,Confirmation time,"A, C, D",Yes
+82,Basic,Which of the following are blockchain governance models?,On-chain governance,Central decision-making,Token voting,Forced execution,"A, C",Yes
+83,Basic,Which of the following are blockchain data storage methods?,On-chain storage,Centralized server storage,Off-chain storage,Centralized database,"A, C",Yes
+84,Basic,Which of the following are blockchain incentive mechanisms?,Block rewards,Transaction fees,Central subsidies,Staking rewards,"A, B, D",Yes
+85,Basic,Which of the following are blockchain consensus participants?,Miners,Validators,Regulators,Full nodes,"A, B, D",Yes
+86,Basic,Which of the following are blockchain identity verification methods?,Public key encryption,Digital signatures,Central identity verification,Multi-signatures,"A, B, D",Yes
+87,Basic,Which of the following are blockchain fork types?,Hard fork,Left fork,Soft fork,Up fork,"A, C",Yes
+88,Basic,Which of the following are blockchain infrastructure development trends?,Bitcoin L2 scaling solutions,Re-staking technology,Centralized control,Modular blockchain,"A, B, D",Yes
+89,Basic,Which of the following are blockchain node types?,Full nodes,Central nodes,Light nodes,Master nodes,"A, C",Yes
+90,Basic,Which of the following are cryptographic foundations of blockchain?,Hash functions,Asymmetric encryption,Central authentication,Digital signatures,"A, B, D",Yes
+91,Basic,Which of the following are blockchain scaling solutions?,Sharding,Sidechains,Centralized processing,State channels,"A, B, D",Yes
+92,Basic,Which of the following are privacy coins in blockchain?,Bitcoin,Monero,Ethereum,Zcash,"B, D",Yes
+93,Basic,Which of the following are blockchain data types?,Transaction data,State data,Centralized data,Block data,"A, B, D",Yes
+94,Basic,Which of the following are design goals of blockchain consensus mechanisms?,Security,Decentralization,Scalability,Centralized control,"A, B, C",Yes
+95,Basic,Which of the following are cross-chain technologies in blockchain?,Hash Time Locked Contracts (HTLC),Centralized exchanges,Relay chains,Centralized databases,"A, C",Yes
+96,Basic,Which of the following are main components of blockchain?,Blocks,Transactions,Servers,Consensus mechanisms,"A, B, D",Yes
+97,Basic,Which of the following are characteristics of blockchain?,Traceability,Reversibility,Distributed storage,Consensus mechanism,"A, C, D",Yes
+98,Basic,Which of the following are applications of blockchain?,Cryptocurrencies,Smart contracts,Decentralized applications (DApps),Traditional banking systems,"A, B, C",Yes
+99,Basic,Which of the following information is contained in a blockchain "block header"?,Timestamp,Hash of the previous block,Personal information of miners,Difficulty target,"A, B, D",Yes
+100,Basic,Which of the following blockchain infrastructure areas received venture capital attention in 2024?,Bitcoin Layer 2,Re-staking technology,Centralized exchanges,Developer tools,"A, B, D",Yes
+101,Intermediate,What problem does EigenLayer's re-staking technology primarily solve?,Blockchain energy consumption,Cross-chain interoperability,Security and capital efficiency,Transaction privacy protection,C,No
+102,Intermediate,Which sharding technology received more attention in 2024?,State sharding,Transaction sharding,Network sharding,Data availability sharding,D,No
+103,Intermediate,What does the BOLT (Basis of Lightning Technology) specification primarily define in the Bitcoin Lightning Network?,Bitcoin mining algorithms,Communication protocols between Lightning Network nodes,Bitcoin Core client,Blockchain browser standards,B,No
+104,Intermediate,What technology did Bitcoin ETFs approved in early 2024 use to provide transparency of underlying assets?,Zero-knowledge proofs,Chainlink Proof of Reserve,Centralized audits,Federated oracles,B,No
+105,Intermediate,Which consensus mechanism does NOT use a voting mechanism to reach consensus?,Proof of Stake (PoS),Delegated Proof of Stake (DPoS),Proof of Work (PoW),Practical Byzantine Fault Tolerance (PBFT),C,No
+106,Intermediate,How is 'cross-shard communication' primarily implemented in blockchain sharding technology?,Relay chains,Receipt proofs,Centralized servers,Network-wide broadcasting,B,No
+107,Intermediate,Which of the following is NOT a characteristic of zero-knowledge proofs?,Completeness,Soundness,Zero-knowledge,Reversibility,D,No
+108,Intermediate,Which blockchain data availability solution has received more attention?,Celestia,Filecoin,Arweave,Storj,A,No
+109,Intermediate,Which of the following attacks is NOT directed at blockchain consensus mechanisms?,Long-range attack,Selfish mining,SQL injection,Finney attack,C,No
+110,Intermediate,What does 'Deterministic Finality' refer to in blockchain?,Once confirmed, transactions cannot be rolled back,The blockchain has a definite end date,Transaction processing has a definite time limit,Smart contract execution results are deterministic,A,No
+111,Intermediate,Which of the following technologies was NOT designed to improve blockchain privacy?,Ring signatures,Confidential transactions,Sharding,Zero-knowledge proofs,C,No
+112,Intermediate,What is an 'Eclipse Attack' in blockchain networks?,The attacker controls all connections of the target node,An attack launched during a specific time period,An attack utilizing network fluctuations during eclipses,An attack on the blockchain's timestamp mechanism,A,No
+113,Intermediate,What is the primary use of the 'Ordinals protocol' in the Bitcoin network?,Improving transaction speed,Creating NFTs and BRC-20 tokens on Bitcoin,Enhancing privacy protection,Enabling cross-chain transactions,B,No
+114,Intermediate,Which of the following technologies is NOT a Layer 2 scaling solution for blockchain?,Optimistic Rollups,ZK Rollups,State channels,Sharding,D,No
+115,Intermediate,What does the 'state explosion' problem primarily refer to in blockchain?,Unlimited growth of blockchain state data causing storage pressure,Sudden surge in transaction volume,Rapid increase in node count,Consensus mechanism breakdown,A,No
+116,Intermediate,Which of the following technologies was NOT proposed to solve the blockchain 'trilemma' (blockchain cannot simultaneously achieve decentralization, security, and scalability)?,Sharding,Layer 2 solutions,Sidechains,Proof of Work,D,No
+117,Intermediate,What is the main difference between 'Permissionless' and 'Permissioned' in blockchain?,Transaction speed,Permission requirements for network participation,Consensus mechanisms used,Programming languages supported,B,No
+118,Intermediate,Which Bitcoin Layer 2 solution has received more venture capital attention?,Lightning Network,Liquid Network,RSK,Stacks,D,No
+119,Intermediate,Which of the following is NOT a source of 'Deterministic Randomness' in blockchain?,Block hash,VRF (Verifiable Random Function),True random number generator,Multi-party computation,C,No
+120,Intermediate,What technology do 'Light Clients' primarily rely on to verify transactions in blockchain?,Complete block downloads,Simplified Payment Verification (SPV),Centralized servers,Full node proxies,B,No
+121,Intermediate,Which of the following technologies was NOT designed to improve blockchain throughput?,Sharding,DAG (Directed Acyclic Graph),Ring signatures,Parallel transaction processing,C,No
+122,Intermediate,What is the main advantage of 'Stateless Clients' in blockchain?,Not needing to store complete state data,Not requiring network connections,Not needing to verify transactions,Not requiring key management,A,No
+123,Intermediate,Which blockchain interoperability solution has received more attention?,Hash Time Locked Contracts (HTLC),Relay chains,IBC (Inter-Blockchain Communication Protocol),Atomic swaps,C,No
+124,Intermediate,Which of the following is NOT a characteristic of 'State Channels' in blockchain?,Off-chain transactions,Instant finality,Network-wide broadcasting,Multiple interactions,C,No
+125,Intermediate,What is the primary use of 'Merkle Mountain Range' in blockchain?,Efficiently verifying transactions,Improving mining efficiency,Enhancing network connections,Enabling cross-chain communications,A,No
+126,Intermediate,Which of the following technologies was NOT designed to solve blockchain data storage problems?,State pruning,IPFS,Off-chain storage,Zero-knowledge proofs,D,No
+127,Intermediate,What is the main function of a 'Timestamp Server' in blockchain?,Synchronizing network time,Proving data existed at a specific point in time,Adjusting block generation speed,Managing transaction queues,B,No
+128,Intermediate,Which blockchain privacy technology has received more attention in terms of regulatory compliance?,Ring signatures,Confidential transactions,Zero-knowledge proofs,Coin mixing,C,No
+129,Intermediate,Which of the following is NOT a variant of the 'Byzantine Fault Tolerance' (BFT) algorithm in blockchain?,PBFT (Practical Byzantine Fault Tolerance),Tendermint,HotStuff,Nakamoto consensus,D,No
+130,Intermediate,What is the main purpose of 'Validator Rotation' in blockchain?,Improving transaction processing speed,Enhancing network security,Reducing energy consumption,Simplifying protocol design,B,No
+131,Intermediate,Which of the following technologies was NOT designed to solve the 'frontend centralization' problem in blockchain?,Decentralized frontend hosting,IPFS hosting,ENS (Ethereum Name Service),Sharding,D,No
+132,Intermediate,What does the 'Oracle Problem' primarily refer to in blockchain?,How to securely bring off-chain data onto the blockchain,How to predict the future development of blockchain,How to solve smart contract vulnerabilities,How to improve transaction throughput,A,No
+133,Intermediate,Which blockchain identity solution has received more attention?,Centralized identity providers,Self-Sovereign Identity,Federated identity,Biometric identification,B,No
+134,Intermediate,Which of the following is NOT an advantage of 'Off-chain Computation' in blockchain?,Improving computational efficiency,Reducing on-chain storage requirements,Enhancing privacy protection,Increasing decentralization,D,No
+135,Intermediate,What is the main difference between 'Lightweight Clients' and 'Full Nodes' in blockchain?,Lightweight clients only validate block headers while full nodes validate all transactions,Lightweight clients cannot send transactions while full nodes can,Lightweight clients do not store data while full nodes do,Lightweight clients are only for queries while full nodes are for mining,A,No
+136,Intermediate,Which of the following technologies was NOT designed to improve blockchain consensus efficiency?,Delegated Proof of Stake (DPoS),Practical Byzantine Fault Tolerance (PBFT),Hybrid consensus,Zero-knowledge proofs,D,No
+137,Intermediate,Which technology primarily applies 'Trustless Setup' in blockchain?,Proof of Work,Proof of Stake,Zero-knowledge proofs,Sharding,C,No
+138,Intermediate,Which blockchain governance model has received more attention?,Off-chain governance,On-chain governance,Hybrid governance,Representative governance,C,No
+139,Intermediate,Which of the following is NOT a function of the 'State Transition Function' in blockchain?,Validating transaction validity,Updating blockchain state,Generating new blocks,Executing smart contracts,C,No
+140,Intermediate,What problem does the 'Longest Chain Rule' primarily solve in blockchain?,Transaction ordering,Fork selection,Block size limitations,Transaction fee calculation,B,No
+141,Intermediate,Which of the following technologies was NOT designed to solve the 'initial distribution' problem in blockchain?,Airdrop,Initial Coin Offering (ICO),Mining,Sharding,D,No
+142,Intermediate,What is the main purpose of the 'Difficulty Adjustment Algorithm' in blockchain?,Controlling the rate of new coin issuance,Maintaining stable block generation time,Preventing 51% attacks,Reducing energy consumption,B,No
+143,Intermediate,Which of the following are characteristics of 'Layer 2' solutions in blockchain?,Built on top of the base layer,Improving transaction throughput,Replacing base layer consensus mechanisms,Reducing transaction costs,"A, B, D",Yes
+144,Intermediate,Which of the following are current development directions for blockchain infrastructure?,Focus on security and privacy, including GDPR compliance,Tokenization of physical assets,Becoming more decentralized,Making blockchain functions more complex,"A, B",Yes
+145,Intermediate,Which of the following are application scenarios for 'Zero-Knowledge Proofs' in blockchain?,Privacy transactions,Identity verification,Scalability solutions (ZK Rollups),Mining optimization,"A, B, C",Yes
+146,Intermediate,Which of the following are challenges of blockchain 'sharding' technology?,Cross-shard communication,Data availability,Single points of failure,Reduced security,"A, B, D",Yes
+147,Intermediate,Which of the following are types of blockchain 'oracles'?,Centralized oracles,Decentralized oracles,Hybrid oracles,Automatic oracles,"A, B",Yes
+148,Intermediate,Which of the following are limitations of blockchain 'state channels'?,Requiring participants to be online,Suitable for frequent interactions between specific participants,Not suitable for one-time transactions,Requiring on-chain transactions,"A, B, C",Yes
+149,Intermediate,Which of the following are variants of 'Proof of Stake' (PoS) in blockchain?,Delegated Proof of Stake (DPoS),Liquid Proof of Stake (LPoS),Proof of Work (PoW),Pure Proof of Stake (Pure PoS),"A, B, D",Yes
+150,Intermediate,Which of the following are characteristics of 'Byzantine Fault Tolerance' (BFT) consensus algorithms in blockchain?,High transaction throughput,Instant finality,High energy consumption,Requiring a known set of validators,"A, B, D",Yes
+151,Intermediate,Which of the following are characteristics of 'Light Clients' in blockchain?,Only downloading block headers,Using Simplified Payment Verification (SPV),Verifying all transactions,Storing complete state,"A, B",Yes
+152,Intermediate,Which of the following are solutions to the 'data availability' problem in blockchain?,Data availability sampling,Erasure coding,Centralized storage,Celestia,"A, B, D",Yes
+153,Intermediate,Which of the following are implementation methods for 'Deterministic Finality' in blockchain?,Byzantine Fault Tolerance (BFT) consensus,Checkpoint mechanisms,Proof of Work (PoW),Longest chain rule,"A, B",Yes
+154,Intermediate,Which of the following are challenges of 'cross-chain technology' in blockchain?,Atomic guarantees,Reduced security,Centralization risks,Lack of standardization,"A, B, C",Yes
+155,Intermediate,Which of the following are characteristics of 'Self-Sovereign Identity' in blockchain?,User control of personal data,Decentralization,Verifiable credentials,Centralized management,"A, B, C",Yes
+156,Intermediate,Which of the following are advantages of 'Stateless Clients' in blockchain?,Reduced storage requirements,Fast synchronization,Enhanced privacy,Improved transaction throughput,"A, B",Yes
+157,Intermediate,Which of the following are benefits of 'Validator Rotation' in blockchain?,Preventing long-term control,Distributing power,Increasing participation opportunities,Improving transaction speed,"A, B, C",Yes
+158,Intermediate,Which of the following are applications of 'Merkle Trees' in blockchain?,Transaction verification,Block header construction,Simplified Payment Verification (SPV),Mining optimization,"A, B, C",Yes
+159,Intermediate,Which of the following are advantages of 'Off-chain Computation' in blockchain?,Improving computational efficiency,Reducing costs,Enhancing privacy,Increasing decentralization,"A, B, C",Yes
+160,Intermediate,Which of the following are development trends in the Bitcoin network?,Layer 2 scaling solutions,Ordinals protocol,Centralized control,Abandoning Proof of Work,"A, B",Yes
+161,Advanced,What innovative mechanism did EigenLayer's re-staking protocol introduce to solve validator incentive problems?,Two-layer staking structure,Dynamic penalty mechanism,Reputation scoring system,Automatic compound rewards,A,No
+162,Advanced,In modular blockchain architecture, which component is responsible for ensuring data availability without processing execution?,Execution layer,Consensus layer,Data availability layer,Settlement layer,C,No
+163,Advanced,What technology did Celestia introduce as a data availability layer innovation in early 2024?,Zero-knowledge proofs,Data availability sampling,Sharded execution,State channels,B,No
+164,Advanced,Which attack exploits propagation delays in blockchain networks to gain unfair advantages?,Timestamp manipulation,Front-running attack,Replay attack,Eclipse attack,B,No
+165,Advanced,What is the main risk of 'Trusted Setup' in zero-knowledge proof systems?,Excessively high computational complexity,If setup parameters are leaked, system security can be compromised,Verification process becomes non-transparent,Requires centralized servers,B,No
+166,Advanced,What does the 'client diversity' problem in the Bitcoin network primarily focus on?,Diversity of user interfaces,Distribution of different node software implementations,Diversity of mining hardware,Diversity of transaction types,B,No
+167,Advanced,Which consensus mechanism is most vulnerable to the 'Nothing at Stake' problem?,Proof of Work (PoW),Pure Proof of Stake (Pure PoS),Delegated Proof of Stake (DPoS),Practical Byzantine Fault Tolerance (PBFT),B,No
+168,Advanced,What problem does the 'Adaptive Difficulty' mechanism primarily solve in blockchain networks?,Network re-synchronization after partitioning,Block time instability caused by computing power fluctuations,Changes in validator numbers,Transaction fee market,B,No
+169,Advanced,Which blockchain interoperability solution implemented more efficient cross-chain verification using zero-knowledge proofs?,Cosmos IBC,Polkadot XCMP,zkBridge,Chainlink CCIP,C,No
+170,Advanced,What does 'Capture Resistance' primarily refer to in blockchain governance?,Preventing 51% attacks,Preventing specific interest groups from controlling decision processes,Preventing transaction rollbacks,Preventing data leaks,B,No
+171,Advanced,Which technology is most suitable for solving the 'state explosion' problem in blockchain?,Sharding,State rent,Off-chain computation,Larger blocks,B,No
+172,Advanced,What did the 'Taproot' upgrade in the Bitcoin network primarily improve?,Transaction throughput,Privacy and smart contract capabilities,Mining algorithm,Network security,B,No
+173,Advanced,What is the main innovation of 'Deterministic Wallets' in blockchain?,Generating multiple key pairs from a single seed,Improving transaction speed,Enhancing privacy protection,Reducing transaction fees,A,No
+174,Advanced,Which attack exploits the blockchain network's memory pool (Mempool) mechanism?,Replay attack,Sybil attack,Transaction replacement attack,51% attack,C,No
+175,Advanced,What is the fundamental difference between 'state channels' and 'sidechains' in blockchain?,State channels are temporary while sidechains are permanent,State channels only support payments while sidechains support smart contracts,State channels don't require trust assumptions while sidechains do,State channels use their own consensus mechanisms while sidechains rely on the main chain consensus,D,No
+176,Advanced,Which blockchain scaling approach improves throughput through 'optimistic' assumptions?,ZK Rollups,Optimistic Rollups,Validium,Plasma,B,No
+177,Advanced,Which type of consensus mechanism is 'Long-Range Attack' primarily targeted at?,Proof of Work (PoW),Proof of Stake (PoS),Practical Byzantine Fault Tolerance (PBFT),Delegated Proof of Stake (DPoS),B,No
+178,Advanced,Which technology is most suitable for solving the 'data availability' problem in blockchain?,Erasure coding,Sharding,State channels,Zero-knowledge proofs,A,No
+179,Advanced,Which blockchain architecture design improves scalability by separating execution from consensus?,Monolithic architecture,Modular architecture,Layered architecture,Microservice architecture,B,No
+180,Advanced,What problem does the 'Validator Rotation' mechanism primarily solve in blockchain?,Long-term control risk,Transaction ordering,Network congestion,Storage bloat,A,No
+181,Advanced,Which technology is most suitable for implementing 'Verifiable Delay Functions' (VDFs) in blockchain?,Hash functions,Asymmetric encryption,Sequential computation,Zero-knowledge proofs,C,No
+182,Advanced,What is the main challenge of 'Stateless Validation' in blockchain?,Proof size,Computational complexity,Network latency,Storage requirements,A,No
+183,Advanced,Which blockchain technology enhances privacy protection by introducing 'Trusted Execution Environments' (TEEs)?,Secret Network,Monero,Zcash,Dash,A,No
+184,Advanced,What is the main purpose of 'Fork Choice Rules' in blockchain?,Determining which fork is the canonical chain,Creating new forks,Merging forks,Preventing forks,A,No
+185,Advanced,Which technology is most suitable for solving the 'frontend centralization' problem in blockchain?,Decentralized storage (IPFS),Decentralized Name System (ENS),Sharding,State channels,A,No
+186,Advanced,What is the main difference between 'Eventual Consistency' and 'Instant Finality' in blockchain?,Transaction confirmation time,Security guarantees,Network size,Energy consumption,B,No
+187,Advanced,Which blockchain technology enhances security through 'Threshold Signatures'?,Multi-signatures,Distributed Key Generation,Ring signatures,Blind signatures,B,No
+188,Advanced,What is the main challenge of 'Permissionless Finality' in blockchain?,Achieving deterministic finality in open networks,Reducing energy consumption,Improving transaction throughput,Simplifying protocol design,A,No
+189,Advanced,Which of the following are components of modular blockchain architecture?,Execution layer,Data availability layer,Centralized control layer,Settlement layer,"A, B, D",Yes
+190,Advanced,Which of the following are types of 'Zero-Knowledge Proof' systems in blockchain?,zk-SNARK,zk-STARK,zk-LARK,zk-MARK,"A, B",Yes
+191,Advanced,Which of the following are solutions to the 'data availability' problem in blockchain?,Data availability sampling,Erasure coding,Centralized storage,Data availability committees,"A, B, D",Yes
+192,Advanced,Which of the following are defense mechanisms against 'Long-Range Attacks' in blockchain?,Checkpoints,Weak subjectivity,Proof of Work,Centralized validation,"A, B",Yes
+193,Advanced,Which of the following are challenges faced by 'Stateless Clients' in blockchain?,Proof size,Computational complexity of generating proofs,Network bandwidth requirements,Centralization risks,"A, B, C",Yes
+194,Advanced,Which of the following are application scenarios for 'Verifiable Random Functions' (VRFs) in blockchain?,Validator selection,Shard assignment,Block generation,Transaction ordering,"A, B, C",Yes
+195,Advanced,Which of the following are defense mechanisms against 'Front-running Attacks' in blockchain?,Commit-reveal schemes,Private transaction pools,Centralized ordering,Random delays,"A, B",Yes
+196,Advanced,Which of the following are security challenges in blockchain 'cross-chain communication'?,Replay attacks,Double-spending attacks,Bridge contract vulnerabilities,Network latency,"A, B, C",Yes
+197,Advanced,Which of the following are solutions to the 'state explosion' problem in blockchain?,State rent,State expiry,Centralized storage,State tree pruning,"A, B, D",Yes
+198,Advanced,Which of the following are characteristics of blockchain re-staking technology today?,Improving capital efficiency,Enhancing network security,Reducing decentralization,Increasing centralization risks,"A, B",Yes
+199,Advanced,Which of the following are sources of 'Deterministic Randomness' in blockchain?,Block hash,Verifiable Random Function (VRF),True random number generator,Multi-party computation,"A, B, D",Yes
+200,Advanced,Which of the following are implementation methods for 'Trustless Bridges' in blockchain?,Light client verification,Zero-knowledge proofs,Centralized validators,Federated multi-signatures,"A, B",Yes 
