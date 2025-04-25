@@ -44,7 +44,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 43,Basic,Which DeFi protocol focuses on fixed income products?,Element Finance,Uniswap,Aave,Curve,A,No
 44,Basic,"Which protocol first popularized ""Liquidity Mining"" in DeFi?",Uniswap,Compound,Aave,SushiSwap,B,No
 45,Basic,Which of the following is NOT a decentralized exchange model in DeFi?,Order book model,Automated Market Maker model,Centralized matching model,Hybrid model,C,No
-46,Basic,"What are the main sources of ""Yield"" in DeFi?",Trading fees, lending interest, and token rewards,Centralized dividends,Government subsidies,Charitable donations,A,No
+46,Basic,"What are the main sources of ""Yield"" in DeFi?",Trading fees， lending interest， and token rewards,Centralized dividends,Government subsidies,Charitable donations,A,No
 47,Basic,Which of the following is a decentralized prediction market in DeFi?,Augur,Uniswap,Aave,Compound,A,No
 48,Basic,Which of the following is the most popular yield aggregator in DeFi?,Yearn Finance,Harvest Finance,Pickle Finance,Convex Finance,D,No
 49,Basic,"What do ""Flash Loan Attacks"" primarily exploit in DeFi?",Large uncollateralized loans,Network congestion,User passwords,Centralized vulnerabilities,A,No
@@ -59,7 +59,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 58,Basic,Which DeFi protocol focuses on decentralized derivatives?,dYdX,Uniswap,Aave,Compound,A,No
 59,Basic,"What was the initial purpose of ""Liquidity Mining"" in DeFi?",Attracting users to provide liquidity,Increasing token prices,Reducing transaction fees,Improving security,A,No
 60,Basic,Which of the following is NOT a transaction type in DeFi?,Spot trading,Leveraged trading,Futures trading,Physical delivery,D,No
-61,Basic,"What are the main risks of ""Yield Farming"" in DeFi?",Smart contract risks, impermanent loss, and market risks,Government regulation,Power outages,Internet connectivity,A,No
+61,Basic,"What are the main risks of ""Yield Farming"" in DeFi?",Smart contract risks， impermanent loss， and market risks,Government regulation,Power outages,Internet connectivity,A,No
 62,Basic,Which of the following is a decentralized asset management protocol in DeFi?,Yearn Finance,Uniswap,Chainlink,Curve,A,No
 63,Basic,Which of the following is the most popular decentralized options protocol in DeFi?,Opyn,Uniswap,Aave,Compound,A,No
 64,Basic,"What operation does ""Liquidity Mining"" typically require in DeFi?",Providing liquidity and staking LP tokens,Purchasing protocol tokens,Developing smart contracts,Auditing protocols,A,No
@@ -105,7 +105,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 104,Intermediate,In DeFi lending protocols," what happens when the ""Health Factor"" falls below 1?",Additional rewards,Liquidation is triggered,Lower borrowing rates,Increased borrowing capacity,B,No
 105,Intermediate,Which DeFi liquidity strategy has achieved higher capital efficiency?,Single-asset staking,Concentrated liquidity provision,Full-range liquidity provision,Passive holding,B,No
 106,Intermediate,Which mechanism is used to balance supply and demand in DeFi lending protocols?,Interest rate models,Governance voting,Oracles,Liquidity mining,A,No
-107,Intermediate,In DeFi," what does an inverted ""Yield Curve"" typically indicate?",Short-term yields higher than long-term yields,Long-term yields higher than short-term yields,Negative yields,Zero yields,A,No
+107,Intermediate,"In DeFi， what does an inverted ""Yield Curve"" typically indicate?",Short-term yields higher than long-term yields,Long-term yields higher than short-term yields,Negative yields,Zero yields,A,No
 108,Intermediate,Which DeFi protocol innovation solves the cross-chain liquidity fragmentation problem?,Cross-chain AMMs,Multi-chain lending,Liquidity aggregators,All of the above,D,No
 109,Intermediate,Which mechanism is most suitable for solving oracle manipulation problems in DeFi?,Time-Weighted Average Price (TWAP),Multi-source data aggregation,On-chain governance,Centralized verification,B,No
 110,Intermediate,"What is the main disadvantage of ""Liquidity Mining"" in DeFi?",Temporary liquidity,High gas fees,Low yields,Complex user interfaces,A,No
@@ -172,7 +172,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 171,Advanced,"What is the main advantage of ""Liquidity Stratification"" in DeFi?",Optimizing capital allocation according to risk preferences,Reducing gas fees,Simplifying user experience,Increasing transaction speed,A,No
 172,Advanced,Which DeFi mechanism is most suitable for solving pricing efficiency problems in decentralized options markets?,Implied volatility oracles,Fixed pricing models,Centralized market makers,Random pricing,A,No
 173,Advanced,Which DeFi innovation most effectively solves the problem of low governance participation rates?,Combination of delegated voting and voting incentives,Mandatory voting,Centralized decision-making,Random decision-maker selection,A,No
-174,Advanced,"What factors are ""Dynamic Risk Pricing"" models in DeFi typically based on?",Market volatility, collateralization ratio, and protocol utilization,User reputation,Historical transaction volume,Token price,A,No
+174,Advanced,"What factors are ""Dynamic Risk Pricing"" models in DeFi typically based on?",Market volatility， collateralization ratio， and protocol utilization,User reputation,Historical transaction volume,Token price,A,No
 175,Advanced,Which DeFi mechanism is most suitable for solving adverse selection problems in decentralized insurance?,Risk pool stratification,Fixed premiums,Centralized review,Mandatory participation,A,No
 176,Advanced,Which DeFi innovation most effectively solves MEV (Maximal Extractable Value) problems?,Fair Sequencing Services,Increasing transaction fees,Limiting transaction size,Centralized ordering,A,No
 177,Advanced,"What is the core of ""Yield Curve Arbitrage"" strategies in DeFi?",Exploiting yield differences between assets of different maturities,Exploiting price differences between different assets,Exploiting security differences between different protocols,Exploiting gas fee differences between different chains,A,No

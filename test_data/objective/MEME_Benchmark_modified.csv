@@ -4,7 +4,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 3,Basic,In what year was Dogecoin created?,2009,2011,2013,2017,C,No
 5,Basic,What animal is the Dogecoin logo?,Akita dog,Shiba Inu dog,Mixed-breed dog,Hokkaido dog,B,No
 4,Basic,What was the name of the original Dogecoin dog?,Kabasu,Kabosu,Kobasu,Kabusu,B,No
-6,Basic,In Web3, what are MEME coins primarily NOT based on?,Internet memes,News events,Celebrities,Web3 projects,D,No
+6,Basic,In Web3， what are MEME coins primarily NOT based on?,Internet memes,News events,Celebrities,Web3 projects,D,No
 7,Basic,Which of the following is NOT a common MEME coin category?,Animal themes,Political themes,Celebrity themes,Real estate themes,D,No
 8,Basic,Which of the following blockchains is one of the most active platforms for MEME coins?,Bitcoin,Solana,Ethereum,Tron,B,No
 9,Basic,Which is NOT a core reason for Solana becoming a popular platform for MEME coins?,Large user base,High TVL (Total Value Locked),Low transaction fees and fast settlement,Foundation engagement,B,No
@@ -15,7 +15,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 14,Basic,Which of the following is NOT an animal-themed MEME coin?,FLOKI,SHIB,PEPE,BOME,D,No
 15,Basic,What is the inspiration for Pepe (PEPE) coin?,A cat meme,A frog meme,A dog meme,A monkey meme,B,No
 16,Basic,Which MEME coin is associated with Tesla CEO Elon Musk?,Shiba Inu,Pepe,Dogecoin,BOME,C,No
-17,Basic,In 2021, what market cap did Dogecoin reach at its peak?,About $1 billion,About $20 billion,About $88 billion,About $100 billion,C,No
+17,Basic,In 2021， what market cap did Dogecoin reach at its peak?,About $1 billion,About $20 billion,About $88 billion,About $100 billion,C,No
 18,Basic,Which of the following is NOT a common trading platform for MEME coins?,Pancake,Raydium,Uniswap,Meteora,D,No
 19,Basic,"What is a ""Decentralized Exchange"" (DEX)?",An exchange without operators,A peer-to-peer trading platform without intermediaries,A platform that only trades MEME coins,An exchange that only accepts Web3 stablecoins,B,No
 20,Basic,Which Launchpad has played an important role in the development of MEME coins?,Raydium,Jupiter,Pumpfun,Orca,C,No
@@ -29,7 +29,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 28,Basic,Which of the following is NOT a common motivation for creating MEME coins?,Building community,Speculative profit,Satirizing existing cryptocurrencies,Spreading popular internet memes,C,No
 29,Basic,"What does ""Airdrop"" mean in the context of MEME coins?",A marketing strategy to increase coin price,A marketing strategy to distribute tokens to users for free,A marketing strategy to randomly distribute tokens to Web3 users,A marketing strategy to distribute tokens to users for a fee,B,No
 30,Basic,Which of the following is a characteristic of Shiba Inu (SHIB)?,It is a MEME coin,"It is known as the ""Dogecoin killer""",It is based on the Ethereum blockchain,Both B and C,D,No
-31,Basic,"What is ""Tokenomics""?",The study of token price fluctuations,The design of token supply, distribution, and value mechanisms,Tax policies for token trading,Energy consumption of token mining,B,No
+31,Basic,"What is ""Tokenomics""?",The study of token price fluctuations,The design of token supply， distribution， and value mechanisms,Tax policies for token trading,Energy consumption of token mining,B,No
 32,Basic,Which of the following is NOT an important factor in evaluating a MEME coin project?,Community size and activity,Token supply mechanism,Background of the DEV,Educational background of the DEV,D,No
 33,Basic,"What is a ""Liquidity Pool""?",A facility for token trading,A pool of funds for trading tokens,A trading platform,A pool for storing token information,B,No
 34,Basic,Which of the following is NOT a common marketing channel for MEME coins?,Twitter/X,Telegram,Dexscreener,Youtube,D,No
@@ -61,7 +61,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 60,Basic,Which is typically NOT required when launching a MEME coin?,Smart contract deployment,White paper,Liquidity provision,KYC verification,D,No
 61,Basic,"What is ""Market Capitalization"" in cryptocurrency?",The total number of tokens in circulation,The price of a single token,The value of all tokens in circulation (price × circulating supply),The combined volume of buy and sell orders,C,No
 62,Basic,"What is ""FOMO"" in the context of MEME coins?",Fear Of Missing Out - buying due to worry about missing potential gains,Frequent Optimization of Mining Operations,Financial Operation Management Overhead,Future Oriented Market Outlook,A,No
-63,Basic,FUD in cryptocurrency communities stands for what?,Future Utility Development,Fast Upward Drift,Fear, Uncertainty, and Doubt,Financial Understanding Database,C,No
+63,Basic,FUD in cryptocurrency communities stands for what?,Future Utility Development,Fast Upward Drift,Fear， Uncertainty， and Doubt,Financial Understanding Database,C,No
 64,Basic,"What does ""DYOR"" stand for in cryptocurrency communities?",Document Your Official Returns,Deliver Your Own Resources,Design Your Own Roadmap,Do Your Own Research,D,No
 65,Basic,"What is a ""Meme Coin Season""?",A period when meme coins typically perform well,The launch period for new meme coins,A quarterly report on meme coin performance,A regulated trading period for meme coins,A,No
 66,Basic,"What does ""SAFU"" mean in cryptocurrency communities?",Secure Asset Fund for Users,Safe And Friendly Usage,System Authentication For Users,Security Assurance Follow-Up,A,No
@@ -77,7 +77,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 76,Basic,Which of the following terms describe investor token holding behavior in cryptocurrency communities?,Paper hands,Diamond hands,Whale,NGMI,B/D,Multiple Choice
 77,Basic,Which of the following terms describe the trading behavior characteristics of cryptocurrency investors?,Paper Hands,Diamond Hands,Buy low and sell high,Left/Right side trading,A/B/D,Multiple Choice
 78,Basic,Which communication platforms are commonly used by MEME coin communities?,Reddit,Telegram,Twitter/X,Discord,B/C/D,Multiple Choice
-79,Basic,What is the difference between MEME projects with a CTO and those without?,In the former, the DEV has sold tokens, while in the latter they haven't,The former relies on the community, and the latter also relies on the community,For the latter, the project ceiling is usually higher,The former MEME projects are more difficult to succeed,A/B,Multiple Choice
+79,Basic,What is the difference between MEME projects with a CTO and those without?,In the former， the DEV has sold tokens， while in the latter they haven't,The former relies on the community， and the latter also relies on the community,For the latter， the project ceiling is usually higher,The former MEME projects are more difficult to succeed,A/B,Multiple Choice
 80,Basic,What roles does a CTO Leader generally assume in MEME projects?,Raising funds from the community,Increasing community cohesion,Formulating future project roadmaps,Creating MEME-themed graphics,A/B/C,Multiple Choice
 81,Basic,What are the general purposes of funds in a Market Wallet?,Used for future project marketing,Used for technical development,Used to reward community members,Used for collaborations with other projects,A/D,Multiple Choice
 82,Basic,What are common risks associated with MEME coins?,High volatility,Low liquidity,Regulatory uncertainty,Technical complexity,A/B/C,Multiple Choice
@@ -86,7 +86,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 85,Basic,Which of the following descriptions about 'Token Utility' are correct?,Actual uses of the token in the project ecosystem,Privileges or benefits that token holders receive,Token price stability,Exclusive identity that token holders receive,A/B,Multiple Choice
 86,Basic,What are common utilities of MEME coins?,Legal currency alternative,Governance rights,Payment method,Community membership identity,B/C/D,Multiple Choice
 87,Basic,Which of the following descriptions about 'Token Governance' are correct?,The community's management of token mechanisms,A system to influence project development direction through voting,A voting mechanism to control token price,A mechanism for token holders to participate in project decisions,B/D,Multiple Choice
-88,Basic,Which of the following descriptions about the governance models of MEME coin projects are correct?,Most adopt hybrid models or have no formal governance,Community members usually have some voice,Completely decentralized,In all MEME projects, DEVs are the main governors,A/B,Multiple Choice
+88,Basic,Which of the following descriptions about the governance models of MEME coin projects are correct?,Most adopt hybrid models or have no formal governance,Community members usually have some voice,Completely decentralized,In all MEME projects， DEVs are the main governors,A/B,Multiple Choice
 89,Basic,Which of the following are common trading tools in the MEME market?,Bullx,Photon,Gmgn,TG Trading BOT,A/B/C/D,Multiple Choice
 90,Basic,What are common sales methods for MEME coins?,Public sales,Presales,Airdrops,OTC sales,A/B/D,Multiple Choice
 91,Basic,Which of the following descriptions about 'Token Distribution' are correct?,The way tokens are distributed among different holders,The initial token distribution plan for the project,The token burning plan,The future token unlock plan,A/B,Multiple Choice
