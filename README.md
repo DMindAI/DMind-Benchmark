@@ -157,7 +157,7 @@ make pipeline model=claude-3-5-haiku-20241022
 make help
 ```
 
-### Testing Multiple Models
+### 🔄 Testing Multiple Models
 
 You can test multiple models and compare their performance:
 
@@ -196,7 +196,7 @@ The evaluation framework uses various techniques to assess model performance:
 - For objective questions: Exact matching against correct answers
 - For subjective questions: Combination of keyword analysis, structured evaluation, and third-party AI evaluation when configured
 
-## Configuring API Keys and Base URLs
+## 🔑 Configuring API Keys and Base URLs
 
 API keys and base URLs are configured in the `models.yml` file located in the root directory. The structure is as follows:
 
@@ -229,11 +229,11 @@ To add or modify models:
 2. Add the model configuration to the `models` section
 3. The `api_key` field in the model configuration should reference a name from the `api_keys` section
 
-## Configuring Third-Party Evaluation Models
+## 🧠 Configuring Third-Party Evaluation Models
 
 The system uses third-party AI models for evaluating subjective responses. This section explains how to configure these evaluation models in the `models.yml` file.
 
-### Enhanced Models.yml Structure
+### 📝 Enhanced Models.yml Structure
 
 For evaluation purposes, the `models.yml` file supports additional configuration sections:
 
@@ -257,7 +257,7 @@ api_keys:
 
 The `model_name` field in API keys is optional but allows automatic model selection when using a particular key.
 
-### Configuring Dedicated Evaluation Models
+### ⚙️ Configuring Dedicated Evaluation Models
 
 You can configure specific models to be used only for evaluation purposes:
 
@@ -283,7 +283,7 @@ models:
     api_base: "xxx"  # Optional: Override global API base
 ```
 
-### Complete Example with Evaluation Configuration
+### 📄 Complete Example with Evaluation Configuration
 
 Here's a complete example of a `models.yml` file with both testing and evaluation model configurations:
 
@@ -339,7 +339,7 @@ models:
     api_key: "openai_eval"
 ```
 
-### How Evaluation Models Are Selected
+### 🔍 How Evaluation Models Are Selected
 
 When subjective questions need to be evaluated, the system uses the following priority order:
 
@@ -355,7 +355,7 @@ You can specify which evaluation model to use in your code:
 api_config = config_manager.get_third_party_api_config("gpt4_evaluation")
 ```
 
-## Handling Different AI Service Providers
+## 🔌 Handling Different AI Service Providers
 
 The testing framework supports various AI service providers. The request format for each provider is handled differently in `test_objective.py` and `test_subjective.py`:
 
@@ -413,11 +413,11 @@ To add support for a new provider:
 2. Implement the appropriate request format
 3. Add proper response parsing logic for the new provider
 
-## Multi-Threading and Performance Configuration
+## 🧵 Multi-Threading and Performance Configuration
 
 The testing framework uses concurrent processing to speed up the evaluation of large datasets. This section explains how to configure multi-threading settings.
 
-### Multi-Threading Implementation
+### 🔄 Multi-Threading Implementation
 
 The objective testing system utilizes Python's `concurrent.futures` module with ThreadPoolExecutor to process multiple questions simultaneously:
 
@@ -437,7 +437,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
             print(f"Error processing question: {exc}")
 ```
 
-### Thread Count Configuration
+### ⚙️ Thread Count Configuration
 
 You can adjust the number of parallel worker threads by modifying the `max_workers` parameter in both `test_objective.py` and `test_subjective.py`:
 
@@ -450,7 +450,7 @@ To modify the thread count, edit this value in the files:
 - For objective tests: `api/test_objective.py`
 - For subjective tests: `api/test_subjective.py`
 
-### Performance Considerations
+### 📊 Performance Considerations
 
 When configuring thread count, consider the following:
 
@@ -462,7 +462,7 @@ When configuring thread count, consider the following:
 
 4. **API Provider Guidelines**: Some API providers have guidelines about concurrent requests. Check their documentation to ensure compliance.
 
-### Thread Safety
+### 🔒 Thread Safety
 
 The testing framework implements thread safety using the Python `threading.Lock` class to protect shared data:
 
@@ -484,7 +484,7 @@ with results_lock:
 
 This ensures that concurrent threads don't interfere with each other when accessing shared data structures.
 
-### Configuration Recommendations
+### 🔧 Configuration Recommendations
 
 Based on different scenarios, here are some recommended thread count configurations:
 
@@ -494,7 +494,7 @@ Based on different scenarios, here are some recommended thread count configurati
 
 For API services with strict rate limits, consider lowering the thread count to avoid request failures.
 
-## Response Handling
+## 📨 Response Handling
 
 The framework handles response parsing for different providers:
 
@@ -502,7 +502,7 @@ The framework handles response parsing for different providers:
 - **OpenAI/Anthropic**: Extracts answer from `response.choices[0].message.content`
 - **DeepSeek**: Uses OpenAI client and extracts answer from the response object
 
-## Scoring System
+## 🏆 Scoring System
 
 - **Objective tests**: Multiple-choice questions with automated scoring
   - Single-choice: 2 points for correct answers
