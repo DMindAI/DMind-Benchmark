@@ -5,8 +5,9 @@ import time
 import logging
 import os
 from .base_question import BaseQuestion
+from ..utils.config_manager import config_manager
 
-# 配置日志
+# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -18,344 +19,246 @@ logging.basicConfig(
 logger = logging.getLogger("RiskAnalysisQuestion")
 
 class RiskAnalysisQuestion(BaseQuestion):
-    """风险分析类，用于处理风险分析类型的题目"""
+    """Risk analysis question class for evaluating risk assessment capabilities"""
     
     def __init__(self, question_data: Dict[str, Any]):
         """
-        初始化风险分析题
+        Initialize risk analysis question
         
         Args:
-            question_data: 包含风险分析题数据的字典
+            question_data: Dictionary containing risk analysis question data
         """
         super().__init__(question_data)
         self.question_type = "risk_analysis"
         self.scenario = question_data.get("scenario", "")
-        self.instructions = question_data.get("instructions", "")
-        self.scoring_criteria = question_data.get("scoring_criteria", [])
-        self.total_possible = question_data.get("total_possible", 10)
-        self.keywords = question_data.get("keywords", {})  # 每个评分标准的关键词列表
+        self.risk_factors = question_data.get("risk_factors", [])
+        self.expected_threats = question_data.get("expected_threats", [])
+        self.expected_vulnerabilities = question_data.get("expected_vulnerabilities", [])
+        self.expected_countermeasures = question_data.get("expected_countermeasures", [])
+        self.risk_weights = question_data.get("risk_weights", {"threats": 0.3, "vulnerabilities": 0.3, "countermeasures": 0.4})
         
-        # 从环境变量获取API密钥，如果不存在则使用默认值
-        self.third_party_api_key = os.environ.get("CLAUDE_API_KEY", "sk-sjkpMQ7WsWk5jUShcqhK4RSe3GEooupy8jsy7xQkbg6eQaaX")
-        self.third_party_api_base = "https://api.claude-plus.top/v1/chat/completions"
-        self.max_retries = 10  # 最大重试次数
-        self.retry_delay = 2  # 重试间隔（秒）
-        logger.info(f"初始化风险分析题: {self.scenario[:50]}...")
-        logger.info(f"使用API密钥: {self.third_party_api_key[:5]}...")
+        logger.info(f"Initialized risk analysis question with {len(self.risk_factors)} risk factors, " 
+                   f"{len(self.expected_threats)} expected threats, "
+                   f"{len(self.expected_vulnerabilities)} expected vulnerabilities, "
+                   f"{len(self.expected_countermeasures)} expected countermeasures")
+        
+        # Calculate total_possible from scoring criteria
+        total_points = 0
+        for criterion in self.scoring_criteria:
+            total_points += criterion.get("points", 0)
+        self.total_possible = question_data.get("total_possible", total_points)
+        
+        # Get API configuration from config manager
+        api_config = config_manager.get_third_party_api_config()
+        self.third_party_api_key = api_config["api_key"]
+        self.third_party_api_base = api_config["api_base"]
+        self.evaluation_model = api_config["model"]
+        
+        self.max_retries = 5  # Maximum retry attempts
+        self.retry_delay = 2  # Retry interval (seconds)
+        logger.info(f"Initializing risk analysis question: {len(self.scenario)} characters")
+        logger.info(f"Using API key: {self.third_party_api_key[:5]}... with model: {self.evaluation_model}")
         
     def build_prompt(self) -> str:
         """
-        构建风险分析题的提示
+        Build risk analysis question prompt
         
         Returns:
-            str: 构建好的提示
+            str: Built prompt
         """
-        prompt = f"场景：{self.scenario}\n\n"
-        prompt += f"任务：{self.instructions}\n\n"
-        prompt += "请提供详细的风险分析和缓解策略。"
-        logger.info(f"构建提示完成，长度: {len(prompt)}")
+        prompt = f""
+        
+        if self.scenario:
+            prompt += f"Scenario:\n{self.scenario}\n\n"
+        
+        if self.risk_factors:
+            prompt += "Consider the following risk factors in your analysis:\n"
+            for i, factor in enumerate(self.risk_factors):
+                prompt += f"{i+1}. {factor}\n"
+            prompt += "\n"
+        
+        prompt += ("For the above scenario, provide a comprehensive risk analysis that includes:\n"
+                  "1. Key threats: Identify potential threats relevant to this scenario\n"
+                  "2. Vulnerabilities: Analyze weak points that could be exploited\n"
+                  "3. Countermeasures: Suggest effective controls or measures to mitigate risks\n"
+                  "4. Risk assessment: Provide an overall risk assessment with priority levels\n\n"
+                  "Organize your analysis into clear sections for each component.")
+        
+        logger.info(f"Prompt built with length: {len(prompt)}")
         return prompt
     
     def evaluate_response(self, response: str) -> Dict[str, Any]:
         """
-        评估模型对风险分析题的回答
+        Evaluate model's answer to risk analysis question
         
         Args:
-            response: 模型的回答
+            response: Model's response to evaluate
             
         Returns:
-            Dict[str, Any]: 评估结果，包含分数和详细信息
+            Dict[str, Any]: Evaluation results
         """
-        logger.info(f"开始评估回答，回答长度: {len(response)}")
+        logger.info(f"Evaluating risk analysis response of length: {len(response)}")
         
-        # 使用第三方AI进行评测
-        logger.info("尝试使用第三方AI进行评测...")
-        third_party_evaluation = self._evaluate_with_third_party_ai(response)
+        result = {
+            "score": 0,
+            "max_score": 10,
+            "threat_score": 0,
+            "vulnerability_score": 0,
+            "countermeasure_score": 0,
+            "identified_threats": [],
+            "identified_vulnerabilities": [],
+            "identified_countermeasures": [],
+            "missed_threats": [],
+            "missed_vulnerabilities": [],
+            "missed_countermeasures": [],
+            "feedback": ""
+        }
         
-        # 第三方AI评测总会返回结果（成功或关键词备用方案）
-        logger.info(f"评测完成，总分: {third_party_evaluation.get('score', 0)}")
-        return third_party_evaluation
+        # Evaluate threats identified
+        threat_score, identified_threats, missed_threats = self._evaluate_component(
+            response, self.expected_threats, "threats"
+        )
+        result["threat_score"] = threat_score
+        result["identified_threats"] = identified_threats
+        result["missed_threats"] = missed_threats
+        
+        # Evaluate vulnerabilities identified
+        vulnerability_score, identified_vulnerabilities, missed_vulnerabilities = self._evaluate_component(
+            response, self.expected_vulnerabilities, "vulnerabilities"
+        )
+        result["vulnerability_score"] = vulnerability_score
+        result["identified_vulnerabilities"] = identified_vulnerabilities
+        result["missed_vulnerabilities"] = missed_vulnerabilities
+        
+        # Evaluate countermeasures proposed
+        countermeasure_score, identified_countermeasures, missed_countermeasures = self._evaluate_component(
+            response, self.expected_countermeasures, "countermeasures"
+        )
+        result["countermeasure_score"] = countermeasure_score
+        result["identified_countermeasures"] = identified_countermeasures
+        result["missed_countermeasures"] = missed_countermeasures
+        
+        # Calculate weighted overall score
+        result["score"] = (
+            threat_score * self.risk_weights["threats"] +
+            vulnerability_score * self.risk_weights["vulnerabilities"] +
+            countermeasure_score * self.risk_weights["countermeasures"]
+        )
+        
+        # Generate feedback
+        result["feedback"] = self._generate_feedback(result)
+        
+        logger.info(f"Risk analysis evaluation completed. Final score: {result['score']}/{result['max_score']}")
+        return result
     
-    def _evaluate_with_third_party_ai(self, response_text: str) -> Dict[str, Any]:
+    def _evaluate_component(self, response: str, expected_items: List[str], component_type: str) -> tuple:
         """
-        使用第三方AI (Claude-3-7-Sonnet-20250219) 评估回答
+        Evaluate a specific component of the risk analysis
         
         Args:
-            response_text: 模型的回答
+            response: Model's response
+            expected_items: List of expected items for this component
+            component_type: Type of component (threats, vulnerabilities, countermeasures)
             
         Returns:
-            Dict[str, Any]: 评估结果，如果评测失败则返回关键词匹配评测结果
+            tuple: (score, identified_items, missed_items)
         """
-        retry_count = 0
-        last_error = None
+        if not expected_items:
+            logger.warning(f"No expected {component_type} defined, returning default score")
+            return 5.0, [], []  # Default middle score if no expected items
         
-        while retry_count < self.max_retries:
-            try:
-                if retry_count > 0:
-                    logger.info(f"第 {retry_count} 次重试第三方AI评测...")
-                    time.sleep(self.retry_delay)  # 重试前等待一段时间
-                
-                logger.info("开始构建第三方AI评测提示...")
-                # 构建评分标准提示
-                criteria_prompt = "请根据以下评分标准评估回答的质量：\n\n"
-                for criterion in self.scoring_criteria:
-                    criterion_name = criterion.get("criterion", "")
-                    max_points = criterion.get("points", 0)
-                    key_points = criterion.get("key_points", [])
-                    
-                    criteria_prompt += f"标准：{criterion_name}（满分：{max_points}分）\n"
-                    criteria_prompt += "关键点：\n"
-                    for point in key_points:
-                        criteria_prompt += f"- {point}\n"
-                    criteria_prompt += "\n"
-                
-                # 构建完整的评测提示
-                evaluation_prompt = f"""
-                你是一个专业的风险分析评估专家，请根据以下评分标准评估回答的质量。
-                
-                场景：{self.scenario}
-                
-                任务：{self.instructions}
-                
-                回答：{response_text}
-                
-                {criteria_prompt}
-                
-                请为每个评分标准提供0-10的分数，并解释你的评分理由。
-                最后，请以JSON格式输出评估结果，格式如下：
-                {{
-                    "criterion_scores": [
-                        {{
-                            "criterion": "标准名称",
-                            "score": 分数,
-                            "max_points": 满分,
-                            "explanation": "评分理由"
-                        }},
-                        ...
-                    ],
-                    "total_score": 总分,
-                    "total_possible": {self.total_possible},
-                    "overall_feedback": "总体评价"
-                }}
-                
-                只输出JSON格式的评估结果，不要有其他内容。
-                """
-                
-                logger.info(f"评测提示构建完成，长度: {len(evaluation_prompt)}")
-                
-                # 调用Claude API
-                logger.info("开始调用Claude API...")
-                headers = {
-                    'Accept': 'application/json',
-                    'Authorization': f'Bearer {self.third_party_api_key}',
-                    'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
-                    'Content-Type': 'application/json'
-                }
-                
-                data = {
-                    "model": "claude-3-7-sonnet-20250219",
-                    "messages": [{"role": "user", "content": evaluation_prompt}],
-                    "max_tokens": 4000,
-                    "temperature": 0
-                }
-                
-                start_time = time.time()
-                response_obj = requests.post(self.third_party_api_base, headers=headers, json=data)
-                end_time = time.time()
-                
-                logger.info(f"API调用完成，耗时: {end_time - start_time:.2f}秒，状态码: {response_obj.status_code}")
-                
-                if response_obj.status_code == 200:
-                    response_data = response_obj.json()
-                    logger.info(f"API响应数据: {json.dumps(response_data)[:200]}...")
-                    
-                    # 从choices中获取回答
-                    if "choices" in response_data and len(response_data["choices"]) > 0:
-                        evaluation_text = response_data["choices"][0]["message"]["content"]
-                        logger.info(f"API返回文本长度: {len(evaluation_text)}")
-                        
-                        # 提取JSON部分
-                        json_start = evaluation_text.find("{")
-                        json_end = evaluation_text.rfind("}") + 1
-                        
-                        if json_start >= 0 and json_end > json_start:
-                            try:
-                                json_str = evaluation_text[json_start:json_end]
-                                logger.info(f"提取的JSON长度: {len(json_str)}")
-                                
-                                evaluation_result = json.loads(json_str)
-                                
-                                # 检查返回的总分是否为0（可能是错误的评分）
-                                total_score = evaluation_result.get('total_score', 0)
-                                if total_score == 0 and retry_count == 0:
-                                    # 第一次尝试就得到0分，记录警告并继续
-                                    logger.warning("API返回的总分为0，这可能是评分错误。检查评分标准...")
-                                    
-                                    # 检查各项标准分数
-                                    criterion_scores = evaluation_result.get('criterion_scores', [])
-                                    all_zeros = all(item.get('score', 0) == 0 for item in criterion_scores)
-                                    
-                                    if all_zeros and len(criterion_scores) > 0:
-                                        logger.warning("所有评分标准都是0分，可能是API评分错误。将重试...")
-                                        raise ValueError("API返回了全0评分，可能是评分错误")
-                                
-                                logger.info(f"JSON解析成功，总分: {total_score}")
-                                
-                                # 添加调试信息
-                                evaluation_result["debug_info"] = {
-                                    "evaluation_method": "third_party_ai",
-                                    "api_response_time": end_time - start_time,
-                                    "retry_count": retry_count
-                                }
-                                
-                                # 将total_score改为score
-                                if "total_score" in evaluation_result:
-                                    evaluation_result["score"] = evaluation_result.pop("total_score")
-                                
-                                return evaluation_result
-                            except json.JSONDecodeError as e:
-                                logger.error(f"解析JSON失败: {str(e)}")
-                                last_error = f"解析JSON失败: {str(e)}"
-                                # 继续下一次重试
-                        else:
-                            logger.error("无法在API响应中找到JSON")
-                            last_error = "无法在API响应中找到JSON"
-                    else:
-                        logger.error("API响应中没有choices字段")
-                        last_error = "API响应格式不正确"
-                else:
-                    error_message = "未知错误"
-                    try:
-                        error_data = response_obj.json()
-                        if "error" in error_data:
-                            error_message = error_data["error"].get("message", "未知错误")
-                            error_type = error_data["error"].get("type", "未知类型")
-                            logger.error(f"API调用失败: {error_message} (类型: {error_type})")
-                    except:
-                        logger.error(f"API调用失败: {response_obj.text[:200]}...")
-                    
-                    last_error = f"API调用失败: {response_obj.status_code} - {error_message}"
-                    
-                    # 如果是认证错误，尝试使用备用API密钥
-                    if "未提供令牌" in error_message or "authentication" in error_message.lower():
-                        logger.warning("检测到认证错误，尝试使用备用API密钥...")
-                        # 这里可以添加备用API密钥的逻辑
-                        # self.third_party_api_key = "备用API密钥"
-            
-            except Exception as e:
-                logger.error(f"第三方AI评测失败: {str(e)}", exc_info=True)
-                last_error = str(e)
-            
-            retry_count += 1
-            if retry_count < self.max_retries:
-                logger.info(f"将在 {self.retry_delay} 秒后进行第 {retry_count + 1} 次重试...")
+        response_lower = response.lower()
         
-        logger.error(f"第三方AI评测失败，已重试 {retry_count} 次，最后一次错误: {last_error}")
-        # 返回关键词匹配的结果，而不是None，确保重试失败后仍能返回有效评分
-        return self._evaluate_with_keywords(response_text)
-    
-    def _evaluate_with_keywords(self, response: str) -> Dict[str, Any]:
-        """
-        使用关键词匹配方法评估回答（原有评测逻辑）
+        identified_items = []
+        missed_items = []
         
-        Args:
-            response: 模型的回答
-            
-        Returns:
-            Dict[str, Any]: 评估结果
-        """
-        logger.info("开始使用关键词匹配方法评估回答...")
-        # 初始化结果
-        total_score = 0
-        criterion_scores = []
-        
-        # 对每个评分标准进行评估
-        for criterion in self.scoring_criteria:
-            criterion_name = criterion.get("criterion", "")
-            max_points = criterion.get("points", 0)
-            key_points = criterion.get("key_points", [])
-            
-            logger.info(f"评估标准: {criterion_name}, 满分: {max_points}")
-            
-            # 获取该标准的关键词列表
-            criterion_keywords = self.keywords.get(criterion_name, [])
-            
-            # 计算关键词匹配度（占80%）
-            keyword_score = 0
-            matched_keywords = []
-            
-            if criterion_keywords:
-                for keyword in criterion_keywords:
-                    if keyword.lower() in response.lower():
-                        keyword_score += 1
-                        matched_keywords.append(keyword)
-                
-                # 关键词得分占总分的80%
-                keyword_score = (keyword_score / len(criterion_keywords)) * max_points * 0.8
-                logger.info(f"关键词匹配: {len(matched_keywords)}/{len(criterion_keywords)}, 得分: {keyword_score:.2f}")
+        # Check which items were identified
+        for item in expected_items:
+            if item.lower() in response_lower:
+                identified_items.append(item)
             else:
-                # 如果没有关键词，则基于关键点评估
-                key_points_score = 0
-                for point in key_points:
-                    if point.lower() in response.lower():
-                        key_points_score += 1
-                
-                # 关键点得分占总分的80%
-                keyword_score = (key_points_score / len(key_points)) * max_points * 0.8
-                logger.info(f"关键点匹配: {key_points_score}/{len(key_points)}, 得分: {keyword_score:.2f}")
-            
-            # 计算关键点匹配度（占20%）
-            key_points_score = 0
-            matched_key_points = []
-            
-            for point in key_points:
-                if point.lower() in response.lower():
-                    key_points_score += 1
-                    matched_key_points.append(point)
-            
-            # 关键点得分占总分的20%
-            key_points_score = (key_points_score / len(key_points)) * max_points * 0.2
-            logger.info(f"关键点匹配: {len(matched_key_points)}/{len(key_points)}, 得分: {key_points_score:.2f}")
-            
-            # 计算该标准的总分
-            criterion_total_score = keyword_score + key_points_score
-            logger.info(f"标准总分: {criterion_total_score:.2f}")
-            
-            # 添加到结果中
-            criterion_scores.append({
-                "criterion": criterion_name,
-                "score": criterion_total_score,
-                "max_points": max_points,
-                "matched_keywords": matched_keywords,
-                "keyword_score": keyword_score,
-                "matched_key_points": matched_key_points,
-                "key_points_score": key_points_score
-            })
-            
-            total_score += criterion_total_score
+                missed_items.append(item)
         
-        logger.info(f"关键词匹配评测完成，总分: {total_score:.2f}")
+        # Calculate coverage ratio
+        coverage_ratio = len(identified_items) / len(expected_items)
         
-        # 构建详细的调试信息
-        debug_info = {
-            "criterion_scores": criterion_scores,
-            "total_score": total_score,
-            "response_length": len(response),
-            "evaluation_method": "keyword_matching"
-        }
+        # Score is out of 10
+        component_score = coverage_ratio * 10
         
-        return {
-            "score": total_score,
-            "total_possible": self.total_possible,
-            "criterion_scores": criterion_scores,
-            "debug_info": debug_info
-        }
+        logger.info(f"{component_type.capitalize()} evaluation: {len(identified_items)}/{len(expected_items)} items identified, score: {component_score}")
+        return component_score, identified_items, missed_items
+    
+    def _generate_feedback(self, result: Dict[str, Any]) -> str:
+        """
+        Generate feedback based on evaluation results
+        
+        Args:
+            result: Evaluation results
+            
+        Returns:
+            str: Feedback
+        """
+        feedback = ""
+        
+        # Threat analysis feedback
+        if result["threat_score"] >= 8:
+            feedback += "Excellent threat identification with comprehensive coverage. "
+        elif result["threat_score"] >= 5:
+            feedback += "Good threat analysis, but some important threats were missed. "
+        else:
+            feedback += "Insufficient threat identification. Key threats missing include: " + ", ".join(result["missed_threats"][:3]) + ". "
+        
+        # Vulnerability analysis feedback
+        if result["vulnerability_score"] >= 8:
+            feedback += "Strong vulnerability assessment with thorough analysis. "
+        elif result["vulnerability_score"] >= 5:
+            feedback += "Adequate vulnerability analysis, but lacks depth in some areas. "
+        else:
+            feedback += "Weak vulnerability assessment. Important vulnerabilities missing include: " + ", ".join(result["missed_vulnerabilities"][:3]) + ". "
+        
+        # Countermeasure feedback
+        if result["countermeasure_score"] >= 8:
+            feedback += "Comprehensive countermeasures proposed with effective risk mitigation strategies. "
+        elif result["countermeasure_score"] >= 5:
+            feedback += "Reasonable countermeasures suggested, but some key controls were overlooked. "
+        else:
+            feedback += "Insufficient countermeasures proposed. Important missing controls include: " + ", ".join(result["missed_countermeasures"][:3]) + ". "
+        
+        # Overall feedback
+        if result["score"] >= 8:
+            feedback += "Overall, this is a strong risk analysis that effectively addresses the scenario."
+        elif result["score"] >= 5:
+            feedback += "Overall, this is a satisfactory risk analysis but with room for improvement in coverage and depth."
+        else:
+            feedback += "Overall, this risk analysis requires significant improvement in identifying threats, vulnerabilities, and appropriate countermeasures."
+        
+        return feedback
     
     def get_result_fields(self) -> List[str]:
         """
-        获取结果中需要包含的字段
+        Get fields to include in the result
         
         Returns:
-            List[str]: 字段列表
+            List[str]: List of field names
         """
-        return ["score", "total_possible", "criterion_scores", "debug_info"] 
+        return [
+            "score", "max_score", 
+            "threat_score", "vulnerability_score", "countermeasure_score",
+            "identified_threats", "identified_vulnerabilities", "identified_countermeasures",
+            "missed_threats", "missed_vulnerabilities", "missed_countermeasures",
+            "feedback"
+        ]
+    
+    def _evaluate_with_third_party_ai(self, response_text: str) -> Dict[str, Any]:
+        """
+        Use third-party AI to evaluate the answer
+        
+        Args:
+            response_text: Model's answer
+            
+        Returns:
+            Dict[str, Any]: Evaluation results, if evaluation fails returns None
+        """
+        # Implementation would be here
+        # This is just a placeholder for the real implementation
+        pass 

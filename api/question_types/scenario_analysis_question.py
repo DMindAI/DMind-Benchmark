@@ -4,9 +4,12 @@ import json
 import time
 import logging
 import os
+import subprocess
+import tempfile
 from .base_question import BaseQuestion
+from utils.config_manager import config_manager
 
-# 配置日志
+# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -18,73 +21,93 @@ logging.basicConfig(
 logger = logging.getLogger("ScenarioAnalysisQuestion")
 
 class ScenarioAnalysisQuestion(BaseQuestion):
-    """场景分析类，用于处理场景分析类型的题目"""
+    """Scenario analysis class for handling scenario-based questions"""
     
     def __init__(self, question_data: Dict[str, Any]):
         """
-        初始化场景分析题
+        Initialize scenario analysis question
         
         Args:
-            question_data: 包含场景分析题数据的字典
+            question_data: Dictionary containing scenario analysis question data
         """
         super().__init__(question_data)
         self.question_type = "scenario_analysis"
         self.scenario = question_data.get("scenario", "")
-        self.instructions = question_data.get("instructions", "")
+        self.requirements = question_data.get("requirements", [])
         self.scoring_criteria = question_data.get("scoring_criteria", [])
-        self.total_possible = question_data.get("total_possible", 10)
-        self.keywords = question_data.get("keywords", {})  # 每个评分标准的关键词列表
+        self.reference_solution = question_data.get("reference_solution", "")
         
-        # 从环境变量获取API密钥，如果不存在则使用默认值
-        self.third_party_api_key = os.environ.get("CLAUDE_API_KEY", "sk-sjkpMQ7WsWk5jUShcqhK4RSe3GEooupy8jsy7xQkbg6eQaaX")
-        self.third_party_api_base = "https://api.claude-plus.top/v1/chat/completions"
-        self.max_retries = 10  # 最大重试次数
-        self.retry_delay = 2  # 重试间隔（秒）
-        logger.info(f"初始化场景分析题: {self.scenario[:50]}...")
-        logger.info(f"使用API密钥: {self.third_party_api_key[:5]}...")
+        # Calculate total_possible from scoring criteria
+        total_points = 0
+        for criterion in self.scoring_criteria:
+            total_points += criterion.get("points", 0)
+        self.total_possible = question_data.get("total_possible", total_points)
+        
+        # 从配置管理器获取API配置
+        api_config = config_manager.get_third_party_api_config()
+        self.third_party_api_key = api_config["api_key"]
+        self.third_party_api_base = api_config["api_base"]
+        self.third_party_model = api_config["model"]
+        self.max_retries = 10  # Maximum retry attempts
+        self.retry_delay = 2  # Retry interval (seconds)
+        
+        logger.info(f"Initializing scenario analysis question: {len(self.scenario)} characters")
+        logger.info(f"Using API key: {self.third_party_api_key[:5]}...")
+        logger.info(f"Using API endpoint: {self.third_party_api_base}")
         
     def build_prompt(self) -> str:
         """
-        构建场景分析题的提示
+        Build scenario analysis question prompt
         
         Returns:
-            str: 构建好的提示
+            str: Built prompt
         """
-        prompt = f"场景：{self.scenario}\n\n"
-        prompt += f"任务：{self.instructions}\n\n"
-        prompt += "请提供详细的分析和建议。"
-        logger.info(f"构建提示完成，长度: {len(prompt)}")
+        prompt = "Please analyze the following scenario and provide a comprehensive solution:\n\n"
+        prompt += f"Scenario:\n{self.scenario}\n\n"
+        
+        if self.requirements:
+            prompt += "Requirements:\n"
+            for i, req in enumerate(self.requirements, 1):
+                prompt += f"{i}. {req}\n"
+            prompt += "\n"
+        
+        prompt += "Please provide a detailed analysis and solution for this scenario."
+        logger.info(f"Prompt building completed, length: {len(prompt)}")
         return prompt
     
     def evaluate_response(self, response: str) -> Dict[str, Any]:
         """
-        评估模型对情景分析题的回答
+        Evaluate model's answer to scenario analysis question
         
         Args:
-            response: 模型的回答
+            response: Model's answer
             
         Returns:
-            Dict[str, Any]: 评估结果，包含分数和详细信息
+            Dict[str, Any]: Evaluation results, including score and detailed information
         """
-        logger.info(f"开始评估回答，回答长度: {len(response)}")
+        logger.info(f"Starting answer evaluation, answer length: {len(response)}")
         
-        # 使用第三方AI进行评测
-        logger.info("尝试使用第三方AI进行评测...")
+        # Try to use third-party AI for evaluation
+        logger.info("Attempting to use third-party AI for evaluation...")
         third_party_evaluation = self._evaluate_with_third_party_ai(response)
         
-        # 第三方AI评测总会返回结果（成功或关键词备用方案）
-        logger.info(f"评测完成，总分: {third_party_evaluation.get('score', 0)}")
+        # If third-party AI evaluation fails, use keyword matching method
+        if not third_party_evaluation:
+            logger.info("Third-party AI evaluation failed, using keyword matching method...")
+            return self._evaluate_with_keywords(response)
+        
+        logger.info(f"Evaluation completed, total score: {third_party_evaluation.get('score', 0)}")
         return third_party_evaluation
     
     def _evaluate_with_third_party_ai(self, response_text: str) -> Dict[str, Any]:
         """
-        使用第三方AI (Claude-3-7-Sonnet-20250219) 评估回答
+        Use third-party AI to evaluate the answer
         
         Args:
-            response_text: 模型的回答
+            response_text: Model's answer
             
         Returns:
-            Dict[str, Any]: 评估结果，如果评测失败则返回关键词匹配评测结果
+            Dict[str, Any]: Evaluation results, None if evaluation fails
         """
         retry_count = 0
         last_error = None
@@ -92,59 +115,58 @@ class ScenarioAnalysisQuestion(BaseQuestion):
         while retry_count < self.max_retries:
             try:
                 if retry_count > 0:
-                    logger.info(f"第 {retry_count} 次重试第三方AI评测...")
-                    time.sleep(self.retry_delay)  # 重试前等待一段时间
+                    logger.info(f"Retry {retry_count} for third-party AI evaluation...")
+                    time.sleep(self.retry_delay)  # Wait for a while before retrying
                 
-                logger.info("开始构建第三方AI评测提示...")
-                # 构建评分标准提示
-                criteria_prompt = "请根据以下评分标准评估回答的质量：\n\n"
+                logger.info("Starting to build third-party AI evaluation prompt...")
+                
+                # Build evaluation criteria prompt
+                criteria_prompt = "Please evaluate the response according to the following criteria:\n"
                 for criterion in self.scoring_criteria:
                     criterion_name = criterion.get("criterion", "")
                     max_points = criterion.get("points", 0)
-                    key_points = criterion.get("key_points", [])
-                    
-                    criteria_prompt += f"标准：{criterion_name}（满分：{max_points}分）\n"
-                    criteria_prompt += "关键点：\n"
-                    for point in key_points:
-                        criteria_prompt += f"- {point}\n"
-                    criteria_prompt += "\n"
+                    description = criterion.get("description", "")
+                    criteria_prompt += f"- {criterion_name} ({max_points} points): {description}\n"
                 
-                # 构建完整的评测提示
+                # Build complete evaluation prompt
                 evaluation_prompt = f"""
-                你是一个专业的评估专家，请根据以下评分标准评估回答的质量。
+                You are a professional scenario analysis evaluator. Please evaluate the quality of this analysis.
                 
-                场景：{self.scenario}
+                Original scenario:
+                {self.scenario}
                 
-                任务：{self.instructions}
+                Requirements:
+                {', '.join(self.requirements)}
                 
-                回答：{response_text}
+                Reference solution:
+                {self.reference_solution}
+                
+                Model's Answer: {response_text}
                 
                 {criteria_prompt}
                 
-                请为每个评分标准提供0-10的分数，并解释你的评分理由。
-                最后，请以JSON格式输出评估结果，格式如下：
+                For each scoring criterion, evaluate how well the answer performed and assign a score.
+                
+                Output the evaluation results in the following JSON format:
                 {{
                     "criterion_scores": [
                         {{
-                            "criterion": "标准名称",
-                            "score": 分数,
-                            "max_points": 满分,
-                            "explanation": "评分理由"
+                            "criterion": "Criterion name",
+                            "score": score,
+                            "max_points": maximum points,
+                            "explanation": "Scoring rationale"
                         }},
                         ...
                     ],
-                    "total_score": 总分,
+                    "total_score": total score,
                     "total_possible": {self.total_possible},
-                    "overall_feedback": "总体评价"
+                    "overall_feedback": "Overall evaluation"
                 }}
                 
-                只输出JSON格式的评估结果，不要有其他内容。
+                Only output the evaluation results in JSON format, without any other content.
                 """
                 
-                logger.info(f"评测提示构建完成，长度: {len(evaluation_prompt)}")
-                
-                # 调用Claude API
-                logger.info("开始调用Claude API...")
+                logger.info("Starting to call third-party AI API...")
                 headers = {
                     'Accept': 'application/json',
                     'Authorization': f'Bearer {self.third_party_api_key}',
@@ -153,202 +175,241 @@ class ScenarioAnalysisQuestion(BaseQuestion):
                 }
                 
                 data = {
-                    "model": "claude-3-7-sonnet-20250219",
+                    "model": self.third_party_model,
                     "messages": [{"role": "user", "content": evaluation_prompt}],
                     "max_tokens": 4000,
                     "temperature": 0
                 }
                 
                 start_time = time.time()
-                response_obj = requests.post(self.third_party_api_base, headers=headers, json=data)
-                end_time = time.time()
                 
-                logger.info(f"API调用完成，耗时: {end_time - start_time:.2f}秒，状态码: {response_obj.status_code}")
-                
-                if response_obj.status_code == 200:
+                try:
+                    # Try to use requests to send request
+                    response_obj = requests.post(self.third_party_api_base, headers=headers, json=data)
+                    end_time = time.time()
+                    
+                    logger.info(f"API call completed, time taken: {end_time - start_time:.2f} seconds, status code: {response_obj.status_code}")
+                    
+                    if response_obj.status_code != 200:
+                        error_msg = f"API call failed, status code: {response_obj.status_code}, trying to use curl as fallback"
+                        logger.warning(error_msg)
+                        raise Exception(error_msg)
+                    
                     response_data = response_obj.json()
-                    logger.info(f"API响应数据: {json.dumps(response_data)[:200]}...")
                     
-                    # 从choices中获取回答
-                    if "choices" in response_data and len(response_data["choices"]) > 0:
-                        evaluation_text = response_data["choices"][0]["message"]["content"]
-                        logger.info(f"API返回文本长度: {len(evaluation_text)}")
-                        
-                        # 提取JSON部分
-                        json_start = evaluation_text.find("{")
-                        json_end = evaluation_text.rfind("}") + 1
-                        
-                        if json_start >= 0 and json_end > json_start:
-                            try:
-                                json_str = evaluation_text[json_start:json_end]
-                                logger.info(f"提取的JSON长度: {len(json_str)}")
-                                
-                                evaluation_result = json.loads(json_str)
-                                
-                                # 检查返回的总分是否为0（可能是错误的评分）
-                                total_score = evaluation_result.get('total_score', 0)
-                                if total_score == 0 and retry_count == 0:
-                                    # 第一次尝试就得到0分，记录警告并继续
-                                    logger.warning("API返回的总分为0，这可能是评分错误。检查评分标准...")
-                                    
-                                    # 检查各项标准分数
-                                    criterion_scores = evaluation_result.get('criterion_scores', [])
-                                    all_zeros = all(item.get('score', 0) == 0 for item in criterion_scores)
-                                    
-                                    if all_zeros and len(criterion_scores) > 0:
-                                        logger.warning("所有评分标准都是0分，可能是API评分错误。将重试...")
-                                        raise ValueError("API返回了全0评分，可能是评分错误")
-                                
-                                logger.info(f"JSON解析成功，总分: {total_score}")
-                                
-                                # 添加调试信息
-                                evaluation_result["debug_info"] = {
-                                    "evaluation_method": "third_party_ai",
-                                    "api_response_time": end_time - start_time,
-                                    "retry_count": retry_count
-                                }
-                                
-                                # 将total_score改为score
-                                if "total_score" in evaluation_result:
-                                    evaluation_result["score"] = evaluation_result.pop("total_score")
-                                
-                                return evaluation_result
-                            except json.JSONDecodeError as e:
-                                logger.error(f"解析JSON失败: {str(e)}")
-                                last_error = f"解析JSON失败: {str(e)}"
-                                # 继续下一次重试
-                        else:
-                            logger.error("无法在API响应中找到JSON")
-                            last_error = "无法在API响应中找到JSON"
-                    else:
-                        logger.error("API响应中没有choices字段")
-                        last_error = "API响应格式不正确"
-                else:
-                    error_message = "未知错误"
+                except Exception as e:
+                    # If requests fails, try using curl
+                    logger.info(f"Using requests to call API failed: {str(e)}, trying to use curl...")
+                    
+                    # Write data to temporary file
+                    with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as temp_file:
+                        json.dump(data, temp_file)
+                        temp_file_path = temp_file.name
+                    
+                    # Build curl command
+                    curl_cmd = [
+                        'curl', '-s', self.third_party_api_base,
+                        '-H', f'Authorization: Bearer {self.third_party_api_key}',
+                        '-H', 'Content-Type: application/json',
+                        '-H', 'Accept: application/json',
+                        '-H', 'User-Agent: Apifox/1.0.0 (https://apifox.com)',
+                        '-X', 'POST',
+                        '-d', f'@{temp_file_path}'
+                    ]
+                    
+                    # Execute curl command
                     try:
-                        error_data = response_obj.json()
-                        if "error" in error_data:
-                            error_message = error_data["error"].get("message", "未知错误")
-                            error_type = error_data["error"].get("type", "未知类型")
-                            logger.error(f"API调用失败: {error_message} (类型: {error_type})")
-                    except:
-                        logger.error(f"API调用失败: {response_obj.text[:200]}...")
+                        curl_result = subprocess.run(curl_cmd, capture_output=True, text=True, check=True)
+                        end_time = time.time()
+                        logger.info(f"curl API call completed, time taken: {end_time - start_time:.2f} seconds")
+                        
+                        # Parse response
+                        try:
+                            response_data = json.loads(curl_result.stdout)
+                            
+                            # Create an object similar to requests.Response
+                            class CurlResponse:
+                                def __init__(self, data, status_code=200):
+                                    self.data = data
+                                    self.status_code = status_code
+                                
+                                def json(self):
+                                    return self.data
+                            
+                            response_obj = CurlResponse(response_data)
+                            
+                        except json.JSONDecodeError as je:
+                            logger.error(f"Failed to parse curl response: {str(je)}")
+                            logger.error(f"curl response: {curl_result.stdout[:200]}")
+                            logger.error(f"curl error: {curl_result.stderr}")
+                            raise je
+                        
+                        # Delete temporary file
+                        os.unlink(temp_file_path)
+                        
+                    except subprocess.CalledProcessError as ce:
+                        logger.error(f"Failed to execute curl command: {str(ce)}")
+                        logger.error(f"curl error output: {ce.stderr}")
+                        # Delete temporary file
+                        os.unlink(temp_file_path)
+                        raise ce
+                
+                logger.info(f"API response data: {json.dumps(response_data)[:200]}...")
+                
+                if "choices" not in response_data or not response_data["choices"]:
+                    error_msg = "API response does not contain choices field"
+                    logger.error(error_msg)
+                    last_error = Exception(error_msg)
+                    retry_count += 1
+                    continue
+                
+                evaluation_text = response_data["choices"][0]["message"]["content"]
+                logger.info(f"Evaluation text length: {len(evaluation_text)}")
+                
+                # Try to extract JSON from evaluation text
+                try:
+                    # Find start and end positions of JSON string
+                    json_start = evaluation_text.find("{")
+                    json_end = evaluation_text.rfind("}") + 1
                     
-                    last_error = f"API调用失败: {response_obj.status_code} - {error_message}"
+                    if json_start >= 0 and json_end > json_start:
+                        json_str = evaluation_text[json_start:json_end]
+                        logger.info(f"Extracted JSON length: {len(json_str)}")
+                        
+                        evaluation_result = json.loads(json_str)
+                        
+                        # Check if the returned total score is 0 (might be an error in scoring)
+                        total_score = evaluation_result.get('total_score', 0)
+                        if total_score == 0 and retry_count == 0:
+                            # First attempt got 0 points, log a warning and continue
+                            logger.warning("API returned a total score of 0, this might be a scoring error. Checking scoring criteria...")
+                            
+                            # Check scores for each criterion
+                            criterion_scores = evaluation_result.get('criterion_scores', [])
+                            all_zeros = all(item.get('score', 0) == 0 for item in criterion_scores)
+                            
+                            if all_zeros and len(criterion_scores) > 0:
+                                logger.warning("All scoring criteria are 0 points, might be an API scoring error. Will retry...")
+                                raise ValueError("API returned all-zero scores, might be a scoring error")
+                        
+                        logger.info(f"JSON parsing successful, total score: {total_score}")
+                        
+                        # Add debugging information
+                        evaluation_result["debug_info"] = {
+                            "evaluation_method": "third_party_ai",
+                            "api_response_time": end_time - start_time,
+                            "retry_count": retry_count
+                        }
+                        
+                        # Change total_score to score
+                        if "total_score" in evaluation_result:
+                            evaluation_result["score"] = evaluation_result.pop("total_score")
+                        
+                        return evaluation_result
+                    else:
+                        logger.error("Cannot find JSON in API response")
+                        last_error = Exception("Cannot find JSON in API response")
+                        retry_count += 1
+                        continue
                     
-                    # 如果是认证错误，尝试使用备用API密钥
-                    if "未提供令牌" in error_message or "authentication" in error_message.lower():
-                        logger.warning("检测到认证错误，尝试使用备用API密钥...")
-                        # 这里可以添加备用API密钥的逻辑
-                        # self.third_party_api_key = "备用API密钥"
-            
+                except json.JSONDecodeError as e:
+                    error_msg = f"JSON parsing failed: {str(e)}"
+                    logger.error(error_msg)
+                    last_error = e
+                    retry_count += 1
+                    continue
+                    
             except Exception as e:
-                logger.error(f"第三方AI评测失败: {str(e)}", exc_info=True)
-                last_error = str(e)
-            
-            retry_count += 1
-            if retry_count < self.max_retries:
-                logger.info(f"将在 {self.retry_delay} 秒后进行第 {retry_count + 1} 次重试...")
+                error_msg = f"Error occurred during evaluation: {str(e)}"
+                logger.error(error_msg)
+                last_error = e
+                retry_count += 1
+                continue
         
-        logger.error(f"第三方AI评测失败，已重试 {retry_count} 次，最后一次错误: {last_error}")
-        # 返回关键词匹配的结果，而不是None，确保重试失败后仍能返回有效评分
-        return self._evaluate_with_keywords(response_text)
+        if last_error:
+            logger.error(f"Evaluation failed, last error: {str(last_error)}")
+        
+        return None
     
     def _evaluate_with_keywords(self, response: str) -> Dict[str, Any]:
         """
-        使用关键词匹配方法评估回答（原有评测逻辑）
+        Use keyword matching method to evaluate the answer
         
         Args:
-            response: 模型的回答
+            response: Model's answer
             
         Returns:
-            Dict[str, Any]: 评估结果
+            Dict[str, Any]: Evaluation results
         """
-        logger.info("开始使用关键词匹配方法评估回答...")
-        # 初始化结果
+        logger.info("Starting to use keyword matching method to evaluate the answer...")
+        
+        # Initialize results
         total_score = 0
         criterion_scores = []
-        keyword_matches = {}
         
-        # 对每个评分标准进行评估
+        # Check for reference solution keywords in the response
+        if self.reference_solution:
+            # Simple content analysis
+            reference_words = set(self.reference_solution.lower().split())
+            response_words = set(response.lower().split())
+            common_words = reference_words.intersection(response_words)
+            
+            # Calculate similarity percentage
+            similarity = len(common_words) / len(reference_words) if len(reference_words) > 0 else 0
+            logger.info(f"Content similarity: {similarity:.2%} ({len(common_words)}/{len(reference_words)} words in common)")
+        else:
+            similarity = 0.5  # Default similarity if no reference solution
+        
+        # Evaluate based on scoring criteria
         for criterion in self.scoring_criteria:
             criterion_name = criterion.get("criterion", "")
             max_points = criterion.get("points", 0)
-            key_points = criterion.get("key_points", [])
             
-            logger.info(f"评估标准: {criterion_name}, 满分: {max_points}")
+            # Basic scoring - assign scores based on similarity and response length
+            response_length_factor = min(1.0, len(response) / 1000)  # Normalize by expected length
             
-            # 获取该标准的关键词列表
-            criterion_keywords = self.keywords.get(criterion_name, [])
+            # Combine similarity and length factor for scoring
+            score = ((similarity * 0.7) + (response_length_factor * 0.3)) * max_points
             
-            # 计算关键词匹配度
-            keyword_score = 0
-            matched_keywords = []
+            logger.info(f"{criterion_name} score: {score:.2f}/{max_points}")
             
-            if criterion_keywords:
-                for keyword in criterion_keywords:
-                    if keyword.lower() in response.lower():
-                        keyword_score += 1
-                        matched_keywords.append(keyword)
-                
-                # 关键词得分占总分的70%
-                keyword_score = (keyword_score / len(criterion_keywords)) * max_points * 0.7
-                logger.info(f"关键词匹配: {len(matched_keywords)}/{len(criterion_keywords)}, 得分: {keyword_score:.2f}")
-            else:
-                # 如果没有关键词，则基于关键点评估
-                key_points_score = 0
-                for point in key_points:
-                    if point.lower() in response.lower():
-                        key_points_score += 1
-                
-                # 关键点得分占总分的70%
-                keyword_score = (key_points_score / len(key_points)) * max_points * 0.7
-                logger.info(f"关键点匹配: {key_points_score}/{len(key_points)}, 得分: {keyword_score:.2f}")
-            
-            # 计算内容质量得分（占总分的30%）
-            content_score = 0
-            if len(response) > 100:  # 确保回答有足够的长度
-                content_score = max_points * 0.3
-                logger.info(f"内容质量得分: {content_score:.2f}")
-            
-            # 计算该标准的总分
-            criterion_total_score = keyword_score + content_score
-            logger.info(f"标准总分: {criterion_total_score:.2f}")
-            
-            # 添加到结果中
+            # Add criterion score to results
             criterion_scores.append({
                 "criterion": criterion_name,
-                "score": criterion_total_score,
+                "score": score,
                 "max_points": max_points,
-                "matched_keywords": matched_keywords,
-                "keyword_score": keyword_score,
-                "content_score": content_score
+                "explanation": f"Score based on content similarity ({similarity:.2%}) and response length."
             })
             
-            total_score += criterion_total_score
+            # Add to total score
+            total_score += score
         
-        logger.info(f"关键词匹配评测完成，总分: {total_score:.2f}")
+        logger.info(f"Keyword matching evaluation completed, total score: {total_score:.2f}/{self.total_possible}")
         
-        # 构建详细的调试信息
+        # Build debugging information
         debug_info = {
-            "criterion_scores": criterion_scores,
-            "total_score": total_score,
+            "evaluation_method": "keyword_matching",
+            "content_similarity": similarity,
             "response_length": len(response),
-            "evaluation_method": "keyword_matching"
+            "reference_length": len(self.reference_solution) if self.reference_solution else 0
         }
         
-        return {
+        # Build final results
+        evaluation_result = {
             "score": total_score,
             "total_possible": self.total_possible,
+            "overall_feedback": f"Evaluation based on content similarity with reference solution ({similarity:.2%}).",
             "criterion_scores": criterion_scores,
             "debug_info": debug_info
         }
+        
+        return evaluation_result
     
     def get_result_fields(self) -> List[str]:
         """
-        获取结果中需要包含的字段
+        Get fields to include in results
         
         Returns:
-            List[str]: 字段列表
+            List[str]: Field list
         """
         return ["score", "total_possible", "criterion_scores", "debug_info"] 

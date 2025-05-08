@@ -1,131 +1,68 @@
-api_base: "your_api_base"
+# API Base URL Configuration
+# ===============================
+# Main API Base URL (Currently Active)
+api_base: "xxx"
+# Alternative API Base URLs (Switch by commenting/uncommenting)
+# api_base: "xxx"
 
+# Third-party Evaluation API Configuration
+# ===============================
+# Evaluation API Base URL (Optional, uses the above api_base if not set)
+evaluation_api_base: "xxx"
+# Alternative Evaluation API Base URLs
+
+
+# API Key Configuration
+# ===============================
 api_keys:
-  - key: "your_api_key"
-    name: "API_1"
+  # Existing API Keys
+  - key: "xxx"
+    name: "xxx"
 
+    
+  # Evaluation API Keys
+  - key: "xxx"
+    name: "claude_eval"
+    model_name: "claude-3-7-sonnet-20250219"
+  - key: "xxx"
+    name: "openai_eval"
+    model_name: "gpt-4o"
+
+# Model Configuration
+# ===============================
 models:
-  - name: "claude-3-5-haiku-20241022"
-    provider: "anthropic"
-    model: "claude-3-5-haiku-20241022"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
+  # Commented Model Configurations (Original Configurations Preserved)
+  # - name: "claude-3-5-haiku-20241022"
+  #   provider: "anthropic"
+  #   model: "claude-3-5-haiku-20241022"
+  #   parameters:
+  #     temperature: 0.7
+  #     max_tokens: 1000
+  #   api_key: "xxxx"
 
-  - name: "claude-3-5-sonnet-20240620"
-    provider: "anthropic"
-    model: "claude-3-5-sonnet-20240620"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
+  # ... [Other commented model configurations] ...
 
-  - name: "claude-3-7-sonnet-20250219"
+  # Existing Model Configurations
+  - name: "xxx"
+    provider: "xxx"
+    model: "xxx"
+    api_key: "xxx"
+  
+  # Evaluation Model Configurations
+  - name: "claude_evaluation"
     provider: "anthropic"
     model: "claude-3-7-sonnet-20250219"
     parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
-
-  - name: "claude-3-7-sonnet-20250219-thinking"
-    provider: "anthropic"
-    model: "claude-3-7-sonnet-20250219-thinking"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-      thinking: true
-    api_key: "xxxx"
-
-  - name: "deepseek-r1"
-    provider: "deepseek"
-    model: "deepseek-reasoner"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
-
-  - name: "deepseek-v3"
-    provider: "deepseek"
-    model: "deepseek-v3"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
-
-  - name: "chatgpt-4o-latest"
-    provider: "openai"
-    model: "chatgpt-4o-latest"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
-
-  - name: "gpt-4o"
+      temperature: 0
+      max_tokens: 4000
+    api_key: "claude_eval"
+    api_base: "xxx"
+    
+  - name: "gpt4_evaluation"
     provider: "openai"
     model: "gpt-4o"
     parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
-
-  - name: "gpt-4-0613"
-    provider: "openai"
-    model: "gpt-4-0613"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
-
-  - name: "gpt-4-turbo-preview"
-    provider: "openai"
-    model: "gpt-4-turbo"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
-
-  - name: "gpt-4o-mini"
-    provider: "openai"
-    model: "gpt-4o-mini"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
-
-  - name: "o1"
-    provider: "openai"
-    model: "o1"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
-
-  - name: "o3-mini"
-    provider: "openai"
-    model: "o3-mini"
-    parameters:
-      temperature: 0.7
-      max_tokens: 1000
-    api_key: "xxxx"
-
-  - name: "gemini-1.5-flash"
-    provider: "google"
-    model: "gemini-1.5-flash"
-    api_key: "xxxx"
-  
-  - name: "gemini-2.0-flash"
-    provider: "google"
-    model: "gemini-2.0-flash"
-    api_key: "xxxx"
-  
-  - name: "gemini-1.5-pro"
-    provider: "google"
-    model: "gemini-1.5-pro"
-    api_key: "xxxx"
-  
-  - name: "gemini-2.0-flash-lite"
-    provider: "google"
-    model: "gemini-2.0-flash-lite"
-    api_key: "xxxx"
+      temperature: 0
+      max_tokens: 4000
+    api_key: "openai_eval"
+    api_base: "xxx"

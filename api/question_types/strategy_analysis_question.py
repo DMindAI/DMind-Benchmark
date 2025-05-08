@@ -4,7 +4,10 @@ import json
 import time
 import logging
 import os
+import subprocess
+import tempfile
 from .base_question import BaseQuestion
+from utils.config_manager import config_manager
 
 # Configure logging
 logging.basicConfig(
@@ -35,13 +38,17 @@ class StrategyAnalysisQuestion(BaseQuestion):
         self.total_possible = question_data.get("total_possible", 10)
         self.keywords = question_data.get("keywords", {})  # List of keywords for each scoring criterion
         
-        # Get API key from environment variable, use default if it doesn't exist
-        self.third_party_api_key = os.environ.get("CLAUDE_API_KEY", "sk-sjkpMQ7WsWk5jUShcqhK4RSe3GEooupy8jsy7xQkbg6eQaaX")
-        self.third_party_api_base = "https://api.claude-plus.top/v1/chat/completions"
+        api_config = config_manager.get_third_party_api_config()
+        self.third_party_api_key = api_config["api_key"]
+        self.third_party_api_base = api_config["api_base"]
+        self.third_party_model = api_config["model"]
         self.max_retries = 10  # Maximum retry attempts
         self.retry_delay = 2  # Retry interval (seconds)
+        
         logger.info(f"Initializing strategy analysis question: {self.scenario[:50]}...")
         logger.info(f"Using API key: {self.third_party_api_key[:5]}...")
+        logger.info(f"Using API endpoint: {self.third_party_api_base}")
+        logger.info(f"Using model: {self.third_party_model}")
         
     def build_prompt(self) -> str:
         """
@@ -78,7 +85,7 @@ class StrategyAnalysisQuestion(BaseQuestion):
     
     def _evaluate_with_third_party_ai(self, response: str) -> Optional[Dict[str, Any]]:
         """
-        Use third-party AI (Claude-3-7-Sonnet-20250219) to evaluate the answer
+        Use third-party AI to evaluate the answer
         
         Args:
             response: Model's answer
@@ -153,94 +160,140 @@ class StrategyAnalysisQuestion(BaseQuestion):
                 }
                 
                 data = {
-                    "model": "claude-3-7-sonnet-20250219",
+                    "model": self.third_party_model,
                     "messages": [{"role": "user", "content": evaluation_prompt}],
                     "max_tokens": 4000,
                     "temperature": 0
                 }
                 
                 start_time = time.time()
-                response_obj = requests.post(self.third_party_api_base, headers=headers, json=data)
-                end_time = time.time()
-                
-                logger.info(f"API call completed, time taken: {end_time - start_time:.2f} seconds, status code: {response_obj.status_code}")
-                
-                if response_obj.status_code == 200:
+                try:
+                    # Try to use requests to send request
+                    response_obj = requests.post(self.third_party_api_base, headers=headers, json=data)
+                    end_time = time.time()
+                    
+                    logger.info(f"API call completed, time taken: {end_time - start_time:.2f} seconds, status code: {response_obj.status_code}")
+                    
+                    if response_obj.status_code != 200:
+                        error_msg = f"API call failed, status code: {response_obj.status_code}, trying to use curl as fallback"
+                        logger.warning(error_msg)
+                        raise Exception(error_msg)
+                    
                     response_data = response_obj.json()
-                    logger.info(f"API response data: {json.dumps(response_data)[:200]}...")
                     
-                    # Get answer from choices
-                    if "choices" in response_data and len(response_data["choices"]) > 0:
-                        evaluation_text = response_data["choices"][0]["message"]["content"]
-                        logger.info(f"API return text length: {len(evaluation_text)}")
-                        
-                        # Extract JSON part
-                        json_start = evaluation_text.find("{")
-                        json_end = evaluation_text.rfind("}") + 1
-                        
-                        if json_start >= 0 and json_end > json_start:
-                            try:
-                                json_str = evaluation_text[json_start:json_end]
-                                logger.info(f"Extracted JSON length: {len(json_str)}")
-                                
-                                evaluation_result = json.loads(json_str)
-                                
-                                # Check if the returned total score is 0 (might be an error in scoring)
-                                total_score = evaluation_result.get('total_score', 0)
-                                if total_score == 0 and retry_count == 0:
-                                    # First attempt got 0 points, log a warning and continue
-                                    logger.warning("API returned a total score of 0, this might be a scoring error. Checking scoring criteria...")
-                                    
-                                    # Check scores for each criterion
-                                    criterion_scores = evaluation_result.get('criterion_scores', [])
-                                    all_zeros = all(item.get('score', 0) == 0 for item in criterion_scores)
-                                    
-                                    if all_zeros and len(criterion_scores) > 0:
-                                        logger.warning("All scoring criteria are 0 points, might be an API scoring error. Will retry...")
-                                        raise ValueError("API returned all-zero scores, might be a scoring error")
-                                
-                                logger.info(f"JSON parsing successful, total score: {total_score}")
-                                
-                                # Add debugging information
-                                evaluation_result["debug_info"] = {
-                                    "evaluation_method": "third_party_ai",
-                                    "api_response_time": end_time - start_time,
-                                    "retry_count": retry_count
-                                }
-                                
-                                # Change total_score to score
-                                if "total_score" in evaluation_result:
-                                    evaluation_result["score"] = evaluation_result.pop("total_score")
-                                
-                                return evaluation_result
-                            except json.JSONDecodeError as e:
-                                logger.error(f"JSON parsing failed: {str(e)}")
-                                last_error = f"JSON parsing failed: {str(e)}"
-                                # Continue to next retry
-                        else:
-                            logger.error("Cannot find JSON in API response")
-                            last_error = "Cannot find JSON in API response"
-                    else:
-                        logger.error("API response does not contain choices field")
-                        last_error = "API response format incorrect"
-                else:
-                    error_message = "Unknown error"
+                except Exception as e:
+                    # If requests fails, try using curl
+                    logger.info(f"Using requests to call API failed: {str(e)}, trying to use curl...")
+                    
+                    # Write data to temporary file
+                    with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as temp_file:
+                        json.dump(data, temp_file)
+                        temp_file_path = temp_file.name
+                    
+                    # Build curl command
+                    curl_cmd = [
+                        'curl', '-s', self.third_party_api_base,
+                        '-H', f'Authorization: Bearer {self.third_party_api_key}',
+                        '-H', 'Content-Type: application/json',
+                        '-H', 'Accept: application/json',
+                        '-H', 'User-Agent: Apifox/1.0.0 (https://apifox.com)',
+                        '-X', 'POST',
+                        '-d', f'@{temp_file_path}'
+                    ]
+                    
+                    # Execute curl command
                     try:
-                        error_data = response_obj.json()
-                        if "error" in error_data:
-                            error_message = error_data["error"].get("message", "Unknown error")
-                            error_type = error_data["error"].get("type", "Unknown type")
-                            logger.error(f"API call failed: {error_message} (type: {error_type})")
-                    except:
-                        logger.error(f"API call failed: {response_obj.text[:200]}...")
+                        curl_result = subprocess.run(curl_cmd, capture_output=True, text=True, check=True)
+                        end_time = time.time()
+                        logger.info(f"curl API call completed, time taken: {end_time - start_time:.2f} seconds")
+                        
+                        # Parse response
+                        try:
+                            response_data = json.loads(curl_result.stdout)
+                            
+                            # Create an object similar to requests.Response
+                            class CurlResponse:
+                                def __init__(self, data, status_code=200):
+                                    self.data = data
+                                    self.status_code = status_code
+                                
+                                def json(self):
+                                    return self.data
+                            
+                            response_obj = CurlResponse(response_data)
+                            
+                        except json.JSONDecodeError as je:
+                            logger.error(f"Failed to parse curl response: {str(je)}")
+                            logger.error(f"curl response: {curl_result.stdout[:200]}")
+                            logger.error(f"curl error: {curl_result.stderr}")
+                            raise je
+                        
+                        # Delete temporary file
+                        os.unlink(temp_file_path)
+                        
+                    except subprocess.CalledProcessError as ce:
+                        logger.error(f"Failed to execute curl command: {str(ce)}")
+                        logger.error(f"curl error output: {ce.stderr}")
+                        # Delete temporary file
+                        os.unlink(temp_file_path)
+                        raise ce
+                
+                logger.info(f"API response data: {json.dumps(response_data)[:200]}...")
+                
+                # Get answer from choices
+                if "choices" in response_data and len(response_data["choices"]) > 0:
+                    evaluation_text = response_data["choices"][0]["message"]["content"]
+                    logger.info(f"API return text length: {len(evaluation_text)}")
                     
-                    last_error = f"API call failed: {response_obj.status_code} - {error_message}"
+                    # Extract JSON part
+                    json_start = evaluation_text.find("{")
+                    json_end = evaluation_text.rfind("}") + 1
                     
-                    # If it's an authentication error, try using a backup API key
-                    if "Token not provided" in error_message or "authentication" in error_message.lower():
-                        logger.warning("Authentication error detected, trying to use backup API key...")
-                        # Here you can add logic for backup API key
-                        # self.third_party_api_key = "Backup API key"
+                    if json_start >= 0 and json_end > json_start:
+                        try:
+                            json_str = evaluation_text[json_start:json_end]
+                            logger.info(f"Extracted JSON length: {len(json_str)}")
+                            
+                            evaluation_result = json.loads(json_str)
+                            
+                            # Check if the returned total score is 0 (might be an error in scoring)
+                            total_score = evaluation_result.get('total_score', 0)
+                            if total_score == 0 and retry_count == 0:
+                                # First attempt got 0 points, log a warning and continue
+                                logger.warning("API returned a total score of 0, this might be a scoring error. Checking scoring criteria...")
+                                
+                                # Check scores for each criterion
+                                criterion_scores = evaluation_result.get('criterion_scores', [])
+                                all_zeros = all(item.get('score', 0) == 0 for item in criterion_scores)
+                                
+                                if all_zeros and len(criterion_scores) > 0:
+                                    logger.warning("All scoring criteria are 0 points, might be an API scoring error. Will retry...")
+                                    raise ValueError("API returned all-zero scores, might be a scoring error")
+                            
+                            logger.info(f"JSON parsing successful, total score: {total_score}")
+                            
+                            # Add debugging information
+                            evaluation_result["debug_info"] = {
+                                "evaluation_method": "third_party_ai",
+                                "api_response_time": end_time - start_time,
+                                "retry_count": retry_count
+                            }
+                            
+                            # Change total_score to score
+                            if "total_score" in evaluation_result:
+                                evaluation_result["score"] = evaluation_result.pop("total_score")
+                            
+                            return evaluation_result
+                        except json.JSONDecodeError as e:
+                            logger.error(f"JSON parsing failed: {str(e)}")
+                            last_error = f"JSON parsing failed: {str(e)}"
+                            # Continue to next retry
+                    else:
+                        logger.error("Cannot find JSON in API response")
+                        last_error = "Cannot find JSON in API response"
+                else:
+                    logger.error("API response does not contain choices field")
+                    last_error = "API response format incorrect"                   
             
             except Exception as e:
                 logger.error(f"Third-party AI evaluation failed: {str(e)}", exc_info=True)

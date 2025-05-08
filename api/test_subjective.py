@@ -85,8 +85,8 @@ class SubjectiveModelTester:
         """Send API request"""
         Skey = model_config["api"]
 
-        max_retries = 10  # Maximum retry attempts
-        retry_delay = 15  # Retry interval (seconds)
+        max_retries = 30  # Maximum retry attempts
+        retry_delay = 10  # Retry interval (seconds)
         
         for attempt in range(max_retries):
             try:
@@ -143,6 +143,7 @@ class SubjectiveModelTester:
                         )
                         
                         # Convert OpenAI response object to dictionary
+                        response.choices[0].message.content = response.choices[0].message.content.split("</think>\n")[1]
                         response_json = {
                             "id": response.id,
                             "choices": [
@@ -179,11 +180,19 @@ class SubjectiveModelTester:
                         'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
                         'Content-Type': 'application/json'
                     }
+
+                    prompt_enforce = """
+
+"""
                     
                     data = {
                         "model": model_config["model"],
-                        "messages": [{"role": "user", "content": prompt}],
-                        **model_config["parameters"]
+                        "messages": [{"role": "user", "content": prompt + prompt_enforce}],
+                        'top_k': -1,
+                        'top_p': 1,
+                        "stream": False,
+                        "temperature": 0.7
+                        # **model_config["parameters"]
                     }
                     
                     # Output request content
@@ -227,27 +236,27 @@ class SubjectiveModelTester:
                         }
                     else:
                         if attempt < max_retries - 1:
-                            print(f"解析响应失败，将在 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                            print(f"Failed to parse response, will retry in {retry_delay} seconds... (attempt {attempt + 1}/{max_retries})")
                             time.sleep(retry_delay)
                             continue
                 else:
-                    print(f"API请求失败")
+                    print(f"API request failed")
                     if provider != "deepseek":
-                        print(f"状态码: {response.status_code}")
-                        print(f"响应内容: {response.text}")
+                        print(f"Status code: {response.status_code}")
+                        print(f"Response content: {response.text}")
                     if attempt < max_retries - 1:
-                        print(f"将在 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                        print(f"Will retry in {retry_delay} seconds... (attempt {attempt + 1}/{max_retries})")
                         time.sleep(retry_delay)
                         continue
                 
             except Exception as e:
-                print(f"发送API请求时出错: {e}")
+                print(f"Error during API request: {e}")
                 if attempt < max_retries - 1:
-                    print(f"将在 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
+                    print(f"Will retry in {retry_delay} seconds... (attempt {attempt + 1}/{max_retries})")
                     time.sleep(retry_delay)
                     continue
         
-        # 如果所有重试都失败了
+        # If all retries failed
         return {
             "status_code": 500,
             "response": None,
@@ -257,15 +266,15 @@ class SubjectiveModelTester:
         
     def evaluate_model(self, model_config: Dict, test_data: List[Dict], dataset_name: str) -> Dict:
         """
-        评估模型在测试数据上的表现
+        Evaluate model's performance on test data
         
         Args:
-            model_config: 模型配置
-            test_data: 测试数据列表
-            dataset_name: 数据集名称
+            model_config: Model configuration
+            test_data: List of test data
+            dataset_name: Dataset name
             
         Returns:
-            Dict: 评估结果
+            Dict: Evaluation results
         """
         results = []
         total_score = 0
@@ -274,51 +283,52 @@ class SubjectiveModelTester:
         for question_data in test_data:
             question_type = question_data.get("question_type", "")
             
-            # 获取对应的题目类型类
+            # Get corresponding question type class
             question_class = QUESTION_TYPES.get(question_type)
             if not question_class:
-                print(f"未知的题目类型: {question_type}")
+                print(f"Unknown question type: {question_type}")
                 continue
                 
-            # 创建题目实例
+            # Create question instance
             question = question_class(question_data)
             
-            # 构建提示词
+            # Build prompt
             prompt = question.build_prompt()
             
-            # 调用模型API
+            # Call model API
+            print(f"Prompt: {prompt}")
             api_result = self.make_api_request(model_config, prompt)
             
-            # 提取模型回答
+            # Extract model response
             model_response = ""
             if api_result["status_code"] == 200:
                 provider = model_config.get("provider", "").lower()
                 if provider == "google":
-                    # 处理 Gemini 响应
+                    # Handle Gemini response
                     try:
                         if "candidates" in api_result["response"]:
                             model_response = api_result["response"]["candidates"][0]["content"]["parts"][0]["text"]
                         else:
-                            model_response = "无法提取模型回答"
+                            model_response = "Unable to extract model response"
                     except (KeyError, IndexError):
-                        model_response = "无法提取模型回答"
+                        model_response = "Unable to extract model response"
                 elif provider == "deepseek":
-                    # 处理 DeepSeek 响应
+                    # Handle DeepSeek response
                     try:
                         model_response = api_result["response"]["choices"][0]["message"]["content"]
                     except (KeyError, IndexError):
-                        model_response = "无法提取模型回答"
+                        model_response = "Unable to extract model response"
                 else:
-                    # 处理标准响应
+                    # Handle standard response
                     try:
                         model_response = api_result["response"]["choices"][0]["message"]["content"]
                     except (KeyError, IndexError):
-                        model_response = "无法提取模型回答"
+                        model_response = "Unable to extract model response"
             
-            # 评估回答
+            # Evaluate answer
             evaluation_result = question.evaluate_response(model_response)
             
-            # 记录结果
+            # Record results
             result = {
                 "question_type": question_type,
                 "prompt": prompt,
@@ -327,18 +337,18 @@ class SubjectiveModelTester:
                 **evaluation_result
             }
             
-            # 添加特定题目类型的结果字段
+            # Add specific question type result fields
             for field in question.get_result_fields():
                 if field in evaluation_result:
                     result[field] = evaluation_result[field]
             
             results.append(result)
             
-            # 更新总分
+            # Update total score
             total_score += evaluation_result.get("score", 0)
             total_possible += evaluation_result.get("total_possible", 0)
         
-        # 计算平均分
+        # Calculate average score
         average_score = total_score / total_possible if total_possible > 0 else 0
         
         return {
@@ -351,15 +361,15 @@ class SubjectiveModelTester:
         }
         
     def run_tests(self, model_name: Optional[str] = None):
-        """运行主观题测试
+        """Run subjective tests
         Args:
-            model_name: 可选，指定要测试的模型名称。如果为None，则测试所有模型
+            model_name: Optional, specify the name of the model to test. If None, all models will be tested
         """
-        # 测试数据集列表
+        # Test dataset list
         test_datasets = [
-            # "Blockchain_Fundamentals_benchmark.json",
-            # "DAO.json",
-            # "Defi.json",
+            "Blockchain_Fundamentals_benchmark.json",
+            "DAO.json",
+            "Defi.json",
             "Infra.json",
             "MEME.json",
             "NFT.json",
@@ -375,36 +385,36 @@ class SubjectiveModelTester:
                 continue
                 
             if model_name:
-                # 测试指定模型
+                # Test specified model
                 model_config = next((m for m in self.models if m["name"] == model_name), None)
                 if not model_config:
                     print(f"Model {model_name} not found in configuration")
                     return
                     
-                # 创建模型专属的主观题结果目录
+                # Create model-specific subjective results directory
                 model_results_dir = self.results_dir / model_config["name"] / "subjective"
                 model_results_dir.mkdir(parents=True, exist_ok=True)
                     
                 print(f"Testing model {model_config['name']} on dataset {dataset}")
                 results = self.evaluate_model(model_config, test_data, dataset)
                 
-                # 保存结果
+                # Save results
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 results_file = model_results_dir / f"{dataset.replace('.json', '')}_{timestamp}.json"
                 with open(results_file, "w", encoding='utf-8') as f:
                     json.dump(results, f, indent=2, ensure_ascii=False)
                 print(f"Test results saved to {results_file}")
             else:
-                # 测试所有模型
+                # Test all models
                 for model_config in self.models:
-                    # 创建模型专属的主观题结果目录
+                    # Create model-specific subjective results directory
                     model_results_dir = self.results_dir / model_config["name"] / "subjective"
                     model_results_dir.mkdir(parents=True, exist_ok=True)
                     
                     print(f"Testing model {model_config['name']} on dataset {dataset}")
                     results = self.evaluate_model(model_config, test_data, dataset)
                     
-                    # 保存结果
+                    # Save results
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                     results_file = model_results_dir / f"{dataset.replace('.json', '')}_{timestamp}.json"
                     with open(results_file, "w", encoding='utf-8') as f:

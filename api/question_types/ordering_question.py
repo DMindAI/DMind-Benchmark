@@ -3,7 +3,7 @@ import json
 from .base_question import BaseQuestion
 
 class OrderingQuestion(BaseQuestion):
-    """排序题类"""
+    """Ordering question class"""
     
     def __init__(self, question_data: Dict[str, Any]):
         super().__init__(question_data)
@@ -12,55 +12,80 @@ class OrderingQuestion(BaseQuestion):
         self.scoring = question_data.get("scoring", {
             "method": "sequence_comparison",
             "points_per_correct_position": 1,
-            "total_possible": len(self.steps)  # 每个正确位置1分
+            "total_possible": len(self.steps)  # 1 point for each correct position
         })
     
     def build_prompt(self) -> str:
-        """构建排序题提示词"""
+        """Build ordering question prompt"""
         steps_text = "\n".join([f"{step['id']}. {step['text']}" for step in self.steps])
         
-        return f"""作为一个区块链领域的专家，请将以下步骤按照正确的顺序排序。
+        return f"""
 
-步骤列表:
+<Role>
+You are a professional blockchain expert.
+</Role>
+
+<Task>
+Please arrange the following steps in the correct order.
+</Task>
+
+<Step list>
 {steps_text}
+</Step list>
 
+<Instructions>
 {self.instructions}
 
-请按照以下格式输出排序结果（每行一个步骤ID，按正确顺序排列）：
-
-示例输出格式：
+Please output the correct order of the steps, with each step ID on a separate line, arranged in the correct sequence.
+Only output the step numbers, do not output any other content.
+Only output the step numbers, do not output any other content.
+Only output the step numbers, do not output any other content.
+Only output the step numbers, do not output any other content.
+</Instructions>
+If your ordering is ABCDE, please output as follows:
 A
 B
 C
 D
 E
 
-不要解释，不要输出其他任何内容。
+Do not explain, do not output anything else.
 """
     
     def evaluate_response(self, response: str) -> Dict:
-        """评估模型的回答"""
+        """Evaluate the model's answer"""
         try:
-            # 解析模型的回答
+            # 移除思考过程，只保留回答部分
+            # 优先处理更精确的</think>\n格式
+            if "</think>\n" in response:
+                response = response.split("</think>\n")[-1].strip()
+            # 如果没有找到，尝试处理</think>格式
+            elif "</think>" in response:
+                response = response.split("</think>")[-1].strip()
+                
+            # 处理可能包含的箭头或其他格式
+            response = response.replace("→", "\n").replace("->", "\n")
+            
+            # Parse the model's answer
             lines = response.strip().split('\n')
             model_order = []
             
-            # 提取排序结果
+            # Extract ordering result
             for line in lines:
-                if line.strip() and not line.startswith(('示例', '格式')):  # 忽略示例格式标记
+                if line.strip() and not line.startswith(('Example', 'format')):  # Ignore example format markers
                     model_order.append(line.strip())
             
-            # 计算排序得分
+            # Calculate ordering score
             position_score = 0
             for i, step_id in enumerate(model_order):
                 if i < len(self.correct_order) and step_id == self.correct_order[i]:
                     position_score += self.scoring["points_per_correct_position"]
             
-            # 调试信息
-            print("\n=== 评分详情 ===")
-            print(f"模型排序: {model_order}")
-            print(f"正确排序: {self.correct_order}")
-            print(f"得分: {position_score}")
+            # Debug information
+            print("\n=== Scoring Details ===")
+            print(f"Model ordering: {model_order}")
+            print(f"Correct ordering: {self.correct_order}")
+            print(f"Score: {position_score}")
             print("===============\n")
             
             return {
@@ -70,7 +95,7 @@ E
                 "correct_order": self.correct_order
             }
         except Exception as e:
-            print(f"评估回答时出错: {e}")
+            print(f"Error while evaluating answer: {e}")
             return {
                 "score": 0,
                 "total_possible": self.scoring["total_possible"],
@@ -79,7 +104,7 @@ E
             }
     
     def get_result_fields(self) -> Dict[str, Any]:
-        """获取排序题结果字段"""
+        """Get ordering question result fields"""
         return {
             "question_type": "ordering",
             "steps": self.steps,

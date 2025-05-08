@@ -2,14 +2,14 @@ from typing import Dict, List, Any, Optional
 from .base_question import BaseQuestion
 
 class FillInBlankQuestion(BaseQuestion):
-    """填空题类，用于处理填空题类型的题目"""
+    """Fill-in-the-blank question class, used to handle fill-in-the-blank type questions"""
     
     def __init__(self, question_data: Dict[str, Any]):
         """
-        初始化填空题
+        Initialize fill-in-the-blank question
         
         Args:
-            question_data: 包含填空题数据的字典
+            question_data: Dictionary containing fill-in-the-blank question data
         """
         super().__init__(question_data)
         self.question_type = "fill_in_blank"
@@ -20,34 +20,34 @@ class FillInBlankQuestion(BaseQuestion):
         
     def build_prompt(self) -> str:
         """
-        构建填空题的提示
+        Build fill-in-the-blank question prompt
         
         Returns:
-            str: 构建好的提示
+            str: Built prompt
         """
         prompt = f"{self.instructions}\n\n{self.context}\n\n"
-        prompt += "请按顺序输出所有填空的答案，格式如下：\n"
-        prompt += "#1#: [答案1]\n"
-        prompt += "#2#: [答案2]\n"
-        prompt += "#3#: [答案3]\n"
+        prompt += "Please output answers for all blanks in order, in the following format:\n"
+        prompt += "#1#: [answer1]\n"
+        prompt += "#2#: [answer2]\n"
+        prompt += "#3#: [answer3]\n"
         prompt += "...\n\n"
-        prompt += "只需输出答案，无需其他解释。"
+        prompt += "Only output the answers, no additional explanation needed."
         return prompt
     
     def evaluate_response(self, response: str) -> Dict[str, Any]:
         """
-        评估模型对填空题的回答
+        Evaluate model's answer to fill-in-the-blank question
         
         Args:
-            response: 模型的回答
+            response: Model's answer
             
         Returns:
-            Dict[str, Any]: 评估结果，包含分数和详细信息
+            Dict[str, Any]: Evaluation results, including score and detailed information
         """
-        # 解析模型的回答
+        # Parse the model's answer
         model_answers = self._parse_response(response)
         
-        # 计算正确数量
+        # Calculate number of correct answers
         correct_count = 0
         results = []
         
@@ -58,19 +58,19 @@ class FillInBlankQuestion(BaseQuestion):
             
             model_answer = model_answers.get(str(blank_id))
             
-            # 检查答案是否正确
+            # Check if the answer is correct
             is_correct = False
             if model_answer is not None:
                 if answer_type == "number":
                     try:
-                        # 对于数字类型，尝试转换为浮点数进行比较
+                        # For numeric types, try to convert to float for comparison
                         model_value = float(model_answer)
                         correct_value = float(correct_answer)
-                        is_correct = abs(model_value - correct_value) < 0.0001  # 使用小误差范围
+                        is_correct = abs(model_value - correct_value) < 0.0001  # Use small error margin
                     except ValueError:
                         is_correct = False
                 else:
-                    # 对于文本类型，直接比较
+                    # For text types, compare directly
                     is_correct = str(model_answer).strip().lower() == str(correct_answer).strip().lower()
             
             if is_correct:
@@ -83,11 +83,11 @@ class FillInBlankQuestion(BaseQuestion):
                 "is_correct": is_correct
             })
         
-        # 计算分数
+        # Calculate score
         points_per_correct = self.scoring.get("points_per_correct", 1)
         score = correct_count * points_per_correct
         
-        # 构建详细的调试信息
+        # Build detailed debug information
         debug_info = {
             "model_answers": model_answers,
             "results": results,
@@ -95,7 +95,7 @@ class FillInBlankQuestion(BaseQuestion):
             "score": score
         }
         
-        # 构建更详细的结果
+        # Build more detailed results
         detailed_results = {
             "score": score,
             "total_possible": self.scoring.get("total_possible", len(self.blanks)),
@@ -111,26 +111,26 @@ class FillInBlankQuestion(BaseQuestion):
     
     def _parse_response(self, response: str) -> Dict[str, str]:
         """
-        解析模型的回答，提取填空答案
+        Parse the model's answer, extract fill-in-the-blank answers
         
         Args:
-            response: 模型的回答
+            response: Model's answer
             
         Returns:
-            Dict[str, str]: 解析后的答案，键为填空ID，值为答案
+            Dict[str, str]: Parsed answers, keys are blank IDs, values are answers
         """
-        # 这里需要根据模型的输出格式进行解析
-        # 假设模型会按照 "#1#: 100" 这样的格式输出答案
+        # Here we need to parse based on the model's output format
+        # Assuming the model outputs answers in the format "#1#: 100"
         answers = {}
         
-        # 尝试从回答中提取填空ID和答案
+        # Try to extract blank IDs and answers from the response
         lines = response.strip().split('\n')
         for line in lines:
             line = line.strip()
             if not line:
                 continue
                 
-            # 尝试匹配 "#数字#: 答案" 格式
+            # Try to match the "#number#: answer" format
             import re
             match = re.match(r'#(\d+)#:\s*(.+)', line)
             if match:
@@ -142,9 +142,9 @@ class FillInBlankQuestion(BaseQuestion):
     
     def get_result_fields(self) -> List[str]:
         """
-        获取结果中需要包含的字段
+        Get fields to include in results
         
         Returns:
-            List[str]: 字段列表
+            List[str]: Field list
         """
         return ["score", "total_possible", "debug_info"] 
