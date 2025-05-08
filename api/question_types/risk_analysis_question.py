@@ -5,7 +5,7 @@ import time
 import logging
 import os
 from .base_question import BaseQuestion
-from ..utils.config_manager import config_manager
+from utils.config_manager import config_manager
 
 # Configure logging
 logging.basicConfig(
