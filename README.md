@@ -4,66 +4,66 @@ configs:
   data_files:
   - split: Tokenomist
     path:
-    - "test_data/objective/EN/Tokenomist.csv"
+    - "test_data/objective/Tokenomist.csv"
   - split: Fundamentals
     path:
-    - "test_data/objective/EN/Blockchain_Fundamentals_benchmark.csv"
+    - "test_data/objective/Blockchain_Fundamentals_benchmark.csv"
   - split: DAO
     path:
-    - "test_data/objective/EN/DAO2.csv"
+    - "test_data/objective/DAO2.csv"
   - split: Defi
     path:
-    - "test_data/objective/EN/Defi_benchmark.csv"
+    - "test_data/objective/Defi_benchmark.csv"
   - split: MEME
     path:
-    - "test_data/objective/EN/MEME_Benchmark_modified.csv"
+    - "test_data/objective/MEME_Benchmark_modified.csv"
   - split: NFT
     path:
-    - "test_data/objective/EN/NFT_Benchmark_modified.csv"
+    - "test_data/objective/NFT_Benchmark_modified.csv"
   - split: Security
     path:
-    - "test_data/objective/EN/Security_Benchmark_modified.csv"
+    - "test_data/objective/Security_Benchmark_modified.csv"
   - split: Smart_contract
     path:
-    - "test_data/objective/EN/SmartContracts_benchmark.csv"
+    - "test_data/objective/SmartContracts_benchmark.csv"
 
 - config_name: objective_infrastructure
   data_files:
   - split: Infrastructrue
     path:
-    - "test_data/objective/EN/Binfra_benchmark.csv"
+    - "test_data/objective/Binfra_benchmark.csv"
   
 - config_name: subjective_normal
   data_files:
   - split: Tokenomist
     path:
-    - "test_data/subjective/EN/Token.jsonl"
+    - "test_data/subjective/Token.jsonl"
   - split: Fundamentals
     path:
-    - "test_data/subjective/EN/Blockchain_Fundamentals_benchmark.jsonl"
+    - "test_data/subjective/Blockchain_Fundamentals_benchmark.jsonl"
   - split: DAO
     path:
-    - "test_data/subjective/EN/DAO.jsonl"
+    - "test_data/subjective/DAO.jsonl"
   - split: Defi
     path:
-    - "test_data/subjective/EN/Defi.jsonl"
+    - "test_data/subjective/Defi.jsonl"
   - split: MEME
     path:
-    - "test_data/subjective/EN/MEME.jsonl"
+    - "test_data/subjective/MEME.jsonl"
   - split: NFT
     path:
-    - "test_data/subjective/EN/NFT.jsonl"
+    - "test_data/subjective/NFT.jsonl"
   - split: Security
     path:
-    - "test_data/subjective/EN/Security.jsonl"
+    - "test_data/subjective/Security.jsonl"
   - split: Smart_contract
     path:
-    - "test_data/subjective/EN/smart_contract.jsonl"
+    - "test_data/subjective/smart_contract.jsonl"
 - config_name: subjective_infrastructure
   data_files:
   - split: Infrastructure
     path:
-    - "test_data/subjective/EN/Infra.jsonl"
+    - "test_data/subjective/Infra.jsonl"
 
 ---
 
