@@ -74,7 +74,7 @@ A comprehensive framework for evaluating large language models (LLMs) on blockch
 
 ## Latest LLM Leaderboard In Web3
 
-![image/png](https://cdn-uploads.huggingface.co/production/uploads/6417e25e058f65de43201023/EohXaDgH5vuQod8CpP8-7.png)
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6417e25e058f65de43201023/sQKUonttcXrlgySN7SV64.png)
 
 ## 📊 Overview
 
