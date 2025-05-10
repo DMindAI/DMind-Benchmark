@@ -31,7 +31,7 @@ configs:
   data_files:
   - split: Infrastructrue
     path:
-    - "test_data/objective/Binfra_benchmark.csv"
+    - "test_data/objective/infra_benchmark.csv"
   
 - config_name: subjective_normal
   data_files:
