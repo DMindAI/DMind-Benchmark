@@ -23,21 +23,21 @@ evaluation_api_base: "https://api.claude-plus.top/v1/chat/completions"
 # ===============================
 api_keys:
   # Existing API Keys
-  - key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiJNVGMwTlRVMk5EVTROaTR4T0dNd01qUXpaVEJsTVRsaVpURmhPV1V5TkdVMk9UUTRabVppTjJNME16RmtaVGt4WkRjM056RmtPR1l4TTJFek1HRmpNek15WW1JMFlUTmpPVEUwIiwiaWF0IjoxNzQ1NTY0NTg2LCJleHAiOi0xLCJvcmdfaWQiOiIxMDAyNzA5NSIsInNjb3BlIjp7InBlcm1pc3Npb24iOm51bGx9LCJ0eXBlIjoiYXBpLXRva2VuIiwiTWFwQ2xhaW1zIjpudWxsfQ.fw6eZmOWr7gBqKd6X5duGao0MOimZ69Fv0oeBVWy0Gk"
+  - key: "eyJhbGciOiJIUzI1NiIsInXXX"
     name: "API_1"
-  - key: "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"
+  - key: "sk-or-v1-5982ad8b572944f7a27XXX"
     name: "qwq32b"
-  - key: "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"
+  - key: "sk-or-v1-6b1c9cc6739aba301c88cXXX"
     name: "Llama"
-  - key: "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"
+  - key: "sk-or-v1-f47867b3df9a315204d1a8XXX"
     name: "qwen"
-  - key: "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"
+  - key: "sk-or-v1-649922e7374d506efdd6cXXX"
     name: "glm"
-  - key: "sk-JBD513S3u5gvvwQxhkRxXR9Wzsrr2qdccutCxKgIJEwCFGcx"
+  - key: "sk-JBD513S3u5gvvwQxhkRxXR9WzsXXX"
     name: "o1"
     
   # Evaluation API Keys
-  - key: "sk-sjkpMQ7WsWk5jUShcqhK4RSe3GEooupy8jsy7xQkbg6eQaaX"
+  - key: "sk-sjkpMQ7WsWk5jUShcqhK4RSeXXX"
     name: "claude_eval"
     model_name: "claude-3-7-sonnet-20250219"
   - key: "sk-your-openai-key-here"
