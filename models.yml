@@ -1,51 +1,32 @@
 # API Base URL Configuration
 # ===============================
 # Main API Base URL (Currently Active)
-# api_base: "https://api.whaleflux.com/whaleflux/v1/model/deployment/enova-service-171e332e-8e67-4377/v1/chat/completions"
-# api_base: "https://api.whaleflux.com/whaleflux/v1/model/deployment/enova-service-ac54959c-0c33-4f68/v1/chat/completions"
-api_base: "https://api.whaleflux.com/whaleflux/v1/model/deployment/enova-service-69a67782-b59f-4f1c/v1/chat/completions"
+api_base: "xxx"
 # Alternative API Base URLs (Switch by commenting/uncommenting)
-# api_base: "https://api.whaleflux.com/whaleflux/v1/model/deployment/enova-service-3903d049-2bee-4ed6/v1/chat/completions"
-# api_base: "https://openrouter.ai/api/v1/chat/completions"
-# api_base: "https://api.whaleflux.com/whaleflux/v1/model/deployment/enova-service-b79678de-d972-42b7/v1/chat/completions"
-# api_base: "https://api.whaleflux.com/whaleflux/v1/model/deployment/enova-service-92f5bad9-34b3-4b33/v1/chat/completions"
-# api_base: "https://api.whaleflux.com/whaleflux/v1/model/deployment/enova-service-83ce18c9-6cda-4d83/v1/chat/completions"
+# api_base: "xxx"
 
 # Third-party Evaluation API Configuration
 # ===============================
 # Evaluation API Base URL (Optional, uses the above api_base if not set)
-evaluation_api_base: "https://api.claude-plus.top/v1/chat/completions"
+evaluation_api_base: "xxx"
 # Alternative Evaluation API Base URLs
-# evaluation_api_base: "https://api.openai.com/v1/chat/completions"
-# evaluation_api_base: "https://api.anthropic.com/v1/messages"
+
 
 # API Key Configuration
 # ===============================
 api_keys:
   # Existing API Keys
-  - key: "eyJhbGciOiJIUzI1NiIsInXXX"
-    name: "API_1"
-  - key: "sk-or-v1-5982ad8b572944f7a27XXX"
-    name: "qwq32b"
-  - key: "sk-or-v1-6b1c9cc6739aba301c88cXXX"
-    name: "Llama"
-  - key: "sk-or-v1-f47867b3df9a315204d1a8XXX"
-    name: "qwen"
-  - key: "sk-or-v1-649922e7374d506efdd6cXXX"
-    name: "glm"
-  - key: "sk-JBD513S3u5gvvwQxhkRxXR9WzsXXX"
-    name: "o1"
+  - key: "xxx"
+    name: "xxx"
+
     
   # Evaluation API Keys
-  - key: "sk-sjkpMQ7WsWk5jUShcqhK4RSeXXX"
+  - key: "xxx"
     name: "claude_eval"
     model_name: "claude-3-7-sonnet-20250219"
-  - key: "sk-your-openai-key-here"
+  - key: "xxx"
     name: "openai_eval"
     model_name: "gpt-4o"
-  - key: "sk-your-anthropic-key-here"
-    name: "anthropic_eval"
-    model_name: "claude-3-5-haiku-20241022"
 
 # Model Configuration
 # ===============================
@@ -62,67 +43,11 @@ models:
   # ... [Other commented model configurations] ...
 
   # Existing Model Configurations
-  - name: "qwq"
-    provider: "anthropic"
-    model: "/data/qwq32b_test5"
-    api_key: "API_1"
-  - name: "qwq32b"
-    provider: "aa"
-    model: "qwen/qwq-32b"
-    api_key: "qwq32b"
-  - name: "llama"
-    provider: "aa"
-    model: "meta-llama/llama-3.3-70b-instruct"
-    api_key: "Llama"
-  - name: "qwen"
-    provider: "aa"
-    model: "qwen/qwen2.5-vl-32b-instruct"
-    api_key: "qwen"
-  - name: "glm"
-    provider: "aa"
-    model: "thudm/glm-z1-32b"
-    api_key: "glm"
-  - name: "qwq32b_test7"
-    provider: "aa"
-    model: "/data/qwq32b_test7"
-    api_key: "API_1"
-  - name: "70B"
-    provider: ""
-    model: "/data/DeepSeek-R1-Distill-Llama-70B-875"
-    api_key: "API_1"
-  - name: "70B_2"
-    provider: ""
-    model: "deepseek/deepseek-r1-distill-llama-70b"
-    api_key: "qwq32b"
-  - name: "qwen3"
-    provider: "aa"
-    model: "qwen/qwen3-32b"
-    api_key: "qwen"
-  - name: "qwen3-14b"
-    provider: "aa"
-    model: "qwen/qwen3-14b"
-    api_key: "qwen"
-  - name: "qwen3-32b-232"
-    provider: "aa"
-    model: "/data/Qwen3-32B-232"
-    api_key: "API_1"
-  - name: "o1"
-    provider: "aa"
-    model: "o1-2024-12-17"
-    api_key: "o1"
-  - name: "qwen3-32b-v1.0"
-    provider: "aa"
-    model: "/data/Qwen3-32B-v1.0"
-    api_key: "API_1"
-  - name: "qwen3-14b-v1.0"
-    provider: "aa"
-    model: "/data/Qwen3-14B-v1.0"
-    api_key: "API_1"
-  - name: "dpsk-70B-v1.0"
-    provider: "aa"
-    model: "/data/DeepSeek-70B-v1.0"
-    api_key: "API_1"
-    
+  - name: "xxx"
+    provider: "xxx"
+    model: "xxx"
+    api_key: "xxx"
+  
   # Evaluation Model Configurations
   - name: "claude_evaluation"
     provider: "anthropic"
@@ -131,7 +56,7 @@ models:
       temperature: 0
       max_tokens: 4000
     api_key: "claude_eval"
-    api_base: "https://api.claude-plus.top/v1/chat/completions"
+    api_base: "xxx"
     
   - name: "gpt4_evaluation"
     provider: "openai"
@@ -140,4 +65,4 @@ models:
       temperature: 0
       max_tokens: 4000
     api_key: "openai_eval"
-    api_base: "https://api.openai.com/v1/chat/completions"
+    api_base: "xxx"
