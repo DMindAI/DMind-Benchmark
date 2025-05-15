@@ -46,6 +46,7 @@ This project provides tools to benchmark AI models on their understanding of blo
 
    ```bash
    pip install -r requirements.txt
+   pip install huggingface_hub
    ```
 
 2. Configure your API settings in models.yml:
@@ -54,6 +55,13 @@ This project provides tools to benchmark AI models on their understanding of blo
    api_base: "your_api_base"
    # Add other configuration settings as needed
    ```
+
+3. Download the test data:
+
+   ```bash
+   python download_test_data.py
+   ```
+
 
 ## 📋 Usage
 
