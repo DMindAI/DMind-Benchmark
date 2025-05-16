@@ -11,6 +11,7 @@ from openai import OpenAI
 import argparse
 import concurrent.futures
 from threading import Lock
+import random
 
 def load_config() -> Dict:
     """Load configuration from YAML file"""
@@ -93,10 +94,12 @@ class ModelTester:
                     try:
                         # 初始化OpenAI客户端
                         base_url = model_config.get("base_url", "https://api.openai.com/v1")
+                        print(Skey)
                         client = OpenAI(
                             base_url=base_url,
                             api_key=Skey,
                         )
+                        # client = OpenAI()
                         
                         # 准备额外头部和参数
                         extra_headers = model_config.get("extra_headers", {})
@@ -107,14 +110,16 @@ class ModelTester:
                             extra_headers=extra_headers,
                             extra_body=extra_body,
                             model=model_config["model"],
+                            # input=prompt,
                             messages=[
                                 {
                                     "role": "user",
                                     "content": prompt
                                 }
                             ],
-                            temperature=model_config.get("parameters", {}).get("temperature", 0.5),
+                            temperature=model_config.get("parameters", {}).get("temperature", 0.7),
                         )
+                        print(completion)
                         
                         # 将OpenAI响应转换为与其他API相同的格式
                         response_json = {
@@ -159,11 +164,11 @@ class ModelTester:
                     
                     data = {
                         "model": model_config["model"],
-                        "top_k": -1,
-                        "top_p": 1,
+                        # "top_k": 20,
+                        # "top_p": 0.95,
                         "messages": [{"role": "user", "content": prompt}],
-                        "temperature": 0.6,
-
+                        "temperature": 0.7,
+                        "max_tokens": 4096,
                         # "stream": "false"
                         # **model_config["parameters"]
                     }
@@ -240,60 +245,65 @@ class ModelTester:
                     "C": row["Option C"],
                     "D": row["Option D"]
                 }
-            correct_option = row["Correct option"]
+            original_correct_option = row["Correct option"]
             
-            # Determine question type (single/multiple choice) and standardize answer format
-            is_multiple_choice = '/' in correct_option or ',' in correct_option or len(correct_option.strip()) > 1
-            if is_multiple_choice:
-                # Process multiple-choice answer format
-                # Remove all spaces and commas, then sort by letter
-                answers = ''.join(correct_option.replace(' ', '').replace(',', '').upper())
-                correct_option = '/'.join(sorted(answers))
+            # Shuffle options to randomize their order
+            random.seed(int(time.time() * 1000) % 10000 + row["No"])
             
-            question_score = 3 if is_multiple_choice else 2
-            with score_lock:
-                nonlocal max_score
-                max_score += question_score
+            # Create mapping between original option keys and their content
+            option_contents = list(options.items())
             
-            # Build prompt
+            # Shuffle the options
+            random.shuffle(option_contents)
+            
+            # Create new options dictionary with shuffled content
+            shuffled_options = {}
+            original_to_new_mapping = {}  # Maps original keys to shuffled keys
+            new_to_original_mapping = {}  # Maps new keys to original keys
+            
+            for new_key, (original_key, content) in zip(sorted(options.keys()), option_contents):
+                shuffled_options[new_key] = content
+                original_to_new_mapping[original_key] = new_key
+                new_to_original_mapping[new_key] = original_key
+            
+            # Map the correct option to the new shuffled position
+            # Handle different formats of correct options (single, multiple with / or ,)
+            if "/" in original_correct_option or "," in original_correct_option or len(original_correct_option) > 1:
+                # Multiple correct options case
+                correct_options = []
+                
+                # Handle special format starting with //
+                if original_correct_option.startswith("//"):
+                    original_correct_option = original_correct_option[2:]  # Remove // prefix
+                
+                if "/" in original_correct_option:
+                    correct_list = original_correct_option.split("/")
+                elif "," in original_correct_option:
+                    correct_list = [c.strip() for c in original_correct_option.split(",")]
+                else:
+                    correct_list = list(original_correct_option.upper())
+                
+                # Convert each original correct option to its new position
+                for opt in correct_list:
+                    if opt.strip().upper() in original_to_new_mapping:
+                        correct_options.append(original_to_new_mapping[opt.strip().upper()])
+                
+                # Format back to original format
+                correct_option = "/".join(sorted(correct_options))
+                if original_correct_option.startswith("//"):
+                    correct_option = "//" + correct_option
+            else:
+                # Single correct option case
+                correct_option = original_to_new_mapping.get(original_correct_option.upper(), original_correct_option)
+            
+            # Build prompt with shuffled options
             base_prompt = """
-<Role>
-You are a professional quiz assistant.
-
-<Task>
-Your task is to answer questions in the following format:
-1. Read the question carefully
-2. Output only the letter(s) of the correct option(s) (A, B, C, or D)
-3. If there are multiple correct answers, separate them with slashes (e.g., A/B)
-4. Do not explain your choice
+<Role>\nYou are a professional quiz assistant.\n\n<Task>\nYour task is to answer multiple-choice questions in the following format:\n1. Read the question carefully\n2. Output only the letter(s) of the correct option(s) (A, B, C, or D)\n3. If there are multiple correct answers, separate them with slashes (e.g., A/B)\n4. Do not explain your choice\n
 5. Do not output any other content
-6. Do not output any other content
-7. Do not output any other content
-8. Do not output any other content
-
-<Example> 
-Question 1: What shape is the Earth? 
-Options: 
-A. Flat 
-B. Spherical 
-C. Cubic 
-D. Conical 
-<Output>
-B
-
-<Example>
-Question 2: What shape is the Earth? 
-Options: 
-A. Cubic
-B. Conical
-C. Spherical
-D. Flat
-<Output>
-C
 
 """
             prompt = f"{base_prompt}Question: {question}\n\nOptions:"
-            for opt, content in options.items():
+            for opt, content in shuffled_options.items():
                 prompt += f"\n{opt}. {content}"
             
             api_result = self.make_api_request(model_config, prompt)
@@ -437,6 +447,11 @@ C
                 is_multiple_choice = True
                 # Format correct options for multiple-choice questions
                 correct_options = []
+                
+                # Handle special format starting with //
+                if correct_option.startswith("//"):
+                    correct_option = correct_option[2:]  # Remove // prefix
+                
                 if "/" in correct_option:
                     correct_options = correct_option.split("/")
                 elif "," in correct_option:
@@ -445,46 +460,66 @@ C
                     correct_options = list(correct_option.upper())
                 
                 # Convert all correct options to uppercase and sort them
-                correct_options = [opt.strip().upper() for opt in correct_options]
+                correct_options = [opt.strip().upper() for opt in correct_options if opt.strip()]
                 correct_options = sorted(correct_options)
                 
-                # Check if the answer is completely correct or partially correct
-                if set(valid_answers) == set(correct_options):
+                # Compare model answers and correct answers
+                valid_answers_set = set(valid_answers)
+                correct_options_set = set(correct_options)
+                
+                # Check if answer is completely correct
+                if valid_answers_set == correct_options_set:
                     is_correct = True
                     partial_correct = False
-                elif all(ans in correct_options for ans in valid_answers):
+                # Check if answer is partially correct (all model answers are correct but incomplete)
+                elif valid_answers_set.issubset(correct_options_set) and len(valid_answers) > 0:
+                    # Answer is incomplete but no errors, considered partially correct
                     is_correct = False
-                    partial_correct = True if len(valid_answers) > 0 else False
+                    partial_correct = True
+                # Check if there are incorrect answers
                 else:
                     is_correct = False
                     partial_correct = False
-                    
+                
                 # Format correct options as A/B/C format
                 correct_option = "/".join(correct_options)
             else:
                 # Single-choice question logic, must provide and only provide one correct answer
                 if len(valid_answers) == 1 and valid_answers[0] == correct_option.upper():
                     is_correct = True
+                    partial_correct = False
                 else:
                     is_correct = False
-                    
+                    partial_correct = False
+            
             # Define a more concise print format
             print(f"\nQuestion {row['No']}:")
             print(f"Type: {'Multiple Choice' if is_multiple_choice else 'Single Choice'}")
             print(f"Question: {question}")
-            print("Options:")
+            print("Original Options:")
             for opt_key, opt_value in options.items():
                 print(f"{opt_key}. {opt_value}")
-            print(f"Correct Answer: {correct_option}")
+            print("Shuffled Options:")
+            for opt_key, opt_value in shuffled_options.items():
+                print(f"{opt_key}. {opt_value}")
+            print(f"Original Correct Answer: {original_correct_option}")
+            print(f"Shuffled Correct Answer: {correct_option}")
             print(f"Model Answer: {''.join(valid_answers)}")
             print(f"Response Valid: {'Yes' if not invalid_response else 'No'}")
             print(f"Retry Count: {retry_count}")
             print(f"Is Correct: {'Yes' if is_correct else 'No'}")
             print("-" * 50)
             
-            # 计算得分
+            # Calculate score
             question_score = 3 if is_correct and is_multiple_choice else 2 if is_correct else 1 if partial_correct else 0
-            # 线程安全地增加total_score
+            
+            # Update max_score (maximum possible score)
+            with score_lock:
+                nonlocal max_score
+                # Add the maximum possible score for this question type
+                max_score += 3 if is_multiple_choice else 2
+            
+            # Thread-safe increase of total_score
             with score_lock:
                 nonlocal total_score
                 total_score += question_score
@@ -504,32 +539,32 @@ C
                 "status": "success" if api_result["status_code"] == 200 and response_content and not invalid_response else "error"
             }
             
-            # 线程安全地添加结果
+            # Thread-safe addition of results
             with results_lock:
                 nonlocal results
                 results.append(result)
             
             return result
         
-        # 使用ThreadPoolExecutor进行多线程处理
+        # Use ThreadPoolExecutor for multithreaded processing
         start_time = time.time()
-        with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
-            # 提交所有问题到线程池
+        with concurrent.futures.ThreadPoolExecutor(max_workers=100) as executor:
+            # Submit all questions to the thread pool
             futures = [executor.submit(process_question, (idx, row)) for idx, row in test_data.iterrows()]
             
-            # 等待所有任务完成
+            # Wait for all tasks to complete
             for future in concurrent.futures.as_completed(futures):
                 try:
-                    # 获取单个任务的结果
+                    # Get the result of a single task
                     result = future.result()
-                    print(f"问题 {result['sample_id']} 处理完成，得分：{result['score']}")
+                    print(f"Question {result['sample_id']} processing completed, score: {result['score']}")
                 except Exception as exc:
-                    print(f"处理问题时出错: {exc}")
+                    print(f"Error processing question: {exc}")
         
         total_time = time.time() - start_time
-        print(f"所有问题并行处理完成，总耗时: {total_time:.2f}秒")
+        print(f"All questions processed in parallel, total time: {total_time:.2f} seconds")
         
-        # 按问题ID排序结果
+        # Sort results by question ID
         results.sort(key=lambda x: x['sample_id'])
         
         # Calculate final score (mapped to 12.5 points)
