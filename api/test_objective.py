@@ -90,9 +90,7 @@ class ModelTester:
                     
                     response = requests.post(api_url, headers=headers, json=data)
                 elif provider.lower() == "openai":
-                    # 处理OpenAI请求
                     try:
-                        # 初始化OpenAI客户端
                         base_url = model_config.get("base_url", "https://api.openai.com/v1")
                         print(Skey)
                         client = OpenAI(
@@ -101,11 +99,9 @@ class ModelTester:
                         )
                         # client = OpenAI()
                         
-                        # 准备额外头部和参数
                         extra_headers = model_config.get("extra_headers", {})
                         extra_body = model_config.get("extra_body", {})
                         
-                        # 创建完成请求
                         completion = client.chat.completions.create(
                             extra_headers=extra_headers,
                             extra_body=extra_body,
@@ -121,7 +117,6 @@ class ModelTester:
                         )
                         print(completion)
                         
-                        # 将OpenAI响应转换为与其他API相同的格式
                         response_json = {
                             "choices": [
                                 {
@@ -164,13 +159,9 @@ class ModelTester:
                     
                     data = {
                         "model": model_config["model"],
-                        # "top_k": 20,
-                        # "top_p": 0.95,
                         "messages": [{"role": "user", "content": prompt}],
                         "temperature": 0.7,
                         "max_tokens": 4096,
-                        # "stream": "false"
-                        # **model_config["parameters"]
                     }
                     
                     response = requests.post(self.api_base, headers=headers, json=data)
