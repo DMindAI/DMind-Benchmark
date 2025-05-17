@@ -3,49 +3,50 @@ A comprehensive framework for evaluating large language models (LLMs) on blockch
 
 | [Paper](https://arxiv.org/abs/2504.16116) | [Dataset](https://huggingface.co/datasets/DMindAI/DMind_Benchmark/tree/main/test_data) |
 
-## Latest Web3 LLM Leaderboard (updated on 2025.05.11)
+## Latest Web3 LLM Leaderboard
 
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/6417e25e058f65de43201023/sQKUonttcXrlgySN7SV64.png)
 
 
-## Latest Web3 LLM Benchmark Table (updated on 2025.05.16)
+## Latest Web3 LLM Benchmark Table
 
 This table presents the performance scores (%) of State-of-the-Art (SOTA) LLMs on the DMind Benchmark across nine Web3 subdimensions: Fundamentals, Infrastructure, Smart Contract Analysis, DeFi, DAOs, NFTs, Tokenomics, Meme, and Security. Scores are normalized to 100. Higher values indicate better performance in each subdimension.
 
 | Model                        | Fund. | Infra. | S.C.  | DeFi  | DAOs  | NFTs  | Token | Meme  | Sec.  |
 |------------------------------|-------|--------|-------|-------|-------|-------|-------|-------|-------|
-| Claude 3.7-Sonnet            | 89.73 | 94.95  | 89.64 | 83.07 | 73.35 | 81.81 | 24.84 | 63.72 | 71.19 |
-| Claude 3.5-Sonnet            | 89.28 | 94.86  | 87.48 | 80.82 | 71.73 | 80.46 | 24.39 | 62.46 | 67.32 |
-| DeepSeek R1                  | 91.53 | 97.02  | 82.80 | 82.62 | 72.81 | 79.65 | 22.77 | 69.48 | 68.40 |
-| DeepSeek V3                  | 90.27 | 95.85  | 82.98 | 77.58 | 73.71 | 74.34 | 23.76 | 63.72 | 69.48 |
-| Gemini 2.5 Pro (Preview-05-06)| 81.00 | 93.69  | 81.36 | 78.12 | 67.86 | 76.86 | 19.44 | 67.95 | 70.47 |
-| GPT-o4-mini-high             | 91.53 | 90.36  | 80.82 | 83.25 | 74.07 | 77.76 | 21.42 | 65.34 | 64.08 |
-| GPT-o3                       | 92.97 | 98.37  | 88.47 | 81.00 | 74.61 | 80.55 | 24.21 | 71.64 | 71.01 |
-| GPT-o1                       | 90.27 | 98.37  | 89.28 | 83.07 | 68.31 | 69.75 | 23.40 | 51.12 | 67.41 |
-| GPT-4.1                      | 88.83 | 95.31  | 79.20 | 77.31 | 73.17 | 70.56 | 19.98 | 60.93 | 60.93 |
-| Grok3 beta                   | 90.72 | 96.48  | 88.11 | 81.27 | 69.84 | 80.73 | 24.03 | 73.71 | 71.37 |
-| Qwen3-235B A22B              | 88.65 | 95.58  | 79.92 | 79.38 | 75.33 | 79.74 | 21.42 | 70.56 | 68.40 |
+| Claude 3.7-Sonnet (Thinking) | 88.66 | 97.96  | 91.37 | 83.05 | 73.32 | 85.17 | 25.40 | 68.33 | 72.66 |
+| Claude 3.7-Sonnet            | 89.69 | 94.97  | 89.67 | 83.06 | 73.32 | 81.80 | 24.80 | 63.70 | 71.18 |
+| Claude 3.5-Sonnet            | 89.28 | 94.85  | 87.50 | 80.85 | 71.69 | 80.45 | 24.40 | 62.50 | 67.36 |
+| DeepSeek R1                  | 91.55 | 97.03  | 82.83 | 82.63 | 72.78 | 79.64 | 22.80 | 69.44 | 68.40 |
+| DeepSeek V3                  | 90.31 | 95.81  | 83.00 | 77.55 | 73.68 | 74.35 | 23.80 | 63.70 | 69.44 |
+| Gemini 2.5 Pro (Preview-05-06)| 81.03 | 93.66  | 81.37 | 78.16 | 67.88 | 76.87 | 19.40 | 67.96 | 70.49 |
+| GPT-o4-mini-high             | 91.75 | 98.57  | 89.02 | 83.26 | 74.05 | 81.07 | 23.00 | 74.63 | 64.80 |
+| GPT-o3                       | 92.99 | 98.36  | 88.43 | 81.02 | 74.59 | 80.52 | 24.20 | 71.67 | 71.01 |
+| GPT-o1                       | 90.31 | 98.36  | 89.31 | 83.06 | 68.24 | 69.71 | 23.40 | 51.11 | 67.45 |
+| GPT-4.1                      | 88.87 | 97.55  | 87.45 | 77.35 | 73.14 | 75.60 | 22.40 | 70.19 | 69.62 |
+| Grok3 beta                   | 90.72 | 96.52  | 88.08 | 81.26 | 69.87 | 80.69 | 24.00 | 73.70 | 71.35 |
+| Qwen3-235B A22B              | 88.66 | 95.60  | 79.88 | 79.39 | 75.32 | 79.73 | 21.40 | 70.56 | 68.40 |
 
-## Latest Web3 Mini LLMs Benchmark Table (updated on 2025.05.16)
+## Latest Web3 Mini LLMs Benchmark Table
 
 This table presents the performance scores (%) of Mini LLMs on the DMind Benchmark across nine Web3 subdimensions: Fundamentals, Infrastructure, Smart Contract Analysis, DeFi, DAOs, NFTs, Tokenomics, Meme, and Security. Scores are normalized to 100. Higher values indicate better performance in each subdimension.
 
 | Model                              | Fund. | Infra. | S.C.  | DeFi  | DAOs  | NFTs  | Token | Meme  | Sec.  |
 |-------------------------------------|-------|--------|-------|-------|-------|-------|-------|-------|-------|
-| Claude 3.5-Haiku                    | 91.17 | 96.30  | 86.04 | 75.42 | 72.09 | 83.25 | 24.39 | 63.90 | 70.56 |
-| Claude 3-Opus                       | 83.52 | 91.71  | 78.84 | 77.58 | 72.27 | 77.76 | 24.57 | 69.48 | 70.74 |
-| DeepSeek-R1-Distill-Llama-70B       | 83.70 | 95.40  | 82.35 | 80.82 | 66.06 | 65.97 | 24.21 | 49.41 | 66.78 |
-| DeepSeek-R1-Distill-Qwen-32B        | 83.52 | 92.43  | 77.22 | 76.32 | 72.09 | 75.60 | 22.77 | 68.85 | 69.03 |
-| Gemini 2.5 Flash (Preview-04-17)    | 85.14 | 94.86  | 81.36 | 79.56 | 71.55 | 77.67 | 22.77 | 68.85 | 69.03 |
-| Gemini 2.0 Flash (Experimental)     | 88.47 | 92.79  | 82.71 | 77.13 | 70.92 | 77.58 | 21.78 | 63.54 | 66.69 |
-| GPT-o4-mini                         | 91.35 | 97.92  | 88.83 | 82.89 | 74.07 | 78.57 | 25.20 | 73.53 | 73.62 |
-| GPT-o3-mini                         | 91.98 | 98.19  | 86.04 | 81.63 | 71.10 | 84.15 | 23.58 | 69.48 | 74.52 |
-| GPT-o1-mini                         | 87.66 | 95.49  | 80.37 | 76.32 | 69.48 | 74.88 | 23.40 | 64.62 | 69.21 |
-| GPT-4o-mini                         | 82.08 | 86.49  | 75.87 | 76.68 | 68.04 | 73.62 | 22.41 | 60.75 | 67.23 |
-| Grok3 mini beta                     | 89.73 | 97.74  | 84.06 | 83.43 | 74.07 | 80.01 | 23.40 | 69.03 | 73.44 |
-| Qwen3-32B                           | 89.73 | 97.92  | 78.03 | 79.47 | 66.96 | 70.74 | 25.20 | 49.59 | 61.65 |
-| Qwen3-30B-A3B                       | 88.47 | 96.98  | 78.66 | 80.19 | 74.25 | 69.84 | 26.23 | 69.84 | 68.22 |
-| QwQ-32B                             | 82.71 | 91.17  | 73.35 | 73.08 | 67.86 | 69.39 | 22.23 | 47.07 | 66.15 |
+| Claude 3.5-Haiku                    | 91.13 | 96.32  | 86.08 | 75.46 | 72.05 | 83.22 | 24.40 | 63.89 | 70.57 |
+| Claude 3-Opus                       | 83.51 | 91.72  | 78.82 | 77.55 | 72.23 | 77.73 | 24.60 | 69.44 | 70.75 |
+| DeepSeek-R1-Distill-Llama-70B       | 83.71 | 95.40  | 82.35 | 80.81 | 66.06 | 65.96 | 24.20 | 49.44 | 66.75 |
+| DeepSeek-R1-Distill-Qwen-32B        | 83.51 | 92.43  | 77.25 | 76.32 | 72.05 | 75.61 | 22.40 | 70.37 | 67.10 |
+| Gemini 2.5 Flash (Preview-04-17)    | 88.45 | 97.03  | 82.94 | 80.20 | 73.50 | 82.52 | 22.80 | 71.67 | 71.35 |
+| Gemini 2.0 Flash (Experimental)     | 85.15 | 94.89  | 81.37 | 79.57 | 71.51 | 77.65 | 21.80 | 68.89 | 69.01 |
+| GPT-o4-mini                         | 91.34 | 97.96  | 88.82 | 82.85 | 74.05 | 78.60 | 25.20 | 73.52 | 73.61 |
+| GPT-o3-mini                         | 91.96 | 98.16  | 86.08 | 81.63 | 71.14 | 84.18 | 23.60 | 69.44 | 74.48 |
+| GPT-o1-mini                         | 87.63 | 95.50  | 80.35 | 76.32 | 69.51 | 74.92 | 23.40 | 64.63 | 69.18 |
+| GPT-4o-mini                         | 82.06 | 86.50  | 75.88 | 76.68 | 68.06 | 73.66 | 22.40 | 60.74 | 67.19 |
+| Grok3 mini beta                     | 89.69 | 97.75  | 84.02 | 83.47 | 74.05 | 79.99 | 23.40 | 69.07 | 73.44 |
+| Qwen3-32B                           | 89.69 | 97.50  | 78.50 | 79.50 | 66.97 | 70.70 | 25.20 | 49.63 | 61.63 |
+| Qwen3-30B-A3B                       | 88.45 | 96.93  | 78.63 | 80.20 | 74.23 | 78.55 | 23.20 | 69.81 | 68.23 |
+| QwQ-32B                             | 82.69 | 91.21  | 73.35 | 73.06 | 67.88 | 69.38 | 22.20 | 47.04 | 66.15 |
 
 ## 📊 Overview
 
