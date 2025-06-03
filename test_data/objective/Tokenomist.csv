@@ -1,16 +1,16 @@
 No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
 1,Basic,What is token economics?,Study of token models and incentives,Study of government policies,Study of traditional finance,Study of blockchain coding,A,Not
 2,Basic,Which token model features a fixed supply?,Inflationary,Deflationary,Fixed supply,Elastic supply,B,Not
-3,Basic,Which term describes distribution via airdrops?,Mining,Airdrop,Staking,Burning,C,Not
-4,Basic,What does token burn refer to?,Increasing supply,Reducing circulating supply,Issuing new tokens,Locking tokens,D,Not
+3,Basic,Which term describes distribution via airdrops?,Mining,Airdrop,Staking,Burning,B,Not
+4,Basic,What does token burn refer to?,Increasing supply,Reducing circulating supply,Issuing new tokens,Locking tokens,B,Not
 5,Basic,Which of the following best defines incentive structures?,Mechanisms to reward participation,Government subsidies,Bank interest rates,Traditional dividends,A,Not
-6,Basic,Which token is typically used for governance?,Utility token,Security token,Governance token,Stablecoin,B,Not
-7,Basic,What is a meme token?,A token based on internet culture,A token backed by assets,A token used for payments,A token for enterprise use,C,Not
-8,Basic,Which term describes tokens issued for community engagement?,Pump tokens,Airdrop tokens,Reward tokens,Utility tokens,D,Not
+6,Basic,Which token is typically used for governance?,Utility token,Security token,Governance token,Stablecoin,C,Not
+7,Basic,What is a meme token?,A token based on internet culture,A token backed by assets,A token used for payments,A token for enterprise use,A,Not
+8,Basic,Which term describes tokens issued for community engagement?,Pump tokens,Airdrop tokens,Reward tokens,Utility tokens,B,Not
 9,Basic,What is the primary purpose of token distribution mechanisms?,To allocate tokens fairly,To increase token price,To centralize control,To reduce transaction fees,A,Not
 10,Basic,Which method is NOT used for token distribution?,Initial Coin Offering (ICO),Airdrop,Mining,Dividend payout,B,Not
-11,Basic,What does ‘pumpfun’ submarket refer to?,A market for high-quality tokens,A niche market driven by hype and rapid price increases,A regulated financial market,A stable asset market,C,Not
-12,Basic,Which mechanism can incentivize token holders?,Staking rewards,Traditional interest,Government grants,Fixed salaries,D,Not
+11,Basic,What does ‘pumpfun’ submarket refer to?,A market for high-quality tokens,A niche market driven by hype and rapid price increases,A regulated financial market,A stable asset market,B,Not
+12,Basic,Which mechanism can incentivize token holders?,Staking rewards,Traditional interest,Government grants,Fixed salaries,A,Not
 13,Basic,What is the purpose of token utility?,To provide access to platform features,To serve as legal tender,To back a currency,To fund government projects,A,Not
 14,Basic,Which token type is typically used to represent ownership?,Utility token,Security token,Governance token,Meme token,B,Not
 15,Basic,What does deflationary token model imply?,Increasing supply over time,Fixed supply with burn mechanisms,Unlimited token issuance,Periodic token issuance,C,Not
