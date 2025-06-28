@@ -1,201 +1,201 @@
-No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
+﻿No,Classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
 1,Basic,What is token economics?,Study of token models and incentives,Study of government policies,Study of traditional finance,Study of blockchain coding,A,Not
 2,Basic,Which token model features a fixed supply?,Inflationary,Deflationary,Fixed supply,Elastic supply,B,Not
-3,Basic,Which term describes distribution via airdrops?,Mining,Airdrop,Staking,Burning,B,Not
+3,Basic,Which term describes distribution to users?,Mining,Airdrop,Staking,Burning,B,Not
 4,Basic,What does token burn refer to?,Increasing supply,Reducing circulating supply,Issuing new tokens,Locking tokens,B,Not
 5,Basic,Which of the following best defines incentive structures?,Mechanisms to reward participation,Government subsidies,Bank interest rates,Traditional dividends,A,Not
 6,Basic,Which token is typically used for governance?,Utility token,Security token,Governance token,Stablecoin,C,Not
 7,Basic,What is a meme token?,A token based on internet culture,A token backed by assets,A token used for payments,A token for enterprise use,A,Not
-8,Basic,Which term describes tokens issued for community engagement?,Pump tokens,Airdrop tokens,Reward tokens,Utility tokens,B,Not
+8,Basic,Which term describes tokens issued for community engagement?,BTC,Airdrop tokens,Reward tokens,Utility tokens,B,Not
 9,Basic,What is the primary purpose of token distribution mechanisms?,To allocate tokens fairly,To increase token price,To centralize control,To reduce transaction fees,A,Not
-10,Basic,Which method is NOT used for token distribution?,Initial Coin Offering (ICO),Airdrop,Mining,Dividend payout,B,Not
+10,Basic,Which method is NOT used for token distribution?,Initial Coin Offering (ICO),Airdrop,Mining,payment,D,Not
 11,Basic,What does ‘pumpfun’ submarket refer to?,A market for high-quality tokens,A niche market driven by hype and rapid price increases,A regulated financial market,A stable asset market,B,Not
 12,Basic,Which mechanism can incentivize token holders?,Staking rewards,Traditional interest,Government grants,Fixed salaries,A,Not
 13,Basic,What is the purpose of token utility?,To provide access to platform features,To serve as legal tender,To back a currency,To fund government projects,A,Not
-14,Basic,Which token type is typically used to represent ownership?,Utility token,Security token,Governance token,Meme token,B,Not
-15,Basic,What does deflationary token model imply?,Increasing supply over time,Fixed supply with burn mechanisms,Unlimited token issuance,Periodic token issuance,C,Not
-16,Basic,Which of the following is a key incentive in token economics?,Transaction fees sharing,Centralized control,High interest from banks,Government subsidies,D,Not
+14,Basic,Which token type is typically used to represent ownership?,Utility token,Security token,Governance token,Meme token,C,Not
+15,Basic,What does deflationary token model imply?,Increasing supply over time,Fixed supply with burn mechanisms,Unlimited token issuance,Periodic token issuance,B,Not
+16,Basic,Which of the following is a key incentive in token economics?,Transaction fees sharing,Centralized control,High interest from banks,Government,A,Not
 17,Basic,What is token staking?,Locking tokens to earn rewards,Selling tokens immediately,Burning tokens to reduce supply,Using tokens as collateral,A,Not
-18,Basic,Which term describes tokens designed for payment?,Utility tokens,Security tokens,Payment tokens,Governance tokens,B,Not
-19,Basic,What is a stablecoin?,A token with highly volatile value,A token pegged to a stable asset,A meme token,A governance token,C,Not
-20,Basic,Which risk is unique to token economies?,Market volatility,Smart contract bugs,Regulatory uncertainty,Liquidity risk,D,Not
-21,Basic,What is token vesting?,Immediate distribution of tokens,Gradual release of tokens over time,Burning tokens after issuance,Fixed token allocation,A,Not
-22,Basic,Which model is used for liquidity provision rewards?,Yield farming,Token burn,Staking,Airdrops,B,Not
-23,Basic,Which of the following is a common distribution method for meme tokens?,Initial Coin Offering,Fair launch,Airdrop,Mining,C,Not
-24,Basic,What does tokenomics aim to optimize?,User interface design,Economic incentives and distribution,Server performance,Legal compliance,D,Not
+18,Basic,Which term describes tokens designed for payment?,Utility tokens,Security tokens,Payment tokens,Governance tokens,C,Not
+19,Basic,What is a stablecoin?,A token with highly volatile value,A token pegged to a stable asset,A meme token,A governance token,B,Not
+20,Basic,Which risk is unique to token economies?,Market volatility,Smart contract bugs,Regulatory uncertainty,Liquidity risk,B,Not
+21,Basic,What is token vesting?,Immediate distribution of tokens,Gradual release of tokens over time,Burning tokens after issuance,Fixed token allocation,B,Not
+22,Basic,Which model is used for liquidity provision rewards?,Yield farming,Token burn,Staking,Airdrops,A,Not
+23,Basic,Which of the following is a common distribution method for meme tokens?,Initial Coin Offering,Fair launch,Airdrop,Mining,B,Not
+24,Basic,What does tokenomics aim to optimize?,User interface design,Economic incentives and distribution,Server performance,Legal compliance,B,Not
 25,Basic,Which factor most influences token value?,Supply and demand,Government policy,Traditional banking rates,Fixed dividends,A,Not
-26,Basic,What is a token swap?,Exchanging one token for another,Burning tokens,Issuing new tokens,Locking tokens,B,Not
+26,Basic,What is a token swap?,Exchanging one token for another,Burning tokens,Issuing new tokens,Locking tokens,A,Not
 27,Basic,Which token is often used as collateral in DeFi?,Utility token,Security token,Stablecoin,Meme token,C,Not
-28,Basic,What is the function of a token’s whitepaper?,Marketing the token,Explaining the token model and mechanism,Issuing tokens,Setting legal regulations,D,Not
-29,Basic,Which distribution mechanism involves pre-sale to private investors?,Airdrop,Private sale,Public offering,Mining,A,Not
+28,Basic,What is the function of a token’s whitepaper?,Marketing the token,Explaining the token model and mechanism,Issuing tokens,Setting legal regulations,B,Not
+29,Basic,Which distribution mechanism involves pre-sale to private investors?,Airdrop,Private sale,Public offering,Mining,B,Not
 30,Basic,What does burn-and-mint equilibrium aim to achieve?,Increase token supply,Balance supply reduction with new issuance,Eliminate tokens,Centralize control,B,Not
-31,Basic,Which incentive structure rewards users for holding tokens?,Staking rewards,Liquidity mining,Token burning,Flash loans,C,Not
-32,Basic,What is the purpose of a token buyback?,To increase circulation,To reduce circulating supply and support price,To distribute dividends,To launch new tokens,D,Not
-33,Basic,Which of the following is a feature of pumpfun submarkets?,Steady price growth,Speculative hype and rapid price surges,Government regulation,Stable investment returns,A,Not
+31,Basic,Which incentive structure rewards users for holding tokens?,Staking rewards,Liquidity mining,Token burning,Flash loans,A,Not
+32,Basic,What is the purpose of a token buyback?,To increase circulation,To reduce circulating supply and support price,To distribute dividends,To launch new tokens,B,Not
+33,Basic,Which of the following is a feature of pumpfun submarkets?,Steady price growth,Speculative hype and rapid price surges,Government regulation,Stable investment returns,B,Not
 34,Basic,Which token model is characterized by a deflationary mechanism?,Inflationary,Deflationary,Stable,Rebase,B,Not
-35,Basic,What is the purpose of liquidity mining?,To provide liquidity and earn rewards,To burn tokens,To centralize exchanges,To issue new tokens,C,Not
-36,Basic,Which economic principle is central to token valuation?,Supply and demand,Gross domestic product,Inflation rate,Employment rate,D,Not
-37,Basic,What does token distribution via fair launch mean?,Tokens are pre-allocated to founders,Tokens are available to all participants equally,Tokens are given only to investors,Tokens are burned immediately,A,Not
+35,Basic,What is the purpose of liquidity mining?,To provide liquidity and earn rewards,To burn tokens,To centralize exchanges,To issue new tokens,A,Not
+36,Basic,Which economic principle is central to token valuation?,Supply and demand,Gross domestic product,Inflation rate,Employment rate,A,Not
+37,Basic,What does token distribution via fair launch mean?,Tokens are pre-allocated to founders,Tokens are available to all participants equally,Tokens are given only to investors,Tokens are burned immediately,B,Not
 38,Basic,Which token is typically designed for speculation?,Stablecoin,Meme token,Utility token,Security token,B,Not
-39,Basic,What is a vesting period?,Time during which tokens are locked before release,Immediate token distribution,Token burning duration,Duration of token mining,C,Not
-40,Basic,Which of the following best describes incentive alignment in token economics?,Aligning user behavior with network growth,Maximizing government control,Reducing user participation,Centralizing rewards,D,Not
-41,Basic,What does a token’s circulating supply refer to?,Total tokens ever created,Tokens currently in public hands,Tokens held by founders,Reserved tokens,A,Not
+39,Basic,What is a vesting period?,Time during which tokens are locked before release,Immediate token distribution,Token burning duration,Duration of token mining,A,Not
+40,Basic,Which of the following best describes incentive alignment in token economics?,Aligning user behavior with network growth,Maximizing government control,Reducing user participation,Centralizing rewards,A,Not
+41,Basic,What does a token’s circulating supply refer to?,Total tokens ever created,Tokens currently in markets,Tokens held by founders,Reserved tokens,B,Not
 42,Basic,Which distribution method involves continuous issuance?,One-time airdrop,Continuous mining rewards,Private sale,Fixed pre-allocation,B,Not
-43,Basic,What is the role of a token’s utility?,It provides rights and access to services,It is used solely for speculation,It guarantees dividends,It is backed by physical assets,C,Not
-44,Basic,Which metric measures the total tokens locked in a protocol?,Market cap,Total Value Locked (TVL),Annual Percentage Yield (APY),Token velocity,D,Not
-45,Basic,What is meant by token inflation?,Decrease in token supply over time,Increase in token supply over time,Fixed token supply,Token burning,A,Not
+43,Basic,What is the role of a token’s utility?,It provides rights and access to services,It is used solely for speculation,It guarantees dividends,It is backed by physical assets,A,Not
+44,Basic,Which metric measures the total tokens locked in a protocol?,Market cap,Total Value Locked (TVL),Annual Percentage Yield (APY),Token velocity,B,Not
+45,Basic,What is meant by token inflation?,Decrease in token supply over time,Increase in token supply over time,Fixed token supply,Token burning,B,Not
 46,Basic,Which factor can drive token price appreciation?,High inflation,Limited supply and high demand,Unlimited issuance,Centralized control,B,Not
-47,Basic,What is a token buyback program?,Issuing new tokens,Repurchasing tokens from the market,Burning tokens,Lending tokens,C,Not
-48,Basic,Which term describes tokens that confer profit sharing?,Utility tokens,Security tokens,Governance tokens,Meme tokens,D,Not
-49,Basic,What is the primary focus of token economics?,Technology development,Economic incentives and distribution,Legal frameworks,Marketing strategies,A,Not
-50,Basic,Which risk factor is particularly significant in niche token markets?,Regulatory risk,High liquidity,Stable market conditions,Low volatility,B,Not
-51,Basic,What is token vesting intended to prevent?,Market manipulation,Immediate token dumping,Long-term holding,High transaction fees,C,Not
-52,Basic,Which method is used to adjust token supply algorithmically?,Rebase mechanism,Fixed supply issuance,Manual burning,Airdrop,D,Not
+47,Basic,What is a token buyback program?,Issuing new tokens,Repurchasing tokens from the market,Burning tokens,Lending tokens,B,Not
+48,Basic,Which term describes tokens that confer profit sharing?,Utility tokens,Security tokens,Governance tokens,Meme tokens,C,Not
+49,Basic,What is the primary focus of token economics?,Technology development,Economic incentives and distribution,Legal frameworks,Marketing strategies,B,Not
+50,Basic,Which risk factor is particularly significant in niche token markets?,Regulatory risk,High liquidity,Stable market conditions,High volatility,D,Not
+51,Basic,What is token vesting intended to prevent?,Market manipulation,Immediate token dumping,Long-term holding,High transaction fees,B,Not
+52,Basic,Which method is used to adjust token supply algorithmically?,Rebase mechanism,Fixed supply issuance,Manual burning,Airdrop,A,Not
 53,Basic,What does a token’s whitepaper typically detail?,Technical and economic design,User interface design,Centralized control,Regulatory compliance,A,Not
-54,Basic,Which incentive can encourage long-term holding of tokens?,High transaction fees,Staking rewards,Frequent airdrops,Immediate liquidity,B,Not
-55,Basic,What is the impact of token burn on supply?,Increases supply,Decreases circulating supply,Stabilizes price,Has no impact,C,Not
-56,Basic,Which factor is crucial for the success of meme tokens?,Strong technical fundamentals,Community hype and social media,Government backing,High utility,D,Not
+54,Basic,Which incentive can encourage long-term holding of tokens?,High transaction fees,Staking rewards,Campaign,Immediate liquidity,B,Not
+55,Basic,What is the impact of token burn on supply?,Increases supply,Decreases circulating supply,Stabilizes price,Has no impact,B,Not
+56,Basic,Which factor is crucial for the success of meme tokens?,Strong technical fundamentals,Community hype and social media,Government backing,High utility,B,Not
 57,Basic,What is meant by “pumpfun” submarkets?,Markets driven by speculative hype and rapid price pumps,Stable markets with low volatility,Government regulated markets,Long-term investment markets,A,Not
 58,Basic,Which term describes tokens used primarily for speculative trading?,Utility tokens,Speculative tokens,Stablecoins,Governance tokens,B,Not
-59,Basic,What is token redistribution?,Reallocating tokens from one group to another,Issuing new tokens,Burning old tokens,Converting tokens to fiat,C,Not
-60,Basic,Which element is essential in designing a token’s incentive structure?,User participation,Government mandates,Centralized control,High technical complexity,D,Not
-61,Basic,Which of the following are core principles of token economics?,Transparency,Decentralization,Centralization,Incentive alignment,BD,Multiple
-62,Basic,Which of the following are common token distribution methods?,Airdrop,ICO,Mining,Dividend payout,BCD,Multiple
-63,Basic,Which of the following are benefits of token-based incentive structures?,Increased user engagement,Enhanced network security,Higher central control,Reduced intermediaries,AD,Multiple
+59,Basic,What is token redistribution?,Reallocating tokens from one group to another,Issuing new tokens,Burning old tokens,Converting tokens to fiat,A,Not
+60,Basic,Which element is essential in designing a token’s incentive structure?,User participation,Government,Centralized control,High technical complexity,A,Not
+61,Basic,Which of the following are core principles of token economics?,Centralization,Decentralization,Transparency,Incentive alignment,BCD,Multiple
+62,Basic,Which of the following are common token distribution methods?,Airdrop,ICO,Mining,Dividend payout,ABCD,Multiple
+63,Basic,Which of the following are benefits of token-based incentive structures?,Enhanced network security,Increased user engagement,Higher central control,Reduced intermediaries,BD,Multiple
 64,Basic,Which of the following describe token models?,Fixed supply,Inflationary mechanisms,Elastic supply,Stable value,ABC,Multiple
-65,Basic,Which of the following aspects are critical in designing token incentives?,Reward structure,Distribution fairness,High fees,Burn mechanisms,BD,Multiple
-66,Basic,Which of the following are factors in token distribution?,Pre-sale allocation,Airdrops,Mining rewards,Government grants,BCD,Multiple
-67,Basic,Which of the following are methods for incentivizing token holders?,Staking rewards,Yield farming,Token buyback,Dividend distribution,CD,Multiple
-68,Basic,Which of the following are used to create scarcity in tokens?,Token burn,Limited issuance,High inflation,Rebase mechanisms,ACD,Multiple
-69,Basic,Which of the following describe distribution challenges in token markets?,Unequal allocation,Price volatility,Market manipulation,Stable demand,BC,Multiple
-70,Basic,Which of the following are types of tokens?,Utility tokens,Security tokens,Governance tokens,Bank-issued tokens,ABD,Multiple
-71,Basic,Which of the following are methods for community incentivization?,Airdrops,Staking,Meme contests,Centralized rewards,BD,Multiple
-72,Basic,Which of the following are features of token-based fundraising?,ICO,IDO,IEO,Traditional IPO,ACD,Multiple
-73,Basic,Which of the following are components of a token’s economic design?,Distribution mechanism,Incentive structure,Market liquidity,Regulatory framework,ABD,Multiple
-74,Basic,Which of the following are challenges in niche token markets?,Price manipulation,Pump and dump schemes,High utility,Lack of adoption,ABC,Multiple
-75,Basic,Which of the following are benefits of deflationary token models?,Increased scarcity,Potential price appreciation,Stable supply,Enhanced liquidity,AD,Multiple
-76,Basic,Which of the following contribute to token holder incentives?,Staking rewards,Referral bonuses,Airdrop campaigns,High transaction fees,BCD,Multiple
-77,Basic,Which of the following are methods of token utility?,Access to platform features,Discounts on services,Governance participation,Centralized profit sharing,BD,Multiple
-78,Basic,Which of the following are risk factors in token economics?,Market volatility,Smart contract risk,Regulatory uncertainty,Guaranteed returns,BCD,Multiple
-79,Basic,Which of the following describe token burn effects?,Reduced supply,Potential price support,Increased inflation,Enhanced scarcity,AD,Multiple
-80,Basic,Which of the following are common in token incentive mechanisms?,Staking,Yield farming,Airdrops,Centralized allocation,ACD,Multiple
-81,Basic,Which of the following are used for token governance?,Voting rights,DAO participation,Token staking,Fixed dividend,CD,Multiple
-82,Basic,Which of the following are typical token utility features?,Access to services,Discounted fees,Exclusive content,Mass adoption,BCD,Multiple
-83,Basic,Which of the following aspects are evaluated in token economics?,Token distribution,Market dynamics,Incentive alignment,User interface design,ABD,Multiple
+65,Basic,Which of the following aspects are critical in designing token incentives?,High fees,Distribution fairness,Reward structure,Burn mechanisms,BCD,Multiple
+66,Basic,Which of the following are factors in token distribution?,Pre-sale allocation,Airdrops,Mining rewards,Government grants,ABCD,Multiple
+67,Basic,Which of the following are methods for incentivizing token holders?,Staking rewards,Yield farming,Token buyback,Dividend distribution,ABCD,Multiple
+68,Basic,Which of the following are used to create scarcity in tokens?,Token burn,Limited issuance,High inflation,Rebase mechanisms,ABD,Multiple
+69,Basic,Which of the following describe distribution challenges in token markets?,Unequal allocation,Price volatility,Market manipulation,Stable demand,ABC,Multiple
+70,Basic,Which of the following are types of tokens?,Utility tokens,Security tokens,Governance tokens,Bank-issued tokens,ABCD,Multiple
+71,Basic,Which of the following are methods for community incentivization?,Sniper Meme,Staking,Airdrops,Centralized rewards,BCD,Multiple
+72,Basic,Which of the following are features of token-based fundraising?,ICO,IDO,IEO,Traditional IPO,ABCD,Multiple
+73,Basic,Which of the following are components of a token’s economic design?,Market Maker,Regulatory,Distribution mechanism,Incentive structure,CD,Multiple
+74,Basic,Which of the following are challenges in niche token markets?,Price manipulation,Pump and dump schemes,High utility,Lack of adoption,ABD,Multiple
+75,Basic,Which of the following are benefits of deflationary token models?,low liquidity,Potential price appreciation,Stable supply,Increased scarcity,BCD,Multiple
+76,Basic,Which of the following contribute to token holder incentives?,Staking rewards,vote right,Airdrop,High leverage,ABC,Multiple
+77,Basic,Which of the following are methods of token utility?,Access to platform features,Discounts on services,Governance participation,Profit sharing,ABCD,Multiple
+78,Basic,Which of the following are risk factors in token economics?,Market volatility,Smart contract risk,Regulatory uncertainty,Share returns,ABC,Multiple
+79,Basic,Which of the following describe token burn effects?,Increase supply,Reduced supply,Increased inflation,Enhanced scarcity,BD,Multiple
+80,Basic,Which of the following are common in token incentive mechanisms?,Staking,Yield farming,Airdrops,Centralized allocation,ABCD,Multiple
+81,Basic,Which of the following are used for token governance?,Voting rights,DAO participation,Token staking,Fixed dividend,ABCD,Multiple
+82,Basic,Which of the following are typical token utility features?,Access to services,Discounted fees,Exclusive content,Mass adoption,ABCD,Multiple
+83,Basic,Which of the following aspects are evaluated in token economics?,UI design,Market dynamics,Incentive alignment,Token distribution,BCD,Multiple
 84,Basic,Which of the following are key to a successful token model?,Fair distribution,Incentive design,Robust technical implementation,High centralization,ABC,Multiple
-85,Basic,Which of the following are reasons to implement token vesting?,Prevent dumping,Encourage long-term holding,Increase immediate liquidity,Align team incentives,AD,Multiple
-86,Basic,Which of the following are integral to token supply mechanisms?,Token issuance,Burn mechanisms,Rebase functions,External audits,BCD,Multiple
-87,Basic,Which of the following are considered when designing token economics?,User incentives,Market liquidity,Centralized control,Regulatory compliance,AC,Multiple
-88,Basic,Which of the following are challenges for meme tokens?,High volatility,Short lifespan,Community hype,Stable value,ABD,Multiple
-89,Basic,Which of the following are elements of pump and dump schemes?,Rapid price increase,Hype-driven buying,Sustained long-term growth,Mass selling,BC,Multiple
-90,Basic,Which of the following are factors influencing token price?,Supply and demand,Market sentiment,Token utility,Centralized regulation,ACD,Multiple
-91,Basic,Which of the following are examples of incentive misalignment?,Excessive rewards,Unfair token distribution,Poor governance,Overly complex mechanisms,BD,Multiple
-92,Basic,Which of the following are aspects of token market dynamics?,Price volatility,Trading volume,Liquidity depth,Stable yield,ABC,Multiple
-93,Basic,Which of the following are methods to prevent token dumping?,Token vesting,Lock-up periods,Gradual release,Immediate liquidity,ABD,Multiple
-94,Basic,Which of the following are considerations in token distribution fairness?,Equal opportunity,Pre-sale bias,Community airdrops,Founder allocation,ABC,Multiple
-95,Basic,Which of the following are important for sustainable token economics?,Incentive alignment,Robust market mechanisms,High transaction fees,Transparent governance,AB,Multiple
-96,Basic,Which of the following are used to measure token performance?,Total Value Locked (TVL),Annual Percentage Yield (APY),Market capitalization,User growth,BCD,Multiple
-97,Basic,Which of the following are related to token liquidity?,Liquidity pools,Automated market makers,Order book depth,Centralized exchanges,ACD,Multiple
-98,Basic,Which of the following are trends in niche token innovations?,Meme tokens,Pumpfun submarkets,Utility token diversification,Government-backed tokens,BCD,Multiple
-99,Basic,Which of the following are key metrics in token economics?,Token velocity,Circulating supply,Token burn rate,Fixed issuance,AD,Multiple
+85,Basic,Which of the following are reasons to implement token vesting?,Rig the market,hedge losses,Prevent dumping,Encourage long-term holding,CD,Multiple
+86,Basic,Which of the following are integral to token supply mechanisms?,Token issuance,Burn mechanisms,Inflation,Tokenomics,AD,Multiple
+87,Basic,Which of the following are considered when designing token economics?,Meme token,User incentives,Centralized control,Regulatory compliance,BD,Multiple
+88,Basic,Which of the following are challenges for meme tokens?,High volatility,Short lifespan,Community hype,Culture and fun,ABC,Multiple
+89,Basic,Which of the following are elements of pump and dump schemes?,Rapid price increase,Hype-driven buying,Sustained long-term growth,Mass selling,ABD,Multiple
+90,Basic,Which of the following are factors influencing token price?,Supply and demand,Market sentiment,Token utility,TVL of the project,ABCD,Multiple
+91,Basic,Which of the following are examples of incentive misalignment?,Excessive rewards,Unfair token distribution,Poor governance,Long-term development,ABC,Multiple
+92,Basic,Which of the following are aspects of token market dynamics?,Price volatility,Trading volume,Ticker of the token,Liquidity depth,ABD,Multiple
+93,Basic,Which of the following are methods to prevent token dumping?,Token vesting,Lock-up periods,release at one time,Lack of liquidity,AB,Multiple
+94,Basic,Which of the following are good to token distribution fairness?,Equal opportunity,Selling tokens immediately,Community airdrops,Large amount of founder's allocation,AC,Multiple
+95,Basic,Which of the following are important for sustainable token economics?,Incentive alignment,Rig the market,Low TVL,Keep Building,AD,Multiple
+96,Basic,Which of the following are used to measure token performance?,APY,Price change,Market capitalization,Holders amount,BCD,Multiple
+97,Basic,Which of the following are related to token liquidity?,Liquidity pools,Automated market makers,Order book depth,Volume,ABCD,Multiple
+98,Basic,Which of the following are usually with using value?,Meme tokens,VC tokens,ETH,Government-backed tokens,ABD,Multiple
+99,Basic,Which of the following coins are not POW?,BTC,ETH,SOL,SUI,BCD,Multiple
 100,Basic,Which of the following are benefits of decentralized token models?,Increased transparency,Reduced intermediaries,Enhanced user control,Guaranteed returns,ABC,Multiple
-101,Intermediate,What distinguishes DeFi token economics from traditional finance?,Decentralized models,Government regulation,Centralized banks,Manual processing,A,Not
-102,Intermediate,Which token metric indicates the total tokens locked in a protocol?,Market cap,Total Value Locked (TVL),Annual yield,Circulating supply,B,Not
-103,Intermediate,What is the primary purpose of token staking in DeFi?,Securing the network,Earning rewards,Issuing loans,Burning tokens,C,Not
-104,Intermediate,Which factor significantly influences token price dynamics?,Supply and demand,Fixed token issuance,Government policy,Centralized control,D,Not
-105,Intermediate,What does a token’s vesting schedule determine?,Immediate token release,Gradual token release over time,Token burn rate,Price stability,A,Not
-106,Intermediate,Which mechanism is used for yield optimization in DeFi?,Yield aggregation,Manual trading,Centralized matching,Fixed rewards,B,Not
-107,Intermediate,What does a collateralized debt position (CDP) enable?,Generation of stablecoins,Token burning,Flash loan issuance,Price stabilization,C,Not
-108,Intermediate,Which risk is specifically associated with flash loans?,Reentrancy risk,Liquidity risk,Oracle manipulation,Regulatory risk,D,Not
-109,Intermediate,What is the role of a governance token in a DeFi protocol?,Voting on proposals,Paying transaction fees,Staking exclusively,Mining new tokens,A,Not
-110,Intermediate,Which economic concept is central to token value?,Supply and demand,Inflation targeting,Monetary policy,Employment rate,B,Not
-111,Intermediate,What is meant by token burn?,Issuing new tokens,Destroying tokens to reduce supply,Transferring tokens,Locking tokens,C,Not
-112,Intermediate,Which process describes reducing token supply over time?,Deflationary model,Inflationary model,Elastic supply,Fixed supply,D,Not
-113,Intermediate,What is a key characteristic of a well-designed token economy?,Fair distribution,High centralization,Unregulated issuance,Fixed rewards,A,Not
-114,Intermediate,Which term describes the incentive to hold tokens?,Staking rewards,Immediate liquidation,High volatility,Centralized dividends,B,Not
-115,Intermediate,What role do oracles play in token economics?,Providing external data,Issuing tokens,Managing staking,Determining supply,C,Not
-116,Intermediate,Which model involves token redistribution to users?,Airdrop,Token burn,Token swap,Dividend payout,D,Not
-117,Intermediate,Which risk is inherent in decentralized token systems?,Smart contract risk,Bankruptcy risk,Inflation risk,Centralized control,A,Not
-118,Intermediate,What is meant by token velocity?,The speed of token circulation,The rate of token mining,The fixed token supply,The token burn rate,B,Not
-119,Intermediate,Which term describes the total number of tokens in existence?,Circulating supply,Total supply,Market cap,Burned tokens,C,Not
-120,Intermediate,What is a common method to mitigate token price volatility?,Stablecoin integration,Increasing supply,Reducing demand,Centralized pricing,D,Not
-121,Intermediate,Which mechanism helps align incentives among token holders?,Governance voting,Token burn,Staking,Airdrops,A,Not
-122,Intermediate,What does APY stand for in token economics?,Annual Percentage Yield,Annual Profit Yield,Average Profit Yield,Annual Performance Yield,B,Not
-123,Intermediate,Which is an indicator of token market performance?,Trading volume,Block size,Mining difficulty,Network latency,C,Not
-124,Intermediate,Which token model is typically used for fundraising?,ICO,Stablecoin,Meme token,Security token,D,Not
-125,Intermediate,What is the purpose of liquidity mining?,Providing liquidity and earning rewards,Increasing token supply,Centralizing token control,Issuing new tokens,A,Not
-126,Intermediate,Which factor influences borrowing rates in DeFi?,Collateral ratio,User growth,Network latency,Token burn,B,Not
-127,Intermediate,What does a rebase mechanism do?,Adjusts token supply algorithmically,Burns tokens,Locks tokens,Issues dividends,C,Not
-128,Intermediate,Which term describes the process of arbitrage in token markets?,Exploiting price differences,Creating new tokens,Locking collateral,Issuing airdrops,D,Not
-129,Intermediate,What is a key consideration in designing token incentive structures?,Fair reward distribution,High centralization,Fixed token allocation,Unlimited supply,A,Not
-130,Intermediate,Which metric reflects investor confidence in a token?,Market cap,Total Value Locked (TVL),Annual yield,Token velocity,B,Not
-131,Intermediate,What does token dilution refer to?,Reduction in token value due to increased supply,Increase in token value,Centralized control,Reduced trading volume,C,Not
-132,Intermediate,Which phenomenon describes rapid token price surges and crashes?,Pump and dump,Steady growth,Stable market,Regulated trading,D,Not
-133,Intermediate,What is the role of tokenomics in DeFi?,Designing economic incentives and models,Developing software protocols,Regulating financial markets,Issuing legal currency,A,Not
-134,Intermediate,Which factor is critical for token market stability?,Fair distribution,High centralization,Inadequate supply,Limited trading,B,Not
-135,Intermediate,What does the term ‘token velocity’ indicate?,Rate of token circulation,Speed of network confirmation,Frequency of airdrops,Rate of token burn,C,Not
-136,Intermediate,Which mechanism is used to align long-term incentives in token economies?,Vesting schedules,Immediate distribution,High inflation,Centralized rewards,D,Not
-137,Intermediate,Which of the following are features of decentralized lending in DeFi?,Collateralization,Variable interest rates,Flash loans,Centralized credit scoring,BC,Multiple
-138,Intermediate,Which of the following are components of automated market makers?,Liquidity pools,Price oracles,Algorithmic formulas,Order book matching,BCD,Multiple
-139,Intermediate,Which of the following are economic principles relevant to token markets?,Supply and demand,Arbitrage opportunities,Inflation control,Market sentiment,AD,Multiple
-140,Intermediate,Which of the following are risk factors specific to DeFi protocols?,Smart contract bugs,Impermanent loss,Regulatory uncertainty,Credit default,ABC,Multiple
-141,Intermediate,Which of the following are key elements of decentralized exchanges?,Liquidity pools,Automated market making,Centralized order books,Peer-to-peer trading,BD,Multiple
-142,Intermediate,Which of the following metrics are used to evaluate DeFi performance?,TVL,APY,ROI,Transaction speed,ABD,Multiple
-143,Intermediate,Which of the following functions do governance tokens provide?,Voting rights,Staking rewards,Fee rebates,Asset backing,BC,Multiple
-144,Intermediate,Which of the following are types of token distribution models?,Pre-sale,Airdrop,Mining rewards,Dividend payout,ABC,Multiple
-145,Intermediate,Which of the following are examples of stablecoin types?,Algorithmic,Collateralized,Hybrid,Centralized,BC,Multiple
-146,Intermediate,Which of the following are methods to mitigate smart contract risks?,Code audits,Formal verification,Bug bounty programs,Centralized oversight,ABC,Multiple
-147,Intermediate,Which of the following are economic risks in DeFi?,Price volatility,Liquidity shortage,Impermanent loss,Stablecoin peg failure,BD,Multiple
+101,Intermediate,"In token economics, what problems can excessively high ""Token Velocity"" lead to?",Difficulty in accumulating token value,Insufficient token supply,Low token trading volume,Too few token holders,A,Not
+102,Intermediate,Which token design model most effectively addresses the issue of token velocity?,Token burning mechanism,Token staking mechanism,Token distribution mechanism,Token trading mechanism,B,Not
+103,Intermediate,"What is the primary innovation of ""Bonding Curve"" in token economics?",Fixed token supply,Automated market pricing mechanism,Centralized price control,Random token distribution,B,Not
+104,Intermediate,Which token economic model is most suitable for decentralized identity systems?,Speculative tokens,Transferable tokens,Pure utility tokens,Soulbound tokens,D,Not
+105,Intermediate,Which token economic model is used to incentivize the tokenization of physical assets?,Pure governance model,Revenue-sharing model,Pure utility model,Speculative model,B,Not
+106,Intermediate,"What is the best practice for ""Token Value Capture"" in token economics?",Maximizing token supply,Directly linking protocol revenue to token value,Minimizing token lock-up,Increasing token circulation speed,B,Not
+107,Intermediate,"What does ""Token Utility Trap"" refer to in token economics?",Token utility is unstable,Token utility is too high,Token utility is insufficient to support its value,Token utility is overly complex,C,Not
+108,Intermediate,Which token economic model is used for decentralized scientific research?,Pure governance model,Combination of proof-of-contribution and result verification,Pure utility model,Speculative model,B,Not
+109,Intermediate,"What is the core challenge of ""Token Incentive Alignment"" in token economics?",Balancing short-term and long-term incentives,Maximizing token price,Minimizing token volatility,Increasing token trading volume,A,Not
+110,Intermediate,Which token economic model is most suitable for community-owned projects?,Fair launch model,Venture capital-dominated model,Team-dominated model,Centralized control model,A,Not
+111,Intermediate,Which token economic innovation addresses the fairness issue in initial distribution?,Team allocation,Private sale round,Proof-of-contribution distribution,Foundation holding,C,Not
+112,Intermediate,"What is the key factor for ""Token Incentive Sustainability"" in token economics?",Endogenous value creation,External investment,Token price appreciation,Increase in token holders,A,Not
+113,Intermediate,Which token economic innovation addresses the issue of governance attacks in token systems?,Random selection,One-person-one-vote,Centralized control,Time-weighted voting,D,Not
+114,Intermediate,Which token economic innovation addresses the issue of low governance participation?,Centralized decision-making,Mandatory voting,Combination of delegated voting and incentives,Random selection of decision-makers,C,Not
+115,Intermediate,"What is the best mechanism for ""Token Value Accrual"" in token economics?","Combining fee capture,buybacks and staking rewards",Reliance solely on price appreciation,Reliance solely on trading volume,Reliance solely on holder count,A,Not
+116,Intermediate,Which token economic model is most suitable for decentralized media platforms?,Dual incentive model for creators and consumers,Pure creator incentive model,Pure consumer incentive model,Centralized control model,A,Not
+117,Intermediate,Which token economic innovation addresses the liquidity issue of NFTs?,NFT fractionalization,NFT leasing,NFT staking,All of the above,D,Not
+118,Intermediate,"What is the main advantage of ""Token Supply Elasticity"" in token economics?",Ability to adjust supply based on demand,Fixed supply,Continuous inflation,Continuous deflation,A,Not
+119,Intermediate,Which token economic model is most suitable for decentralized storage networks?,Combination of proof-of-work and proof-of-storage,Pure governance model,Pure utility model,Speculative model,A,Not
+120,Intermediate,Which token economic innovation addresses the issue of initial token valuation?,Dynamic issuance mechanism,Fixed price issuance,Team pricing,Random pricing,A,Not
+121,Intermediate,Which token distribution mechanism is most suitable for achieving broad initial distribution?,Private sale round,Proof-of-contribution airdrop,Team allocation,Foundation holding,B,Not
+122,Intermediate,Which token economic model is most suitable for decentralized insurance?,Combination of risk pools and staking,Pure governance model,Pure utility model,Speculative model,A,Not
+123,Intermediate,Which token economic innovation addresses the issue of token liquidity?,Increasing transaction fees,Token locking,Reducing trading channels,Liquidity mining 2.0,D,Not
+124,Intermediate,"What is the ideal state of ""Token Value Capture Ratio"" in token economics?",Fixed,As high as possible,As low as possible,Proportional to the value created by the network,D,Not
+125,Intermediate,Which token unlocking mechanism best prevents market shocks?,One-time unlocking,Linear unlocking,Cliff unlocking,Random unlocking,B,Not
+126,Intermediate,Which token economic model is most suitable for long-term infrastructure projects?,Speculation-driven model,Rapid distribution model,Gradual decentralization model,Short-term incentive model,C,Not
+127,Intermediate,"What is the best practice for ""Token Utility Design"" in token economics?",Centralized control,Single utility,No utility (pure speculation),Multi-layered utility combination,D,Not
+128,Intermediate,"Which token economic innovation addresses the ""rich get richer"" issue in token distribution?",Quadratic voting and distribution,Linear distribution,Whale-first distribution,Centralized distribution,A,Not
+129,Intermediate,Which token economic innovation addresses the issue of token value volatility?,Random adjustment,Purely free-floating,Centralized control,Partially collateralized algorithmic stabilization mechanism,D,Not
+130,Intermediate,"What is the core principle of ""Token Incentive Design"" in token economics?",Maximizing token price,Maximizing short-term returns,Minimizing volatility,Alignment of incentives with contributions,D,Not
+131,Intermediate,Which token economic model is most suitable for decentralized lending platforms?,Protocol revenue-sharing model,Pure governance model,Pure utility model,Speculative model,A,Not
+132,Intermediate,Which token economic innovation addresses the misalignment between token holders and users?,Usage-binding mechanism,Increasing speculation,Reducing utility,Centralized control,A,Not
+133,Intermediate,Which token economic model is most suitable for decentralized prediction markets?,Speculative model,Pure governance model,Pure utility model,Combination of result verification and staking,D,Not
+134,Intermediate,"What is the best combination for ""Token Value Accrual Mechanism"" in token economics?","Fee sharing, token burning and staking rewards",Reliance solely on price appreciation,Reliance solely on trading volume,Reliance solely on holder count,A,Not
+135,Intermediate,"What is the best practice for ""Token Incentive Layers"" in token economics?","Combining short-term, medium-term and long-term incentives",Short-term incentives only,Long-term incentives only,No incentives,A,Not
+136,Intermediate,Which token economic model is most suitable for decentralized content platforms?,Combination of proof-of-attention and proof-of-creation,Pure governance model,Pure utility model,Speculative model,A,Not
+137,Intermediate,Which of the following are the feature of SOL?,POW,POS,POH,Fast,CD,Multiple
+138,Intermediate,Which of the following are components of AMM?,Liquidity pools,Tokenomics,Airdrop,Order book matching,AD,Multiple
+139,Intermediate,Which of the following are economic principles relevant to token markets?,Arbitrage opportunities,Supply and demand,Inflation control,Market sentiment,BD,Multiple
+140,Intermediate,Which of the following are risk factors specific to DeFi protocols?,Low APY,Impermanent loss,Regulatory uncertainty,Smart contract bugs,BCD,Multiple
+141,Intermediate,Which of the following are key elements of decentralized exchanges?,Liquidity pools,Automated market making,APY,Transaction speed,ABD,Multiple
+142,Intermediate,Which of the following metrics are used to evaluate DeFi performance?,TVL,APY,Security,POW,ABC,Multiple
+143,Intermediate,Which of the following functions do governance tokens provide?,Centralized control,Staking rewards,Voting rights,Guaranteed returns,BC,Multiple
+144,Intermediate,Which of the following are types of token distribution models?,Pre-sale,Airdrop,Gift,Vesting,ABD,Multiple
+145,Intermediate,Which of the following are examples of stablecoin types?,Algorithmic,Collateralized,Defi,Unstable,AB,Multiple
+146,Intermediate,Which of the following are methods to mitigate smart contract risks?,Code audits,Tokenize,Bug bounty programs,Create a new coin,AC,Multiple
+147,Intermediate,Which of the following are economic risks in Defi?,Short term price change,Liquidity shortage,Unreasonable token economy,Stablecoin peg failure,BCD,Multiple
 148,Intermediate,Which of the following are used for decentralized governance?,DAO,Token voting,Centralized oversight,Community proposals,ABD,Multiple
-149,Intermediate,Which of the following are key features of liquidity pools?,Token reserves,Dynamic pricing,Manual trading,Automated market making,AD,Multiple
-150,Intermediate,Which of the following are indicators of protocol performance?,TVL,APY,User engagement,Centralized market share,ACD,Multiple
-151,Intermediate,Which of the following are examples of decentralized insurance protocols?,Nexus Mutual,Cover Protocol,Centralized insurers,InsurAce,AD,Multiple
-152,Intermediate,Which of the following factors affect borrowing rates in DeFi?,Collateral ratio,Market demand,Protocol fees,Token utility,BCD,Multiple
-153,Intermediate,Which of the following are considered when calculating TVL?,Asset value,Locked tokens,Market cap,User deposits,AB,Multiple
-154,Intermediate,Which of the following are risk mitigation strategies in DeFi?,Diversification,Insurance protocols,Regulatory compliance,High leverage,ABC,Multiple
-155,Intermediate,Which of the following are important for protocol interoperability?,Standard protocols,Cross-chain bridges,High fees,Decentralized exchanges,BD,Multiple
-156,Intermediate,Which of the following contribute to network decentralization?,Distributed nodes,Peer-to-peer architecture,Centralized servers,Open-source software,ABD,Multiple
-157,Intermediate,Which of the following are used to assess DeFi performance?,TVL,APY,Trading volume,Centralized metrics,AC,Multiple
-158,Intermediate,Which of the following are aspects of DeFi risk management?,Insurance,Diversification,Collateral management,Manual oversight,ABC,Multiple
-159,Intermediate,Which of the following factors are involved in decentralized governance?,Community voting,Token distribution,Centralized decision-making,Regulatory oversight,BD,Multiple
+149,Intermediate,Which of the following are features of the token economy of ETH?,POS,Limited supply,Staking,Use gas fee,ACD,Multiple
+150,Intermediate,Which of the following are indicators of protocol performance?,TVL,APY,User engagement,Mind share,ABCD,Multiple
+151,Intermediate,Which of the following are features of the token economy of BTC?,POS,Limited supply,Staking,Use gas fee,BD,Multiple
+152,Intermediate,Which of the following are features of the token economy of SOL?,POS,POH,Staking,Use gas fee,BCD,Multiple
+153,Intermediate,Which of the following are usually included in token economy?,Allocation parts,Allocation amount of each part,Vesting,Price in USD,ABC,Multiple
+154,Intermediate,Which parts of the following are usually included in token economy?,Government of country,VC that doen't invest,Airdrop to community,Group of the project,CD,Multiple
+155,Intermediate,Which parts of the following are usually included in token economy?,VC of the project,Community,Group,OKX,ABC,Multiple
+156,Intermediate,Which of the following are considered when design token economy?,Fair distribution,Long term development,Profit,VC's attitude,ABCD,Multiple
+157,Intermediate,What exchanges can a project list their coins when TGE?,OKX,Binance,Hyperliquid,FTX,ABC,Multiple
+158,Intermediate,Which of the following could a project TGE in?,OKX Wallet,Binance Wallet,Virtuals,Bitget Wallet,BC,Multiple
+159,Intermediate,Which of the following factors are involved in decentralized governance?,Community voting,Token distribution,Centralized decision-making,DAO,ABD,Multiple
 160,Intermediate,Which of the following are features of permissioned blockchain networks?,Restricted access,Enhanced privacy,Selective transparency,Open participation,ABC,Multiple
-161,Advanced,What distinguishes token economics in DeFi from traditional finance?,Decentralized distribution models,Government regulation,Centralized market control,Manual intervention,A,Not
-162,Advanced,Which mechanism maintains stablecoin pegs through overcollateralization?,Flash loans,Collateralized debt positions,Automated market making,Yield aggregation,B,Not
-163,Advanced,What is impermanent loss in the context of liquidity pools?,Loss due to price divergence,Permanent loss from contract bugs,Loss from regulatory actions,Loss from inflation,C,Not
-164,Advanced,How do flash loans function in DeFi?,Require collateral,Must be repaid within one transaction,Provide long-term financing,Issued by banks,D,Not
-165,Advanced,Which economic principle underlies arbitrage in token markets?,Price convergence,Market inefficiency,Supply-demand equilibrium,Regulatory intervention,A,Not
-166,Advanced,Which risk is most associated with decentralized liquidity pools?,Smart contract vulnerability,Impermanent loss,Regulatory risk,Interest rate risk,B,Not
-167,Advanced,In DeFi， what does slippage refer to?,Difference between expected and executed price,Delayed transaction confirmation,Excessive gas consumption,Liquidity shortage,C,Not
-168,Advanced,What role do oracles serve in token economics?,Provide off-chain data,Enhance token utility,Secure liquidity pools,Manage contract upgrades,D,Not
-169,Advanced,How is yield farming optimized in competitive DeFi markets?,By aggregating rewards across protocols,By increasing collateralization,By reducing trading fees,By centralizing liquidity,A,Not
-170,Advanced,What is the significance of decentralized governance in DeFi?,Enables community-driven decisions,Centralizes control,Requires manual intervention,Leads to high fees,B,Not
-171,Advanced,Which factor most impacts the scalability of DeFi protocols?,Network latency,Block size,Consensus efficiency,User adoption,C,Not
-172,Advanced,What does a collateral ratio determine in DeFi lending?,Borrowing capacity,Interest rates,Liquidity levels,Transaction speed,D,Not
-173,Advanced,How do decentralized exchanges mitigate front-running?,Time-weighted average pricing,Centralized order matching,Random order delays,Strict KYC,A,Not
-174,Advanced,Which mechanism enables protocol upgrades without disruption?,Hard forks,Soft forks,Modular architecture,Centralized updates,B,Not
-175,Advanced,What is the impact of liquidity fragmentation in token markets?,Increased slippage,Higher yields,Stable pricing,Reduced volatility,C,Not
-176,Advanced,Which strategy reduces gas costs in complex DeFi operations?,Batch processing,Increasing block rewards,Reducing collateral requirements,Enhancing network latency,D,Not
-177,Advanced,What is a key challenge when integrating cross-chain protocols?,Data standardization,Token interoperability,High energy consumption,Centralized control,A,Not
-178,Advanced,How do economic incentives drive participation in DeFi?,Offering yield rewards,Through regulatory mandates,Imposing high fees,Via centralized incentives,B,Not
-179,Advanced,What is the role of tokenomics in shaping market behavior?,Designing economic models,Ensuring regulatory compliance,Establishing network security,Managing transaction speeds,C,Not
-180,Advanced,Which factor contributes most to systemic risk in DeFi?,Interconnected protocols,Isolated platforms,Manual interventions,Low user activity,D,Not
-181,Advanced,How does arbitrage function in decentralized markets?,Exploiting price differences,Regulating market prices,Centralized order matching,Token burning,A,Not
-182,Advanced,What is the effect of high volatility on token economics?,Increases arbitrage opportunities,Reduces liquidity,Stabilizes returns,Enhances regulatory oversight,B,Not
-183,Advanced,Which factor is essential for efficient decentralized governance?,Community engagement,Central authority,Token utility,High fees,C,Not
-184,Advanced,What mechanism underpins automated yield optimization in DeFi?,Algorithmic trading,Smart contract automation,Delegated governance,Manual rebalancing,D,Not
-185,Advanced,Which of the following are key factors in decentralized lending risk?,Collateral volatility,Smart contract risk,Interest rate fluctuations,Liquidity risk,BD,Multiple
-186,Advanced,Which of the following are methods to prevent smart contract exploits?,Code audits,Formal verification,Bug bounty programs,Centralized oversight,BCD,Multiple
-187,Advanced,Which of the following are economic principles applied in token markets?,Supply and demand,Arbitrage,Inflation control,Market equilibrium,AD,Multiple
-188,Advanced,Which of the following are risks unique to DeFi protocols?,Impermanent loss,Flash loan attacks,Oracle manipulation,Centralized bank failure,ABC,Multiple
-189,Advanced,Which of the following are used to assess DeFi protocol stability?,Total Value Locked (TVL),Transaction volume,User growth,Gas fee volatility,BD,Multiple
-190,Advanced,Which of the following are components of decentralized governance in DeFi?,DAO,Token voting,Centralized regulation,Community proposals,ABD,Multiple
-191,Advanced,Which of the following factors influence cross-chain interoperability?,Standardized protocols,Bridge security,Token compatibility,Centralized liquidity,BC,Multiple
-192,Advanced,Which of the following are risk mitigation strategies in DeFi?,Insurance protocols,Diversification,Dynamic collateralization,Fixed interest rates,ACD,Multiple
-193,Advanced,Which of the following factors drive participation in DeFi protocols?,Yield incentives,Governance rights,High transaction fees,Decentralized ownership,BD,Multiple
-194,Advanced,Which of the following metrics are used to evaluate DeFi performance?,TVL,APY,User engagement,Centralized market share,ABC,Multiple
-195,Advanced,Which of the following are challenges in implementing cross-chain solutions?,Data standardization,Bridge reliability,High fees,User adoption,BD,Multiple
-196,Advanced,Which of the following are methods to enhance DeFi security?,Regular audits,Formal verification,Bug bounty programs,Increased centralization,ABD,Multiple
-197,Advanced,Which of the following are economic risks in decentralized finance?,Price volatility,Liquidity shortages,Impermanent loss,Stablecoin peg failure,BC,Multiple
-198,Advanced,Which of the following are strategies to optimize yield in DeFi?,Yield aggregation,Automated rebalancing,Manual trading,High-frequency trading,ABD,Multiple
-199,Advanced,Which of the following factors influence decentralized governance?,Community participation,Token distribution,Centralized decision-making,Regulatory pressure,AD,Multiple
-200,Advanced,Which of the following are indicators of a healthy DeFi ecosystem?,Robust TVL,High user growth,Stable yields,Centralized management,BCD,Multiple
+161,Advanced,"In a fixed supply token model, which of the following is true?",The token requires ongoing minting for staking rewards.,The token's inflation rate stays constant indefinitely.,The token supply increases according to network transaction volume.,The total token supply cannot exceed a capped limit.,D,Not
+162,Advanced,Which of the following describes an inflationary token supply?,New tokens are minted continuously over time.,A set amount is minted in the genesis block only.,Tokens are permanently burned to reduce supply.,A smart contract destroys tokens after each transaction.,A,Not
+163,Advanced,What is the primary impact of implementing a halving event in a blockchain's monetary policy?,It increases the overall supply of tokens quickly.,It doubles the transaction fees for security.,It reduces the rate of new token issuance periodically.,It guarantees deflation by burning tokens.,C,Not
+164,Advanced,"In the context of tokenomics, what effect does a deflationary mechanism like token burning have?","It decreases token supply, potentially increasing scarcity.",It increases liquidity by adding tokens to the market.,It causes the token supply to infinitely inflate.,It ensures all tokens are locked forever.,A,Not
+165,Advanced,Which characteristic is typical of a token with a fixed maximum supply compared to an inflationary token?,Encourages early selling due to fear of dilution.,Requires network participants to pay continuous minting fees.,Aligns token price stabilization with constant issuance.,Has predictable total supply growth over time.,D,Not
+166,Advanced,"According to the equation of exchange (MV=PT), if the token velocity (V) increases while money supply (M) and transaction volume (T) are constant, what happens to the price level (P)?",P increases.,P decreases.,P remains the same.,P fluctuates unpredictably.,A,Not
+167,Advanced,Which mechanism could be used to reduce token velocity in an economy?,Encouraging users to hold tokens in cold storage.,Implementing low staking rewards.,Reducing transaction fees to zero.,Increasing the token's total supply.,A,Not
+168,Advanced,Token velocity is best defined as which of the following?,The rate at which tokens change hands in the economy.,The number of tokens a wallet receives per staking period.,The total supply of tokens in circulation.,The speed at which new tokens are minted by protocol.,A,Not
+169,Advanced,Which of the following is an example of a liquidity mining incentive?,Reducing reward tokens for early adopters.,Charging fees to LPs for liquidity provisioning.,Rewarding liquidity providers with additional tokens.,Exclusively locking tokens in governance contracts.,C,Not
+170,Advanced,"In yield farming, what is impermanent loss"" best described as?""",Temporary loss of token ownership rights during staking.,A permanent reduction in supply due to token burns.,The temporary loss of value when providing liquidity due to price divergence.,Loss of private keys resulting in lost funds.,C,Not
+171,Advanced,Which of the following could cause high impermanent loss for a liquidity provider?,Equal value of assets in the liquidity pool at all times.,Stable token pair in AMM pool.,Significant price divergence between paired assets.,Earning only fees without any token rewards.,C,Not
+172,Advanced,What is a potential drawback of unlimited liquidity mining incentives?,It may cause rapid token inflation and unsustainable APYs.,It can lead to continuously rising token value without risk.,It guarantees long-term staking for all investors.,It has no effect on network security.,A,Not
+173,Advanced,What is the primary purpose of staking tokens in a proof-of-stake network?,To secure the network and validate transactions.,To provide immediate liquidity for traders.,To permanently remove tokens from circulation.,To guarantee fixed returns unrelated to network performance.,A,Not
+174,Advanced,Slashing in a PoS blockchain typically refers to:,Reducing the token balance of a validator for misbehavior.,Cutting transaction fees for high-stakes validators.,Sharing staking rewards among smaller holders.,Slicing tokens to half at regular intervals.,D,Not
+175,Advanced,How does staking typically affect a token's circulating supply in the short term?,It decreases circulating supply due to tokens being locked.,It increases circulating supply.,It has no effect on circulating supply.,It doubles the circulating supply.,A,Not
+176,Advanced,What is one advantage of a token vesting schedule for team members?,It aligns team incentives with long-term project success.,It provides immediate liquidity to team members.,It prevents any team members from ever selling tokens.,It allows team members to vote with unlimited weight immediately.,A,Not
+177,Advanced,"In a typical vesting schedule, what is a cliff""?""",A short initial period during which no tokens are vested.,A mechanism that doubles rewards after each vesting period.,A fee charged to withdraw vested tokens early.,A bonus given to team members who hold past the vesting end.,B,Not
+178,Advanced,Which scenario describes linear vesting?,Tokens are released incrementally in equal amounts over time.,All tokens are released after a fixed waiting period.,Tokens are never released and permanently locked.,Tokens are released in random quantities sporadically.,A,Not
+179,Advanced,Which of the following is a potential consequence of a very short lock-up period for token private sale investors?,Greater long-term price stability.,Increased risk of early large sell-offs.,Immediate trust from retail investors.,Lower token liquidity in early markets.,B,Not
+180,Advanced,Which feature is most important in a well-designed governance token?,It should allow unlimited creation of new tokens for voters.,It should balance voting power to avoid concentration.,It should give special voting rights to whales only.,It should bypass all community discussions.,B,Not
+181,Advanced,What is the purpose of a DAO treasury in tokenomics?,To hold funds for protocol development and community proposals.,To serve as a central bank issuing new tokens arbitrarily.,To allow private investors to retrieve their initial investment on demand.,To automatically burn tokens when the price falls.,A,Not
+182,Advanced,Which statement best describes protocol-owned liquidity (POL)?,Liquidity that is not visible on any blockchain.,Liquidity provided by centralized exchanges.,Liquidity exclusively funded by user deposits.,Liquidity purchased and managed by the protocol itself.,D,Not
+183,Advanced,A cross-chain bridge often relies on which mechanism to transfer tokens between blockchains?,Synchronous block confirmation across networks.,Oracle-based price feeds only.,Direct merging of two blockchain ledgers.,Burning tokens on one chain and minting equivalents on another.,D,Not
+184,Advanced,What is one potential risk introduced by cross-chain token bridging?,It can introduce double-spend or bridge hacking vulnerabilities.,It decreases total liquidity across the ecosystem.,It creates trustless connectivity without any overhead.,It ensures tokens on multiple chains become hyper-deflationary.,A,Not
+185,Advanced,What is a common effect of game-theoretic collusion among liquidity providers?,Artificially maintained high APYs at the protocol's expense.,Decreased rewards for all participants.,"A stable, trustless environment for all traders.",Improved network security through competition.,A,Multiple
+186,Advanced,Which of the following mechanisms can act as disinflationary token supply controls?,Increase in base token issuance,Introduction of new token farms,Halving of block rewards,Token burns from transaction fees,CD,Multiple
+187,Advanced,Which factors can contribute to a low token velocity?,High staking participation,Long-term lock-up requirements,Lack of utility for transactions,Frequent token burns increasing scarcity,ABC,Multiple
+188,Advanced,What consequences might result from excessive liquidity mining incentives?,Inflated token supply and high issuance,Increased market depth and stable prices,Temporary user engagement followed by drop-off,Guarantee of sustained user activity,AC,Multiple
+189,Advanced,Which of the following are features of a typical Proof-of-Stake system?,Energy-intensive mining hardware,Random block production by lottery without stake,Economic penalties for misbehavior (slashing),Validators must lock up tokens,CD,Multiple
+190,Advanced,What design elements can help mitigate the risk of token price crashes due to large initial sales?,Implementing a vesting schedule for team and investors,Allowing unrestricted trading immediately after launch,Cliff periods delaying initial token releases,Burn mechanisms after each sale,AC,Multiple
+191,Advanced,Which governance mechanisms aim to reduce the influence of large token holders?,Token-weighted voting,Quadratic voting,Delegated voting to representatives,Voting caps or ceilings,BD,Multiple
+192,Advanced,Which of the following are considered forms of protocol-owned liquidity?,Tokens held in a DAO treasury and used for market making,Liquidity provided by external third-party market makers,Liquidity pools controlled by the protocol's smart contracts,User deposits on centralized exchanges,AC,Multiple
+193,Advanced,What are potential risks of cross-chain token bridges?,Smart contract bugs leading to locked funds,Decentralization of token supply,Chain reorg allowing double-spend across chains,Dependence on validator or oracle security,ACD,Multiple
+194,Advanced,Which factors can undermine a decentralized treasury?,Community governance via multi-sig or voting,Concentration of funds in a single asset,Lack of transparency in spending,Funds used for community proposals,BC,Multiple
+195,Advanced,Which strategies can a DAO use to manage its treasury risk?,Diversifying assets among multiple categories,Keeping all funds in native token of protocol,Using hedging derivatives like futures,Yield farming and lending on external platforms,ACD,Multiple
+196,Advanced,Which of these are true statements about token bridging and wrapped tokens?,Wrapped tokens rely on trust in custodians or collateral mechanisms,They create multiple independent circulating supplies without any relation,A wrapped token's value is usually pegged to the original chain's asset,Bridges can allow tokens to maintain their monetary policy intact,AC,Multiple
+197,Advanced,What factors can influence token velocity within a DeFi ecosystem?,Availability of alternative assets for saving,Transaction fees and cost to use tokens,Token distribution among users,Number of transactions and block generation rate,BCD,Multiple
+198,Advanced,Which game-theoretic issues can arise in governance participation?,Voter apathy leading to default policies,Majority token holders colluding to influence votes,Rational ignorance where voters do not research,Stochastic fluctuations of token price,ABC,Multiple
+199,Advanced,Which incentives can encourage long-term holding behavior among token holders?,High staking yields with lock-up incentives,Frequent airdrops regardless of holding duration,Loyalty rewards increasing with time held,Burning a percentage of tokens on transfer,AC,Multiple
+200,Advanced,Which of the following can improve the sustainability of liquidity mining programs?,Using linear high yield incentives,Sharing rewards only with large providers,Reducing token issuance rates over time,Rewarding based on time-weighted deposits,CD,Multiple
