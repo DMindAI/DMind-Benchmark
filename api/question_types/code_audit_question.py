@@ -174,7 +174,7 @@ Please ensure accurate evaluation, making sure the scores match the scoring crit
                 # Build prompt
                 prompt = self._build_evaluation_prompt(response_text)
                 
-                # 使用requests库直接向API发送请求
+                # Use requests library to send API request directly
                 logger.info("Starting to call third-party AI API...")
                 headers = {
                     'Accept': 'application/json',
@@ -295,7 +295,7 @@ Please ensure accurate evaluation, making sure the scores match the scoring crit
             else:
                 # If no keywords, evaluate based on key points
                 key_points_score = 0
-                if key_points:  # 确保key_points不为空
+                if key_points:  # Ensure key_points is not empty
                     for point in key_points:
                         if point.lower() in response.lower():
                             key_points_score += 1
@@ -304,7 +304,7 @@ Please ensure accurate evaluation, making sure the scores match the scoring crit
                     keyword_score = (key_points_score / len(key_points)) * max_points * 0.8
                     logger.info(f"Key points matching: {key_points_score}/{len(key_points)}, score: {keyword_score:.2f}")
                 else:
-                    # 如果没有关键词和要点，则给予基本分
+                    # If there are no keywords or key points, assign a base score
                     keyword_score = max_points * 0.5
                     logger.info(f"No keywords or key points defined, assigning base score: {keyword_score:.2f}")
             

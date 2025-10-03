@@ -57,7 +57,9 @@ class StrategyAnalysisQuestion(BaseQuestion):
         Returns:
             str: Built prompt
         """
-        prompt = f"Scenario: {self.scenario}\n\n"
+        prompt = ""
+        if self.scenario and self.scenario.strip():
+            prompt += f"Scenario: {self.scenario}\n\n"
         prompt += f"Task: {self.instructions}\n\n"
         prompt += "Please provide detailed analysis and strategy recommendations."
         logger.info(f"Prompt building completed, length: {len(prompt)}")

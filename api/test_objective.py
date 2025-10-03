@@ -48,13 +48,13 @@ class ModelTester:
         self.models = config["models"]
         self.results_dir = Path("test_results")
         self.results_dir.mkdir(exist_ok=True)
-        self.test_data_dir = Path(__file__).parent.parent / "test_data"
+        self.test_data_dir = Path(__file__).parent.parent.parent.parent / "DMind_review" / "new_dataset"
         
     def load_test_data(self, file_path: str) -> pd.DataFrame:
         """Load test data"""
         try:
             # Build complete file path
-            full_path = self.test_data_dir / "objective_en" / file_path
+            full_path = self.test_data_dir / "objective" / file_path
             return pd.read_csv(full_path)
         except Exception as e:
             print(f"Error loading test data: {e}")
@@ -65,8 +65,8 @@ class ModelTester:
         Skey = model_config["api"]
         provider = model_config.get("provider", "")
 
-        max_retries = 10  # Maximum retry attempts
-        retry_delay = 15  # Retry interval (seconds)
+        max_retries = 30  # Maximum retry attempts
+        retry_delay = 5  # Retry interval (seconds)
         
         for attempt in range(max_retries):
             try:
@@ -115,7 +115,6 @@ class ModelTester:
                             ],
                             temperature=model_config.get("parameters", {}).get("temperature", 0.7),
                         )
-                        print(completion)
                         
                         response_json = {
                             "choices": [
@@ -135,9 +134,7 @@ class ModelTester:
                             "attempts": attempt + 1
                         }
                     except Exception as e:
-                        print(f"OpenAI API调用失败: {str(e)}")
                         if attempt < max_retries - 1:
-                            print(f"将在 {retry_delay} 秒后重试... (尝试 {attempt + 1}/{max_retries})")
                             time.sleep(retry_delay)
                             continue
                         else:
@@ -159,9 +156,13 @@ class ModelTester:
                     
                     data = {
                         "model": model_config["model"],
+                        # "top_k": 20,
+                        # "top_p": 0.95,
                         "messages": [{"role": "user", "content": prompt}],
                         "temperature": 0.7,
-                        "max_tokens": 4096,
+                        # "max_tokens": 4096,
+                        # "stream": "false"
+                        # **model_config["parameters"]
                     }
                     
                     response = requests.post(self.api_base, headers=headers, json=data)
@@ -256,6 +257,9 @@ class ModelTester:
                 shuffled_options[new_key] = content
                 original_to_new_mapping[original_key] = new_key
                 new_to_original_mapping[new_key] = original_key
+            # shuffled_options = options.copy()
+            # original_to_new_mapping = {k: k for k in options.keys()}
+            # new_to_original_mapping = {k: k for k in options.keys()}
             
             # Map the correct option to the new shuffled position
             # Handle different formats of correct options (single, multiple with / or ,)
@@ -290,8 +294,7 @@ class ModelTester:
             # Build prompt with shuffled options
             base_prompt = """
 <Role>\nYou are a professional quiz assistant.\n\n<Task>\nYour task is to answer multiple-choice questions in the following format:\n1. Read the question carefully\n2. Output only the letter(s) of the correct option(s) (A, B, C, or D)\n3. If there are multiple correct answers, separate them with slashes (e.g., A/B)\n4. Do not explain your choice\n
-5. Do not output any other content
-
+5. Do not output any other content,Do not output any other content
 """
             prompt = f"{base_prompt}Question: {question}\n\nOptions:"
             for opt, content in shuffled_options.items():
@@ -328,8 +331,9 @@ class ModelTester:
             valid_answers = []
             invalid_response = False
             seen_options = set()
-            
+            print(f"Response content: {response_content}")
             if response_content != None:
+                response_content = response_content.replace("<|begin_of_box|>", "").replace("<|end_of_box|>", "")
                 if "</think>\n" in response_content:
                     response_content = response_content.split("</think>\n")[1]
 
@@ -539,7 +543,7 @@ class ModelTester:
         
         # Use ThreadPoolExecutor for multithreaded processing
         start_time = time.time()
-        with concurrent.futures.ThreadPoolExecutor(max_workers=100) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
             # Submit all questions to the thread pool
             futures = [executor.submit(process_question, (idx, row)) for idx, row in test_data.iterrows()]
             
@@ -611,14 +615,14 @@ class ModelTester:
         # List of test datasets
         test_datasets = [
             "Blockchain_Fundamentals_benchmark.csv",
-            "Security_Benchmark_modified.csv",
-            "DAO2.csv",
-            "SmartContracts_benchmark.csv",
-            "Defi_benchmark.csv",
-            "MEME_Benchmark_modified.csv",
-            "infra_benchmark.csv",
-            "Tokenomist.csv",
-            "NFT_Benchmark_modified.csv"
+            "Security.csv",
+            "DAO.csv",
+            "SmartContracts.csv",
+            "DeFi.csv",
+            "MEME.csv",
+            "Infrastructure.csv",
+            "Tokenomics.csv",
+            "NFT.csv"
         ]
         
         model_results = {}  # Used to store all results for each model

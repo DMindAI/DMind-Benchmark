@@ -43,7 +43,6 @@ class ScenarioAnalysisQuestion(BaseQuestion):
             total_points += criterion.get("points", 0)
         self.total_possible = question_data.get("total_possible", total_points)
         
-        # 从配置管理器获取API配置
         api_config = config_manager.get_third_party_api_config()
         self.third_party_api_key = api_config["api_key"]
         self.third_party_api_base = api_config["api_base"]
@@ -63,7 +62,8 @@ class ScenarioAnalysisQuestion(BaseQuestion):
             str: Built prompt
         """
         prompt = "Please analyze the following scenario and provide a comprehensive solution:\n\n"
-        prompt += f"Scenario:\n{self.scenario}\n\n"
+        if self.scenario and self.scenario.strip():
+            prompt += f"Scenario:\n{self.scenario}\n\n"
         
         if self.requirements:
             prompt += "Requirements:\n"

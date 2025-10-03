@@ -3,8 +3,6 @@ import json
 import time
 import logging
 import requests
-import subprocess
-import tempfile
 from typing import Dict, List, Optional, Any
 from question_types.base_question import BaseQuestion
 from utils.config_manager import config_manager
@@ -67,7 +65,9 @@ class ShortAnswerQuestion(BaseQuestion):
         Returns:
             str: Built prompt
         """
-        prompt = f"Scenario: {self.scenario}\n\n"
+        prompt = ""
+        if self.scenario and self.scenario.strip():
+            prompt += f"Scenario: {self.scenario}\n\n"
         prompt += f"Task: {self.instructions}\n\n"
         prompt += "Please provide a concise and clear answer."
         
@@ -171,22 +171,41 @@ class ShortAnswerQuestion(BaseQuestion):
                     criterion_name = criterion.get("criterion", "")
                     max_points = criterion.get("points", 0)
                     key_points = criterion.get("key_points", [])
+                    keywords = criterion.get("keywords", [])
+                    check_function = criterion.get("check_function", "")
                     min_points_required = criterion.get("min_points_required", 0)
                     
                     criteria_prompt += f"Criterion: {criterion_name} (Maximum: {max_points} points)\n"
-                    criteria_prompt += "Key points:\n"
-                    for point in key_points:
-                        criteria_prompt += f"- {point}\n"
+                    
+                    # Add key points if available
+                    if key_points:
+                        criteria_prompt += "Key points to evaluate:\n"
+                        for point in key_points:
+                            criteria_prompt += f"- {point}\n"
+                    
+                    # Add keywords if available
+                    if keywords:
+                        criteria_prompt += "Important keywords to look for:\n"
+                        for keyword in keywords:
+                            criteria_prompt += f"- {keyword}\n"
+                    
+                    # Add check function if available
+                    if check_function:
+                        criteria_prompt += f"Evaluation function: {check_function}\n"
+                    
                     if min_points_required > 0:
                         criteria_prompt += f"At least {min_points_required} key points must be covered\n"
                     criteria_prompt += "\n"
                 
+                # Build scenario section if available
+                scenario_section = ""
+                if self.scenario and self.scenario.strip():
+                    scenario_section = f"Scenario: {self.scenario}\n\n"
+                
                 evaluation_prompt = f"""
                 You are a professional evaluation expert. Please evaluate the quality of the answer based on the following criteria.
                 
-                Scenario: {self.scenario}
-                
-                Task: {self.instructions}
+                {scenario_section}Task: {self.instructions}
                 
                 Answer: {response}
                 
@@ -214,90 +233,40 @@ class ShortAnswerQuestion(BaseQuestion):
 
                 logger.info("Starting to call third-party AI API...")
                 headers = {
-                    'Accept': 'application/json',
+                    # 'Accept': 'application/json',
                     'Authorization': f'Bearer {self.third_party_api_key}',
-                    'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
+                    # 'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
                     'Content-Type': 'application/json'
                 }
                 
+
+                # print(evaluation_prompt)
+
                 data = {
                     "model": self.third_party_model,
                     "messages": [{"role": "user", "content": evaluation_prompt}],
-                    "max_tokens": 4000,
-                    "temperature": 0
                 }
                 
                 start_time = time.time()
                 try:
                     # Try to use requests library to send request
+                    print(self.third_party_api_base)
+                    print(headers)
                     response_obj = requests.post(self.third_party_api_base, headers=headers, json=data)
                     end_time = time.time()
                     
                     logger.info(f"API call completed, time taken: {end_time - start_time:.2f} seconds, status code: {response_obj.status_code}")
                     
                     if response_obj.status_code != 200:
-                        error_msg = f"API call failed, status code: {response_obj.status_code}, trying to use curl as fallback"
+                        error_msg = f"API call failed, status code: {response_obj.status_code}"
                         logger.warning(error_msg)
                         raise Exception(error_msg)
                     
                     response_data = response_obj.json()
                     
                 except Exception as e:
-                    # If requests fails, try using curl
-                    logger.info(f"Using requests to call API failed: {str(e)}, trying to use curl...")
-                    
-                    # Write data to temporary file
-                    with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as temp_file:
-                        json.dump(data, temp_file)
-                        temp_file_path = temp_file.name
-                    
-                    # Build curl command
-                    curl_cmd = [
-                        'curl', '-s', self.third_party_api_base,
-                        '-H', f'Authorization: Bearer {self.third_party_api_key}',
-                        '-H', 'Content-Type: application/json',
-                        '-H', 'Accept: application/json',
-                        '-H', 'User-Agent: Apifox/1.0.0 (https://apifox.com)',
-                        '-X', 'POST',
-                        '-d', f'@{temp_file_path}'
-                    ]
-                    
-                    # Execute curl command
-                    try:
-                        curl_result = subprocess.run(curl_cmd, capture_output=True, text=True, check=True)
-                        end_time = time.time()
-                        logger.info(f"curl API call completed, time taken: {end_time - start_time:.2f} seconds")
-                        
-                        # Parse response
-                        try:
-                            response_data = json.loads(curl_result.stdout)
-                            
-                            # Create an object similar to requests.Response
-                            class CurlResponse:
-                                def __init__(self, data, status_code=200):
-                                    self.data = data
-                                    self.status_code = status_code
-                                
-                                def json(self):
-                                    return self.data
-                            
-                            response_obj = CurlResponse(response_data)
-                            
-                        except json.JSONDecodeError as je:
-                            logger.error(f"Failed to parse curl response: {str(je)}")
-                            logger.error(f"curl response: {curl_result.stdout[:200]}")
-                            logger.error(f"curl error: {curl_result.stderr}")
-                            raise je
-                        
-                        # Delete temporary file
-                        os.unlink(temp_file_path)
-                        
-                    except subprocess.CalledProcessError as ce:
-                        logger.error(f"Failed to execute curl command: {str(ce)}")
-                        logger.error(f"curl error output: {ce.stderr}")
-                        # Delete temporary file
-                        os.unlink(temp_file_path)
-                        raise ce
+                    logger.error(f"API call failed: {str(e)}")
+                    raise e
                 
                 logger.info(f"API response data: {json.dumps(response_data)[:200]}...")
                 

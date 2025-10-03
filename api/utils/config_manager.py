@@ -175,22 +175,20 @@ class ModelConfigManager:
         Returns:
             Dict[str, Any]: API configuration, containing api_base and api_key
         """
-        # Try to use evaluation-specific API key and model
-        api_key, key_model_name = self.get_api_key_with_model("claude_eval")
+        # Try to use GLM evaluation-specific API key and model as default
+        api_key, key_model_name = self.get_api_key_with_model("minara_eval")
         
-        # Default API configuration
+        # Default API configuration - prioritize GLM
         default_config = {
             "api_base": self.get_evaluation_api_base(),
             "api_key": api_key,
-            "model": key_model_name or "claude-3-7-sonnet-20250219"
+            "model": key_model_name or "glm_evaluation"
         }
         
         # If API key doesn't exist, fall back to backup value
-        if not default_config["api_key"]:
-            default_config["api_key"] = "sk-sjkpMQ7WsWk5jUShcqhK4RSe3GEooupy8jsy7xQkbg6eQaaX"
             
-        # Prioritize evaluation models
-        eval_models = ["claude_evaluation", "gpt4_evaluation"]
+        # Prioritize evaluation models - GLM first
+        eval_models = ["glm_evaluation", "claude_evaluation", "gpt4_evaluation"]
         
         # If model name is not specified, use default evaluation model
         if not model_name:
@@ -240,8 +238,8 @@ class ModelConfigManager:
             logger.warning(f"API key not found: {api_key_name}, using default configuration")
             return default_config
         
-        # Determine which model name to use: prioritize model name associated with API key, then use model field from model config
-        model_name = key_model_name or model_config.get('model', default_config["model"])
+        # Determine which model name to use: prioritize model field from model config, then use model name associated with API key
+        model_name = model_config.get('model') or key_model_name or default_config["model"]
         
         # Return configuration
         return {

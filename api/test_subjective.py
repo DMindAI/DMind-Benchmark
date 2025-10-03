@@ -21,6 +21,7 @@ from question_types.risk_analysis_question import RiskAnalysisQuestion
 from question_types.scenario_analysis_question import ScenarioAnalysisQuestion
 from question_types.vulnerability_classification_question import VulnerabilityClassificationQuestion
 from question_types.code_audit_question import CodeAuditQuestion
+import concurrent.futures
 
 # Question type mapping
 QUESTION_TYPES = {
@@ -74,7 +75,7 @@ class SubjectiveModelTester:
         """Load subjective test data"""
         try:
             # Build complete file path
-            full_path = self.test_data_dir / "subjective" / file_path
+            full_path = self.test_data_dir / "subjective_converted" / file_path
             with open(full_path, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except Exception as e:
@@ -120,6 +121,63 @@ class SubjectiveModelTester:
                     
                     if response.status_code == 200:
                         response_json = response.json()
+                elif provider.lower() == "openai":
+                    # 处理OpenAI请求
+                    try:
+                        # 初始化OpenAI客户端
+                        base_url = model_config.get("base_url", "https://api.openai.com/v1")
+                        print(Skey)
+                        client = OpenAI(
+                            base_url=base_url,
+                            api_key=Skey,
+                        )
+                        # client = OpenAI()
+                        
+                        # 准备额外头部和参数
+                        extra_headers = model_config.get("extra_headers", {})
+                        extra_body = model_config.get("extra_body", {})
+                        
+                        # 创建完成请求
+                        response = client.chat.completions.create(
+                            extra_headers=extra_headers,
+                            extra_body=extra_body,
+                            model=model_config["model"],
+                            # input=prompt,
+                            messages=[
+                                {
+                                    "role": "user",
+                                    "content": prompt
+                                }
+                            ],
+                            temperature=model_config.get("parameters", {}).get("temperature", 0.7),
+                        )
+                        
+                        response.choices[0].message.content = response.choices[0].message.content.split("</think>\n")[1]
+                        response_json = {
+                            "id": response.id,
+                            "choices": [
+                                {
+                                    "message": {
+                                        "content": response.choices[0].message.content,
+                                        "role": response.choices[0].message.role
+                                    },
+                                    "index": 0,
+                                    "finish_reason": response.choices[0].finish_reason
+                                }
+                            ],
+                            "usage": {
+                                "prompt_tokens": response.usage.prompt_tokens,
+                                "completion_tokens": response.usage.completion_tokens,
+                                "total_tokens": response.usage.total_tokens
+                            }
+                        }
+                        response_status = 200
+                    except Exception as e:
+                        print(f"OpenAI API call error: {e}")
+                        if attempt < max_retries - 1:
+                            print(f"Will retry in {retry_delay} seconds... (attempt {attempt + 1}/{max_retries})")
+                            time.sleep(retry_delay)
+                            continue
                 elif provider == "deepseek":
                     # Handle DeepSeek model requests using OpenAI client
                     print("\n" + "="*50)
@@ -129,7 +187,7 @@ class SubjectiveModelTester:
                     print("="*50 + "\n")
                     
                     try:
-                        client = OpenAI(api_key=Skey, base_url="https://api.deepseek.com")
+                        client = OpenAI(api_key=Skey, base_url=model_config["base_url"])
                         
                         response = client.chat.completions.create(
                             model=model_config["model"],
@@ -188,11 +246,10 @@ class SubjectiveModelTester:
                     data = {
                         "model": model_config["model"],
                         "messages": [{"role": "user", "content": prompt + prompt_enforce}],
-                        'top_k': -1,
-                        'top_p': 1,
                         "stream": False,
-                        "temperature": 0.7
-                        # **model_config["parameters"]
+                        "temperature": 0.7,
+                        "max_tokens": 4096,
+                        **model_config["parameters"]
                     }
                     
                     # Output request content
@@ -359,76 +416,69 @@ class SubjectiveModelTester:
             "average_score": average_score,
             "results": results
         }
-        
-    def run_tests(self, model_name: Optional[str] = None):
-        """Run subjective tests
-        Args:
-            model_name: Optional, specify the name of the model to test. If None, all models will be tested
-        """
-        # Test dataset list
+
+    def evaluate_and_save(self, model_config, test_data, dataset, timestamp):
+        """线程任务：评测并保存结果"""
+        model_results_dir = self.results_dir / model_config["name"] / "subjective"
+        model_results_dir.mkdir(parents=True, exist_ok=True)
+        print(f"Testing model {model_config['name']} on dataset {dataset}")
+        results = self.evaluate_model(model_config, test_data, dataset)
+        results_file = model_results_dir / f"{dataset.replace('.json', '')}_{timestamp}.json"
+        with open(results_file, "w", encoding='utf-8') as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
+        print(f"Test results saved to {results_file}")
+
+    def run_tests(self, model_name: Optional[str] = None, max_workers: int = 30):
+        """多线程运行主入口"""
         test_datasets = [
-            "Blockchain_Fundamentals_benchmark.json",
-            "DAO.json",
-            "Defi.json",
-            "Infra.json",
-            "MEME.json",
-            "NFT.json",
-            "Token.json",
-            "Security.json",
-            "smart_contract.json"
+            "blockchain-fundamental.json",
+            "dao.json",
+            "defi.json",
+            "infrastructure.json",
+            "meme.json",
+            "nft.json",
+            "tokenomics.json",
+            "security.json",
+            "smart-contract.json"
         ]
-        
-        for dataset in test_datasets:
-            test_data = self.load_test_data(dataset)
-            if not test_data:
-                print(f"No test data available for {dataset}")
-                continue
-                
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        tasks = []
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
             if model_name:
-                # Test specified model
                 model_config = next((m for m in self.models if m["name"] == model_name), None)
                 if not model_config:
                     print(f"Model {model_name} not found in configuration")
                     return
-                    
-                # Create model-specific subjective results directory
-                model_results_dir = self.results_dir / model_config["name"] / "subjective"
-                model_results_dir.mkdir(parents=True, exist_ok=True)
-                    
-                print(f"Testing model {model_config['name']} on dataset {dataset}")
-                results = self.evaluate_model(model_config, test_data, dataset)
-                
-                # Save results
-                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                results_file = model_results_dir / f"{dataset.replace('.json', '')}_{timestamp}.json"
-                with open(results_file, "w", encoding='utf-8') as f:
-                    json.dump(results, f, indent=2, ensure_ascii=False)
-                print(f"Test results saved to {results_file}")
+                for dataset in test_datasets:
+                    test_data = self.load_test_data(dataset)
+                    if not test_data:
+                        print(f"No test data available for {dataset}")
+                        continue
+                    tasks.append(executor.submit(self.evaluate_and_save, model_config, test_data, dataset, timestamp))
             else:
-                # Test all models
                 for model_config in self.models:
-                    # Create model-specific subjective results directory
-                    model_results_dir = self.results_dir / model_config["name"] / "subjective"
-                    model_results_dir.mkdir(parents=True, exist_ok=True)
-                    
-                    print(f"Testing model {model_config['name']} on dataset {dataset}")
-                    results = self.evaluate_model(model_config, test_data, dataset)
-                    
-                    # Save results
-                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                    results_file = model_results_dir / f"{dataset.replace('.json', '')}_{timestamp}.json"
-                    with open(results_file, "w", encoding='utf-8') as f:
-                        json.dump(results, f, indent=2, ensure_ascii=False)
-                    print(f"Test results saved to {results_file}")
+                    for dataset in test_datasets:
+                        test_data = self.load_test_data(dataset)
+                        if not test_data:
+                            print(f"No test data available for {dataset}")
+                            continue
+                        tasks.append(executor.submit(self.evaluate_and_save, model_config, test_data, dataset, timestamp))
+            for future in concurrent.futures.as_completed(tasks):
+                try:
+                    future.result()
+                except Exception as exc:
+                    print(f"{exc}")
 
 def main():
     parser = argparse.ArgumentParser(description='Run subjective model tests')
     parser.add_argument('--model', type=str, help='Name of the model to test. If not specified, all models will be tested.')
+    parser.add_argument('--threads', type=int, default=30, help='Number of threads to use for parallel testing.')
     args = parser.parse_args()
     
     config = load_config()
     tester = SubjectiveModelTester(config)
-    tester.run_tests(args.model)
+    tester.run_tests(args.model, max_workers=args.threads)
 
 if __name__ == "__main__":
     main() 
