@@ -15,7 +15,6 @@ import random
 
 def load_config() -> Dict:
     """Load configuration from YAML file"""
-    # Try to load from current directory first
     current_dir = Path.cwd()
     config_path = current_dir / "models.yml"
     

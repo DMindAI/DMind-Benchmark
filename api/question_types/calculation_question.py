@@ -80,8 +80,8 @@ Do not output any explanations or other content, only the calculation steps and 
                 r'final answer[:：]\s*([\d.,]+)',  # English format "Final Answer: 123.45"
                 r'answer[:：]\s*([\d.,]+)',        # Simplified English format "Answer: 123.45"
                 r'result[:：]\s*([\d.,]+)',        # English format "Result: 123.45"
-                r'最终答案[:：]\s*([\d.,]+)',       # Chinese format "最终答案: 123.45"
-                r'答案[:：]\s*([\d.,]+)',          # Simplified Chinese format "答案: 123.45"
+                r'最终答案[:：]\s*([\d.,]+)',       # Chinese format
+                r'答案[:：]\s*([\d.,]+)',          # Simplified Chinese format
                 r'=\s*([\d.,]+)$'                 # Equals format "= 123.45"
             ]
             

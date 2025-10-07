@@ -55,15 +55,15 @@ Do not explain, do not output anything else.
     def evaluate_response(self, response: str) -> Dict:
         """Evaluate the model's answer"""
         try:
-            # 移除思考过程，只保留回答部分
-            # 优先处理更精确的</think>\n格式
+            # Remove thinking process, keep only answer part
+            # Prioritize more precise </think>\n format
             if "</think>\n" in response:
                 response = response.split("</think>\n")[-1].strip()
-            # 如果没有找到，尝试处理</think>格式
+            # If not found, try to handle </think> format
             elif "</think>" in response:
                 response = response.split("</think>")[-1].strip()
                 
-            # 处理可能包含的箭头或其他格式
+            # Handle possible arrows or other formats
             response = response.replace("→", "\n").replace("->", "\n")
             
             # Parse the model's answer

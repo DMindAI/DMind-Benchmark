@@ -418,7 +418,6 @@ class SubjectiveModelTester:
         }
 
     def evaluate_and_save(self, model_config, test_data, dataset, timestamp):
-        """线程任务：评测并保存结果"""
         model_results_dir = self.results_dir / model_config["name"] / "subjective"
         model_results_dir.mkdir(parents=True, exist_ok=True)
         print(f"Testing model {model_config['name']} on dataset {dataset}")
@@ -429,7 +428,6 @@ class SubjectiveModelTester:
         print(f"Test results saved to {results_file}")
 
     def run_tests(self, model_name: Optional[str] = None, max_workers: int = 30):
-        """多线程运行主入口"""
         test_datasets = [
             "Blockchain_Fundamentals.json",
             "DAO.json",
