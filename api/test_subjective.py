@@ -431,15 +431,15 @@ class SubjectiveModelTester:
     def run_tests(self, model_name: Optional[str] = None, max_workers: int = 30):
         """多线程运行主入口"""
         test_datasets = [
-            "blockchain-fundamental.json",
-            "dao.json",
-            "defi.json",
-            "infrastructure.json",
-            "meme.json",
-            "nft.json",
-            "tokenomics.json",
-            "security.json",
-            "smart-contract.json"
+            "Blockchain_Fundamentals.json",
+            "DAO.json",
+            "Defi.json",
+            "Infra.json",
+            "MEME.json",
+            "NFT.json",
+            "Tokenomist.json",
+            "Security.json",
+            "SmartContract.json"
         ]
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         tasks = []

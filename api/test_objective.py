@@ -614,14 +614,14 @@ class ModelTester:
         """
         # List of test datasets
         test_datasets = [
-            "Blockchain_Fundamentals_benchmark.csv",
+            "Blockchain_Fundamentals.csv",
             "Security.csv",
             "DAO.csv",
-            "SmartContracts.csv",
-            "DeFi.csv",
+            "SmartContract.csv",
+            "Defi.csv",
             "MEME.csv",
-            "Infrastructure.csv",
-            "Tokenomics.csv",
+            "Infra.csv",
+            "Tokenomist.csv",
             "NFT.csv"
         ]
         
