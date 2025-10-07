@@ -1,5 +1,5 @@
 No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Multiple Choice or Not
-1,Basic,In Web3， what are MEME coins primarily NOT based on?,Internet memes,News events,Celebrities,Web3 projects,D,No
+1,Basic,In Web3, what are MEME coins primarily NOT based on?,Internet memes,News events,Celebrities,Web3 projects,D,No
 2,Basic,Which of the following blockchains is one of the most active platforms for MEME coins?,Bitcoin,Solana,Ethereum,Tron,B,No
 3,Basic,Which is NOT a core reason for Solana becoming a popular platform for MEME coins?,Large user base,High TVL (Total Value Locked),Low transaction fees and fast settlement,Foundation engagement,B,No
 4,Basic,"What is pump.fun""?""",A decentralized exchange for MEME coins,A no-code creation platform for MEME coins,A technical creation platform for MEME coins,An AMM for MEME coins,B,No
@@ -24,7 +24,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 23,Basic,"What is Token Utility""?""",The token's price in USD,The token's price in ETH,The practical functions and use cases of a token,The token's trading volume,C,No
 24,Basic,Which of the following is NOT typically a utility for MEME tokens?,Governance voting in DAOs,Transaction fees within an ecosystem,Complex DeFi functions,Access to exclusive community content,C,No
 25,Basic,"What is the importance of Community"" for MEME coins?""",Communities are optional for MEME coin success,Communities help maintain token liquidity,Communities are mainly for establishing regulatory compliance,Communities determine the legal status of the token,B,No
-26,Basic,What is the typical token distribution model for a MEME coin project?,20% team， 80% public,No team allocation， 100% public trading,50% team， 50% public,Varies widely with no standard model,D,No
+26,Basic,What is the typical token distribution model for a MEME coin project?,20% team, 80% public,No team allocation, 100% public trading,50% team, 50% public,Varies widely with no standard model,D,No
 27,Basic,Which aspect of MEME coin projects usually operates with the LEAST transparency?,Team members and background,Liquidity and trading data,Marketing campaigns,Project roadmap and updates,C,No
 28,Basic,"What is Review Mining"" in the context of meme coins?""",Generating cryptocurrency through social media reviews,Creating fake positive reviews to boost project reputation,A consensus mechanism used by MEME coins,A method to verify transactions on the blockchain,B,No
 29,Basic,"What is Social Media Presence"" important for in MEME coin projects?""",It is required for legal compliance,It increases traditional media coverage,It helps with community building and engagement,It guarantees token listing on major exchanges,C,No
@@ -45,7 +45,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 44,Basic,Which of the following terms describe investor token holding behavior in cryptocurrency communities?,Paper hands,Diamond hands,Whale,NGMI,B/D,Multiple Choice
 45,Basic,Which of the following terms describe the trading behavior characteristics of cryptocurrency investors?,Paper Hands,Diamond Hands,Buy low and sell high,Left/Right side trading,A/B/D,Multiple Choice
 46,Basic,Which communication platforms are commonly used by MEME coin communities?,Reddit,Telegram,Twitter/X,Discord,B/C/D,Multiple Choice
-47,Basic,What is the difference between MEME projects with a CTO and those without?,In the former， the DEV has sold tokens， while in the latter they haven't,The former relies on the community， and the latter also relies on the community,For the latter， the project ceiling is usually higher,The former MEME projects are more difficult to succeed,A/B,Multiple Choice
+47,Basic,What is the difference between MEME projects with a CTO and those without?,In the former, the DEV has sold tokens, while in the latter they haven't,The former relies on the community, and the latter also relies on the community,For the latter, the project ceiling is usually higher,The former MEME projects are more difficult to succeed,A/B,Multiple Choice
 48,Basic,What roles does a CTO Leader generally assume in MEME projects?,Raising funds from the community,Increasing community cohesion,Formulating future project roadmaps,Creating MEME-themed graphics,A/B/C,Multiple Choice
 49,Basic,What are the general purposes of funds in a Market Wallet?,Used for future project marketing,Used for technical development,Used to reward community members,Used for collaborations with other projects,A/D,Multiple Choice
 50,Basic,What are common risks associated with MEME coins?,High volatility,Low liquidity,Regulatory uncertainty,Technical complexity,A/B/C,Multiple Choice
@@ -54,7 +54,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 53,Basic,Which of the following descriptions about 'Token Utility' are correct?,Actual uses of the token in the project ecosystem,Privileges or benefits that token holders receive,Token price stability,Exclusive identity that token holders receive,A/B,Multiple Choice
 54,Basic,What are common utilities of MEME coins?,Legal currency alternative,Governance rights,Payment method,Community membership identity,B/C/D,Multiple Choice
 55,Basic,Which of the following descriptions about 'Token Governance' are correct?,The community's management of token mechanisms,A system to influence project development direction through voting,A voting mechanism to control token price,A mechanism for token holders to participate in project decisions,B/D,Multiple Choice
-56,Basic,Which of the following descriptions about the governance models of MEME coin projects are correct?,Most adopt hybrid models or have no formal governance,Community members usually have some voice,Completely decentralized,In all MEME projects， DEVs are the main governors,A/B,Multiple Choice
+56,Basic,Which of the following descriptions about the governance models of MEME coin projects are correct?,Most adopt hybrid models or have no formal governance,Community members usually have some voice,Completely decentralized,In all MEME projects, DEVs are the main governors,A/B,Multiple Choice
 57,Basic,Which of the following are common trading tools in the MEME market?,Bullx,Photon,Gmgn,TG Trading BOT,A/B/C/D,Multiple Choice
 58,Basic,What are common sales methods for MEME coins?,Public sales,Presales,Airdrops,OTC sales,A/B/D,Multiple Choice
 59,Basic,Which of the following descriptions about 'Token Distribution' are correct?,The way tokens are distributed among different holders,The initial token distribution plan for the project,The token burning plan,The future token unlock plan,A/B,Multiple Choice

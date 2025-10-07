@@ -33,7 +33,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 32,Basic,"What do LP Tokens"" (Liquidity Provider Tokens) represent in DeFi?""",Proof of providing liquidity,Governance rights,Stablecoins,Insurance certificates,A,No
 33,Basic,Which DeFi protocol focuses on decentralized identity verification?,Civic,Uniswap,Aave,Compound,A,No
 34,Basic,"What was the initial purpose of Liquidity Mining"" in DeFi?""",Attracting users to provide liquidity,Increasing token prices,Reducing transaction fees,Improving security,A,No
-35,Basic,"What are the main risks of Yield Farming"" in DeFi?""",Smart contract risks， impermanent loss， and market risks,Government regulation,Power outages,Internet connectivity,A,No
+35,Basic,"What are the main risks of Yield Farming"" in DeFi?""",Smart contract risks, impermanent loss, and market risks,Government regulation,Power outages,Internet connectivity,A,No
 36,Basic,Which of the following is a decentralized asset management protocol in DeFi?,Yearn Finance,Uniswap,Chainlink,Curve,A,No
 37,Basic,Which of the following is the most popular decentralized options protocol in DeFi?,Opyn,Uniswap,Aave,Compound,A,No
 38,Basic,Which DeFi protocol focuses on decentralized insurance?,Nexus Mutual,Uniswap,Aave,Compound,A,No
@@ -114,7 +114,7 @@ No,classification,Question,Option A,Option B,Option C,Option D,Correct option,Mu
 113,Advanced,"What are Liquidity Routing Optimization"" core algorithms in DeFi typically based on?""",Weighted graph search algorithms,Random forests,Neural networks,Genetic algorithms,A,No
 114,Advanced,Which DeFi mechanism is most suitable for solving interest rate volatility problems in decentralized lending markets?,Interest rate swaps,Fixed-rate pools,Interest rate caps,All of the above,D,No
 115,Advanced,Which DeFi innovation most effectively solves the capital efficiency problem of stablecoins?,Partially collateralized algorithmic stablecoins,Overcollateralized stablecoins,Fiat-collateralized stablecoins,Centralized stablecoins,A,No
-116,Advanced,"What factors are Dynamic Risk Pricing"" models in DeFi typically based on?""",Market volatility， collateralization ratio， and protocol utilization,User reputation,Historical transaction volume,Token price,A,No
+116,Advanced,"What factors are Dynamic Risk Pricing"" models in DeFi typically based on?""",Market volatility, collateralization ratio, and protocol utilization,User reputation,Historical transaction volume,Token price,A,No
 117,Advanced,Which DeFi mechanism is most suitable for solving adverse selection problems in decentralized insurance?,Risk pool stratification,Fixed premiums,Centralized review,Mandatory participation,A,No
 118,Advanced,"What is the core of Yield Curve Arbitrage"" strategies in DeFi?""",Exploiting yield differences between assets of different maturities,Exploiting price differences between different assets,Exploiting security differences between different protocols,Exploiting gas fee differences between different chains,A,No
 119,Advanced,Which DeFi mechanism is most suitable for solving liquidity problems in decentralized synthetic assets?,Virtual liquidity,Liquidity mining,Centralized market making,Forced liquidity provision,A,No
