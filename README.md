@@ -513,7 +513,7 @@ The framework handles response parsing for different providers:
   - Multiple-choice: 3 points for fully correct answers
 
 - **Subjective tests**: Open-ended questions evaluated using:
-  - Third-party AI evaluation (Claude-3-7-Sonnet)
+  - Third-party AI evaluation 
   - Keyword matching as fallback
 
 The final score for each model is calculated by combining results from all datasets, with each dataset given equal weight in the total score. 
