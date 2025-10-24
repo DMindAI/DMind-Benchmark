@@ -73,6 +73,7 @@ A comprehensive framework for evaluating large language models (LLMs) on blockch
 | [Paper](https://arxiv.org/abs/2504.16116) | [Dataset](https://huggingface.co/datasets/DMindAI/DMind_Benchmark/tree/main/test_data) |
 
 Overall performance of all evaluated LLMs on the DMind Benchmark
+![](./img/performance_main.png)
 
 ![](./img/combined_heatmap.png)
 
