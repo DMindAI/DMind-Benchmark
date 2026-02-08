@@ -99,57 +99,8 @@ class RiskAnalysisQuestion(BaseQuestion):
         """
         logger.info(f"Evaluating risk analysis response of length: {len(response)}")
         
-        result = {
-            "score": 0,
-            "max_score": 10,
-            "threat_score": 0,
-            "vulnerability_score": 0,
-            "countermeasure_score": 0,
-            "identified_threats": [],
-            "identified_vulnerabilities": [],
-            "identified_countermeasures": [],
-            "missed_threats": [],
-            "missed_vulnerabilities": [],
-            "missed_countermeasures": [],
-            "feedback": ""
-        }
-        
-        # Evaluate threats identified
-        threat_score, identified_threats, missed_threats = self._evaluate_component(
-            response, self.expected_threats, "threats"
-        )
-        result["threat_score"] = threat_score
-        result["identified_threats"] = identified_threats
-        result["missed_threats"] = missed_threats
-        
-        # Evaluate vulnerabilities identified
-        vulnerability_score, identified_vulnerabilities, missed_vulnerabilities = self._evaluate_component(
-            response, self.expected_vulnerabilities, "vulnerabilities"
-        )
-        result["vulnerability_score"] = vulnerability_score
-        result["identified_vulnerabilities"] = identified_vulnerabilities
-        result["missed_vulnerabilities"] = missed_vulnerabilities
-        
-        # Evaluate countermeasures proposed
-        countermeasure_score, identified_countermeasures, missed_countermeasures = self._evaluate_component(
-            response, self.expected_countermeasures, "countermeasures"
-        )
-        result["countermeasure_score"] = countermeasure_score
-        result["identified_countermeasures"] = identified_countermeasures
-        result["missed_countermeasures"] = missed_countermeasures
-        
-        # Calculate weighted overall score
-        result["score"] = (
-            threat_score * self.risk_weights["threats"] +
-            vulnerability_score * self.risk_weights["vulnerabilities"] +
-            countermeasure_score * self.risk_weights["countermeasures"]
-        )
-        
-        # Generate feedback
-        result["feedback"] = self._generate_feedback(result)
-        
-        logger.info(f"Risk analysis evaluation completed. Final score: {result['score']}/{result['max_score']}")
-        return result
+        # Try third-party AI first; fallback to component-based evaluation on failure
+        return self._evaluate_with_third_party_ai(response)
     
     def _evaluate_component(self, response: str, expected_items: List[str], component_type: str) -> tuple:
         """
@@ -257,8 +208,155 @@ class RiskAnalysisQuestion(BaseQuestion):
             response_text: Model's answer
             
         Returns:
-            Dict[str, Any]: Evaluation results, if evaluation fails returns None
+            Dict[str, Any]: Evaluation results; falls back to component-based evaluation if API fails
         """
-        # Implementation would be here
-        # This is just a placeholder for the real implementation
-        pass 
+        retry_count = 0
+        last_error = ""
+        
+        while retry_count < self.max_retries:
+            try:
+                if retry_count > 0:
+                    logger.info(f"Retry {retry_count} for third-party AI evaluation...")
+                    time.sleep(self.retry_delay)
+                
+                # Build evaluation prompt
+                criteria_prompt = "Please evaluate the response according to the following criteria:\n\n"
+                for criterion in self.scoring_criteria:
+                    criterion_name = criterion.get("criterion", "")
+                    max_points = criterion.get("points", 0)
+                    key_points = criterion.get("key_points", "")
+                    criteria_prompt += f"- {criterion_name} ({max_points} points): {key_points}\n"
+                
+                evaluation_prompt = f"""
+You are a professional risk analysis evaluator. Please evaluate the quality of this risk analysis.
+
+Scenario:
+{self.scenario}
+
+Risk factors to consider:
+{chr(10).join(f'- {f}' for f in self.risk_factors) if self.risk_factors else 'See response'}
+
+Expected elements (for reference):
+- Threats: {', '.join(self.expected_threats) if self.expected_threats else 'N/A'}
+- Vulnerabilities: {', '.join(self.expected_vulnerabilities) if self.expected_vulnerabilities else 'N/A'}
+- Countermeasures: {', '.join(self.expected_countermeasures) if self.expected_countermeasures else 'N/A'}
+
+Model's Answer:
+{response_text}
+
+{criteria_prompt}
+
+Risk weights: threats={self.risk_weights['threats']}, vulnerabilities={self.risk_weights['vulnerabilities']}, countermeasures={self.risk_weights['countermeasures']}
+
+Output the evaluation results in the following JSON format only (no other content):
+{{
+    "threat_score": <0-10>,
+    "vulnerability_score": <0-10>,
+    "countermeasure_score": <0-10>,
+    "identified_threats": ["item1", "item2"],
+    "identified_vulnerabilities": ["item1", "item2"],
+    "identified_countermeasures": ["item1", "item2"],
+    "missed_threats": ["item1", "item2"],
+    "missed_vulnerabilities": ["item1", "item2"],
+    "missed_countermeasures": ["item1", "item2"],
+    "score": <weighted total 0-10>,
+    "max_score": 10,
+    "feedback": "Overall evaluation text"
+}}
+"""
+                
+                logger.info("Calling third-party AI API...")
+                headers = {
+                    'Accept': 'application/json',
+                    'Authorization': f'Bearer {self.third_party_api_key}',
+                    'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
+                    'Content-Type': 'application/json'
+                }
+                data = {
+                    "model": self.evaluation_model,
+                    "messages": [{"role": "user", "content": evaluation_prompt}],
+                    "max_tokens": 4000,
+                    "temperature": 0
+                }
+                
+                start_time = time.time()
+                response_obj = requests.post(self.third_party_api_base, headers=headers, json=data)
+                end_time = time.time()
+                logger.info(f"API call completed in {end_time - start_time:.2f}s, status: {response_obj.status_code}")
+                
+                if response_obj.status_code == 200:
+                    response_data = response_obj.json()
+                    if "choices" in response_data and len(response_data["choices"]) > 0:
+                        ai_content = response_data["choices"][0]["message"]["content"]
+                        json_start = ai_content.find("{")
+                        json_end = ai_content.rfind("}") + 1
+                        if json_start >= 0 and json_end > json_start:
+                            json_str = ai_content[json_start:json_end]
+                            result = json.loads(json_str)
+                            if "total_score" in result and "score" not in result:
+                                result["score"] = result.pop("total_score")
+                            result.setdefault("score", 0)
+                            result.setdefault("max_score", 10)
+                            result.setdefault("feedback", "")
+                            for key in ["identified_threats", "identified_vulnerabilities", "identified_countermeasures",
+                                       "missed_threats", "missed_vulnerabilities", "missed_countermeasures"]:
+                                result.setdefault(key, [])
+                            logger.info("Third-party AI evaluation succeeded")
+                            return result
+                        last_error = "No valid JSON in API response"
+                    else:
+                        last_error = "API response missing choices"
+                else:
+                    try:
+                        err_data = response_obj.json()
+                        last_error = err_data.get("error", {}).get("message", response_obj.text[:200])
+                    except Exception:
+                        last_error = response_obj.text[:200] or f"Status {response_obj.status_code}"
+                        
+            except json.JSONDecodeError as e:
+                last_error = f"JSON parse error: {e}"
+                logger.warning(last_error)
+            except Exception as e:
+                last_error = str(e)
+                logger.warning(f"Third-party AI evaluation error: {e}", exc_info=True)
+            
+            retry_count += 1
+        
+        logger.warning(f"Third-party AI evaluation failed after {retry_count} retries, using component-based fallback")
+        return self._evaluate_with_components(response_text)
+    
+    def _evaluate_with_components(self, response: str) -> Dict[str, Any]:
+        """Fallback: evaluate using component-based keyword matching"""
+        result = {
+            "score": 0,
+            "max_score": 10,
+            "threat_score": 0,
+            "vulnerability_score": 0,
+            "countermeasure_score": 0,
+            "identified_threats": [],
+            "identified_vulnerabilities": [],
+            "identified_countermeasures": [],
+            "missed_threats": [],
+            "missed_vulnerabilities": [],
+            "missed_countermeasures": [],
+            "feedback": ""
+        }
+        threat_score, result["identified_threats"], result["missed_threats"] = self._evaluate_component(
+            response, self.expected_threats, "threats"
+        )
+        result["threat_score"] = threat_score
+        vuln_score, result["identified_vulnerabilities"], result["missed_vulnerabilities"] = self._evaluate_component(
+            response, self.expected_vulnerabilities, "vulnerabilities"
+        )
+        result["vulnerability_score"] = vuln_score
+        cm_score, result["identified_countermeasures"], result["missed_countermeasures"] = self._evaluate_component(
+            response, self.expected_countermeasures, "countermeasures"
+        )
+        result["countermeasure_score"] = cm_score
+        result["score"] = (
+            threat_score * self.risk_weights["threats"] +
+            vuln_score * self.risk_weights["vulnerabilities"] +
+            cm_score * self.risk_weights["countermeasures"]
+        )
+        result["feedback"] = self._generate_feedback(result)
+        return result
